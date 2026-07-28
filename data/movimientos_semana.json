@@ -1,0 +1,212 @@
+{
+  "total_avisos_cambiaron": 23,
+  "cambios": [
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1\nCBA- MIRÁ VILLA GENERAL BELGRANO 1",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1\nCBA- MIRÁ VILLA GENERAL BELGRANO 2"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL\nOBRAS VILLA ICHO CRUZ\nACUEDUCTO VILLA CARLOS PAZ\nOBRAS SAN ANTONIO DE ARREDONDO\nCOLECTORA CARLOS PAZ MALAGUEÑO"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "PRUEBAS APRENDER\nCÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ CAPILLA DEL MONTE",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ COSQUÍN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ COSQUÍN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA CARLOS PAZ",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA CARLOS PAZ",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "EMPLEO +26",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "VISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "VISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "MIRÁ - VILLA DOLORES  UPC\nEMPLEO +26",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "EMPLEO +26"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "PRUEBAS APRENDER\nAUTOVÍA 19"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN\nCÓRDOBA ME CAPACITA",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-07-17",
+      "tema_anterior": "OBRAS QUE TRANSFORMAN",
+      "fecha_semana_actual": "2026-07-24",
+      "tema_actual": "CÓRDOBA ME CAPACITA"
+    }
+  ]
+}

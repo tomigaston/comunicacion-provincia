@@ -1,0 +1,17 @@
+{
+  "name": "tablero-comunicacion-cordoba",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generar-datos": "python3 scripts/generar_datos.py"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

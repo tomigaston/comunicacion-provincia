@@ -1,0 +1,424 @@
+{
+  "localidades": [
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "cabecera": true,
+      "ranking": 1,
+      "poblacion": 1498060
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "cabecera": true,
+      "ranking": 2,
+      "poblacion": 180756
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "cabecera": true,
+      "ranking": 3,
+      "poblacion": 96061
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "cabecera": false,
+      "ranking": 4,
+      "poblacion": 71274
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "cabecera": true,
+      "ranking": 5,
+      "poblacion": 69047
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "cabecera": true,
+      "ranking": 6,
+      "poblacion": 60373
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "cabecera": false,
+      "ranking": 7,
+      "poblacion": 53166
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "cabecera": false,
+      "ranking": 8,
+      "poblacion": 45600
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "cabecera": true,
+      "ranking": 9,
+      "poblacion": 37610
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "cabecera": false,
+      "ranking": 10,
+      "poblacion": 36722
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "cabecera": true,
+      "ranking": 11,
+      "poblacion": 36461
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "cabecera": true,
+      "ranking": 12,
+      "poblacion": 34616
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "cabecera": true,
+      "ranking": 13,
+      "poblacion": 33346
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "cabecera": true,
+      "ranking": 14,
+      "poblacion": 28485
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "cabecera": false,
+      "ranking": 15,
+      "poblacion": 28007
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "cabecera": false,
+      "ranking": 16,
+      "poblacion": 26775
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "cabecera": false,
+      "ranking": 17,
+      "poblacion": 26260
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "cabecera": false,
+      "ranking": 18,
+      "poblacion": 25733
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "cabecera": true,
+      "ranking": 19,
+      "poblacion": 25318
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "cabecera": false,
+      "ranking": 20,
+      "poblacion": 25276
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "cabecera": true,
+      "ranking": 21,
+      "poblacion": 25119
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "cabecera": false,
+      "ranking": 22,
+      "poblacion": 24988
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "cabecera": true,
+      "ranking": 23,
+      "poblacion": 22523
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "cabecera": false,
+      "ranking": 24,
+      "poblacion": 22145
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "cabecera": false,
+      "ranking": 25,
+      "poblacion": 20631
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "cabecera": false,
+      "ranking": 26,
+      "poblacion": 19012
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "cabecera": false,
+      "ranking": 27,
+      "poblacion": 18752
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "cabecera": false,
+      "ranking": 28,
+      "poblacion": 18529
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "cabecera": true,
+      "ranking": 29,
+      "poblacion": 17537
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "cabecera": false,
+      "ranking": 30,
+      "poblacion": 16732
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "cabecera": false,
+      "ranking": 31,
+      "poblacion": 16115
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "cabecera": false,
+      "ranking": 32,
+      "poblacion": 15882
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "cabecera": false,
+      "ranking": 33,
+      "poblacion": 14804
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "cabecera": false,
+      "ranking": 34,
+      "poblacion": 14688
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "cabecera": false,
+      "ranking": 35,
+      "poblacion": 14535
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "cabecera": true,
+      "ranking": 36,
+      "poblacion": 14480
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "cabecera": false,
+      "ranking": 37,
+      "poblacion": 14415
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "ESTACION JUAREZ CELMAN",
+      "cabecera": false,
+      "ranking": 38,
+      "poblacion": 13509
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "cabecera": false,
+      "ranking": 39,
+      "poblacion": 13136
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "cabecera": true,
+      "ranking": 40,
+      "poblacion": 12910
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "cabecera": false,
+      "ranking": 41,
+      "poblacion": 12843
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "cabecera": false,
+      "ranking": 42,
+      "poblacion": 12834
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "cabecera": false,
+      "ranking": 43,
+      "poblacion": 12594
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "cabecera": false,
+      "ranking": 44,
+      "poblacion": 11904
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "cabecera": false,
+      "ranking": 45,
+      "poblacion": 11838
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "cabecera": false,
+      "ranking": 46,
+      "poblacion": 11819
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "cabecera": false,
+      "ranking": 47,
+      "poblacion": 11703
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "cabecera": false,
+      "ranking": 48,
+      "poblacion": 11697
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "cabecera": false,
+      "ranking": 49,
+      "poblacion": 11656
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "cabecera": false,
+      "ranking": 50,
+      "poblacion": 11429
+    },
+    {
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 10869
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 9265
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 8415
+    },
+    {
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 6334
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 3876
+    },
+    {
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 3074
+    },
+    {
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 2167
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 2063
+    },
+    {
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 1585
+    },
+    {
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "cabecera": true,
+      "ranking": "*",
+      "poblacion": 6173
+    }
+  ]
+}
