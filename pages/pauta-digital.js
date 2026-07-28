@@ -3,9 +3,12 @@ import Layout from '../components/Layout';
 import FilterBar from '../components/FilterBar';
 import Autocomplete from '../components/Autocomplete';
 import StatusBadge from '../components/StatusBadge';
+import FiltroPeriodo from '../components/FiltroPeriodo';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
-import { formatearFechaCorta } from '../lib/fechas';
+import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../lib/fechas';
+
+const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
 const AMBITOS = [
   { key: 'PROVINCIA', label: 'Provincia entera' },
@@ -32,10 +35,13 @@ export default function PautaDigital() {
   const [ambitos, setAmbitos] = useState(new Set());
   const [estado, setEstado] = useState('Todas');
   const [busqueda, setBusqueda] = useState('');
+  const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
   const [orden, setOrden] = useState({ campo: 'finalizacion', direccion: 'desc' });
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
   const piezas = datos ? datos[0].piezas : [];
+  const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
+  const fechasDisponibles = useMemo(() => piezas.map((p) => p.finalizacion), [piezas]);
 
   const itemsBusqueda = useMemo(() => {
     const vistos = new Set();
@@ -52,6 +58,7 @@ export default function PautaDigital() {
   const filtradas = useMemo(() => {
     const q = normalizarTexto(busqueda);
     let salida = piezas.filter((p) => {
+      if (!fechaDentroDeVentana(p.finalizacion, ventana)) return false;
       if (ambitos.size > 0 && !ambitos.has(p.alcance_detectado)) return false;
       if (estado !== 'Todas' && p.estado !== estado) return false;
       if (!q) return true;
@@ -68,7 +75,7 @@ export default function PautaDigital() {
       return orden.direccion === 'asc' ? cmp : -cmp;
     });
     return salida;
-  }, [piezas, ambitos, estado, busqueda, orden]);
+  }, [piezas, ventana, ambitos, estado, busqueda, orden]);
 
   function alternarAmbito(key) {
     setAmbitos((actual) => {
@@ -108,6 +115,18 @@ export default function PautaDigital() {
 
       {datos && (
         <>
+          <div
+            style={{
+              background: 'var(--bg-primary)',
+              border: '1px solid var(--border)',
+              borderRadius: 12,
+              padding: '14px 18px',
+              marginBottom: 16,
+            }}
+          >
+            <FiltroPeriodo periodo={periodo} onChange={setPeriodo} fechasDisponibles={fechasDisponibles} />
+          </div>
+
           <div style={{ marginBottom: 20 }}>
             <FilterBar>
               <Autocomplete
@@ -175,6 +194,7 @@ export default function PautaDigital() {
 
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
             {filtradas.length} de {piezas.length} piezas de pauta digital
+            {filtradas.length === 0 && piezas.length > 0 && ' — probá un período más amplio o "Todo"'}
           </p>
 
           <div
