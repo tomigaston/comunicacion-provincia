@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import CoverageBadge from '../../components/CoverageBadge';
 import StatusBadge from '../../components/StatusBadge';
+import AnioBadge from '../../components/AnioBadge';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
+import { formatearFechaCorta } from '../../lib/fechas';
 
 const TIPOS_MEDIO = [
   { key: 'TV', label: 'TV' },
@@ -38,16 +40,18 @@ export default function DetalleLocalidad() {
     const clave = normalizarTexto(base.localidad);
     const medios = mediosData.localidades.find((l) => normalizarTexto(l.localidad) === clave);
 
-    const piezasPauta = pautaData.piezas.filter(
-      (p) =>
-        p.en_60_localidades &&
-        (normalizarTexto(p.localidad) === clave ||
-          (p.alcance_tipo === 'departamento' && normalizarTexto(p.departamento) === normalizarTexto(base.departamento)))
-    );
+    const piezasPauta = pautaData.piezas
+      .filter(
+        (p) =>
+          p.en_60_localidades &&
+          (normalizarTexto(p.localidad) === clave ||
+            (p.alcance_tipo === 'departamento' && normalizarTexto(p.departamento) === normalizarTexto(base.departamento)))
+      )
+      .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));
 
-    const itemsAudiovisuales = audiovisualesData.items.filter(
-      (i) => i.en_60_prioritarias && normalizarTexto(i.localidad) === clave
-    );
+    const itemsAudiovisuales = audiovisualesData.items
+      .filter((i) => i.en_60_prioritarias && normalizarTexto(i.localidad) === clave)
+      .sort((a, b) => (b.fecha_fin || b.fecha_inicio || '').localeCompare(a.fecha_fin || a.fecha_inicio || ''));
 
     return { base, medios, piezasPauta, itemsAudiovisuales };
   }, [datos, slug]);
@@ -150,6 +154,8 @@ export default function DetalleLocalidad() {
                     <th style={th}>Área</th>
                     <th style={th}>Ámbito</th>
                     <th style={th}>Estado</th>
+                    <th style={th}>Creación</th>
+                    <th style={th}>Finalización</th>
                     <th style={th}>Alcance</th>
                   </tr>
                 </thead>
@@ -162,6 +168,8 @@ export default function DetalleLocalidad() {
                       <td style={td}>
                         <StatusBadge estado={p.estado} />
                       </td>
+                      <td style={td}>{formatearFechaCorta(p.fecha_creacion) || '—'}</td>
+                      <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
                       <td style={td}>{p.alcance ? p.alcance.toLocaleString('es-AR') : '—'}</td>
                     </tr>
                   ))}
@@ -177,6 +185,7 @@ export default function DetalleLocalidad() {
                   <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
                     <th style={th}>Campaña</th>
                     <th style={th}>Tipo de contenido</th>
+                    <th style={th}>Fecha</th>
                     <th style={th}>Estado</th>
                     <th style={th}>Material</th>
                   </tr>
@@ -186,6 +195,9 @@ export default function DetalleLocalidad() {
                     <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                       <td style={td}>{it.campana}</td>
                       <td style={td}>{it.tipo_contenido}</td>
+                      <td style={td}>
+                        <AnioBadge fechaInicio={it.fecha_inicio} fechaFin={it.fecha_fin} />
+                      </td>
                       <td style={td}>
                         <StatusBadge estado={it.estado} />
                       </td>

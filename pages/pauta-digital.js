@@ -5,6 +5,7 @@ import Autocomplete from '../components/Autocomplete';
 import StatusBadge from '../components/StatusBadge';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
+import { formatearFechaCorta } from '../lib/fechas';
 
 const AMBITOS = [
   { key: 'PROVINCIA', label: 'Provincia entera' },
@@ -31,7 +32,7 @@ export default function PautaDigital() {
   const [ambitos, setAmbitos] = useState(new Set());
   const [estado, setEstado] = useState('Todas');
   const [busqueda, setBusqueda] = useState('');
-  const [orden, setOrden] = useState({ campo: 'alcance', direccion: 'desc' });
+  const [orden, setOrden] = useState({ campo: 'finalizacion', direccion: 'desc' });
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
   const piezas = datos ? datos[0].piezas : [];
@@ -192,6 +193,8 @@ export default function PautaDigital() {
                   <th style={th}>Ámbito</th>
                   <th style={th}>Localidad / Depto.</th>
                   <th style={th}>Estado</th>
+                  {encabezado('fecha_creacion', 'Creación')}
+                  {encabezado('finalizacion', 'Finalización')}
                   {encabezado('alcance', 'Alcance')}
                   {encabezado('importe_gastado', 'Importe gastado')}
                   {encabezado('ctr', 'CTR')}
@@ -207,6 +210,8 @@ export default function PautaDigital() {
                     <td style={td}>
                       <StatusBadge estado={p.estado} />
                     </td>
+                    <td style={td}>{formatearFechaCorta(p.fecha_creacion) || '—'}</td>
+                    <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
                     <td style={td}>{p.alcance ? p.alcance.toLocaleString('es-AR') : '—'}</td>
                     <td style={td}>
                       {typeof p.importe_gastado === 'number'

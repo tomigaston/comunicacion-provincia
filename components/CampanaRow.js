@@ -1,3 +1,5 @@
+import AnioBadge from './AnioBadge';
+
 const AREA_COLOR = {
   'Medios tradicionales': { bg: '#e0edfb', fg: '#1976d2' },
   'Pauta digital': { bg: '#fce7f3', fg: '#be185d' },
@@ -29,6 +31,16 @@ function detalleTexto(item) {
   return '—';
 }
 
+function DetalleAudiovisuales({ detalle }) {
+  const d = detalle || {};
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+      <AnioBadge fechaInicio={d.fecha_inicio} fechaFin={d.fecha_fin} />
+      <span>{[d.tipo_contenido, d.estado].filter(Boolean).join(' · ') || '—'}</span>
+    </div>
+  );
+}
+
 export default function CampanaRow({ item }) {
   const cfg = AREA_COLOR[item.area_origen] || { bg: 'var(--bg-secondary)', fg: 'var(--text-secondary)' };
   return (
@@ -51,7 +63,13 @@ export default function CampanaRow({ item }) {
       </td>
       <td style={{ ...celda, maxWidth: 420, whiteSpace: 'pre-wrap' }}>{item.campana || '—'}</td>
       <td style={celda}>{alcanceLabel(item)}</td>
-      <td style={{ ...celda, color: 'var(--text-secondary)', fontSize: 13 }}>{detalleTexto(item)}</td>
+      <td style={{ ...celda, color: 'var(--text-secondary)', fontSize: 13 }}>
+        {item.area_origen === 'Audiovisuales' ? (
+          <DetalleAudiovisuales detalle={item.detalle} />
+        ) : (
+          detalleTexto(item)
+        )}
+      </td>
     </tr>
   );
 }
