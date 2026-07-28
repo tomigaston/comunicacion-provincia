@@ -6,7 +6,7 @@ import CoverageBadge from '../../components/CoverageBadge';
 import StatusBadge from '../../components/StatusBadge';
 import AnioBadge from '../../components/AnioBadge';
 import FiltroPeriodo from '../../components/FiltroPeriodo';
-import ListaLinks from '../../components/ListaLinks';
+import VerMaterial from '../../components/VerMaterial';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../../lib/fechas';
@@ -180,7 +180,7 @@ export default function DetalleLocalidad() {
                           <td style={{ ...td, whiteSpace: 'pre-wrap' }}>{v.tema_vigente}</td>
                           <td style={td}>{v.semanas_consecutivas}</td>
                           <td style={td}>
-                            <ListaLinks links={v.links_material} />
+                            <VerMaterial links={v.links_material} />
                           </td>
                         </tr>
                       ))}
@@ -264,7 +264,7 @@ export default function DetalleLocalidad() {
                           <StatusBadge estado={it.estado} />
                         </td>
                         <td style={td}>
-                          <ListaLinks links={it.links} />
+                          <VerMaterial links={it.links} />
                         </td>
                       </tr>
                     ))}

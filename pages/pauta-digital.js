@@ -216,7 +216,6 @@ export default function PautaDigital() {
                   {encabezado('fecha_creacion', 'Creación')}
                   {encabezado('finalizacion', 'Finalización')}
                   {encabezado('alcance', 'Alcance')}
-                  {encabezado('importe_gastado', 'Importe gastado')}
                   {encabezado('ctr', 'CTR')}
                 </tr>
               </thead>
@@ -233,11 +232,6 @@ export default function PautaDigital() {
                     <td style={td}>{formatearFechaCorta(p.fecha_creacion) || '—'}</td>
                     <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
                     <td style={td}>{p.alcance ? p.alcance.toLocaleString('es-AR') : '—'}</td>
-                    <td style={td}>
-                      {typeof p.importe_gastado === 'number'
-                        ? `$${Math.round(p.importe_gastado).toLocaleString('es-AR')}`
-                        : '—'}
-                    </td>
                     <td style={td}>{typeof p.ctr === 'number' ? `${(p.ctr * 100).toFixed(2)}%` : '—'}</td>
                   </tr>
                 ))}

@@ -1,5 +1,5 @@
 import AnioBadge from './AnioBadge';
-import ListaLinks from './ListaLinks';
+import VerMaterial from './VerMaterial';
 
 const AREA_COLOR = {
   'Medios tradicionales': { bg: '#e0edfb', fg: '#1976d2' },
@@ -16,11 +16,7 @@ function alcanceLabel(item) {
 function detalleTexto(item) {
   const d = item.detalle || {};
   if (item.area_origen === 'Pauta digital') {
-    const gasto =
-      typeof d.importe_gastado === 'number'
-        ? `$${Math.round(d.importe_gastado).toLocaleString('es-AR')}`
-        : null;
-    return [d.estado, gasto].filter(Boolean).join(' · ') || '—';
+    return d.estado || '—';
   }
   return '—';
 }
@@ -33,7 +29,7 @@ function DetalleMediosTradicionales({ detalle }) {
       <span>
         {d.tipo_medio || ''} · {semanas ? `${semanas} semana${semanas === 1 ? '' : 's'} seguidas` : ''}
       </span>
-      <ListaLinks links={d.links_material} />
+      <VerMaterial links={d.links_material} />
     </div>
   );
 }
@@ -44,7 +40,7 @@ function DetalleAudiovisuales({ detalle }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <AnioBadge fechaInicio={d.fecha_inicio} fechaFin={d.fecha_fin} />
       <span>{[d.tipo_contenido, d.estado].filter(Boolean).join(' · ') || '—'}</span>
-      <ListaLinks links={d.links} />
+      <VerMaterial links={d.links} />
     </div>
   );
 }
