@@ -6,22 +6,14 @@ import CoverageBadge from '../../components/CoverageBadge';
 import StatusBadge from '../../components/StatusBadge';
 import AnioBadge from '../../components/AnioBadge';
 import FiltroPeriodo from '../../components/FiltroPeriodo';
-import VerMaterial from '../../components/VerMaterial';
+import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
+import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../../lib/fechas';
+import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
-
-const TIPOS_MEDIO = [
-  { key: 'TV', label: 'TV' },
-  { key: 'RADIO', label: 'Radio' },
-  { key: 'WEB', label: 'Web' },
-  { key: 'CARTELERIA', label: 'Cartelería' },
-  { key: 'VIA_PUBLICA', label: 'Vía pública' },
-  { key: 'GRAFICA', label: 'Gráfica' },
-  { key: 'PANTALLA_LED', label: 'Pantalla LED' },
-];
 
 export default function DetalleLocalidad() {
   const router = useRouter();
@@ -36,6 +28,7 @@ export default function DetalleLocalidad() {
 
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
+  const [modalTimelineAbierto, setModalTimelineAbierto] = useState(false);
 
   // Datos base de la localidad, SIN filtrar por período — de acá sale tanto
   // lo que se termina mostrando (una vez aplicado el filtro) como la lista
@@ -154,6 +147,14 @@ export default function DetalleLocalidad() {
                   })}
                 </div>
 
+                <button
+                  type="button"
+                  onClick={() => setModalTimelineAbierto(true)}
+                  style={{ ...enlaceEstilo, display: 'block', marginBottom: 14 }}
+                >
+                  Ver línea de tiempo completa
+                </button>
+
                 {info.medios.vigentes.length === 0 ? (
                   <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                     No hay ningún tema vigente cargado para esta localidad.
@@ -192,6 +193,14 @@ export default function DetalleLocalidad() {
               <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
             )}
           </Seccion>
+
+          {modalTimelineAbierto && info.medios && (
+            <ModalLineaTiempoMedios
+              localidad={info.base.localidad}
+              semanasCargadas={datos[1].semanas_cargadas}
+              onCerrar={() => setModalTimelineAbierto(false)}
+            />
+          )}
 
           {info.piezasPauta.length > 0 && (
             <Seccion titulo="Pauta digital">

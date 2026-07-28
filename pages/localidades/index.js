@@ -9,16 +9,7 @@ import LocalidadCard from '../../components/LocalidadCard';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
-
-const TIPOS_MEDIO = [
-  { key: 'TV', label: 'TV' },
-  { key: 'RADIO', label: 'Radio' },
-  { key: 'WEB', label: 'Web' },
-  { key: 'CARTELERIA', label: 'Cartelería' },
-  { key: 'VIA_PUBLICA', label: 'Vía pública' },
-  { key: 'GRAFICA', label: 'Gráfica' },
-  { key: 'PANTALLA_LED', label: 'Pantalla LED' },
-];
+import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 export default function LocalidadesIndex() {
   const router = useRouter();

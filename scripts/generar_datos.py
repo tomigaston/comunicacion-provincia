@@ -216,6 +216,36 @@ def cargar_medios_tradicionales():
     return medios_tradicionales, movimientos_semana
 
 
+def cargar_historico_medios():
+    """Serie completa semana a semana por localidad + tipo de medio, para la
+    línea de tiempo ampliada (el resto del tablero solo usa el estado vigente
+    de Maestro_Vigente, que no alcanza para mostrar más de la semana actual)."""
+    xls = CONTEXTO / "Medios tradicionales.xlsx"
+    historico_df = pd.read_excel(xls, sheet_name="Historico")
+
+    por_localidad = {}
+    for _, row in historico_df.iterrows():
+        clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
+        entry = por_localidad.setdefault(clave, {
+            "departamento": str(row["Departamento"]).strip(),
+            "localidad": str(row["Localidad"]).strip(),
+            "series": {},
+        })
+        tipo_clave = COBERTURA_COLS.get(row["Tipo_Medio"], row["Tipo_Medio"])
+        entry["series"].setdefault(tipo_clave, []).append({
+            "fecha_snapshot": fecha_iso(row["Fecha_Snapshot"]),
+            "tema_campana": limpio(row["Tema_Campaña"]),
+            "links_material": lista_links(row["Link_Material"]),
+        })
+
+    localidades = list(por_localidad.values())
+    for loc in localidades:
+        for semanas in loc["series"].values():
+            semanas.sort(key=lambda s: s["fecha_snapshot"] or "")
+
+    return {"localidades": localidades}
+
+
 # ---------------------------------------------------------------------------
 # 3. Pauta digital
 # ---------------------------------------------------------------------------
@@ -422,6 +452,9 @@ def main():
     medios_tradicionales, movimientos_semana = cargar_medios_tradicionales()
     escribir_json("medios_tradicionales.json", medios_tradicionales)
     escribir_json("movimientos_semana.json", movimientos_semana)
+
+    historico_medios = cargar_historico_medios()
+    escribir_json("historico_medios.json", historico_medios)
 
     pauta_digital = cargar_pauta_digital(claves_60)
     escribir_json("pauta_digital.json", pauta_digital)
