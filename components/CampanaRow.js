@@ -1,4 +1,5 @@
 import AnioBadge from './AnioBadge';
+import ListaLinks from './ListaLinks';
 
 const AREA_COLOR = {
   'Medios tradicionales': { bg: '#e0edfb', fg: '#1976d2' },
@@ -14,10 +15,6 @@ function alcanceLabel(item) {
 
 function detalleTexto(item) {
   const d = item.detalle || {};
-  if (item.area_origen === 'Medios tradicionales') {
-    const semanas = d.semanas_consecutivas;
-    return `${d.tipo_medio || ''} · ${semanas ? `${semanas} semana${semanas === 1 ? '' : 's'} seguidas` : ''}`;
-  }
   if (item.area_origen === 'Pauta digital') {
     const gasto =
       typeof d.importe_gastado === 'number'
@@ -25,10 +22,20 @@ function detalleTexto(item) {
         : null;
     return [d.estado, gasto].filter(Boolean).join(' · ') || '—';
   }
-  if (item.area_origen === 'Audiovisuales') {
-    return [d.tipo_contenido, d.estado].filter(Boolean).join(' · ') || '—';
-  }
   return '—';
+}
+
+function DetalleMediosTradicionales({ detalle }) {
+  const d = detalle || {};
+  const semanas = d.semanas_consecutivas;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+      <span>
+        {d.tipo_medio || ''} · {semanas ? `${semanas} semana${semanas === 1 ? '' : 's'} seguidas` : ''}
+      </span>
+      <ListaLinks links={d.links_material} />
+    </div>
+  );
 }
 
 function DetalleAudiovisuales({ detalle }) {
@@ -37,6 +44,7 @@ function DetalleAudiovisuales({ detalle }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <AnioBadge fechaInicio={d.fecha_inicio} fechaFin={d.fecha_fin} />
       <span>{[d.tipo_contenido, d.estado].filter(Boolean).join(' · ') || '—'}</span>
+      <ListaLinks links={d.links} />
     </div>
   );
 }
@@ -66,6 +74,8 @@ export default function CampanaRow({ item }) {
       <td style={{ ...celda, color: 'var(--text-secondary)', fontSize: 13 }}>
         {item.area_origen === 'Audiovisuales' ? (
           <DetalleAudiovisuales detalle={item.detalle} />
+        ) : item.area_origen === 'Medios tradicionales' ? (
+          <DetalleMediosTradicionales detalle={item.detalle} />
         ) : (
           detalleTexto(item)
         )}

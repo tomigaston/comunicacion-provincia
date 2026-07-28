@@ -25,6 +25,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ - UPC SEDES",
           "link_material": "https://drive.google.com/file/d/1FMFbxtjk_mEb0zu3RXyxNGsf8KThWA95/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1FMFbxtjk_mEb0zu3RXyxNGsf8KThWA95/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -34,6 +37,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -43,6 +49,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -69,6 +78,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ SANTA ROSA DE CALAMUCHITA 1\nCBA- MIRÁ SANTA ROSA DE CALAMUCHITA 2",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1UVldv_g_sEDvCfNRsn2jnSJMo8Hzwf9N/view?usp=sharing \nhttps://drive.google.com/file/d/1qF72-mejsBx5znZuWesi7vXTLpGd_UJ7/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1UVldv_g_sEDvCfNRsn2jnSJMo8Hzwf9N/view?usp=sharing",
+            "https://drive.google.com/file/d/1qF72-mejsBx5znZuWesi7vXTLpGd_UJ7/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -78,6 +92,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ SANTA ROSA DE CALAMUCHITA 1/2",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link  \nhttps://drive.google.com/file/d/1rG7DLUotEuyVOoVBKBhZHRHYEYtw8T2i/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1rG7DLUotEuyVOoVBKBhZHRHYEYtw8T2i/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -87,6 +105,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -96,6 +117,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -122,6 +146,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1\nCBA- MIRÁ VILLA GENERAL BELGRANO 2",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/16ClsRyRPY-pLxIRLLjCe-M5eqsbaiibC/view?usp=sharing \nhttps://drive.google.com/file/d/1SDbH27EtWImBRstov8YkKYj3xnUzWPs9/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/16ClsRyRPY-pLxIRLLjCe-M5eqsbaiibC/view?usp=sharing",
+            "https://drive.google.com/file/d/1SDbH27EtWImBRstov8YkKYj3xnUzWPs9/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -131,6 +160,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1/2",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link \nhttps://drive.google.com/file/d/1ga-o28JktBX8OAgZm0zouDOGYKqIR8Zy/view?usp=drive_link \nhttps://drive.google.com/file/d/1K2XQQVhXEU8uMX8ETJtYSZwBi_P7fKju/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1ga-o28JktBX8OAgZm0zouDOGYKqIR8Zy/view?usp=drive_link",
+            "https://drive.google.com/file/d/1K2XQQVhXEU8uMX8ETJtYSZwBi_P7fKju/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -140,6 +174,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -149,6 +186,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -175,6 +215,17 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA - MIRÁ INFRAESTRUCTURA VIAL\nCBA - MIRÁ UPC 15 SEDES\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- ALTONIVELES/ BODEREAU\nCBA - PLAN OBRAS VIALES\nINAUGURACIÓN AV. PADRE LUCHESSE\nLOS GIGANTES\nEMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO",
           "link_material": "https://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing \nhttps://drive.google.com/file/d/1r_rk48obMNYVQnznSdc9YXjPYtirL3EO/view?usp=sharing \nhttps://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link\nhttps://drive.google.com/file/d/1PAXIXG-US6lMOhTI0YHRoaOuaA_s9BIS/view?usp=drive_link \nhttps://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link \nhttps://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link \nhttps://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing \nhttps://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing\nhttps://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing",
+            "https://drive.google.com/file/d/1r_rk48obMNYVQnznSdc9YXjPYtirL3EO/view?usp=sharing",
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+            "https://drive.google.com/file/d/1PAXIXG-US6lMOhTI0YHRoaOuaA_s9BIS/view?usp=drive_link",
+            "https://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link",
+            "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link",
+            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing",
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+            "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -184,6 +235,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -193,6 +247,11 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS BACHEO\nOBRAS LUMINARIAS\nOBRAS PLAZAS",
           "link_material": "https://drive.google.com/file/d/1x9VJiSV1F-GYVg0PHtH4_cSx2fJyhBUv/view?usp=drive_link\nhttps://drive.google.com/file/d/1ct413eURy1a29hyqOLXQFjvYCS0m0oLJ/view?usp=drive_link\nhttps://drive.google.com/file/d/1eOBoDGF0L9vo7a_xWbi4tlM3Ke_eP9rh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1x9VJiSV1F-GYVg0PHtH4_cSx2fJyhBUv/view?usp=drive_link",
+            "https://drive.google.com/file/d/1ct413eURy1a29hyqOLXQFjvYCS0m0oLJ/view?usp=drive_link",
+            "https://drive.google.com/file/d/1eOBoDGF0L9vo7a_xWbi4tlM3Ke_eP9rh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -202,6 +261,15 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL",
           "link_material": "https://drive.google.com/file/d/1WycRvRnhy44PqVFFJ710QTAANgp0cqqt/view?usp=drive_link  \nhttps://drive.google.com/file/d/1p82H0nYpX87jCv_h3ff7O4d1-hSyt8x-/view?usp=drive_link  \nhttps://drive.google.com/file/d/1LfJfBVPJFgspYzRuCWG2QRN2mK9fjAil/view?usp=drive_link  \nhttps://drive.google.com/file/d/18oJh_kkuNZUaWUOBcd6lXVlUqvJx2VKA/view?usp=drive_link  \nhttps://drive.google.com/file/d/1KZDLsNq0yElaUQzRNfkNDSFPUpnSJWko/view?usp=drive_link  \nhttps://drive.google.com/file/d/15HzcTkaekvpDsvwfTjBBuwF6UE2Fm_91/view?usp=drive_link \nhttps://drive.google.com/file/d/1Ny2rEZCDQOTuMF51KXrfOmS9nuUTqpGd/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1WycRvRnhy44PqVFFJ710QTAANgp0cqqt/view?usp=drive_link",
+            "https://drive.google.com/file/d/1p82H0nYpX87jCv_h3ff7O4d1-hSyt8x-/view?usp=drive_link",
+            "https://drive.google.com/file/d/1LfJfBVPJFgspYzRuCWG2QRN2mK9fjAil/view?usp=drive_link",
+            "https://drive.google.com/file/d/18oJh_kkuNZUaWUOBcd6lXVlUqvJx2VKA/view?usp=drive_link",
+            "https://drive.google.com/file/d/1KZDLsNq0yElaUQzRNfkNDSFPUpnSJWko/view?usp=drive_link",
+            "https://drive.google.com/file/d/15HzcTkaekvpDsvwfTjBBuwF6UE2Fm_91/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Ny2rEZCDQOTuMF51KXrfOmS9nuUTqpGd/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -211,6 +279,19 @@
           "tipo_medio": "TV",
           "tema_vigente": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL\nOBRAS VILLA ICHO CRUZ\nACUEDUCTO VILLA CARLOS PAZ\nOBRAS SAN ANTONIO DE ARREDONDO\nCOLECTORA CARLOS PAZ MALAGUEÑO",
           "link_material": "https://drive.google.com/file/d/1wgAlZBi3Y1miSP0SXIJwGLBDxmhlzz1F/view?usp=drive_link \nhttps://drive.google.com/file/d/1KdUSh1CaaEc74atiUTFi7Ori1D5cpBev/view?usp=drive_link \nhttps://drive.google.com/file/d/1DV3xttF6PHm7ehFsx_0s5Em9D4cWHh5q/view?usp=drive_link \nhttps://drive.google.com/file/d/1nL86KJ_IveR5fbp3WsS45IE-ZxGBQAsH/view?usp=drive_link  \nhttps://drive.google.com/file/d/1eRoun4p5eLUywkf1g5tIb3KKh_nB5XKX/view?usp=drive_link  \nhttps://drive.google.com/file/d/1uBUT8a8pAejNPjKbZl8aNXDVpyTOZBFx/view?usp=drive_link \nhttps://drive.google.com/file/d/1VyiEq1x-KhqPL7LheSYJETWdoHCHHL59/view?usp=drive_link\nhttps://drive.google.com/file/d/1wGFYmFNSpRq8tVnU9T5moFuK5biTaaFI/view?usp=drive_link \nhttps://drive.google.com/file/d/1AXscyQZvZbpvCqPGumIDjvK3h2cH0pz5/view?usp=drive_link \nhttps://drive.google.com/file/d/1FrMit4NQxkvbd0bJals5n62xtAV7BADJ/view?usp=drive_link\nhttps://drive.google.com/file/d/1c9kKt8sitNrqAS7-8TuaHqKO8y5yl0bd/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1wgAlZBi3Y1miSP0SXIJwGLBDxmhlzz1F/view?usp=drive_link",
+            "https://drive.google.com/file/d/1KdUSh1CaaEc74atiUTFi7Ori1D5cpBev/view?usp=drive_link",
+            "https://drive.google.com/file/d/1DV3xttF6PHm7ehFsx_0s5Em9D4cWHh5q/view?usp=drive_link",
+            "https://drive.google.com/file/d/1nL86KJ_IveR5fbp3WsS45IE-ZxGBQAsH/view?usp=drive_link",
+            "https://drive.google.com/file/d/1eRoun4p5eLUywkf1g5tIb3KKh_nB5XKX/view?usp=drive_link",
+            "https://drive.google.com/file/d/1uBUT8a8pAejNPjKbZl8aNXDVpyTOZBFx/view?usp=drive_link",
+            "https://drive.google.com/file/d/1VyiEq1x-KhqPL7LheSYJETWdoHCHHL59/view?usp=drive_link",
+            "https://drive.google.com/file/d/1wGFYmFNSpRq8tVnU9T5moFuK5biTaaFI/view?usp=drive_link",
+            "https://drive.google.com/file/d/1AXscyQZvZbpvCqPGumIDjvK3h2cH0pz5/view?usp=drive_link",
+            "https://drive.google.com/file/d/1FrMit4NQxkvbd0bJals5n62xtAV7BADJ/view?usp=drive_link",
+            "https://drive.google.com/file/d/1c9kKt8sitNrqAS7-8TuaHqKO8y5yl0bd/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -220,6 +301,17 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- CBA- ALTONIVELES MALVINAS- VELEZ S./ BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- EMPLEO +26\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nLUNETAS- CBA - MIRÁ INFRAESTRUCTURA VIAL\nLUNETAS- CBA - PLAN OBRAS VIALES\nLUNETAS - BOLETO EDUCATIVO CORDOBES",
           "link_material": "https://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing   \nttps://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing    \nhttps://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link  \nhttps://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link \nhttps://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing \nhttps://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing \nhttps://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing \nhttps://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link \nhttps://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing",
+            "ttps://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing",
+            "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link",
+            "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link",
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+            "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing",
+            "https://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing",
+            "https://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link",
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -229,6 +321,11 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS BACHEO\nOBRAS PLAZA\nOBRAS ILUMINARIA",
           "link_material": "https://drive.google.com/file/d/1SSlmpTcTcBzwCxwS9nlGxAfNoe3bdt4j/view?usp=drive_link\nhttps://drive.google.com/file/d/17hzcQQVAGctS1Cs5zaiWHyCdVvAnX0KB/view?usp=drive_link\nhttps://drive.google.com/file/d/1kZi_ds_zRestClCvVj9W6WJ1nA6xL24s/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1SSlmpTcTcBzwCxwS9nlGxAfNoe3bdt4j/view?usp=drive_link",
+            "https://drive.google.com/file/d/17hzcQQVAGctS1Cs5zaiWHyCdVvAnX0KB/view?usp=drive_link",
+            "https://drive.google.com/file/d/1kZi_ds_zRestClCvVj9W6WJ1nA6xL24s/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -255,6 +352,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -264,6 +365,10 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26\nLUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=sharing \nhttps://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=sharing",
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -290,6 +395,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -316,6 +425,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "BOLETO EDUCATIVO CORDOBÉS\nEMPLEO +26",
           "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link\nhttps://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -325,6 +438,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -334,6 +451,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ JESÚS MARÍA 1\nCBA- MIRÁ JESÚS MARÍA 2",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing      \nhttps://drive.google.com/file/d/16Ra7lkBc1gqg4ffmCqzurlp2aj2IN_x0/view?usp=drivesdk        \nhttps://drive.google.com/file/d/1KFIOth09efZM2NrztRsa3azq_0SHQ0BW/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/16Ra7lkBc1gqg4ffmCqzurlp2aj2IN_x0/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1KFIOth09efZM2NrztRsa3azq_0SHQ0BW/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -343,6 +465,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ JESÚS MARÍA 1\nCBA- MIRÁ JESÚS MARÍA 2",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/1L9YZxDzZPd4FwUFFE1tdVHb9yjROW90P/view?usp=drivesdk         \nhttps://drive.google.com/file/d/1d7HPi874vxvIDKmdYSzMf474GS5P7mh4/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1L9YZxDzZPd4FwUFFE1tdVHb9yjROW90P/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1d7HPi874vxvIDKmdYSzMf474GS5P7mh4/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -352,6 +479,10 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26\nLUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link \nhttps://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -361,6 +492,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -387,6 +521,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- ALTO NIVEL VALLE ESCONDIDO",
           "link_material": "https://drive.google.com/file/d/1jhZygu4f2D_7SaCttZrirT-YfNqGLova/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1jhZygu4f2D_7SaCttZrirT-YfNqGLova/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -396,6 +533,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -405,6 +546,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ LA CALERA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing     \n https://drive.google.com/file/d/1olPCkvXUZTleIVo9It1K1yTnxNcT9UmW/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1olPCkvXUZTleIVo9It1K1yTnxNcT9UmW/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -414,6 +559,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ LA CALERA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link       \nhttps://drive.google.com/file/d/1L9YZxDzZPd4FwUFFE1tdVHb9yjROW90P/view?usp=drivesdk         \nhttps://drive.google.com/file/d/1d7HPi874vxvIDKmdYSzMf474GS5P7mh4/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1L9YZxDzZPd4FwUFFE1tdVHb9yjROW90P/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1d7HPi874vxvIDKmdYSzMf474GS5P7mh4/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -423,6 +573,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/149K2YvxLJyYhIKwJrQEhuD_fAi-8HSq5/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/149K2YvxLJyYhIKwJrQEhuD_fAi-8HSq5/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -432,6 +585,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -458,6 +614,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "ALTONIVEL MALVINAS ARGENTINAS",
           "link_material": "https://drive.google.com/file/d/1rjE_Q17legMQXGntfA-OjURwq8wgtH7A/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1rjE_Q17legMQXGntfA-OjURwq8wgtH7A/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -484,6 +643,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "PADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1upxWwK2LYKRQ33fQkb8hrhmg5QH_lQwa/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1upxWwK2LYKRQ33fQkb8hrhmg5QH_lQwa/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -493,6 +655,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- DUPLICACIÓN CALZADA- AV. BODEREAU",
           "link_material": "https://drive.google.com/file/d/1r_ajCck5mdv1ihfQN80F_odifJ8yltPF/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1r_ajCck5mdv1ihfQN80F_odifJ8yltPF/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -502,6 +667,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -528,6 +696,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "PADRE LUCHESSE INAUGURACIÓN\nBOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/10xtiMI5UWwDeiSsXgv18D579qijxDEii/view?usp=drive_link\nhttps://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/10xtiMI5UWwDeiSsXgv18D579qijxDEii/view?usp=drive_link",
+            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -537,6 +709,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -546,6 +722,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -555,6 +734,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -564,6 +746,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -590,6 +775,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -616,6 +805,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "PADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -625,6 +817,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -634,6 +829,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES - EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -643,6 +841,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -669,6 +870,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "PADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -678,6 +882,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -687,6 +894,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nPADRE LUCHESSE INAUGURACIÓN\nCBA- MIRÁ UNQUILLO",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1uLVbE3Oy3JEQnuly5ZWhgDNK3n67Ai3o/view?usp=drive_link\nhttps://drive.google.com/file/d/1AoR3bizPYPVOljPXsH7vDZ0khr7xYjGZ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1uLVbE3Oy3JEQnuly5ZWhgDNK3n67Ai3o/view?usp=drive_link",
+            "https://drive.google.com/file/d/1AoR3bizPYPVOljPXsH7vDZ0khr7xYjGZ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -696,6 +908,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nPADRE LUCHESSE INAUGURACIÓN\nCBA- MIRÁ UNQUILLO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1l4tLpmPPtUfygKyS8fiJ1SArm8UPEc_3/view?usp=sharing     \nhttps://drive.google.com/file/d/1rbAjXNTsmpHB4WAcypC_tO5C6JL2WUCB/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1l4tLpmPPtUfygKyS8fiJ1SArm8UPEc_3/view?usp=sharing",
+            "https://drive.google.com/file/d/1rbAjXNTsmpHB4WAcypC_tO5C6JL2WUCB/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -705,6 +922,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES - EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -731,6 +951,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "PADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -740,6 +963,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -749,6 +975,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -758,6 +988,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nPADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1uLVbE3Oy3JEQnuly5ZWhgDNK3n67Ai3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1uLVbE3Oy3JEQnuly5ZWhgDNK3n67Ai3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -767,6 +1001,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nPADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link \nhttps://drive.google.com/file/d/1l4tLpmPPtUfygKyS8fiJ1SArm8UPEc_3/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1l4tLpmPPtUfygKyS8fiJ1SArm8UPEc_3/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -776,6 +1014,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- PADRE LUCHESSE INAUGURACIÓN",
           "link_material": "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -785,6 +1026,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -811,6 +1055,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ CRUZ DEL EJE- SEDE UPC\nEMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1S01B3Csi5PoMY1IIYsgEI9VZ48_SF2m3/view?usp=sharing\nhttps://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1S01B3Csi5PoMY1IIYsgEI9VZ48_SF2m3/view?usp=sharing",
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -820,6 +1068,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -829,6 +1081,13 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nGAS PARA CRECER \nLOS GIGANTES\nCBA-MIRÁ CRUZ DEL EJE 1\nCBA- MIRÁ CRUZ DEL EJE 2",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing  \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=sharing  \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link \nhttps://drive.google.com/file/d/1xeYGz6qkkNL4VxdntjpIBLcVBptUeMSe/view?usp=drive_link \nhttps://drive.google.com/file/d/1kc-zMfIhVNB9cr6Ju7-bGru9CuZ6nwk1/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1xeYGz6qkkNL4VxdntjpIBLcVBptUeMSe/view?usp=drive_link",
+            "https://drive.google.com/file/d/1kc-zMfIhVNB9cr6Ju7-bGru9CuZ6nwk1/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -838,6 +1097,12 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA-MIRÁ CRUZ DEL EJE 1\nCBA- MIRÁ CRUZ DEL EJE 2",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link \nhttps://drive.google.com/file/d/1ni746p5MOy0-jJgWxsN424QzxEU53_Fq/view?usp=drive_link \nhttps://drive.google.com/file/d/1jfICRAnQOMHuzp54yytx-qJjmLF-43WC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link",
+            "https://drive.google.com/file/d/1ni746p5MOy0-jJgWxsN424QzxEU53_Fq/view?usp=drive_link",
+            "https://drive.google.com/file/d/1jfICRAnQOMHuzp54yytx-qJjmLF-43WC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -847,6 +1112,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -873,6 +1141,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: VILLA HUIDOBRO SUBOFICIALES\nGAS PARA CRECER",
           "link_material": "https://drive.google.com/file/d/1f6TgCs2C4w-MLxZnvNEwxD_2KEi79o1v/view?usp=drive_link \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1f6TgCs2C4w-MLxZnvNEwxD_2KEi79o1v/view?usp=drive_link",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -882,6 +1154,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: VILLA HUIDOBRO SUBOFICIALES",
           "link_material": "https://drive.google.com/file/d/1mn-VtqxWWmM6nZUKcOXFI02-FCqGAeKP/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1mn-VtqxWWmM6nZUKcOXFI02-FCqGAeKP/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -908,6 +1183,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN \nEMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing\nhttps://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing",
+            "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -917,6 +1196,10 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "PRUEBAS APRENDER\nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link \nhttps://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link",
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -926,6 +1209,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -935,6 +1222,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: ENTREGA DE 410 COMPUTADORA\nVISITA: ACUERDO CON UNMV\nCBA- MIRÁ VILLA MARÍA 2",
           "link_material": "https://drive.google.com/file/d/1jKiPMpCF_oeSt-21JwVfbIJ4hR-Fk61r/view?usp=sharingg\nhttps://drive.google.com/file/d/1UTufNGOD8EoeV6LyPyUx7O3bHb-_hsUG/view?usp=sharing \nhttps://drive.google.com/file/d/1OVgqObEvdNDd9t9BNFpDU_F2PG4NsOy7/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1jKiPMpCF_oeSt-21JwVfbIJ4hR-Fk61r/view?usp=sharingg",
+            "https://drive.google.com/file/d/1UTufNGOD8EoeV6LyPyUx7O3bHb-_hsUG/view?usp=sharing",
+            "https://drive.google.com/file/d/1OVgqObEvdNDd9t9BNFpDU_F2PG4NsOy7/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -944,6 +1236,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: ENTREGA DE 410 COMPUTADORA\nVISITA: ACUERDO CON UNMV\nCBA- MIRÁ VILLA MARÍA 2",
           "link_material": "https://drive.google.com/file/d/13k_1CriWsdkdDu_T6jYMdBJQvZ9oMXKy/view?usp=drive_link \nhttps://drive.google.com/file/d/1CdbAVP8kuGEXlBaXY_eArm5G2Pey1zKM/view?usp=drive_link \nhttps://drive.google.com/file/d/1dKLdQycYo154bKLM7yn352KJBLsTMrSQ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/13k_1CriWsdkdDu_T6jYMdBJQvZ9oMXKy/view?usp=drive_link",
+            "https://drive.google.com/file/d/1CdbAVP8kuGEXlBaXY_eArm5G2Pey1zKM/view?usp=drive_link",
+            "https://drive.google.com/file/d/1dKLdQycYo154bKLM7yn352KJBLsTMrSQ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -953,6 +1250,10 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN \nLUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1IgUxcrtaQ4Wz8Uqw9Ze-awcL_c_eszhQ/view?usp=drive_link\nhttps://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1IgUxcrtaQ4Wz8Uqw9Ze-awcL_c_eszhQ/view?usp=drive_link",
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -962,6 +1263,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -988,6 +1292,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
           "link_material": "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -997,6 +1304,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: OBRAS ESCUELA REMEDIOS Y APORTES PARA TERMINAL\nVISITA: COMPUTADORAS PARA ESCUELAS, APORTES PARA INFRAESTRUCTURA\nCBA- MIRÁ VILLA MARÍA 2",
           "link_material": "https://drive.google.com/file/d/1Fa1hpp75df6uV-ktpE5G5p5wvjBt3yQN/view?usp=sharing \nhttps://drive.google.com/file/d/1Vx4azyxGaFBlu5-GJlOL3fJHD_jxznwJ/view?usp=sharing \nhttps://drive.google.com/file/d/1OVgqObEvdNDd9t9BNFpDU_F2PG4NsOy7/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Fa1hpp75df6uV-ktpE5G5p5wvjBt3yQN/view?usp=sharing",
+            "https://drive.google.com/file/d/1Vx4azyxGaFBlu5-GJlOL3fJHD_jxznwJ/view?usp=sharing",
+            "https://drive.google.com/file/d/1OVgqObEvdNDd9t9BNFpDU_F2PG4NsOy7/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1006,6 +1318,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: OBRAS ESCUELA REMEDIOS Y APORTES PARA TERMINAL\nVISITA: COMPUTADORAS PARA ESCUELAS, APORTES PARA INFRAESTRUCTURA\nCBA- MIRÁ VILLA MARÍA 2",
           "link_material": "https://drive.google.com/file/d/11da_-BnK0BisxC9s8zcrdZleQxChgtQ5/view?usp=sharing\nhttps://drive.google.com/file/d/1GUW98udKcgav9PB8KI8tA8See89Bbvu7/view?usp=sharing\nhttps://drive.google.com/file/d/1dKLdQycYo154bKLM7yn352KJBLsTMrSQ/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/11da_-BnK0BisxC9s8zcrdZleQxChgtQ5/view?usp=sharing",
+            "https://drive.google.com/file/d/1GUW98udKcgav9PB8KI8tA8See89Bbvu7/view?usp=sharing",
+            "https://drive.google.com/file/d/1dKLdQycYo154bKLM7yn352KJBLsTMrSQ/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1015,6 +1332,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1041,6 +1361,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/117o8r6ChYZ2rCpW_ja924QeFb_HBRTuM/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/117o8r6ChYZ2rCpW_ja924QeFb_HBRTuM/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1050,6 +1373,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1059,6 +1386,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nGAS PARA CRECER\nCBA- MIRÁ DEAN FUNES",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=sharing        \nhttps://drive.google.com/file/d/1R6uekmWYy51sIrTHWjl7gr8QQHGoH-kO/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=sharing",
+            "https://drive.google.com/file/d/1R6uekmWYy51sIrTHWjl7gr8QQHGoH-kO/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1068,6 +1400,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ DEAN FUNES",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/19O5-qLA3GVaG_H024-XYgctw7B6ByMdB/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/19O5-qLA3GVaG_H024-XYgctw7B6ByMdB/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1077,6 +1413,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1086,6 +1425,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1112,6 +1454,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1121,6 +1466,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1130,6 +1478,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1156,6 +1507,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1165,6 +1520,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1174,6 +1532,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1200,6 +1561,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1209,6 +1573,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1218,6 +1585,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1227,6 +1598,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1236,6 +1610,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1245,6 +1622,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1271,6 +1651,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ - LEONES- ESTACION TRANSFORMADORA\nMIRÁ - UPC SEDE",
           "link_material": "https://drive.google.com/file/d/1lBsZr45jXcmpjzauRLmP381hgWL1XImr/view?usp=drive_link\nhttps://drive.google.com/file/d/1SxwkIHaHd5yNSJzM1IBhOYqqHxvT8d6n/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1lBsZr45jXcmpjzauRLmP381hgWL1XImr/view?usp=drive_link",
+            "https://drive.google.com/file/d/1SxwkIHaHd5yNSJzM1IBhOYqqHxvT8d6n/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1280,6 +1664,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: MARCOS JUÁREZ UPC\nVISITA: MARCOS JUÁREZ HOSPITAL",
           "link_material": "https://drive.google.com/file/d/1TblhePJkfA0D6H0b-h4K-xhPOqBg7WMu/view?usp=sharing \nhttps://drive.google.com/file/d/1s7sRHEZYCZi0LA_FVjgqQ_wmbNwU8sx4/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1TblhePJkfA0D6H0b-h4K-xhPOqBg7WMu/view?usp=sharing",
+            "https://drive.google.com/file/d/1s7sRHEZYCZi0LA_FVjgqQ_wmbNwU8sx4/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1289,6 +1677,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: MARCOS JUÁREZ UPC\nVISITA: MARCOS JUÁREZ HOSPITAL",
           "link_material": "https://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link\nhttps://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link",
+            "https://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1298,6 +1690,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1324,6 +1719,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ - MARCOS JUÁREZ- CENTRO REHABILITACIÓN\nEMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1XJIfMoeYF6lVaJefhm4QJFFYfmhf-Az8/view?usp=drive_link\nhttps://drive.google.com/file/d/1FH2TYKqyX1HPJerJ1RkvCLoO2vdk0xRp/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1XJIfMoeYF6lVaJefhm4QJFFYfmhf-Az8/view?usp=drive_link",
+            "https://drive.google.com/file/d/1FH2TYKqyX1HPJerJ1RkvCLoO2vdk0xRp/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1333,6 +1732,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1342,6 +1745,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: MARCOS JUÁREZ BOMBEROS\nVISITA: MARCOS JUÁREZ UPC\nVISITA: MARCOS JUÁREZ HOSPITAL",
           "link_material": "https://drive.google.com/file/d/1STpTsSHpxvlnxoxpJ-mNu07pTyGFO-0V/view?usp=drive_link \nhttps://drive.google.com/file/d/1TblhePJkfA0D6H0b-h4K-xhPOqBg7WMu/view?usp=drive_link \nhttps://drive.google.com/file/d/1s7sRHEZYCZi0LA_FVjgqQ_wmbNwU8sx4/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1STpTsSHpxvlnxoxpJ-mNu07pTyGFO-0V/view?usp=drive_link",
+            "https://drive.google.com/file/d/1TblhePJkfA0D6H0b-h4K-xhPOqBg7WMu/view?usp=drive_link",
+            "https://drive.google.com/file/d/1s7sRHEZYCZi0LA_FVjgqQ_wmbNwU8sx4/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1351,6 +1759,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: MARCOS JUÁREZ BOMBEROS\nVISITA: MARCOS JUÁREZ UPC\nVISITA: MARCOS JUÁREZ HOSPITAL",
           "link_material": "https://drive.google.com/file/d/1fdV0ljmWMWLkJyAw2qvQnuUEjkfk7PDX/view?usp=drive_link  \nhttps://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link\nhttps://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1fdV0ljmWMWLkJyAw2qvQnuUEjkfk7PDX/view?usp=drive_link",
+            "https://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link",
+            "https://drive.google.com/file/d/1A0XkdRyDosGAWFNPqRyR4295EGzDul-M/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1360,6 +1773,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1386,6 +1802,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "LOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1395,6 +1814,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \nhttps://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1421,6 +1844,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "LOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1430,6 +1856,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \nhttps://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1439,6 +1869,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1465,6 +1898,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ LABOULAYE- UPC SEDE",
           "link_material": "https://drive.google.com/file/d/11xAZYQdbTYgNFlJZ4uo6imzQkPa9ec79/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/11xAZYQdbTYgNFlJZ4uo6imzQkPa9ec79/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1474,6 +1910,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1483,6 +1923,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA\nCBA- MIRÁ LABOULAYE ACTUALIZADO",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \nhttps://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1b1Z-V6IHVsK02vQzUzjs9XtnGcWXc9Xs/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1b1Z-V6IHVsK02vQzUzjs9XtnGcWXc9Xs/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1492,6 +1937,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ LABOULAYE ACTUALIZADO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link \nhttps://drive.google.com/file/d/1Tub_Je7V60gR_k2qKDDsoMkBSPO3Cgl6/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Tub_Je7V60gR_k2qKDDsoMkBSPO3Cgl6/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1501,6 +1950,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1527,6 +1979,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1536,6 +1992,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing  \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link \nhttps://drive.google.com/file/d/1uAkWWOrFyrGiTRgZ2WN95m2zvvJJWLr5/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1uAkWWOrFyrGiTRgZ2WN95m2zvvJJWLr5/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1545,6 +2006,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1571,6 +2035,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "AUTOVÍA PUNILLA - CONSEJO DE SEGURIDAD",
           "link_material": "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1580,6 +2047,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1589,6 +2060,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drivesdk   \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link\nhttps://drive.google.com/file/d/1use1OR1M42f0MgsMm_OnxveghQ6EbjWf/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drivesdk",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1use1OR1M42f0MgsMm_OnxveghQ6EbjWf/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1598,6 +2074,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link \nhttps://drive.google.com/file/d/1l4gCcOcWIuknHdascI3SekPrjcNVJYUE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link",
+            "https://drive.google.com/file/d/1l4gCcOcWIuknHdascI3SekPrjcNVJYUE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1607,6 +2088,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1616,6 +2100,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1642,6 +2129,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1651,6 +2142,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link\nhttps://drive.google.com/file/d/1dIP1hUFS_yKX3PVEM8-XPZXThYujb7dC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1dIP1hUFS_yKX3PVEM8-XPZXThYujb7dC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1660,6 +2156,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link      \nhttps://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link  \nhttps://drive.google.com/file/d/1HU7UqqT1AtVl9objRB24Ry1hRsyV9VhI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link",
+            "https://drive.google.com/file/d/1HU7UqqT1AtVl9objRB24Ry1hRsyV9VhI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1669,6 +2170,10 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26\nLUNETAS - BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing \nhttps://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing",
+            "https://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1695,6 +2200,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "AUTOVÍA PUNILLA - CONSEJO DE SEGURIDAD",
           "link_material": "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1704,6 +2212,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1713,6 +2225,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES - EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1739,6 +2254,13 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "LOS GIGANTES\nBOLETO EDUCATIVO CORDOBÉS\nMIRÁ VILLA CARLOS PAZ - SEDE UPC\nMIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nMIRÁ VILLA CARLOS PAZ - CUENCA LAGO",
           "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link\nhttps://drive.google.com/file/d/1sum5Kk4NS2--s3ty_2N0-2oxOkxB4bPQ/view\nhttps://drive.google.com/file/d/1TCzJaSjVwvffny4FRYNVv14psPq4qmfK/view\nhttps://drive.google.com/file/d/1RAfRUkQpGfWwF2j9LaJUGi5L-zMI_Igi/view\nhttps://drive.google.com/file/d/1b7YmmLWWuqAI-YCD-yo824KOH4haD704/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link",
+            "https://drive.google.com/file/d/1sum5Kk4NS2--s3ty_2N0-2oxOkxB4bPQ/view",
+            "https://drive.google.com/file/d/1TCzJaSjVwvffny4FRYNVv14psPq4qmfK/view",
+            "https://drive.google.com/file/d/1RAfRUkQpGfWwF2j9LaJUGi5L-zMI_Igi/view",
+            "https://drive.google.com/file/d/1b7YmmLWWuqAI-YCD-yo824KOH4haD704/view"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1748,6 +2270,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1757,6 +2282,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1766,6 +2295,14 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ",
           "link_material": "https://drive.google.com/file/d/1FGbNspzHPbqjM8L_CqjJeELMnkEQilhk/view?usp=drive_link\nhttps://drive.google.com/file/d/17wJK1qCghjtb-saM0yxnYz2avKau7Rvi/view?usp=drive_link \nhttps://drive.google.com/file/d/1vmPXb4lNEtVmAfJ4Th_yanmC29eTsebP/view?usp=drive_link \nhttps://drive.google.com/file/d/1l7hv8lpHL1FKOHaFbNqi87VFfrqPNFYe/view?usp=drive_link \nhttps://drive.google.com/file/d/14vOAEmfNrJu4LWEyR1jS9ondJlgVSSPt/view?usp=drive_link \nhttps://drive.google.com/file/d/19IYvjNQHjgLzZ8ZL-d8zRaGNCOUPF3F4/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1FGbNspzHPbqjM8L_CqjJeELMnkEQilhk/view?usp=drive_link",
+            "https://drive.google.com/file/d/17wJK1qCghjtb-saM0yxnYz2avKau7Rvi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1vmPXb4lNEtVmAfJ4Th_yanmC29eTsebP/view?usp=drive_link",
+            "https://drive.google.com/file/d/1l7hv8lpHL1FKOHaFbNqi87VFfrqPNFYe/view?usp=drive_link",
+            "https://drive.google.com/file/d/14vOAEmfNrJu4LWEyR1jS9ondJlgVSSPt/view?usp=drive_link",
+            "https://drive.google.com/file/d/19IYvjNQHjgLzZ8ZL-d8zRaGNCOUPF3F4/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1775,6 +2312,14 @@
           "tipo_medio": "TV",
           "tema_vigente": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ",
           "link_material": "https://drive.google.com/file/d/10tqsSdZwvkLGhpPg9ZzKpj0re6x5H_E9/view?usp=drive_link\nhttps://drive.google.com/file/d/1vC0UGLI8mfz7z_jiRR6wNdYuTjqfc_uo/view?usp=drive_link \nhttps://drive.google.com/file/d/1DSHoVRqjkeG5Yg2V7zDSZ9P96yGHNFlX/view?usp=drive_link \nhttps://drive.google.com/file/d/1k1r2r9rec4SLx6xayq38ONw3vIo85Wpj/view?usp=drive_link \nhttps://drive.google.com/file/d/1gvWfVf2N_il4DjK-T9W6TJGcWKzLLSS9/view?usp=drive_link \nhttps://drive.google.com/file/d/1o4--oftE7yzhFXF7IgUCzLf2VWSwBZHt/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/10tqsSdZwvkLGhpPg9ZzKpj0re6x5H_E9/view?usp=drive_link",
+            "https://drive.google.com/file/d/1vC0UGLI8mfz7z_jiRR6wNdYuTjqfc_uo/view?usp=drive_link",
+            "https://drive.google.com/file/d/1DSHoVRqjkeG5Yg2V7zDSZ9P96yGHNFlX/view?usp=drive_link",
+            "https://drive.google.com/file/d/1k1r2r9rec4SLx6xayq38ONw3vIo85Wpj/view?usp=drive_link",
+            "https://drive.google.com/file/d/1gvWfVf2N_il4DjK-T9W6TJGcWKzLLSS9/view?usp=drive_link",
+            "https://drive.google.com/file/d/1o4--oftE7yzhFXF7IgUCzLf2VWSwBZHt/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1784,6 +2329,11 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nVALLAS - MIRÁ VILLA CARLOS PAZ - CUENCA LAGO",
           "link_material": "https://drive.google.com/file/d/1JBCX9oDaEM-I0gpMDk0CQDhk_hGIfcqY/view\nhttps://drive.google.com/file/d/1EDzs2XgdqkcZWZIUFYDHbmU6bbtAI8Fe/view\nhttps://drive.google.com/file/d/1GsAzjnbCMumyMQakmkY1IeYgJ3-e9sJs/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1JBCX9oDaEM-I0gpMDk0CQDhk_hGIfcqY/view",
+            "https://drive.google.com/file/d/1EDzs2XgdqkcZWZIUFYDHbmU6bbtAI8Fe/view",
+            "https://drive.google.com/file/d/1GsAzjnbCMumyMQakmkY1IeYgJ3-e9sJs/view"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1793,6 +2343,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1819,6 +2372,11 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nCBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
           "link_material": "https://drive.google.com/file/d/1l8c0pFSvgzO2a1LraR7JXLBjGhOcnOBG/view?usp=drive_link\nhttps://drive.google.com/file/d/1Sqyek6BwG__7ZTa5eyUiKm_H06l80C4A/view?usp=drive_link\nhttps://drive.google.com/file/d/1Hedd9dkyZueVoYNY0-TganrukiJB3-WV/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1l8c0pFSvgzO2a1LraR7JXLBjGhOcnOBG/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Sqyek6BwG__7ZTa5eyUiKm_H06l80C4A/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Hedd9dkyZueVoYNY0-TganrukiJB3-WV/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1828,6 +2386,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -1837,6 +2398,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1846,6 +2411,13 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "PAVIMENTACIÓN 100 CUADRAS\nFIRMA DE CONVENIO PARA OBRAS DE INFRAESTRUCTURA\nCENTRO DE SALUD MUNICIPAL RÍO CUARTO\nILUMINACIÓN CIRCUNVALACIÓN RÍO CUARTO\nCEDIS",
           "link_material": "https://drive.google.com/file/d/1RXAhkbGFk9LlNUj1kTGR7MZEpf9r3vHf/view?usp=drive_link \nhttps://drive.google.com/file/d/1hjanZnEZQ8o6sgF2xRo9uaNmGcUgW1sq/view?usp=drive_link \nhttps://drive.google.com/file/d/1Z_hrpywKYomyAJI8r_T2jGqKjMdvoN36/view?usp=drive_link \nhttps://drive.google.com/file/d/1_0-3pXDYse6hJhbWl6wa8JIb8FqhJfXr/view?usp=drive_link \nhttps://drive.google.com/file/d/1KRWOu2glyU9NeWZFsHZpjYpSZQW4c280/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1RXAhkbGFk9LlNUj1kTGR7MZEpf9r3vHf/view?usp=drive_link",
+            "https://drive.google.com/file/d/1hjanZnEZQ8o6sgF2xRo9uaNmGcUgW1sq/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Z_hrpywKYomyAJI8r_T2jGqKjMdvoN36/view?usp=drive_link",
+            "https://drive.google.com/file/d/1_0-3pXDYse6hJhbWl6wa8JIb8FqhJfXr/view?usp=drive_link",
+            "https://drive.google.com/file/d/1KRWOu2glyU9NeWZFsHZpjYpSZQW4c280/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1855,6 +2427,13 @@
           "tipo_medio": "TV",
           "tema_vigente": "PAVIMENTACIÓN 100 CUADRAS\nFIRMA DE CONVENIO PARA OBRAS DE INFRAESTRUCTURA\nCENTRO DE SALUD MUNICIPAL RÍO CUARTO\nILUMINACIÓN CIRCUNVALACIÓN RÍO CUARTO\nCEDIS",
           "link_material": "https://drive.google.com/file/d/1k1KHv91yMtQx-RlQ7EuCsIakLPXtdHHx/view?usp=drive_link \nhttps://drive.google.com/file/d/1JZWmdSBKWysCI9LZ2-te04MUH4A13l6f/view?usp=drive_link \nhttps://drive.google.com/file/d/1Pz4jCnPW_tcnnVplTaC6662im2asnifY/view?usp=drive_link \nhttps://drive.google.com/file/d/1asaIJ7EYQMkCAk3cmbsZ7_cr6uRccipL/view?usp=drive_link \nhttps://drive.google.com/file/d/1_mt_GdX_admdmaj_Q3MziwQcRojRvaa2/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1k1KHv91yMtQx-RlQ7EuCsIakLPXtdHHx/view?usp=drive_link",
+            "https://drive.google.com/file/d/1JZWmdSBKWysCI9LZ2-te04MUH4A13l6f/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Pz4jCnPW_tcnnVplTaC6662im2asnifY/view?usp=drive_link",
+            "https://drive.google.com/file/d/1asaIJ7EYQMkCAk3cmbsZ7_cr6uRccipL/view?usp=drive_link",
+            "https://drive.google.com/file/d/1_mt_GdX_admdmaj_Q3MziwQcRojRvaa2/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1864,6 +2443,13 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
           "link_material": "https://drive.google.com/file/d/1dJsf0uUPo31_bMdNxYddU7Dfru6hk9J9/view?usp=sharing\nhttps://drive.google.com/file/d/1E3wLWsT9FVyjCwkQiJAgxJJYvSx7eM1Y/view?usp=drive_link\nhttps://drive.google.com/file/d/1Q7wmBQu2MldR8gwtBuIb8AZFYqctIfR4/view?usp=drive_link\nhttps://drive.google.com/file/d/1RnLClauKuJwwZINCc1nubMs_JcRN1CGQ/view?usp=drive_link\nhttps://drive.google.com/file/d/16bO5RMvx_fl_xn1j8UtG48GcLktb3zXR/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1dJsf0uUPo31_bMdNxYddU7Dfru6hk9J9/view?usp=sharing",
+            "https://drive.google.com/file/d/1E3wLWsT9FVyjCwkQiJAgxJJYvSx7eM1Y/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Q7wmBQu2MldR8gwtBuIb8AZFYqctIfR4/view?usp=drive_link",
+            "https://drive.google.com/file/d/1RnLClauKuJwwZINCc1nubMs_JcRN1CGQ/view?usp=drive_link",
+            "https://drive.google.com/file/d/16bO5RMvx_fl_xn1j8UtG48GcLktb3zXR/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1873,6 +2459,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1899,6 +2488,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ- CIRCUNVALACIÓN RÍO CUARTO",
           "link_material": "https://drive.google.com/file/d/1zlJ6jXdwpzKfJpBHSV1FHMY2mK5uPZcY/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1zlJ6jXdwpzKfJpBHSV1FHMY2mK5uPZcY/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1908,6 +2500,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "ILUMINACIÓN PRIMER TRAMO RÍO IV",
           "link_material": "https://drive.google.com/file/d/1uGlxUg5ts2-qDv_qDLuLgqxHxdLR38_w/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1uGlxUg5ts2-qDv_qDLuLgqxHxdLR38_w/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1917,6 +2512,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1926,6 +2525,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO CUARTO 1",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing   \nhttps://drive.google.com/file/d/1xs76npD9P9r8cTKK0a8tF_eegy3HzwN5/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1xs76npD9P9r8cTKK0a8tF_eegy3HzwN5/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1935,6 +2538,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO CUARTO 1",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link  \nhttps://drive.google.com/file/d/17ca6-15Q3sf5_SlftiHLK0yb8Vbu5-7b/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/17ca6-15Q3sf5_SlftiHLK0yb8Vbu5-7b/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1944,6 +2551,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1970,6 +2580,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ- AUTOPISTA SAN FRANCISCO/ CÓRDOBA",
           "link_material": "https://drive.google.com/file/d/1FwaZP59qGAQLkSDBFUVtJacw4vn_ItQR/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1FwaZP59qGAQLkSDBFUVtJacw4vn_ItQR/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1979,6 +2592,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1H6uc16jGNSn7NMQLubxobZAIJ_ppWE9i/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1H6uc16jGNSn7NMQLubxobZAIJ_ppWE9i/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1988,6 +2604,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nGAS PARA CRECER",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -1997,6 +2617,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2006,6 +2629,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2032,6 +2658,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF\nCBA- MIRÁ- AUTOPISTA SAN FRANCISCO CÓRDOBA",
           "link_material": "https://drive.google.com/file/d/1QzmqzxadZWj3qk8b52dk55r3YHccTefU/view?usp=sharing\nhttps://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1QzmqzxadZWj3qk8b52dk55r3YHccTefU/view?usp=sharing",
+            "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2041,6 +2671,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO + 26",
           "link_material": "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2050,6 +2683,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2059,6 +2696,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nGAS PARA CRECER \nCBA- MIRÁ RÍO PRIMERO",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \nhttps://drive.google.com/file/d/1LsiLPxGo9DckwvS24l9-ymEGfNLBlIkF/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1LsiLPxGo9DckwvS24l9-ymEGfNLBlIkF/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2068,6 +2710,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO PRIMERO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1_6K_umeiZYfNFqyJdH4lZ23wgmSQBpvE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1_6K_umeiZYfNFqyJdH4lZ23wgmSQBpvE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2077,6 +2723,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2103,6 +2752,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ- AUTOPISTA RUTA 19",
           "link_material": "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2112,6 +2764,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA \nGAS PARA CRECER",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=drive_link \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=drive_link",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2121,6 +2777,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2147,6 +2806,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2156,6 +2819,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \n https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2182,6 +2849,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2191,6 +2861,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2200,6 +2874,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2209,6 +2886,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2218,6 +2898,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2227,6 +2910,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2253,6 +2939,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2262,6 +2951,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2271,6 +2964,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2280,6 +2976,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2289,6 +2988,10 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES- EMPLEO +26\nLUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link\nhttps://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1NF0JOOkDjmOqxhrt6QjZ26gf39X3QRuJ/view?usp=drive_link",
+            "https://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2298,6 +3001,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2324,6 +3030,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO + 26",
           "link_material": "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1dHBhNH_QNj4xqg204PPkwTi1KcDFM4KK/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2333,6 +3042,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2342,6 +3054,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2351,6 +3066,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2360,6 +3078,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2386,6 +3107,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2395,6 +3120,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1K2ppXze0CMxP-TixUOkMLoOOb36fW3XI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2404,6 +3132,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA RÍO SEGUNDO: OBRAS EN CALCHÍN, COLAZO, COLONIA VIDELA, IMPURA, LAS JUNTURAS Y MANFREDI",
           "link_material": "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1pyT0Qjo5-plvFSiyVq-eGdR7xH0onWtK/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2413,6 +3144,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2439,6 +3173,12 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ MINA CLAVERO",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link  \nhttps://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing  \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link \nhttps://drive.google.com/file/d/14jrwuGVYGJfaCe2XIfim-VrFeDODQFKd/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/14jrwuGVYGJfaCe2XIfim-VrFeDODQFKd/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2448,6 +3188,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ MINA CLAVERO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link  \nhttps://drive.google.com/file/d/12-1mfJ4jWErdZnOk6sYrJb6w1tNTLjjI/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link",
+            "https://drive.google.com/file/d/12-1mfJ4jWErdZnOk6sYrJb6w1tNTLjjI/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2457,6 +3202,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2483,6 +3231,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA\nLOS GIGANTES",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link   \nhttps://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing   \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2492,6 +3245,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2518,6 +3274,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -2527,6 +3286,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -2536,6 +3298,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2545,6 +3311,12 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA DOLORES",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link  \nhttps://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing  \nhttps://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link    \nhttps://drive.google.com/file/d/1epwp0vdPJBaztweYGiAeSF4cnADGBiUN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/10Di3DZxSOIwcLIyAesaUvIJjPCFt3Izi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1epwp0vdPJBaztweYGiAeSF4cnADGBiUN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2554,6 +3326,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA DOLORES",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link  \nhttps://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link   \nhttps://drive.google.com/file/d/1fXUWqp_N02X7i4_2HOUDKj8fpEyKdV1_/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/10Vb2UNsBHA22GfpXIabrNn-Y8DIYZi9W/view?usp=drive_link",
+            "https://drive.google.com/file/d/1fXUWqp_N02X7i4_2HOUDKj8fpEyKdV1_/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2563,6 +3340,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2589,6 +3369,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2598,6 +3382,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ARROYITO",
           "link_material": "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link \nhttps://drive.google.com/file/d/1IRE5jk304cjsz5LiFvz4krj4Jdd05JrD/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link",
+            "https://drive.google.com/file/d/1IRE5jk304cjsz5LiFvz4krj4Jdd05JrD/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2607,6 +3395,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ARROYITO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1JRzyHzwTC4HHsSEcsgxVZg_sfSsD-4RH/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1JRzyHzwTC4HHsSEcsgxVZg_sfSsD-4RH/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2616,6 +3408,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2642,6 +3437,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ LAS VARILLAS- SEDE UPC",
           "link_material": "https://drive.google.com/file/d/1jyPm9bZSlURtcezzH7seduU4c0uXcUPS/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1jyPm9bZSlURtcezzH7seduU4c0uXcUPS/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2651,6 +3449,10 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "OBRAS QUE TRANSFORMAN\nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1quDmBAWESGCzyGo8oDL7WjGTgBCVkSyh/view?usp=drive_link\nhttps://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1quDmBAWESGCzyGo8oDL7WjGTgBCVkSyh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2660,6 +3462,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ LAS VARILLAS ACTUALIZADO",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1zMuZsTDU8ZvqHQilFQCxM1xVODt0hWu1/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1zMuZsTDU8ZvqHQilFQCxM1xVODt0hWu1/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2669,6 +3475,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ LAS VARILLAS ACTUALIZADO",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1kLWyLtC53kLoVPKAu-taBJ6joFQKXoCK/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1kLWyLtC53kLoVPKAu-taBJ6joFQKXoCK/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2678,6 +3488,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2704,6 +3517,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA-MIRÁ MORTEROS- UPC SEDE",
           "link_material": "https://drive.google.com/file/d/1kn1ZMTqdYimTutg6JEMJitpxKijTYwuQ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kn1ZMTqdYimTutg6JEMJitpxKijTYwuQ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2713,6 +3529,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -2722,6 +3541,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2731,6 +3554,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ MORTEROS",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1menIxQPWILbA6W_bjJk2gvobh0EEUUFE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1menIxQPWILbA6W_bjJk2gvobh0EEUUFE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2740,6 +3567,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ MORTEROS",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link \nhttps://drive.google.com/file/d/1rgeMT0Uu14X1Fgr0a1bv6VPAsP3nagVZ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1rgeMT0Uu14X1Fgr0a1bv6VPAsP3nagVZ/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2749,6 +3580,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2775,6 +3609,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "MIRÁ - SAN FCO - AUTOPISTA RUTA 19\nMIRÁ - SAN FCO - UPC SEDE",
           "link_material": "https://drive.google.com/file/d/1CU5HghT6tzT_c1zC-T6M1wCNG7E95vPC/view?usp=drive_link\nhttps://drive.google.com/file/d/1wLu2VjQpqyeFp3U3JBcraGlsMYcIXI6H/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1CU5HghT6tzT_c1zC-T6M1wCNG7E95vPC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1wLu2VjQpqyeFp3U3JBcraGlsMYcIXI6H/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2784,6 +3622,10 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "PRUEBAS APRENDER\nAUTOVÍA 19",
           "link_material": "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link   \nhttps://drive.google.com/file/d/1Y50w_YSmJyZmhIf9YXeRw5Q9GhhiR8UV/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Y50w_YSmJyZmhIf9YXeRw5Q9GhhiR8UV/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -2793,6 +3635,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2802,6 +3648,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ SAN FRANCISCO 1\nCBA- MIRÁ SAN FRANCISCO 2",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1mlW3TPzxpcNPucBsENfKxoCB4UIXZDHX/view?usp=drive_link\nhttps://drive.google.com/file/d/1pNfknpDg40KGz4gSoqhckk4oxnN8fOn1/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1mlW3TPzxpcNPucBsENfKxoCB4UIXZDHX/view?usp=drive_link",
+            "https://drive.google.com/file/d/1pNfknpDg40KGz4gSoqhckk4oxnN8fOn1/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2811,6 +3662,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ SAN FRANCISCO 1\nCBA- MIRÁ SAN FRANCISCO 2",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link  \nhttps://drive.google.com/file/d/1oLAw5kA3TbpuEREZDbsuy46V9amEYE7h/view?usp=drive_link \nhttps://drive.google.com/file/d/1sqNxygWfR5fxOcAFHW5HoCVr0crzhM3S/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1oLAw5kA3TbpuEREZDbsuy46V9amEYE7h/view?usp=drive_link",
+            "https://drive.google.com/file/d/1sqNxygWfR5fxOcAFHW5HoCVr0crzhM3S/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2820,6 +3676,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2846,6 +3705,11 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)",
           "link_material": "https://drive.google.com/file/d/1Btcyxv5vteiVBxOQdrPeGlTKw_xEnpH8/view?usp=sharing\nhttps://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link\nhttps://drive.google.com/file/d/1LrJE8DuG_o01OyVfJ8ElzloFeiVmTE12/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1Btcyxv5vteiVBxOQdrPeGlTKw_xEnpH8/view?usp=sharing",
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+            "https://drive.google.com/file/d/1LrJE8DuG_o01OyVfJ8ElzloFeiVmTE12/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2855,6 +3719,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -2864,6 +3731,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2873,6 +3744,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ALTA GRACIA",
           "link_material": "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link \nhttps://drive.google.com/file/d/1F4xO7n_99aOVIDYMNOHZr0f8Yz9bO7sg/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1hB04vzY4a8L3pqYZbeREKTC_Qh4vv01P/view?usp=drive_link",
+            "https://drive.google.com/file/d/1F4xO7n_99aOVIDYMNOHZr0f8Yz9bO7sg/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2882,6 +3757,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ALTA GRACIA",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link  \nhttps://drive.google.com/file/d/13zUfQBJFWhwigj7vZr8cqm1JxbTuWOzA/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/13zUfQBJFWhwigj7vZr8cqm1JxbTuWOzA/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2891,6 +3770,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2900,6 +3782,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2926,6 +3811,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ MALAGUEÑO",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1vLH--HrUDWdAurcOnX7imrQgUWaodpKF/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1vLH--HrUDWdAurcOnX7imrQgUWaodpKF/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2952,6 +3841,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2961,6 +3853,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2970,6 +3866,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nGAS PARA CRECER",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -2996,6 +3896,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ ALMAFUERTE (SIST. SANEAMIENTO CLOACAL)",
           "link_material": "https://drive.google.com/file/d/1EZ6_nmjeGw5beEEuGBuD6I-6LqJriN-2/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EZ6_nmjeGw5beEEuGBuD6I-6LqJriN-2/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3005,6 +3908,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ALMAFUERTE",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1Z-Z1IrWXOMHFXmcwkNrCC0nS3-K3V5fO/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1Z-Z1IrWXOMHFXmcwkNrCC0nS3-K3V5fO/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3014,6 +3921,10 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ ALMAFUERTE",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/1BJYX-EIns65t5hUn6Hnc-6Hg9rKLVrOS/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1BJYX-EIns65t5hUn6Hnc-6Hg9rKLVrOS/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3023,6 +3934,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3032,6 +3946,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3058,6 +3975,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\n https://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk  \n  https://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3067,6 +3989,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk         \n https://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3076,6 +4003,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3085,6 +4015,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3111,6 +4044,9 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3120,6 +4056,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/117o8r6ChYZ2rCpW_ja924QeFb_HBRTuM/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/117o8r6ChYZ2rCpW_ja924QeFb_HBRTuM/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3129,6 +4068,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3138,6 +4081,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk  \nhttps://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3147,6 +4095,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link    \nhttps://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk         \nhttps://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3156,6 +4109,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3182,6 +4138,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -3191,6 +4150,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3200,6 +4163,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing\nhttps://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk  \nhttps://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1T7nFC2cLlOCdNlaSSBMBbVGYs2Jy1F1H/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1IH2RV8GKUl60jINBIpGI5LFgVjo853UJ/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3209,6 +4177,11 @@
           "tipo_medio": "TV",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nCBA- MIRÁ RÍO TERCERO 2\nCBA- MIRÁ RÍO TERCERO 1",
           "link_material": "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link     \nhttps://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk         \n https://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk",
+          "links_material": [
+            "https://drive.google.com/file/d/1JimARlL1VBaH2Bac8hnIkPVUe6upNhQh/view?usp=drive_link",
+            "https://drive.google.com/file/d/1y7NXqrg_n17-P9uQsxQrV_Q-C6rPMrXO/view?usp=drivesdk",
+            "https://drive.google.com/file/d/1ynG4cN8Hq8-itwQ8ziD4zgv5_tfLhKXb/view?usp=drivesdk"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3218,6 +4191,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3227,6 +4203,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1d3nh_QaykhhgQwgSvyjVlVGP-xadrq3o/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3253,6 +4232,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3262,6 +4245,11 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "GAS PARA CRECER\nCÓRDOBA ME CAPACITA\nCBA- MIRÁ SINSACATE\nCBA- MIRÁ VILLA DEL TOTORAL",
           "link_material": "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link \n https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing \nhttps://drive.google.com/file/d/1QPZhQJ_ER10v_VJVf_yblSGLPfbNxZ-7/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=sharing",
+            "https://drive.google.com/file/d/1QPZhQJ_ER10v_VJVf_yblSGLPfbNxZ-7/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3271,6 +4259,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES - EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3297,6 +4288,10 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "CÓRDOBA ME CAPACITA\nGAS PARA CRECER",
           "link_material": "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=drive_link \nhttps://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EI8O8VZ9ONMwxZhZAxGfHgnTWvQdU-YS/view?usp=drive_link",
+            "https://drive.google.com/file/d/1B7AbBLPezS9sNP2Hj1gIvAnBUK7aPAUC/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3306,6 +4301,9 @@
           "tipo_medio": "VIA PÚBLICA",
           "tema_vigente": "SÉXTUPLES - EMPLEO +26",
           "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3332,6 +4330,10 @@
           "tipo_medio": "CARTELERÍA",
           "tema_vigente": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL\nCBA- MIRÁ BELL VILLE- UPC SEDE",
           "link_material": "https://drive.google.com/file/d/18a9hkZgrwSYy697G6I8FMi7b_M6uiArN/view?usp=sharing \nhttps://drive.google.com/file/d/1R9wyLVsi9LEe6DIrg6cG50-itoQNj6xW/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/18a9hkZgrwSYy697G6I8FMi7b_M6uiArN/view?usp=sharing",
+            "https://drive.google.com/file/d/1R9wyLVsi9LEe6DIrg6cG50-itoQNj6xW/view?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3341,6 +4343,9 @@
           "tipo_medio": "GRÁFICA",
           "tema_vigente": "CÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1j1TJkbbjmOoKXQZXhdyKzJQU5GYR69gn/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-24",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 1,
@@ -3350,6 +4355,10 @@
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA",
           "link_material": "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link\nhttps://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view?usp=drive_link",
+            "https://drive.google.com/file/d/1qt50o2jVw-h3W71XGwfZNukDAMLIRa_O/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3359,6 +4368,9 @@
           "tipo_medio": "RADIO",
           "tema_vigente": "VISITA: BELL VILLE TEATRO COLISEO Y SOCIEDAD ITALIANA",
           "link_material": "https://drive.google.com/file/d/1r_lCbvrHevsZJf8eaRgaMtgqY65L7krz/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1r_lCbvrHevsZJf8eaRgaMtgqY65L7krz/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3368,6 +4380,9 @@
           "tipo_medio": "TV",
           "tema_vigente": "VISITA: BELL VILLE TEATRO COLISEO Y SOCIEDAD ITALIANA",
           "link_material": "https://drive.google.com/file/d/1yJiOrON5ftROCnJgk3a0UGEO_TmeEL2_/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1yJiOrON5ftROCnJgk3a0UGEO_TmeEL2_/view?usp=drive_link"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,
@@ -3377,6 +4392,9 @@
           "tipo_medio": "WEB",
           "tema_vigente": "OBRAS QUE TRANSFORMAN",
           "link_material": "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/drive/folders/1S1_rYE3HT8sweBJYed1QJ0sBs2LM5SaW?usp=sharing"
+          ],
           "fecha_inicio_racha": "2026-07-17",
           "fecha_ultima_semana": "2026-07-24",
           "semanas_consecutivas": 2,

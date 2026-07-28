@@ -64,6 +64,19 @@ def estado_por_fecha(fecha_fin):
     return "Vigente" if ts.date() >= HOY else "Finalizada"
 
 
+def lista_links(v):
+    """Las celdas de links traen varios links separados por salto de línea (uno por
+    cada tema/campaña de la fila). Antes solo se guardaba el string crudo completo
+    y el frontend lo usaba como href de un único <a>, por eso solo abría el primero.
+    Acá se devuelve una lista de links ya separados y limpios, para que el frontend
+    los liste todos (uno por renglón) sin tener que parsear nada."""
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return []
+    texto = str(v)
+    partes = re.split(r"[\r\n]+", texto)
+    return [p.strip() for p in partes if p.strip()]
+
+
 def limpio(v):
     """NaN/NaT -> None; numpy scalars -> tipos nativos; cualquier otra cosa rara (ej. celdas
     de Excel con formato hora, tipo datetime.time) -> string, para que siempre sea serializable."""
@@ -142,7 +155,8 @@ def cargar_medios_tradicionales():
         vigentes_por_localidad.setdefault(clave, []).append({
             "tipo_medio": limpio(row["Tipo_Medio"]),
             "tema_vigente": limpio(row["Tema_Vigente"]),
-            "link_material": limpio(row["Link_Material"]),
+            "link_material": limpio(row["Link_Material"]),  # string crudo, se mantiene por compatibilidad
+            "links_material": lista_links(row["Link_Material"]),  # lista lista para listar en el front
             "fecha_inicio_racha": fecha_iso(row["Fecha_Inicio_Racha"]),
             "fecha_ultima_semana": fecha_iso(row["Fecha_Ultima_Semana"]),
             "semanas_consecutivas": limpio(row["Semanas_Consecutivas"]),
@@ -314,7 +328,8 @@ def cargar_audiovisuales():
             "fecha_inicio": fecha_iso(row["Fecha_Inicio"]),
             "fecha_fin": fecha_iso(row["Fecha_Fin"]),
             "estado": estado_por_fecha(row["Fecha_Fin"]),
-            "link": limpio(row["Link"]),
+            "link": limpio(row["Link"]),  # string crudo, se mantiene por compatibilidad
+            "links": lista_links(row["Link"]),  # lista lista para listar en el front (por si trae más de uno)
             "copy": limpio(row["Copy"]),
             "sugerencias_pauta": limpio(row["Sugerencias_Pauta"]),
             "notas": limpio(row["Notas"]),
@@ -342,6 +357,7 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
                     "semanas_consecutivas": v["semanas_consecutivas"],
                     "estado_semana": v["estado_semana"],
                     "link_material": v["link_material"],
+                    "links_material": v["links_material"],
                 },
             })
 
@@ -380,6 +396,7 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
                 "fecha_inicio": item["fecha_inicio"],
                 "fecha_fin": item["fecha_fin"],
                 "link": item["link"],
+                "links": item["links"],
             },
         })
 
