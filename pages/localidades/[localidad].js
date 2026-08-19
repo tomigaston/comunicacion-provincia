@@ -15,6 +15,44 @@ import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
+// Chips de canal del bloque Pauta digital, mismo patrón visual que los chips
+// de TIPOS_MEDIO de Medios tradicionales. IG/FB/YT salen de las columnas de
+// link propias (ya vienen resueltas a null salvo que contengan un link http
+// real, ver limpiar_link() en generar_datos.py); Google Ads no tiene columna
+// de link propia en el excel fuente, así que se usa PLATAFORMA="Google Ads"
+// como señal de que la pieza es de ese canal.
+const CANALES_PAUTA = [
+  { key: 'ig', label: 'Instagram' },
+  { key: 'fb', label: 'Facebook' },
+  { key: 'yt', label: 'YouTube' },
+  { key: 'google', label: 'Google (Search/Display)' },
+];
+
+function canalesDePieza(p) {
+  const canales = [];
+  if (p.link_ig) canales.push('ig');
+  if (p.link_fb) canales.push('fb');
+  if (p.link_yt) canales.push('yt');
+  if (p.plataforma === 'Google Ads') canales.push('google');
+  return canales;
+}
+
+/** Badges de canal para una fila de la tabla (subconjunto de CANALES_PAUTA
+ * que aplica a esa pieza puntual, no toda la localidad). */
+function CanalBadges({ pieza }) {
+  const canales = canalesDePieza(pieza);
+  if (canales.length === 0) return <span style={{ color: 'var(--text-tertiary)' }}>—</span>;
+  return (
+    <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+      {canales.map((key) => (
+        <span key={key} style={badgeCanal}>
+          {CANALES_PAUTA.find((c) => c.key === key).label.split(' ')[0]}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export default function DetalleLocalidad() {
   const router = useRouter();
   const slug = typeof router.query.localidad === 'string' ? router.query.localidad : '';
@@ -81,6 +119,14 @@ export default function DetalleLocalidad() {
       ),
     };
   }, [info, ventana]);
+
+  // Canales con al menos una pieza dentro del período elegido (mismo cálculo
+  // que ya filtra visible.piezasPauta), para los chips del bloque Pauta
+  // digital.
+  const canalesActivos = useMemo(
+    () => new Set(visible ? visible.piezasPauta.flatMap(canalesDePieza) : []),
+    [visible]
+  );
 
   return (
     <Layout title={info && info.base ? info.base.localidad : 'Localidad'}>
@@ -204,6 +250,27 @@ export default function DetalleLocalidad() {
 
           {info.piezasPauta.length > 0 && (
             <Seccion titulo="Pauta digital">
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 18 }}>
+                {CANALES_PAUTA.map((canal) => {
+                  const presente = canalesActivos.has(canal.key);
+                  return (
+                    <span
+                      key={canal.key}
+                      style={{
+                        padding: '5px 12px',
+                        borderRadius: 999,
+                        fontSize: 12.5,
+                        fontWeight: 600,
+                        background: presente ? 'var(--cov-alta-bg)' : 'var(--bg-secondary)',
+                        color: presente ? 'var(--cov-alta)' : 'var(--text-tertiary)',
+                      }}
+                    >
+                      {presente ? '✓' : '—'} {canal.label}
+                    </span>
+                  );
+                })}
+              </div>
+
               {visible.piezasPauta.length === 0 ? (
                 <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                   Ninguna pieza de pauta digital cae dentro del período elegido (hay{' '}
@@ -214,26 +281,26 @@ export default function DetalleLocalidad() {
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
                       <th style={th}>Campaña</th>
-                      <th style={th}>Área</th>
-                      <th style={th}>Ámbito</th>
-                      <th style={th}>Estado</th>
-                      <th style={th}>Creación</th>
-                      <th style={th}>Finalización</th>
-                      <th style={th}>Alcance</th>
+                      <th style={th}>Canal</th>
+                      <th style={th}>Tipo de pauta</th>
+                      <th style={th}>Plataforma</th>
+                      <th style={th}>Vigente hasta</th>
+                      <th style={th}>Material</th>
                     </tr>
                   </thead>
                   <tbody>
                     {visible.piezasPauta.map((p, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                         <td style={td}>{p.campana}</td>
-                        <td style={td}>{p.area_tematica || '—'}</td>
-                        <td style={td}>{p.alcance_tipo === 'departamento' ? 'Departamento' : 'Localidad'}</td>
                         <td style={td}>
-                          <StatusBadge estado={p.estado} />
+                          <CanalBadges pieza={p} />
                         </td>
-                        <td style={td}>{formatearFechaCorta(p.fecha_creacion) || '—'}</td>
+                        <td style={td}>{p.tipo_pauta || '—'}</td>
+                        <td style={td}>{p.plataforma || '—'}</td>
                         <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
-                        <td style={td}>{p.alcance ? p.alcance.toLocaleString('es-AR') : '—'}</td>
+                        <td style={td}>
+                          <VerMaterial links={p.links_material} />
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -307,3 +374,11 @@ function Seccion({ titulo, children }) {
 
 const th = { padding: '8px 10px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
 const td = { padding: '10px 10px', fontSize: 13.5 };
+const badgeCanal = {
+  padding: '2px 8px',
+  borderRadius: 999,
+  fontSize: 11.5,
+  fontWeight: 600,
+  background: 'var(--bg-secondary)',
+  color: 'var(--text-secondary)',
+};
