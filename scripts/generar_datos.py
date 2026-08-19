@@ -301,11 +301,24 @@ ALCANCE_A_TIPO = {
     "PROVINCIA": "provincia",
 }
 
+# Medios Digitales.xlsx (Meta Ads, esquema viejo) se corta acá por Finalización
+# —mismo campo que ya se usa para ordenar/filtrar pauta digital en toda la
+# app—: lo posterior lo cubre Pauta RRSS_GLOBAL.xlsx, la fuente nueva. Las dos
+# planillas se solapan en la ventana 3/7-27/7; para no duplicar, esa ventana
+# la gana siempre la fuente nueva.
+CORTE_HISTORICO_PAUTA_DIGITAL = "2026-07-02"
 
-def cargar_pauta_digital(claves_60):
+
+def cargar_pauta_digital_historico(claves_60):
+    """Fuente vieja (Meta Ads, Ene-Jul). Esquema propio, se mantiene tal cual
+    —no se lo fuerza al esquema nuevo— para todo lo anterior al corte."""
     df = pd.read_excel(CONTEXTO / "Medios Digitales.xlsx", sheet_name="Pauta Digital Curada")
     piezas = []
     for _, row in df.iterrows():
+        finalizacion = fecha_iso(row["Finalización"])
+        if finalizacion and finalizacion > CORTE_HISTORICO_PAUTA_DIGITAL:
+            continue  # lo cubre la fuente nueva, evita doble conteo
+
         parseo = parsear_nombre_anuncio(row["Nombre del anuncio"])
         alcance_detectado = limpio(row["Alcance_Detectado (auditoría)"])
         depto = limpio(row["Departamento"])
@@ -320,6 +333,7 @@ def cargar_pauta_digital(claves_60):
             en_60 = any(normalizar(depto) == d for d, _ in claves_60)
 
         piezas.append({
+            "fuente": "historico",
             "codigo_pieza": parseo["codigo_pieza"],
             "nombre_anuncio": limpio(row["Nombre del anuncio"]),
             "area_tematica": parseo["area_tematica"],
@@ -334,7 +348,7 @@ def cargar_pauta_digital(claves_60):
             "inicio_informe": fecha_iso(row["Inicio del informe"]),
             "fin_informe": fecha_iso(row["Fin del informe"]),
             "fecha_creacion": fecha_iso(row["Fecha de creación"]),
-            "finalizacion": fecha_iso(row["Finalización"]),
+            "finalizacion": finalizacion,
             "estado": estado_por_fecha(row["Finalización"]),
             "alcance": limpio(row["Alcance"]),
             "frecuencia": limpio(row["Frecuencia"]),
@@ -346,8 +360,217 @@ def cargar_pauta_digital(claves_60):
             "tipo_presupuesto": limpio(row["Tipo de presupuesto del conjunto de anuncios"]),
             "clics": limpio(row["Clics en el enlace"]),
             "ctr": limpio(row["CTR (todos)"]),
+            "links_material": [],
         })
-    return {"piezas": piezas}
+    return piezas
+
+
+# --- Fuente nueva: Pauta RRSS_GLOBAL.xlsx (desde el 3/7/2026) --------------
+#
+# Esquema totalmente distinto al histórico: geografía en texto libre
+# ("LOCALIDAD, DEPARTAMENTO, PROVINCIA DE CÓRDOBA, ARGENTINA" / "TODAS LAS
+# LOCALIDADES" / código de subcircuito de Capital / vacío), CAMPAÑA con
+# variantes de mayúsculas/tildes, y hasta 4 columnas que pueden traer el link
+# real de cada pieza.
+
+CODIGO_CIRCUITO_RE = re.compile(r"^\d{3,4}[A-Za-z]?\s*-")
+ALIAS_LOCALIDAD_PAUTA_GLOBAL = {"CORDOBA CAPITAL": "CORDOBA"}
+
+
+def _departamento_candidato(depto_raw):
+    """'DEPARTAMENTO DE SAN JUSTO, PROVINCIA DE CÓRDOBA, ARGENTINA' -> 'SAN JUSTO'
+    'DEPARTAMENTO CAPITAL, ...' -> 'CAPITAL' (algunos deptos no llevan 'DE').
+    None si la celda no tiene el prefijo 'DEPARTAMENTO' (ej. 'PROVINCIA DE
+    CÓRDOBA, ARGENTINA' sola, que no identifica un departamento puntual)."""
+    if depto_raw is None or (isinstance(depto_raw, float) and pd.isna(depto_raw)):
+        return None
+    primero = str(depto_raw).split(",")[0].strip()
+    m = re.match(r"^DEPARTAMENTO\s+(DE\s+)?(.+)$", primero, flags=re.IGNORECASE)
+    return m.group(2).strip() if m else None
+
+
+def clasificar_geografia_pauta_global(depto_raw, loc_raw, localidades_60_normalizadas):
+    """Reglas de clasificación de LOCALIDAD / SUBCIRCUITO, en este orden:
+    1) DEPARTAMENTO sin "CÓRDOBA" (ej. Santa Fe, Entre Ríos) -> excluida.
+    2) Código de subcircuito de Capital (ej. "010A - CABILDO") -> localidad
+       Córdoba (Capital no distingue circuito en este tablero).
+    3) "TODAS LAS LOCALIDADES" -> ámbito provincia.
+    4) "X, DEPARTAMENTO, PROVINCIA..." -> candidata = texto antes de la
+       primera coma; si matchea una de las 60 -> ámbito localidad; si no
+       -> fallback a ámbito departamento (NO se crea localidad nueva).
+    5) Vacío pero con DEPARTAMENTO -> ámbito departamento.
+    Devuelve localidad/departamento en forma NORMALIZADA (sin tildes,
+    mayúscula) — el caller la resuelve a la forma oficial de Localidades(1).
+    """
+    if "CORDOBA" not in normalizar(depto_raw):
+        return {"excluida": True}
+
+    depto_candidato = _departamento_candidato(depto_raw)
+    loc_str = None if (loc_raw is None or (isinstance(loc_raw, float) and pd.isna(loc_raw))) else str(loc_raw).strip()
+
+    if loc_str and CODIGO_CIRCUITO_RE.match(loc_str):
+        return {
+            "excluida": False, "ambito": "localidad", "localidad": "CORDOBA",
+            "departamento": None, "circuito_codigo_original": loc_str,
+        }
+
+    if loc_str == "TODAS LAS LOCALIDADES":
+        return {"excluida": False, "ambito": "provincia", "localidad": None, "departamento": None}
+
+    if loc_str:
+        candidata = loc_str.split(",")[0].strip()
+        n_candidata = normalizar(candidata)
+        n_candidata = ALIAS_LOCALIDAD_PAUTA_GLOBAL.get(n_candidata, n_candidata)
+        if n_candidata in localidades_60_normalizadas:
+            return {"excluida": False, "ambito": "localidad", "localidad": n_candidata, "departamento": None}
+        # Existe pero no es una de las 60 -> fallback a Departamento, regla
+        # fija del proyecto: nunca se crea una localidad nueva.
+        return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
+
+    if depto_candidato:
+        return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
+
+    return {"excluida": False, "ambito": None, "localidad": None, "departamento": None}
+
+
+def elegir_forma_canonica(variantes):
+    """variantes: lista de (texto_crudo, cantidad_de_apariciones), todos el
+    mismo valor salvo mayúsculas/tildes (ya agrupados por su forma
+    normalizada). Prioridad: 1) que tenga alguna minúscula —señal de que se
+    tipeó bien, no en caps lock—; 2) más apariciones; 3) orden alfabético
+    como desempate final y determinístico (ej. "MAMÓGRAFO APROSS" vs typo
+    "MAMÓGRAFÓ APROSS", empatadas en mayúscula y cantidad: gana la primera
+    en orden de código, que acá es la bien escrita)."""
+    def clave(v):
+        texto, cantidad = v
+        todo_mayuscula = texto == texto.upper()
+        return (todo_mayuscula, -cantidad, texto)
+    return sorted(variantes, key=clave)[0][0]
+
+
+def construir_mapa_formas_canonicas(serie):
+    """Agrupa los valores de una columna por su forma normalizada (sin
+    tildes/mayúscula) y elige una forma canónica por grupo — usado para
+    CAMPAÑA, PLATAFORMA y TIPO DE PAUTA, que traen las mismas variantes de
+    mayúsculas/tildes para un mismo valor (ej. "Meta"/"META", "Dark
+    Post"/"DARK POST")."""
+    grupos = {}
+    for texto, cantidad in serie.dropna().value_counts().items():
+        grupos.setdefault(normalizar(texto), []).append((texto, cantidad))
+    return {clave: elegir_forma_canonica(variantes) for clave, variantes in grupos.items()}
+
+
+def _forma_canonica(mapa, valor_crudo):
+    return mapa.get(normalizar(valor_crudo), valor_crudo) if valor_crudo else valor_crudo
+
+
+def limpiar_link(v):
+    """None si la celda es '-'/vacía o no contiene 'http' (Tarea 4: LINK
+    MATERIAL/IG/FB/YT pueden traer texto que no es un link real, o nada)."""
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return None
+    s = str(v).strip()
+    if s in ("", "-") or "http" not in s.lower():
+        return None
+    return s
+
+
+def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial):
+    """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
+    (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
+    Ejecutado quedan separados por plataforma (Meta/Google), ver Tarea 5."""
+    df = pd.read_excel(CONTEXTO / "Pauta RRSS_GLOBAL.xlsx", sheet_name="GLOBAL_ImportRange")
+    localidades_60_normalizadas = set(localidad_a_oficial.keys())
+    mapa_campanas = construir_mapa_formas_canonicas(df["CAMPAÑA"])
+    mapa_plataformas = construir_mapa_formas_canonicas(df["PLATAFORMA"])
+    mapa_tipos_pauta = construir_mapa_formas_canonicas(df["TIPO DE PAUTA"])
+
+    piezas = []
+    excluidas = 0
+    for _, row in df.iterrows():
+        geo = clasificar_geografia_pauta_global(
+            row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"], localidades_60_normalizadas
+        )
+        if geo["excluida"]:
+            excluidas += 1
+            continue
+
+        if geo["ambito"] == "localidad":
+            localidad = localidad_a_oficial[geo["localidad"]]
+            departamento = localidad_a_departamento_oficial[geo["localidad"]]
+        elif geo["ambito"] == "departamento":
+            localidad = None
+            departamento = deptos_a_oficial.get(normalizar(geo["departamento"]), geo["departamento"])
+        else:
+            localidad = None
+            departamento = None
+
+        link_material = limpiar_link(row["LINK MATERIAL"])
+        link_ig = limpiar_link(row["IG"])
+        link_fb = limpiar_link(row["FB"])
+        link_yt = limpiar_link(row["YT"])
+
+        campana = _forma_canonica(mapa_campanas, limpio(row["CAMPAÑA"]))
+        plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
+        tipo_pauta = _forma_canonica(mapa_tipos_pauta, limpio(row["TIPO DE PAUTA"]))
+
+        piezas.append({
+            "fuente": "global",
+            "codigo_pieza": None,
+            "nombre_anuncio": limpio(row["TITULO DE LA PIEZA"]),
+            "area_tematica": limpio(row["EJE"]),
+            "ministerio": limpio(row["MINISTERIO"]),
+            "campana": campana,
+            "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(geo["ambito"]),
+            "alcance_tipo": geo["ambito"],
+            "en_60_localidades": True,
+            "departamento": departamento,
+            "localidad": localidad,
+            "circuito_codigo_original": geo.get("circuito_codigo_original"),
+            "barrio": None,
+            "circuito_electoral": None,
+            "plataforma": plataforma,
+            "tipo_pauta": tipo_pauta,
+            "origen": limpio(row["ORIGEN"]),
+            "proveedor": limpio(row["PROVEEDOR"]),
+            "inicio": fecha_iso(row["INICIO "]),
+            "inicio_informe": None,
+            "fin_informe": None,
+            "fecha_creacion": fecha_iso(row["FECHA DE ENVÍO"]),
+            "finalizacion": fecha_iso(row["FIN"]),
+            "estado": estado_por_fecha(row["FIN"]),
+            "alcance": None,
+            "frecuencia": None,
+            "impresiones": None,
+            "visualizaciones": None,
+            "cpm": None,
+            "cobertura_planificada_meta": limpio(row["Cobertura Planificada META"]),
+            "cobertura_ejecutada_meta": limpio(row["Cobertura Ejecutada META"]),
+            "impresiones_planificada_meta": limpio(row["Impresiones Planificada META"]),
+            "impresiones_ejecutada_meta": limpio(row["Impresiones Ejecutada META"]),
+            "frecuencia_planificada_meta": limpio(row["Frecuencia (Meta) Planificada"]),
+            "frecuencia_ejecutada_meta": limpio(row["Frecuencia (Meta) Ejecutada"]),
+            "cpm_planificada_meta": limpio(row["CPM Planificada META"]),
+            "cpm_real_meta": limpio(row["CPM Real META"]),
+            "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas GOOGLE"]),
+            "visualizaciones_ejecutadas_google": limpio(row["Visualizaciones Ejecutadas GOOGLE"]),
+            "cpv_planificada_google": limpio(row["CPV Planificada GOOGLE"]),
+            "cpv_real_google": limpio(row["CPV Real GOOGLE"]),
+            "importe_gastado": None,
+            "inversion_planificada": limpio(row["Inversión planificada "]),
+            "inversion_ejecutada": limpio(row["Inversión ejecutada "]),
+            "presupuesto": None,
+            "tipo_presupuesto": None,
+            "clics": None,
+            "ctr": None,
+            "link_material": link_material,
+            "link_ig": link_ig,
+            "link_fb": link_fb,
+            "link_yt": link_yt,
+            "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
+        })
+
+    return piezas, excluidas
 
 
 # ---------------------------------------------------------------------------
@@ -462,6 +685,19 @@ def main():
     localidades, claves_60 = cargar_localidades()
     escribir_json("localidades.json", {"localidades": localidades})
 
+    # Mapas de forma oficial (mayúscula, sin tildes, tal como ya se muestra en
+    # el resto del tablero) para resolver la geografía de Pauta RRSS_GLOBAL a
+    # la grafía canónica del proyecto, sin depender de cómo venga tipeada en
+    # el excel crudo.
+    localidad_a_oficial = {}
+    localidad_a_departamento_oficial = {}
+    deptos_a_oficial = {}
+    for loc in localidades:
+        n_loc = normalizar(loc["localidad"])
+        localidad_a_oficial[n_loc] = loc["localidad"]
+        localidad_a_departamento_oficial[n_loc] = loc["departamento"]
+        deptos_a_oficial[normalizar(loc["departamento"])] = loc["departamento"]
+
     medios_tradicionales, movimientos_semana = cargar_medios_tradicionales()
     escribir_json("medios_tradicionales.json", medios_tradicionales)
     escribir_json("movimientos_semana.json", movimientos_semana)
@@ -469,7 +705,15 @@ def main():
     historico_medios = cargar_historico_medios()
     escribir_json("historico_medios.json", historico_medios)
 
-    pauta_digital = cargar_pauta_digital(claves_60)
+    piezas_historico = cargar_pauta_digital_historico(claves_60)
+    piezas_global, excluidas_global = cargar_pauta_digital_global(
+        localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
+    )
+    print(
+        f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "
+        f"+ {len(piezas_global)} piezas fuente nueva ({excluidas_global} excluidas por estar fuera de la provincia)"
+    )
+    pauta_digital = {"piezas": piezas_historico + piezas_global}
     escribir_json("pauta_digital.json", pauta_digital)
 
     audiovisuales = cargar_audiovisuales()

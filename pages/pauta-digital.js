@@ -4,23 +4,30 @@ import FilterBar from '../components/FilterBar';
 import Autocomplete from '../components/Autocomplete';
 import StatusBadge from '../components/StatusBadge';
 import FiltroPeriodo from '../components/FiltroPeriodo';
+import VerMaterial from '../components/VerMaterial';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../lib/fechas';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
+// Localidad/Departamento/Provincia: mismo eje de ámbito que Medios
+// tradicionales y Audiovisuales (antes era un filtro de 9 buckets crudos del
+// excel viejo). Se filtra por alcance_tipo (ya normalizado en
+// generar_datos.py), no por alcance_detectado — así agrupa también las
+// piezas históricas de Capital (bucket "CAPITAL") dentro de "Localidad".
 const AMBITOS = [
-  { key: 'PROVINCIA', label: 'Provincia entera' },
-  { key: 'DEPARTAMENTO', label: 'Departamento' },
-  { key: 'CAPITAL', label: 'Córdoba Capital' },
-  { key: 'LOCALIDAD', label: 'Localidad puntual' },
-  { key: 'BARRIO', label: 'Barrio' },
-  { key: 'CIRCUITO', label: 'Circuito electoral' },
-  { key: 'CODIGO_AUDIENCIA', label: 'Código de audiencia' },
-  { key: 'OTRO', label: 'Otro / sin clasificar' },
-  { key: 'REGION', label: 'Región' },
+  { key: 'localidad', label: 'Localidad puntual' },
+  { key: 'departamento', label: 'Departamento' },
+  { key: 'provincia', label: 'Provincia entera' },
 ];
+
+function ambitoLabel(p) {
+  if (p.alcance_tipo === 'provincia') return 'Toda la provincia';
+  if (p.alcance_tipo === 'departamento') return `Depto. ${p.departamento}`;
+  if (p.alcance_tipo === 'localidad') return 'Localidad';
+  return AMBITOS.find((a) => a.key === p.alcance_tipo)?.label || p.alcance_detectado || '—';
+}
 
 const ESTADOS = ['Todas', 'Vigente', 'Finalizada'];
 const TAMANO_PAGINA = 50;
@@ -59,7 +66,7 @@ export default function PautaDigital() {
     const q = normalizarTexto(busqueda);
     let salida = piezas.filter((p) => {
       if (!fechaDentroDeVentana(p.finalizacion, ventana)) return false;
-      if (ambitos.size > 0 && !ambitos.has(p.alcance_detectado)) return false;
+      if (ambitos.size > 0 && !ambitos.has(p.alcance_tipo)) return false;
       if (estado !== 'Todas' && p.estado !== estado) return false;
       if (!q) return true;
       return (
@@ -212,11 +219,12 @@ export default function PautaDigital() {
                   <th style={th}>Área temática</th>
                   <th style={th}>Ámbito</th>
                   <th style={th}>Localidad / Depto.</th>
+                  <th style={th}>Plataforma</th>
                   <th style={th}>Estado</th>
                   {encabezado('fecha_creacion', 'Creación')}
                   {encabezado('finalizacion', 'Finalización')}
                   {encabezado('alcance', 'Alcance')}
-                  {encabezado('ctr', 'CTR')}
+                  <th style={th}>Material</th>
                 </tr>
               </thead>
               <tbody>
@@ -224,15 +232,18 @@ export default function PautaDigital() {
                   <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                     <td style={{ ...td, maxWidth: 320 }}>{p.campana}</td>
                     <td style={td}>{p.area_tematica || '—'}</td>
-                    <td style={td}>{AMBITOS.find((a) => a.key === p.alcance_detectado)?.label || p.alcance_detectado}</td>
+                    <td style={td}>{ambitoLabel(p)}</td>
                     <td style={td}>{p.localidad || p.departamento || '—'}</td>
+                    <td style={td}>{p.plataforma || '—'}</td>
                     <td style={td}>
                       <StatusBadge estado={p.estado} />
                     </td>
                     <td style={td}>{formatearFechaCorta(p.fecha_creacion) || '—'}</td>
                     <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
                     <td style={td}>{p.alcance ? p.alcance.toLocaleString('es-AR') : '—'}</td>
-                    <td style={td}>{typeof p.ctr === 'number' ? `${(p.ctr * 100).toFixed(2)}%` : '—'}</td>
+                    <td style={td}>
+                      <VerMaterial links={p.links_material} />
+                    </td>
                   </tr>
                 ))}
               </tbody>
