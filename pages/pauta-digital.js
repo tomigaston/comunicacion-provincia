@@ -215,7 +215,7 @@ export default function PautaDigital() {
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 900 }}>
               <thead>
                 <tr style={{ textAlign: 'left', background: 'var(--bg-secondary)' }}>
-                  <th style={th}>Campaña</th>
+                  <th style={th}>Título de la pieza</th>
                   <th style={th}>Área temática</th>
                   <th style={th}>Ámbito</th>
                   <th style={th}>Localidad / Depto.</th>
@@ -230,10 +230,10 @@ export default function PautaDigital() {
               <tbody>
                 {filtradas.slice(0, visibles).map((p, i) => (
                   <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                    <td style={{ ...td, maxWidth: 320 }}>{p.campana}</td>
+                    <td style={{ ...td, maxWidth: 320 }}>{p.titulo_pieza || '—'}</td>
                     <td style={td}>{p.area_tematica || '—'}</td>
                     <td style={td}>{ambitoLabel(p)}</td>
-                    <td style={td}>{p.localidad || p.departamento || '—'}</td>
+                    <td style={td}>{p.localidad || '—'}</td>
                     <td style={td}>{p.plataforma || '—'}</td>
                     <td style={td}>
                       <StatusBadge estado={p.estado} />

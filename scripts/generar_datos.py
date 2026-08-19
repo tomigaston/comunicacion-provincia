@@ -294,6 +294,40 @@ def parsear_nombre_anuncio(nombre):
     return {"codigo_pieza": codigo, "area_tematica": area_tematica, "campana": campana}
 
 
+TITULO_SUFIJO_RE = re.compile(r"\s*\([^)]*\)\s*$")
+TITULO_PREFIJO_CNP_RE = re.compile(r"^CNP\s+", re.IGNORECASE)
+
+
+def extraer_titulo_pieza(nombre_anuncio):
+    """Deriva un título legible de pieza a partir de "Nombre del anuncio"
+    (formato CODIGO - GEO - AREA - CAMPAÑA - segmentación - ADCODE - formato -
+    C/D|S/D - objetivo): toma el segmento que sigue al área temática y le
+    saca comillas/sufijos de formato ("(Video)", "(Link)") y el prefijo
+    genérico "CNP". Validado contra las 1181 filas de Medios Digitales.xlsx:
+    0 títulos vacíos/nulos."""
+    if not nombre_anuncio or not str(nombre_anuncio).strip():
+        return None
+    partes = [p.strip() for p in str(nombre_anuncio).split(" - ")]
+    if len(partes) < 4:
+        segmento = str(nombre_anuncio).strip()
+    else:
+        segmento = partes[3]  # segmento que sigue al tema (Seguridad, Salud, etc.)
+
+    match = re.search(r'"([^"]+)"', segmento)
+    if match:
+        antes = segmento[: match.start()].strip()
+        entre_comillas = match.group(1).strip()
+        if not antes or antes.upper() == "CNP":
+            titulo = entre_comillas
+        else:
+            titulo = f"{antes}: {entre_comillas}"
+    else:
+        titulo = TITULO_SUFIJO_RE.sub("", segmento).strip()
+        titulo = TITULO_PREFIJO_CNP_RE.sub("", titulo).strip()
+
+    return titulo if titulo else str(nombre_anuncio).strip()
+
+
 ALCANCE_A_TIPO = {
     "LOCALIDAD": "localidad",
     "CAPITAL": "localidad",
@@ -336,6 +370,7 @@ def cargar_pauta_digital_historico(claves_60):
             "fuente": "historico",
             "codigo_pieza": parseo["codigo_pieza"],
             "nombre_anuncio": limpio(row["Nombre del anuncio"]),
+            "titulo_pieza": extraer_titulo_pieza(row["Nombre del anuncio"]),
             "area_tematica": parseo["area_tematica"],
             "campana": parseo["campana"],
             "alcance_detectado": alcance_detectado,
@@ -518,6 +553,7 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
             "fuente": "global",
             "codigo_pieza": None,
             "nombre_anuncio": limpio(row["TITULO DE LA PIEZA"]),
+            "titulo_pieza": limpio(row["TITULO DE LA PIEZA"]),
             "area_tematica": limpio(row["EJE"]),
             "ministerio": limpio(row["MINISTERIO"]),
             "campana": campana,

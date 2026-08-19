@@ -280,7 +280,7 @@ export default function DetalleLocalidad() {
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                      <th style={th}>Campaña</th>
+                      <th style={th}>Título de la pieza</th>
                       <th style={th}>Canal</th>
                       <th style={th}>Tipo de pauta</th>
                       <th style={th}>Plataforma</th>
@@ -291,13 +291,18 @@ export default function DetalleLocalidad() {
                   <tbody>
                     {visible.piezasPauta.map((p, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                        <td style={td}>{p.campana}</td>
+                        <td style={td}>{p.titulo_pieza || '—'}</td>
                         <td style={td}>
                           <CanalBadges pieza={p} />
                         </td>
                         <td style={td}>{p.tipo_pauta || '—'}</td>
                         <td style={td}>{p.plataforma || '—'}</td>
-                        <td style={td}>{formatearFechaCorta(p.finalizacion) || '—'}</td>
+                        <td style={td}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
+                            <StatusBadge estado={p.estado} />
+                          </div>
+                        </td>
                         <td style={td}>
                           <VerMaterial links={p.links_material} />
                         </td>
