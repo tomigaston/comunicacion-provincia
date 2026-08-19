@@ -146,6 +146,7 @@ def cargar_medios_tradicionales():
     cobertura_df = pd.read_excel(xls, sheet_name="Cobertura")
     vigente_df = pd.read_excel(xls, sheet_name="Maestro_Vigente")
     cambios_df = pd.read_excel(xls, sheet_name="Cambios_Ultima_Semana")
+    caidos_df = pd.read_excel(xls, sheet_name="Caidos")
     historico_df = pd.read_excel(xls, sheet_name="Historico")
     parametros_df = pd.read_excel(xls, sheet_name="Parametros", header=None)
 
@@ -189,6 +190,16 @@ def cargar_medios_tradicionales():
             "tema_actual": limpio(row["Tema_Actual"]),
         })
 
+    caidos = []
+    for _, row in caidos_df.iterrows():
+        caidos.append({
+            "departamento": limpio(row["Departamento"]),
+            "localidad": limpio(row["Localidad"]),
+            "tipo_medio": limpio(row["Tipo_Medio"]),
+            "ultimo_tema": limpio(row["Ultimo_Tema"]),
+            "fecha_ultima_vez": fecha_iso(row["Fecha_Ultima_Vez"]),
+        })
+
     semanas_cargadas = sorted({fecha_iso(f) for f in historico_df["Fecha_Snapshot"].dropna().unique()})
 
     # Umbrales de Parametros: la hoja es de formato libre (label en columna 1, valor en columna 3).
@@ -212,6 +223,8 @@ def cargar_medios_tradicionales():
     movimientos_semana = {
         "total_avisos_cambiaron": len(cambios),
         "cambios": cambios,
+        "total_caidos": len(caidos),
+        "caidos": caidos,
     }
     return medios_tradicionales, movimientos_semana
 

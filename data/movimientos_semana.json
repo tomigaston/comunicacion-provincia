@@ -1,212 +1,309 @@
 {
-  "total_avisos_cambiaron": 23,
+  "total_avisos_cambiaron": 28,
   "cambios": [
     {
       "departamento": "CALAMUCHITA",
-      "localidad": "VILLA GENERAL BELGRANO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1\nCBA- MIRÁ VILLA GENERAL BELGRANO 1",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA \nCBA- MIRÁ VILLA GENERAL BELGRANO 1\nCBA- MIRÁ VILLA GENERAL BELGRANO 2"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "PRUEBAS APRENDER"
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS SÉXTUPLES- PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS"
     },
     {
       "departamento": "CAPITAL",
       "localidad": "CORDOBA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL"
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "PNT FÚTBOL - AVENIDA BODERAU\nPNT FÚTBOL - ALTONIVEL VELEZ SARSFIELD\nPNT FÚTBOL - ALTONIVEL MALVINAS ARGENTINAS PNT FÚTBOL - ALTONIVEL VALLE ESCONDIDO VISITA- ALTONIVEL VELEZ SARSFIELD\nHACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2 PREVIA- DESFILE SAN MARTÍN",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "PNT FÚTBOL - AVENIDA BODERAU\nPNT FÚTBOL - ALTONIVEL VELEZ SARSFIELD\nPNT FÚTBOL - ALTONIVEL MALVINAS ARGENTINAS\nPNT FÚTBOL - ALTONIVEL VALLE ESCONDIDO\nVISITA- ALTONIVEL VELEZ SARSFIELD\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nPREVIA: JORNADA DE TRABAJO ISCHILÍN Y CRUZ DEL EJE"
     },
     {
       "departamento": "CAPITAL",
       "localidad": "CORDOBA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VALLAS- CBA- ALTONIVELES MALVINAS- VELEZ S./ BODEREAU VALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- EMPLEO +26\nVALLAS - PRUEBAS APRENDER\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO LUNETAS- CBA - MIRÁ INFRAESTRUCTURA VIAL LUNETAS- CBA - PLAN OBRAS VIALES\nLUNETAS - BOLETO EDUCATIVO CORDOBES SÉXTUPLES - PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VALLAS- CBA- ALTONIVELES MALVINAS- VELEZ S./ BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- EMPLEO +26\nVALLAS - PRUEBAS APRENDER\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nLUNETAS- CBA - MIRÁ INFRAESTRUCTURA VIAL\nLUNETAS- CBA - PLAN OBRAS VIALES\nLUNETAS - BOLETO EDUCATIVO CORDOBES"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VISITA ALTONIVEL VÉLEZ SARSFIELD",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VISITA ALTONIVEL VÉLEZ SARSFIELD\n\nNUEVO MÓDULO HOSPITAL MISERICORDIA"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VALLAS- DUPLICACIÓN CALZADA- AV. BODEREAU\nSÉXTUPLES - PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VALLAS- DUPLICACIÓN CALZADA- AV. BODEREAU"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VISITA SALSIPUEDES: RANGO CIUDAD Y SISTEMATIZACIÓN TRAVESÍA URBANA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VALLAS- PADRE LUCHESSE INAUGURACIÓN SÉXTUPLES- PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VALLAS- PADRE LUCHESSE INAUGURACIÓN"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "PREVIA: JORNADA DE TRABAJO ISCHILÍN Y CRUZ DEL EJE"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "ILUMINARIAS SMATA Y POSTA DE VARGAS\nOBRAS EN VILLA UNIÓN\nOBRAS VIÑA DEL MAR\nILUMINARIAS EN PARQUE NEWBERY\nOBRAS EN MARQUES DE SOBREMONTE\nURBANIZACIÓN B° AMPLIACIÓN LAMADRID\nLUMINARIAS PLAZA B° INDUSTRIAL\nOBRAS VILLA ICHO CRUZ\nACUEDUCTO VILLA CARLOS PAZ\nOBRAS SAN ANTONIO DE ARREDONDO\nCOLECTORA CARLOS PAZ MALAGUEÑO"
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "PRUEBAS APRENDER\nCÓRDOBA ME CAPACITA"
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
       "departamento": "JUAREZ CELMAN",
       "localidad": "LA CARLOTA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "CAPILLA DEL MONTE",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ CAPILLA DEL MONTE",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ COSQUÍN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ COSQUÍN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA CARLOS PAZ",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "CÓRDOBA ME CAPACITA\nLOS GIGANTES\nCBA- MIRÁ VILLA CARLOS PAZ",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nCÓRDOBA ME CAPACITA\nLOS GIGANTES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "SANTA MARIA DE PUNILLA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "EMPLEO +26",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "OBRAS QUE TRANSFORMAN \nCÓRDOBA ME CAPACITA"
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "VISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "VISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "COLECTORA CARLOS PAZ\nVISITA VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nVISITA CUESTA BLANCA\nVISITA SAN ANTONIO\nVISITA MAYU SUMAJ\nVISITA VILLA ICHO CRUZ"
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL VALLAS - MIRÁ VILLA CARLOS PAZ - CUENCA LAGO SÉXTUPLES- PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nVALLAS - MIRÁ VILLA CARLOS PAZ - CUENCA LAGO"
     },
     {
       "departamento": "RIO CUARTO",
       "localidad": "RIO CUARTO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "PRUEBAS APRENDER"
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30 VALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS VALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN SÉXTUPLES - CBA - PRUEBAS APRENDER\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30 SÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS SÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN LUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN"
     },
     {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "MIRÁ - VILLA DOLORES  UPC\nEMPLEO +26",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "EMPLEO +26"
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "ESCUCHÁ RÍO CUARTO: CEDIS\nVISITA RÍO CUARTO: JORNADA DE TRABAJO HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN \nESCUCHÁ RÍO CUARTO: CEDIS\nVISITA RÍO CUARTO: JORNADA DE TRABAJO \nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS SÉXTUPLES- PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "MORTEROS",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "SAN FRANCISCO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "PRUEBAS APRENDER\nAUTOVÍA 19"
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2\nVISITA SAN FRANCISCO: DESAGÜES, APORTES SOCIEDAD RURAL, V FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN\nCÓRDOBA ME CAPACITA",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2\nVISITA SAN FRANCISCO: DESAGÜES, APORTES SOCIEDAD RURAL, V FONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
     },
     {
       "departamento": "TERCERO ARRIBA",
       "localidad": "RIO TERCERO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-08-14",
+      "tema_anterior": "HACIENDO LOS DEBERES 1 HACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-08-19",
+      "tema_actual": "ESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    }
+  ],
+  "total_caidos": 7,
+  "caidos": [
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "tipo_medio": "RADIO",
+      "ultimo_tema": "CÓRDOBA ME CAPACITA",
+      "fecha_ultima_vez": "2026-07-24"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "tipo_medio": "TV",
+      "ultimo_tema": "CÓRDOBA ME CAPACITA",
+      "fecha_ultima_vez": "2026-07-24"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "VIA PÚBLICA",
+      "ultimo_tema": "SÉXTUPLES - PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-08-14"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "VIA PÚBLICA",
+      "ultimo_tema": "SÉXTUPLES - PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-08-14"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "TV",
+      "ultimo_tema": "PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-08-04"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "VIA PÚBLICA",
+      "ultimo_tema": "SÉXTUPLES- PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-08-14"
     },
     {
       "departamento": "UNION",
       "localidad": "BELL VILLE",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-07-17",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-07-24",
-      "tema_actual": "CÓRDOBA ME CAPACITA"
+      "tipo_medio": "VIA PÚBLICA",
+      "ultimo_tema": "SÉXTUPLES - PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-08-14"
     }
   ]
 }
