@@ -7,7 +7,7 @@ import FiltroPeriodo from '../components/FiltroPeriodo';
 import VerMaterial from '../components/VerMaterial';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
-import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../lib/fechas';
+import { formatearFechaCorta, calcularVentana, rangoDentroDeVentana } from '../lib/fechas';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
@@ -65,7 +65,7 @@ export default function PautaDigital() {
   const filtradas = useMemo(() => {
     const q = normalizarTexto(busqueda);
     let salida = piezas.filter((p) => {
-      if (!fechaDentroDeVentana(p.finalizacion, ventana)) return false;
+      if (!rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)) return false;
       if (ambitos.size > 0 && !ambitos.has(p.alcance_tipo)) return false;
       if (estado !== 'Todas' && p.estado !== estado) return false;
       if (!q) return true;

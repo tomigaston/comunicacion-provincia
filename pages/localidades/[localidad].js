@@ -10,7 +10,7 @@ import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
-import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../../lib/fechas';
+import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
@@ -75,7 +75,7 @@ export default function DetalleLocalidad() {
     if (!info || info.noEncontrada) return null;
     return {
       vigentes: info.medios ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_ultima_semana, ventana)) : [],
-      piezasPauta: info.piezasPauta.filter((p) => fechaDentroDeVentana(p.finalizacion, ventana)),
+      piezasPauta: info.piezasPauta.filter((p) => rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)),
       itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
         fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
       ),
