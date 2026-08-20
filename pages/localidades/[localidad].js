@@ -85,7 +85,12 @@ export default function DetalleLocalidad() {
       .filter(
         (p) =>
           p.en_60_localidades &&
-          (normalizarTexto(p.localidad) === clave ||
+          // alcance_tipo (derivado de Alcance_Detectado en generar_datos.py) manda:
+          // solo LOCALIDAD/CAPITAL/BARRIO ('localidad') atan por texto de Localidad,
+          // solo DEPARTAMENTO ata por Departamento. Todo lo demás (PROVINCIA, y lo
+          // que quedó sin tipo: REGION/CIRCUITO/CODIGO_AUDIENCIA/OTRO) no se atribuye
+          // a ninguna localidad ni departamento puntual.
+          ((p.alcance_tipo === 'localidad' && normalizarTexto(p.localidad) === clave) ||
             (p.alcance_tipo === 'departamento' && normalizarTexto(p.departamento) === normalizarTexto(base.departamento)))
       )
       .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));

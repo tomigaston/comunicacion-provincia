@@ -42,7 +42,11 @@ export default function LocalidadesIndex() {
     const pautaPorDepartamento = new Set();
     for (const p of pautaData.piezas) {
       if (!p.en_60_localidades) continue;
-      if (p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
+      // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
+      // manda, no el texto crudo de Localidad (evita que filas OTRO/REGION/
+      // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA marquen una localidad como "con
+      // pauta digital" solo porque su columna Localidad menciona su nombre).
+      if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
       if (p.alcance_tipo === 'departamento' && p.departamento) {
         pautaPorDepartamento.add(normalizarTexto(p.departamento));
       }

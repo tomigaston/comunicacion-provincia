@@ -331,9 +331,14 @@ def extraer_titulo_pieza(nombre_anuncio):
 ALCANCE_A_TIPO = {
     "LOCALIDAD": "localidad",
     "CAPITAL": "localidad",
+    "BARRIO": "localidad",  # Localidad siempre CORDOBA en estas filas
     "DEPARTAMENTO": "departamento",
     "PROVINCIA": "provincia",
 }
+# REGION, CIRCUITO, CODIGO_AUDIENCIA y OTRO quedan fuera de este mapa a
+# propósito -> alcance_tipo=None: no se atribuyen a ninguna Localidad ni
+# Departamento (siguen visibles tal cual en la pestaña propia de Pauta
+# Digital, con su Alcance_Detectado a la vista).
 
 # Medios Digitales.xlsx (Meta Ads, esquema viejo) se corta acá por Finalización
 # —mismo campo que ya se usa para ordenar/filtrar pauta digital en toda la
@@ -358,13 +363,28 @@ def cargar_pauta_digital_historico(claves_60):
         depto = limpio(row["Departamento"])
         loc = limpio(row["Localidad"])
 
+        # en_60_localidades (y por lo tanto la atribución a una Localidad o
+        # Departamento puntual) depende de Alcance_Detectado, no del texto
+        # crudo de Localidad/Departamento: una fila OTRO/REGION/CIRCUITO/
+        # CODIGO_AUDIENCIA nunca se atribuye a una Localidad ni Departamento
+        # aunque su columna Localidad diga, por texto, el nombre de una de
+        # las 60 (ej. "CORDOBA" en filas OTRO de barrios sueltos).
+        #
+        # Aparte (no algo que este chequeo cambie, ya se daba antes): una fila
+        # LOCALIDAD cuya Localidad no es una de las 60 oficiales tampoco entra,
+        # aunque su Departamento sí tenga localidades prioritarias —hoy 44
+        # filas del histórico (Freyre, Miramar, Brinkmann, Chancaní y otras
+        # menores). No se las reasigna al Departamento: el dato ya viene
+        # acotado a una localidad puntual que no es una de las 60, así que no
+        # corresponde inflar el conteo departamental con ellas. Queda anotado
+        # acá para que la caída de conteo no parezca un misterio.
         en_60 = False
-        if loc and (normalizar(depto), normalizar(loc)) in claves_60:
-            en_60 = True
-        elif alcance_detectado == "PROVINCIA":
-            en_60 = True  # provincia entera siempre aplica al universo
+        if alcance_detectado in ("LOCALIDAD", "CAPITAL", "BARRIO"):
+            en_60 = bool(loc) and (normalizar(depto), normalizar(loc)) in claves_60
         elif alcance_detectado == "DEPARTAMENTO" and depto:
             en_60 = any(normalizar(depto) == d for d, _ in claves_60)
+        elif alcance_detectado == "PROVINCIA":
+            en_60 = True  # provincia entera siempre aplica al universo
 
         piezas.append({
             "fuente": "historico",
