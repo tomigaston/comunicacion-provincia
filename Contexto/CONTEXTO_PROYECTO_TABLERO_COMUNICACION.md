@@ -144,7 +144,7 @@ Obras FOCOM queda afuera de este concepto (ver 3.3). **SMS y Contenido Orgánico
 2. **Campañas**: las 3 áreas de la sección 4 mezcladas, filtrable por área.
 3. **Pauta Digital**: vista propia y detallada de esa área (todas las piezas, con sus métricas reales, filtros de ámbito/estado/fecha, tabla ordenable). No hace falta que esté "linda" en las otras pestañas — esta es su pantalla.
 4. **SMS**: vista propia, una fila por alcance (Localidad/Departamento) para poder filtrar directo.
-5. **Contenido Orgánico**: vista propia, mismo criterio de "una fila por alcance" cuando `LUGAR` trae varias localidades. Filtros: Red Social, rango de fecha, Localidad.
+5. **Contenido Orgánico**: vista propia, mismo criterio de "una fila por alcance" cuando `LUGAR` trae varias localidades; una publicación sin ninguna localidad resuelta ni ámbito provincial no genera fila (no entra a la vista, ver 3.5). Filtros: rango de fecha, Localidad (sin filtro de Red Social — sacado el 22/08/2026, columna informativa nomás).
 6. **Movimientos de la semana**: cambios de tema y medios caídos (hoy es de medios tradicionales; evaluar si suma a las demás áreas más adelante).
 
 ## 6. Backlog de UX pendiente (probado en un prototipo HTML, no en la build real)

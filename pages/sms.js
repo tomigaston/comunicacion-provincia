@@ -26,6 +26,30 @@ function ambitoLabel(key) {
   return AMBITOS.find((a) => a.key === key)?.label || key;
 }
 
+// Mismo lenguaje visual que StatusBadge (Pauta Digital/Medios): verde para
+// el estado activo, gris para cualquier otro valor -no hay más estados
+// reales en los datos hoy que "ACTIVO", pero esto no asume que sea el único
+// string posible, solo que "activo" es el único que se pinta verde.
+function EstadoBadge({ estado }) {
+  if (!estado) return <span style={{ color: 'var(--text-tertiary)' }}>—</span>;
+  const activo = normalizarTexto(estado) === 'activo';
+  return (
+    <span
+      style={{
+        display: 'inline-block',
+        padding: '3px 10px',
+        borderRadius: 999,
+        background: activo ? 'var(--cov-alta-bg)' : 'var(--bg-secondary)',
+        color: activo ? 'var(--cov-alta)' : 'var(--text-secondary)',
+        fontSize: 12.5,
+        fontWeight: 600,
+      }}
+    >
+      {estado}
+    </span>
+  );
+}
+
 /**
  * Un envío de SMS puede tener varios "alcances" en AUDIENCIA (ej. La
  * Carlota + Laboulaye). Acá se explota cada envío en una fila por alcance
@@ -51,7 +75,6 @@ function explotarEnFilas(envios) {
       categoria: e.categoria,
       mensaje: e.mensaje,
       estado: e.estado,
-      zona: e.zona,
       cantidad_sms_entregados: e.cantidad_sms_entregados,
     };
     const alcances = e.alcances || [];
@@ -70,7 +93,7 @@ export default function Sms() {
   const { cargando, error, datos } = useApiData(['/api/data/sms']);
   const [ambitos, setAmbitos] = useState(new Set());
   const [eje, setEje] = useState('Todos');
-  const [tematica, setTematica] = useState('Todas');
+  const [busquedaTematica, setBusquedaTematica] = useState('');
   const [estado, setEstado] = useState('Todos');
   const [busquedaLugar, setBusquedaLugar] = useState('');
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
@@ -97,6 +120,7 @@ export default function Sms() {
     () => Array.from(new Set(envios.map((e) => e.estado).filter(Boolean))).sort(),
     [envios]
   );
+  const itemsTematicas = useMemo(() => tematicas.map((t) => ({ value: t, label: t })), [tematicas]);
 
   const itemsLugares = useMemo(() => {
     const vistos = new Set();
@@ -113,16 +137,17 @@ export default function Sms() {
 
   const filtradas = useMemo(() => {
     const qLugar = normalizarTexto(busquedaLugar);
+    const qTematica = normalizarTexto(busquedaTematica);
     return filas.filter((f) => {
       if (!fechaDentroDeVentana(f.fecha_inicio, ventana)) return false;
       if (ambitos.size > 0 && !ambitos.has(f.ambito)) return false;
       if (eje !== 'Todos' && f.eje !== eje) return false;
-      if (tematica !== 'Todas' && f.tematica !== tematica) return false;
+      if (qTematica && !normalizarTexto(f.tematica || '').includes(qTematica)) return false;
       if (estado !== 'Todos' && f.estado !== estado) return false;
       if (qLugar && !normalizarTexto(f.lugar || '').includes(qLugar)) return false;
       return true;
     });
-  }, [filas, ventana, ambitos, eje, tematica, estado, busquedaLugar]);
+  }, [filas, ventana, ambitos, eje, busquedaTematica, estado, busquedaLugar]);
 
   // KPI dedup: cada envío único aporta su cantidad_sms_entregados una sola
   // vez, sin importar cuántas filas (alcances) tenga visibles -ver comentario
@@ -199,21 +224,18 @@ export default function Sms() {
                   </option>
                 ))}
               </select>
-              <select
-                value={tematica}
-                onChange={(e) => {
-                  setTematica(e.target.value);
+              <Autocomplete
+                items={itemsTematicas}
+                placeholder="Buscar temática..."
+                onQueryChange={(q) => {
+                  setBusquedaTematica(q);
                   setVisibles(TAMANO_PAGINA);
                 }}
-                style={selectEstilo}
-              >
-                <option value="Todas">Todas las temáticas</option>
-                {tematicas.map((v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ))}
-              </select>
+                onSelect={(it) => {
+                  setBusquedaTematica(it.label);
+                  setVisibles(TAMANO_PAGINA);
+                }}
+              />
               <select
                 value={estado}
                 onChange={(e) => {
@@ -275,18 +297,16 @@ export default function Sms() {
               overflowX: 'auto',
             }}
           >
-            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 1080 }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 840 }}>
               <thead>
                 <tr style={{ textAlign: 'left', background: 'var(--bg-secondary)' }}>
                   <th style={th}>Fecha de inicio</th>
                   <th style={th}>Eje</th>
-                  <th style={th}>Temática</th>
                   <th style={th}>Categoría</th>
                   <th style={{ ...th, minWidth: 260 }}>Mensaje</th>
                   <th style={th}>Localidad</th>
                   <th style={th}>SMS entregados</th>
                   <th style={th}>Estado</th>
-                  <th style={th}>Zona</th>
                 </tr>
               </thead>
               <tbody>
@@ -294,7 +314,6 @@ export default function Sms() {
                   <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                     <td style={td}>{formatearFechaCorta(f.fecha_inicio) || '—'}</td>
                     <td style={td}>{f.eje || '—'}</td>
-                    <td style={td}>{f.tematica || '—'}</td>
                     <td style={td}>{f.categoria || '—'}</td>
                     <td style={{ ...td, maxWidth: 380, whiteSpace: 'pre-wrap' }}>{f.mensaje || '—'}</td>
                     <td style={td}>{f.lugar || '—'}</td>
@@ -303,8 +322,9 @@ export default function Sms() {
                         ? f.cantidad_sms_entregados.toLocaleString('es-AR')
                         : '—'}
                     </td>
-                    <td style={td}>{f.estado || '—'}</td>
-                    <td style={td}>{f.zona || '—'}</td>
+                    <td style={td}>
+                      <EstadoBadge estado={f.estado} />
+                    </td>
                   </tr>
                 ))}
               </tbody>

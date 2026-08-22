@@ -20,6 +20,12 @@ const TODA_LA_PROVINCIA_LABEL = 'Toda la provincia';
  * sumar por publicación -no hay riesgo de inflar un KPI al repetir filas-,
  * así que no hace falta conservar un índice para deduplicar nada; se guarda
  * igual (pubIndex) solo para el conteo de "publicaciones únicas" del resumen.
+ *
+ * Una publicación sin ninguna localidad resuelta y sin ámbito provincial no
+ * genera ninguna fila -> no entra al tablero (mismo criterio que el resto
+ * del proyecto, ver CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md 3.5: sin match
+ * a las 60 ni a "toda la provincia", afuera, invisible, sin excepción). No
+ * se muestra con Lugar vacío ni se cuenta en ningún total de esta vista.
  */
 function explotarEnFilas(publicaciones) {
   const filas = [];
@@ -36,16 +42,12 @@ function explotarEnFilas(publicaciones) {
     if (p.ambito_provincial) {
       filas.push({ ...base, lugar: TODA_LA_PROVINCIA_LABEL });
     }
-    if (localidades.length === 0 && !p.ambito_provincial) {
-      filas.push({ ...base, lugar: null });
-    }
   });
   return filas;
 }
 
 export default function ContenidoOrganico() {
   const { cargando, error, datos } = useApiData(['/api/data/contenido-organico']);
-  const [redSocial, setRedSocial] = useState('Todas');
   const [busquedaLugar, setBusquedaLugar] = useState('');
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
@@ -55,14 +57,6 @@ export default function ContenidoOrganico() {
 
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const fechasDisponibles = useMemo(() => publicaciones.map((p) => p.fecha), [publicaciones]);
-
-  // Vocabulario de Red Social generado de los datos reales -texto libre de la
-  // fuente, viene tal cual (puede traer varias redes en una celda, ej. "FB
-  // GOBIERNO, FB MLL"), no se decompone en tokens individuales.
-  const redesSociales = useMemo(
-    () => Array.from(new Set(publicaciones.map((p) => p.red_social).filter(Boolean))).sort(),
-    [publicaciones]
-  );
 
   const itemsLugares = useMemo(() => {
     const vistos = new Set();
@@ -81,11 +75,10 @@ export default function ContenidoOrganico() {
     const qLugar = normalizarTexto(busquedaLugar);
     return filas.filter((f) => {
       if (!fechaDentroDeVentana(f.fecha, ventana)) return false;
-      if (redSocial !== 'Todas' && f.red_social !== redSocial) return false;
       if (qLugar && !normalizarTexto(f.lugar || '').includes(qLugar)) return false;
       return true;
     });
-  }, [filas, ventana, redSocial, busquedaLugar]);
+  }, [filas, ventana, busquedaLugar]);
 
   const publicacionesUnicas = useMemo(() => new Set(filtradas.map((f) => f.pubIndex)).size, [filtradas]);
 
@@ -125,21 +118,6 @@ export default function ContenidoOrganico() {
                 }}
                 onSelect={(it) => setBusquedaLugar(it.label)}
               />
-              <select
-                value={redSocial}
-                onChange={(e) => {
-                  setRedSocial(e.target.value);
-                  setVisibles(TAMANO_PAGINA);
-                }}
-                style={selectEstilo}
-              >
-                <option value="Todas">Todas las redes sociales</option>
-                {redesSociales.map((v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ))}
-              </select>
             </FilterBar>
           </div>
 
@@ -150,7 +128,8 @@ export default function ContenidoOrganico() {
           </p>
           <p style={{ fontSize: 11.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>
             Una publicación con varias localidades en su alcance aparece repetida, una fila por
-            localidad. El dato de Lugar solo está cargado desde el 29/07/2026 — antes queda vacío.
+            localidad. El dato de Lugar solo está cargado desde el 29/07/2026 — una publicación sin
+            ninguna localidad resuelta ni ámbito provincial no entra a esta vista.
           </p>
 
           <div
@@ -212,11 +191,3 @@ export default function ContenidoOrganico() {
 
 const th = { padding: '10px 14px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
 const td = { padding: '10px 14px', fontSize: 13.5 };
-const selectEstilo = {
-  padding: '9px 12px',
-  borderRadius: 8,
-  border: '1px solid var(--border)',
-  fontSize: 13,
-  background: 'var(--bg-primary)',
-  color: 'var(--text-primary)',
-};
