@@ -1075,7 +1075,183 @@ def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_o
 
 
 # ---------------------------------------------------------------------------
-# 6. Campañas unificadas
+# 6. Contenido Orgánico (GNO)
+# ---------------------------------------------------------------------------
+#
+# Igual que Pauta Digital y SMS: export ACUMULADO COMPLETO -> cada corrida
+# reemplaza y reprocesa entero, no es append-only. A diferencia de SMS, acá
+# NO hay fallback a Departamento: una localidad de LUGAR o matchea exacto
+# (o por alias/fuzzy) una de las 60, o queda directamente afuera de las
+# vistas por localidad -> mismo criterio que ya rige en Pauta Digital desde
+# el 20/08/2026 (ver sección 2 y 3.2 de CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md).
+
+FUZZY_CUTOFF_GNO = 0.85  # conservador: LUGAR ya viene limpio (nombres cortos,
+                          # sin el sufijo verboso de Pauta/SMS) -> el fuzzy acá
+                          # es solo red de seguridad para un typo puntual, no
+                          # la vía principal de matching.
+
+ALIAS_LUGAR_GNO = {
+    "CARLOS PAZ": "VILLA CARLOS PAZ",
+    "CIUDAD DE CORDOBA": "CORDOBA",  # cubre tanto "Ciudad de Córdoba" como el
+                                       # typo real "Cíudad de Córdoba" -> NFD
+                                       # ya le saca la tilde a la í antes de
+                                       # comparar, quedan iguales normalizados.
+}
+
+TODA_LA_PROVINCIA_GNO = normalizar("Toda la provincia")  # cubre con/sin espacio final
+
+# Confirmado con el usuario (no reabrir): estos tokens de LUGAR existen mundo
+# real pero NO son ninguna de las 60 -> quedan afuera de las vistas por
+# localidad a propósito. Se tratan distinto de un token "no identificado":
+# acá la resolución ya está confirmada (excluir), así que no se loguean para
+# revisión -> evita ruido repetido en cada corrida por algo ya zanjado.
+EXCLUSIONES_LUGAR_GNO_CONFIRMADAS = {
+    normalizar(x) for x in [
+        "TANTI", "HUINCA RENANCO", "VILLA DE SOTO", "SAN JOSE DE LA DORMIDA",
+        "CHUNA", "CANADA DE LUQUE", "LOS MISTOLES", "POCHO", "LA PAMPA",
+        "REGION CENTRO", "ENTE METROPOLITANO",
+    ]
+}
+
+
+def _localizar_contenido_organico():
+    """Mismo criterio que _localizar_sms_looker(): export acumulado completo
+    -> tiene que haber un solo archivo 'Publicaciones*GNO*.xlsx' en Contexto/
+    en cada corrida. None si todavía no llegó ningún export; RuntimeError si
+    hay más de uno (evita reprocesar una versión vieja por error)."""
+    candidatos = sorted(CONTEXTO.glob("Publicaciones*GNO*.xlsx"))
+    if not candidatos:
+        return None
+    if len(candidatos) > 1:
+        raise RuntimeError(
+            "Hay más de un archivo 'Publicaciones*GNO*.xlsx' en Contexto/: "
+            f"{[c.name for c in candidatos]}. Es un export ACUMULADO completo (no "
+            "append-only) -> dejar un solo archivo, el más reciente, antes de regenerar."
+        )
+    return candidatos[0]
+
+
+def _resolver_lugar_gno(token, localidad_a_oficial, fuzzy_aplicados):
+    """Un token ya recortado de LUGAR -> nombre oficial de una de las 60, o
+    None si no matchea ni exacto/alias ni por fuzzy (cutoff 0.85). No hay
+    fallback a Departamento acá (a diferencia de SMS) -> None significa
+    directamente "afuera de las vistas por localidad"."""
+    n_token = normalizar(token)
+    n_token = ALIAS_LUGAR_GNO.get(n_token, n_token)
+
+    if n_token in localidad_a_oficial:
+        return localidad_a_oficial[n_token]
+
+    cercano = difflib.get_close_matches(
+        n_token, list(localidad_a_oficial.keys()), n=1, cutoff=FUZZY_CUTOFF_GNO
+    )
+    if cercano:
+        fuzzy_aplicados.append({"token_original": token, "matcheado_con": cercano[0]})
+        return localidad_a_oficial[cercano[0]]
+
+    return None
+
+
+def cargar_contenido_organico(localidad_a_oficial):
+    ruta = _localizar_contenido_organico()
+    if ruta is None:
+        return None  # todavía no llegó ningún export de Contenido Orgánico -> se omite la sección
+
+    df = pd.read_excel(ruta, sheet_name="Hoja 1")
+    col_fecha = _col(df, "FECHA")
+    col_red = _col(df, "RED SOCIAL")
+    col_nombre = _col(df, "NOMBRE DEL CONTENIDO")
+    col_link = _col(df, "LINK")
+    col_lugar = _col(df, "LUGAR")
+
+    # 1) Forward-fill de FECHA: solo la primera fila de cada tanda de redes
+    # trae fecha propia, el resto queda NaT hasta la siguiente fecha real.
+    df[col_fecha] = df[col_fecha].ffill()
+
+    # 2) Descartar filas de plantilla vacía (sin RED SOCIAL, NOMBRE DEL
+    # CONTENIDO ni LINK -> no aportan ningún dato real). Se aplica en
+    # cualquier posición del archivo, no solo al final: hay separadores
+    # intermedios con el mismo patrón (fila con o sin fecha propia, pero sin
+    # ningún contenido) además de la tanda final de fechas futuras vacías.
+    vacia = df[col_red].isna() & df[col_nombre].isna() & df[col_link].isna()
+    filas_descartadas = int(vacia.sum())
+    df = df[~vacia]
+
+    publicaciones = []
+    no_identificados = []
+    fuzzy_aplicados = []
+    lugares_con_link_excluidos = []
+
+    for idx, row in df.iterrows():
+        fecha = fecha_iso(row[col_fecha])
+        red_social = limpio(row[col_red])
+        nombre_contenido_raw = limpio(row[col_nombre])
+        nombre_contenido = nombre_contenido_raw.strip() if nombre_contenido_raw else nombre_contenido_raw
+        link = limpiar_link(row[col_link])
+        lugar_raw = limpio(row[col_lugar])
+
+        localidades = []
+        ambito_provincial = False
+        lugar_excluido_por_link = False
+
+        if lugar_raw:
+            if "http" in lugar_raw.lower():
+                # Error de carga (link pegado en LUGAR) -> se trata como si
+                # LUGAR estuviera vacío, se loguea aparte para revisión.
+                lugar_excluido_por_link = True
+                lugares_con_link_excluidos.append({
+                    "fila": int(idx) + 2,  # +2: header + 1-index, igual que SMS
+                    "fecha": fecha,
+                    "red_social": red_social,
+                    "nombre_contenido": nombre_contenido,
+                    "lugar_raw": lugar_raw,
+                })
+            else:
+                for token in [t.strip() for t in lugar_raw.split(",") if t.strip()]:
+                    if normalizar(token) == TODA_LA_PROVINCIA_GNO:
+                        ambito_provincial = True
+                        continue
+                    oficial = _resolver_lugar_gno(token, localidad_a_oficial, fuzzy_aplicados)
+                    if oficial:
+                        if oficial not in localidades:
+                            localidades.append(oficial)
+                    elif normalizar(token) not in EXCLUSIONES_LUGAR_GNO_CONFIRMADAS:
+                        no_identificados.append({
+                            "fila": int(idx) + 2,
+                            "token": token,
+                            "lugar_original": lugar_raw,
+                            "fecha": fecha,
+                        })
+
+        publicaciones.append({
+            "fecha": fecha,
+            "red_social": red_social,
+            "nombre_contenido": nombre_contenido,
+            "link": link,
+            "lugar_raw": lugar_raw,
+            "lugar_excluido_por_link": lugar_excluido_por_link,
+            "ambito_provincial": ambito_provincial,
+            "localidades": localidades,
+        })
+
+    if no_identificados:
+        print(f"  ⚠️  Contenido Orgánico: {len(no_identificados)} tokens de LUGAR no identificados -> ver 'no_identificados' en contenido_organico.json")
+    if fuzzy_aplicados:
+        print(f"  ℹ️  Contenido Orgánico: {len(fuzzy_aplicados)} tokens resueltos por coincidencia aproximada -> ver 'fuzzy_aplicados' en contenido_organico.json")
+    if lugares_con_link_excluidos:
+        print(f"  ⚠️  Contenido Orgánico: {len(lugares_con_link_excluidos)} filas con un link pegado en LUGAR (tratadas como sin lugar) -> ver 'lugares_con_link_excluidos' en contenido_organico.json")
+
+    return {
+        "publicaciones": publicaciones,
+        "no_identificados": no_identificados,
+        "fuzzy_aplicados": fuzzy_aplicados,
+        "lugares_con_link_excluidos": lugares_con_link_excluidos,
+        "filas_descartadas_vacias": filas_descartadas,
+    }
+
+
+# ---------------------------------------------------------------------------
+# 7. Campañas unificadas
 # ---------------------------------------------------------------------------
 
 def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
@@ -1207,6 +1383,18 @@ def main():
         )
     else:
         print("  SMS: no se encontró ningún archivo 'SMS_Looker*.xlsx' en Contexto/ -> sección omitida")
+
+    contenido_organico = cargar_contenido_organico(localidad_a_oficial)
+    if contenido_organico is not None:
+        escribir_json("contenido_organico.json", contenido_organico)
+        print(
+            f"  Contenido Orgánico: {len(contenido_organico['publicaciones'])} publicaciones procesadas "
+            f"({len(contenido_organico['no_identificados'])} tokens de LUGAR no identificados, "
+            f"{len(contenido_organico['fuzzy_aplicados'])} por coincidencia aproximada, "
+            f"{len(contenido_organico['lugares_con_link_excluidos'])} con link pegado en LUGAR)"
+        )
+    else:
+        print("  Contenido Orgánico: no se encontró ningún archivo 'Publicaciones*GNO*.xlsx' en Contexto/ -> sección omitida")
 
     campanas = construir_campanas(medios_tradicionales, pauta_digital, audiovisuales)
     escribir_json("campanas.json", campanas)

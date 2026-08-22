@@ -95,18 +95,49 @@ Cualquier token nuevo que no matchee y no esté en esta tabla: no se asume, se l
 
 **Columna `CIRCUITO`:** no se procesa todavía, pasa como dato crudo (`circuito_raw`). No cruzar con el proyecto de Circuitos electorales sin confirmación explícita aparte.
 
+### 3.5 Contenido Orgánico (GNO) — archivo del proyecto: **"Publicaciones GNO"**
+
+Export acumulado completo de publicaciones orgánicas en redes propias del Gobierno ("Publicaciones GNO 2026 - `<fecha>`.xlsx", nombre con fecha variable, hoja `Hoja 1`; `Hoja 2` viene vacía). **Igual que Pauta Digital y SMS, cada actualización REEMPLAZA el archivo anterior y reprocesa todo desde cero.** Procesado por la skill `procesar-contenido-organico-cordoba`.
+
+**Columnas:** `FECHA`, `RED SOCIAL`, `NOMBRE DEL CONTENIDO ` (con espacio final en el header real), `LINK ` (ídem), `LUGAR`.
+
+**Limpieza previa (obligatoria antes de cualquier matching):**
+1. **Forward-fill de `FECHA`** hacia abajo — solo la primera fila de cada tanda de redes sociales trae fecha propia.
+2. **Descartar filas de plantilla vacía**: cualquier fila sin `RED SOCIAL`, sin `NOMBRE DEL CONTENIDO ` y sin `LINK ` — se da en cualquier posición del archivo (no solo al final: hay separadores intermedios con el mismo patrón), verificado contra el archivo real que ninguna de esas filas trae `LUGAR` cargado.
+3. **Excluir cualquier fila donde `LUGAR` contenga "http"** (error de carga, link pegado ahí) — se trata como si `LUGAR` estuviera vacío, logueada aparte en `lugares_con_link_excluidos`.
+4. **`LUGAR` recién se usa en serio desde el 29/07/2026** — antes está vacío en el 100% de los casos reales (la única excepción encontrada antes de esa fecha fue justamente un caso del punto 3, un link pegado por error). No es un bug, no hay que rellenar nada para atrás; las vistas por localidad simplemente no tienen datos de esta área antes de esa fecha.
+
+**Regla de alcance geográfico — a diferencia de SMS, acá NO hay nivel intermedio de Departamento** (mismo criterio que Pauta Digital desde el 20/08/2026, ver sección 2): separar `LUGAR` por comas, normalizar (NFD sin tildes + upper). Si un token matchea exacto una de las 60 (o por la tabla de alias) → localidad. Si no matchea ninguna de las 60 → afuera, invisible en vistas por localidad, sin excepción.
+
+**Alias hardcodeados** (`ALIAS_LUGAR_GNO`):
+
+| Token | Resolución |
+|---|---|
+| CARLOS PAZ | → VILLA CARLOS PAZ |
+| CIUDAD DE CORDOBA (cubre también el typo real "Cíudad de Córdoba") | → CORDOBA |
+
+**"Toda la provincia"** (con o sin espacio final, aparece así en los datos) → marca `ambito_provincial: true` para esa publicación, no se distribuye a ninguna localidad. Puede convivir en la misma celda con una localidad puntual (ej. "Toda la provincia, Río Cuarto" — caso real detectado el 22/08/2026): cada token de la celda se evalúa por separado, así que esa fila queda con `ambito_provincial: true` **y además** `localidades: ["RIO CUARTO"]`.
+
+**Exclusiones confirmadas** (`EXCLUSIONES_LUGAR_GNO_CONFIRMADAS`, no reabrir — verificadas contra el archivo real del 22/08/2026, existen pero no son ninguna de las 60): TANTI, HUINCA RENANCÓ, VILLA DE SOTO, SAN JOSÉ DE LA DORMIDA, CHUÑA, CAÑADA DE LUQUE, LOS MISTOLES, POCHO, LA PAMPA, REGIÓN CENTRO, ENTE METROPOLITANO. Cualquier token nuevo sin match: se loguea aparte en `no_identificados`, no se asume ninguna resolución.
+
+**Fuzzy** solo como red de seguridad para valores nuevos no cubiertos por alias/exclusiones, cutoff conservador (0.85) — en la corrida real del 22/08/2026 no hizo falta ni una vez: los 60 exactos + alias + exclusiones confirmadas cubrieron el 100% de los tokens reales.
+
+**No hay ninguna cantidad numérica en esta área** (a diferencia de `cantidad_sms_entregados` de SMS) — al "explotar" una publicación con varias localidades en filas separadas para la UI no hay ningún riesgo de inflar un KPI, porque no hay ningún número que sumar.
+
 ## 4. Concepto unificado: "Campaña"
 
 **Confirmado explícitamente por el usuario**: "Campaña" es el mismo concepto en Medios tradicionales, Pauta digital y Audiovisuales — no son cosas distintas con nombres distintos, es lo mismo. La vista de Campañas del tablero tiene que mezclar las 3 áreas en un solo lugar, cada una etiquetada con su área de origen, con su tipo de alcance (localidad / departamento / provincia entera según corresponda).
 
-Obras FOCOM queda afuera de este concepto (ver 3.3).
+Obras FOCOM queda afuera de este concepto (ver 3.3). **SMS y Contenido Orgánico (GNO) tampoco entran** en la vista de Campañas — son áreas propias, con su panel de detalle de Localidad y su pestaña propia en el nav, pero no se mezclan acá.
 
 ## 5. Estructura de navegación acordada
 
-1. **Localidades** (pestaña principal): grilla de las 60 localidades. Al abrir una localidad, el panel muestra primero **Medios tradicionales** (detalle completo), después **Pauta digital** si hay algo para esa localidad o su departamento, después **Audiovisuales** si hay algo. Este panel de detalle **ya está validado y no hay que rediseñarlo** — funciona bien tal como está.
+1. **Localidades** (pestaña principal): grilla de las 60 localidades. Al abrir una localidad, el panel muestra primero **Medios tradicionales** (detalle completo), después **Pauta digital** si hay algo para esa localidad o su departamento, después **Audiovisuales** si hay algo, después **SMS**, después **Contenido Orgánico** si hay alguna publicación atribuida a esa localidad. Este panel de detalle **ya está validado y no hay que rediseñarlo** — funciona bien tal como está.
 2. **Campañas**: las 3 áreas de la sección 4 mezcladas, filtrable por área.
 3. **Pauta Digital**: vista propia y detallada de esa área (todas las piezas, con sus métricas reales, filtros de ámbito/estado/fecha, tabla ordenable). No hace falta que esté "linda" en las otras pestañas — esta es su pantalla.
-4. **Movimientos de la semana**: cambios de tema y medios caídos (hoy es de medios tradicionales; evaluar si suma a las demás áreas más adelante).
+4. **SMS**: vista propia, una fila por alcance (Localidad/Departamento) para poder filtrar directo.
+5. **Contenido Orgánico**: vista propia, mismo criterio de "una fila por alcance" cuando `LUGAR` trae varias localidades. Filtros: Red Social, rango de fecha, Localidad.
+6. **Movimientos de la semana**: cambios de tema y medios caídos (hoy es de medios tradicionales; evaluar si suma a las demás áreas más adelante).
 
 ## 6. Backlog de UX pendiente (probado en un prototipo HTML, no en la build real)
 
@@ -136,5 +167,6 @@ Lo que **ya funciona bien y no hay que tocar**: el panel de detalle al abrir una
 | **Medios digitales** | Pauta digital curada con Departamento/Localidad/Barrio/Circuito — ver 3.2 |
 | **Audiovisuales** | Excel unificado de la Subsecretaría de Comunicación — ver 3.3 |
 | **SMS** | Export acumulado de envíos de SMS (`SMS_Looker - <fecha>.xlsx`) — ver 3.4 |
+| **Publicaciones GNO** | Export acumulado de publicaciones de Contenido Orgánico (`Publicaciones GNO 2026 - <fecha>.xlsx`) — ver 3.5 |
 
 Este documento de contexto es un archivo más de referencia — contiene todas las reglas de negocio, decisiones y pendientes acumulados hasta ahora.
