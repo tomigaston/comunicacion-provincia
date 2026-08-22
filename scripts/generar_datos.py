@@ -696,6 +696,12 @@ def cargar_audiovisuales():
 # anterior y recalcula todo desde cero (mismo patrón que Pauta digital). Ver
 # sección 3.4 de CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md para el detalle de
 # estas reglas.
+#
+# Cambio de regla del 22/08/2026: ya no existe ningún alcance de tipo
+# "departamento" -> mismo criterio que ya rige en Pauta Digital (desde el
+# 20/08/2026) y Contenido Orgánico. Un token de AUDIENCIA (o ZONA=CAPITAL, o
+# AUDIENCIA="DEPTO COMPLETO") o resuelve exacto a una de las 60 localidades
+# prioritarias, o no genera ningún alcance -> no hay término medio.
 
 FUZZY_CUTOFF_SMS = 0.7  # rango acordado 0.7-0.8; 0.7 para tolerar sufijos oficiales
                         # tipo "NOMBRE - IFFLINGER" que el token de AUDIENCIA no siempre trae
@@ -704,58 +710,99 @@ ZONAS_CAPITAL_SMS = {"CAPITAL", "CORDOBA", "CAPITAL + PROVINCIA", "CAPITAL+PROVI
 ZONA_PROVINCIA_SMS = "PROVINCIA"
 AUDIENCIA_DEPTO_COMPLETO_SMS = "DEPTO COMPLETO"
 AUDIENCIA_CAPITAL_SUELTO_SMS = "CAPITAL"
+LOCALIDAD_CAPITAL_SMS = "CORDOBA"  # nombre oficial de la localidad Capital, una de las 60 (ver Localidades (1).xlsx)
 
 # Excepciones de matching de AUDIENCIA ya resueltas a mano (tabla acordada con
-# el usuario). Cada valor es una lista de ("localidad", nombre) |
-# ("departamento", nombre) | ("depto_de_fila", None) | ("excluir", None):
-#   - "localidad": se resuelve contra el padrón (60 prioritarias o resto de la
-#     provincia, cae a Departamento si no está entre las 60) -> exacto
-#     primero, fuzzy como fallback (ver _resolver_nombre_localidad).
-#   - "departamento": fuerza directamente ese departamento (fijo, no varía
-#     por fila) sin buscar ninguna localidad. Caso de "B° LA FLORESTA"... no,
-#     ver "excluir" abajo -> hoy no hay ningún caso real de este tipo, se deja
-#     documentado por si hiciera falta uno a futuro.
-#   - "depto_de_fila": confirmado que el lugar NO existe en el Nomenclador
-#     Maestro (ni exacto ni por substring), y varía de Departamento según la
-#     fila (no es un valor fijo) -> va DIRECTO a depto_raw_fila (columna
-#     DEPARTAMENTO de esa fila, limpiada), SIN pasar por exacto/fuzzy. Evita
-#     el riesgo de que el fuzzy le "encuentre" una localidad real pero
-#     equivocada por pura coincidencia de string (caso real detectado el
-#     22/08/2026: "LOS GIGANTES" fuzzy-matcheaba a "LOS CISNES", un lugar
-#     real pero sin ninguna relación, en otro departamento). Caso de
-#     TANINGA/LOS GIGANTES/CERRO BLANCO.
-#   - "excluir": el token queda AFUERA DEL UNIVERSO del tablero a propósito
-#     -> no genera ningún alcance (ni Localidad ni Departamento). Caso de
-#     "B° LA FLORESTA": es un barrio de la ciudad de Córdoba, y los barrios
-#     quedan fuera de este tablero por regla general (van a otro proyecto
-#     aparte) -> no corresponde inventarle un Departamento tampoco.
+# el usuario). Cada valor es una lista de ("localidad", nombre) | ("excluir", None):
+#   - "localidad": se resuelve contra las 60 localidades prioritarias -> exacto
+#     primero, fuzzy como fallback (ver _resolver_nombre_localidad). Si no
+#     matchea ninguna de las 60 (ni exacto ni fuzzy) no genera ningún alcance
+#     -> se loguea en excepciones_sin_resolver, no se inventa nada.
+#   - "excluir": el token queda AFUERA DEL UNIVERSO del tablero a propósito ->
+#     no genera ningún alcance. Dos motivos posibles: (a) es un barrio (ej.
+#     "B° LA FLORESTA": los barrios van a otro proyecto aparte) o (b) es un
+#     lugar real, confirmado contra el Nomenclador Maestro, que NO es una de
+#     las 60 (ej. TANINGA, LOS GIGANTES, CERRO BLANCO, CANALS). Desde el
+#     cambio de regla del 22/08/2026 (ya no existe ningún alcance de tipo
+#     "departamento" en SMS -mismo criterio que Pauta Digital y Contenido
+#     Orgánico-) ambos motivos terminan en el mismo resultado: sin alcance.
+#     Se deja hardcodeado en vez de dejar que la resolución "localidad"
+#     normal fracase sola, para no depender del fuzzy sobre estos nombres ya
+#     confirmados en cada corrida (mismo riesgo de falso positivo que ya se
+#     vio real el 22/08/2026: "LOS GIGANTES" fuzzy-matcheaba a "LOS CISNES",
+#     un lugar real pero sin ninguna relación, en otro departamento).
 _EXCEPCIONES_AUDIENCIA_SMS_RAW = {
     "CARLOS PAZ": [("localidad", "VILLA CARLOS PAZ")],
     "TOTORAL": [("localidad", "VILLA DEL TOTORAL")],
-    "VILLA CIUDAD PARQUE": [("localidad", "VILLA CIUDAD PARQUE LOS REARTES")],
+    "VILLA CIUDAD PARQUE": [("excluir", None)],  # VILLA CIUDAD PARQUE LOS REARTES no es una de las 60
+    "LOS REARTES": [("excluir", None)],  # mismo lugar que VILLA CIUDAD PARQUE (LOS REARTES), variante corta -> confirmado 22/08/2026
     "LA CARLOTA LABOULAYE CANALS": [
-        ("localidad", "LA CARLOTA"), ("localidad", "LABOULAYE"), ("localidad", "CANALS"),
+        ("localidad", "LA CARLOTA"), ("localidad", "LABOULAYE"), ("excluir", None),  # CANALS no es una de las 60
     ],
-    "TANINGA": [("depto_de_fila", None)],
-    "LOS GIGANTES": [("depto_de_fila", None)],
-    "CERRO BLANCO": [("depto_de_fila", None)],
-    "CORRAL DE BUSTOS": [("localidad", "CORRAL DE BUSTOS")],
+    "TANINGA": [("excluir", None)],
+    "LOS GIGANTES": [("excluir", None)],
+    "CERRO BLANCO": [("excluir", None)],
+    "CORRAL DE BUSTOS": [("excluir", None)],  # CORRAL DE BUSTOS - IFFLINGER no es una de las 60
     "B° LA FLORESTA": [("excluir", None)],
     # Confirmadas a mano el 22/08/2026 a partir de fuzzy_aplicados de la
-    # primera corrida real -> apuntan directo al nombre ya resuelto, para
-    # dejar de depender del fuzzy en corridas futuras (menos superficie para
-    # un futuro falso positivo tipo "LOS GIGANTES" -> "LOS CISNES").
-    "VILLA SARMIENTO": [("localidad", "VILLA SARMIENTO (M)")],
-    "MONTEBUEY": [("localidad", "MONTE BUEY")],
-    "CAPITÁN GENERAL BERNARDO O’HIGGINS": [("localidad", "CAPITAN GENERAL BERNARDO O'HIGGINS")],
+    # primera corrida real -> ninguna es una de las 60 (confirmado contra el
+    # Nomenclador Maestro real), así que quedan "excluir" directo.
+    "VILLA SARMIENTO": [("excluir", None)],  # VILLA SARMIENTO (M) no es una de las 60
+    "MONTEBUEY": [("excluir", None)],  # MONTE BUEY no es una de las 60
+    "MONTE BUEY": [("excluir", None)],  # mismo lugar, variante con espacio -> confirmado 22/08/2026
+    "CAPITÁN GENERAL BERNARDO O’HIGGINS": [("excluir", None)],  # no es una de las 60
     "CURA BROCHERO": [("localidad", "VILLA CURA BROCHERO")],
-    "ARROYO LOS PATOS": [("localidad", "ARROYO DE LOS PATOS")],
-    "HUANCHILA": [("localidad", "HUANCHILLA")],
-    "HIGUERAS": [("localidad", "LAS HIGUERAS")],
+    "ARROYO LOS PATOS": [("excluir", None)],  # ARROYO DE LOS PATOS no es una de las 60
+    "HUANCHILA": [("excluir", None)],  # HUANCHILLA no es una de las 60
+    "HIGUERAS": [("excluir", None)],  # LAS HIGUERAS no es una de las 60
 }
 # Normalizado una sola vez al importar el módulo (evita tener que escribir a
 # mano la forma normalizada -sin tildes/°/mayúscula- de cada clave arriba).
 EXCEPCIONES_AUDIENCIA_SMS = {normalizar(k): v for k, v in _EXCEPCIONES_AUDIENCIA_SMS_RAW.items()}
+
+# Tokens de AUDIENCIA revisados y confirmados a mano por el usuario (ronda del
+# 22/08/2026) que NO son ninguna de las 60 ni deben generar ningún alcance —
+# ya se comportan bien por default (_resolver_token_audiencia devuelve None
+# -> sin alcance, la fila no aporta nada geográfico). Esta lista NO agrega
+# ninguna resolución nueva: solo sirve para FILTRAR el log de
+# no_identificados. Sin este filtro, como el export es un acumulado completo
+# (se reprocesa entero en cada corrida), estos mismos 56 tokens reaparecerían
+# siempre mezclados con lo que sea genuinamente nuevo, y el log perdería
+# utilidad para saber qué hace falta clasificar de verdad.
+#
+# Una parte son segmentos de AUDIENCIA no geográficos (bases de datos,
+# archivos .xlsx colados, rangos etarios, "X interior"); el resto son
+# localidades reales de la provincia que no están entre las 60 (confirmado
+# contra Localidades_1.xlsx, ninguna aparece ahí). 56 tokens en total.
+_TOKENS_CONFIRMADOS_SIN_LUGAR_SMS_RAW = [
+    # No geográficos
+    "18-40", "2. AGENTES PROVINCIA.xlsx", "4. PENITENCIARIOS PROVINCIA.xlsx",
+    "6. CABOS PROVINCIA.xlsx", "8. OFICIALES PROVINCIA.xlsx", "Agentes interior",
+    "BASE DE DATOS", "BASE DE DATOS DE AGENTES PROVINCIALES",
+    "BASE DE DATOS DE CABOS PROVINCIA", "BASE DE DATOS DE OFICIALES PROVINCIA",
+    "BASE DE DATOS DE PENITENCIARIOS PROVINCIA", "Cabos interior",
+    "Oficiales interior", "Penitenciarios interior", "Números particulares",
+    # Localidades reales, no una de las 60
+    "ARIAS", "BENGOLEA", "BULNES", "CAVANAGH", "CHARRAS", "COLONIA ITALIANA",
+    "CONLARA", "CRUZ DE CAÑA", "DEL CAMPILLO", "EL RASTREADOR",
+    "ESTACIÓN GENERAL PAZ", "FALDA DEL CARMEN", "FREYRE", "HUINCA RENANCÓ",
+    "ITALO", "LA HIGUERA", "LA PAZ", "LA POBLACION", "LOS CEDROS",
+    "LOS HORNILLOS", "LUYABA", "MELO", "MI GRANJA", "MONTE DE LOS GAUCHOS",
+    "NONO", "OLAETA", "PACHECO DE MELO", "PANAHOLMA", "PASO VIEJO", "PINCÉN",
+    "RANQUELES", "SALADILLO", "SAN JAVIER Y YACANTO", "SAN JOSE DE LA DORMIDA",
+    "SAN LORENZO", "TALA CAÑADA", "TANTI", "TICINO", "TINOCO", "UCACHA",
+    "VILLA PARQUE SANTA ANA",
+]
+TOKENS_CONFIRMADOS_SIN_LUGAR_SMS = {normalizar(t) for t in _TOKENS_CONFIRMADOS_SIN_LUGAR_SMS_RAW}
+
+
+def _token_confirmado_sin_lugar(token):
+    """True si este token de AUDIENCIA ya fue revisado a mano y confirmado
+    como "no es ninguna de las 60, no genera alcance" -> se usa solo para
+    filtrar el log de no_identificados, nunca para resolver un alcance (la
+    resolución real sigue siendo la del camino genérico: None)."""
+    return normalizar(token) in TOKENS_CONFIRMADOS_SIN_LUGAR_SMS
+
 
 PARENTESIS_RE = re.compile(r"\([^)]*\)")
 
@@ -790,66 +837,14 @@ def _localizar_sms_looker():
     return candidatos[0]
 
 
-def cargar_padron_sms(ruta):
-    """Nomenclador Maestro no es un dataset por fila -> son listas de
-    validación. Solo interesan estas 2 columnas juntas: forman el padrón
-    oficial de localidades por departamento de TODA la provincia (no solo las
-    60 prioritarias). El resto de columnas de esa hoja se ignora.
-
-    Confirmado contra el archivo real (22/08/2026): ambas columnas vienen en
-    el mismo formato verboso "X, DEPARTAMENTO DE Y, PROVINCIA DE CÓRDOBA,
-    ARGENTINA" que ya usa Pauta RRSS_GLOBAL.xlsx -> se extrae el nombre
-    pelado con la MISMA técnica que ya prueba _departamento_candidato() en
-    este archivo para ese otro formato (split(",")[0] + stripping del
-    prefijo "DEPARTAMENTO"), no una regla nueva. Antes de este fix se
-    normalizaba la celda completa como clave, así que casi ninguna localidad
-    real matcheaba (ver excepciones_sin_resolver / no_identificados /
-    fuzzy_aplicados disparados en la corrida real que detectó esto)."""
-    df = pd.read_excel(ruta, sheet_name="Nomenclador Maestro")
-    col_depto = _col(df, "DEPARTAMENTO CON DESAGREGADO PARA LA LOCALIDAD")
-    col_loc = _col(df, "LOCALIDAD / SUBCIRCUITO")
-
-    localidad_a_depto_nomenclador = {}
-    ambiguas = set()
-    for depto_raw, loc_raw in zip(df[col_depto], df[col_loc]):
-        if loc_raw is None or (isinstance(loc_raw, float) and pd.isna(loc_raw)):
-            continue
-        loc = str(loc_raw).split(",")[0].strip()
-        if not loc or normalizar(loc) == normalizar("TODAS LAS LOCALIDADES"):
-            continue  # sentinel de "provincia entera" (fila 0 del padrón real), no es una localidad puntual
-        depto = _departamento_candidato(depto_raw)
-        n_loc = normalizar(loc)
-        if n_loc in localidad_a_depto_nomenclador and localidad_a_depto_nomenclador[n_loc] != depto:
-            ambiguas.add(n_loc)
-        localidad_a_depto_nomenclador[n_loc] = depto
-    return localidad_a_depto_nomenclador, ambiguas
-
-
-def _depto_desde_fila(depto_raw_fila, deptos_a_oficial):
-    """Limpia la columna DEPARTAMENTO cruda de Sms_Looker (mismo formato
-    verboso "DEPARTAMENTO DE X, PROVINCIA DE CÓRDOBA, ARGENTINA" que ya
-    resuelve _departamento_candidato() para el Nomenclador) y la resuelve a
-    la grafía oficial (deptos_a_oficial) cuando es posible. Se usa SOLO como
-    *fallback* de etiqueta en los 3 lugares donde no hay otra forma de
-    nombrar el departamento (no identificado, excepción sin resolver, DEPTO
-    COMPLETO) -> nunca para filtrar/acotar candidatos de matching (ver 3.4:
-    la columna no es confiable)."""
-    candidato = _departamento_candidato(depto_raw_fila) or depto_raw_fila
-    if candidato is None:
-        return None
-    return deptos_a_oficial.get(normalizar(candidato), candidato)
-
-
-def _resolver_localidad_exacta(n_loc, localidad_a_oficial, localidad_a_depto_nomenclador,
-                                localidad_a_departamento_oficial, deptos_a_oficial):
-    """n_loc ya normalizado. Localidad | Departamento | None (no existe en ningún padrón)."""
+def _resolver_localidad_exacta(n_loc, localidad_a_oficial, localidad_a_departamento_oficial):
+    """n_loc ya normalizado. Localidad (una de las 60) | None. Ya no hay
+    fallback a Departamento (cambio de regla del 22/08/2026, ver comentario de
+    cabecera de esta sección y CONTEXTO 2): si n_loc no es una de las 60, no
+    hay nada que devolver."""
     if n_loc in localidad_a_oficial:
         return {"tipo": "localidad", "departamento": localidad_a_departamento_oficial[n_loc],
                 "localidad": localidad_a_oficial[n_loc]}
-    if n_loc in localidad_a_depto_nomenclador:
-        depto_crudo = localidad_a_depto_nomenclador[n_loc]
-        depto_oficial = deptos_a_oficial.get(normalizar(depto_crudo or ""), depto_crudo)
-        return {"tipo": "departamento", "departamento": depto_oficial, "localidad": None}
     return None
 
 
@@ -866,14 +861,17 @@ def _dividir_audiencia(texto):
 
 
 def _resolver_nombre_localidad(nombre, mapas, fuzzy_aplicados, origen_log):
-    """Exacto primero, fuzzy como fallback (cutoff 0.7, ver FUZZY_CUTOFF_SMS) -> None si no matchea
-    ni por uno ni por el otro. Se usa tanto para tokens de AUDIENCIA sueltos
-    como para el nombre "oficial" que apunta cada excepción hardcodeada: una
-    excepción confirma que el lugar existe, pero no garantiza que su grafía
-    coincida carácter a carácter con el Nomenclador Maestro (ej. "CORRAL DE
-    BUSTOS" vs. el nombre real "CORRAL DE BUSTOS - IFFLINGER"), así que igual
-    conviene el fallback fuzzy antes de darla por perdida."""
-    localidad_a_oficial, localidad_a_depto_nomenclador, _, _ = mapas
+    """Exacto primero, fuzzy como fallback (cutoff 0.7, ver FUZZY_CUTOFF_SMS)
+    contra las 60 localidades prioritarias -> None si no matchea ni por uno
+    ni por el otro (ya no hay Departamento a dónde caer, cambio de regla del
+    22/08/2026). Se usa tanto para tokens de AUDIENCIA sueltos como para el
+    nombre "oficial" que apunta cada excepción hardcodeada de tipo
+    "localidad": una excepción confirma que el lugar existe, pero no
+    garantiza que su grafía coincida carácter a carácter con las 60 (ej. una
+    excepción podría escribir el nombre con un sufijo o variante que el
+    padrón oficial no usa), así que igual conviene el fallback fuzzy antes de
+    darla por perdida."""
+    localidad_a_oficial, _ = mapas
     n_nombre = normalizar(nombre)
 
     r = _resolver_localidad_exacta(n_nombre, *mapas)
@@ -881,8 +879,7 @@ def _resolver_nombre_localidad(nombre, mapas, fuzzy_aplicados, origen_log):
         r["matcheo"] = origen_log
         return r
 
-    universo = list(set(localidad_a_oficial.keys()) | set(localidad_a_depto_nomenclador.keys()))
-    cercano = difflib.get_close_matches(n_nombre, universo, n=1, cutoff=FUZZY_CUTOFF_SMS)
+    cercano = difflib.get_close_matches(n_nombre, list(localidad_a_oficial.keys()), n=1, cutoff=FUZZY_CUTOFF_SMS)
     if cercano:
         r = _resolver_localidad_exacta(cercano[0], *mapas)
         r["matcheo"] = "fuzzy" if origen_log == "exacto" else origen_log
@@ -892,60 +889,38 @@ def _resolver_nombre_localidad(nombre, mapas, fuzzy_aplicados, origen_log):
     return None
 
 
-def _resolver_token_audiencia(token, mapas, fuzzy_aplicados, excepciones_sin_resolver, depto_raw_fila=None):
-    """Devuelve una lista de alcances (nunca prorratea: un token puede
-    "explotar" en varias localidades, ej. la excepción de 3 vías; o en CERO,
-    ej. una excepción "excluir" -> lista vacía, no None) o None si no matchea
-    ni por excepción, ni exacto, ni fuzzy -> "no identificado".
-
-    `depto_raw_fila` es la columna DEPARTAMENTO cruda de la fila (no
-    confiable, ver 3.4) -> se usa como *fallback* de etiqueta cuando una
-    excepción hardcodeada no resuelve (ni exacto ni fuzzy contra el padrón
-    actual), mismo criterio que ya aplica cargar_sms() para un token "no
-    identificado" fuera de la tabla de excepciones -> sin este fallback acá
-    quedaba departamento=None aunque la fila sí traiga un departamento
-    razonable en esa columna."""
-    _, _, _, deptos_a_oficial = mapas
+def _resolver_token_audiencia(token, mapas, fuzzy_aplicados, excepciones_sin_resolver):
+    """Devuelve una lista de alcances de tipo "localidad" (nunca prorratea: un
+    token puede "explotar" en varias localidades, ej. la excepción de 3 vías)
+    o lista VACÍA cuando el token queda fuera del universo del tablero a
+    propósito (excepción "excluir") o no matchea ninguna de las 60 dentro de
+    una excepción "localidad" (ver excepciones_sin_resolver abajo) -> o None
+    si el token no matchea ni por excepción, ni exacto, ni fuzzy -> "no
+    identificado". Ya no existe ningún alcance de tipo "departamento" (cambio
+    de regla del 22/08/2026, ver cabecera de esta sección): todo lo que no
+    sea exactamente una de las 60 queda sin alcance."""
     n_token = normalizar(token)
 
     if n_token == normalizar(AUDIENCIA_CAPITAL_SUELTO_SMS):
-        return [{"tipo": "departamento", "departamento": "CAPITAL", "localidad": None, "matcheo": "capital_suelto"}]
+        return [{"tipo": "localidad", "departamento": "CAPITAL", "localidad": LOCALIDAD_CAPITAL_SMS, "matcheo": "capital_suelto"}]
 
     if n_token in EXCEPCIONES_AUDIENCIA_SMS:
         salida = []
         for tipo, valor in EXCEPCIONES_AUDIENCIA_SMS[n_token]:
             if tipo == "excluir":
-                # Queda afuera del universo del tablero a propósito (ej. un
-                # barrio) -> no genera alcance, ni Localidad ni Departamento.
-                continue
-            if tipo == "departamento":
-                depto_oficial = deptos_a_oficial.get(normalizar(valor), valor)
-                salida.append({"tipo": "departamento", "departamento": depto_oficial, "localidad": None, "matcheo": "excepcion"})
-                continue
-            if tipo == "depto_de_fila":
-                # Confirmado que este lugar NO existe en el Nomenclador
-                # Maestro (ni exacto ni por substring) y varía de Departamento
-                # según la fila -> va directo a depto_raw_fila, sin pasar por
-                # exacto/fuzzy (evita que el fuzzy matchee por casualidad
-                # contra una localidad real pero equivocada, ej. "LOS
-                # GIGANTES" -> "LOS CISNES" detectado el 22/08/2026).
-                depto_oficial = _depto_desde_fila(depto_raw_fila, deptos_a_oficial)
-                salida.append({"tipo": "departamento", "departamento": depto_oficial, "localidad": None, "matcheo": "excepcion_depto_de_fila"})
+                # Queda afuera del universo del tablero a propósito (barrio,
+                # o lugar real confirmado que no es una de las 60) -> no
+                # genera ningún alcance.
                 continue
             r = _resolver_nombre_localidad(valor, mapas, fuzzy_aplicados, origen_log="excepcion")
             if r is None:
-                # La excepción hardcodeada apunta a algo que ya no está ni en
-                # las 60, ni en el Nomenclador Maestro, ni siquiera por
-                # coincidencia aproximada -> cae al mismo fallback de
-                # Departamento (columna DEPARTAMENTO de la fila) que el
-                # camino genérico de "no identificado", en vez de perderse
-                # como departamento=None. Igual queda logueada en
-                # excepciones_sin_resolver para revisión manual.
-                depto_oficial = _depto_desde_fila(depto_raw_fila, deptos_a_oficial)
-                r = {"tipo": "departamento", "departamento": depto_oficial, "localidad": None, "matcheo": "excepcion_sin_resolver"}
-                excepciones_sin_resolver.append({
-                    "token_audiencia": token, "excepcion_apunta_a": valor, "departamento_fallback": depto_oficial,
-                })
+                # La excepción hardcodeada apunta a algo que ya no matchea
+                # (ni exacto ni fuzzy) contra las 60 -> señal de que algo
+                # cambió desde que se cargó esta excepción a mano. Se loguea
+                # para revisión manual; ya no hay Departamento a dónde caer,
+                # así que no genera ningún alcance.
+                excepciones_sin_resolver.append({"token_audiencia": token, "excepcion_apunta_a": valor})
+                continue
             salida.append(r)
         return salida
 
@@ -956,19 +931,12 @@ def _resolver_token_audiencia(token, mapas, fuzzy_aplicados, excepciones_sin_res
     return None
 
 
-def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial):
+def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial):
     ruta = _localizar_sms_looker()
     if ruta is None:
         return None  # todavía no llegó ningún export de SMS -> se omite la sección
 
-    localidad_a_depto_nomenclador, ambiguas_nomenclador = cargar_padron_sms(ruta)
-    if ambiguas_nomenclador:
-        print(
-            f"  ⚠️  SMS: {len(ambiguas_nomenclador)} localidades del Nomenclador Maestro "
-            f"aparecen bajo más de un Departamento -> revisar manualmente: {sorted(ambiguas_nomenclador)}"
-        )
-
-    mapas = (localidad_a_oficial, localidad_a_depto_nomenclador, localidad_a_departamento_oficial, deptos_a_oficial)
+    mapas = (localidad_a_oficial, localidad_a_departamento_oficial)
 
     df = pd.read_excel(ruta, sheet_name="Sms_Looker")
     col_eje = _col(df, "EJE")
@@ -993,44 +961,60 @@ def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_o
         zona_raw = limpio(row[col_zona])
         n_zona = normalizar(zona_raw)
         audiencia_raw = limpio(row[col_audiencia])
-        depto_raw_fila = limpio(row[col_depto])  # NO se usa para filtrar/acotar matching, solo como fallback de etiqueta
+        depto_raw_fila = limpio(row[col_depto])  # NO se usa para filtrar/acotar matching (ver 3.4); el único uso que
+                                                  # le queda es reconocer "Capital" en AUDIENCIA="DEPTO COMPLETO" (ver abajo)
 
         sin_desagregacion = False
         alcances = []
 
         if n_zona in ZONAS_CAPITAL_SMS:
-            # No se desagrega por barrio -> siempre Departamento Capital entero.
-            alcances = [{"tipo": "departamento", "departamento": "CAPITAL", "localidad": None, "matcheo": "zona_capital"}]
+            # No se desagrega por barrio -> siempre la localidad Capital
+            # entera (una de las 60), nunca un Departamento.
+            alcances = [{"tipo": "localidad", "departamento": "CAPITAL", "localidad": LOCALIDAD_CAPITAL_SMS, "matcheo": "zona_capital"}]
         elif n_zona == normalizar(ZONA_PROVINCIA_SMS):
             if audiencia_raw and normalizar(audiencia_raw) == normalizar(AUDIENCIA_DEPTO_COMPLETO_SMS):
-                depto_oficial = _depto_desde_fila(depto_raw_fila, deptos_a_oficial)
-                alcances = [{"tipo": "departamento", "departamento": depto_oficial, "localidad": None, "matcheo": "depto_completo"}]
+                # DEPTO COMPLETO: la única forma de saber a qué departamento
+                # se refiere es la columna DEPARTAMENTO de la fila. Si es
+                # Capital, la localidad Capital cubre igual todo el
+                # departamento -> hay alcance. Para cualquier otro
+                # departamento ya no existe ningún ámbito que lo represente
+                # -> sin desagregación geográfica (en los datos reales,
+                # confirmado el 22/08/2026, las 12 filas con DEPTO COMPLETO
+                # son siempre de Capital, pero se deja el camino general por
+                # las dudas).
+                depto_candidato = _departamento_candidato(depto_raw_fila)
+                if depto_candidato and normalizar(depto_candidato) == normalizar("CAPITAL"):
+                    alcances = [{"tipo": "localidad", "departamento": "CAPITAL", "localidad": LOCALIDAD_CAPITAL_SMS, "matcheo": "depto_completo_capital"}]
+                else:
+                    sin_desagregacion = True
             elif not audiencia_raw:
                 sin_desagregacion = True  # PROVINCIA sin ninguna audiencia especificada: nada para matchear
             else:
                 for token in _dividir_audiencia(audiencia_raw):
-                    resueltos = _resolver_token_audiencia(token, mapas, fuzzy_aplicados, excepciones_sin_resolver, depto_raw_fila)
+                    resueltos = _resolver_token_audiencia(token, mapas, fuzzy_aplicados, excepciones_sin_resolver)
                     if resueltos is None:
-                        depto_oficial = _depto_desde_fila(depto_raw_fila, deptos_a_oficial)
-                        alcances.append({
-                            "tipo": "departamento", "departamento": depto_oficial, "localidad": None,
-                            "matcheo": "no_identificado_fallback_depto",
-                        })
-                        no_identificados.append({
-                            "fila": int(idx) + 2,  # +2: fila real del excel (header + 1-index)
-                            "token": token,
-                            "audiencia_original": audiencia_raw,
-                            "eje": limpio(row[col_eje]),
-                            "fecha_inicio": fecha_iso(row[col_fecha]),
-                            "departamento_fila": depto_raw_fila,
-                        })
+                        # Sigue sin generar alcance en cualquier caso (esto no
+                        # cambia). Si ya fue revisado y confirmado a mano
+                        # (TOKENS_CONFIRMADOS_SIN_LUGAR_SMS), no se vuelve a
+                        # listar en no_identificados -> evita que estos mismos
+                        # 56 tokens reaparezcan cada corrida (el export es
+                        # acumulado completo) tapando lo genuinamente nuevo.
+                        if not _token_confirmado_sin_lugar(token):
+                            no_identificados.append({
+                                "fila": int(idx) + 2,  # +2: fila real del excel (header + 1-index)
+                                "token": token,
+                                "audiencia_original": audiencia_raw,
+                                "eje": limpio(row[col_eje]),
+                                "fecha_inicio": fecha_iso(row[col_fecha]),
+                                "departamento_fila": depto_raw_fila,
+                            })
                     else:
                         alcances.extend(resueltos)  # puede ser [] (ej. excepción "excluir") -> no agrega nada
                 if not alcances:
-                    # Todos los tokens de AUDIENCIA terminaron excluidos del
-                    # universo (ej. la fila era solo "B° La Floresta") -> no
-                    # queda nada geográfico que mostrar para esta fila, mismo
-                    # tratamiento que una ZONA no geográfica.
+                    # Todos los tokens de AUDIENCIA terminaron sin alcance
+                    # (excluidos del universo, o no matchearon ninguna de las
+                    # 60) -> no queda nada geográfico que mostrar para esta
+                    # fila, mismo tratamiento que una ZONA no geográfica.
                     sin_desagregacion = True
         else:
             # ZONA = "Base particular" u otro token no geográfico (bases de
@@ -1372,7 +1356,7 @@ def main():
     audiovisuales = cargar_audiovisuales()
     escribir_json("audiovisuales.json", audiovisuales)
 
-    sms = cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial)
+    sms = cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial)
     if sms is not None:
         escribir_json("sms.json", sms)
         print(

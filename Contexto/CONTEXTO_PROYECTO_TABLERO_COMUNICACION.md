@@ -10,11 +10,9 @@ Lo usa principalmente **[el usuario]**, que consolida y reporta al gobernador. L
 
 **El universo son siempre las 60 localidades prioritarias**, cada una con su Departamento correspondiente (listado oficial ya definido, no se negocia por área).
 
-**Excepción vigente: SMS.** Como esa área no siempre viene desagregada a nivel localidad, se muestra **también a nivel Departamento** (no solo localidad) cuando `AUDIENCIA` no matchea ninguna de las 60. Ver 3.4.
+**Ya no hay ninguna excepción: las 4 áreas usan la misma regla, sin nivel intermedio de Departamento.** Pauta Digital dejó de tenerlo el **20/08/2026**, tras detectarse un bug real: piezas de alcance Departamento/Provincia se colaban en el panel de una Localidad puntual a la que no correspondían (caso Alta Gracia — ver `scripts/test_pauta_digital.py`). SMS dejó de tenerlo el **22/08/2026**, por el mismo criterio (ver 3.4). En las 4 áreas la regla es **sin excepciones**: un dato se atribuye a una Localidad solo si su Localidad puntual es una de las 60; si no, no se propaga a ningún Departamento en ningún panel de Localidad.
 
-**Pauta Digital ya NO tiene esta excepción.** Tuvo el mismo comportamiento (mostrar también a nivel Departamento) hasta el **20/08/2026**, cuando se eliminó por completo tras detectarse un bug real: piezas de alcance Departamento/Provincia se colaban en el panel de una Localidad puntual a la que no correspondían (caso Alta Gracia — ver `scripts/test_pauta_digital.py`). Desde ese cambio la regla de Pauta Digital es **sin excepciones**: una pieza se atribuye a una Localidad solo si su Localidad puntual es una de las 60; si no, no se propaga a ningún Departamento en el panel de Localidad (sigue visible, con su Departamento a la vista, en la pestaña propia de Pauta Digital y en Campañas — pero ya no en ningún panel de Localidad). **No mezclar esta regla con la de SMS**: son áreas distintas, con historiales distintos — SMS sí tiene hoy el fallback a Departamento, Pauta Digital no.
-
-Todo dato de cualquier área que no pertenezca a las 60 localidades (o, en el caso de SMS, a los departamentos que las contienen cuando no hay match a nivel Localidad) **queda fuera del tablero** — no se crean localidades nuevas, no se expande el universo. Esto se probó y se revirtió una vez: no volver a repetir el error de agregar localidades "extra" fuera de las 60.
+Todo dato de cualquier área que no pertenezca a las 60 localidades **queda fuera del tablero** — no se crean localidades nuevas, no se expande el universo, y ya no se sube un nivel a "su" Departamento. Esto se probó y se revirtió una vez: no volver a repetir el error de agregar localidades "extra" fuera de las 60.
 
 ## 3. Las 4 áreas de comunicación
 
@@ -60,19 +58,20 @@ Export acumulado completo de envíos de SMS ("SMS_Looker - `<fecha>`.xlsx", nomb
 - `Sms_Looker`: una fila por envío. Columnas relevantes: `EJE`, `DEPARTAMENTO` (no confiable, ver abajo), `FECHA DE INICIO`, `ESTADO`, `TEMATICA`, `CATEGORIA`, `MENSAJE`, `ZONA`, `AUDIENCIA\n(LOCALIDADES O BARRIOS)`, `CANTIDAD DE SMS ENTREGADOS`, `CIRCUITO`.
 - `Nomenclador Maestro`: no es un dataset por fila, son listas de validación de Sheets. Solo importan `DEPARTAMENTO CON DESAGREGADO PARA LA LOCALIDAD` + `LOCALIDAD / SUBCIRCUITO` juntas — forman el padrón oficial de localidades por departamento de **toda la provincia** (no solo las 60). El resto de columnas de esa hoja se ignora.
 
-**La columna `DEPARTAMENTO` de `Sms_Looker` no es confiable como filtro** — hay filas donde no coincide con lo que realmente lista `AUDIENCIA`. No se usa para acotar candidatos de matching; solo se usa como *fallback* de etiqueta cuando no hay ninguna otra forma de nombrar el departamento (`AUDIENCIA` = "DEPTO COMPLETO", o token de `AUDIENCIA` totalmente sin matchear).
+**La columna `DEPARTAMENTO` de `Sms_Looker` no es confiable como filtro** — hay filas donde no coincide con lo que realmente lista `AUDIENCIA`. No se usa para acotar candidatos de matching. Desde el cambio de regla del **22/08/2026** (ver más abajo) el único uso que le queda es reconocer si una fila con `AUDIENCIA` = "DEPTO COMPLETO" corresponde al departamento Capital.
+
+**Cambio de regla del 22/08/2026: SMS ya no tiene nivel intermedio de Departamento** (mismo criterio que Pauta Digital desde el 20/08/2026 y Contenido Orgánico — ver sección 2). Antes de este cambio, un token que no era una de las 60 pero sí figuraba en el Nomenclador Maestro (o que no matcheaba nada) caía a un alcance de tipo Departamento. Eso se eliminó por completo: ahora un token o resuelve exacto/fuzzy a una de las 60, o no genera ningún alcance. El Nomenclador Maestro (segunda hoja del archivo fuente) ya no se usa para nada en el procesamiento de SMS.
 
 **Regla de alcance geográfico por `ZONA`:**
-- `ZONA` = `CAPITAL`, `CÓRDOBA`, `CAPITAL + PROVINCIA` → nivel **Departamento Capital entero**. No se desagrega por barrio (los barrios quedan fuera de este tablero, van a otro proyecto aparte). Se ignora el contenido de `AUDIENCIA` en este caso.
-- `ZONA` = `PROVINCIA` → se separa `AUDIENCIA` en tokens (ver split abajo) y cada uno se matchea contra el padrón del Nomenclador Maestro:
-  - Matchea y está entre las 60 prioritarias → nivel Localidad.
-  - Matchea pero no está entre las 60 → nivel Departamento (el que le corresponde según el Nomenclador, no según la columna `DEPARTAMENTO` de la fila).
-  - No matchea ni exacto, ni por variante conocida (tabla de excepciones), ni por fuzzy → nivel Departamento como *fallback* (usando la columna `DEPARTAMENTO` de la fila, con la salvedad de que puede ser inexacta) y se loguea como "no identificado" para revisión manual.
-- `AUDIENCIA` = literalmente `"DEPTO COMPLETO"` (celda completa) → nivel Departamento entero, resuelto con la columna `DEPARTAMENTO` de la fila (única fuente disponible en ese caso, pese a no ser 100% confiable).
-- Un token de `AUDIENCIA` que, ya separado (ver split abajo), es exactamente `"CAPITAL"` → nivel Departamento Capital entero para ese token. Se evalúa **token por token, no celda completa**: si `AUDIENCIA` trae "Río Cuarto, Capital", el token "Capital" igual resuelve a Departamento Capital aunque comparta la celda con otro token.
-- `ZONA` = `Base particular`, o cualquier valor de `ZONA` que no sea uno de los reconocidos arriba (bases de datos, "Números particulares", nombres de archivo `.xlsx` colados, rangos etarios, "Jubilados provincia y ciudad", etc.) → **"sin desagregación geográfica"**. La fila se mantiene para totales generales (por tema, eje, fecha) pero se excluye de cualquier vista por localidad/departamento. Cualquier `ZONA` no reconocida se loguea aparte (`zonas_no_reconocidas` en `data/sms.json`) para confirmar que no sea en realidad geográfica.
+- `ZONA` = `CAPITAL`, `CÓRDOBA`, `CAPITAL + PROVINCIA` → resuelve directo a la **localidad CORDOBA** (es una de las 60, no un Departamento). No se desagrega por barrio (los barrios quedan fuera de este tablero, van a otro proyecto aparte). Se ignora el contenido de `AUDIENCIA` en este caso.
+- `ZONA` = `PROVINCIA` → se separa `AUDIENCIA` en tokens (ver split abajo) y cada uno se matchea contra las 60 localidades prioritarias:
+  - Matchea (exacto o fuzzy) una de las 60 → alcance de tipo Localidad.
+  - No matchea ninguna de las 60 → no genera ningún alcance, y se loguea como "no identificado" para revisión manual (puede ser un lugar real fuera de las 60, o directamente basura de carga).
+- `AUDIENCIA` = literalmente `"DEPTO COMPLETO"` (celda completa) → si la columna `DEPARTAMENTO` de la fila es Capital, resuelve a la localidad CORDOBA (la localidad Capital cubre igual todo el departamento); para cualquier otro departamento, ya no hay ningún ámbito que lo represente → sin desagregación geográfica. En los datos reales (confirmado el 22/08/2026) las 12 filas con "DEPTO COMPLETO" son siempre de Capital.
+- Un token de `AUDIENCIA` que, ya separado (ver split abajo), es exactamente `"CAPITAL"` → resuelve a la localidad CORDOBA para ese token. Se evalúa **token por token, no celda completa**: si `AUDIENCIA` trae "Río Cuarto, Capital", el token "Capital" igual resuelve a CORDOBA aunque comparta la celda con otro token.
+- `ZONA` = `Base particular`, o cualquier valor de `ZONA` que no sea uno de los reconocidos arriba (bases de datos, "Números particulares", nombres de archivo `.xlsx` colados, rangos etarios, "Jubilados provincia y ciudad", etc.) → **"sin desagregación geográfica"**. La fila se mantiene para totales generales (por tema, eje, fecha) pero se excluye de cualquier vista por localidad. Cualquier `ZONA` no reconocida se loguea aparte (`zonas_no_reconocidas` en `data/sms.json`) para confirmar que no sea en realidad geográfica.
 
-**Separar tokens dentro de `AUDIENCIA`:** split por `" - "`, `","` y saltos de línea (`\n`); limpiar paréntesis con rangos etarios (ej. "(25-45)"); normalizar con NFD (sacar tildes) + `.strip().upper()` (mismo patrón que el resto del proyecto). Match exacto contra el padrón primero, fuzzy (`difflib`, cutoff 0.7) como fallback.
+**Separar tokens dentro de `AUDIENCIA`:** split por `" - "`, `","` y saltos de línea (`\n`); limpiar paréntesis con rangos etarios (ej. "(25-45)"); normalizar con NFD (sacar tildes) + `.strip().upper()` (mismo patrón que el resto del proyecto). Match exacto contra las 60 primero, fuzzy (`difflib`, cutoff 0.7, contra las 60 solamente) como fallback.
 
 **Tabla de excepciones** (ya resueltas a mano, hardcodeadas en `EXCEPCIONES_AUDIENCIA_SMS` de `scripts/generar_datos.py`):
 
@@ -80,16 +79,25 @@ Export acumulado completo de envíos de SMS ("SMS_Looker - `<fecha>`.xlsx", nomb
 |---|---|
 | CARLOS PAZ | → VILLA CARLOS PAZ (en las 60) |
 | TOTORAL | → VILLA DEL TOTORAL (en las 60) |
-| VILLA CIUDAD PARQUE | → VILLA CIUDAD PARQUE LOS REARTES (no está en las 60 → Departamento) |
-| LA CARLOTA LABOULAYE CANALS | → split en 3: LA CARLOTA (en las 60) + LABOULAYE (en las 60) + CANALS (no está → Departamento) |
-| TANINGA | No está en las 60 → Departamento |
-| LOS GIGANTES | No está en las 60 → Departamento |
-| CERRO BLANCO | No está en las 60 → Departamento |
-| CORRAL DE BUSTOS | No está en las 60 → Departamento |
-| B° LA FLORESTA | Es barrio de la ciudad de Córdoba (no localidad de interior) → **afuera del universo del tablero**, no genera ningún alcance (ni Localidad ni Departamento) — los barrios van a otro proyecto aparte |
-| CAPITAL (como token individual tras el split, comparta celda o no con otros tokens) | → Departamento Capital entero |
+| CURA BROCHERO | → VILLA CURA BROCHERO (en las 60) |
+| VILLA CIUDAD PARQUE | VILLA CIUDAD PARQUE LOS REARTES no está en las 60 → sin alcance |
+| LA CARLOTA LABOULAYE CANALS | → split en 3: LA CARLOTA (en las 60) + LABOULAYE (en las 60) + CANALS (no está en las 60 → sin alcance para ese tramo) |
+| TANINGA | No está en las 60 → sin alcance |
+| LOS GIGANTES | No está en las 60 → sin alcance |
+| CERRO BLANCO | No está en las 60 → sin alcance |
+| CORRAL DE BUSTOS | CORRAL DE BUSTOS - IFFLINGER no está en las 60 → sin alcance |
+| VILLA SARMIENTO | VILLA SARMIENTO (M) no está en las 60 → sin alcance |
+| MONTEBUEY | MONTE BUEY no está en las 60 → sin alcance |
+| CAPITÁN GENERAL BERNARDO O'HIGGINS | No está en las 60 → sin alcance |
+| ARROYO LOS PATOS | ARROYO DE LOS PATOS no está en las 60 → sin alcance |
+| HUANCHILA | HUANCHILLA no está en las 60 → sin alcance |
+| HIGUERAS | LAS HIGUERAS no está en las 60 → sin alcance |
+| B° LA FLORESTA | Es barrio de la ciudad de Córdoba (no localidad de interior) → **afuera del universo del tablero**, no genera ningún alcance — los barrios van a otro proyecto aparte |
+| CAPITAL (como token individual tras el split, comparta celda o no con otros tokens) | → localidad CORDOBA |
 
-Cualquier token nuevo que no matchee y no esté en esta tabla: no se asume, se loguea aparte (`no_identificados` en `data/sms.json`) para que el usuario lo clasifique a mano, igual que se hizo con estos. Si una fila termina con **todos** sus tokens de `AUDIENCIA` excluidos del universo (ej. una fila cuya única mención es "B° La Floresta"), la fila se trata como **"sin desagregación geográfica"** — se mantiene para totales generales pero no aporta ningún alcance por Localidad/Departamento. Si una excepción hardcodeada ya no resuelve contra el padrón actual (ni exacto ni por fuzzy — señal de que el Nomenclador Maestro cambió desde que se cargó esa excepción a mano), se loguea aparte en `excepciones_sin_resolver` dentro de `data/sms.json`, para revisión manual — no se asume ningún Departamento por intuición.
+Cualquier token nuevo que no matchee y no esté en esta tabla: no se asume, se loguea aparte (`no_identificados` en `data/sms.json`) para que el usuario lo clasifique a mano, igual que se hizo con estos — y no genera ningún alcance. Si una fila termina con **todos** sus tokens de `AUDIENCIA` sin alcance (ej. una fila cuya única mención es "B° La Floresta", o un token que no matchea ninguna de las 60), la fila se trata como **"sin desagregación geográfica"** — se mantiene para totales generales pero no aporta ningún alcance por Localidad. Si una excepción hardcodeada de tipo "localidad" ya no resuelve contra las 60 (ni exacto ni por fuzzy — señal de que algo cambió desde que se cargó esa excepción a mano), se loguea aparte en `excepciones_sin_resolver` dentro de `data/sms.json`, para revisión manual — no se asume ningún alcance por intuición.
+
+**`TOKENS_CONFIRMADOS_SIN_LUGAR_SMS`** (sumada el 22/08/2026, 56 tokens): un token que no matchea ninguna de las 60 ya se comporta bien por default (no genera alcance), pero como el export es acumulado completo, ese mismo token reaparecería en `no_identificados` en cada corrida futura, mezclado con lo que sea genuinamente nuevo. Esta lista NO agrega ninguna resolución nueva — solo filtra el log: un token ya revisado y confirmado como "no es ninguna de las 60" (localidad real de la provincia fuera de las 60, o segmento no geográfico como una base de datos o un rango etario) deja de listarse en `no_identificados`, sin dejar de comportarse igual (sigue sin alcance). Un token nuevo, no confirmado todavía, sí se sigue listando.
 
 **Regla sobre `CANTIDAD DE SMS ENTREGADOS` (no reabrir):** cuando una fila tiene varias localidades/departamentos en `AUDIENCIA`, **no se prorratea** el número entre ellas — no hay base real para hacerlo. Cada lugar mencionado queda marcado como "alcanzado" por ese envío, sin número propio. El número queda a nivel de la fila/envío completo para totales (por tema, eje, fecha).
 
@@ -107,7 +115,7 @@ Export acumulado completo de publicaciones orgánicas en redes propias del Gobie
 3. **Excluir cualquier fila donde `LUGAR` contenga "http"** (error de carga, link pegado ahí) — se trata como si `LUGAR` estuviera vacío, logueada aparte en `lugares_con_link_excluidos`.
 4. **`LUGAR` recién se usa en serio desde el 29/07/2026** — antes está vacío en el 100% de los casos reales (la única excepción encontrada antes de esa fecha fue justamente un caso del punto 3, un link pegado por error). No es un bug, no hay que rellenar nada para atrás; las vistas por localidad simplemente no tienen datos de esta área antes de esa fecha.
 
-**Regla de alcance geográfico — a diferencia de SMS, acá NO hay nivel intermedio de Departamento** (mismo criterio que Pauta Digital desde el 20/08/2026, ver sección 2): separar `LUGAR` por comas, normalizar (NFD sin tildes + upper). Si un token matchea exacto una de las 60 (o por la tabla de alias) → localidad. Si no matchea ninguna de las 60 → afuera, invisible en vistas por localidad, sin excepción.
+**Regla de alcance geográfico — NO hay nivel intermedio de Departamento** (mismo criterio que Pauta Digital desde el 20/08/2026 y SMS desde el 22/08/2026, ver sección 2): separar `LUGAR` por comas, normalizar (NFD sin tildes + upper). Si un token matchea exacto una de las 60 (o por la tabla de alias) → localidad. Si no matchea ninguna de las 60 → afuera, invisible en vistas por localidad, sin excepción.
 
 **Alias hardcodeados** (`ALIAS_LUGAR_GNO`):
 

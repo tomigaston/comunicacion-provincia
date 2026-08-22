@@ -10,15 +10,15 @@ import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../l
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 const TAMANO_PAGINA = 50;
 
-// Mismo eje de ámbito conceptual que el resto del tablero (Localidad /
-// Departamento), más un tercer estado propio de SMS: "Sin desagregar" —
-// filas cuya única fuente geográfica (ZONA/AUDIENCIA) no permitió ubicarlas
-// en ninguna Localidad ni Departamento (ver sin_desagregacion_geografica en
-// generar_datos.py). Esas filas siguen contando para los totales generales
-// pero no tienen "Lugar".
+// Desde el cambio de regla del 22/08/2026 ya no existe ningún alcance de
+// tipo Departamento (ver CONTEXTO 3.4) -> el único ámbito posible con lugar
+// es "Localidad". Se mantiene igual un segundo estado, "Sin desagregar",
+// para las filas cuya única fuente geográfica (ZONA/AUDIENCIA) no matcheó
+// ninguna de las 60 (ver sin_desagregacion_geografica en generar_datos.py).
+// Esas filas siguen contando para los totales generales pero no tienen
+// "Localidad".
 const AMBITOS = [
   { key: 'localidad', label: 'Localidad' },
-  { key: 'departamento', label: 'Departamento' },
   { key: 'sin_desagregar', label: 'Sin desagregar' },
 ];
 
@@ -28,13 +28,17 @@ function ambitoLabel(key) {
 
 /**
  * Un envío de SMS puede tener varios "alcances" en AUDIENCIA (ej. La
- * Carlota + Laboulaye + Canals). Acá se explota cada envío en una fila por
- * alcance -para poder filtrar/ordenar directo por localidad o departamento-
- * conservando el índice del envío de origen (envioIndex) para poder
- * deduplicar cantidad_sms_entregados en los totales: esa cantidad vive a
- * nivel del envío completo, no se reparte entre sus alcances (regla de
- * negocio confirmada, ver CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md 3.4), así
- * que sumar directo las filas visibles triplicaría un envío con 3 lugares.
+ * Carlota + Laboulaye). Acá se explota cada envío en una fila por alcance
+ * -para poder filtrar/ordenar directo por localidad- conservando el índice
+ * del envío de origen (envioIndex) para poder deduplicar
+ * cantidad_sms_entregados en los totales: esa cantidad vive a nivel del
+ * envío completo, no se reparte entre sus alcances (regla de negocio
+ * confirmada, ver CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md 3.4), así que
+ * sumar directo las filas visibles triplicaría un envío con 3 lugares.
+ *
+ * Todo alcance es de tipo "localidad" (ya no existe "departamento", cambio
+ * de regla del 22/08/2026) -> "ambito" solo distingue si la fila tiene una
+ * localidad puntual o quedó sin desagregación geográfica.
  */
 function explotarEnFilas(envios) {
   const filas = [];
@@ -55,11 +59,7 @@ function explotarEnFilas(envios) {
       filas.push({ ...base, ambito: 'sin_desagregar', lugar: null });
     } else {
       alcances.forEach((a) => {
-        filas.push({
-          ...base,
-          ambito: a.tipo === 'localidad' ? 'localidad' : 'departamento',
-          lugar: a.localidad || a.departamento || null,
-        });
+        filas.push({ ...base, ambito: 'localidad', lugar: a.localidad });
       });
     }
   });
@@ -84,7 +84,7 @@ export default function Sms() {
 
   // Vocabularios de filtro generados de los datos reales -nunca hardcodeados-
   // porque Eje/Temática/Estado son texto libre de la fuente, a diferencia de
-  // Ámbito que sí es un eje fijo de 3 valores conocidos.
+  // Ámbito que sí es un eje fijo de 2 valores conocidos (AMBITOS arriba).
   const ejes = useMemo(
     () => Array.from(new Set(envios.map((e) => e.eje).filter(Boolean))).sort(),
     [envios]
@@ -177,7 +177,7 @@ export default function Sms() {
             <FilterBar>
               <Autocomplete
                 items={itemsLugares}
-                placeholder="Buscar localidad o departamento..."
+                placeholder="Buscar localidad..."
                 onQueryChange={(q) => {
                   setBusquedaLugar(q);
                   setVisibles(TAMANO_PAGINA);
@@ -283,8 +283,7 @@ export default function Sms() {
                   <th style={th}>Temática</th>
                   <th style={th}>Categoría</th>
                   <th style={{ ...th, minWidth: 260 }}>Mensaje</th>
-                  <th style={th}>Ámbito</th>
-                  <th style={th}>Lugar</th>
+                  <th style={th}>Localidad</th>
                   <th style={th}>SMS entregados</th>
                   <th style={th}>Estado</th>
                   <th style={th}>Zona</th>
@@ -298,7 +297,6 @@ export default function Sms() {
                     <td style={td}>{f.tematica || '—'}</td>
                     <td style={td}>{f.categoria || '—'}</td>
                     <td style={{ ...td, maxWidth: 380, whiteSpace: 'pre-wrap' }}>{f.mensaje || '—'}</td>
-                    <td style={td}>{ambitoLabel(f.ambito)}</td>
                     <td style={td}>{f.lugar || '—'}</td>
                     <td style={td}>
                       {typeof f.cantidad_sms_entregados === 'number'
