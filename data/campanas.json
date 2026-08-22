@@ -17583,20 +17583,6 @@
     {
       "area_origen": "Pauta digital",
       "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "MINAS",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
       "alcance_tipo": "provincia",
       "departamento": null,
       "localidad": null,
@@ -17611,263 +17597,11 @@
     {
       "area_origen": "Pauta digital",
       "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "TERCERO ARRIBA",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "RIO CUARTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "RIO CUARTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "RIO CUARTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "UNION",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "UNION",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "SALUD",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
       "alcance_tipo": "provincia",
       "departamento": null,
       "localidad": null,
       "detalle": {
         "area_tematica": "CULTURA Y TURISMO",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "POCHO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "EDUCACIÓN",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "SEGURIDAD",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-20",
-        "alcance": null,
-        "importe_gastado": null
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Hacer para Crecer",
-      "alcance_tipo": "departamento",
-      "departamento": "SAN JUSTO",
-      "localidad": null,
-      "detalle": {
-        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Finalizada",
         "finalizacion": "2026-07-20",
         "alcance": null,
@@ -20430,7 +20164,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20444,7 +20178,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20458,7 +20192,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20472,7 +20206,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20486,7 +20220,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20500,7 +20234,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null
@@ -20514,7 +20248,7 @@
       "localidad": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-20",
         "alcance": null,
         "importe_gastado": null

@@ -348,6 +348,43 @@ ALCANCE_A_TIPO = {
 CORTE_HISTORICO_PAUTA_DIGITAL = "2026-07-02"
 
 
+def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
+    """Traduce Alcance_Detectado (+ Departamento/Localidad crudos) a
+    (en_60_localidades, alcance_tipo) para una fila del histórico (Medios
+    Digitales.xlsx). Única fuente de verdad de esta regla —la usa
+    cargar_pauta_digital_historico() y scripts/test_pauta_digital.py— para
+    que un test de regresión y la generación real nunca puedan divergir.
+
+    Regla sin excepciones: en_60_localidades es True SOLO si la fila trae una
+    Localidad puntual que es una de las 60 oficiales (o si es PROVINCIA, que
+    aplica al universo entero por definición). Alcance_Detectado=DEPARTAMENTO
+    nunca da en_60_localidades=True, aunque su Departamento tenga localidades
+    prioritarias: no hay atribución a Localidad a partir de un dato que solo
+    viene acotado a nivel Departamento. alcance_tipo sigue devolviendo
+    "departamento" como etiqueta para esas filas (se usa para mostrar el
+    ámbito en la pestaña propia de Pauta Digital y en Campañas), pero ya no
+    habilita ningún match contra un panel de Localidad.
+
+    Una fila OTRO/REGION/CIRCUITO/CODIGO_AUDIENCIA tampoco se atribuye a una
+    Localidad ni Departamento aunque su columna Localidad diga, por texto, el
+    nombre de una de las 60 (ej. "CORDOBA" en filas OTRO de barrios sueltos).
+
+    Aparte (no algo que este chequeo cambie, ya se daba antes): una fila
+    LOCALIDAD cuya Localidad no es una de las 60 oficiales tampoco entra,
+    aunque su Departamento sí tenga localidades prioritarias —hoy 44 filas
+    del histórico (Freyre, Miramar, Brinkmann, Chancaní y otras menores). No
+    se las reasigna al Departamento: el dato ya viene acotado a una localidad
+    puntual que no es una de las 60, así que no corresponde inflar el conteo
+    departamental con ellas. Queda anotado acá para que la caída de conteo no
+    parezca un misterio."""
+    en_60 = False
+    if alcance_detectado in ("LOCALIDAD", "CAPITAL", "BARRIO"):
+        en_60 = bool(loc) and (normalizar(depto), normalizar(loc)) in claves_60
+    elif alcance_detectado == "PROVINCIA":
+        en_60 = True  # provincia entera siempre aplica al universo
+    return en_60, ALCANCE_A_TIPO.get(alcance_detectado)
+
+
 def cargar_pauta_digital_historico(claves_60):
     """Fuente vieja (Meta Ads, Ene-Jul). Esquema propio, se mantiene tal cual
     —no se lo fuerza al esquema nuevo— para todo lo anterior al corte."""
@@ -362,29 +399,7 @@ def cargar_pauta_digital_historico(claves_60):
         alcance_detectado = limpio(row["Alcance_Detectado (auditoría)"])
         depto = limpio(row["Departamento"])
         loc = limpio(row["Localidad"])
-
-        # en_60_localidades (y por lo tanto la atribución a una Localidad o
-        # Departamento puntual) depende de Alcance_Detectado, no del texto
-        # crudo de Localidad/Departamento: una fila OTRO/REGION/CIRCUITO/
-        # CODIGO_AUDIENCIA nunca se atribuye a una Localidad ni Departamento
-        # aunque su columna Localidad diga, por texto, el nombre de una de
-        # las 60 (ej. "CORDOBA" en filas OTRO de barrios sueltos).
-        #
-        # Aparte (no algo que este chequeo cambie, ya se daba antes): una fila
-        # LOCALIDAD cuya Localidad no es una de las 60 oficiales tampoco entra,
-        # aunque su Departamento sí tenga localidades prioritarias —hoy 44
-        # filas del histórico (Freyre, Miramar, Brinkmann, Chancaní y otras
-        # menores). No se las reasigna al Departamento: el dato ya viene
-        # acotado a una localidad puntual que no es una de las 60, así que no
-        # corresponde inflar el conteo departamental con ellas. Queda anotado
-        # acá para que la caída de conteo no parezca un misterio.
-        en_60 = False
-        if alcance_detectado in ("LOCALIDAD", "CAPITAL", "BARRIO"):
-            en_60 = bool(loc) and (normalizar(depto), normalizar(loc)) in claves_60
-        elif alcance_detectado == "DEPARTAMENTO" and depto:
-            en_60 = any(normalizar(depto) == d for d, _ in claves_60)
-        elif alcance_detectado == "PROVINCIA":
-            en_60 = True  # provincia entera siempre aplica al universo
+        en_60, alcance_tipo = clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60)
 
         piezas.append({
             "fuente": "historico",
@@ -394,7 +409,7 @@ def cargar_pauta_digital_historico(claves_60):
             "area_tematica": parseo["area_tematica"],
             "campana": parseo["campana"],
             "alcance_detectado": alcance_detectado,
-            "alcance_tipo": ALCANCE_A_TIPO.get(alcance_detectado),
+            "alcance_tipo": alcance_tipo,
             "en_60_localidades": en_60,
             "departamento": depto,
             "localidad": loc,
@@ -452,8 +467,13 @@ def clasificar_geografia_pauta_global(depto_raw, loc_raw, localidades_60_normali
     3) "TODAS LAS LOCALIDADES" -> ámbito provincia.
     4) "X, DEPARTAMENTO, PROVINCIA..." -> candidata = texto antes de la
        primera coma; si matchea una de las 60 -> ámbito localidad; si no
-       -> fallback a ámbito departamento (NO se crea localidad nueva).
-    5) Vacío pero con DEPARTAMENTO -> ámbito departamento.
+       -> fallback a ámbito departamento (NO se crea localidad nueva; sirve
+       solo como etiqueta para la pestaña propia de Pauta Digital y Campañas,
+       nunca atribuye la pieza a ningún panel de Localidad).
+    5) Vacío (sin Localidad puntual) -> ámbito=None, sin excepciones. Regla
+       fija del proyecto: una pieza se atribuye a una Localidad SOLO si su
+       Localidad puntual es una de las 60 — ya no hay fallback a Departamento
+       acá (antes lo había; se sacó a propósito).
     Devuelve localidad/departamento en forma NORMALIZADA (sin tildes,
     mayúscula) — el caller la resuelve a la forma oficial de Localidades(1).
     """
@@ -482,9 +502,9 @@ def clasificar_geografia_pauta_global(depto_raw, loc_raw, localidades_60_normali
         # fija del proyecto: nunca se crea una localidad nueva.
         return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
 
-    if depto_candidato:
-        return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
-
+    # Sin Localidad puntual (loc_str vacío): ya no hay fallback a
+    # Departamento. Regla sin excepciones: ámbito=None, la pieza no se
+    # atribuye a ninguna Localidad.
     return {"excluida": False, "ambito": None, "localidad": None, "departamento": None}
 
 
@@ -579,7 +599,14 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
             "campana": campana,
             "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(geo["ambito"]),
             "alcance_tipo": geo["ambito"],
-            "en_60_localidades": True,
+            # Regla sin excepciones (igual que clasificar_alcance_historico() para la
+            # fuente vieja): en_60_localidades es True SOLO si la pieza tiene una
+            # Localidad puntual de las 60 (ambito=localidad) o es de alcance provincial
+            # (ambito=provincia, aplica al universo entero por definición). ambito=
+            # departamento NO cuenta como "en las 60 localidades" —el dato ya viene
+            # acotado a un Departamento, sin Localidad puntual, así que no se atribuye
+            # a ninguna Localidad— y ambito=None tampoco.
+            "en_60_localidades": geo["ambito"] in ("localidad", "provincia"),
             "departamento": departamento,
             "localidad": localidad,
             "circuito_codigo_original": geo.get("circuito_codigo_original"),
@@ -686,7 +713,13 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
     for pieza in pauta_digital["piezas"]:
         if pieza["alcance_tipo"] is None:
             continue  # BARRIO/CIRCUITO/CODIGO_AUDIENCIA/OTRO/REGION: no aplican a la vista unificada por localidad/depto
-        if not pieza["en_60_localidades"]:
+        # en_60_localidades solo es la condición correcta para alcance_tipo=='localidad'
+        # (ahí sí significa "esta Localidad puntual es una de las 60"). Para 'departamento'
+        # y 'provincia' NO se filtra por en_60_localidades: esta es la vista unificada con
+        # el ámbito etiquetado, no una vista por Localidad — una pieza DEPARTAMENTO sigue
+        # entrando acá (con su Departamento a la vista) aunque ya no cuente para ningún
+        # panel de Localidad puntual.
+        if pieza["alcance_tipo"] == "localidad" and not pieza["en_60_localidades"]:
             continue
         items.append({
             "area_origen": "Pauta digital",

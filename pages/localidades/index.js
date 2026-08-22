@@ -34,22 +34,17 @@ export default function LocalidadesIndex() {
       mediosData.localidades.map((l) => [normalizarTexto(l.localidad), l])
     );
 
-    const departamentoPorLocalidad = new Map(
-      localidadesData.localidades.map((l) => [normalizarTexto(l.localidad), l.departamento])
-    );
-
     const pautaPorLocalidad = new Set();
-    const pautaPorDepartamento = new Set();
     for (const p of pautaData.piezas) {
       if (!p.en_60_localidades) continue;
       // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
       // manda, no el texto crudo de Localidad (evita que filas OTRO/REGION/
-      // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA marquen una localidad como "con
-      // pauta digital" solo porque su columna Localidad menciona su nombre).
+      // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA/DEPARTAMENTO marquen una localidad
+      // como "con pauta digital" solo porque su columna Localidad o Departamento
+      // menciona su nombre). Regla sin excepciones: una pieza cuenta para una
+      // Localidad SOLO si su Localidad puntual es una de las 60 — sin fallback
+      // por Departamento en común.
       if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
-      if (p.alcance_tipo === 'departamento' && p.departamento) {
-        pautaPorDepartamento.add(normalizarTexto(p.departamento));
-      }
     }
 
     const audiovisualesPorLocalidad = new Set(
@@ -59,13 +54,12 @@ export default function LocalidadesIndex() {
     return localidadesData.localidades.map((loc) => {
       const clave = normalizarTexto(loc.localidad);
       const cobertura = coberturaPorClave.get(clave);
-      const depto = departamentoPorLocalidad.get(clave);
       return {
         ...loc,
         bandaCobertura: cobertura ? cobertura.banda_cobertura : 'Sin',
         totalTipos: cobertura ? cobertura.total_tipos : 0,
         cobertura: cobertura ? cobertura.cobertura : {},
-        tienePautaDigital: pautaPorLocalidad.has(clave) || pautaPorDepartamento.has(normalizarTexto(depto)),
+        tienePautaDigital: pautaPorLocalidad.has(clave),
         tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
       };
     });

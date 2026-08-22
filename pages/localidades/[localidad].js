@@ -86,12 +86,13 @@ export default function DetalleLocalidad() {
         (p) =>
           p.en_60_localidades &&
           // alcance_tipo (derivado de Alcance_Detectado en generar_datos.py) manda:
-          // solo LOCALIDAD/CAPITAL/BARRIO ('localidad') atan por texto de Localidad,
-          // solo DEPARTAMENTO ata por Departamento. Todo lo demás (PROVINCIA, y lo
-          // que quedó sin tipo: REGION/CIRCUITO/CODIGO_AUDIENCIA/OTRO) no se atribuye
-          // a ninguna localidad ni departamento puntual.
-          ((p.alcance_tipo === 'localidad' && normalizarTexto(p.localidad) === clave) ||
-            (p.alcance_tipo === 'departamento' && normalizarTexto(p.departamento) === normalizarTexto(base.departamento)))
+          // solo LOCALIDAD/CAPITAL/BARRIO ('localidad') atan por texto de Localidad.
+          // Regla sin excepciones: una pieza se atribuye a esta Localidad SOLO si su
+          // Localidad puntual es una de las 60 y coincide con esta. Todo lo demás
+          // (DEPARTAMENTO, PROVINCIA, y lo que quedó sin tipo: REGION/CIRCUITO/
+          // CODIGO_AUDIENCIA/OTRO) no se atribuye a ninguna localidad — ni siquiera
+          // por Departamento en común.
+          p.alcance_tipo === 'localidad' && normalizarTexto(p.localidad) === clave
       )
       .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));
 
