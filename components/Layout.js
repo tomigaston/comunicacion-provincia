@@ -7,6 +7,7 @@ const TABS = [
   { href: '/campanas', label: 'Campañas' },
   { href: '/pauta-digital', label: 'Pauta Digital' },
   { href: '/sms', label: 'SMS' },
+  { href: '/contenido-organico', label: 'Contenido Orgánico' },
   { href: '/movimientos', label: 'Movimientos de la semana' },
 ];
 

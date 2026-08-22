@@ -64,6 +64,7 @@ export default function DetalleLocalidad() {
     '/api/data/pauta-digital',
     '/api/data/audiovisuales',
     '/api/data/sms',
+    '/api/data/contenido-organico',
   ]);
 
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
@@ -75,7 +76,7 @@ export default function DetalleLocalidad() {
   // de meses reales para el dropdown "mes puntual".
   const info = useMemo(() => {
     if (!datos || !slug) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData, smsData] = datos;
+    const [localidadesData, mediosData, pautaData, audiovisualesData, smsData, contenidoOrganicoData] = datos;
 
     const base = localidadesData.localidades.find((l) => slugificar(l.localidad) === slug);
     if (!base) return { noEncontrada: true };
@@ -110,7 +111,16 @@ export default function DetalleLocalidad() {
       .filter((e) => e.alcances.some((a) => a.tipo === 'localidad' && normalizarTexto(a.localidad) === clave))
       .sort((a, b) => (b.fecha_inicio || '').localeCompare(a.fecha_inicio || ''));
 
-    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms };
+    // Solo cuenta como atribuida a ESTA localidad si su LUGAR resolvió
+    // exactamente a esta localidad (una de las 60) — igual que Pauta Digital
+    // y SMS, acá tampoco hay fallback a Departamento (ver 3.5 del CONTEXTO):
+    // el ámbito provincial ("Toda la provincia") nunca cuenta como esta
+    // localidad puntual.
+    const publicacionesOrganico = (contenidoOrganicoData.publicaciones || [])
+      .filter((p) => (p.localidades || []).some((l) => normalizarTexto(l) === clave))
+      .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''));
+
+    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms, publicacionesOrganico };
   }, [datos, slug]);
 
   // Fechas reales de esta localidad (las 3 áreas juntas), para armar el
@@ -122,6 +132,7 @@ export default function DetalleLocalidad() {
     info.piezasPauta.forEach((p) => fechas.push(p.finalizacion));
     info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || it.fecha_inicio));
     info.enviosSms.forEach((e) => fechas.push(e.fecha_inicio));
+    info.publicacionesOrganico.forEach((p) => fechas.push(p.fecha));
     return fechas;
   }, [info]);
 
@@ -135,6 +146,7 @@ export default function DetalleLocalidad() {
         fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
       ),
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
+      publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
     };
   }, [info, ventana]);
 
@@ -407,6 +419,40 @@ export default function DetalleLocalidad() {
                             : '—'}
                         </td>
                         <td style={td}>{e.estado || '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+            </Seccion>
+          )}
+
+          {info.publicacionesOrganico.length > 0 && (
+            <Seccion titulo="Contenido Orgánico">
+              {visible.publicacionesOrganico.length === 0 ? (
+                <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
+                  Ninguna publicación cae dentro del período elegido (hay{' '}
+                  {info.publicacionesOrganico.length} en total). Probá con "Todo".
+                </p>
+              ) : (
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                  <thead>
+                    <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+                      <th style={th}>Fecha</th>
+                      <th style={th}>Red Social</th>
+                      <th style={{ ...th, minWidth: 220 }}>Nombre del contenido</th>
+                      <th style={th}>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {visible.publicacionesOrganico.map((p, i) => (
+                      <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                        <td style={td}>{formatearFechaCorta(p.fecha) || '—'}</td>
+                        <td style={td}>{p.red_social || '—'}</td>
+                        <td style={td}>{p.nombre_contenido || '—'}</td>
+                        <td style={td}>
+                          <VerMaterial links={p.link ? [p.link] : []} />
+                        </td>
                       </tr>
                     ))}
                   </tbody>
