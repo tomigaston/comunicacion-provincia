@@ -741,6 +741,17 @@ _EXCEPCIONES_AUDIENCIA_SMS_RAW = {
     "CERRO BLANCO": [("depto_de_fila", None)],
     "CORRAL DE BUSTOS": [("localidad", "CORRAL DE BUSTOS")],
     "B° LA FLORESTA": [("excluir", None)],
+    # Confirmadas a mano el 22/08/2026 a partir de fuzzy_aplicados de la
+    # primera corrida real -> apuntan directo al nombre ya resuelto, para
+    # dejar de depender del fuzzy en corridas futuras (menos superficie para
+    # un futuro falso positivo tipo "LOS GIGANTES" -> "LOS CISNES").
+    "VILLA SARMIENTO": [("localidad", "VILLA SARMIENTO (M)")],
+    "MONTEBUEY": [("localidad", "MONTE BUEY")],
+    "CAPITÁN GENERAL BERNARDO O’HIGGINS": [("localidad", "CAPITAN GENERAL BERNARDO O'HIGGINS")],
+    "CURA BROCHERO": [("localidad", "VILLA CURA BROCHERO")],
+    "ARROYO LOS PATOS": [("localidad", "ARROYO DE LOS PATOS")],
+    "HUANCHILA": [("localidad", "HUANCHILLA")],
+    "HIGUERAS": [("localidad", "LAS HIGUERAS")],
 }
 # Normalizado una sola vez al importar el módulo (evita tener que escribir a
 # mano la forma normalizada -sin tildes/°/mayúscula- de cada clave arriba).

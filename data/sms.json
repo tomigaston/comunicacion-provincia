@@ -1865,7 +1865,7 @@
           "tipo": "departamento",
           "departamento": "SAN ALBERTO",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         }
       ]
     },
@@ -2078,7 +2078,7 @@
           "tipo": "departamento",
           "departamento": "MARCOS JUAREZ",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         }
       ]
     },
@@ -2246,7 +2246,7 @@
           "tipo": "departamento",
           "departamento": "MARCOS JUAREZ",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         }
       ]
     },
@@ -3792,7 +3792,7 @@
           "tipo": "localidad",
           "departamento": "SAN ALBERTO",
           "localidad": "VILLA CURA BROCHERO",
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         },
         {
           "tipo": "departamento",
@@ -3804,7 +3804,7 @@
           "tipo": "departamento",
           "departamento": "SAN ALBERTO",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         },
         {
           "tipo": "departamento",
@@ -9038,7 +9038,7 @@
           "tipo": "departamento",
           "departamento": "JUAREZ CELMAN",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         },
         {
           "tipo": "departamento",
@@ -12227,7 +12227,7 @@
           "tipo": "departamento",
           "departamento": "RIO CUARTO",
           "localidad": null,
-          "matcheo": "fuzzy"
+          "matcheo": "excepcion"
         }
       ]
     },
@@ -13744,40 +13744,12 @@
   "excepciones_sin_resolver": [],
   "fuzzy_aplicados": [
     {
-      "token_original": "VILLA SARMIENTO",
-      "matcheado_con": "VILLA SARMIENTO (M)"
-    },
-    {
-      "token_original": "MONTEBUEY",
-      "matcheado_con": "MONTE BUEY"
-    },
-    {
-      "token_original": "CAPITÁN GENERAL BERNARDO O’HIGGINS",
-      "matcheado_con": "CAPITAN GENERAL BERNARDO O'HIGGINS"
-    },
-    {
-      "token_original": "CURA BROCHERO",
-      "matcheado_con": "VILLA CURA BROCHERO"
-    },
-    {
-      "token_original": "ARROYO LOS PATOS",
-      "matcheado_con": "ARROYO DE LOS PATOS"
-    },
-    {
-      "token_original": "HUANCHILA",
-      "matcheado_con": "HUANCHILLA"
-    },
-    {
       "token_original": "CORRAL DE BUSTOS",
       "matcheado_con": "CORRAL DE BUSTOSIFFLINGER"
     },
     {
       "token_original": "CORRAL DE BUSTOS",
       "matcheado_con": "CORRAL DE BUSTOSIFFLINGER"
-    },
-    {
-      "token_original": "Higueras",
-      "matcheado_con": "LAS HIGUERAS"
     }
   ],
   "zonas_no_reconocidas": {
