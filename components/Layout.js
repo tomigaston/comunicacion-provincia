@@ -6,6 +6,7 @@ const TABS = [
   { href: '/localidades', label: 'Localidades' },
   { href: '/campanas', label: 'Campañas' },
   { href: '/pauta-digital', label: 'Pauta Digital' },
+  { href: '/sms', label: 'SMS' },
   { href: '/movimientos', label: 'Movimientos de la semana' },
 ];
 

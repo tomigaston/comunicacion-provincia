@@ -8,6 +8,7 @@ import AnioBadge from '../../components/AnioBadge';
 import FiltroPeriodo from '../../components/FiltroPeriodo';
 import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
+import MensajeTruncado from '../../components/MensajeTruncado';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana } from '../../lib/fechas';
@@ -62,6 +63,7 @@ export default function DetalleLocalidad() {
     '/api/data/medios-tradicionales',
     '/api/data/pauta-digital',
     '/api/data/audiovisuales',
+    '/api/data/sms',
   ]);
 
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
@@ -73,7 +75,7 @@ export default function DetalleLocalidad() {
   // de meses reales para el dropdown "mes puntual".
   const info = useMemo(() => {
     if (!datos || !slug) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData] = datos;
+    const [localidadesData, mediosData, pautaData, audiovisualesData, smsData] = datos;
 
     const base = localidadesData.localidades.find((l) => slugificar(l.localidad) === slug);
     if (!base) return { noEncontrada: true };
@@ -100,7 +102,15 @@ export default function DetalleLocalidad() {
       .filter((i) => i.en_60_prioritarias && normalizarTexto(i.localidad) === clave)
       .sort((a, b) => (b.fecha_fin || b.fecha_inicio || '').localeCompare(a.fecha_fin || a.fecha_inicio || ''));
 
-    return { base, medios, piezasPauta, itemsAudiovisuales };
+    // Mismo criterio que Pauta digital: solo se atribuye a ESTA localidad
+    // cuando algún alcance del envío es tipo "localidad" y coincide por
+    // nombre — un alcance "departamento" en el mismo envío no cuenta acá
+    // (eso es lo que ve el Departamento contenedor, no esta localidad puntual).
+    const enviosSms = (smsData.envios || [])
+      .filter((e) => e.alcances.some((a) => a.tipo === 'localidad' && normalizarTexto(a.localidad) === clave))
+      .sort((a, b) => (b.fecha_inicio || '').localeCompare(a.fecha_inicio || ''));
+
+    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms };
   }, [datos, slug]);
 
   // Fechas reales de esta localidad (las 3 áreas juntas), para armar el
@@ -111,6 +121,7 @@ export default function DetalleLocalidad() {
     if (info.medios) info.medios.vigentes.forEach((v) => fechas.push(v.fecha_ultima_semana));
     info.piezasPauta.forEach((p) => fechas.push(p.finalizacion));
     info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || it.fecha_inicio));
+    info.enviosSms.forEach((e) => fechas.push(e.fecha_inicio));
     return fechas;
   }, [info]);
 
@@ -123,6 +134,7 @@ export default function DetalleLocalidad() {
       itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
         fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
       ),
+      enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
     };
   }, [info, ventana]);
 
@@ -353,6 +365,48 @@ export default function DetalleLocalidad() {
                         <td style={td}>
                           <VerMaterial links={it.links} />
                         </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+            </Seccion>
+          )}
+
+          {info.enviosSms.length > 0 && (
+            <Seccion titulo="SMS">
+              {visible.enviosSms.length === 0 ? (
+                <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
+                  Ningún envío de SMS cae dentro del período elegido (hay {info.enviosSms.length}{' '}
+                  en total). Probá con "Todo".
+                </p>
+              ) : (
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                  <thead>
+                    <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+                      <th style={th}>Fecha</th>
+                      <th style={th}>Eje</th>
+                      <th style={th}>Temática</th>
+                      <th style={{ ...th, minWidth: 220 }}>Mensaje</th>
+                      <th style={th}>SMS entregados</th>
+                      <th style={th}>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {visible.enviosSms.map((e, i) => (
+                      <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                        <td style={td}>{formatearFechaCorta(e.fecha_inicio) || '—'}</td>
+                        <td style={td}>{e.eje || '—'}</td>
+                        <td style={td}>{e.tematica || '—'}</td>
+                        <td style={{ ...td, maxWidth: 340 }}>
+                          <MensajeTruncado mensaje={e.mensaje} />
+                        </td>
+                        <td style={td}>
+                          {typeof e.cantidad_sms_entregados === 'number'
+                            ? e.cantidad_sms_entregados.toLocaleString('es-AR')
+                            : '—'}
+                        </td>
+                        <td style={td}>{e.estado || '—'}</td>
                       </tr>
                     ))}
                   </tbody>

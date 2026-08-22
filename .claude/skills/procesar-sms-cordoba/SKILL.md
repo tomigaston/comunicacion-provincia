@@ -1,0 +1,75 @@
+---
+name: procesar-sms-cordoba
+description: Procesa el export acumulado de envíos de SMS del Gobierno de Córdoba (archivo "SMS_Looker - <fecha>.xlsx", con hojas Sms_Looker + Nomenclador Maestro) y regenera data/sms.json del Tablero de Comunicación. Usar cuando el usuario suba una nueva versión de ese archivo y pida procesarla, actualizar SMS, o sumar la nueva exportación. A diferencia de Medios tradicionales (append-only semanal), este export es un ACUMULADO COMPLETO cada vez — igual que Pauta digital — así que cada corrida reprocesa el archivo entero, no se "suma" fila por fila a lo anterior. No usar para el proyecto de Circuitos electorales (es otra base, aunque esta tenga una columna CIRCUITO).
+---
+
+# Procesar SMS — Tablero de Comunicación, Gobierno de Córdoba
+
+## Qué hace esta skill
+
+Toma:
+1. El **export completo nuevo** `SMS_Looker - <fecha>.xlsx` (nombre con fecha variable), con 2 hojas: `Sms_Looker` (datos, una fila por envío) y `Nomenclador Maestro` (padrón de localidades por departamento de toda la provincia — no es un dataset por fila).
+2. El xlsx de las **60 localidades prioritarias** del tablero (`Contexto/Localidades (1).xlsx`), ya presente en el repo.
+
+Y regenera `data/sms.json` completo desde cero — **no es append-only**: el archivo que sube el usuario reemplaza por completo al procesado la vez anterior (mismo patrón que Pauta Digital, distinto al de Medios Tradicionales). Ver sección 3.4 de `Contexto/CONTEXTO_PROYECTO_TABLERO_COMUNICACION.md` para el detalle completo de las reglas de negocio — este documento es la referencia de esas reglas, no las repite todas.
+
+## Antes de correr nada
+
+1. **Colocar el archivo nuevo en `Contexto/`** con su nombre original (`SMS_Looker - <fecha>.xlsx`) y **borrar o archivar cualquier versión anterior** que quede en esa carpeta — `scripts/generar_datos.py` frena con error si encuentra más de un `SMS_Looker*.xlsx` a la vez, justamente para evitar reprocesar por error una versión vieja junto a la nueva.
+2. Confirmar que `Contexto/Localidades (1).xlsx` sigue siendo el mismo (60 localidades oficiales) — si el usuario avisa que cambió, revisar antes de correr.
+
+## Qué NO hay que asumir (pausar y preguntar)
+
+1. **Un nuevo token de `AUDIENCIA` que no matchea** ni exacto, ni fuzzy (cutoff 0.7), ni está en la tabla de excepciones hardcodeada → el script ya lo resuelve con *fallback* a Departamento (columna `DEPARTAMENTO` de la fila) y lo deja logueado en `no_identificados` dentro de `data/sms.json`. **No inventar una resolución nueva a mano** en el código sin que el usuario la confirme primero — mostrarle la lista de `no_identificados` al final de la corrida y esperar su clasificación antes de agregarla a `EXCEPCIONES_AUDIENCIA_SMS`.
+2. **Un valor de `ZONA` no reconocido** (no es `CAPITAL`/`CÓRDOBA`/`CAPITAL + PROVINCIA`/`PROVINCIA`) → el script ya lo trata como "sin desagregación geográfica" (conservador, no rompe nada) pero lo loguea en `zonas_no_reconocidas`. Revisar esa lista con el usuario: puede ser una `ZONA` genuinamente no geográfica (bien clasificada) o una variante nueva de una `ZONA` geográfica que haga falta sumar a `ZONAS_CAPITAL_SMS`/`ZONA_PROVINCIA_SMS`.
+3. **`AUDIENCIA` = "DEPTO COMPLETO" combinado con otros tokens en la misma celda** (no como celda completa, ej. "CRUZ DEL EJE - DEPTO COMPLETO"): el caso cubierto explícitamente es solo cuando la celda entera es exactamente "DEPTO COMPLETO". Si aparece combinado con otro texto en la misma celda, el token "DEPTO COMPLETO" caerá por el camino genérico (probablemente termine en `no_identificados`, comportamiento seguro pero no necesariamente el deseado) — si se detecta este patrón en datos reales, pausar y confirmar con el usuario cómo interpretarlo antes de asumir una regla nueva.
+4. **Localidad del Nomenclador Maestro que aparece bajo más de un Departamento** → el script lo detecta y lo imprime como advertencia (`ambiguas_nomenclador`), pero no lo resuelve solo. Confirmar con el usuario cuál es el Departamento correcto antes de dar por buena esa fila.
+5. **Una excepción hardcodeada que ya no resuelve** (ni exacto ni fuzzy contra el Nomenclador Maestro actual — el script marca esto como `matcheo: "excepcion_sin_resolver"` con `departamento: null`, y además queda registrada en `excepciones_sin_resolver` dentro de `data/sms.json` para verla de un vistazo sin tener que revisar envío por envío) → algo cambió en el padrón real respecto de cuando se armó la tabla de excepciones. Avisar al usuario, no completar el departamento a mano por intuición.
+6. **Falta alguno de los 2 archivos de entrada** (el export nuevo, o `Localidades (1).xlsx` si por algún motivo no está) → pedirlo explícitamente antes de correr `generar_datos.py`.
+
+## Flujo de trabajo esperado
+
+1. Usuario sube el nuevo `SMS_Looker - <fecha>.xlsx`.
+2. Colocarlo en `Contexto/`, verificar que no quede ninguna versión anterior del mismo patrón de nombre en esa carpeta.
+3. Correr `python3 scripts/generar_datos.py` desde la raíz del repo — regenera **todos** los JSON del tablero (localidades, medios tradicionales, pauta digital, audiovisuales, **sms**, campañas), no solo SMS, porque es el mismo script único del proyecto.
+4. Revisar la salida de consola: cantidad de envíos procesados, tokens no identificados, coincidencias aproximadas (fuzzy) aplicadas, y `ZONA` no reconocidas.
+5. Si aparecen `no_identificados`, `zonas_no_reconocidas` o `excepciones_sin_resolver` → mostrárselos al usuario y preguntar cómo clasificarlos (ver sección anterior). Una vez confirmados, sumarlos a `EXCEPCIONES_AUDIENCIA_SMS` (o a `ZONAS_CAPITAL_SMS`/`ZONA_PROVINCIA_SMS` según corresponda) en `scripts/generar_datos.py` para la próxima corrida, y volver a correr el script.
+6. Antes de dar por cerrada la corrida, correr `python3 scripts/test_sms.py` (test de regresión sintético de la lógica de matching — no depende del archivo real, valida las funciones puras) y confirmar que pasa.
+7. Entregar un resumen: cantidad de envíos, cuántos a nivel Localidad / Departamento / sin desagregación geográfica, tokens no identificados (si los hay) y cualquier corrección aplicada a la tabla de excepciones.
+
+## Esquema de salida — `data/sms.json`
+
+```
+{
+  "envios": [
+    {
+      "eje": str | null,
+      "fecha_inicio": "YYYY-MM-DD" | null,
+      "estado": str | null,              // tal cual viene de la columna ESTADO, sin recalcular
+      "tematica": str | null,
+      "categoria": str | null,
+      "mensaje": str | null,
+      "zona": str | null,                 // valor crudo de ZONA
+      "audiencia_raw": str | null,        // valor crudo de AUDIENCIA, sin tokenizar
+      "cantidad_sms_entregados": number | null,
+      "circuito_raw": str | null,         // sin procesar, ver sección 3.4
+      "sin_desagregacion_geografica": bool,
+      "alcances": [
+        { "tipo": "departamento" | "localidad", "departamento": str | null, "localidad": str | null, "matcheo": str }
+      ]
+    }
+  ],
+  "no_identificados": [ { "fila": int, "token": str, "audiencia_original": str, "eje": str, "fecha_inicio": str, "departamento_fila": str } ],
+  "excepciones_sin_resolver": [ { "token_audiencia": str, "excepcion_apunta_a": str } ],
+  "fuzzy_aplicados": [ { "token_original": str, "matcheado_con": str } ],
+  "zonas_no_reconocidas": { "<ZONA cruda>": <cantidad de filas> }
+}
+```
+
+`alcances` es una lista porque una sola fila puede "explotar" en varias localidades/departamentos (ver excepción de 3 vías en 3.4) — o en **cero**, cuando el único token de `AUDIENCIA` es una excepción de tipo "excluir" (caso "B° LA FLORESTA": es un barrio, queda afuera del universo del tablero, no genera ningún alcance). Si **todos** los tokens de una fila terminan excluidos así, `sin_desagregacion_geografica` pasa a `true` para esa fila (no queda nada geográfico que mostrar). `alcances` **nunca reparte `cantidad_sms_entregados`** entre sus elementos — ese número queda a nivel de la fila completa. `matcheo` documenta cómo se resolvió cada alcance (`zona_capital`, `capital_suelto`, `depto_completo`, `exacto`, `excepcion`, `fuzzy`, `no_identificado_fallback_depto`, `excepcion_sin_resolver`) — útil para auditar sin tener que releer el código.
+
+Este JSON **todavía no está integrado a ninguna página/API del tablero visual** (Localidades, Campañas, etc.) — eso es un paso posterior, a definir con el usuario cuándo y cómo mostrar SMS en la UI. Esta skill solo se ocupa de dejar el dato procesado y correcto en `data/sms.json`.
+
+## Lógica de matching — dónde vive
+
+Toda la lógica (constantes `EXCEPCIONES_AUDIENCIA_SMS`, `ZONAS_CAPITAL_SMS`, `ZONA_PROVINCIA_SMS`, y las funciones `cargar_sms`, `cargar_padron_sms`, `_resolver_token_audiencia`, `_resolver_nombre_localidad`, `_resolver_localidad_exacta`, `_dividir_audiencia`) vive en `scripts/generar_datos.py`, sección "5. SMS". `scripts/test_sms.py` es la única fuente de verdad para probarla sin depender de un archivo real — cualquier cambio a esta lógica debe correr ese test antes de darse por bueno.
