@@ -10,11 +10,13 @@ Lo usa principalmente **[el usuario]**, que consolida y reporta al gobernador. L
 
 **El universo son siempre las 60 localidades prioritarias**, cada una con su Departamento correspondiente (listado oficial ya definido, no se negocia por área).
 
-**Única excepción: Pauta Digital.** Como esa área todavía no está desagregada a nivel localidad en su mayoría, se muestra **también a nivel Departamento** (no solo localidad). Es la única área con esta doble vista.
+**Excepción vigente: SMS.** Como esa área no siempre viene desagregada a nivel localidad, se muestra **también a nivel Departamento** (no solo localidad) cuando `AUDIENCIA` no matchea ninguna de las 60. Ver 3.4.
 
-Todo dato de cualquier área que no pertenezca a las 60 localidades (o, en el caso de pauta digital, a los departamentos que las contienen) **queda fuera del tablero** — no se crean localidades nuevas, no se expande el universo. Esto se probó y se revirtió una vez: no volver a repetir el error de agregar localidades "extra" fuera de las 60.
+**Pauta Digital ya NO tiene esta excepción.** Tuvo el mismo comportamiento (mostrar también a nivel Departamento) hasta el **20/08/2026**, cuando se eliminó por completo tras detectarse un bug real: piezas de alcance Departamento/Provincia se colaban en el panel de una Localidad puntual a la que no correspondían (caso Alta Gracia — ver `scripts/test_pauta_digital.py`). Desde ese cambio la regla de Pauta Digital es **sin excepciones**: una pieza se atribuye a una Localidad solo si su Localidad puntual es una de las 60; si no, no se propaga a ningún Departamento en el panel de Localidad (sigue visible, con su Departamento a la vista, en la pestaña propia de Pauta Digital y en Campañas — pero ya no en ningún panel de Localidad). **No mezclar esta regla con la de SMS**: son áreas distintas, con historiales distintos — SMS sí tiene hoy el fallback a Departamento, Pauta Digital no.
 
-## 3. Las 3 áreas de comunicación
+Todo dato de cualquier área que no pertenezca a las 60 localidades (o, en el caso de SMS, a los departamentos que las contienen cuando no hay match a nivel Localidad) **queda fuera del tablero** — no se crean localidades nuevas, no se expande el universo. Esto se probó y se revirtió una vez: no volver a repetir el error de agregar localidades "extra" fuera de las 60.
+
+## 3. Las 4 áreas de comunicación
 
 Trabajan separadas, sin comunicación entre sí, cada una con su propia base y formato.
 
@@ -47,6 +49,51 @@ Puntos importantes:
 - De las localidades de Obras FOCOM, la gran mayoría (48 de 52) **no están entre las 60 prioritarias** — son localidades más chicas, fuera del universo del tablero (ver regla de sección 2).
 - **Bug conocido a corregir en la build real**: el estado quedó hardcodeado en "Vigente" en el prototipo, sin calcularlo contra la fecha de hoy como sí hace pauta digital. Corregir con el mismo patrón de 3.2.
 - Ojo con fechas: en un momento se detectaron 30 filas de Obras FOCOM con año mal cargado (2026 en vez de 2025) por autocompletado de Excel — ya corregido en el archivo curado, pero es un recordatorio de **auditar fechas contra una columna de referencia** antes de confiar en ellas, en cualquier fuente nueva que llegue.
+
+### 3.4 SMS — archivo del proyecto: **"SMS"**
+
+Export acumulado completo de envíos de SMS ("SMS_Looker - `<fecha>`.xlsx", nombre con fecha variable, 2 hojas). **A diferencia de Medios tradicionales (append-only semanal), cada actualización REEMPLAZA el archivo anterior y reprocesa todo desde cero** — mismo patrón que Pauta Digital, no el de Medios tradicionales. Procesado por la skill `procesar-sms-cordoba`.
+
+**No confundir con el proyecto de Circuitos electorales**, aunque esta base también tenga una columna `CIRCUITO` (por ahora se deja sin procesar, pasa como dato crudo — no se cruza con ese otro proyecto sin confirmación explícita aparte).
+
+**Hojas del archivo fuente:**
+- `Sms_Looker`: una fila por envío. Columnas relevantes: `EJE`, `DEPARTAMENTO` (no confiable, ver abajo), `FECHA DE INICIO`, `ESTADO`, `TEMATICA`, `CATEGORIA`, `MENSAJE`, `ZONA`, `AUDIENCIA\n(LOCALIDADES O BARRIOS)`, `CANTIDAD DE SMS ENTREGADOS`, `CIRCUITO`.
+- `Nomenclador Maestro`: no es un dataset por fila, son listas de validación de Sheets. Solo importan `DEPARTAMENTO CON DESAGREGADO PARA LA LOCALIDAD` + `LOCALIDAD / SUBCIRCUITO` juntas — forman el padrón oficial de localidades por departamento de **toda la provincia** (no solo las 60). El resto de columnas de esa hoja se ignora.
+
+**La columna `DEPARTAMENTO` de `Sms_Looker` no es confiable como filtro** — hay filas donde no coincide con lo que realmente lista `AUDIENCIA`. No se usa para acotar candidatos de matching; solo se usa como *fallback* de etiqueta cuando no hay ninguna otra forma de nombrar el departamento (`AUDIENCIA` = "DEPTO COMPLETO", o token de `AUDIENCIA` totalmente sin matchear).
+
+**Regla de alcance geográfico por `ZONA`:**
+- `ZONA` = `CAPITAL`, `CÓRDOBA`, `CAPITAL + PROVINCIA` → nivel **Departamento Capital entero**. No se desagrega por barrio (los barrios quedan fuera de este tablero, van a otro proyecto aparte). Se ignora el contenido de `AUDIENCIA` en este caso.
+- `ZONA` = `PROVINCIA` → se separa `AUDIENCIA` en tokens (ver split abajo) y cada uno se matchea contra el padrón del Nomenclador Maestro:
+  - Matchea y está entre las 60 prioritarias → nivel Localidad.
+  - Matchea pero no está entre las 60 → nivel Departamento (el que le corresponde según el Nomenclador, no según la columna `DEPARTAMENTO` de la fila).
+  - No matchea ni exacto, ni por variante conocida (tabla de excepciones), ni por fuzzy → nivel Departamento como *fallback* (usando la columna `DEPARTAMENTO` de la fila, con la salvedad de que puede ser inexacta) y se loguea como "no identificado" para revisión manual.
+- `AUDIENCIA` = literalmente `"DEPTO COMPLETO"` (celda completa) → nivel Departamento entero, resuelto con la columna `DEPARTAMENTO` de la fila (única fuente disponible en ese caso, pese a no ser 100% confiable).
+- Un token de `AUDIENCIA` que, ya separado (ver split abajo), es exactamente `"CAPITAL"` → nivel Departamento Capital entero para ese token. Se evalúa **token por token, no celda completa**: si `AUDIENCIA` trae "Río Cuarto, Capital", el token "Capital" igual resuelve a Departamento Capital aunque comparta la celda con otro token.
+- `ZONA` = `Base particular`, o cualquier valor de `ZONA` que no sea uno de los reconocidos arriba (bases de datos, "Números particulares", nombres de archivo `.xlsx` colados, rangos etarios, "Jubilados provincia y ciudad", etc.) → **"sin desagregación geográfica"**. La fila se mantiene para totales generales (por tema, eje, fecha) pero se excluye de cualquier vista por localidad/departamento. Cualquier `ZONA` no reconocida se loguea aparte (`zonas_no_reconocidas` en `data/sms.json`) para confirmar que no sea en realidad geográfica.
+
+**Separar tokens dentro de `AUDIENCIA`:** split por `" - "`, `","` y saltos de línea (`\n`); limpiar paréntesis con rangos etarios (ej. "(25-45)"); normalizar con NFD (sacar tildes) + `.strip().upper()` (mismo patrón que el resto del proyecto). Match exacto contra el padrón primero, fuzzy (`difflib`, cutoff 0.7) como fallback.
+
+**Tabla de excepciones** (ya resueltas a mano, hardcodeadas en `EXCEPCIONES_AUDIENCIA_SMS` de `scripts/generar_datos.py`):
+
+| Token normalizado en AUDIENCIA | Resolución |
+|---|---|
+| CARLOS PAZ | → VILLA CARLOS PAZ (en las 60) |
+| TOTORAL | → VILLA DEL TOTORAL (en las 60) |
+| VILLA CIUDAD PARQUE | → VILLA CIUDAD PARQUE LOS REARTES (no está en las 60 → Departamento) |
+| LA CARLOTA LABOULAYE CANALS | → split en 3: LA CARLOTA (en las 60) + LABOULAYE (en las 60) + CANALS (no está → Departamento) |
+| TANINGA | No está en las 60 → Departamento |
+| LOS GIGANTES | No está en las 60 → Departamento |
+| CERRO BLANCO | No está en las 60 → Departamento |
+| CORRAL DE BUSTOS | No está en las 60 → Departamento |
+| B° LA FLORESTA | Es barrio de la ciudad de Córdoba (no localidad de interior) → **afuera del universo del tablero**, no genera ningún alcance (ni Localidad ni Departamento) — los barrios van a otro proyecto aparte |
+| CAPITAL (como token individual tras el split, comparta celda o no con otros tokens) | → Departamento Capital entero |
+
+Cualquier token nuevo que no matchee y no esté en esta tabla: no se asume, se loguea aparte (`no_identificados` en `data/sms.json`) para que el usuario lo clasifique a mano, igual que se hizo con estos. Si una fila termina con **todos** sus tokens de `AUDIENCIA` excluidos del universo (ej. una fila cuya única mención es "B° La Floresta"), la fila se trata como **"sin desagregación geográfica"** — se mantiene para totales generales pero no aporta ningún alcance por Localidad/Departamento. Si una excepción hardcodeada ya no resuelve contra el padrón actual (ni exacto ni por fuzzy — señal de que el Nomenclador Maestro cambió desde que se cargó esa excepción a mano), se loguea aparte en `excepciones_sin_resolver` dentro de `data/sms.json`, para revisión manual — no se asume ningún Departamento por intuición.
+
+**Regla sobre `CANTIDAD DE SMS ENTREGADOS` (no reabrir):** cuando una fila tiene varias localidades/departamentos en `AUDIENCIA`, **no se prorratea** el número entre ellas — no hay base real para hacerlo. Cada lugar mencionado queda marcado como "alcanzado" por ese envío, sin número propio. El número queda a nivel de la fila/envío completo para totales (por tema, eje, fecha).
+
+**Columna `CIRCUITO`:** no se procesa todavía, pasa como dato crudo (`circuito_raw`). No cruzar con el proyecto de Circuitos electorales sin confirmación explícita aparte.
 
 ## 4. Concepto unificado: "Campaña"
 
@@ -88,5 +135,6 @@ Lo que **ya funciona bien y no hay que tocar**: el panel de detalle al abrir una
 | **Medios tradicionales** | Maestro acumulado de medios tradicionales (`MAESTRO_TABLERO_COMUNICACION.xlsx`) — ver 3.1 |
 | **Medios digitales** | Pauta digital curada con Departamento/Localidad/Barrio/Circuito — ver 3.2 |
 | **Audiovisuales** | Excel unificado de la Subsecretaría de Comunicación — ver 3.3 |
+| **SMS** | Export acumulado de envíos de SMS (`SMS_Looker - <fecha>.xlsx`) — ver 3.4 |
 
-Este documento de contexto es el cuarto archivo de referencia — contiene todas las reglas de negocio, decisiones y pendientes acumulados hasta ahora.
+Este documento de contexto es un archivo más de referencia — contiene todas las reglas de negocio, decisiones y pendientes acumulados hasta ahora.
