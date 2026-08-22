@@ -70,10 +70,10 @@ LOCALIDAD_A_DEPTO_NOMENCLADOR.update({
 MAPAS = (LOCALIDAD_A_OFICIAL, LOCALIDAD_A_DEPTO_NOMENCLADOR, LOCALIDAD_A_DEPARTAMENTO_OFICIAL, DEPTOS_A_OFICIAL)
 
 
-def resolver(token):
+def resolver(token, depto_raw_fila=None):
     fuzzy_log = []
     excepciones_sin_resolver_log = []
-    return g._resolver_token_audiencia(token, MAPAS, fuzzy_log, excepciones_sin_resolver_log)
+    return g._resolver_token_audiencia(token, MAPAS, fuzzy_log, excepciones_sin_resolver_log, depto_raw_fila)
 
 
 def caso_match_exacto_en_60():
@@ -153,26 +153,66 @@ def caso_excepcion_con_fuzzy_fallback():
 
 
 def caso_excepcion_sin_resolver_se_loguea():
-    # Monkeypatch temporal: una excepción que apunta a un lugar que no existe
-    # en ningún padrón (ni siquiera por fuzzy) -> debe devolver matcheo
-    # "excepcion_sin_resolver" y quedar registrada aparte, no perderse en
-    # silencio (esto simula el padrón real cambiando después de hardcodear
-    # una excepción).
+    # Monkeypatch temporal: una excepción "localidad" que apunta a un lugar
+    # que no existe en ningún padrón, ni por fuzzy -> debe devolver matcheo
+    # "excepcion_sin_resolver" pero CON el mismo fallback a depto_raw_fila
+    # que usa el camino genérico de "no identificado" (no departamento=None),
+    # y quedar registrada aparte, no perderse en silencio. Esto simula una
+    # excepción que en su momento sí intentaba resolver por nombre y falló
+    # (a diferencia de TANINGA/LOS GIGANTES/CERRO BLANCO, que desde el fix
+    # del 22/08/2026 usan tipo "depto_de_fila" -sin pasar por acá- ver el
+    # caso siguiente).
     original = dict(g.EXCEPCIONES_AUDIENCIA_SMS)
     g.EXCEPCIONES_AUDIENCIA_SMS["ALDEA FANTASMA"] = [("localidad", "LUGAR QUE NO EXISTE EN NINGUN PADRON")]
     try:
         excepciones_sin_resolver = []
-        r = g._resolver_token_audiencia("Aldea Fantasma", MAPAS, [], excepciones_sin_resolver)
+        r = g._resolver_token_audiencia("Aldea Fantasma", MAPAS, [], excepciones_sin_resolver, "Cruz del Eje")
     finally:
         g.EXCEPCIONES_AUDIENCIA_SMS.clear()
         g.EXCEPCIONES_AUDIENCIA_SMS.update(original)
 
     check(
-        "excepcion que ya no resuelve -> matcheo excepcion_sin_resolver, con departamento None",
-        r == [{"tipo": "departamento", "departamento": None, "localidad": None, "matcheo": "excepcion_sin_resolver"}],
+        "excepcion que ya no resuelve -> cae a depto_raw_fila (no departamento=None)",
+        r == [{"tipo": "departamento", "departamento": "CRUZ DEL EJE", "localidad": None, "matcheo": "excepcion_sin_resolver"}],
         r,
     )
-    check("queda logueada en excepciones_sin_resolver, no se pierde en silencio", len(excepciones_sin_resolver) == 1, excepciones_sin_resolver)
+    check(
+        "queda logueada en excepciones_sin_resolver con el fallback aplicado, no se pierde en silencio",
+        excepciones_sin_resolver == [{
+            "token_audiencia": "Aldea Fantasma",
+            "excepcion_apunta_a": "LUGAR QUE NO EXISTE EN NINGUN PADRON",
+            "departamento_fallback": "CRUZ DEL EJE",
+        }],
+        excepciones_sin_resolver,
+    )
+
+
+def caso_depto_de_fila_sin_intentar_fuzzy():
+    # TANINGA/LOS GIGANTES/CERRO BLANCO: confirmado que no existen en el
+    # Nomenclador Maestro real (ni exacto ni por substring) -> van directo a
+    # depto_raw_fila (limpio con la misma técnica que _departamento_candidato),
+    # SIN pasar por exacto/fuzzy. Regresión real detectada el 22/08/2026: con
+    # el padrón ya limpio, "LOS GIGANTES" fuzzy-matcheaba a "LOS CISNES" (un
+    # lugar real en otro departamento, sin ninguna relación) porque el
+    # universo de fuzzy quedó más grande y denso tras el fix de parseo. El
+    # tipo "depto_de_fila" evita ese riesgo de raíz: ni siquiera lo intenta.
+    fuzzy_log = []
+    excepciones_sin_resolver = []
+    r = g._resolver_token_audiencia(
+        "Los Gigantes", MAPAS, fuzzy_log, excepciones_sin_resolver,
+        depto_raw_fila="DEPARTAMENTO DE PUNILLA, PROVINCIA DE CÓRDOBA, ARGENTINA",
+    )
+    check(
+        "depto_de_fila -> resuelve directo a depto_raw_fila limpio (PUNILLA), sin tocar exacto/fuzzy",
+        r == [{"tipo": "departamento", "departamento": "PUNILLA", "localidad": None, "matcheo": "excepcion_depto_de_fila"}],
+        r,
+    )
+    check("no dispara ningún intento de fuzzy", len(fuzzy_log) == 0, fuzzy_log)
+    check(
+        "no se loguea en excepciones_sin_resolver -> es comportamiento esperado, no una anomalía",
+        len(excepciones_sin_resolver) == 0,
+        excepciones_sin_resolver,
+    )
 
 
 def caso_fuzzy_puro_sin_excepcion():
@@ -215,6 +255,7 @@ def main():
         caso_token_suelto_capital,
         caso_excepcion_con_fuzzy_fallback,
         caso_excepcion_sin_resolver_se_loguea,
+        caso_depto_de_fila_sin_intentar_fuzzy,
         caso_fuzzy_puro_sin_excepcion,
         caso_no_identificado,
         caso_dividir_audiencia,
@@ -231,7 +272,7 @@ def main():
             print(f"  - {f}")
         return 1
 
-    print("OK — los 12 casos de regresión de matching de SMS pasan.")
+    print("OK — los 13 casos de regresión de matching de SMS pasan.")
     return 0
 
 
