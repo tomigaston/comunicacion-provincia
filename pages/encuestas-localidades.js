@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import FilterBar from '../components/FilterBar';
 import Autocomplete from '../components/Autocomplete';
 import EncuestaResumenRonda from '../components/EncuestaResumenRonda';
+import EncuestaComparativo from '../components/EncuestaComparativo';
 import { useApiData } from '../lib/useApiData';
 import { formatearFechaCorta } from '../lib/fechas';
 import { requireSession } from '../lib/auth';
@@ -20,11 +21,17 @@ export async function getServerSideProps({ req }) {
 }
 
 export default function EncuestasLocalidades() {
-  const { cargando, error, datos } = useApiData(['/api/data/encuestas-localidades']);
+  const { cargando, error, datos } = useApiData([
+    '/api/data/encuestas-localidades',
+    '/api/data/localidades-metadata',
+  ]);
   const [localidadElegida, setLocalidadElegida] = useState(null);
   const [fechaElegida, setFechaElegida] = useState(null);
+  const [vista, setVista] = useState('resumen');
 
   const encuestas = datos ? datos[0] : null;
+  const metadata = datos ? datos[1] : null;
+  const umbralPp = metadata ? metadata.umbral_variacion_pp : 0;
 
   const itemsBusqueda = useMemo(() => {
     if (!encuestas) return [];
@@ -44,6 +51,10 @@ export default function EncuestasLocalidades() {
     } else {
       setFechaElegida(null);
     }
+    // Al cambiar de localidad siempre se vuelve a "Resumen" (default) — evita
+    // quedar en "Comparativo" al elegir una localidad con 1 sola ronda, que
+    // ni siquiera muestra ese selector.
+    setVista('resumen');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [localidadElegida]);
 
@@ -79,38 +90,76 @@ export default function EncuestasLocalidades() {
                 <h2 style={{ fontSize: 20, fontWeight: 700 }}>{localidad.nombre_localidad}</h2>
                 <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>
                   {localidad.cantidad_rondas} {localidad.cantidad_rondas === 1 ? 'ronda' : 'rondas'} de encuesta
-                  {ronda.casos_totales != null ? ` · ${ronda.casos_totales} casos` : ''}
+                  {vista === 'resumen' && ronda.casos_totales != null ? ` · ${ronda.casos_totales} casos` : ''}
                 </span>
               </div>
 
-              {localidad.rondas.length > 1 && (
-                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
-                  {localidad.rondas.map((r) => {
-                    const activa = r.fecha === fechaElegida;
+              {localidad.tiene_comparativo && (
+                <div style={{ display: 'flex', gap: 4, marginBottom: 20 }}>
+                  {[
+                    { key: 'resumen', label: 'Resumen' },
+                    { key: 'comparativo', label: 'Comparativo' },
+                  ].map((tab) => {
+                    const activa = vista === tab.key;
                     return (
                       <button
-                        key={r.fecha}
+                        key={tab.key}
                         type="button"
-                        onClick={() => setFechaElegida(r.fecha)}
+                        onClick={() => setVista(tab.key)}
                         style={{
-                          padding: '8px 14px',
-                          borderRadius: 999,
-                          border: `1.5px solid ${activa ? 'var(--accent)' : 'var(--border)'}`,
-                          background: activa ? '#e0edfb' : 'var(--bg-secondary)',
+                          padding: '9px 18px',
+                          fontSize: 14,
+                          fontWeight: activa ? 700 : 500,
                           color: activa ? 'var(--accent)' : 'var(--text-secondary)',
-                          fontSize: 13.5,
-                          fontWeight: 600,
+                          background: 'transparent',
+                          border: 'none',
+                          borderBottom: activa ? '2.5px solid var(--accent)' : '2.5px solid transparent',
                           cursor: 'pointer',
                         }}
                       >
-                        {formatearFechaCorta(r.fecha)}
+                        {tab.label}
                       </button>
                     );
                   })}
                 </div>
               )}
 
-              <EncuestaResumenRonda ronda={ronda} />
+              {vista === 'resumen' && (
+                <>
+                  {localidad.rondas.length > 1 && (
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
+                      {localidad.rondas.map((r) => {
+                        const activa = r.fecha === fechaElegida;
+                        return (
+                          <button
+                            key={r.fecha}
+                            type="button"
+                            onClick={() => setFechaElegida(r.fecha)}
+                            style={{
+                              padding: '8px 14px',
+                              borderRadius: 999,
+                              border: `1.5px solid ${activa ? 'var(--accent)' : 'var(--border)'}`,
+                              background: activa ? '#e0edfb' : 'var(--bg-secondary)',
+                              color: activa ? 'var(--accent)' : 'var(--text-secondary)',
+                              fontSize: 13.5,
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {formatearFechaCorta(r.fecha)}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  <EncuestaResumenRonda ronda={ronda} />
+                </>
+              )}
+
+              {vista === 'comparativo' && (
+                <EncuestaComparativo rondas={localidad.rondas} umbralPp={umbralPp} />
+              )}
             </>
           )}
         </>
