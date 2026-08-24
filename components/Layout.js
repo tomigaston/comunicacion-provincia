@@ -18,6 +18,7 @@ const TABS = [
   { href: '/sms', label: 'SMS', key: 'sms' },
   { href: '/contenido-organico', label: 'Contenido Orgánico', key: 'contenido_organico' },
   { href: '/movimientos', label: 'Movimientos de la semana', key: 'movimientos' },
+  { href: '/encuestas-localidades', label: 'Encuestas de Localidades', key: 'encuestas_localidades' },
 ];
 
 export default function Layout({ title, children }) {

@@ -28,7 +28,7 @@
 // value = array de usernames (sin "@") con acceso explícito, además de los
 //         usuarios con role === "admin" (que siempre tienen acceso).
 export const SECCIONES_RESTRINGIDAS = {
-  // encuestas_localidades: ['comunicacion'],
+  encuestas_localidades: ['comunicacion'],
 };
 
 /**
@@ -53,7 +53,14 @@ export function tieneAccesoSeccion(sesionUsuario, seccionKey) {
   const permitidos = SECCIONES_RESTRINGIDAS[seccionKey];
   if (!permitidos) return true; // sección no listada: abierta para cualquier autenticado
 
-  return permitidos.includes(sesionUsuario.user);
+  // sesionUsuario.user viene tal cual se guardó en AUTH_USERS, que en la
+  // práctica siempre incluye el "@" (ej. "@comunicacion" — ver .env.example).
+  // Los arrays de SECCIONES_RESTRINGIDAS se cargan sin "@" (documentado
+  // arriba), así que hay que sacarlo acá antes de comparar -> si no, ningún
+  // username matchea nunca (bug real, detectado recién ahora que
+  // SECCIONES_RESTRINGIDAS dejó de estar vacío).
+  const user = sesionUsuario.user ? sesionUsuario.user.replace(/^@/, '') : sesionUsuario.user;
+  return permitidos.includes(user);
 }
 
 /*
