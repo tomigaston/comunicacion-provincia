@@ -1,8 +1,12 @@
-import EncuestaBarraProblemas from './EncuestaBarraProblemas';
+import EncuestaBarraHorizontal from './EncuestaBarraHorizontal';
 import EncuestaGestionBarra from './EncuestaGestionBarra';
 import EncuestaAprobacionGauge from './EncuestaAprobacionGauge';
 import EncuestaReeleccionDonut from './EncuestaReeleccionDonut';
-import { clasificarPreguntas } from '../lib/encuestasLocalidades';
+import EncuestaObras from './EncuestaObras';
+import EncuestaDirigentes from './EncuestaDirigentes';
+import EncuestaCandidatos from './EncuestaCandidatos';
+import EncuestaOtras from './EncuestaOtras';
+import { clasificarPreguntas, hayCandidatos } from '../lib/encuestasLocalidades';
 
 const tarjeta = {
   background: 'var(--bg-primary)',
@@ -14,28 +18,43 @@ const tarjeta = {
 const tituloTarjeta = { fontSize: 14.5, fontWeight: 700, marginBottom: 14 };
 
 /**
- * "Resumen" de una ronda puntual (entrega 3a). Cada una de las 4 secciones
- * se omite por completo si la ronda no trae ese tipo de pregunta — nunca se
- * muestra un bloque vacío ni un "sin datos" (pedido explícito del usuario,
- * ej. la ronda de LA CALERA del 06/02 que solo tiene candidatos_gobernador).
+ * "Resumen" de una ronda puntual. Cada sección se omite por completo si la
+ * ronda no trae ese tipo de pregunta — nunca se muestra un bloque vacío ni
+ * un "sin datos" (pedido explícito del usuario, ej. la ronda de LA CALERA
+ * del 06/02 que solo tiene candidatos_gobernador: hoy ya se muestra esa
+ * sección directamente, no un mensaje de "sin datos").
  *
- * A propósito NO renderiza obras/dirigentes/candidatos_gobernador/
- * candidatos_intendente/otras_preguntas: quedan para la entrega 3c (esos
- * campos ya vienen en `ronda` porque la API devuelve el JSON completo sin
- * recortar, pero esta vista todavía no los usa).
+ * 8 secciones en total:
+ *   - Las 4 "compatibles con circuitos" (entrega 3a): Principales problemas,
+ *     Calificación de gestión, Aprobación de gestión, Reelección.
+ *   - Las 4 sin equivalente en el proyecto hermano (entrega 3c): Obras,
+ *     Dirigentes, Candidatos (Gobernador/Intendente), Otra.
+ * Candidatos (EncuestaCandidatos) arma sus propias tarjetas con título
+ * -algunas rondas traen Gobernador sin Intendente o viceversa, ver ese
+ * componente- así que se renderiza siempre, sin wrapper `tarjeta` acá.
  */
 export default function EncuestaResumenRonda({ ronda }) {
   const { problemas, gestion, aprobacion, reeleccion } = clasificarPreguntas(ronda.preguntas);
+  const tieneObras = (ronda.obras || []).length > 0;
+  const tieneDirigentes = (ronda.dirigentes || []).length > 0;
+  const tieneCandidatos = hayCandidatos(ronda.candidatos_gobernador) || hayCandidatos(ronda.candidatos_intendente);
+  const tieneOtras = (ronda.otras_preguntas || []).length > 0;
 
   const sinDatos =
-    problemas.length === 0 && gestion.length === 0 && aprobacion.length === 0 && reeleccion.length === 0;
+    problemas.length === 0 &&
+    gestion.length === 0 &&
+    aprobacion.length === 0 &&
+    reeleccion.length === 0 &&
+    !tieneObras &&
+    !tieneDirigentes &&
+    !tieneCandidatos &&
+    !tieneOtras;
 
   if (sinDatos) {
     return (
       <div style={tarjeta}>
         <p style={{ fontSize: 13.5, color: 'var(--text-secondary)' }}>
-          Esta ronda no tiene preguntas de imagen, aprobación, reelección ni problemas — puede traer
-          candidatos, obras o dirigentes (ver próxima entrega).
+          Esta ronda no tiene ninguna pregunta procesada para esta localidad.
         </p>
       </div>
     );
@@ -47,7 +66,10 @@ export default function EncuestaResumenRonda({ ronda }) {
         <div style={tarjeta}>
           <div style={tituloTarjeta}>Principales problemas</div>
           {problemas.map(({ clave, categorias }) => (
-            <EncuestaBarraProblemas key={clave} categorias={categorias} />
+            <EncuestaBarraHorizontal
+              key={clave}
+              items={Object.entries(categorias).map(([label, pct]) => ({ label, pct }))}
+            />
           ))}
         </div>
       )}
@@ -82,6 +104,34 @@ export default function EncuestaResumenRonda({ ronda }) {
               <EncuestaReeleccionDonut key={clave} etiqueta={clave} categorias={categorias} />
             ))}
           </div>
+        </div>
+      )}
+
+      {tieneObras && (
+        <div style={tarjeta}>
+          <div style={tituloTarjeta}>Obras</div>
+          <EncuestaObras obras={ronda.obras} />
+        </div>
+      )}
+
+      {tieneDirigentes && (
+        <div style={tarjeta}>
+          <div style={tituloTarjeta}>Dirigentes locales</div>
+          <EncuestaDirigentes dirigentes={ronda.dirigentes} />
+        </div>
+      )}
+
+      {tieneCandidatos && (
+        <EncuestaCandidatos
+          candidatosGobernador={ronda.candidatos_gobernador}
+          candidatosIntendente={ronda.candidatos_intendente}
+        />
+      )}
+
+      {tieneOtras && (
+        <div style={tarjeta}>
+          <div style={tituloTarjeta}>Otras preguntas</div>
+          <EncuestaOtras otrasPreguntas={ronda.otras_preguntas} />
         </div>
       )}
     </div>

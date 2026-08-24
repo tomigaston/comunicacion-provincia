@@ -153,7 +153,24 @@ export default function EncuestasLocalidades() {
                     </div>
                   )}
 
-                  <EncuestaResumenRonda ronda={ronda} />
+                  {/* key con localidad+fecha (no solo fecha): dos localidades
+                      distintas pueden compartir la misma fecha de ronda (ya
+                      pasó, ej. "2026-02-13" en LA CALERA y en VILLA DOLORES).
+                      Sin esta key, al cambiar de localidad hay un render
+                      transitorio donde `ronda` ya cambió pero `fechaElegida`
+                      todavía no se sincronizó (el useEffect corre después del
+                      render) -> por un instante se arma con la ronda de la
+                      fecha vieja en la localidad NUEVA, y si esa coincidencia
+                      pasa a tener menos escenarios que la ronda real (visto
+                      con Candidatos: esa ronda-fantasma no tenía "Escenario
+                      0"), el estado interno de EncuestaCandidatos/
+                      EncuestaDirigentes (useState de escenario elegido,
+                      búsqueda de dirigente) queda inicializado con esos datos
+                      de paso y no se resetea al llegar la ronda real, porque
+                      React no desmonta el componente (misma posición en el
+                      árbol). La key fuerza un remount limpio en cada cambio
+                      real de localidad o de ronda. */}
+                  <EncuestaResumenRonda key={`${localidadElegida}|${fechaElegida}`} ronda={ronda} />
                 </>
               )}
 
