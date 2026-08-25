@@ -61,6 +61,11 @@ REFERENCIA_CONTEO_TIPO_PREGUNTA = {
     "Dirigentes_Locales": 1349,
     "Candidatos_Gobernador": 707,
     "Candidatos_Intendente": 27,
+    # Tipo nuevo, no existía en la fuente vieja que originó el resto de esta
+    # referencia -> se usa el conteo de la primera corrida donde apareció
+    # (base curada, CRUZ DEL EJE y VILLA DEL TOTORAL, ronda 2026-08-03) como
+    # piso de comparación.
+    "Candidatos_Presidente": 22,
     "Otra": 427,
 }
 
@@ -82,6 +87,19 @@ UMBRAL_SIMILITUD_TYPO_LOCALIDAD = 0.9
 # si en el futuro conviene un umbral distinto al de localidades (nombres de
 # persona tienen otra "forma" que nombres de lugar).
 UMBRAL_SIMILITUD_TYPO_NOMBRES = 0.9
+
+# Marcador de la variante "sin indecisos" de una pregunta de candidatos:
+# confirmado contra la fuente real (BASE_MAESTRA_FINAL.xlsx) que las 4
+# Pregunta_Original que reformulan una pregunta de candidatos excluyendo la
+# categoría "No sabe/no contesta" contienen literalmente esta substring
+# (case-insensitive), ej. "...(todos los candidatos, sin indecisos)" en
+# Candidatos_Gobernador o "...(sin indecisos)" en Candidatos_Intendente.
+# Sin esto, _clave_escenario() no las distinguiría de la pregunta principal
+# del mismo Escenario y sus porcentajes distintos para el mismo candidato
+# se verían (incorrectamente) como una colisión -> ver colisiones_candidatos
+# en el reporte previo a este cambio, las 52 eran justamente esto.
+MARCADOR_SIN_INDECISOS = "sin indecisos"
+SUFIJO_SIN_INDECISOS = " (sin indecisos)"
 
 
 # ---------------------------------------------------------------------------
@@ -129,6 +147,52 @@ def _armar_categorias(filas, colisiones_log, contexto_log):
             colisiones_log.append({**contexto_log, "categoria": cat, "valores_vistos": pcts, "valor_usado": valor[cat]})
 
     return {cat: valor[cat] for cat in sorted(valor, key=lambda c: orden[c])}
+
+
+def _clave_escenario(fila):
+    """Clave de agrupación por Escenario para una fila de candidatos
+    (Gobernador/Intendente/Presidente). Normalmente es el Escenario tal cual
+    viene ("Escenario base" si viene vacío) -> pero si Pregunta_Original es
+    la reformulación "sin indecisos" de la misma pregunta (ver
+    MARCADOR_SIN_INDECISOS), se le agrega un sufijo para que quede como una
+    entrada aparte del dict de ese cargo, en vez de mezclarse con la
+    pregunta principal del mismo Escenario (que es lo que pasaba antes de
+    este cambio: ver colisiones_candidatos)."""
+    base = fila["escenario"] or "Escenario único"
+    pregunta = fila.get("pregunta_original") or ""
+    if MARCADOR_SIN_INDECISOS in pregunta.lower():
+        return f"{base}{SUFIJO_SIN_INDECISOS}"
+    return base
+
+
+def _procesar_candidatos_cargo(filas_ronda, tipo_pregunta, cargo, colisiones_log, apariciones_por_loc, localidad_norm, contexto_log_base):
+    """Arma el dict {escenario: [{"candidato":.., "pct":..}]} de un cargo
+    (Gobernador/Intendente/Presidente) a partir de las filas de la ronda,
+    agrupando por _clave_escenario() (no directamente por Escenario, ver
+    ahí el porqué). Comparte la misma lógica para los 3 cargos -> antes de
+    este cambio Gobernador e Intendente tenían cada uno su propio bloque
+    casi idéntico en cargar_encuestas_localidades(); se unificó acá al
+    sumar Presidente como tercer cargo con el mismo esquema. Además
+    registra cada aparición de candidato en apariciones_por_loc (insumo de
+    los detectores de typos de nombre)."""
+    rows = [f for f in filas_ronda if f["tipo_pregunta"] == tipo_pregunta]
+    por_escenario = defaultdict(list)
+    orden_escenarios = []
+    for f in rows:
+        clave = _clave_escenario(f)
+        if clave not in por_escenario:
+            orden_escenarios.append(clave)
+        por_escenario[clave].append(f)
+    candidatos_por_escenario = {
+        esc: _armar_candidatos(fs, colisiones_log, {**contexto_log_base, "escenario": esc, "cargo": cargo})
+        for esc, fs in ((e, por_escenario[e]) for e in orden_escenarios)
+    }
+    for esc, fs in por_escenario.items():
+        for cand in {f["Categoria_Respuesta"] for f in fs}:
+            apariciones_por_loc[localidad_norm][cand].append(
+                {"fecha": contexto_log_base["fecha"], "cargo": cargo, "escenario": esc, "origen": "candidato"}
+            )
+    return candidatos_por_escenario
 
 
 def _armar_candidatos(filas, colisiones_log, contexto_log):
@@ -331,6 +395,51 @@ def cargar_encuestas_localidades():
     for f in filas:
         filas_por_ronda[(f["localidad_norm"], f["fecha"])].append(f)
 
+    # --- Rondas huérfanas: Localidad+Fecha cuyo ÚNICO Tipo_Pregunta presente
+    # es Candidatos_Gobernador -------------------------------------------
+    #
+    # Confirmado por el usuario: la encuesta real siempre se hace completa
+    # (Imagen_Funcionario/Aprobacion/Reeleccion/Problemas/Obras/
+    # Dirigentes_Locales, etc.) -> nunca existió una consulta que solo
+    # pregunte intención de voto a gobernador sola. Una combinación
+    # Localidad+Fecha donde el ÚNICO Tipo_Pregunta presente es
+    # Candidatos_Gobernador es un error de carga en el origen, no una ronda
+    # real -> se excluye del todo (no solo del conteo).
+    #
+    # Criterio ESTRUCTURAL (no atado a Casos_Totales=385, que fue solo una
+    # coincidencia parcial del barrido inicial): el conjunto de
+    # Tipo_Pregunta de esa Localidad+Fecha tiene que ser EXACTAMENTE
+    # {"Candidatos_Gobernador"}. Por eso NO excluye, por ejemplo, a
+    # CARLOS PAZ/RIO TERCERO/CRUZ DEL EJE/VILLA NUEVA en sus fechas con
+    # Casos_Totales=385: ahí la fecha huérfana coincide con una ronda real
+    # completa de esa misma localidad (con su propio Candidatos_Gobernador
+    # legítimo mezclado en la misma Localidad+Fecha) -> el conjunto de
+    # Tipo_Pregunta de esa combinación no es solo Candidatos_Gobernador, así
+    # que no aplica esta exclusión (ya cubierto aparte por
+    # _resolver_casos_totales(), que en esos casos elige el valor real por
+    # mayoría). ALTA GRACIA/2026-02-06 tampoco se excluye por el mismo
+    # motivo: es una ronda real completa (7 Tipo_Pregunta), coincidentemente
+    # con Casos_Totales=385 también.
+    rondas_huerfanas_excluidas = []
+    claves_huerfanas = set()
+    for (localidad_norm, fecha), filas_ronda in filas_por_ronda.items():
+        tipos_presentes = {f["tipo_pregunta"] for f in filas_ronda}
+        if tipos_presentes != {"Candidatos_Gobernador"}:
+            continue
+        claves_huerfanas.add((localidad_norm, fecha))
+        casos_vistos = sorted({_numero_limpio(f["casos_totales"]) for f in filas_ronda if f["casos_totales"] is not None})
+        escenarios_vistos = sorted({f["escenario"] or "Escenario único" for f in filas_ronda})
+        rondas_huerfanas_excluidas.append({
+            "localidad": localidad_norm,
+            "fecha": fecha,
+            "casos_totales": casos_vistos[0] if len(casos_vistos) == 1 else casos_vistos,
+            "filas_excluidas": len(filas_ronda),
+            "escenarios": escenarios_vistos,
+        })
+    rondas_huerfanas_excluidas.sort(key=lambda h: (h["localidad"], h["fecha"]))
+    for clave in claves_huerfanas:
+        del filas_por_ronda[clave]
+
     colisiones_categorias = []
     colisiones_candidatos = []
     dirigentes_sin_nombre = []
@@ -427,24 +536,12 @@ def cargar_encuestas_localidades():
             for nombre in orden_dirigentes
         ]
 
-        # 4) Candidatos_Gobernador -> dict por Escenario tal cual viene.
-        gobernador_rows = [f for f in filas_ronda if f["tipo_pregunta"] == "Candidatos_Gobernador"]
-        por_escenario_gob = defaultdict(list)
-        orden_escenarios_gob = []
-        for f in gobernador_rows:
-            clave = f["escenario"] or "Escenario único"
-            if clave not in por_escenario_gob:
-                orden_escenarios_gob.append(clave)
-            por_escenario_gob[clave].append(f)
-        candidatos_gobernador = {
-            esc: _armar_candidatos(fs, colisiones_candidatos, {**contexto_log_base, "escenario": esc, "cargo": "gobernador"})
-            for esc, fs in ((e, por_escenario_gob[e]) for e in orden_escenarios_gob)
-        }
-        for esc, fs in por_escenario_gob.items():
-            for cand in {f["Categoria_Respuesta"] for f in fs}:
-                candidato_apariciones_por_loc[localidad_norm][cand].append(
-                    {"fecha": fecha, "cargo": "gobernador", "escenario": esc, "origen": "candidato"}
-                )
+        # 4) Candidatos_Gobernador -> dict por Escenario tal cual viene (ver
+        # _clave_escenario() para el caso "sin indecisos").
+        candidatos_gobernador = _procesar_candidatos_cargo(
+            filas_ronda, "Candidatos_Gobernador", "gobernador",
+            colisiones_candidatos, candidato_apariciones_por_loc, localidad_norm, contexto_log_base,
+        )
 
         # 5) Candidatos_Intendente -> CORRECCIÓN vs. el handoff original:
         # esta fuente real SÍ trae Escenario poblado para Candidatos_Intendente
@@ -452,23 +549,17 @@ def cargar_encuestas_localidades():
         # Candidatos_Gobernador (dict por Escenario), no como array plano.
         # Las filas sin Escenario (ronda de un solo escenario) van bajo la
         # clave "Escenario único".
-        intendente_rows = [f for f in filas_ronda if f["tipo_pregunta"] == "Candidatos_Intendente"]
-        por_escenario_int = defaultdict(list)
-        orden_escenarios_int = []
-        for f in intendente_rows:
-            clave = f["escenario"] or "Escenario único"
-            if clave not in por_escenario_int:
-                orden_escenarios_int.append(clave)
-            por_escenario_int[clave].append(f)
-        candidatos_intendente = {
-            esc: _armar_candidatos(fs, colisiones_candidatos, {**contexto_log_base, "escenario": esc, "cargo": "intendente"})
-            for esc, fs in ((e, por_escenario_int[e]) for e in orden_escenarios_int)
-        }
-        for esc, fs in por_escenario_int.items():
-            for cand in {f["Categoria_Respuesta"] for f in fs}:
-                candidato_apariciones_por_loc[localidad_norm][cand].append(
-                    {"fecha": fecha, "cargo": "intendente", "escenario": esc, "origen": "candidato"}
-                )
+        candidatos_intendente = _procesar_candidatos_cargo(
+            filas_ronda, "Candidatos_Intendente", "intendente",
+            colisiones_candidatos, candidato_apariciones_por_loc, localidad_norm, contexto_log_base,
+        )
+
+        # 5bis) Candidatos_Presidente -> mismo esquema, tipo nuevo en la base
+        # curada (22 filas, CRUZ DEL EJE y VILLA DEL TOTORAL, 2026-08-03).
+        candidatos_presidente = _procesar_candidatos_cargo(
+            filas_ronda, "Candidatos_Presidente", "presidente",
+            colisiones_candidatos, candidato_apariciones_por_loc, localidad_norm, contexto_log_base,
+        )
 
         # 6) Otra -> array por Pregunta_Original.
         otras_rows = [f for f in filas_ronda if f["tipo_pregunta"] == "Otra"]
@@ -496,6 +587,7 @@ def cargar_encuestas_localidades():
             "dirigentes": dirigentes,
             "candidatos_gobernador": candidatos_gobernador,
             "candidatos_intendente": candidatos_intendente,
+            "candidatos_presidente": candidatos_presidente,
             "otras_preguntas": otras_preguntas,
         }
 
@@ -529,10 +621,10 @@ def cargar_encuestas_localidades():
 
     # CAMBIO 2: typos de nombre de Dirigente / candidato, DENTRO de cada
     # localidad por separado (nunca se cruzan nombres entre localidades
-    # distintas). Candidatos_Gobernador y Candidatos_Intendente se tratan
-    # JUNTOS (mismo pool de nombres por localidad, distinguibles por el
-    # campo "cargo" en cada aparición) -> decisión tomada por simplicidad,
-    # ver reporte.
+    # distintas). Candidatos_Gobernador, Candidatos_Intendente y
+    # Candidatos_Presidente se tratan JUNTOS (mismo pool de nombres por
+    # localidad, distinguibles por el campo "cargo" en cada aparición) ->
+    # decisión tomada por simplicidad, ver reporte.
     posibles_typos_dirigentes = []
     for localidad_norm, apariciones in dirigente_apariciones_por_loc.items():
         for hallazgo in _detectar_posibles_typos_nombres(apariciones):
@@ -574,6 +666,7 @@ def cargar_encuestas_localidades():
         "colisiones_candidatos": colisiones_candidatos,
         "dirigentes_sin_nombre": dirigentes_sin_nombre,
         "obras_sin_nombre_excluidas": obras_sin_nombre_excluidas,
+        "rondas_huerfanas_excluidas": rondas_huerfanas_excluidas,
         "localidades_matcheadas_60": localidades_matcheadas_60,
         "localidades_fallback_upper": localidades_fallback_upper,
         "escenario_poblado_candidatos_intendente": int(sum(1 for f in filas if f["tipo_pregunta"] == "Candidatos_Intendente" and f["escenario"] is not None)),
@@ -614,6 +707,15 @@ def _imprimir_reporte(auditoria):
             print(f"    {inc['localidad']} / {inc['fecha']}: valores vistos {inc['valores_vistos']} -> elegido {inc['valor_elegido']}")
     else:
         print("  Casos_Totales: sin inconsistencias (un solo valor por Localidad+Fecha en toda la fuente)")
+
+    if auditoria["rondas_huerfanas_excluidas"]:
+        print(f"  ⚠️  {len(auditoria['rondas_huerfanas_excluidas'])} combinación(es) Localidad+Fecha excluidas por ser "
+              "rondas huérfanas (único Tipo_Pregunta presente: Candidatos_Gobernador -> error de carga en el origen, "
+              "confirmado por el usuario, nunca una ronda real), ver detalle abajo:")
+        for h in auditoria["rondas_huerfanas_excluidas"]:
+            print(f"    {h}")
+    else:
+        print("  Sin rondas huérfanas detectadas (ninguna combinación Localidad+Fecha con Candidatos_Gobernador como único Tipo_Pregunta).")
 
     if auditoria["posibles_typos_localidad"]:
         print(f"  ⚠️  Posibles typos/duplicados de Localidad (NO unificados, quedan separados en el JSON):")
