@@ -590,6 +590,15 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
         tipo_pauta = _forma_canonica(mapa_tipos_pauta, limpio(row["TIPO DE PAUTA"]))
 
+        # FIN INFORMADO como fallback de FIN: hay filas que todavía no tienen
+        # FIN real cargado pero sí traen la fecha comprometida en FIN
+        # INFORMADO -> se usa esa para no dejar la pieza sin fecha de fin ni
+        # estado. Nunca se usa la columna ESTADO cruda del excel (criterio
+        # fijo del proyecto).
+        fin_ts = _a_timestamp(row["FIN"])
+        if fin_ts is None:
+            fin_ts = _a_timestamp(row["FIN INFORMADO"])
+
         piezas.append({
             "fuente": "global",
             "codigo_pieza": None,
@@ -621,8 +630,8 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
             "inicio_informe": None,
             "fin_informe": None,
             "fecha_creacion": fecha_iso(row["FECHA DE ENVÍO"]),
-            "finalizacion": fecha_iso(row["FIN"]),
-            "estado": estado_por_fecha(row["FIN"]),
+            "finalizacion": fecha_iso(fin_ts),
+            "estado": estado_por_fecha(fin_ts),
             "alcance": None,
             "frecuencia": None,
             "impresiones": None,
@@ -1094,6 +1103,10 @@ EXCLUSIONES_LUGAR_GNO_CONFIRMADAS = {
         "TANTI", "HUINCA RENANCO", "VILLA DE SOTO", "SAN JOSE DE LA DORMIDA",
         "CHUNA", "CANADA DE LUQUE", "LOS MISTOLES", "POCHO", "LA PAMPA",
         "REGION CENTRO", "ENTE METROPOLITANO",
+        # Sumadas 25/08/2026: confirmadas por el usuario, existen en el
+        # mundo real pero no son ninguna de las 60 -> mismo criterio.
+        "BENJAMIN GOULD", "CANALS", "COLONIA BISMARK", "COLONIA BREMEN",
+        "MIRAMAR DE ANSENUZA", "PUEBLO ITALIANO", "VIAMONTE",
     ]
 }
 
@@ -1152,12 +1165,15 @@ def cargar_contenido_organico(localidad_a_oficial):
     # trae fecha propia, el resto queda NaT hasta la siguiente fecha real.
     df[col_fecha] = df[col_fecha].ffill()
 
-    # 2) Descartar filas de plantilla vacía (sin RED SOCIAL, NOMBRE DEL
-    # CONTENIDO ni LINK -> no aportan ningún dato real). Se aplica en
-    # cualquier posición del archivo, no solo al final: hay separadores
-    # intermedios con el mismo patrón (fila con o sin fecha propia, pero sin
-    # ningún contenido) además de la tanda final de fechas futuras vacías.
-    vacia = df[col_red].isna() & df[col_nombre].isna() & df[col_link].isna()
+    # 2) Descartar filas de plantilla vacía (sin RED SOCIAL ni NOMBRE DEL
+    # CONTENIDO -> no aportan ningún dato real). Se aplica en cualquier
+    # posición del archivo, no solo al final: hay separadores intermedios
+    # con el mismo patrón (fila con o sin fecha propia, pero sin ningún
+    # contenido) además de la tanda final de fechas futuras vacías. 25/08/
+    # 2026: se sacó LINK de la condición -> una fila con un link pegado pero
+    # sin RED SOCIAL ni NOMBRE DEL CONTENIDO tampoco es una publicación real
+    # (ej. un link suelto con LUGAR cargado pero sin contenido real detrás).
+    vacia = df[col_red].isna() & df[col_nombre].isna()
     filas_descartadas = int(vacia.sum())
     df = df[~vacia]
 
@@ -1165,14 +1181,28 @@ def cargar_contenido_organico(localidad_a_oficial):
     no_identificados = []
     fuzzy_aplicados = []
     lugares_con_link_excluidos = []
+    sin_red_social = []
 
     for idx, row in df.iterrows():
         fecha = fecha_iso(row[col_fecha])
         red_social = limpio(row[col_red])
+        # RED SOCIAL puede traer varias redes separadas por coma (ej. "FB
+        # GOBIERNO, FB MLL") -> se separa para poder contar la publicación
+        # una vez por cada red. Si viene vacía (fila con contenido real pero
+        # sin red cargada) queda lista vacía -no se inventa una red- y se
+        # loguea en 'sin_red_social' para revisión.
+        redes_sociales = [r.strip() for r in red_social.split(",") if r.strip()] if red_social else []
         nombre_contenido_raw = limpio(row[col_nombre])
         nombre_contenido = nombre_contenido_raw.strip() if nombre_contenido_raw else nombre_contenido_raw
         link = limpiar_link(row[col_link])
         lugar_raw = limpio(row[col_lugar])
+
+        if not redes_sociales:
+            sin_red_social.append({
+                "fila": int(idx) + 2,
+                "fecha": fecha,
+                "nombre_contenido": nombre_contenido,
+            })
 
         localidades = []
         ambito_provincial = False
@@ -1210,6 +1240,7 @@ def cargar_contenido_organico(localidad_a_oficial):
         publicaciones.append({
             "fecha": fecha,
             "red_social": red_social,
+            "redes_sociales": redes_sociales,
             "nombre_contenido": nombre_contenido,
             "link": link,
             "lugar_raw": lugar_raw,
@@ -1224,12 +1255,15 @@ def cargar_contenido_organico(localidad_a_oficial):
         print(f"  ℹ️  Contenido Orgánico: {len(fuzzy_aplicados)} tokens resueltos por coincidencia aproximada -> ver 'fuzzy_aplicados' en contenido_organico.json")
     if lugares_con_link_excluidos:
         print(f"  ⚠️  Contenido Orgánico: {len(lugares_con_link_excluidos)} filas con un link pegado en LUGAR (tratadas como sin lugar) -> ver 'lugares_con_link_excluidos' en contenido_organico.json")
+    if sin_red_social:
+        print(f"  ⚠️  Contenido Orgánico: {len(sin_red_social)} publicaciones con contenido pero sin RED SOCIAL cargada -> ver 'sin_red_social' en contenido_organico.json")
 
     return {
         "publicaciones": publicaciones,
         "no_identificados": no_identificados,
         "fuzzy_aplicados": fuzzy_aplicados,
         "lugares_con_link_excluidos": lugares_con_link_excluidos,
+        "sin_red_social": sin_red_social,
         "filas_descartadas_vacias": filas_descartadas,
     }
 
