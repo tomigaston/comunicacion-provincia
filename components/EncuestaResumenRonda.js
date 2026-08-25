@@ -24,9 +24,11 @@ const tituloTarjeta = { fontSize: 14.5, fontWeight: 700, marginBottom: 14 };
  * del 06/02 que solo tiene candidatos_gobernador: hoy ya se muestra esa
  * sección directamente, no un mensaje de "sin datos").
  *
- * 8 secciones en total:
- *   - Las 4 "compatibles con circuitos" (entrega 3a): Principales problemas,
- *     Calificación de gestión, Aprobación de gestión, Reelección.
+ * 7 secciones en total:
+ *   - Las 3 "compatibles con circuitos" (entrega 3a): Principales problemas,
+ *     Calificación de gestión, y Aprobación y Reelección unificadas en una
+ *     sola tarjeta (pedido explícito del usuario, antes eran 2 tarjetas
+ *     separadas: Aprobación de gestión y Reelección).
  *   - Las 4 sin equivalente en el proyecto hermano (entrega 3c): Obras,
  *     Dirigentes, Candidatos (Gobernador/Intendente), Otra.
  * Candidatos (EncuestaCandidatos) arma sus propias tarjetas con título
@@ -68,7 +70,14 @@ export default function EncuestaResumenRonda({ ronda }) {
           {problemas.map(({ clave, categorias }) => (
             <EncuestaBarraHorizontal
               key={clave}
-              items={Object.entries(categorias).map(([label, pct]) => ({ label, pct }))}
+              // A diferencia de Candidatos (ya viene ordenado del pipeline),
+              // acá el dict de categorías no trae orden por pct -> se ordena
+              // descendente acá mismo antes de pasarlo (pedido explícito del
+              // usuario). Esto NO toca Obras ni Otra: esas secciones siguen
+              // el orden real de categorías de la fuente.
+              items={Object.entries(categorias)
+                .map(([label, pct]) => ({ label, pct }))
+                .sort((a, b) => b.pct - a.pct)}
             />
           ))}
         </div>
@@ -85,21 +94,18 @@ export default function EncuestaResumenRonda({ ronda }) {
         </div>
       )}
 
-      {aprobacion.length > 0 && (
+      {(aprobacion.length > 0 || reeleccion.length > 0) && (
         <div style={tarjeta}>
-          <div style={tituloTarjeta}>Aprobación de gestión</div>
-          <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+          {/* Aprobación de gestión y Reelección eran dos tarjetas separadas,
+              una debajo de la otra -> unificadas acá en una sola tarjeta con
+              un único título y todos los gauges/donuts en una sola fila
+              (pedido explícito del usuario). flex-wrap, sin ancho fijo, para
+              no romper en pantallas chicas. */}
+          <div style={tituloTarjeta}>Aprobación y Reelección</div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             {aprobacion.map(({ clave, categorias }) => (
               <EncuestaAprobacionGauge key={clave} etiqueta={clave} pctApruebo={categorias.Apruebo ?? 0} />
             ))}
-          </div>
-        </div>
-      )}
-
-      {reeleccion.length > 0 && (
-        <div style={tarjeta}>
-          <div style={tituloTarjeta}>Reelección</div>
-          <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
             {reeleccion.map(({ clave, categorias }) => (
               <EncuestaReeleccionDonut key={clave} etiqueta={clave} categorias={categorias} />
             ))}

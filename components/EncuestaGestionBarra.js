@@ -37,11 +37,11 @@ export default function EncuestaGestionBarra({ etiqueta, categorias }) {
           ))}
         </g>
       </svg>
-      <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 6 }}>
-        {/* Sin porcentaje en la leyenda a propósito: "Calificación de gestión"
-            no lleva label numérico visible (a diferencia de Aprobación y
-            Reelección, que sí muestran %) — solo punto de color + nombre. */}
-        {ORDEN_GRUPOS_GESTION.map((grupo) => (
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginTop: 6 }}>
+        {/* Con porcentaje en la leyenda (decisión explícita del usuario,
+            prioridad sobre la spec heredada de tablero-electoral que la
+            sacaba): "Gestión del X" y "Regular" 32%", etc. */}
+        {grupos.map(({ grupo, pct }) => (
           <span
             key={grupo}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 12, color: 'var(--text-secondary)' }}
@@ -55,7 +55,7 @@ export default function EncuestaGestionBarra({ etiqueta, categorias }) {
                 display: 'inline-block',
               }}
             />
-            {grupo}
+            {grupo} {pct}%
           </span>
         ))}
       </div>
