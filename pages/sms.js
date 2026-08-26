@@ -26,30 +26,6 @@ function ambitoLabel(key) {
   return AMBITOS.find((a) => a.key === key)?.label || key;
 }
 
-// Mismo lenguaje visual que StatusBadge (Pauta Digital/Medios): verde para
-// el estado activo, gris para cualquier otro valor -no hay más estados
-// reales en los datos hoy que "ACTIVO", pero esto no asume que sea el único
-// string posible, solo que "activo" es el único que se pinta verde.
-function EstadoBadge({ estado }) {
-  if (!estado) return <span style={{ color: 'var(--text-tertiary)' }}>—</span>;
-  const activo = normalizarTexto(estado) === 'activo';
-  return (
-    <span
-      style={{
-        display: 'inline-block',
-        padding: '3px 10px',
-        borderRadius: 999,
-        background: activo ? 'var(--cov-alta-bg)' : 'var(--bg-secondary)',
-        color: activo ? 'var(--cov-alta)' : 'var(--text-secondary)',
-        fontSize: 12.5,
-        fontWeight: 600,
-      }}
-    >
-      {estado}
-    </span>
-  );
-}
-
 /**
  * Un envío de SMS puede tener varios "alcances" en AUDIENCIA (ej. La
  * Carlota + Laboulaye). Acá se explota cada envío en una fila por alcance
@@ -306,7 +282,6 @@ export default function Sms() {
                   <th style={{ ...th, minWidth: 260 }}>Mensaje</th>
                   <th style={th}>Localidad</th>
                   <th style={th}>SMS entregados</th>
-                  <th style={th}>Estado</th>
                 </tr>
               </thead>
               <tbody>
@@ -321,9 +296,6 @@ export default function Sms() {
                       {typeof f.cantidad_sms_entregados === 'number'
                         ? f.cantidad_sms_entregados.toLocaleString('es-AR')
                         : '—'}
-                    </td>
-                    <td style={td}>
-                      <EstadoBadge estado={f.estado} />
                     </td>
                   </tr>
                 ))}

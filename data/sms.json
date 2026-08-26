@@ -13062,20 +13062,6 @@
           "matcheo": "zona_capital"
         }
       ]
-    },
-    {
-      "eje": "SEGURIDAD",
-      "fecha_inicio": null,
-      "estado": null,
-      "tematica": null,
-      "categoria": null,
-      "mensaje": null,
-      "zona": null,
-      "audiencia_raw": null,
-      "cantidad_sms_entregados": null,
-      "circuito_raw": null,
-      "sin_desagregacion_geografica": true,
-      "alcances": []
     }
   ],
   "no_identificados": [],

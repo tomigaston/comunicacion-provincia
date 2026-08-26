@@ -1065,8 +1065,21 @@ def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial):
         zona_raw = limpio(row[col_zona])
         n_zona = normalizar(zona_raw)
         audiencia_raw = limpio(row[col_audiencia])
+        mensaje_raw = limpio(row[col_mensaje])
+        fecha_raw = fecha_iso(row[col_fecha])
         depto_raw_fila = limpio(row[col_depto])  # NO se usa para filtrar/acotar matching (ver 3.4); el único uso que
                                                   # le queda es reconocer "Capital" en AUDIENCIA="DEPTO COMPLETO" (ver abajo)
+
+        # Fila residual del export, no un envío real: caso confirmado el
+        # 26/08/2026, la última fila del archivo (MENSAJE/ZONA/FECHA/AUDIENCIA
+        # los 4 vacíos, solo traía EJE="SEGURIDAD" suelto). Se descarta antes
+        # de sumarla a `envios` -> no entra a ningún conteo ni a ninguna vista,
+        # a diferencia de antes donde quedaba como un "envío" fantasma con casi
+        # todos los campos null. No se pisa por ESTADO vacío específicamente
+        # (más frágil, un envío real podría legítimamente no traer ESTADO):
+        # el criterio es que las 4 columnas de contenido estén vacías a la vez.
+        if not mensaje_raw and not zona_raw and not fecha_raw and not audiencia_raw:
+            continue
 
         sin_desagregacion = False
         alcances = []
@@ -1131,11 +1144,11 @@ def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial):
 
         envios.append({
             "eje": limpio(row[col_eje]),
-            "fecha_inicio": fecha_iso(row[col_fecha]),
+            "fecha_inicio": fecha_raw,
             "estado": limpio(row[col_estado]),
             "tematica": limpio(row[col_tematica]),
             "categoria": limpio(row[col_categoria]),
-            "mensaje": limpio(row[col_mensaje]),
+            "mensaje": mensaje_raw,
             "zona": zona_raw,
             "audiencia_raw": audiencia_raw,
             "cantidad_sms_entregados": limpio(row[col_cantidad]),
