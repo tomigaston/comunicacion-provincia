@@ -460,12 +460,25 @@ def _departamento_candidato(depto_raw):
     return m.group(2).strip() if m else None
 
 
-def clasificar_geografia_pauta_global(depto_raw, loc_raw, localidades_60_normalizadas):
+def clasificar_geografia_pauta_global(
+    depto_raw, loc_raw, localidades_60_normalizadas, departamento_a_localidades_normalizadas
+):
     """Reglas de clasificación de LOCALIDAD / SUBCIRCUITO, en este orden:
     1) DEPARTAMENTO sin "CÓRDOBA" (ej. Santa Fe, Entre Ríos) -> excluida.
     2) Código de subcircuito de Capital (ej. "010A - CABILDO") -> localidad
        Córdoba (Capital no distingue circuito en este tablero).
-    3) "TODAS LAS LOCALIDADES" -> ámbito provincia.
+    3) "TODAS LAS LOCALIDADES" con un DEPARTAMENTO puntual (ej. "DEPARTAMENTO
+       RIO CUARTO, PROVINCIA DE CÓRDOBA, ARGENTINA") -> ámbito
+       "localidad_multiple": la pieza no es de alcance provincial, es ese
+       Departamento entero -> se resuelve a la lista de sus localidades
+       dentro de las 60 (Localidades(1).xlsx) y el caller genera una fila de
+       salida por cada una, con las métricas completas (sin dividir) en
+       todas. Si el Departamento no tiene ninguna de las 60 -> no hay nada
+       que expandir, cae al mismo fallback que el punto 4 (ámbito
+       departamento, sin crear Localidad nueva).
+       "TODAS LAS LOCALIDADES" SIN un Departamento puntual (DEPARTAMENTO =
+       "PROVINCIA DE CÓRDOBA, ARGENTINA", la provincia entera) -> sigue
+       siendo ámbito provincia, sin cambios.
     4) "X, DEPARTAMENTO, PROVINCIA..." -> candidata = texto antes de la
        primera coma; si matchea una de las 60 -> ámbito localidad; si no
        -> fallback a ámbito departamento (NO se crea localidad nueva; sirve
@@ -491,6 +504,14 @@ def clasificar_geografia_pauta_global(depto_raw, loc_raw, localidades_60_normali
         }
 
     if loc_str == "TODAS LAS LOCALIDADES":
+        if depto_candidato:
+            localidades_del_depto = departamento_a_localidades_normalizadas.get(normalizar(depto_candidato), [])
+            if localidades_del_depto:
+                return {
+                    "excluida": False, "ambito": "localidad_multiple",
+                    "localidades": localidades_del_depto, "departamento": None,
+                }
+            return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
         return {"excluida": False, "ambito": "provincia", "localidad": None, "departamento": None}
 
     if loc_str:
@@ -551,7 +572,71 @@ def limpiar_link(v):
     return s
 
 
-def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial):
+def _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial):
+    """Traduce un `geo` de clasificar_geografia_pauta_global() a la lista de
+    asignaciones (Localidad, Departamento) en forma OFICIAL que la fila de
+    Pauta RRSS_GLOBAL debe producir. Normalmente es una sola asignación (una
+    fila fuente = una pieza); para ambito="localidad_multiple" ("TODAS LAS
+    LOCALIDADES" + un Departamento puntual, ver clasificar_geografia_pauta_global)
+    es una asignación POR CADA Localidad de las 60 que cae en ese
+    Departamento — de ahí sale la fila de salida por Localidad que pide el
+    proyecto, con localidad_asignada seteada explícitamente (no re-derivada
+    por texto: viene directo de Localidades(1).xlsx, no de un nuevo match de
+    string)."""
+    if geo["ambito"] == "localidad":
+        localidad = localidad_a_oficial[geo["localidad"]]
+        departamento = localidad_a_departamento_oficial[geo["localidad"]]
+        return [{"localidad": localidad, "departamento": departamento, "localidad_asignada": localidad}]
+    if geo["ambito"] == "localidad_multiple":
+        asignaciones = []
+        for n_loc in geo["localidades"]:
+            localidad = localidad_a_oficial[n_loc]
+            asignaciones.append({
+                "localidad": localidad,
+                "departamento": localidad_a_departamento_oficial[n_loc],
+                "localidad_asignada": localidad,
+            })
+        return asignaciones
+    if geo["ambito"] == "departamento":
+        departamento = deptos_a_oficial.get(normalizar(geo["departamento"]), geo["departamento"])
+        return [{"localidad": None, "departamento": departamento, "localidad_asignada": None}]
+    return [{"localidad": None, "departamento": None, "localidad_asignada": None}]
+
+
+def _dedup_pauta_global_por_cod_contenido(piezas):
+    """Corre DESPUÉS de expandir "TODAS LAS LOCALIDADES" + Departamento en una
+    fila por Localidad (nunca antes: antes de expandir no existen todavía los
+    localidad_asignada por los que se agrupa acá). Si dos piezas comparten
+    COD. CONTENIDO Y la misma clave (Campaña, Título, localidad_asignada), son
+    la misma pieza contada dos veces para esa Localidad —típicamente porque
+    además de su fila "TODAS LAS LOCALIDADES"+Departamento (que ya la expande
+    a esa Localidad) esa pieza también tiene una fila propia apuntando
+    directo a esa misma Localidad— y se descarta la repetición para no
+    duplicar métricas ahí. COD. CONTENIDO por sí solo NO alcanza como clave:
+    se reutiliza entre piezas distintas (mismo código, Campaña/Título
+    distintos) en los datos reales, así que sin el resto de la clave se
+    fusionarían piezas que no son la misma. Piezas sin COD. CONTENIDO (None)
+    nunca se descartan acá: no hay con qué agruparlas de forma confiable."""
+    vistas = set()
+    resultado = []
+    descartadas = 0
+    for pieza in piezas:
+        cod = pieza.get("cod_contenido")
+        if cod is None:
+            resultado.append(pieza)
+            continue
+        clave = (cod, pieza["campana"], pieza["titulo_pieza"], pieza["localidad_asignada"])
+        if clave in vistas:
+            descartadas += 1
+            continue
+        vistas.add(clave)
+        resultado.append(pieza)
+    return resultado, descartadas
+
+
+def cargar_pauta_digital_global(
+    localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas
+):
     """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
     (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
     Ejecutado quedan separados por plataforma (Meta/Google), ver Tarea 5."""
@@ -565,21 +650,21 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
     excluidas = 0
     for _, row in df.iterrows():
         geo = clasificar_geografia_pauta_global(
-            row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"], localidades_60_normalizadas
+            row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"],
+            localidades_60_normalizadas, departamento_a_localidades_normalizadas,
         )
         if geo["excluida"]:
             excluidas += 1
             continue
 
-        if geo["ambito"] == "localidad":
-            localidad = localidad_a_oficial[geo["localidad"]]
-            departamento = localidad_a_departamento_oficial[geo["localidad"]]
-        elif geo["ambito"] == "departamento":
-            localidad = None
-            departamento = deptos_a_oficial.get(normalizar(geo["departamento"]), geo["departamento"])
-        else:
-            localidad = None
-            departamento = None
+        asignaciones = _asignaciones_geograficas(
+            geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
+        )
+        # ambito="localidad_multiple" es el único caso con más de una
+        # asignación: todas las demás (localidad / departamento / None)
+        # siguen siendo, como antes, una sola pieza por fila fuente.
+        ambito_pieza = "localidad" if geo["ambito"] == "localidad_multiple" else geo["ambito"]
+        cod_contenido = limpio(row["COD. CONTENIDO"])
 
         link_material = limpiar_link(row["LINK MATERIAL"])
         link_ig = limpiar_link(row["IG"])
@@ -599,71 +684,81 @@ def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_of
         if fin_ts is None:
             fin_ts = _a_timestamp(row["FIN INFORMADO"])
 
-        piezas.append({
-            "fuente": "global",
-            "codigo_pieza": None,
-            "nombre_anuncio": limpio(row["TITULO DE LA PIEZA"]),
-            "titulo_pieza": limpio(row["TITULO DE LA PIEZA"]),
-            "area_tematica": limpio(row["EJE"]),
-            "ministerio": limpio(row["MINISTERIO"]),
-            "campana": campana,
-            "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(geo["ambito"]),
-            "alcance_tipo": geo["ambito"],
-            # Regla sin excepciones (igual que clasificar_alcance_historico() para la
-            # fuente vieja): en_60_localidades es True SOLO si la pieza tiene una
-            # Localidad puntual de las 60 (ambito=localidad) o es de alcance provincial
-            # (ambito=provincia, aplica al universo entero por definición). ambito=
-            # departamento NO cuenta como "en las 60 localidades" —el dato ya viene
-            # acotado a un Departamento, sin Localidad puntual, así que no se atribuye
-            # a ninguna Localidad— y ambito=None tampoco.
-            "en_60_localidades": geo["ambito"] in ("localidad", "provincia"),
-            "departamento": departamento,
-            "localidad": localidad,
-            "circuito_codigo_original": geo.get("circuito_codigo_original"),
-            "barrio": None,
-            "circuito_electoral": None,
-            "plataforma": plataforma,
-            "tipo_pauta": tipo_pauta,
-            "origen": limpio(row["ORIGEN"]),
-            "proveedor": limpio(row["PROVEEDOR"]),
-            "inicio": fecha_iso(row["INICIO "]),
-            "inicio_informe": None,
-            "fin_informe": None,
-            "fecha_creacion": fecha_iso(row["FECHA DE ENVÍO"]),
-            "finalizacion": fecha_iso(fin_ts),
-            "estado": estado_por_fecha(fin_ts),
-            "alcance": None,
-            "frecuencia": None,
-            "impresiones": None,
-            "visualizaciones": None,
-            "cpm": None,
-            "cobertura_planificada_meta": limpio(row["Cobertura Planificada META"]),
-            "cobertura_ejecutada_meta": limpio(row["Cobertura Ejecutada META"]),
-            "impresiones_planificada_meta": limpio(row["Impresiones Planificada META"]),
-            "impresiones_ejecutada_meta": limpio(row["Impresiones Ejecutada META"]),
-            "frecuencia_planificada_meta": limpio(row["Frecuencia (Meta) Planificada"]),
-            "frecuencia_ejecutada_meta": limpio(row["Frecuencia (Meta) Ejecutada"]),
-            "cpm_planificada_meta": limpio(row["CPM Planificada META"]),
-            "cpm_real_meta": limpio(row["CPM Real META"]),
-            "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas GOOGLE"]),
-            "visualizaciones_ejecutadas_google": limpio(row["Visualizaciones Ejecutadas GOOGLE"]),
-            "cpv_planificada_google": limpio(row["CPV Planificada GOOGLE"]),
-            "cpv_real_google": limpio(row["CPV Real GOOGLE"]),
-            "importe_gastado": None,
-            "inversion_planificada": limpio(row["Inversión planificada "]),
-            "inversion_ejecutada": limpio(row["Inversión ejecutada "]),
-            "presupuesto": None,
-            "tipo_presupuesto": None,
-            "clics": None,
-            "ctr": None,
-            "link_material": link_material,
-            "link_ig": link_ig,
-            "link_fb": link_fb,
-            "link_yt": link_yt,
-            "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
-        })
+        for asignacion in asignaciones:
+            piezas.append({
+                "fuente": "global",
+                "codigo_pieza": None,
+                "cod_contenido": cod_contenido,
+                "nombre_anuncio": limpio(row["TITULO DE LA PIEZA"]),
+                "titulo_pieza": limpio(row["TITULO DE LA PIEZA"]),
+                "area_tematica": limpio(row["EJE"]),
+                "ministerio": limpio(row["MINISTERIO"]),
+                "campana": campana,
+                "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(ambito_pieza),
+                "alcance_tipo": ambito_pieza,
+                # Regla sin excepciones (igual que clasificar_alcance_historico() para la
+                # fuente vieja): en_60_localidades es True SOLO si la pieza tiene una
+                # Localidad puntual de las 60 (ambito=localidad, incluye las expandidas
+                # desde "TODAS LAS LOCALIDADES"+Departamento) o es de alcance provincial
+                # (ambito=provincia, aplica al universo entero por definición). ambito=
+                # departamento NO cuenta como "en las 60 localidades" —el dato ya viene
+                # acotado a un Departamento, sin Localidad puntual, así que no se atribuye
+                # a ninguna Localidad— y ambito=None tampoco.
+                "en_60_localidades": ambito_pieza in ("localidad", "provincia"),
+                "departamento": asignacion["departamento"],
+                "localidad": asignacion["localidad"],
+                # Explícita para las piezas expandidas por Departamento (y, por
+                # consistencia de esquema, también para el resto): NO se re-deriva
+                # por texto en ningún punto posterior (construir_campanas() y el
+                # dedup de más abajo la toman tal cual). None si la pieza no tiene
+                # Localidad puntual (ambito departamento/provincia/None).
+                "localidad_asignada": asignacion["localidad_asignada"],
+                "circuito_codigo_original": geo.get("circuito_codigo_original"),
+                "barrio": None,
+                "circuito_electoral": None,
+                "plataforma": plataforma,
+                "tipo_pauta": tipo_pauta,
+                "origen": limpio(row["ORIGEN"]),
+                "proveedor": limpio(row["PROVEEDOR"]),
+                "inicio": fecha_iso(row["INICIO "]),
+                "inicio_informe": None,
+                "fin_informe": None,
+                "fecha_creacion": fecha_iso(row["FECHA DE ENVÍO"]),
+                "finalizacion": fecha_iso(fin_ts),
+                "estado": estado_por_fecha(fin_ts),
+                "alcance": None,
+                "frecuencia": None,
+                "impresiones": None,
+                "visualizaciones": None,
+                "cpm": None,
+                "cobertura_planificada_meta": limpio(row["Cobertura Planificada META"]),
+                "cobertura_ejecutada_meta": limpio(row["Cobertura Ejecutada META"]),
+                "impresiones_planificada_meta": limpio(row["Impresiones Planificada META"]),
+                "impresiones_ejecutada_meta": limpio(row["Impresiones Ejecutada META"]),
+                "frecuencia_planificada_meta": limpio(row["Frecuencia (Meta) Planificada"]),
+                "frecuencia_ejecutada_meta": limpio(row["Frecuencia (Meta) Ejecutada"]),
+                "cpm_planificada_meta": limpio(row["CPM Planificada META"]),
+                "cpm_real_meta": limpio(row["CPM Real META"]),
+                "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas GOOGLE"]),
+                "visualizaciones_ejecutadas_google": limpio(row["Visualizaciones Ejecutadas GOOGLE"]),
+                "cpv_planificada_google": limpio(row["CPV Planificada GOOGLE"]),
+                "cpv_real_google": limpio(row["CPV Real GOOGLE"]),
+                "importe_gastado": None,
+                "inversion_planificada": limpio(row["Inversión planificada "]),
+                "inversion_ejecutada": limpio(row["Inversión ejecutada "]),
+                "presupuesto": None,
+                "tipo_presupuesto": None,
+                "clics": None,
+                "ctr": None,
+                "link_material": link_material,
+                "link_ig": link_ig,
+                "link_fb": link_fb,
+                "link_yt": link_yt,
+                "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
+            })
 
-    return piezas, excluidas
+    piezas, descartadas_dedup = _dedup_pauta_global_por_cod_contenido(piezas)
+    return piezas, excluidas, descartadas_dedup
 
 
 # ---------------------------------------------------------------------------
@@ -1309,12 +1404,22 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
             "alcance_tipo": pieza["alcance_tipo"],
             "departamento": pieza["departamento"],
             "localidad": pieza["localidad"],
+            # localidad_asignada + cod_contenido viajan acá (no solo en
+            # pauta_digital.json) para que un futuro total en esta vista
+            # pueda dedupear las filas expandidas por Departamento (ver
+            # _dedup_pauta_global_por_cod_contenido) sin tener que volver a
+            # cruzar con pauta_digital.json. None en piezas del histórico
+            # (Medios Digitales.xlsx no trae COD. CONTENIDO) y en piezas sin
+            # Localidad puntual (ambito departamento/provincia).
+            "localidad_asignada": pieza.get("localidad_asignada"),
             "detalle": {
                 "area_tematica": pieza["area_tematica"],
                 "estado": pieza["estado"],
                 "finalizacion": pieza["finalizacion"],
                 "alcance": pieza["alcance"],
                 "importe_gastado": pieza["importe_gastado"],
+                "cod_contenido": pieza.get("cod_contenido"),
+                "titulo_pieza": pieza["titulo_pieza"],
             },
         })
 
@@ -1363,11 +1468,18 @@ def main():
     localidad_a_oficial = {}
     localidad_a_departamento_oficial = {}
     deptos_a_oficial = {}
+    # Inversa de localidad_a_departamento_oficial: de Departamento (normalizado)
+    # a la lista de sus localidades (normalizadas) dentro de las 60 — la usa
+    # clasificar_geografia_pauta_global() para expandir una fila "TODAS LAS
+    # LOCALIDADES" + Departamento puntual en una pieza por Localidad.
+    departamento_a_localidades_normalizadas = {}
     for loc in localidades:
         n_loc = normalizar(loc["localidad"])
+        n_depto = normalizar(loc["departamento"])
         localidad_a_oficial[n_loc] = loc["localidad"]
         localidad_a_departamento_oficial[n_loc] = loc["departamento"]
-        deptos_a_oficial[normalizar(loc["departamento"])] = loc["departamento"]
+        deptos_a_oficial[n_depto] = loc["departamento"]
+        departamento_a_localidades_normalizadas.setdefault(n_depto, []).append(n_loc)
 
     medios_tradicionales, movimientos_semana = cargar_medios_tradicionales()
     escribir_json("medios_tradicionales.json", medios_tradicionales)
@@ -1377,12 +1489,14 @@ def main():
     escribir_json("historico_medios.json", historico_medios)
 
     piezas_historico = cargar_pauta_digital_historico(claves_60)
-    piezas_global, excluidas_global = cargar_pauta_digital_global(
-        localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
+    piezas_global, excluidas_global, descartadas_dedup_global = cargar_pauta_digital_global(
+        localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
+        departamento_a_localidades_normalizadas,
     )
     print(
         f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "
-        f"+ {len(piezas_global)} piezas fuente nueva ({excluidas_global} excluidas por estar fuera de la provincia)"
+        f"+ {len(piezas_global)} piezas fuente nueva ({excluidas_global} excluidas por estar fuera de la provincia, "
+        f"{descartadas_dedup_global} descartadas por dedup de COD. CONTENIDO tras expandir Departamentos)"
     )
     pauta_digital = {"piezas": piezas_historico + piezas_global}
     escribir_json("pauta_digital.json", pauta_digital)
