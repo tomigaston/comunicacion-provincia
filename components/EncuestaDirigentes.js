@@ -1,5 +1,5 @@
 import { useId, useMemo, useState } from 'react';
-import { agruparGestion, COLOR_GRUPO_GESTION, ORDEN_GRUPOS_GESTION } from '../lib/encuestasLocalidades';
+import { agruparGestion, COLOR_GRUPO_GESTION, ORDEN_GRUPOS_GESTION, medirAnchoTexto } from '../lib/encuestasLocalidades';
 import { normalizarTexto } from '../lib/texto';
 
 // "Dirigentes_Locales" (entrega 3c, sin equivalente en circuitos) -> lista
@@ -17,6 +17,12 @@ import { normalizarTexto } from '../lib/texto';
 const ANCHO_BARRA = 300;
 const ALTO_BARRA = 20;
 const UMBRAL_FILTRO = 8;
+// Mismo criterio adentro/afuera que EncuestaGestionBarra, a escala reducida
+// para no saturar filas de hasta 16 dirigentes (Villa Dolores): fuente y
+// espacio para la etiqueta afuera más chicos que en la barra de "Resumen".
+const ALTO_ETIQUETA_AFUERA = 16;
+const FONT_SIZE_SEGMENTO = 11;
+const MARGEN_TEXTO = 8;
 
 function BarraCompacta({ categorias }) {
   const clipId = useId();
@@ -33,15 +39,66 @@ function BarraCompacta({ categorias }) {
     .filter((s) => s.ancho > 0);
 
   return (
-    <svg viewBox={`0 0 ${ANCHO_BARRA} ${ALTO_BARRA}`} width="100%" height={ALTO_BARRA} style={{ display: 'block' }}>
+    <svg
+      viewBox={`0 0 ${ANCHO_BARRA} ${ALTO_ETIQUETA_AFUERA + ALTO_BARRA}`}
+      width="100%"
+      height={ALTO_ETIQUETA_AFUERA + ALTO_BARRA}
+      style={{ display: 'block' }}
+    >
       <clipPath id={clipId}>
-        <rect x={0} y={0} width={ANCHO_BARRA} height={ALTO_BARRA} rx={5} />
+        <rect x={0} y={ALTO_ETIQUETA_AFUERA} width={ANCHO_BARRA} height={ALTO_BARRA} rx={5} />
       </clipPath>
       <g clipPath={`url(#${clipId})`}>
         {segmentos.map((s) => (
-          <rect key={s.grupo} x={s.x} y={0} width={s.ancho} height={ALTO_BARRA} fill={COLOR_GRUPO_GESTION[s.grupo]} />
+          <rect key={s.grupo} x={s.x} y={ALTO_ETIQUETA_AFUERA} width={s.ancho} height={ALTO_BARRA} fill={COLOR_GRUPO_GESTION[s.grupo]} />
         ))}
       </g>
+      {/* Mismo criterio que EncuestaGestionBarra: número adentro si entra
+          con margen, afuera arriba con leader line si no (pedido explícito
+          del usuario para Dirigentes — antes esta barra no tenía números). */}
+      {segmentos.map((s) => {
+        const texto = `${s.pct}%`;
+        const cx = s.x + s.ancho / 2;
+        const entraAdentro = s.ancho >= medirAnchoTexto(texto, { fontSize: FONT_SIZE_SEGMENTO }) + MARGEN_TEXTO;
+        if (entraAdentro) {
+          return (
+            <text
+              key={s.grupo}
+              x={cx}
+              y={ALTO_ETIQUETA_AFUERA + ALTO_BARRA / 2}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontSize={FONT_SIZE_SEGMENTO}
+              fontWeight={700}
+              fill="#ffffff"
+            >
+              {texto}
+            </text>
+          );
+        }
+        return (
+          <g key={s.grupo}>
+            <line
+              x1={cx}
+              y1={ALTO_ETIQUETA_AFUERA - 2}
+              x2={cx}
+              y2={ALTO_ETIQUETA_AFUERA}
+              stroke={COLOR_GRUPO_GESTION[s.grupo]}
+              strokeWidth={1.2}
+            />
+            <text
+              x={cx}
+              y={ALTO_ETIQUETA_AFUERA - 5}
+              textAnchor="middle"
+              fontSize={9.5}
+              fontWeight={700}
+              fill="var(--text-primary)"
+            >
+              {texto}
+            </text>
+          </g>
+        );
+      })}
     </svg>
   );
 }

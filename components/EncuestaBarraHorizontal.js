@@ -24,23 +24,16 @@
 //
 // Este componente solo se monta después de que useApiData resuelve el fetch
 // client-side (ver EncuestasLocalidades: `datos` es null durante el render
-// de servidor) -> nunca corre en SSR, así que usar `document`/Canvas acá
-// directamente es seguro (sin mismatch de hidratación). El guard de
-// `typeof document` es solo un fallback defensivo, no se espera que se use.
+// de servidor) -> nunca corre en SSR, así que usar `document`/Canvas (dentro
+// de medirAnchoTexto, en lib/encuestasLocalidades.js) acá directamente es
+// seguro (sin mismatch de hidratación).
+import { medirAnchoTexto } from '../lib/encuestasLocalidades';
+
 const ANCHO = 400;
 const ALTO = 28;
 const FONT_SIZE = 12.5;
 const FONT_WEIGHT = 600;
-const FONT_FAMILY = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
 const MARGEN_TEXTO = 20; // padding izq+der dentro del relleno para que el texto no quede pegado a los bordes
-
-let ctxMedicion = null;
-function medirAnchoTexto(texto) {
-  if (typeof document === 'undefined') return texto.length * FONT_SIZE * 0.55;
-  if (!ctxMedicion) ctxMedicion = document.createElement('canvas').getContext('2d');
-  ctxMedicion.font = `${FONT_WEIGHT} ${FONT_SIZE}px ${FONT_FAMILY}`;
-  return ctxMedicion.measureText(texto).width;
-}
 
 export default function EncuestaBarraHorizontal({ items }) {
   if (!items || items.length === 0) return null;

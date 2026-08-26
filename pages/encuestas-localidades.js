@@ -130,6 +130,25 @@ export default function EncuestasLocalidades() {
           {localidad && ronda && (
             <>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 16, flexWrap: 'wrap' }}>
+                {/* Resetea localidadElegida a null -> el useEffect de más
+                    abajo (dispara con cualquier cambio de localidadElegida,
+                    incluido a null) ya limpia fechaElegida y vuelve a
+                    vista='resumen' solo; no hace falta tocar nada más acá. */}
+                <button
+                  type="button"
+                  onClick={() => setLocalidadElegida(null)}
+                  style={{
+                    fontSize: 13.5,
+                    fontWeight: 600,
+                    color: 'var(--accent)',
+                    background: 'transparent',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                  }}
+                >
+                  ‹ Volver al listado
+                </button>
                 <h2 style={{ fontSize: 20, fontWeight: 700 }}>{localidad.nombre_localidad}</h2>
                 <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>
                   {localidad.cantidad_rondas} {localidad.cantidad_rondas === 1 ? 'ronda' : 'rondas'} de encuesta

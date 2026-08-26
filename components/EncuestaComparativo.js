@@ -6,6 +6,7 @@ import {
   clasificarSignificancia,
   ORDEN_GRUPOS_GESTION,
   COLOR_GRUPO_GESTION,
+  medirAnchoTexto,
 } from '../lib/encuestasLocalidades';
 import { formatearFechaCorta } from '../lib/fechas';
 
@@ -35,21 +36,21 @@ const grid = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(2
 
 const VERDE = '#22C55E';
 const ROJO = '#EF4444';
+// Borde de las tarjetas de Reelección en "Indicadores": NO puede ser VERDE
+// (esa constante está reservada para "buena noticia" en DeltaTexto — un
+// borde verde ahí sugería que el número es positivo incluso cuando bajó,
+// caso real: "Reelección Llaryora" -3.0 p.p con borde verde). Tampoco
+// var(--accent) (ya la usa Aprobación, se confundirían). Violeta neutro que
+// no compite con la semántica verde/rojo de DeltaTexto.
+const MORADO_REELECCION = '#8B5CF6';
 
-// Medición de texto vía Canvas (mismo criterio que EncuestaBarraHorizontal,
-// duplicado a propósito acá en vez de importado: ese componente es de
-// "Resumen", ya entregado, y no se toca en este cambio). Este componente
-// -como todo lo que cuelga de EncuestasLocalidades- solo se monta después
-// del fetch client-side (nunca en SSR), así que usar `document` acá es
-// seguro.
+// Medición de texto vía Canvas: medirAnchoTexto vive en
+// lib/encuestasLocalidades.js, compartida con EncuestaBarraHorizontal,
+// EncuestaGestionBarra y EncuestaDirigentes (mismo criterio en las 4). Este
+// componente -como todo lo que cuelga de EncuestasLocalidades- solo se monta
+// después del fetch client-side (nunca en SSR), así que usar `document`
+// (dentro del helper) acá es seguro.
 const FONT_SIZE_SEGMENTO = 12;
-let ctxMedicion = null;
-function medirAnchoTexto(texto) {
-  if (typeof document === 'undefined') return texto.length * FONT_SIZE_SEGMENTO * 0.6;
-  if (!ctxMedicion) ctxMedicion = document.createElement('canvas').getContext('2d');
-  ctxMedicion.font = `600 ${FONT_SIZE_SEGMENTO}px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`;
-  return ctxMedicion.measureText(texto).width;
-}
 
 /**
  * "▲ Subió X.X p.p" / "▼ Bajó X.X p.p" / "Estable", coloreado según si la
@@ -189,7 +190,7 @@ function FilaBarraGestion({ punto }) {
               EncuestaBarraHorizontal, son segmentos pegados unos a otros. */}
           {segmentos.map((s) => {
             const texto = `${s.pct}%`;
-            if (s.ancho < medirAnchoTexto(texto) + 10) return null;
+            if (s.ancho < medirAnchoTexto(texto, { fontSize: FONT_SIZE_SEGMENTO }) + 10) return null;
             return (
               <text
                 key={s.grupo}
@@ -282,7 +283,7 @@ export default function EncuestaComparativo({ rondas, umbralPp }) {
   const reeleccion = metricas.filter((m) => m.tipo === 'reeleccion');
   const indicadores = [
     ...aprobacion.map((m) => ({ ...m, colorBorde: 'var(--accent)' })),
-    ...reeleccion.map((m) => ({ ...m, colorBorde: VERDE })),
+    ...reeleccion.map((m) => ({ ...m, colorBorde: MORADO_REELECCION })),
   ];
 
   const sinNada =
