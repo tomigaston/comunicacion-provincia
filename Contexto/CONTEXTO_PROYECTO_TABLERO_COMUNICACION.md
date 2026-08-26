@@ -38,6 +38,8 @@ El archivo curado ya tiene 4 columnas agregadas: `Departamento`, `Localidad`, `B
 
 **Estado (Vigente/Finalizada)** se calcula comparando "Finalización" contra la fecha de hoy — esto ya está bien en pauta digital, es el patrón a replicar en las demás áreas.
 
+**Regla "TODAS LAS LOCALIDADES" (confirmada 26/08/2026):** cuando `LOCALIDAD / SUBCIRCUITO` trae el valor literal `"TODAS LAS LOCALIDADES"` y `DEPARTAMENTO` es un departamento específico (no vacío, no "Provincia de Córdoba"), la pieza se asigna a **todas las localidades de las 60 prioritarias que pertenecen a ese departamento** — no es fallback silencioso, es un marcador explícito del dato fuente. Las métricas se muestran completas en cada panel de localidad, sin prorratear ni sumar total cruzado. Filas con `LOCALIDAD/SUBCIRCUITO` vacío (NaN, sin el marcador) siguen invisibles a nivel localidad — ahí sigue rigiendo la regla estricta del 20/08 sin excepción. El dedup por COD. CONTENIDO corre después de esta expansión, sobre (Campaña, Título, localidad_asignada), y opera sobre todo el universo de piezas de Pauta RRSS_GLOBAL — no solo sobre las expandidas — por lo que también atrapa duplicados preexistentes no relacionados con esta regla (caso real: dos filas de origen distinto para la misma pieza en Córdoba Capital, "Barrio Parque Latino" y "Loma del Torito").
+
 ### 3.3 Audiovisuales (Subsecretaría de Comunicación) — archivo del proyecto: **"Audiovisuales"**
 Excel unificado en **una sola hoja** ("Localidades y Campañas"), con dos orígenes fusionados en un esquema común: `Origen` (25 localidades / Obras FOCOM), `Fecha_Carga`, `Campaña`, `Tipo_Contenido`, `Departamento`, `Localidad`, `En_60_Prioritarias`, `Fecha_Inicio`, `Fecha_Fin`, `Link`, `Copy`, `Sugerencias_Pauta`, `Notas`.
 
