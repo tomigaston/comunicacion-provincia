@@ -40,6 +40,20 @@ export default function EncuestasLocalidades() {
       .sort((a, b) => a.label.localeCompare(b.label, 'es'));
   }, [encuestas]);
 
+  // Mismo listado que itemsBusqueda pero con cantidad_rondas -> grilla de
+  // todas las localidades para elegir sin depender del buscador (pedido
+  // explícito del usuario: hoy no se ve nada hasta que se busca).
+  const localidadesListado = useMemo(() => {
+    if (!encuestas) return [];
+    return Object.entries(encuestas)
+      .map(([clave, info]) => ({
+        clave,
+        nombre: info.nombre_localidad,
+        cantidadRondas: info.cantidad_rondas,
+      }))
+      .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+  }, [encuestas]);
+
   const localidad = localidadElegida && encuestas ? encuestas[localidadElegida] : null;
 
   // Al cambiar de localidad, la ronda seleccionada por defecto es siempre la
@@ -79,9 +93,38 @@ export default function EncuestasLocalidades() {
           </div>
 
           {!localidad && (
-            <p style={{ fontSize: 13.5, color: 'var(--text-secondary)' }}>
-              Elegí una localidad en el buscador para ver su resumen.
-            </p>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                gap: 12,
+              }}
+            >
+              {localidadesListado.map((loc) => (
+                <button
+                  key={loc.clave}
+                  type="button"
+                  onClick={() => setLocalidadElegida(loc.clave)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: 10,
+                    padding: '14px 16px',
+                    background: 'var(--bg-primary)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 10,
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                  }}
+                >
+                  <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>{loc.nombre}</span>
+                  <span style={{ fontSize: 12, color: 'var(--text-secondary)', whiteSpace: 'nowrap' }}>
+                    {loc.cantidadRondas} {loc.cantidadRondas === 1 ? 'ronda' : 'rondas'}
+                  </span>
+                </button>
+              ))}
+            </div>
           )}
 
           {localidad && ronda && (

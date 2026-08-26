@@ -70,7 +70,7 @@ export default function EncuestaDirigentes({ dirigentes }) {
 
   return (
     <div>
-      <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 14 }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 14 }}>
         {ORDEN_GRUPOS_GESTION.map((grupo) => (
           <span
             key={grupo}

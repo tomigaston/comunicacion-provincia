@@ -214,6 +214,99 @@ def caso_6_otro_barrio_cordoba_no_se_atribuye(df, claves_60):
             fallar(caso, f"{pieza['nombre_anuncio']!r} (OTRO, Localidad=CORDOBA) aparece en Córdoba y no debería")
 
 
+def _mapas_oficiales(localidades):
+    """Replica los mapas que arma main() en generar_datos.py para resolver
+    Pauta RRSS_GLOBAL a forma oficial — ver scripts/generar_datos.py."""
+    localidad_a_oficial = {}
+    localidad_a_departamento_oficial = {}
+    deptos_a_oficial = {}
+    departamento_a_localidades_normalizadas = {}
+    for loc in localidades:
+        n_loc = g.normalizar(loc["localidad"])
+        n_depto = g.normalizar(loc["departamento"])
+        localidad_a_oficial[n_loc] = loc["localidad"]
+        localidad_a_departamento_oficial[n_loc] = loc["departamento"]
+        deptos_a_oficial[n_depto] = loc["departamento"]
+        departamento_a_localidades_normalizadas.setdefault(n_depto, []).append(n_loc)
+    return localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas
+
+
+def caso_7_todas_las_localidades_con_departamento_se_expande(localidades, claves_60):
+    """"TODAS LAS LOCALIDADES" + un Departamento puntual (no la provincia
+    entera) debe expandirse a una pieza por cada Localidad de las 60 que cae
+    en ese Departamento, con localidad_asignada seteada explícitamente —no
+    ámbito provincia, y no una única pieza de ámbito departamento."""
+    caso = "CASO 7 - TODAS LAS LOCALIDADES + Departamento puntual"
+    (localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
+     departamento_a_localidades_normalizadas) = _mapas_oficiales(localidades)
+    n60 = set(localidad_a_oficial.keys())
+
+    geo = g.clasificar_geografia_pauta_global(
+        "DEPARTAMENTO RIO CUARTO, PROVINCIA DE CÓRDOBA, ARGENTINA", "TODAS LAS LOCALIDADES",
+        n60, departamento_a_localidades_normalizadas,
+    )
+    if geo["ambito"] != "localidad_multiple":
+        fallar(caso, f"esperaba ambito=localidad_multiple, salió {geo['ambito']!r}")
+        return
+    asignaciones = g._asignaciones_geograficas(
+        geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
+    )
+    localidades_out = sorted(a["localidad"] for a in asignaciones)
+    if localidades_out != ["RIO CUARTO", "VICUÑA MACKENNA"]:
+        fallar(caso, f"esperaba ['RIO CUARTO', 'VICUÑA MACKENNA'], salió {localidades_out!r}")
+    for a in asignaciones:
+        if a["localidad_asignada"] != a["localidad"]:
+            fallar(caso, f"localidad_asignada ({a['localidad_asignada']!r}) debería ser igual a localidad ({a['localidad']!r})")
+
+
+def caso_8_todas_las_localidades_provincia_entera_no_se_expande(localidades, claves_60):
+    """"TODAS LAS LOCALIDADES" SIN Departamento puntual (DEPARTAMENTO =
+    "PROVINCIA DE CÓRDOBA, ARGENTINA") sigue siendo ámbito provincia, sin
+    cambios — no debe expandirse."""
+    caso = "CASO 8 - TODAS LAS LOCALIDADES, provincia entera (sin cambios)"
+    (localidad_a_oficial, _, _, departamento_a_localidades_normalizadas) = _mapas_oficiales(localidades)
+    n60 = set(localidad_a_oficial.keys())
+
+    geo = g.clasificar_geografia_pauta_global(
+        "PROVINCIA DE CÓRDOBA, ARGENTINA", "TODAS LAS LOCALIDADES", n60, departamento_a_localidades_normalizadas
+    )
+    if geo["ambito"] != "provincia":
+        fallar(caso, f"esperaba ambito=provincia, salió {geo['ambito']!r}")
+
+
+def caso_9_dedup_por_cod_contenido_corre_despues_de_expandir(localidades, claves_60):
+    """El dedup por COD. CONTENIDO opera sobre (Campaña, Título,
+    localidad_asignada) DESPUÉS de expandir "TODAS LAS LOCALIDADES"+
+    Departamento: una pieza que ya tiene fila propia apuntando directo a una
+    Localidad no debe duplicarse ahí solo porque ADEMÁS tiene una fila
+    "TODAS LAS LOCALIDADES" de su Departamento con el mismo COD. CONTENIDO.
+    Dos piezas con el mismo COD. CONTENIDO pero Campaña/Título distintos
+    (código reutilizado, caso real de los datos) NO deben fusionarse."""
+    caso = "CASO 9 - dedup COD. CONTENIDO post-expansión"
+    piezas = [
+        {"cod_contenido": "X1", "campana": "C", "titulo_pieza": "T", "localidad_asignada": "RIO CUARTO"},
+        {"cod_contenido": "X1", "campana": "C", "titulo_pieza": "T", "localidad_asignada": "RIO CUARTO"},
+        {"cod_contenido": "X1", "campana": "C", "titulo_pieza": "T", "localidad_asignada": "VICUÑA MACKENNA"},
+        {"cod_contenido": "X1", "campana": "OTRA CAMPAÑA", "titulo_pieza": "OTRO TITULO", "localidad_asignada": "RIO CUARTO"},
+        {"cod_contenido": None, "campana": "C", "titulo_pieza": "T", "localidad_asignada": None},
+        {"cod_contenido": None, "campana": "C", "titulo_pieza": "T", "localidad_asignada": None},
+    ]
+    resultado, descartadas = g._dedup_pauta_global_por_cod_contenido(piezas)
+    if descartadas != 1:
+        fallar(caso, f"esperaba 1 pieza descartada (el duplicado exacto RIO CUARTO), salió {descartadas}")
+    if len(resultado) != 5:
+        fallar(caso, f"esperaba 5 piezas tras dedup, salió {len(resultado)}")
+    claves = [(p["cod_contenido"], p["campana"], p["titulo_pieza"], p["localidad_asignada"]) for p in resultado]
+    if claves.count(("X1", "C", "T", "RIO CUARTO")) != 1:
+        fallar(caso, "el duplicado exacto (mismo COD./Campaña/Título/Localidad) no se descartó")
+    if claves.count(("X1", "C", "T", "VICUÑA MACKENNA")) != 1:
+        fallar(caso, "la pieza de otra Localidad se descartó y no debía")
+    if claves.count(("X1", "OTRA CAMPAÑA", "OTRO TITULO", "RIO CUARTO")) != 1:
+        fallar(caso, "la pieza con mismo COD. CONTENIDO pero Campaña/Título distintos no debía fusionarse")
+    if sum(1 for p in resultado if p["cod_contenido"] is None) != 2:
+        fallar(caso, "las piezas sin COD. CONTENIDO (None) no deben descartarse por esta regla")
+
+
 def caso_5_localidad_fuera_de_60_no_se_atribuye(df, claves_60):
     caso = "CASO 5 - Localidad fuera de las 60"
     filas = filas_por(df, "LOCALIDAD", "Localidad", "FREYRE")
@@ -238,7 +331,7 @@ def caso_5_localidad_fuera_de_60_no_se_atribuye(df, claves_60):
 
 def main():
     df = cargar_df_historico()
-    _localidades, claves_60 = g.cargar_localidades()
+    localidades, claves_60 = g.cargar_localidades()
 
     for caso in (
         caso_1_provincia_no_se_atribuye,
@@ -253,13 +346,23 @@ def main():
         except AssertionError as e:
             FALLAS.append(f"[{caso.__name__}] {e}")
 
+    for caso in (
+        caso_7_todas_las_localidades_con_departamento_se_expande,
+        caso_8_todas_las_localidades_provincia_entera_no_se_expande,
+        caso_9_dedup_por_cod_contenido_corre_despues_de_expandir,
+    ):
+        try:
+            caso(localidades, claves_60)
+        except AssertionError as e:
+            FALLAS.append(f"[{caso.__name__}] {e}")
+
     if FALLAS:
         print(f"FALLÓ el test de matching de Pauta Digital ({len(FALLAS)} problema(s)):\n")
         for f in FALLAS:
             print(f"  - {f}")
         return 1
 
-    print("OK — los 5 casos de regresión de matching de Pauta Digital pasan.")
+    print("OK — los 9 casos de regresión de matching de Pauta Digital pasan.")
     return 0
 
 
