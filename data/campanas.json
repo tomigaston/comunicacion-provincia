@@ -18296,7 +18296,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 137,
-        "titulo_pieza": "Los Pumas - Escocia: primer evento carbono neutral de la Argentina\n"
+        "titulo_pieza": "Los Pumas - Escocia: primer evento carbono neutral de la Argentina"
       }
     },
     {
@@ -18313,7 +18313,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 138,
-        "titulo_pieza": " Presentación de Los Pumas - Escocia\n"
+        "titulo_pieza": "Presentación de Los Pumas - Escocia"
       }
     },
     {
@@ -18330,7 +18330,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 139,
-        "titulo_pieza": "19 Años del CIPEM de Barrio Ampliación Cabildo\n"
+        "titulo_pieza": "19 Años del CIPEM de Barrio Ampliación Cabildo"
       }
     },
     {
@@ -18364,7 +18364,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 141,
-        "titulo_pieza": "London Climate Action Week para Córdoba\n"
+        "titulo_pieza": "London Climate Action Week para Córdoba"
       }
     },
     {
@@ -18381,7 +18381,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 142,
-        "titulo_pieza": "Jornada “El impacto ambiental como ventaja competitiva para el agro”\n"
+        "titulo_pieza": "Jornada “El impacto ambiental como ventaja competitiva para el agro”"
       }
     },
     {
@@ -18398,7 +18398,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 143,
-        "titulo_pieza": " Expo Cba Previene\n"
+        "titulo_pieza": "Expo Cba Previene"
       }
     },
     {
@@ -18415,7 +18415,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 144,
-        "titulo_pieza": "Programa Cimientos: Ampliación Cabildo\n"
+        "titulo_pieza": "Programa Cimientos: Ampliación Cabildo"
       }
     },
     {
@@ -18432,7 +18432,7 @@
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": 145,
-        "titulo_pieza": " Fondo de Inclusión para jugadores de Jockey Adaptado\n"
+        "titulo_pieza": "Fondo de Inclusión para jugadores de Jockey Adaptado"
       }
     },
     {
@@ -18578,57 +18578,6 @@
       "departamento": "TERCERO ARRIBA",
       "localidad": "RIO TERCERO",
       "localidad_asignada": "RIO TERCERO",
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-10",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05607",
-        "titulo_pieza": "Encuentro de Cooperativas en Almafuerte (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Comunicación Institucional",
-      "alcance_tipo": "localidad",
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "localidad_asignada": "ALMAFUERTE",
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-10",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05607",
-        "titulo_pieza": "Encuentro de Cooperativas en Almafuerte (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Comunicación Institucional",
-      "alcance_tipo": "localidad",
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "localidad_asignada": "OLIVA",
-      "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
-        "estado": "Finalizada",
-        "finalizacion": "2026-07-10",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05607",
-        "titulo_pieza": "Encuentro de Cooperativas en Almafuerte (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "Comunicación Institucional",
-      "alcance_tipo": "localidad",
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "localidad_asignada": "HERNANDO",
       "detalle": {
         "area_tematica": "DESARROLLO SOCIAL",
         "estado": "Finalizada",
@@ -18846,6 +18795,23 @@
     {
       "area_origen": "Pauta digital",
       "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-08-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05616",
+        "titulo_pieza": "Obras Julio 2026 (Link)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
       "alcance_tipo": "provincia",
       "departamento": null,
       "localidad": null,
@@ -19000,9 +18966,9 @@
       "area_origen": "Pauta digital",
       "campana": "HACER PARA CRECER",
       "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
       "detalle": {
         "area_tematica": "OBRAS",
         "estado": "Finalizada",
@@ -19162,7 +19128,7 @@
         "finalizacion": "2026-07-10",
         "alcance": null,
         "importe_gastado": null,
-        "cod_contenido": null,
+        "cod_contenido": "A05634",
         "titulo_pieza": "Hacer para crecer Un espacio para presevar la pasión por el Rally  Museo del Rally / Testimonio Fundacion Recalde (Video)"
       }
     },
@@ -19974,6 +19940,23 @@
       "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "VINCULACIÓN",
+        "estado": null,
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05674",
+        "titulo_pieza": "Córdoba Cerca Tuyo Ejército Argentino (Carrusel)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CÓRDOBA CERCA TUYO",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "VINCULACIÓN",
         "estado": "Finalizada",
         "finalizacion": "2026-07-11",
         "alcance": null,
@@ -20213,7 +20196,7 @@
       "detalle": {
         "area_tematica": "EDUCACIÓN",
         "estado": "Vigente",
-        "finalizacion": "2026-10-04",
+        "finalizacion": "2026-08-31",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A05689",
@@ -20602,7 +20585,7 @@
       "localidad": "SAN FRANCISCO",
       "localidad_asignada": "SAN FRANCISCO",
       "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
+        "area_tematica": "AMBIENTE",
         "estado": "Finalizada",
         "finalizacion": "2026-07-20",
         "alcance": null,
@@ -20619,7 +20602,7 @@
       "localidad": "ARROYITO",
       "localidad_asignada": "ARROYITO",
       "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
+        "area_tematica": "AMBIENTE",
         "estado": "Finalizada",
         "finalizacion": "2026-07-20",
         "alcance": null,
@@ -20636,7 +20619,7 @@
       "localidad": "MORTEROS",
       "localidad_asignada": "MORTEROS",
       "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
+        "area_tematica": "AMBIENTE",
         "estado": "Finalizada",
         "finalizacion": "2026-07-20",
         "alcance": null,
@@ -20653,7 +20636,7 @@
       "localidad": "LAS VARILLAS",
       "localidad_asignada": "LAS VARILLAS",
       "detalle": {
-        "area_tematica": "DESARROLLO SOCIAL",
+        "area_tematica": "AMBIENTE",
         "estado": "Finalizada",
         "finalizacion": "2026-07-20",
         "alcance": null,
@@ -21260,10 +21243,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "Comunicación Institucional",
-      "alcance_tipo": "departamento",
-      "departamento": "COLON",
-      "localidad": null,
-      "localidad_asignada": null,
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "AMBIENTE",
         "estado": "Finalizada",
@@ -21295,9 +21278,9 @@
       "area_origen": "Pauta digital",
       "campana": "UPC FEDERAL",
       "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
       "detalle": {
         "area_tematica": "EDUCACIÓN",
         "estado": "Finalizada",
@@ -21380,9 +21363,9 @@
       "area_origen": "Pauta digital",
       "campana": "MAMÓGRAFO APROSS",
       "alcance_tipo": "localidad",
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "localidad_asignada": "MORTEROS",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
       "detalle": {
         "area_tematica": "SALUD",
         "estado": "Finalizada",
@@ -21397,9 +21380,9 @@
       "area_origen": "Pauta digital",
       "campana": "MAMÓGRAFO APROSS",
       "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
       "detalle": {
         "area_tematica": "SALUD",
         "estado": "Finalizada",
@@ -21413,10 +21396,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "Comunicación Institucional",
-      "alcance_tipo": "departamento",
-      "departamento": "CALAMUCHITA",
-      "localidad": null,
-      "localidad_asignada": null,
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "SALUD",
         "estado": "Finalizada",
@@ -21430,10 +21413,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "MAMÓGRAFO APROSS",
-      "alcance_tipo": "localidad",
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "localidad_asignada": "HERNANDO",
+      "alcance_tipo": "departamento",
+      "departamento": "SAN JAVIER",
+      "localidad": null,
+      "localidad_asignada": null,
       "detalle": {
         "area_tematica": "SALUD",
         "estado": "Finalizada",
@@ -21499,9 +21482,9 @@
       "area_origen": "Pauta digital",
       "campana": "Comunicación Institucional",
       "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
       "detalle": {
         "area_tematica": "OBRAS",
         "estado": "Finalizada",
@@ -21595,6 +21578,23 @@
         "importe_gastado": null,
         "cod_contenido": "A05848",
         "titulo_pieza": "Recorrido por Loma del Torito"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-08-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05849",
+        "titulo_pieza": "Plan de Reparación Vial Integral - Calle Viña del Mar"
       }
     },
     {
@@ -22693,6 +22693,23 @@
       "localidad": "CORDOBA",
       "localidad_asignada": "CORDOBA",
       "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-08-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05942",
+        "titulo_pieza": "Plan de 800 cuadras - Visita de Obra Polígono Barrio Villa Unión"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Vigente",
         "finalizacion": "2026-08-30",
@@ -22727,13 +22744,30 @@
       "localidad": "SAN FRANCISCO",
       "localidad_asignada": "SAN FRANCISCO",
       "detalle": {
-        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "area_tematica": "SALUD",
         "estado": "Finalizada",
         "finalizacion": "2026-08-10",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A05945",
         "titulo_pieza": "Entrega de ayuda a Gabinete de Robótica de la UNC San Franscisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "AMBIENTE",
+        "estado": "Vigente",
+        "finalizacion": "2026-08-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05946",
+        "titulo_pieza": "Visita de Parque Las Tejas - Barrio Ciudad Universitaria"
       }
     },
     {
@@ -23419,10 +23453,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "AGENDA MLL",
-      "alcance_tipo": "departamento",
-      "departamento": "GENERAL ROCA",
-      "localidad": null,
-      "localidad_asignada": null,
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "VINCULACIÓN",
         "estado": "Vigente",
@@ -23935,7 +23969,7 @@
       "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-26",
         "alcance": null,
         "importe_gastado": null,
@@ -23952,7 +23986,7 @@
       "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "SEGURIDAD",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-26",
         "alcance": null,
         "importe_gastado": null,
@@ -24088,7 +24122,7 @@
       "localidad_asignada": "RIO CUARTO",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-26",
         "alcance": null,
         "importe_gastado": null,
@@ -24105,7 +24139,7 @@
       "localidad_asignada": "VICUÑA MACKENNA",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-26",
         "alcance": null,
         "importe_gastado": null,
@@ -24122,7 +24156,7 @@
       "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-26",
         "alcance": null,
         "importe_gastado": null,
@@ -24496,7 +24530,7 @@
       "localidad_asignada": "VILLA MARIA",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-27",
         "alcance": null,
         "importe_gastado": null,
@@ -24513,29 +24547,12 @@
       "localidad_asignada": "VILLA MARIA",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-27",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06036",
         "titulo_pieza": "Escuchá \"Universidad Nacional Villa María\" (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-30",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05616",
-        "titulo_pieza": "Obras Julio 2026 (Link)"
       }
     },
     {
@@ -24568,76 +24585,8 @@
         "finalizacion": "2026-08-30",
         "alcance": null,
         "importe_gastado": null,
-        "cod_contenido": "A05849",
-        "titulo_pieza": "Plan de Reparación Vial Integral - Calle Viña del Mar"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-30",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05942",
-        "titulo_pieza": "Plan de 800 cuadras - Visita de Obra Polígono Barrio Villa Unión"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-30",
-        "alcance": null,
-        "importe_gastado": null,
         "cod_contenido": "A06038",
         "titulo_pieza": "Plan de 800 cuadras - Visita de Obra Polígono Barrio Villa Unión"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
-      "detalle": {
-        "area_tematica": "AMBIENTE",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-30",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A05946",
-        "titulo_pieza": "Visita de Parque Las Tejas - Barrio Ciudad Universitaria"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
-      "detalle": {
-        "area_tematica": "VINCULACIÓN",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-31",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A06003",
-        "titulo_pieza": "Entrega de Elementos Deportivos en Club Athletic para la Selección Cordobesa de Hockey ID - Jardín Espinosa"
       }
     },
     {
@@ -24921,12 +24870,29 @@
       "localidad_asignada": "CORDOBA",
       "detalle": {
         "area_tematica": "OBRAS",
-        "estado": "Vigente",
+        "estado": "Finalizada",
         "finalizacion": "2026-08-27",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06061",
         "titulo_pieza": "Plan 800 Cuadras - Villa Rivera Indarte"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": null,
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A05707",
+        "titulo_pieza": "Nos Vemos en la Plaza: Plaza Prussia - Industrial Oeste"
       }
     },
     {
@@ -25153,10 +25119,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "CORDOBESES EN ALERTA",
-      "alcance_tipo": "localidad",
+      "alcance_tipo": "departamento",
       "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "localidad": null,
+      "localidad_asignada": null,
       "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Finalizada",
@@ -25272,10 +25238,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "CORDOBESES EN ALERTA",
-      "alcance_tipo": "localidad",
+      "alcance_tipo": "departamento",
       "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "localidad": null,
+      "localidad_asignada": null,
       "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Vigente",
@@ -25459,10 +25425,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "CORDOBESES EN ALERTA",
-      "alcance_tipo": "localidad",
+      "alcance_tipo": "departamento",
       "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "localidad": null,
+      "localidad_asignada": null,
       "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Vigente",
@@ -25493,10 +25459,10 @@
     {
       "area_origen": "Pauta digital",
       "campana": "CORDOBESES EN ALERTA",
-      "alcance_tipo": "localidad",
+      "alcance_tipo": "departamento",
       "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "localidad_asignada": "CORDOBA",
+      "localidad": null,
+      "localidad_asignada": null,
       "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Vigente",
@@ -25687,7 +25653,7 @@
       "detalle": {
         "area_tematica": "OBRAS",
         "estado": "Vigente",
-        "finalizacion": "2026-09-09",
+        "finalizacion": "2026-08-31",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06092",
@@ -25755,7 +25721,7 @@
       "detalle": {
         "area_tematica": "OBRAS",
         "estado": "Vigente",
-        "finalizacion": "2026-09-09",
+        "finalizacion": "2026-08-31",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06096",
@@ -27351,7 +27317,7 @@
       "localidad": "VILLA TULUMBA",
       "localidad_asignada": "VILLA TULUMBA",
       "detalle": {
-        "area_tematica": null,
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
         "finalizacion": "2026-08-31",
         "alcance": null,
@@ -27368,7 +27334,7 @@
       "localidad": "DEAN FUNES",
       "localidad_asignada": "DEAN FUNES",
       "detalle": {
-        "area_tematica": null,
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
         "finalizacion": "2026-08-31",
         "alcance": null,
@@ -27385,7 +27351,7 @@
       "localidad": null,
       "localidad_asignada": null,
       "detalle": {
-        "area_tematica": null,
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
         "finalizacion": "2026-08-31",
         "alcance": null,
@@ -27402,7 +27368,7 @@
       "localidad": null,
       "localidad_asignada": null,
       "detalle": {
-        "area_tematica": null,
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
         "finalizacion": "2026-08-31",
         "alcance": null,
@@ -27419,81 +27385,13 @@
       "localidad": "CRUZ DEL EJE",
       "localidad_asignada": "CRUZ DEL EJE",
       "detalle": {
-        "area_tematica": null,
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
         "finalizacion": "2026-08-31",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06192",
         "titulo_pieza": "Visita Cruz del Eje"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "localidad_asignada": "COSQUIN",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-28",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A06049",
-        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "localidad_asignada": "LA FALDA",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-28",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A06049",
-        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "PUNILLA",
-      "localidad": "CAPILLA DEL MONTE",
-      "localidad_asignada": "CAPILLA DEL MONTE",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-28",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A06049",
-        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)"
-      }
-    },
-    {
-      "area_origen": "Pauta digital",
-      "campana": "AGENDA MLL",
-      "alcance_tipo": "localidad",
-      "departamento": "PUNILLA",
-      "localidad": "SANTA MARIA DE PUNILLA",
-      "localidad_asignada": "SANTA MARIA DE PUNILLA",
-      "detalle": {
-        "area_tematica": "OBRAS",
-        "estado": "Vigente",
-        "finalizacion": "2026-08-28",
-        "alcance": null,
-        "importe_gastado": null,
-        "cod_contenido": "A06049",
-        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)"
       }
     },
     {
@@ -27676,7 +27574,7 @@
       "detalle": {
         "area_tematica": "SEGURIDAD",
         "estado": "Vigente",
-        "finalizacion": "2026-08-31",
+        "finalizacion": "2026-09-21",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06200",
@@ -28424,7 +28322,7 @@
       "detalle": {
         "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
         "estado": "Vigente",
-        "finalizacion": "2026-09-04",
+        "finalizacion": "2026-09-07",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06247",
@@ -28441,7 +28339,7 @@
       "detalle": {
         "area_tematica": "EDUCACIÓN",
         "estado": "Vigente",
-        "finalizacion": "2026-09-04",
+        "finalizacion": "2026-09-07",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06248",
@@ -28458,7 +28356,7 @@
       "detalle": {
         "area_tematica": "EDUCACIÓN",
         "estado": "Vigente",
-        "finalizacion": "2026-09-04",
+        "finalizacion": "2026-09-07",
         "alcance": null,
         "importe_gastado": null,
         "cod_contenido": "A06248",
@@ -28497,6 +28395,839 @@
         "importe_gastado": null,
         "cod_contenido": "A06249",
         "titulo_pieza": "Escuchá \"Hospital en Marcos Juárez\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "departamento",
+      "departamento": "UNION",
+      "localidad": null,
+      "localidad_asignada": null,
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06265",
+        "titulo_pieza": "Visita a Pascanas"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06266",
+        "titulo_pieza": "Visita a Saldan"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06267",
+        "titulo_pieza": "Visita a Carlos Paz"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06268",
+        "titulo_pieza": "Visita al Club Rosedal "
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06269",
+        "titulo_pieza": "Visita al Club Rosedal "
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06270",
+        "titulo_pieza": "Visita Fundación Kalen"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06271",
+        "titulo_pieza": "Visita Fundación Kalen"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": "EDUCACIÓN",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06272",
+        "titulo_pieza": "Visita a Dean Funes (Sede Regional UPC)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": "EDUCACIÓN",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06273",
+        "titulo_pieza": "Visita a Dean Funes (Sede Regional UPC)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06274",
+        "titulo_pieza": "Visita a Cruz del Eje"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": "COMUNICACIÓN INSTITUCIONAL",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06275",
+        "titulo_pieza": "Visita a Cruz del Eje"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06276",
+        "titulo_pieza": "Visita a Departamento Unión "
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-11",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06277",
+        "titulo_pieza": "Visita a Departamento Unión "
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06278",
+        "titulo_pieza": "Nos vemos en la Plaza Los Platanos"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06279",
+        "titulo_pieza": "Obras Altonivel Velez Sasrfield"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06280",
+        "titulo_pieza": "Obras Altonivel Velez Sasrfield"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06281",
+        "titulo_pieza": "Obras Avenida Bodereau"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06282",
+        "titulo_pieza": "Obras Avenida Bodereau"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06283",
+        "titulo_pieza": "Plan Reparación Vial Inegral Av. Duarte Quirós"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06284",
+        "titulo_pieza": "Plan Reparación Vial Inegral Av. Duarte Quirós"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06285",
+        "titulo_pieza": "Nos Vemos en la Plaza Altos de Santa Ana"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06286",
+        "titulo_pieza": "Nos Vemos en la Plaza Altos de Santa Ana"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06287",
+        "titulo_pieza": "Nos Vemos en la Plaza Parque Latino"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06288",
+        "titulo_pieza": "Nos Vemos en la Plaza Parque Latino"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06289",
+        "titulo_pieza": "Obras Avenida Bodereau"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06290",
+        "titulo_pieza": "Obras Avenida Bodereau"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06291",
+        "titulo_pieza": "Obras Avenida Bodereau"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "OBRAS EN 25 LOCALIDADES",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06250",
+        "titulo_pieza": "Obras en 25 localidades UPC en Capilla del Monte (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "OBRAS EN 25 LOCALIDADES",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06251",
+        "titulo_pieza": "Obras en 25 localidades UPC en Capilla del Monte (Video 15 seg)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "OBRAS EN 25 LOCALIDADES",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-09",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06252",
+        "titulo_pieza": "Obras en 25 localidades UPC en Capilla del Monte (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "OBRAS EN 25 LOCALIDADES",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-08-31",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06253",
+        "titulo_pieza": "Obras en 25 localidades UPC en Capilla del Monte (Banner)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-05",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06254",
+        "titulo_pieza": "Cordobeses en Alerta Río Uruguay y Argandoña (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-05",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06255",
+        "titulo_pieza": "Cordobeses en Alerta Cofico #4 (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-05",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06256",
+        "titulo_pieza": "Cordobeses en Alerta Jardín  #8 (Videos)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06257",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 1: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06258",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 2: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06259",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 3: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06260",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 4: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06261",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 6: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Finalizada",
+        "finalizacion": "2026-08-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06262",
+        "titulo_pieza": "Cordobeses en Alerta Agenda Cuadrante 7: (Placa Fija)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-05",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06263",
+        "titulo_pieza": "Cordobeses en Alerta California #1 (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "CORDOBESES EN ALERTA",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "SEGURIDAD",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-05",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06264",
+        "titulo_pieza": "Cordobeses en Alerta Alto Alberdi #1 (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06292",
+        "titulo_pieza": "Visita a Santa María de Punilla"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "departamento",
+      "departamento": "PUNILLA",
+      "localidad": null,
+      "localidad_asignada": null,
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06293",
+        "titulo_pieza": "Visita a Casa Grande"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "departamento",
+      "departamento": "PUNILLA",
+      "localidad": null,
+      "localidad_asignada": null,
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06294",
+        "titulo_pieza": "Visita a Valle Hermoso"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "departamento",
+      "departamento": "PUNILLA",
+      "localidad": null,
+      "localidad_asignada": null,
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06295",
+        "titulo_pieza": "Visita a Villa Giardino"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06296",
+        "titulo_pieza": "Plan 800 cuadras El Dorado Nuevo Progreso"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06297",
+        "titulo_pieza": "Plan 800 cuadras El Dorado Nuevo Progreso"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "AGENDA MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": "OBRAS",
+        "estado": "Vigente",
+        "finalizacion": "2026-09-15",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": "A06298",
+        "titulo_pieza": "Plan 800 cuadras El Dorado Nuevo Progreso"
       }
     },
     {

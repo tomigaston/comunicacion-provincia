@@ -603,6 +603,13 @@ def _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento
     return [{"localidad": None, "departamento": None, "localidad_asignada": None}]
 
 
+def _fila_real_pauta_global(row):
+    """Una fila de GLOBAL_ImportRange cuenta como dato real solo si CAMPAÑA o
+    TITULO DE LA PIEZA no están vacíos. Sin excepciones ni rango fijo: se
+    aplica fila por fila sobre toda la hoja."""
+    return limpio(row["CAMPAÑA"]) is not None or limpio(row["TITULO DE LA PIEZA"]) is not None
+
+
 def _dedup_pauta_global_por_cod_contenido(piezas):
     """Corre DESPUÉS de expandir "TODAS LAS LOCALIDADES" + Departamento en una
     fila por Localidad (nunca antes: antes de expandir no existen todavía los
@@ -640,7 +647,20 @@ def cargar_pauta_digital_global(
     """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
     (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
     Ejecutado quedan separados por plataforma (Meta/Google), ver Tarea 5."""
-    df = pd.read_excel(CONTEXTO / "Pauta RRSS_GLOBAL.xlsx", sheet_name="GLOBAL_ImportRange")
+    df_crudo = pd.read_excel(CONTEXTO / "Pauta RRSS_GLOBAL.xlsx", sheet_name="GLOBAL_ImportRange")
+    mascara_real = df_crudo.apply(_fila_real_pauta_global, axis=1)
+    df = df_crudo[mascara_real].reset_index(drop=True)
+    metricas = {
+        "filas_totales": len(df_crudo),
+        "filas_descartadas": len(df_crudo) - len(df),
+        "filas_reales": len(df),
+        # A nivel de fila real (antes de excluir por fuera de provincia o
+        # expandir geografía) -- consistente con "Códigos únicos con COD.
+        # CONTENIDO" más abajo, que también se cuenta sobre df completo.
+        "filas_con_cod_contenido": int(df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None).sum()),
+        "filas_pendientes": 0,
+    }
+
     localidades_60_normalizadas = set(localidad_a_oficial.keys())
     mapa_campanas = construir_mapa_formas_canonicas(df["CAMPAÑA"])
     mapa_plataformas = construir_mapa_formas_canonicas(df["PLATAFORMA"])
@@ -648,6 +668,7 @@ def cargar_pauta_digital_global(
 
     piezas = []
     excluidas = 0
+    claves_pendientes_vistas = {}
     for _, row in df.iterrows():
         geo = clasificar_geografia_pauta_global(
             row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"],
@@ -665,6 +686,35 @@ def cargar_pauta_digital_global(
         # siguen siendo, como antes, una sola pieza por fila fuente.
         ambito_pieza = "localidad" if geo["ambito"] == "localidad_multiple" else geo["ambito"]
         cod_contenido = limpio(row["COD. CONTENIDO"])
+        fecha_envio = fecha_iso(row["FECHA DE ENVÍO"])
+
+        # Piezas cargadas pero nunca despachadas: sin COD. CONTENIDO ni FECHA
+        # DE ENVÍO no hay con qué calcular vigencia/finalización real (la
+        # regla existente de "codigo_pieza null -> usar COD. CONTENIDO como
+        # key" no alcanza acá porque ambos son null). Se incluyen igual, con
+        # estado fijo "Pendiente", identificadas puntualmente por TITULO +
+        # LOCALIDAD/SUBCIRCUITO + PLATAFORMA + OBJETIVO DE CAMPAÑA (agregado
+        # este último porque dos piezas Pendiente pueden compartir título/
+        # localidad/plataforma y diferir solo en el objetivo planificado —
+        # ej. "Nos vemos en la Plaza Prussia" en Meta con Alcance vs.
+        # Visualizaciones). Si dos colisionaran igual con esta key, se corta
+        # la corrida: sería una pieza Pendiente perdida en silencio.
+        es_pendiente = cod_contenido is None and fecha_envio is None
+        if es_pendiente:
+            metricas["filas_pendientes"] += 1
+            clave_pendiente = (
+                limpio(row["TITULO DE LA PIEZA"]),
+                limpio(row["LOCALIDAD / SUBCIRCUITO"]),
+                limpio(row["PLATAFORMA"]),
+                limpio(row["OBJETIVO DE CAMPAÑA"]),
+            )
+            if clave_pendiente in claves_pendientes_vistas:
+                raise SystemExit(
+                    "Colisión de key compuesta entre dos filas 'Pendiente' "
+                    f"(fila actual y fila {claves_pendientes_vistas[clave_pendiente]}): {clave_pendiente}. "
+                    "Deteniendo la corrida -- revisar antes de seguir."
+                )
+            claves_pendientes_vistas[clave_pendiente] = row.name
 
         link_material = limpiar_link(row["LINK MATERIAL"])
         link_ig = limpiar_link(row["IG"])
@@ -723,9 +773,13 @@ def cargar_pauta_digital_global(
                 "inicio": fecha_iso(row["INICIO "]),
                 "inicio_informe": None,
                 "fin_informe": None,
-                "fecha_creacion": fecha_iso(row["FECHA DE ENVÍO"]),
+                "fecha_creacion": fecha_envio,
                 "finalizacion": fecha_iso(fin_ts),
-                "estado": estado_por_fecha(fin_ts),
+                # Pendiente sin excepciones: no se deriva de FIN/FIN INFORMADO
+                # (podrían traer una fecha comprometida que todavía no pasó
+                # nada) ni entra en los cálculos de vigencia/finalización del
+                # resto del pipeline -- construir_campanas() las excluye.
+                "estado": "Pendiente" if es_pendiente else estado_por_fecha(fin_ts),
                 "alcance": None,
                 "frecuencia": None,
                 "impresiones": None,
@@ -758,7 +812,11 @@ def cargar_pauta_digital_global(
             })
 
     piezas, descartadas_dedup = _dedup_pauta_global_por_cod_contenido(piezas)
-    return piezas, excluidas, descartadas_dedup
+    metricas["codigos_unicos_con_cod_contenido"] = int(
+        df[df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None)]["COD. CONTENIDO"].nunique()
+    )
+    metricas["filas_colapsadas_por_dedup"] = descartadas_dedup
+    return piezas, excluidas, descartadas_dedup, metricas
 
 
 # ---------------------------------------------------------------------------
@@ -1403,6 +1461,8 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
     for pieza in pauta_digital["piezas"]:
         if pieza["alcance_tipo"] is None:
             continue  # BARRIO/CIRCUITO/CODIGO_AUDIENCIA/OTRO/REGION: no aplican a la vista unificada por localidad/depto
+        if pieza["estado"] == "Pendiente":
+            continue  # piezas cargadas pero no despachadas: sin fecha real no entran en la vista de vigencia
         # en_60_localidades solo es la condición correcta para alcance_tipo=='localidad'
         # (ahí sí significa "esta Localidad puntual es una de las 60"). Para 'departamento'
         # y 'provincia' NO se filtra por en_60_localidades: esta es la vista unificada con
@@ -1501,8 +1561,17 @@ def main():
     historico_medios = cargar_historico_medios()
     escribir_json("historico_medios.json", historico_medios)
 
+    # Códigos del JSON ANTERIOR (antes de sobreescribirlo) para el chequeo de
+    # bajas del punto 6: se lee acá, antes de escribir_json("pauta_digital.json"...).
+    pauta_digital_anterior_path = DATA_OUT / "pauta_digital.json"
+    codigos_previos = set()
+    if pauta_digital_anterior_path.exists():
+        with open(pauta_digital_anterior_path, encoding="utf-8") as f:
+            piezas_anteriores = json.load(f)["piezas"]
+        codigos_previos = {p["cod_contenido"] for p in piezas_anteriores if p.get("cod_contenido") is not None}
+
     piezas_historico = cargar_pauta_digital_historico(claves_60)
-    piezas_global, excluidas_global, descartadas_dedup_global = cargar_pauta_digital_global(
+    piezas_global, excluidas_global, descartadas_dedup_global, metricas_global = cargar_pauta_digital_global(
         localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
         departamento_a_localidades_normalizadas,
     )
@@ -1511,6 +1580,30 @@ def main():
         f"+ {len(piezas_global)} piezas fuente nueva ({excluidas_global} excluidas por estar fuera de la provincia, "
         f"{descartadas_dedup_global} descartadas por dedup de COD. CONTENIDO tras expandir Departamentos)"
     )
+    # --- Verificación (Pauta RRSS_GLOBAL.xlsx) — corre ANTES de escribir el
+    # JSON, así un corte por pérdida de datos no esperada no llega a
+    # sobreescribir el archivo anterior. -----------------------------------
+    codigos_nuevos = {p["cod_contenido"] for p in piezas_global if p.get("cod_contenido") is not None}
+    piezas_pendientes = [p for p in piezas_global if p["estado"] == "Pendiente"]
+    codigos_dados_de_baja = sorted(codigos_previos - codigos_nuevos, key=str)
+    print("  --- Verificación Pauta Digital (Pauta RRSS_GLOBAL.xlsx) ---")
+    print(f"  Filas descartadas como basura: {metricas_global['filas_descartadas']} de {metricas_global['filas_totales']} totales")
+    print(f"  Filas reales tras filtro: {metricas_global['filas_reales']}")
+    print(f"  Filas con COD. CONTENIDO: {metricas_global['filas_con_cod_contenido']}")
+    print(f"  Filas 'Pendiente' sin código/fecha: {metricas_global['filas_pendientes']}")
+    print(f"  Códigos únicos con COD. CONTENIDO: {metricas_global['codigos_unicos_con_cod_contenido']}")
+    print(f"  Filas colapsadas por dedup: {metricas_global['filas_colapsadas_por_dedup']}")
+    print(f"  Total de piezas fuente nueva en el JSON final: {len(piezas_global)}")
+    print(f"  Piezas con estado 'Pendiente': {len(piezas_pendientes)}")
+    if codigos_dados_de_baja:
+        print(f"  Códigos dados de baja respecto al JSON anterior ({len(codigos_dados_de_baja)}): {codigos_dados_de_baja}")
+        raise SystemExit(
+            "Aparecieron bajas respecto al JSON anterior. Deteniendo la corrida sin "
+            "escribir pauta_digital.json -- podría ser una pérdida de datos no esperada."
+        )
+    else:
+        print("  Códigos dados de baja respecto al JSON anterior: 0")
+
     pauta_digital = {"piezas": piezas_historico + piezas_global}
     escribir_json("pauta_digital.json", pauta_digital)
 
