@@ -11,7 +11,7 @@ import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import MensajeTruncado from '../../components/MensajeTruncado';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
-import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana } from '../../lib/fechas';
+import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
@@ -251,16 +251,26 @@ export default function DetalleLocalidad() {
                       </tr>
                     </thead>
                     <tbody>
-                      {visible.vigentes.map((v, i) => (
-                        <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                          <td style={td}>{v.tipo_medio}</td>
-                          <td style={{ ...td, whiteSpace: 'pre-wrap' }}>{v.tema_vigente}</td>
-                          <td style={td}>{v.semanas_consecutivas}</td>
-                          <td style={td}>
-                            <VerMaterial links={v.links_material} />
-                          </td>
-                        </tr>
-                      ))}
+                      {visible.vigentes.map((v, i) => {
+                        const rangoVigencia = rangoFechaDesdeHasta(v.fecha_desde, v.fecha_hasta);
+                        return (
+                          <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                            <td style={td}>{v.tipo_medio}</td>
+                            <td style={{ ...td, whiteSpace: 'pre-wrap' }}>
+                              {v.tema_vigente}
+                              {rangoVigencia && (
+                                <div style={{ fontSize: 11.5, color: 'var(--text-tertiary)', marginTop: 2 }}>
+                                  {rangoVigencia}
+                                </div>
+                              )}
+                            </td>
+                            <td style={td}>{v.semanas_consecutivas}</td>
+                            <td style={td}>
+                              <VerMaterial links={v.links_material} />
+                            </td>
+                          </tr>
+                        );
+                      })}
                     </tbody>
                   </table>
                 )}

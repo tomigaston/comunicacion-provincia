@@ -163,6 +163,12 @@ def cargar_medios_tradicionales():
             "fecha_ultima_semana": fecha_iso(row["Fecha_Ultima_Semana"]),
             "semanas_consecutivas": limpio(row["Semanas_Consecutivas"]),
             "estado_semana": limpio(row["Estado_Semana"]),
+            # Vigencia real de la campaña (distinto de fecha_inicio_racha/fecha_ultima_semana,
+            # que son del tracking semanal de "mismo tema"). Columnas nuevas al final de
+            # Maestro_Vigente desde el 31/08/2026 -- todavía null en la mayoría de las filas
+            # (recién se empezaron a cargar esta semana), no se inventa nada acá.
+            "fecha_desde": fecha_iso(row["Fecha_Desde"]),
+            "fecha_hasta": fecha_iso(row["Fecha_Hasta"]),
         })
 
     localidades = []
