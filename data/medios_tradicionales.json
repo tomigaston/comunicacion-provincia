@@ -7,7 +7,8 @@
     "2026-08-14",
     "2026-08-19",
     "2026-08-21",
-    "2026-08-27"
+    "2026-08-27",
+    "2026-08-31"
   ],
   "umbral_alerta_amarilla_semanas": 4,
   "umbral_alerta_roja_semanas": 8,
@@ -35,8 +36,8 @@
             "https://drive.google.com/file/d/1FMFbxtjk_mEb0zu3RXyxNGsf8KThWA95/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -67,8 +68,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -82,8 +83,8 @@
             ". https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -96,9 +97,9 @@
             "https://drive.google.com/file/d/18SWS2t_W_4S2LG-U3AHPbsHEDy70lQtV/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": null
         },
@@ -110,9 +111,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_linkk"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -142,8 +143,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -157,8 +158,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -171,9 +172,9 @@
             "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -185,9 +186,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -222,9 +223,9 @@
             "https://drive.google.com/file/d/1c6Vod4wdOmDxPX5ZP-lvir6_qhWijAlh/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -247,9 +248,9 @@
             "https://drive.google.com/file/d/1rMlA--q6ezV6cZfQs7weM5voXgGMWz6m/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-10",
           "fecha_hasta": "2026-09-07"
         },
@@ -261,8 +262,8 @@
             "https://drive.google.com/file/d/1St8sWiSTPmT_ssMhUgAAx_yg-j43Nzi5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-10",
           "fecha_hasta": null
@@ -284,19 +285,20 @@
             "https://drive.google.com/file/d/1WpFnewqljjvrikHVr6leWwOBjQ29cEcP/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
         {
           "tipo_medio": "VIA PÚBLICA",
-          "tema_vigente": "LUNETAS- ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nLUNETAS - AVENIDA BODEREAU\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing\nhttps://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing\nhttps://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing\nhttps://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link\nhttps://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing\nhttps://drive.google.com/file/d/10ubKw09zOzvVl_DaLl1F1uvfZ1z0NxcB/view?usp=drive_link\nhttps://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view\nhttps://drive.google.com/file/d/14RA-G3rKNxFTzEo_n21uEoxVLYdbc9oT/view?usp=drive_link\nhttps://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link\nhttps://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing\nhttps://drive.google.com/file/d/16Q0s9zbI_v6NHJhH-z1fM-C457wunzwe/view?usp=sharing\nhttps://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing",
+          "tema_vigente": "LUNETAS- ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nLUNETAS - AVENIDA BODEREAU\nSÉXTUPLES- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
+          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing\nhttps://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing\nhttps://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link\nhttps://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing\nhttps://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link\nhttps://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing\nhttps://drive.google.com/file/d/10ubKw09zOzvVl_DaLl1F1uvfZ1z0NxcB/view?usp=drive_link\nhttps://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view\nhttps://drive.google.com/file/d/14RA-G3rKNxFTzEo_n21uEoxVLYdbc9oT/view?usp=drive_link\nhttps://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link\nhttps://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing\nhttps://drive.google.com/file/d/16Q0s9zbI_v6NHJhH-z1fM-C457wunzwe/view?usp=sharing\nhttps://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing",
           "links_material": [
             "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing",
             "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing",
+            "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
             "https://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing",
             "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link",
             "https://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing",
@@ -308,8 +310,8 @@
             "https://drive.google.com/file/d/16Q0s9zbI_v6NHJhH-z1fM-C457wunzwe/view?usp=sharing",
             "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
           ],
-          "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
+          "fecha_inicio_racha": "2026-08-31",
+          "fecha_ultima_semana": "2026-08-31",
           "semanas_consecutivas": 1,
           "estado_semana": "CAMBIÓ",
           "fecha_desde": null,
@@ -323,28 +325,28 @@
             "https://drive.google.com/file/d/1i7kLZS8m960_Z9fsMvhFZ4I7Kh5MFgfY/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
         {
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nALTO NIVEL VALLE ESCONDIDO FINALIZADO\nDUPLICACION LUCHESSE FINALIZADO\nDUPLICACION BODEREAU FINALIZADO\nOBRA ALTO NIVEL VELEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS",
-          "link_material": "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing\nhttps://drive.google.com/drive/folders/1s4CgfghuD7P1iNo4dZ6LtCq0EZTqLolu?usp=drive_link\nhttps://drive.google.com/drive/folders/1wQTlGpXxehc3SbeygGNMBmoMDw4uAVxG?usp=drive_link\nhttps://drive.google.com/drive/folders/1sfawn0JamoYqwhIjXHkXeNlfIZZdzVRK?usp=drive_link\nhttps://drive.google.com/drive/folders/1fCUwL8YTWf6RMBmNcSvrOj9_FOW2Oocp?usp=drive_link\nhttps://drive.google.com/drive/folders/1PKdAsQgwaJHvUgqxxbEhmZGxh29HD1ru?usp=drive_link",
+          "link_material": "https://drive.google.com/file/d/16gGIW5yyJJU9xO2vAaAHiKO_5YjBF0tY/view?usp=drive_link\nhttps://drive.google.com/file/d/1MmQ7ZtHMgEeobwwuzxZYJQxloWE1Le-m/view?usp=drive_link\nhttps://drive.google.com/file/d/1VUNwBj7WgHeT9hkT_NAuOKppOnbwrW-C/view?usp=drive_link\nhttps://drive.google.com/file/d/1Oj4pX6X3CObDVfq_5Q0Qb8q7jPd_i_Ck/view?usp=drive_link\nhttps://drive.google.com/file/d/1pku3aX_RYoCg7YDTQx0xTLPMRJShEbnL/view?usp=drive_link\nhttps://drive.google.com/file/d/1yYOWpNx5_TN1dlMTRnckiu9fX0TS_CsH/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing",
-            "https://drive.google.com/drive/folders/1s4CgfghuD7P1iNo4dZ6LtCq0EZTqLolu?usp=drive_link",
-            "https://drive.google.com/drive/folders/1wQTlGpXxehc3SbeygGNMBmoMDw4uAVxG?usp=drive_link",
-            "https://drive.google.com/drive/folders/1sfawn0JamoYqwhIjXHkXeNlfIZZdzVRK?usp=drive_link",
-            "https://drive.google.com/drive/folders/1fCUwL8YTWf6RMBmNcSvrOj9_FOW2Oocp?usp=drive_link",
-            "https://drive.google.com/drive/folders/1PKdAsQgwaJHvUgqxxbEhmZGxh29HD1ru?usp=drive_link"
+            "https://drive.google.com/file/d/16gGIW5yyJJU9xO2vAaAHiKO_5YjBF0tY/view?usp=drive_link",
+            "https://drive.google.com/file/d/1MmQ7ZtHMgEeobwwuzxZYJQxloWE1Le-m/view?usp=drive_link",
+            "https://drive.google.com/file/d/1VUNwBj7WgHeT9hkT_NAuOKppOnbwrW-C/view?usp=drive_link",
+            "https://drive.google.com/file/d/1Oj4pX6X3CObDVfq_5Q0Qb8q7jPd_i_Ck/view?usp=drive_link",
+            "https://drive.google.com/file/d/1pku3aX_RYoCg7YDTQx0xTLPMRJShEbnL/view?usp=drive_link",
+            "https://drive.google.com/file/d/1yYOWpNx5_TN1dlMTRnckiu9fX0TS_CsH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-08-31"
         }
@@ -374,9 +376,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -388,9 +390,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-08-31"
         }
@@ -419,9 +421,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -451,8 +453,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -466,8 +468,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -480,9 +482,9 @@
             "https://drive.google.com/file/d/1vEHudTlm8u16xkDCKNhN0kXOhAcKSdlv/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": null
         },
@@ -496,9 +498,9 @@
             "https://drive.google.com/file/d/1dynczrzVYXtOYz7u-9BUcaQUPJxF2lrq/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -511,9 +513,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -525,9 +527,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -559,9 +561,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -577,9 +579,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -591,9 +593,9 @@
             "https://drive.google.com/file/d/1Knt9cxjRLkN91uF-nTSMNBHlWMSTdYqQ/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": null
         },
@@ -607,9 +609,9 @@
             "https://drive.google.com/file/d/1QFywQrSog7VbVYJka8NwZ3SY7_x0yqYK/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -624,9 +626,9 @@
             "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -638,9 +640,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -669,8 +671,8 @@
             "https://drive.google.com/file/d/1rjE_Q17legMQXGntfA-OjURwq8wgtH7A/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -684,9 +686,9 @@
             "https://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -715,9 +717,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -729,8 +731,8 @@
             "https://drive.google.com/file/d/1upxWwK2LYKRQ33fQkb8hrhmg5QH_lQwa/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -743,8 +745,8 @@
             "https://drive.google.com/file/d/1r_ajCck5mdv1ihfQN80F_odifJ8yltPF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -776,9 +778,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -793,9 +795,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -809,9 +811,9 @@
             "https://drive.google.com/file/d/1dLq_8tzWoc3FMQoOwioRsI3tCK0XeY4L/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -824,23 +826,23 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
         {
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing",
+          "link_material": "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing"
+            "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -869,9 +871,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -883,9 +885,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -917,9 +919,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -931,9 +933,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -945,8 +947,8 @@
             "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -960,9 +962,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -993,9 +995,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1010,9 +1012,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1024,8 +1026,8 @@
             "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1038,9 +1040,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1052,8 +1054,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1087,9 +1089,9 @@
             "https://drive.google.com/file/d/1wRSAzVxpE_tdTOg5k19F9f9IH3AiiVA5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1106,9 +1108,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1120,8 +1122,8 @@
             "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1136,9 +1138,9 @@
             "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1150,8 +1152,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1164,9 +1166,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1200,9 +1202,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-12"
         },
@@ -1218,9 +1220,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-12"
         },
@@ -1232,9 +1234,9 @@
             "https://drive.google.com/file/d/13rAbY1hodkywmq4oaI7DYeNVX4vtAmcn/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": null
         },
@@ -1247,8 +1249,8 @@
             "https://drive.google.com/file/d/1Io2H2UZ_3gwPYl0PcFl8p6xFOaD1QfZD/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1261,9 +1263,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1293,11 +1295,11 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
-          "fecha_hasta": "2026-08-31"
+          "fecha_hasta": "2026-09-07"
         },
         {
           "tipo_medio": "RADIO",
@@ -1308,11 +1310,11 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
-          "fecha_hasta": "2026-08-31"
+          "fecha_hasta": "2026-09-07"
         }
       ]
     },
@@ -1343,9 +1345,9 @@
             "https://drive.google.com/file/d/1iGHvAd6oySUolLsc_64g-BaQiYTgZ5Fd/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1361,9 +1363,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1375,9 +1377,9 @@
             "https://drive.google.com/file/d/18bNq-AzFbs0kajpjWQMnQ36vuDDFkGMh/view"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1391,9 +1393,9 @@
             "https://drive.google.com/file/d/1lbxEMeA1Z-231TetBxMP0-oCqN4ygS1a/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1408,9 +1410,9 @@
             "https://drive.google.com/file/d/1IgUxcrtaQ4Wz8Uqw9Ze-awcL_c_eszhQ/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1422,9 +1424,9 @@
             "https://drive.google.com/file/d/1DkOSKY9lk3UZHSA2aBfCnDNu2aClSXA4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1436,9 +1438,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1471,9 +1473,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1489,9 +1491,9 @@
             "https://drive.google.com/file/d/1BL258r44br_G-unBvX6VpDWvIhbNBMeB/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1503,9 +1505,9 @@
             "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": null
         },
@@ -1517,8 +1519,8 @@
             "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1550,8 +1552,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-09"
@@ -1566,8 +1568,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-09"
@@ -1580,9 +1582,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -1594,9 +1596,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -1608,8 +1610,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1617,14 +1619,14 @@
         {
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing",
+          "link_material": "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing"
+            "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1654,8 +1656,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -1669,8 +1671,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -1683,8 +1685,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
@@ -1715,9 +1717,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -1730,9 +1732,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -1744,9 +1746,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1776,9 +1778,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -1791,9 +1793,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -1805,8 +1807,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
@@ -1819,8 +1821,8 @@
             "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1833,8 +1835,8 @@
             "https://drive.google.com/file/d/1X500HnZIhybHuHYWdl2nmWeIjkOGfC0U/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -1847,9 +1849,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -1879,8 +1881,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -1894,8 +1896,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -1909,9 +1911,9 @@
             "https://drive.google.com/file/d/1lBsZr45jXcmpjzauRLmP381hgWL1XImr/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -1943,9 +1945,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1960,9 +1962,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -1975,9 +1977,9 @@
             "https://drive.google.com/file/d/16ewPxVNzaWu3NTpG9FcBSGOYDlxhCELy/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -1992,9 +1994,9 @@
             "https://drive.google.com/file/d/1XJIfMoeYF6lVaJefhm4QJFFYfmhf-Az8/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2006,9 +2008,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2038,8 +2040,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-07"
@@ -2052,8 +2054,8 @@
             "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2084,8 +2086,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-07"
@@ -2098,8 +2100,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
@@ -2112,8 +2114,8 @@
             "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2144,9 +2146,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -2159,8 +2161,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -2173,8 +2175,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
@@ -2187,8 +2189,8 @@
             "https://drive.google.com/file/d/1nejlnPfsBsa6WXZgAWlD0Bv5WXH5SDH7/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2201,9 +2203,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-08-31"
         }
@@ -2235,9 +2237,9 @@
             "https://drive.google.com/file/d/1JN4Sq-sQLawPvHpKaMFaSyS4DnerD_UX/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -2249,9 +2251,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": null
         },
@@ -2263,8 +2265,8 @@
             "https://drive.google.com/file/d/1bS-ubEEn_f0BPd2RCCDWUFnJu6kUW3rc/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2277,9 +2279,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2311,25 +2313,25 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-09-07"
         },
         {
           "tipo_medio": "RADIO",
-          "tema_vigente": "VISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1\nESCUCHÁ COSQUÍN: GAS NATURAL\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-          "link_material": "https://drive.google.com/file/d/1l5l8WlBPSTCVmfkkfKfKGxaPpBoqH-NV/view?usp=sharing\nhttps://drive.google.com/file/d/1f6anOoyqYMj5HiDZifC2TXE0prurUwm_/view?usp=sharing\n.https://drive.google.com/file/d/18fgy8VF6SKtnwsrKsiHN1WATbUrgsZE4/view?usp=sharing\nhttps://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link\nhttps://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link",
+          "tema_vigente": "VISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ COSQUÍN: GAS NATURAL",
+          "link_material": "https://drive.google.com/file/d/1l5l8WlBPSTCVmfkkfKfKGxaPpBoqH-NV/view?usp=sharing\n.https://drive.google.com/file/d/18fgy8VF6SKtnwsrKsiHN1WATbUrgsZE4/view?usp=sharing\nhttps://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link\nhttps://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link\nhttps://drive.google.com/file/d/1f6anOoyqYMj5HiDZifC2TXE0prurUwm_/view?usp=sharing",
           "links_material": [
             "https://drive.google.com/file/d/1l5l8WlBPSTCVmfkkfKfKGxaPpBoqH-NV/view?usp=sharing",
-            "https://drive.google.com/file/d/1f6anOoyqYMj5HiDZifC2TXE0prurUwm_/view?usp=sharing",
             ".https://drive.google.com/file/d/18fgy8VF6SKtnwsrKsiHN1WATbUrgsZE4/view?usp=sharing",
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link",
-            "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
+            "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link",
+            "https://drive.google.com/file/d/1f6anOoyqYMj5HiDZifC2TXE0prurUwm_/view?usp=sharing"
           ],
-          "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
+          "fecha_inicio_racha": "2026-08-31",
+          "fecha_ultima_semana": "2026-08-31",
           "semanas_consecutivas": 1,
           "estado_semana": "CAMBIÓ",
           "fecha_desde": "2026-08-06",
@@ -2343,9 +2345,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": null
         },
@@ -2358,8 +2360,8 @@
             "https://drive.google.com/file/d/1obJbK3IQ-Z_N4ub6LRdtrHYDsf4QPyfY/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2376,9 +2378,9 @@
             "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2390,9 +2392,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2424,15 +2426,15 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
         {
           "tipo_medio": "RADIO",
-          "tema_vigente": "OBRAS VIALES 2\nVISITA PUNILLA: UNA JORNADA EN EL DEPARTAMENTO 1\nVISITA PUNILLA: UNA JORNADA EN EL DEPARTAMENTO 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+          "tema_vigente": "OBRAS VIALES 2\nVISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1\nVISITA CASA GRANDE Y SANTA MARIA: UNA JORNADA EN EL DEPARTAMENTO PUNILLA 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
           "link_material": "https://drive.google.com/file/d/1JN4Sq-sQLawPvHpKaMFaSyS4DnerD_UX/view?usp=sharing\nhttps://drive.google.com/file/d/1l5l8WlBPSTCVmfkkfKfKGxaPpBoqH-NV/view?usp=sharing\nhttps://drive.google.com/file/d/1y_KB5o2Wn-UU7MqKoD7NPpshqFNmozPz/view?usp=sharing\n.https://drive.google.com/file/d/18fgy8VF6SKtnwsrKsiHN1WATbUrgsZE4/view?usp=sharing\nhttps://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link\nhttps://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link",
           "links_material": [
             "https://drive.google.com/file/d/1JN4Sq-sQLawPvHpKaMFaSyS4DnerD_UX/view?usp=sharing",
@@ -2442,8 +2444,8 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link",
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
-          "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
+          "fecha_inicio_racha": "2026-08-31",
+          "fecha_ultima_semana": "2026-08-31",
           "semanas_consecutivas": 1,
           "estado_semana": "CAMBIÓ",
           "fecha_desde": "2026-08-12",
@@ -2458,9 +2460,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2472,9 +2474,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2503,8 +2505,8 @@
             "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2517,9 +2519,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2531,9 +2533,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_linkk"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2567,9 +2569,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-15"
         },
@@ -2586,9 +2588,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-15"
         },
@@ -2600,9 +2602,9 @@
             "https://drive.google.com/file/d/1QGlZB0L0RjfyTpD76XOpjeViAXdh9zxA/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-26",
           "fecha_hasta": null
         },
@@ -2619,9 +2621,9 @@
             "https://drive.google.com/file/d/1rWXFu3vL7qq4-lIV-1MvgIycmfNS5y59/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2640,9 +2642,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2654,8 +2656,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2668,9 +2670,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_linkkk"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2706,9 +2708,9 @@
             "https://drive.google.com/file/d/1IOf8MVVsvOhZhf3bKuiyaD1s9PS0b_g3/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-07",
           "fecha_hasta": "2026-09-11"
         },
@@ -2727,9 +2729,9 @@
             "https://drive.google.com/file/d/1M3kpm-eC9qVJNI4_AFDseYgIUaJ_M4-g/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-07",
           "fecha_hasta": "2026-09-11"
         },
@@ -2741,9 +2743,9 @@
             "https://drive.google.com/file/d/1MAnbIAGSKQolkGq6Vfv_3EJa148vFOP3/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-11"
         },
@@ -2757,8 +2759,8 @@
             "https://drive.google.com/file/d/1Hedd9dkyZueVoYNY0-TganrukiJB3-WV/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2776,9 +2778,9 @@
             "https://drive.google.com/file/d/16bO5RMvx_fl_xn1j8UtG48GcLktb3zXR/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2790,9 +2792,9 @@
             "https://drive.google.com/file/d/1i0B5jDupllHQ_pi7eze6SA8rJiNefNMf/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2804,9 +2806,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2840,9 +2842,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -2860,9 +2862,9 @@
             "https://drive.google.com/file/d/12Nict21ZautL5zX_aPWgDnYEtdCkgg43/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-07",
           "fecha_hasta": "2026-09-11"
         },
@@ -2874,8 +2876,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": "2026-09-11"
@@ -2888,8 +2890,8 @@
             "https://drive.google.com/file/d/1zlJ6jXdwpzKfJpBHSV1FHMY2mK5uPZcY/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2902,8 +2904,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -2916,9 +2918,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -2949,9 +2951,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -2963,9 +2965,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -2977,9 +2979,9 @@
             "https://drive.google.com/file/d/1FwaZP59qGAQLkSDBFUVtJacw4vn_ItQR/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -2991,9 +2993,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3005,8 +3007,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3037,9 +3039,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -3053,9 +3055,9 @@
             "- https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -3067,9 +3069,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-09-07"
         },
@@ -3082,9 +3084,9 @@
             "https://drive.google.com/file/d/1QzmqzxadZWj3qk8b52dk55r3YHccTefU/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3096,9 +3098,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3110,8 +3112,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3124,9 +3126,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3156,8 +3158,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3171,9 +3173,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -3185,8 +3187,8 @@
             "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3217,9 +3219,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -3231,9 +3233,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3245,9 +3247,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3277,8 +3279,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3292,8 +3294,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3306,9 +3308,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -3320,8 +3322,8 @@
             "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3334,23 +3336,23 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
         {
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing",
+          "link_material": "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing"
+            "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3380,8 +3382,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3395,8 +3397,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3409,8 +3411,8 @@
             "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3424,9 +3426,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3438,9 +3440,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3470,8 +3472,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3484,8 +3486,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3498,9 +3500,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-09-07"
         },
@@ -3513,9 +3515,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3527,8 +3529,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3559,8 +3561,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3574,8 +3576,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -3588,9 +3590,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         },
@@ -3602,9 +3604,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3635,9 +3637,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-11"
         },
@@ -3651,9 +3653,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-11"
         },
@@ -3665,8 +3667,8 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-21",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 2,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 3,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
@@ -3697,9 +3699,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-11",
           "fecha_hasta": "2026-09-11"
         },
@@ -3711,9 +3713,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": null
         }
@@ -3744,9 +3746,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-09-11"
         },
@@ -3761,9 +3763,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-09-11"
         },
@@ -3775,9 +3777,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -3791,9 +3793,9 @@
             "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -3805,8 +3807,8 @@
             "https://drive.google.com/file/d/1X500HnZIhybHuHYWdl2nmWeIjkOGfC0U/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -3819,9 +3821,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3853,9 +3855,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -3870,9 +3872,9 @@
             "https://drive.google.com/file/d/1sNs6tEJ5dYH_TGe1cSOJ3MXQ3W_dN-lO/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -3884,9 +3886,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -3898,23 +3900,23 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
         {
           "tipo_medio": "PANTALLA LED",
           "tema_vigente": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing",
+          "link_material": "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/drive/folders/1DdYOYT0JuE7nIIuBFX6TvJMaov7xckO0?usp=sharing"
+            "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -3946,9 +3948,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -3963,9 +3965,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -3977,9 +3979,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -3991,8 +3993,8 @@
             "https://drive.google.com/file/d/1jyPm9bZSlURtcezzH7seduU4c0uXcUPS/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4005,9 +4007,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4020,9 +4022,9 @@
             "https://drive.google.com/file/d/1XOa2RELxUjgNLXdcoVQp-F9Ru7W5Sutj/view?usp=drivesdk"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -4054,9 +4056,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4071,9 +4073,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4085,9 +4087,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -4099,8 +4101,8 @@
             "https://drive.google.com/file/d/1kn1ZMTqdYimTutg6JEMJitpxKijTYwuQ/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4113,8 +4115,8 @@
             "https://drive.google.com/file/d/1X500HnZIhybHuHYWdl2nmWeIjkOGfC0U/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4127,9 +4129,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4163,9 +4165,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4182,9 +4184,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4196,9 +4198,9 @@
             "https://drive.google.com/file/d/1HjDBSEeQ55g7O-1lUeTzqPLseQo2lByH/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-26",
           "fecha_hasta": null
         },
@@ -4212,9 +4214,9 @@
             "https://drive.google.com/file/d/1wLu2VjQpqyeFp3U3JBcraGlsMYcIXI6H/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4226,9 +4228,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4240,9 +4242,9 @@
             "https://drive.google.com/file/d/1FJpp4aGBV7Btks5CozsMrGyWurtHI2_n/view?usp=drivesdk"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4254,9 +4256,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4271,10 +4273,10 @@
         "WEB": 1,
         "CARTELERIA": 1,
         "VIA_PUBLICA": 1,
-        "GRAFICA": 0,
+        "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 7,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -4286,8 +4288,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4301,8 +4303,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4315,9 +4317,9 @@
             "https://drive.google.com/file/d/1-2O-9lQEAqKYih8dJLS1HVILre1ecO6m/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": null
         },
@@ -4331,8 +4333,8 @@
             "https://drive.google.com/file/d/1LrJE8DuG_o01OyVfJ8ElzloFeiVmTE12/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4346,7 +4348,21 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
+          "fecha_desde": null,
+          "fecha_hasta": null
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema_vigente": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+          "link_material": "https://drive.google.com/file/d/1dn7S0htanAx1Fcren_-2qoo5rnYUPXhJ/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1dn7S0htanAx1Fcren_-2qoo5rnYUPXhJ/view?usp=drive_link"
+          ],
+          "fecha_inicio_racha": "2026-08-31",
+          "fecha_ultima_semana": "2026-08-31",
           "semanas_consecutivas": 1,
           "estado_semana": "CAMBIÓ",
           "fecha_desde": null,
@@ -4360,9 +4376,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4385,16 +4401,16 @@
       "vigentes": [
         {
           "tipo_medio": "RADIO",
-          "tema_vigente": "HACIENDO LOS DEBERES 1\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 2\nESCUCHÁ MALAGUEÑO: COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link\nhttps://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharin\nhttps://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link\nhttps://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharing",
+          "tema_vigente": "HACIENDO LOS DEBERES 1\nESCUCHÁ MALAGUEÑO: COLECTORA\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 2",
+          "link_material": "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link\nhttps://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharing\nhttps://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharin\nhttps://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link",
           "links_material": [
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link",
+            "https://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharing",
             "https://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharin",
-            "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link",
-            "https://drive.google.com/file/d/1AINgJH6dU3-S3NaL5S7QlbzPB1HWm0ed/view?usp=sharing"
+            "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
-          "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
+          "fecha_inicio_racha": "2026-08-31",
+          "fecha_ultima_semana": "2026-08-31",
           "semanas_consecutivas": 1,
           "estado_semana": "CAMBIÓ",
           "fecha_desde": "2026-08-12",
@@ -4409,9 +4425,9 @@
             "https://drive.google.com/file/d/1hgKYJKM98d_1kZe2mQo6LVCTOrMPt7bH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -4441,9 +4457,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -4455,8 +4471,8 @@
             "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4469,9 +4485,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4483,9 +4499,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-08-31"
         }
@@ -4515,11 +4531,11 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
-          "fecha_hasta": "2026-08-30"
+          "fecha_hasta": "2026-09-07"
         },
         {
           "tipo_medio": "RADIO",
@@ -4530,8 +4546,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4544,9 +4560,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -4558,8 +4574,8 @@
             "https://drive.google.com/file/d/1EZ6_nmjeGw5beEEuGBuD6I-6LqJriN-2/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4572,9 +4588,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -4604,8 +4620,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4619,8 +4635,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4633,9 +4649,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -4647,9 +4663,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         }
@@ -4679,8 +4695,8 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-19",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 3,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 4,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4694,8 +4710,8 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-14",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 4,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 5,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
@@ -4708,9 +4724,9 @@
             "https://drive.google.com/file/d/1VRrCIuyHSnozJDBWWK-ZNpL99UlbyWa5/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": null
         },
@@ -4722,8 +4738,8 @@
             "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4736,8 +4752,8 @@
             "https://drive.google.com/file/d/1u2yzEFtkfX9dhTOIj11ETeL7sdHK4tl_/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4750,9 +4766,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4784,9 +4800,9 @@
             "https://drive.google.com/file/d/10ENNmQWozEj7ugOWes9N980l3ai2J4R4/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4801,9 +4817,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -4815,8 +4831,8 @@
             "https://drive.google.com/file/d/1EMkK-FoXYdBpuzMkmN_fx1bCpcDdr4cU/view"
           ],
           "fecha_inicio_racha": "2026-07-17",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 8,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 9,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-07-15",
           "fecha_hasta": "2026-09-01"
@@ -4829,9 +4845,9 @@
             "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4844,8 +4860,8 @@
             "https://drive.google.com/file/d/1X500HnZIhybHuHYWdl2nmWeIjkOGfC0U/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-04",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 6,
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 7,
           "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
@@ -4858,9 +4874,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4890,9 +4906,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -4905,9 +4921,9 @@
             "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4919,9 +4935,9 @@
             "https://drive.google.com/file/d/1gZ_K3C1lxZwNKA-aWsjRouwjKTemJ_h5/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -4952,9 +4968,9 @@
             "https://drive.google.com/file/d/1X-ZW4MV7CXwd_ekpD4_ZNW1w13ZdkbM6/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-07"
         },
@@ -4966,9 +4982,9 @@
             "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -4980,9 +4996,9 @@
             "https://drive.google.com/file/d/1tkOOHZqi0UcqQ0W2ZNGf1RaYWO9nHydk/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "PRIMERA CARGA",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
@@ -5016,9 +5032,9 @@
             "https://drive.google.com/file/d/1QJneA_Zvcp5qjKcbxBgbgRY0A2eJpkIH/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -5035,9 +5051,9 @@
             "https://drive.google.com/file/d/1wBd1tTu8_Ia1vxwyDwLDQ4LmCYdcLrgi/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-09-11"
         },
@@ -5049,9 +5065,9 @@
             "https://drive.google.com/file/d/15mIocANoLWU8ogS8OduAjAYvgDkI2HlD/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": null
         },
@@ -5065,9 +5081,9 @@
             "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -5079,9 +5095,9 @@
             "https://drive.google.com/file/d/1esgNHxTbwByDzAAFw6D55IrYBO-89FA8/view?usp=sharing"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": null,
           "fecha_hasta": null
         },
@@ -5093,9 +5109,9 @@
             "https://drive.google.com/file/d/1TdpGmVWFAh2STqBYUhCxnSHmo4LzqwJc/view?usp=drive_link"
           ],
           "fecha_inicio_racha": "2026-08-27",
-          "fecha_ultima_semana": "2026-08-27",
-          "semanas_consecutivas": 1,
-          "estado_semana": "CAMBIÓ",
+          "fecha_ultima_semana": "2026-08-31",
+          "semanas_consecutivas": 2,
+          "estado_semana": "MISMO TEMA",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-09-07"
         }
