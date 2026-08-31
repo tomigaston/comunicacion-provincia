@@ -11953,9 +11953,947 @@
       "localidades": [
         "CRUZ DEL EJE"
       ]
+    },
+    {
+      "fecha": "2026-08-24",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | REFUERZO AGUA POTABLE SALDÁN",
+      "link": "https://www.instagram.com/p/Dccl6uClSPH/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": "Saldán",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL/GNO - Modelo Educativo",
+      "link": "https://www.instagram.com/reel/DcdxJvhxEgy/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL/GNO - Modelo Educativo",
+      "link": "https://www.facebook.com/gobdecordoba/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA - Modelo Educativo",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Llaryora recibió a las nuevas autoridades de la UIC",
+      "link": "https://www.instagram.com/p/DceXZzklEzD/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Llaryora recibió a las nuevas autoridades de la UIC",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02MN5yhiacC6f1oEUNswsqkYHbcjoWYjajKu5mcb5UbSUZUwZshfvqH8mdkDyDJCul",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Testimonios Empleo +26",
+      "link": "https://vt.tiktok.com/ZSVXwcTcw/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "HISTORIA - Reunión con la UIC",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "HISTORIA - Recorrido Dpto Punilla",
+      "link": null,
+      "lugar_raw": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA CARLOS PAZ",
+        "SANTA MARIA DE PUNILLA"
+      ]
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "HISTORIA - Inicio UPC Carlos Paz",
+      "link": null,
+      "lugar_raw": "Carlos Paz",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA CARLOS PAZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Gira Dpto Unión",
+      "link": "https://www.instagram.com/p/DcexuXxo0v9/",
+      "lugar_raw": "Colonia Bismark, Colonia Bremen, Benjamín Gould, Viamonte, Pueblo Italiano",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Gira Dpto Unión",
+      "link": "https://www.facebook.com/reel/936920175469605",
+      "lugar_raw": "Colonia Bismark, Colonia Bremen, Benjamín Gould, Viamonte, Pueblo Italiano",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-25",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Superávit para el desarrollo",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Preinscripciones escolares 2027",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0RiSigskMVfMBC36MAf2nK4495UWiwme6uLt3cAvMF4QpcTcjQC1JvyUTSuQrqUcMl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Preinscripciones escolares 2027",
+      "link": "https://www.instagram.com/p/DcgPouzkefG/?utm_source=ig_web_copy_link&igsi=NTc4MTIwNjQ2YQ==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Gira Dpto Unión",
+      "link": "https://www.facebook.com/reel/953202044469211",
+      "lugar_raw": "Colonia Bismark, Colonia Bremen, Benjamín Gould, Viamonte, Pueblo Italiano",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Centro de Salud Municipal de Río Cuarto",
+      "link": "https://www.instagram.com/p/DchDj0HqrDD/",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Mes del Vecinalismo: el gobernador Martín Llaryora, junto al intendente Daniel Passerini, encabezó el encuentro “Somos Barrio – Vecinalismo que transforma",
+      "link": "https://www.facebook.com/reel/1066447709455422",
+      "lugar_raw": "Cíudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Gira Dpto Unión",
+      "link": "https://vt.tiktok.com/ZSVq9jsVf/",
+      "lugar_raw": "Colonia Bismark, Colonia Bremen, Benjamín Gould, Viamonte, Pueblo Italiano",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TikTOK MLL- Programa Cimientos",
+      "link": "https://vt.tiktok.com/ZSVqGSpq8/",
+      "lugar_raw": "Cíudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "UPC Carlos Paz",
+      "link": "https://www.facebook.com/reel/1726733705044328",
+      "lugar_raw": "Carlos Paz",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA CARLOS PAZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "UPC Carlos Paz",
+      "link": "https://www.instagram.com/reel/DchZ0rHooIy/?igsi=amFqZmhkbWNwMHB6",
+      "lugar_raw": "Carlos Paz",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA CARLOS PAZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "UPC Carlos Paz",
+      "link": "https://www.facebook.com/reel/1718022892588339",
+      "lugar_raw": "Carlos Paz",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA CARLOS PAZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-26",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "Programa “Alivio Cordobés”",
+      "link": "https://lnkd.in/p/eYuf92KB",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO Nuevos módulos Hospital Misericordia",
+      "link": "https://www.instagram.com/reel/DcixkgbRCje/?utm_source=ig_web_copy_link&igsi=NTc4MTIwNjQ2YQ==",
+      "lugar_raw": "Cíudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Nuevos módulos Hospital Misericordia",
+      "link": "https://www.facebook.com/reel/1845761243059035",
+      "lugar_raw": "Cíudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL saneamiento Cruz del Eje",
+      "link": "https://www.facebook.com/reel/1272678088216570",
+      "lugar_raw": "Cruz del Eje",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Centro de Idiomas CBA Nivel 1 UPC",
+      "link": "https://lnkd.in/p/eS4aa54M",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO | Reel Obra agua potable Depto. Colón",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Centro de Salud Municipal de Río Cuarto",
+      "link": "https://www.facebook.com/reel/2429823630829487",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO Nuevos módulos Hospital Misericordia",
+      "link": null,
+      "lugar_raw": "Cíudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Reel Obra agua potable Depto. Colón",
+      "link": "https://www.instagram.com/reel/DcjysiSvRRs/?igsi=OTY3aGt6NjZjYnZh",
+      "lugar_raw": "Sierras Chicas",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel recorido Punilla",
+      "link": "https://www.instagram.com/p/DckCKT-lXZZ/?img_index=1",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel recorido Punilla",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid0kdnfykc1Rzov1v1m19qUA6vZcMJJFmQbGS4UBYvFarLfAB4EC3duUrL64o5XiWKnl",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Foto + link a Reel Obra agua potable Depto. Colón",
+      "link": null,
+      "lugar_raw": "Sierras Chicas",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "IG GOB. Cordobeses en Alerta. Gracias, policías.",
+      "link": "https://vt.tiktok.com/ZSVp9UDwf/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-27",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Mercado Libre eligió Córdoba. Con portada",
+      "link": "https://vt.tiktok.com/ZSVpHuokQ/",
+      "lugar_raw": "Estación Juárez Celman",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ESTACION JUAREZ CELMAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia GOB. Más y mejor agua portable en Chuña. Testimonios docentes",
+      "link": null,
+      "lugar_raw": "Chuña",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GOB. Más y mejor agua portable en Chuña. Testimonios docentes. Con portada",
+      "link": "https://www.instagram.com/reel/DclgwFCxg__/?igsi=MXV5djJrcmdweDNsMQ==",
+      "lugar_raw": "Chuña",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GOB. Más y mejor agua portable en Chuña. Testimonios docentes. Con portada",
+      "link": "https://www.facebook.com/reel/1580367406803487",
+      "lugar_raw": "Chuña",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL. Agua Potable en Chuña. Testimonios de docentes. Con portada",
+      "link": "https://www.facebook.com/reel/1303495695039384",
+      "lugar_raw": "Chuña",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO - Pavimentación Saldán - Córdoba",
+      "link": "https://www.instagram.com/p/DcmNvr5vXbY/",
+      "lugar_raw": "Saldán, Área Metropolitana",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "HISTORIA GNO - Pavimentación Saldán - Córdoba",
+      "link": null,
+      "lugar_raw": "Saldán, Área Metropolitana",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO - Pavimentación Saldán - Córdoba",
+      "link": "https://www.facebook.com/reel/1015421648199570",
+      "lugar_raw": "Saldán, Área Metropolitana",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL - Pavimentación Saldán - Córdoba",
+      "link": "https://www.facebook.com/reel/1296803739069947",
+      "lugar_raw": "Saldán, Área Metropolitana",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO/MLL - Gira por el Noroeste",
+      "link": "https://www.instagram.com/p/Dcmn3I6NAV3/",
+      "lugar_raw": "Cruz del Eje, Chuña, Deán Funes",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE",
+        "DEAN FUNES"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO/MLL - Gira por el Noroeste",
+      "link": "https://www.facebook.com/reel/1569579367819356",
+      "lugar_raw": "Cruz del Eje, Chuña, Deán Funes",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE",
+        "DEAN FUNES"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO/MLL - Gira por el Noroeste",
+      "link": "https://www.facebook.com/watch/?v=2199773207639607",
+      "lugar_raw": "Cruz del Eje, Chuña, Deán Funes",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE",
+        "DEAN FUNES"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel refuerzo económico adicional para espacios culturales",
+      "link": "https://www.instagram.com/p/DcmqlFJFalc/?img_index=8&igsi=MXBzNjkyNzNnOW1pZQ==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Nueva escuela técnica Estación Juárez Celman. Con 2 opciones de portada",
+      "link": "https://vt.tiktok.com/ZSVtYMVXt/",
+      "lugar_raw": "Estación Juárez Celman",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ESTACION JUAREZ CELMAN"
+      ]
+    },
+    {
+      "fecha": "2026-08-28",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIK TOK GNO - Almafuerte, obra de saneamiento",
+      "link": "https://vt.tiktok.com/ZSVt2ctgN/",
+      "lugar_raw": "Almafuerte",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Más de 31 mil familias cordobesas ya obtuvieron la escritura gratuita de su vivienda",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Más de 31 mil familias cordobesas ya obtuvieron la escritura gratuita de su vivienda",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Más de 31 mil familias cordobesas ya obtuvieron la escritura gratuita de su vivienda",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Más de 31 mil familias cordobesas ya obtuvieron la escritura gratuita de su vivienda",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK MLL | Mes del Vecinalismo: el gobernador Martín Llaryora, junto al intendente Daniel Passerini, encabezó el encuentro “Somos Barrio – Vecinalismo que transforma",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-29",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "CAMINO DE BROCHERO",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": "IG GOBIERNO, FB GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "IG + FB La tierra habla. Día Internacional de las Víctimas de Desapariciones Forzadas. (spot del Equipo de Antropología forense)",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | ACTUALIZACIÓN DE PACHA Y TABA (ÚLTIMA VERSIÓN",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | ACTUALIZACIÓN DE PACHA Y TABA (ÚLTIMA VERSIÓN",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. El Papa visitará Córdoba. Con portada",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "AgroImperio: https://drive.google.com/drive/folders/1LtGB9YA4_bwWr2YX9ayIg6mW5e_F9WZL?usp=sharing",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "carrusel familiar desaparecidos! para hacer colab.",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
     }
   ],
-  "no_identificados": [],
+  "no_identificados": [
+    {
+      "fila": 900,
+      "token": "Villa Giardino",
+      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
+      "fecha": "2026-08-25"
+    },
+    {
+      "fila": 900,
+      "token": "Valle Hermoso",
+      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
+      "fecha": "2026-08-25"
+    },
+    {
+      "fila": 900,
+      "token": "Casa Grande",
+      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
+      "fecha": "2026-08-25"
+    },
+    {
+      "fila": 923,
+      "token": "Sierras Chicas",
+      "lugar_original": "Sierras Chicas",
+      "fecha": "2026-08-27"
+    },
+    {
+      "fila": 926,
+      "token": "Sierras Chicas",
+      "lugar_original": "Sierras Chicas",
+      "fecha": "2026-08-27"
+    },
+    {
+      "fila": 933,
+      "token": "Área Metropolitana",
+      "lugar_original": "Saldán, Área Metropolitana",
+      "fecha": "2026-08-28"
+    },
+    {
+      "fila": 934,
+      "token": "Área Metropolitana",
+      "lugar_original": "Saldán, Área Metropolitana",
+      "fecha": "2026-08-28"
+    },
+    {
+      "fila": 935,
+      "token": "Área Metropolitana",
+      "lugar_original": "Saldán, Área Metropolitana",
+      "fecha": "2026-08-28"
+    },
+    {
+      "fila": 936,
+      "token": "Área Metropolitana",
+      "lugar_original": "Saldán, Área Metropolitana",
+      "fecha": "2026-08-28"
+    }
+  ],
   "fuzzy_aplicados": [],
   "lugares_con_link_excluidos": [
     {
@@ -11971,7 +12909,22 @@
       "fila": 701,
       "fecha": "2026-08-05",
       "nombre_contenido": "Colab de Cordobeses en alerta"
+    },
+    {
+      "fila": 949,
+      "fecha": "2026-08-29",
+      "nombre_contenido": "CAMINO DE BROCHERO"
+    },
+    {
+      "fila": 964,
+      "fecha": "2026-08-31",
+      "nombre_contenido": "AgroImperio: https://drive.google.com/drive/folders/1LtGB9YA4_bwWr2YX9ayIg6mW5e_F9WZL?usp=sharing"
+    },
+    {
+      "fila": 983,
+      "fecha": "2026-09-02",
+      "nombre_contenido": "carrusel familiar desaparecidos! para hacer colab."
     }
   ],
-  "filas_descartadas_vacias": 19
+  "filas_descartadas_vacias": 43
 }
