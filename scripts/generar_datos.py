@@ -799,7 +799,12 @@ def cargar_pauta_digital_global(
                 "frecuencia_ejecutada_meta": limpio(row["Frecuencia (Meta) Ejecutada"]),
                 "cpm_planificada_meta": limpio(row["CPM Planificada META"]),
                 "cpm_real_meta": limpio(row["CPM Real META"]),
-                "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas GOOGLE"]),
+                # La columna se llamaba "Visualizaciones Planificadas GOOGLE"; el
+                # export del 31/08/2026 la renombró a "Visualizaciones Planificadas "
+                # (perdió el sufijo GOOGLE, quedó con espacio final) al sumar nuevas
+                # columnas de métricas de Google (Impresiones/CPM/Vistas GOOGLE, etc.)
+                # que todavía no se mapean a ningún campo del JSON -- ver prompt del 31/08.
+                "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas "]),
                 "visualizaciones_ejecutadas_google": limpio(row["Visualizaciones Ejecutadas GOOGLE"]),
                 "cpv_planificada_google": limpio(row["CPV Planificada GOOGLE"]),
                 "cpv_real_google": limpio(row["CPV Real GOOGLE"]),
