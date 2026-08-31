@@ -196,6 +196,22 @@ def caso_excepcion_excluir_no_intenta_fuzzy():
     )
 
 
+def caso_excluir_no_intenta_fuzzy_regresion_31_08():
+    # Regresión real detectada el 31/08/2026 con el export del 20/08/2026:
+    # 9 tokens más (VILLA DE SOTO, SINSACATE, ANISACATE, VILLA LA BOLSA,
+    # COLONIA TIROLESA, VILLA VALERIA, GENERAL ROCA, VILLA DEL PRADO, VILLA
+    # ELISA) + LA CESIRA -que ya venía sin resolver de una corrida anterior-
+    # fuzzy-matcheaban contra otra de las 60 sin ninguna relación geográfica
+    # real (ej. SINSACATE -> SALSACATE, depto. distinto). Mismo patrón que
+    # LOS GIGANTES -> "excluir" hardcodeado evita el fuzzy de raíz. Se prueba
+    # solo uno (SINSACATE) como representante del lote; los demás quedan
+    # cubiertos por la misma rama de código.
+    fuzzy_log = []
+    r = g._resolver_token_audiencia("Sinsacate", MAPAS, fuzzy_log, [])
+    check("SINSACATE -> lista vacía, sin alcance (no es una de las 60)", r == [], r)
+    check("no dispara fuzzy contra SALSACATE ni ninguna otra", len(fuzzy_log) == 0, fuzzy_log)
+
+
 def caso_fuzzy_puro_sin_excepcion():
     r = resolver("RIO CUARTOO")  # typo leve, sin excepción hardcodeada
     check(
@@ -259,6 +275,7 @@ def main():
         caso_excepcion_con_fuzzy_fallback,
         caso_excepcion_sin_resolver_se_loguea,
         caso_excepcion_excluir_no_intenta_fuzzy,
+        caso_excluir_no_intenta_fuzzy_regresion_31_08,
         caso_fuzzy_puro_sin_excepcion,
         caso_no_identificado,
         caso_token_confirmado_sin_lugar_no_se_lista,
@@ -276,7 +293,7 @@ def main():
             print(f"  - {f}")
         return 1
 
-    print("OK — los 14 casos de regresión de matching de SMS pasan.")
+    print("OK — los 15 casos de regresión de matching de SMS pasan.")
     return 0
 
 

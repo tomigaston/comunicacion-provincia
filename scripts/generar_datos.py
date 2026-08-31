@@ -928,6 +928,22 @@ _EXCEPCIONES_AUDIENCIA_SMS_RAW = {
     "ARROYO LOS PATOS": [("excluir", None)],  # ARROYO DE LOS PATOS no es una de las 60
     "HUANCHILA": [("excluir", None)],  # HUANCHILLA no es una de las 60
     "HIGUERAS": [("excluir", None)],  # LAS HIGUERAS no es una de las 60
+    # Confirmadas a mano el 31/08/2026 a partir de fuzzy_aplicados de la
+    # corrida con el export del 20/08/2026 -> ninguna es una de las 60 (el
+    # usuario verificó geografía real de cada una), el fuzzy (cutoff 0.7) las
+    # estaba confundiendo con otra localidad real pero sin relación. LA
+    # CESIRA ya venía de una corrida anterior sin resolver; se confirma acá
+    # también.
+    "LA CESIRA": [("excluir", None)],  # fuzzy-matcheaba a LA CALERA, sin relación real
+    "VILLA VALERIA": [("excluir", None)],  # depto. General Roca, a 420km de Cba capital; fuzzy-matcheaba a VILLA MARIA
+    "GENERAL ROCA": [("excluir", None)],  # depto. Marcos Juárez; fuzzy-matcheaba a GENERAL CABRERA
+    "VILLA DE SOTO": [("excluir", None)],  # depto. Cruz del Eje, no es una de las 60; fuzzy-matcheaba a VILLA DEL TOTORAL
+    "VILLA DEL PRADO": [("excluir", None)],  # depto. Santa María, cerca de Alta Gracia; fuzzy-matcheaba a VILLA DEL TOTORAL
+    "ANISACATE": [("excluir", None)],  # depto. Santa María; fuzzy-matcheaba a SALSACATE (depto. Pocho)
+    "VILLA LA BOLSA": [("excluir", None)],  # depto. Santa María; fuzzy-matcheaba a VILLA DEL ROSARIO (depto. Río Segundo)
+    "COLONIA TIROLESA": [("excluir", None)],  # localidad real distinta, vecina de Colonia Caroya; fuzzy-matcheaba a COLONIA CAROYA
+    "SINSACATE": [("excluir", None)],  # depto. Totoral; fuzzy-matcheaba a SALSACATE (depto. Pocho)
+    "VILLA ELISA": [("excluir", None)],  # sin relación real; fuzzy-matcheaba a VILLA NUEVA
 }
 # Normalizado una sola vez al importar el módulo (evita tener que escribir a
 # mano la forma normalizada -sin tildes/°/mayúscula- de cada clave arriba).
@@ -939,14 +955,15 @@ EXCEPCIONES_AUDIENCIA_SMS = {normalizar(k): v for k, v in _EXCEPCIONES_AUDIENCIA
 # -> sin alcance, la fila no aporta nada geográfico). Esta lista NO agrega
 # ninguna resolución nueva: solo sirve para FILTRAR el log de
 # no_identificados. Sin este filtro, como el export es un acumulado completo
-# (se reprocesa entero en cada corrida), estos mismos 56 tokens reaparecerían
+# (se reprocesa entero en cada corrida), estos mismos 57 tokens reaparecerían
 # siempre mezclados con lo que sea genuinamente nuevo, y el log perdería
 # utilidad para saber qué hace falta clasificar de verdad.
 #
 # Una parte son segmentos de AUDIENCIA no geográficos (bases de datos,
 # archivos .xlsx colados, rangos etarios, "X interior"); el resto son
 # localidades reales de la provincia que no están entre las 60 (confirmado
-# contra Localidades_1.xlsx, ninguna aparece ahí). 56 tokens en total.
+# contra Localidades_1.xlsx, ninguna aparece ahí). 57 tokens en total (56
+# confirmados el 22/08/2026 + CHUÑA sumada el 31/08/2026).
 _TOKENS_CONFIRMADOS_SIN_LUGAR_SMS_RAW = [
     # No geográficos
     "18-40", "2. AGENTES PROVINCIA.xlsx", "4. PENITENCIARIOS PROVINCIA.xlsx",
@@ -965,6 +982,7 @@ _TOKENS_CONFIRMADOS_SIN_LUGAR_SMS_RAW = [
     "RANQUELES", "SALADILLO", "SAN JAVIER Y YACANTO", "SAN JOSE DE LA DORMIDA",
     "SAN LORENZO", "TALA CAÑADA", "TANTI", "TICINO", "TINOCO", "UCACHA",
     "VILLA PARQUE SANTA ANA",
+    "CHUÑA",  # depto. Ischilín, confirmado 31/08/2026 -> no es una de las 60
 ]
 TOKENS_CONFIRMADOS_SIN_LUGAR_SMS = {normalizar(t) for t in _TOKENS_CONFIRMADOS_SIN_LUGAR_SMS_RAW}
 
@@ -1183,7 +1201,7 @@ def cargar_sms(localidad_a_oficial, localidad_a_departamento_oficial):
                         # cambia). Si ya fue revisado y confirmado a mano
                         # (TOKENS_CONFIRMADOS_SIN_LUGAR_SMS), no se vuelve a
                         # listar en no_identificados -> evita que estos mismos
-                        # 56 tokens reaparezcan cada corrida (el export es
+                        # 57 tokens reaparezcan cada corrida (el export es
                         # acumulado completo) tapando lo genuinamente nuevo.
                         if not _token_confirmado_sin_lugar(token):
                             no_identificados.append({
