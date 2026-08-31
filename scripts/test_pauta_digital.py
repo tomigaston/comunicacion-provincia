@@ -259,19 +259,33 @@ def caso_7_todas_las_localidades_con_departamento_se_expande(localidades, claves
             fallar(caso, f"localidad_asignada ({a['localidad_asignada']!r}) debería ser igual a localidad ({a['localidad']!r})")
 
 
-def caso_8_todas_las_localidades_provincia_entera_no_se_expande(localidades, claves_60):
+def caso_8_todas_las_localidades_provincia_entera_se_expande_a_las_60(localidades, claves_60):
     """"TODAS LAS LOCALIDADES" SIN Departamento puntual (DEPARTAMENTO =
-    "PROVINCIA DE CÓRDOBA, ARGENTINA") sigue siendo ámbito provincia, sin
-    cambios — no debe expandirse."""
-    caso = "CASO 8 - TODAS LAS LOCALIDADES, provincia entera (sin cambios)"
-    (localidad_a_oficial, _, _, departamento_a_localidades_normalizadas) = _mapas_oficiales(localidades)
+    "PROVINCIA DE CÓRDOBA, ARGENTINA") debe expandirse a las 60 localidades
+    prioritarias completas -mismo patrón que CASO 7, pero sin acotar a un
+    Departamento- con localidad_asignada seteada explícitamente y las
+    métricas completas replicadas en cada una (sin prorratear)."""
+    caso = "CASO 8 - TODAS LAS LOCALIDADES, provincia entera -> se expande a las 60"
+    (localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
+     departamento_a_localidades_normalizadas) = _mapas_oficiales(localidades)
     n60 = set(localidad_a_oficial.keys())
 
     geo = g.clasificar_geografia_pauta_global(
         "PROVINCIA DE CÓRDOBA, ARGENTINA", "TODAS LAS LOCALIDADES", n60, departamento_a_localidades_normalizadas
     )
-    if geo["ambito"] != "provincia":
-        fallar(caso, f"esperaba ambito=provincia, salió {geo['ambito']!r}")
+    if geo["ambito"] != "localidad_multiple":
+        fallar(caso, f"esperaba ambito=localidad_multiple, salió {geo['ambito']!r}")
+        return
+    if set(geo["localidades"]) != n60:
+        fallar(caso, "esperaba las 60 localidades completas en geo['localidades'], salió otro conjunto")
+    asignaciones = g._asignaciones_geograficas(
+        geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
+    )
+    if len(asignaciones) != len(n60):
+        fallar(caso, f"esperaba {len(n60)} asignaciones (una por Localidad de las 60), salió {len(asignaciones)}")
+    for a in asignaciones:
+        if a["localidad_asignada"] != a["localidad"]:
+            fallar(caso, f"localidad_asignada ({a['localidad_asignada']!r}) debería ser igual a localidad ({a['localidad']!r})")
 
 
 def caso_9_dedup_por_cod_contenido_corre_despues_de_expandir(localidades, claves_60):
@@ -348,7 +362,7 @@ def main():
 
     for caso in (
         caso_7_todas_las_localidades_con_departamento_se_expande,
-        caso_8_todas_las_localidades_provincia_entera_no_se_expande,
+        caso_8_todas_las_localidades_provincia_entera_se_expande_a_las_60,
         caso_9_dedup_por_cod_contenido_corre_despues_de_expandir,
     ):
         try:

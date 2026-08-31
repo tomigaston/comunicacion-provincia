@@ -483,8 +483,11 @@ def clasificar_geografia_pauta_global(
        que expandir, cae al mismo fallback que el punto 4 (ámbito
        departamento, sin crear Localidad nueva).
        "TODAS LAS LOCALIDADES" SIN un Departamento puntual (DEPARTAMENTO =
-       "PROVINCIA DE CÓRDOBA, ARGENTINA", la provincia entera) -> sigue
-       siendo ámbito provincia, sin cambios.
+       "PROVINCIA DE CÓRDOBA, ARGENTINA", la provincia entera) -> mismo
+       patrón que el caso anterior pero con las 60 localidades completas
+       (no hay un Departamento puntual contra el cual acotar): también
+       ámbito "localidad_multiple", con las métricas completas replicadas
+       en las 60, sin prorratear.
     4) "X, DEPARTAMENTO, PROVINCIA..." -> candidata = texto antes de la
        primera coma; si matchea una de las 60 -> ámbito localidad; si no
        -> fallback a ámbito departamento (NO se crea localidad nueva; sirve
@@ -518,7 +521,10 @@ def clasificar_geografia_pauta_global(
                     "localidades": localidades_del_depto, "departamento": None,
                 }
             return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
-        return {"excluida": False, "ambito": "provincia", "localidad": None, "departamento": None}
+        return {
+            "excluida": False, "ambito": "localidad_multiple",
+            "localidades": sorted(localidades_60_normalizadas), "departamento": None,
+        }
 
     if loc_str:
         candidata = loc_str.split(",")[0].strip()
