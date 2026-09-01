@@ -65,6 +65,31 @@ def estado_por_fecha(fecha_fin):
     return "Vigente" if ts.date() >= HOY else "Finalizada"
 
 
+def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
+    """🟢/🟡/🔴 según antigüedad en días contra los umbrales de Parametros
+    (30/50, confirmados por el gobernador el 31/08/2026). None si no hay
+    antigüedad calculable -- no se inventa un verde por default."""
+    if antiguedad_dias is None or umbral_amarilla is None or umbral_roja is None:
+        return None
+    if antiguedad_dias > umbral_roja:
+        return "🔴"
+    if antiguedad_dias > umbral_amarilla:
+        return "🟡"
+    return "🟢"
+
+
+def antiguedad_y_alerta_pauta_digital(estado, inicio_ts, umbral_amarilla, umbral_roja):
+    """Pauta Digital no trae Antiguedad_Dias/Alerta precalculados (a diferencia
+    de Medios Tradicionales) -- se calculan acá al vuelo, solo para piezas
+    Vigentes, con los mismos umbrales de Parametros. inicio_ts ya viene resuelto
+    por el caller con el mismo criterio de fallback que FIN/FIN INFORMADO
+    (Inicio real si está cargado, si no Inicio del informe)."""
+    if estado != "Vigente" or inicio_ts is None:
+        return None, None
+    antiguedad_dias = (HOY - inicio_ts.date()).days
+    return antiguedad_dias, calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja)
+
+
 def lista_links(v):
     """Las celdas de links traen varios links separados por salto de línea (uno por
     cada tema/campaña de la fila). Antes solo se guardaba el string crudo completo
@@ -151,31 +176,67 @@ def cargar_medios_tradicionales():
     historico_df = pd.read_excel(xls, sheet_name="Historico")
     parametros_df = pd.read_excel(xls, sheet_name="Parametros", header=None)
 
+    # Umbrales de Parametros primero (se necesitan más abajo para leer Alerta
+    # tal cual viene, y los reutiliza también Pauta Digital vía main()). Desde
+    # el 31/08/2026 la hoja pasó de semanas a días (30/50, confirmados por el
+    # gobernador el 31/08/2026) -- formato libre igual que antes (label en
+    # columna 1, valor en columna 3).
+    umbral_amarilla = umbral_roja = None
+    for _, row in parametros_df.iterrows():
+        etiqueta = str(row[1]) if not pd.isna(row[1]) else ""
+        valor = row[3]
+        if not pd.isna(valor) and float(valor).is_integer():
+            valor = int(valor)
+        if "🟡" in etiqueta or "amarill" in etiqueta.lower():
+            umbral_amarilla = limpio(valor)
+        elif "🔴" in etiqueta or "rojo" in etiqueta.lower() or "roj" in etiqueta.lower():
+            umbral_roja = limpio(valor)
+
+    # Maestro_Vigente cambió de esquema el 31/08/2026: de "una fila por
+    # Localidad+Tipo de medio con racha semanal agregada" a "una fila por
+    # tema vigente", con Estado/Fecha_Desde/Fecha_Hasta/Antiguedad_Dias/Alerta
+    # ya calculados en la planilla -- acá solo se lee y se expone, no se
+    # recalcula nada (spec Alertas de vencimiento + Semáforo, 01/09/2026).
+    # REDES se descarta: no es un tipo de medio válido de esta área, es dato
+    # de Pauta Digital colado por error en la planilla.
     vigentes_por_localidad = {}
     for _, row in vigente_df.iterrows():
+        tipo_medio = limpio(row["Tipo_Medio"])
+        if tipo_medio == "REDES":
+            continue
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
+        # .strip() acá (no en limpio(), que es genérico para todo el pipeline):
+        # la fuente puede traer variantes del mismo tema con \n/espacios finales
+        # que si no se normalizan se muestran como si fueran temas distintos.
+        # No es un problema hoy en Medios tradicionales.xlsx (verificado: 0 de
+        # 895 filas con padding), pero blinda contra la próxima carga.
+        tema = limpio(row["Tema"])
+        if tema is not None:
+            tema = tema.strip()
         vigentes_por_localidad.setdefault(clave, []).append({
-            "tipo_medio": limpio(row["Tipo_Medio"]),
-            "tema_vigente": limpio(row["Tema_Vigente"]),
+            "tipo_medio": tipo_medio,
+            "tema": tema,
             "link_material": limpio(row["Link_Material"]),  # string crudo, se mantiene por compatibilidad
             "links_material": lista_links(row["Link_Material"]),  # lista lista para listar en el front
-            "fecha_inicio_racha": fecha_iso(row["Fecha_Inicio_Racha"]),
-            "fecha_ultima_semana": fecha_iso(row["Fecha_Ultima_Semana"]),
-            "semanas_consecutivas": limpio(row["Semanas_Consecutivas"]),
-            "estado_semana": limpio(row["Estado_Semana"]),
-            # Vigencia real de la campaña (distinto de fecha_inicio_racha/fecha_ultima_semana,
-            # que son del tracking semanal de "mismo tema"). Columnas nuevas al final de
-            # Maestro_Vigente desde el 31/08/2026 -- todavía null en la mayoría de las filas
-            # (recién se empezaron a cargar esta semana), no se inventa nada acá.
+            "estado": limpio(row["Estado"]),  # Activo / Inactivo
             "fecha_desde": fecha_iso(row["Fecha_Desde"]),
             "fecha_hasta": fecha_iso(row["Fecha_Hasta"]),
+            # Ya calculados en la planilla contra los umbrales de Parametros
+            # (30/50 días) -- Cartelería/Gráfica y parte de Vía Pública
+            # todavía no tienen Fecha_Desde cargada en la fuente, así que
+            # vienen en None (no se inventa un verde por default).
+            "antiguedad_dias": limpio(row["Antiguedad_Dias"]),
+            "alerta": limpio(row["Alerta"]),
         })
 
     localidades = []
     for _, row in cobertura_df.iterrows():
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
-        total_tipos = int(row["Total_Tipos"])
+        # Total_Tipos/Diagnóstico de la fila cuentan REDES (bug de la planilla,
+        # ver nota de arriba) -- se recalculan acá a partir de los 7 tipos
+        # válidos en vez de confiar en esas dos columnas.
         cobertura = {clave_json: int(row[col_original]) for col_original, clave_json in COBERTURA_COLS.items()}
+        total_tipos = sum(cobertura.values())
         localidades.append({
             "departamento": str(row["Departamento"]).strip(),
             "localidad": str(row["Localidad"]).strip(),
@@ -209,22 +270,14 @@ def cargar_medios_tradicionales():
 
     semanas_cargadas = sorted({fecha_iso(f) for f in historico_df["Fecha_Snapshot"].dropna().unique()})
 
-    # Umbrales de Parametros: la hoja es de formato libre (label en columna 1, valor en columna 3).
-    umbral_amarilla = umbral_roja = None
-    for _, row in parametros_df.iterrows():
-        etiqueta = str(row[1]) if not pd.isna(row[1]) else ""
-        valor = row[3]
-        if not pd.isna(valor) and float(valor).is_integer():
-            valor = int(valor)
-        if "🟡" in etiqueta or "amarill" in etiqueta.lower():
-            umbral_amarilla = limpio(valor)
-        elif "🔴" in etiqueta or "rojo" in etiqueta.lower() or "roj" in etiqueta.lower():
-            umbral_roja = limpio(valor)
-
     medios_tradicionales = {
         "semanas_cargadas": semanas_cargadas,
-        "umbral_alerta_amarilla_semanas": umbral_amarilla,
-        "umbral_alerta_roja_semanas": umbral_roja,
+        # Umbrales calculados arriba (se necesitan antes, para descartar REDES
+        # no depende de esto, pero Pauta Digital sí los reutiliza vía main()).
+        # Desde el 31/08/2026 son días, no semanas (dato ya viene en días
+        # reales -- ver calcular_alerta()).
+        "umbral_alerta_amarilla_dias": umbral_amarilla,
+        "umbral_alerta_roja_dias": umbral_roja,
         "localidades": localidades,
     }
     movimientos_semana = {
@@ -392,7 +445,7 @@ def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
     return en_60, ALCANCE_A_TIPO.get(alcance_detectado)
 
 
-def cargar_pauta_digital_historico(claves_60):
+def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=None):
     """Fuente vieja (Meta Ads, Ene-Jul). Esquema propio, se mantiene tal cual
     —no se lo fuerza al esquema nuevo— para todo lo anterior al corte."""
     df = pd.read_excel(CONTEXTO / "Medios Digitales.xlsx", sheet_name="Pauta Digital Curada")
@@ -407,6 +460,12 @@ def cargar_pauta_digital_historico(claves_60):
         depto = limpio(row["Departamento"])
         loc = limpio(row["Localidad"])
         en_60, alcance_tipo = clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60)
+        estado = estado_por_fecha(row["Finalización"])
+        # Sin columna "Inicio" propia en esta fuente vieja -- se usa Inicio del
+        # informe como base de antigüedad (ver antiguedad_y_alerta_pauta_digital).
+        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
+            estado, _a_timestamp(row["Inicio del informe"]), umbral_amarilla, umbral_roja
+        )
 
         piezas.append({
             "fuente": "historico",
@@ -426,7 +485,9 @@ def cargar_pauta_digital_historico(claves_60):
             "fin_informe": fecha_iso(row["Fin del informe"]),
             "fecha_creacion": fecha_iso(row["Fecha de creación"]),
             "finalizacion": finalizacion,
-            "estado": estado_por_fecha(row["Finalización"]),
+            "estado": estado,
+            "antiguedad_dias": antiguedad_dias,
+            "alerta": alerta,
             "alcance": limpio(row["Alcance"]),
             "frecuencia": limpio(row["Frecuencia"]),
             "impresiones": limpio(row["Impresiones"]),
@@ -654,7 +715,8 @@ def _dedup_pauta_global_por_cod_contenido(piezas):
 
 
 def cargar_pauta_digital_global(
-    localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas
+    localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas,
+    umbral_amarilla=None, umbral_roja=None,
 ):
     """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
     (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
@@ -745,6 +807,10 @@ def cargar_pauta_digital_global(
         fin_ts = _a_timestamp(row["FIN"])
         if fin_ts is None:
             fin_ts = _a_timestamp(row["FIN INFORMADO"])
+        estado_pieza = "Pendiente" if es_pendiente else estado_por_fecha(fin_ts)
+        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
+            estado_pieza, _a_timestamp(row["INICIO "]), umbral_amarilla, umbral_roja
+        )
 
         for asignacion in asignaciones:
             piezas.append({
@@ -791,7 +857,9 @@ def cargar_pauta_digital_global(
                 # (podrían traer una fecha comprometida que todavía no pasó
                 # nada) ni entra en los cálculos de vigencia/finalización del
                 # resto del pipeline -- construir_campanas() las excluye.
-                "estado": "Pendiente" if es_pendiente else estado_por_fecha(fin_ts),
+                "estado": estado_pieza,
+                "antiguedad_dias": antiguedad_dias,
+                "alerta": alerta,
                 "alcance": None,
                 "frecuencia": None,
                 "impresiones": None,
@@ -1480,14 +1548,17 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
         for v in loc["vigentes"]:
             items.append({
                 "area_origen": "Medios tradicionales",
-                "campana": v["tema_vigente"],
+                "campana": v["tema"],
                 "alcance_tipo": "localidad",
                 "departamento": loc["departamento"],
                 "localidad": loc["localidad"],
                 "detalle": {
                     "tipo_medio": v["tipo_medio"],
-                    "semanas_consecutivas": v["semanas_consecutivas"],
-                    "estado_semana": v["estado_semana"],
+                    "estado": v["estado"],
+                    "fecha_desde": v["fecha_desde"],
+                    "fecha_hasta": v["fecha_hasta"],
+                    "antiguedad_dias": v["antiguedad_dias"],
+                    "alerta": v["alerta"],
                     "link_material": v["link_material"],
                     "links_material": v["links_material"],
                 },
@@ -1605,10 +1676,13 @@ def main():
             piezas_anteriores = json.load(f)["piezas"]
         codigos_previos = {p["cod_contenido"] for p in piezas_anteriores if p.get("cod_contenido") is not None}
 
-    piezas_historico = cargar_pauta_digital_historico(claves_60)
+    umbral_amarilla_dias = medios_tradicionales["umbral_alerta_amarilla_dias"]
+    umbral_roja_dias = medios_tradicionales["umbral_alerta_roja_dias"]
+    piezas_historico = cargar_pauta_digital_historico(claves_60, umbral_amarilla_dias, umbral_roja_dias)
     piezas_global, excluidas_global, descartadas_dedup_global, metricas_global = cargar_pauta_digital_global(
         localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
         departamento_a_localidades_normalizadas,
+        umbral_amarilla_dias, umbral_roja_dias,
     )
     print(
         f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "

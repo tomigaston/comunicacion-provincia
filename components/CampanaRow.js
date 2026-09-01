@@ -1,5 +1,7 @@
 import AnioBadge from './AnioBadge';
 import VerMaterial from './VerMaterial';
+import SemaforoBadge from './SemaforoBadge';
+import { rangoFechaDesdeHasta } from '../lib/fechas';
 
 const AREA_COLOR = {
   'Medios tradicionales': { bg: '#e0edfb', fg: '#1976d2' },
@@ -23,12 +25,13 @@ function detalleTexto(item) {
 
 function DetalleMediosTradicionales({ detalle }) {
   const d = detalle || {};
-  const semanas = d.semanas_consecutivas;
+  const rangoVigencia = rangoFechaDesdeHasta(d.fecha_desde, d.fecha_hasta);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <span>
-        {d.tipo_medio || ''} · {semanas ? `${semanas} semana${semanas === 1 ? '' : 's'} seguidas` : ''}
+        {[d.tipo_medio, rangoVigencia].filter(Boolean).join(' · ') || '—'}
       </span>
+      <SemaforoBadge alerta={d.alerta} antiguedadDias={d.antiguedad_dias} compacto />
       <VerMaterial links={d.links_material} />
     </div>
   );
