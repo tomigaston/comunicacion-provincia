@@ -1,8 +1,18 @@
 import Link from 'next/link';
 import CoverageBadge from './CoverageBadge';
+import SemaforoBadge from './SemaforoBadge';
 import { slugificar } from '../lib/texto';
 
-export default function LocalidadCard({ localidad, departamento, bandaCobertura, totalTipos, tienePautaDigital, tieneAudiovisuales }) {
+export default function LocalidadCard({
+  localidad,
+  departamento,
+  bandaCobertura,
+  totalTipos,
+  tienePautaDigital,
+  tieneAudiovisuales,
+  alertaMedios,
+  alertaPautaDigital,
+}) {
   return (
     <Link
       href={`/localidades/${slugificar(localidad)}`}
@@ -14,7 +24,23 @@ export default function LocalidadCard({ localidad, departamento, bandaCobertura,
         padding: '16px 18px',
       }}
     >
-      <div style={{ fontSize: 15, fontWeight: 700 }}>{localidad}</div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6 }}>
+        <div style={{ fontSize: 15, fontWeight: 700 }}>{localidad}</div>
+        {(alertaMedios || alertaPautaDigital) && (
+          <div style={{ display: 'flex', gap: 4 }}>
+            {alertaMedios && (
+              <span title="Medios tradicionales — peor caso de antigüedad">
+                <SemaforoBadge alerta={alertaMedios} compacto />
+              </span>
+            )}
+            {alertaPautaDigital && (
+              <span title="Pauta digital — peor caso de antigüedad">
+                <SemaforoBadge alerta={alertaPautaDigital} compacto />
+              </span>
+            )}
+          </div>
+        )}
+      </div>
       <div style={{ fontSize: 12.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>{departamento}</div>
       <CoverageBadge banda={bandaCobertura} totalTipos={totalTipos} compacto />
       {(tienePautaDigital || tieneAudiovisuales) && (

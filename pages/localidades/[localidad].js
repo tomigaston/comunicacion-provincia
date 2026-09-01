@@ -9,6 +9,7 @@ import FiltroPeriodo from '../../components/FiltroPeriodo';
 import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import MensajeTruncado from '../../components/MensajeTruncado';
+import SemaforoBadge from '../../components/SemaforoBadge';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
@@ -128,7 +129,7 @@ export default function DetalleLocalidad() {
   const fechasDisponibles = useMemo(() => {
     if (!info || info.noEncontrada) return [];
     const fechas = [];
-    if (info.medios) info.medios.vigentes.forEach((v) => fechas.push(v.fecha_ultima_semana));
+    if (info.medios) info.medios.vigentes.forEach((v) => fechas.push(v.fecha_hasta || v.fecha_desde));
     info.piezasPauta.forEach((p) => fechas.push(p.finalizacion));
     info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || it.fecha_inicio));
     info.enviosSms.forEach((e) => fechas.push(e.fecha_inicio));
@@ -140,7 +141,9 @@ export default function DetalleLocalidad() {
   const visible = useMemo(() => {
     if (!info || info.noEncontrada) return null;
     return {
-      vigentes: info.medios ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_ultima_semana, ventana)) : [],
+      vigentes: info.medios
+        ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana))
+        : [],
       piezasPauta: info.piezasPauta.filter((p) => rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)),
       itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
         fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
@@ -245,8 +248,8 @@ export default function DetalleLocalidad() {
                     <thead>
                       <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
                         <th style={th}>Tipo de medio</th>
-                        <th style={th}>Tema vigente</th>
-                        <th style={th}>Semanas seguidas</th>
+                        <th style={th}>Tema</th>
+                        <th style={th}>Vigencia</th>
                         <th style={th}>Material</th>
                       </tr>
                     </thead>
@@ -256,15 +259,13 @@ export default function DetalleLocalidad() {
                         return (
                           <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                             <td style={td}>{v.tipo_medio}</td>
-                            <td style={{ ...td, whiteSpace: 'pre-wrap' }}>
-                              {v.tema_vigente}
-                              {rangoVigencia && (
-                                <div style={{ fontSize: 11.5, color: 'var(--text-tertiary)', marginTop: 2 }}>
-                                  {rangoVigencia}
-                                </div>
-                              )}
+                            <td style={{ ...td, whiteSpace: 'pre-wrap' }}>{v.tema}</td>
+                            <td style={td}>
+                              <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                                <span>{rangoVigencia || '—'}</span>
+                                <SemaforoBadge alerta={v.alerta} antiguedadDias={v.antiguedad_dias} />
+                              </div>
                             </td>
-                            <td style={td}>{v.semanas_consecutivas}</td>
                             <td style={td}>
                               <VerMaterial links={v.links_material} />
                             </td>
@@ -338,9 +339,12 @@ export default function DetalleLocalidad() {
                         <td style={td}>{p.tipo_pauta || '—'}</td>
                         <td style={td}>{p.plataforma || '—'}</td>
                         <td style={td}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                            <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
-                            <StatusBadge estado={p.estado} />
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
+                              <StatusBadge estado={p.estado} />
+                            </div>
+                            <SemaforoBadge alerta={p.alerta} antiguedadDias={p.antiguedad_dias} />
                           </div>
                         </td>
                         <td style={td}>

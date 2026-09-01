@@ -10,6 +10,7 @@ import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
+import { peorAlerta } from '../../lib/semaforo';
 
 export default function LocalidadesIndex() {
   const router = useRouter();
@@ -35,6 +36,10 @@ export default function LocalidadesIndex() {
     );
 
     const pautaPorLocalidad = new Set();
+    // Alertas de semáforo (sección 2 de la spec) de las piezas vigentes de
+    // Pauta Digital, agrupadas por localidad -- mismo criterio de alcance_tipo
+    // que pautaPorLocalidad, para agregar el "peor caso" (sección 2.4).
+    const alertasPautaPorLocalidad = new Map();
     for (const p of pautaData.piezas) {
       if (!p.en_60_localidades) continue;
       // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
@@ -44,7 +49,14 @@ export default function LocalidadesIndex() {
       // menciona su nombre). Regla sin excepciones: una pieza cuenta para una
       // Localidad SOLO si su Localidad puntual es una de las 60 — sin fallback
       // por Departamento en común.
-      if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
+      if (p.alcance_tipo === 'localidad' && p.localidad) {
+        const clave = normalizarTexto(p.localidad);
+        pautaPorLocalidad.add(clave);
+        if (p.estado === 'Vigente' && p.alerta) {
+          if (!alertasPautaPorLocalidad.has(clave)) alertasPautaPorLocalidad.set(clave, []);
+          alertasPautaPorLocalidad.get(clave).push(p.alerta);
+        }
+      }
     }
 
     const audiovisualesPorLocalidad = new Set(
@@ -61,6 +73,9 @@ export default function LocalidadesIndex() {
         cobertura: cobertura ? cobertura.cobertura : {},
         tienePautaDigital: pautaPorLocalidad.has(clave),
         tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
+        // Semáforo de antigüedad (peor caso por área, sección 2.4 de la spec).
+        alertaMedios: cobertura ? peorAlerta(cobertura.vigentes.map((v) => v.alerta)) : null,
+        alertaPautaDigital: peorAlerta(alertasPautaPorLocalidad.get(clave) || []),
       };
     });
   }, [datos]);
@@ -195,6 +210,8 @@ export default function LocalidadesIndex() {
                 totalTipos={l.totalTipos}
                 tienePautaDigital={l.tienePautaDigital}
                 tieneAudiovisuales={l.tieneAudiovisuales}
+                alertaMedios={l.alertaMedios}
+                alertaPautaDigital={l.alertaPautaDigital}
               />
             ))}
           </div>
