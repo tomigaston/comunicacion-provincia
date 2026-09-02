@@ -1,6 +1,5 @@
 import AnioBadge from './AnioBadge';
 import VerMaterial from './VerMaterial';
-import SemaforoBadge from './SemaforoBadge';
 import { rangoFechaDesdeHasta } from '../lib/fechas';
 
 const AREA_COLOR = {
@@ -31,7 +30,6 @@ function DetalleMediosTradicionales({ detalle }) {
       <span>
         {[d.tipo_medio, rangoVigencia].filter(Boolean).join(' · ') || '—'}
       </span>
-      <SemaforoBadge alerta={d.alerta} antiguedadDias={d.antiguedad_dias} compacto />
       <VerMaterial links={d.links_material} />
     </div>
   );
