@@ -15,6 +15,7 @@ const TABS = [
   { href: '/localidades', label: 'Localidades', key: 'localidades' },
   { href: '/campanas', label: 'Campañas', key: 'campanas' },
   { href: '/pauta-digital', label: 'Pauta Digital', key: 'pauta_digital' },
+  { href: '/semaforo', label: 'Semáforo', key: 'semaforo' },
   { href: '/sms', label: 'SMS', key: 'sms' },
   { href: '/contenido-organico', label: 'Contenido Orgánico', key: 'contenido_organico' },
   { href: '/movimientos', label: 'Movimientos de la semana', key: 'movimientos' },

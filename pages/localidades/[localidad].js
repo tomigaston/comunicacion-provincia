@@ -339,12 +339,9 @@ export default function DetalleLocalidad() {
                         <td style={td}>{p.tipo_pauta || '—'}</td>
                         <td style={td}>{p.plataforma || '—'}</td>
                         <td style={td}>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                              <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
-                              <StatusBadge estado={p.estado} />
-                            </div>
-                            <SemaforoBadge alerta={p.alerta} antiguedadDias={p.antiguedad_dias} />
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
+                            <StatusBadge estado={p.estado} />
                           </div>
                         </td>
                         <td style={td}>
