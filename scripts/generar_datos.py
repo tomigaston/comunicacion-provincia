@@ -683,6 +683,33 @@ def _fila_real_pauta_global(row):
     return limpio(row["CAMPAÑA"]) is not None or limpio(row["TITULO DE LA PIEZA"]) is not None
 
 
+def _gana_pieza(candidata, actual):
+    """True si `candidata` debe reemplazar a `actual` como ganadora de su
+    clave de dedup. Orden de criterios (confirmado 06/09/2026, reemplaza al
+    criterio viejo de "se queda la primera vista"):
+    1) FECHA DE ENVÍO más reciente gana. None cuenta como la más vieja
+       posible (pierde contra cualquier fecha real).
+    2) Si empatan en fecha (incluido el caso de ambas None), gana la que
+       tenga ESTADO=ACTIVO en el excel crudo, contra cualquier otro valor.
+    3) Si siguen empatadas, se queda `actual` (la primera vista en orden de
+       aparición) -- desempate determinístico, no se reemplaza.
+
+    Usa .get() con default: piezas sintéticas de test que no seteen estas
+    claves internas (ej. CASO 9 de test_pauta_digital.py) valen como
+    fecha=None/estado_activo=False, así no cambia el desempate 3 para ellas."""
+    ts_candidata = candidata.get("_dedup_fecha_envio_ts")
+    ts_actual = actual.get("_dedup_fecha_envio_ts")
+    if ts_candidata != ts_actual:
+        if ts_actual is None:
+            return True
+        if ts_candidata is None:
+            return False
+        return ts_candidata > ts_actual
+    if candidata.get("_dedup_estado_activo", False) != actual.get("_dedup_estado_activo", False):
+        return candidata.get("_dedup_estado_activo", False)
+    return False
+
+
 def _dedup_pauta_global_por_cod_contenido(piezas):
     """Corre DESPUÉS de expandir "TODAS LAS LOCALIDADES" + Departamento en una
     fila por Localidad (nunca antes: antes de expandir no existen todavía los
@@ -696,21 +723,35 @@ def _dedup_pauta_global_por_cod_contenido(piezas):
     se reutiliza entre piezas distintas (mismo código, Campaña/Título
     distintos) en los datos reales, así que sin el resto de la clave se
     fusionarían piezas que no son la misma. Piezas sin COD. CONTENIDO (None)
-    nunca se descartan acá: no hay con qué agruparlas de forma confiable."""
-    vistas = set()
-    resultado = []
+    nunca se descartan acá: no hay con qué agruparlas de forma confiable.
+
+    Entre las filas que comparten clave, la ganadora se elige con
+    _gana_pieza() (ver ahí el criterio: FECHA DE ENVÍO más reciente, tiebreak
+    ESTADO=ACTIVO, tiebreak final la primera en orden de aparición) --
+    criterio confirmado 06/09/2026, reemplaza al anterior de "se queda la
+    primera vista sin mirar fecha ni estado"."""
+    ganadoras = {}
+    orden = []
+    sin_cod = []
     descartadas = 0
     for pieza in piezas:
         cod = pieza.get("cod_contenido")
         if cod is None:
-            resultado.append(pieza)
+            sin_cod.append(pieza)
             continue
         clave = (cod, pieza["campana"], pieza["titulo_pieza"], pieza["localidad_asignada"])
-        if clave in vistas:
-            descartadas += 1
+        if clave not in ganadoras:
+            ganadoras[clave] = pieza
+            orden.append(clave)
             continue
-        vistas.add(clave)
-        resultado.append(pieza)
+        descartadas += 1
+        if _gana_pieza(pieza, ganadoras[clave]):
+            ganadoras[clave] = pieza
+
+    resultado = sin_cod + [ganadoras[clave] for clave in orden]
+    for pieza in resultado:
+        pieza.pop("_dedup_fecha_envio_ts", None)
+        pieza.pop("_dedup_estado_activo", None)
     return resultado, descartadas
 
 
@@ -761,6 +802,13 @@ def cargar_pauta_digital_global(
         ambito_pieza = "localidad" if geo["ambito"] == "localidad_multiple" else geo["ambito"]
         cod_contenido = limpio(row["COD. CONTENIDO"])
         fecha_envio = fecha_iso(row["FECHA DE ENVÍO"])
+        # Timestamp completo (no solo la fecha) y ESTADO crudo, usados
+        # únicamente por _dedup_pauta_global_por_cod_contenido() para elegir
+        # entre filas duplicadas -- ver ese criterio ahí. Se descartan del
+        # dict antes de devolver la pieza final (no forman parte del esquema
+        # de salida ni de campanas.json).
+        _dedup_fecha_envio_ts = _a_timestamp(row["FECHA DE ENVÍO"])
+        _dedup_estado_activo = normalizar(limpio(row["ESTADO"])) == "ACTIVO"
 
         # Piezas cargadas pero nunca despachadas: sin COD. CONTENIDO ni FECHA
         # DE ENVÍO no hay con qué calcular vigencia/finalización real (la
@@ -794,6 +842,19 @@ def cargar_pauta_digital_global(
         link_ig = limpiar_link(row["IG"])
         link_fb = limpiar_link(row["FB"])
         link_yt = limpiar_link(row["YT"])
+        # Columna nueva del export (carga del 06/09/2026): landing page con
+        # UTMs a la que apunta la pauta -- distinta de LINK MATERIAL (el
+        # Drive con la pieza creativa). Campo separado, mismo patrón que
+        # IG/FB/YT: no se mezcla con link_material/links_material.
+        # UTM´S como fallback de URL: confirmado el 06/09/2026 que las dos
+        # columnas traen el link real en forma mutuamente excluyente (0
+        # filas con las dos a la vez) -- 82 filas lo traen en URL, 566 en
+        # UTM´S (que para esas filas SÍ es un link real a pesar del nombre
+        # de la columna, no una query de UTMs suelta) y en las 277 filas
+        # donde URL trae basura (un string de plantilla de UTMs sin http,
+        # siempre el mismo valor) el link real está en UTM´S. Sin este
+        # fallback quedaban 277+289=566 links reales sin capturar.
+        link_destino = limpiar_link(row["URL"]) or limpiar_link(row["UTM´S"])
 
         campana = _forma_canonica(mapa_campanas, limpio(row["CAMPAÑA"]))
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
@@ -815,6 +876,8 @@ def cargar_pauta_digital_global(
         for asignacion in asignaciones:
             piezas.append({
                 "fuente": "global",
+                "_dedup_fecha_envio_ts": _dedup_fecha_envio_ts,
+                "_dedup_estado_activo": _dedup_estado_activo,
                 "codigo_pieza": None,
                 "cod_contenido": cod_contenido,
                 "nombre_anuncio": limpio(row["TITULO DE LA PIEZA"]),
@@ -893,6 +956,7 @@ def cargar_pauta_digital_global(
                 "link_ig": link_ig,
                 "link_fb": link_fb,
                 "link_yt": link_yt,
+                "link_destino": link_destino,
                 "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
             })
 

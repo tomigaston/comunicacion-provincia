@@ -321,6 +321,57 @@ def caso_9_dedup_por_cod_contenido_corre_despues_de_expandir(localidades, claves
         fallar(caso, "las piezas sin COD. CONTENIDO (None) no deben descartarse por esta regla")
 
 
+def caso_10_dedup_gana_fecha_envio_mas_reciente():
+    """Confirmado 06/09/2026, caso real detectado en Pauta RRSS_GLOBAL.xlsx
+    (COD. CONTENIDO A06049, "Escuchá 'Acueducto en Villa Carlos Paz' (Video)"):
+    entre dos filas que comparten clave de dedup, gana la de FECHA DE ENVÍO
+    más reciente -ya no "la primera vista"-, aunque ambas tengan el mismo
+    ESTADO (acá INACTIVO en las dos, así que el tiebreak de CASO 11 ni entra
+    en juego)."""
+    caso = "CASO 10 - dedup gana FECHA DE ENVÍO más reciente"
+    vieja = {
+        "cod_contenido": "A06049", "campana": "AGENDA MLL",
+        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)",
+        "localidad_asignada": "VILLA CARLOS PAZ", "plataforma": "Meta",
+        "_dedup_fecha_envio_ts": pd.Timestamp("2026-08-14"), "_dedup_estado_activo": False,
+    }
+    nueva = {
+        "cod_contenido": "A06049", "campana": "AGENDA MLL",
+        "titulo_pieza": "Escuchá \"Acueducto en Villa Carlos Paz\" (Video)",
+        "localidad_asignada": "VILLA CARLOS PAZ", "plataforma": "Youtube",
+        "_dedup_fecha_envio_ts": pd.Timestamp("2026-08-20"), "_dedup_estado_activo": False,
+    }
+    for orden, piezas in (("vieja primero", [vieja, nueva]), ("nueva primero", [nueva, vieja])):
+        resultado, descartadas = g._dedup_pauta_global_por_cod_contenido([dict(p) for p in piezas])
+        if descartadas != 1:
+            fallar(caso, f"({orden}) esperaba 1 descartada, salió {descartadas}")
+        if len(resultado) != 1 or resultado[0]["plataforma"] != "Youtube":
+            fallar(caso, f"({orden}) esperaba que gane la fila del 20/08 (Youtube), salió {resultado}")
+
+
+def caso_11_dedup_tiebreak_estado_activo():
+    """Si dos filas empatan en FECHA DE ENVÍO, gana la que tenga
+    ESTADO=ACTIVO en el excel crudo, contra cualquier otro valor (INACTIVO,
+    vacío, etc.)."""
+    caso = "CASO 11 - dedup tiebreak ESTADO=ACTIVO en empate de fecha"
+    inactiva = {
+        "cod_contenido": "X2", "campana": "C", "titulo_pieza": "T", "localidad_asignada": "RIO CUARTO",
+        "plataforma": "Meta",
+        "_dedup_fecha_envio_ts": pd.Timestamp("2026-08-14"), "_dedup_estado_activo": False,
+    }
+    activa = {
+        "cod_contenido": "X2", "campana": "C", "titulo_pieza": "T", "localidad_asignada": "RIO CUARTO",
+        "plataforma": "Google",
+        "_dedup_fecha_envio_ts": pd.Timestamp("2026-08-14"), "_dedup_estado_activo": True,
+    }
+    for orden, piezas in (("inactiva primero", [inactiva, activa]), ("activa primero", [activa, inactiva])):
+        resultado, descartadas = g._dedup_pauta_global_por_cod_contenido([dict(p) for p in piezas])
+        if descartadas != 1:
+            fallar(caso, f"({orden}) esperaba 1 descartada, salió {descartadas}")
+        if len(resultado) != 1 or resultado[0]["plataforma"] != "Google":
+            fallar(caso, f"({orden}) esperaba que gane la fila ESTADO=ACTIVO (Google), salió {resultado}")
+
+
 def caso_5_localidad_fuera_de_60_no_se_atribuye(df, claves_60):
     caso = "CASO 5 - Localidad fuera de las 60"
     filas = filas_por(df, "LOCALIDAD", "Localidad", "FREYRE")
@@ -370,13 +421,22 @@ def main():
         except AssertionError as e:
             FALLAS.append(f"[{caso.__name__}] {e}")
 
+    for caso in (
+        caso_10_dedup_gana_fecha_envio_mas_reciente,
+        caso_11_dedup_tiebreak_estado_activo,
+    ):
+        try:
+            caso()
+        except AssertionError as e:
+            FALLAS.append(f"[{caso.__name__}] {e}")
+
     if FALLAS:
         print(f"FALLÓ el test de matching de Pauta Digital ({len(FALLAS)} problema(s)):\n")
         for f in FALLAS:
             print(f"  - {f}")
         return 1
 
-    print("OK — los 9 casos de regresión de matching de Pauta Digital pasan.")
+    print("OK — los 11 casos de regresión de matching de Pauta Digital pasan.")
     return 0
 
 
