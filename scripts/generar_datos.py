@@ -842,6 +842,19 @@ def cargar_pauta_digital_global(
         link_ig = limpiar_link(row["IG"])
         link_fb = limpiar_link(row["FB"])
         link_yt = limpiar_link(row["YT"])
+        # Columna nueva del export (carga del 06/09/2026): landing page con
+        # UTMs a la que apunta la pauta -- distinta de LINK MATERIAL (el
+        # Drive con la pieza creativa). Campo separado, mismo patrón que
+        # IG/FB/YT: no se mezcla con link_material/links_material.
+        # UTM´S como fallback de URL: confirmado el 06/09/2026 que las dos
+        # columnas traen el link real en forma mutuamente excluyente (0
+        # filas con las dos a la vez) -- 82 filas lo traen en URL, 566 en
+        # UTM´S (que para esas filas SÍ es un link real a pesar del nombre
+        # de la columna, no una query de UTMs suelta) y en las 277 filas
+        # donde URL trae basura (un string de plantilla de UTMs sin http,
+        # siempre el mismo valor) el link real está en UTM´S. Sin este
+        # fallback quedaban 277+289=566 links reales sin capturar.
+        link_destino = limpiar_link(row["URL"]) or limpiar_link(row["UTM´S"])
 
         campana = _forma_canonica(mapa_campanas, limpio(row["CAMPAÑA"]))
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
@@ -943,6 +956,7 @@ def cargar_pauta_digital_global(
                 "link_ig": link_ig,
                 "link_fb": link_fb,
                 "link_yt": link_yt,
+                "link_destino": link_destino,
                 "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
             })
 
