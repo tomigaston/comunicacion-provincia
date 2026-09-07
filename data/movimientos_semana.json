@@ -1,822 +1,641 @@
 {
-  "total_avisos_cambiaron": 85,
+  "total_avisos_cambiaron": 68,
   "cambios": [
     {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "CBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "AUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)\nBOLETO EDUCATIVO CORDOBÉS\nCBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ ARROYITO: AUTOPISTA RN19\nESCUCHÁ ARROYITO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ ARROYITO: AUTOPISTA RN19\nESCUCHÁ ARROYITO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ ARROYITO: AUTOPISTA RN19"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA : RECORRIDA UNIÓN 2\nVISITA : RECORRIDA UNIÓN 1\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA : RECORRIDA UNIÓN 1\nVISITA : RECORRIDA UNIÓN 2"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nVISITA : RECORRIDA UNIÓN 2\nVISITA : RECORRIDA UNIÓN 1\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA : RECORRIDA UNIÓN 1\nVISITA : RECORRIDA UNIÓN 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "COLONIA CAROYA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nINAUGURACIÓN AV. PADRE LUCHESSE\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "CBA - BOLETO EDUCATIVO CORDOBÉS\nCBA - PLAN OBRAS VIALES\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- DUPLICACIÓN BODEREAU\nEMPLEO +26\nINAUGURACIÓN AV. PADRE LUCHESSE\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "PNT FÚTBOL - ALTONIVEL VALLE ESCONDIDO\nPNT FÚTBOL - AVENIDA BODERAU\nPNT FÚTBOL - ALTONIVEL VELEZ SARSFIELD\nPNT FÚTBOL - ALTONIVEL MALVINAS ARGENTINAS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nPREVIA: ANUNCIO MEDIDAS PARA EL COMERCIO\nESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ RÍO CEBALLOS: ESCUELA",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ RÍO CEBALLOS: ESCUELA\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ RÍO CEBALLOS: ESCUELA",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ RÍO CEBALLOS: ESCUELA\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nLUNETAS - AVENIDA BODEREAU\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - AVENIDA BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS- ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1\nESCUCHÁ COSQUÍN: GAS NATURAL\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ COSQUÍN: GAS NATURAL\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ VILLA CARLOS PAZ: UPC\nESCUCHÁ COSQUÍN: GAS NATURAL\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ COSQUÍN: GAS NATURAL\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
       "departamento": "PUNILLA",
       "localidad": "COSQUIN",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
+      "fecha_semana_anterior": "2026-09-01",
       "tema_anterior": "VALLAS - UPC -15 SEDES\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - DUPLICACION BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - DUPLICACION BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - UPC -15 SEDES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ COSQUÍN : GAS NATURAL"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA CRUZ DEL EJE: OBRAS\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2\nVISITA CRUZ DEL EJE: OBRAS"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 2\nVISITA CRUZ DEL EJE: OBRAS\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2\nVISITA CRUZ DEL EJE: OBRAS"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA ISCHILLIN: OBRAS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA ISCHILLIN: OBRAS"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA ISCHILLIN: OBRAS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA ISCHILLIN: OBRAS"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ: ALTONIVELES\nESCUCHÁ LA CALERA: ALTONIVEL\nENTREGA TECNO PRESENTE\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nESCUCHÁ LA CALERA: ALTONIVEL\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ: ALTONIVELES\nESCUCHÁ LA CALERA: ALTONIVEL\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ LA CALERA: ALTONIVEL\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO INAUGURACIÓN\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - ALTONIVEL VALLE ESCONDIDO INAGURACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS - ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO INAUGURACIÓN\nVALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 2\nVISITA PUNILLA: UNA JORNADA EN EL DEPARTAMENTO 1\nVISITA PUNILLA: UNA JORNADA EN EL DEPARTAMENTO 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2\nVISITA CASA GRANDE Y SANTA MARIA: UNA JORNADA EN EL DEPARTAMENTO PUNILLA 2\nVISITA VILLA GIARDINO/VALLE HERMOSO: UNA JORNADA EN EL DEPARTAMENTO DE PUNILLA 1"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
-    },
-    {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "LEONES",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "MIRÁ - UPC SEDE\nMIRÁ - LEONES- ESTACION TRANSFORMADORA",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "MIRÁ - LEONES- ESTACION TRANSFORMADORA\nMIRÁ - UPC SEDE"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "MALAGUEÑO",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "LOS GIGANTES\nAUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD\nLOS GIGANTES"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "MALAGUEÑO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 2\nESCUCHÁ MALAGUEÑO: COLECTORA",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nESCUCHÁ MALAGUEÑO: COLECTORA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "MALVINAS ARGENTINAS",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "LUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - ALTONIVEL MALVINAS ARGENTINAS",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS - ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "EMPLEO +26\nESCUCHÁ MARCOS JUÁREZ: UPC\nESCUCHÁ MARCOS JUÁREZ: HOSPITAL AYERZA\nMIRÁ - MARCOS JUÁREZ- CENTRO REHABILITACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "EMPLEO +26\nESCUCHÁ MARCOS JUÁREZ: HOSPITAL AYERZA\nESCUCHÁ MARCOS JUÁREZ: UPC\nMIRÁ - MARCOS JUÁREZ- CENTRO REHABILITACIÓN"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 2\nHACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "BOLETO EDUCATIVO CORDOBÉS\nPADRE LUCHESSE INAUGURACIÓN\nDUPLICACIÓN- AV. BODEREAU",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "BOLETO EDUCATIVO CORDOBÉS\nDUPLICACIÓN- AV. BODEREAU\nPADRE LUCHESSE INAUGURACIÓN"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ RÍO CEBALLOS: ESCUELA\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nESCUCHÁ RÍO CEBALLOS: ESCUELA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nCBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nVISITA RÍO CUARTO: JORNADA DE TRABAJO\nESCUCHÁ RÍO CUARTO: CEDIS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1\nVISITA RÍO CUARTO: JORNADA DE TRABAJO"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nVISITA RÍO CUARTO: RUTA LAS ALBAHACAS - VILLA EL CHACAY\nESCUCHÁ RÍO CUARTO: CEDIS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1\nVISITA RÍO CUARTO: RUTA LAS ALBAHACAS - VILLA EL CHACAY"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nVALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "MIRÁ- AUTOPISTA NACIONAL RUTA 19\nCBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "CBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF\nMIRÁ- AUTOPISTA NACIONAL RUTA 19"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "PRUEBAS APRENDER\nFONDOS PARA ESCUELAS TÉCNICAS",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "FONDOS PARA ESCUELAS TÉCNICAS\nPRUEBAS APRENDER"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nESCUCHÁ RIÓ TERCERO : PUENTE LOS POTREROS\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RIÓ TERCERO : PUENTE LOS POTREROS\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ: PUENTE LOS POTREROS\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RÍO TERCERO: UPC\nESCUCHÁ: PUENTE LOS POTREROS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RIÓ TERCERO : UPC"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALSIPUEDES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ENTREGA TECNOPRESENTE\nVISITA SALSIPUEDES: RANGO CIUDAD Y SISTEMATIZACIÓN TRAVESÍA URBANA\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA SALSIPUEDES: RANGO CIUDAD Y SISTEMATIZACIÓN TRAVESÍA URBANA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "MIRÁ - SAN FCO - AUTOPISTA RUTA 19\nESCUCHÁ SAN FRANCISCO: RN19\nMIRÁ - SAN FCO - UPC SEDE",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nMIRÁ - SAN FCO - AUTOPISTA RUTA 19\nMIRÁ - SAN FCO - UPC SEDE"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nESCUCHÁ SAN FRANCISCO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19\nESCUCHÁ SAN FRANCISCO: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ: ALTONIVELES\nENTREGA TECNO PRESENTE\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nVISITA RÍO CUARTO: JORNADA DE TRABAJO\nVISITA RÍO CUARTO: RUTA LAS ALBAHACAS - VILLA EL CHACAY\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ RÍO CUARTO: CEDIS",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1\nVISITA RÍO CUARTO: JORNADA DE TRABAJO\nVISITA RÍO CUARTO: RUTA LAS ALBAHACAS - VILLA EL CHACAY"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nVISITA RÍO CUARTO: JORNADA DE TRABAJO\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1\nVISITA RÍO CUARTO: JORNADA DE TRABAJO"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS QUE TRANSFORMAN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nENTREGA TECNO PRESENTE\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ENTREGA TECNOPRESENTE\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nESCUCHÁ: ALTONIVELES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "VALLAS - UPC -15 SEDES\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - DUPLICACION BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE TERMINADA"
     },
     {
       "departamento": "COLON",
       "localidad": "VILLA ALLENDE",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
+      "fecha_semana_anterior": "2026-09-01",
       "tema_anterior": "LUNETAS - CÓRDOBA  LIDERA PRUEBAS APRENDER\nVALLAS- MIRÁ - PADRE LUCHESSE INAUGURACIÓN\nLUNETAS - ESCUCHA PADRE LUCHESSE INAUGURACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS - CÓRDOBA  LIDERA PRUEBAS APRENDER\nLUNETAS - ESCUCHA PADRE LUCHESSE INAUGURACIÓN\nVALLAS- MIRÁ - PADRE LUCHESSE INAUGURACIÓN"
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "LUNETAS - CÓRDOBA  LIDERA PRUEBAS APRENDER\nVALLAS- MIRÁ - PADRE LUCHESSE TERMINADA\nLUNETAS - ESCUCHA PADRE LUCHESSE TERMINADA"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "LOS GIGANTES\nBOLETO EDUCATIVO CORDOBÉS\nMIRÁ VILLA CARLOS PAZ - SEDE UPC\nMIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nMIRÁ VILLA CARLOS PAZ - CUENCA LAGO\nAUTOVÍA PUNILLA- CONSEJO SEGURIDAD",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "AUTOVÍA PUNILLA- CONSEJO SEGURIDAD\nBOLETO EDUCATIVO CORDOBÉS\nLOS GIGANTES\nMIRÁ VILLA CARLOS PAZ - CUENCA LAGO\nMIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nMIRÁ VILLA CARLOS PAZ - SEDE UPC"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nVISITA CARLOS PAZ: UPC\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA CARLOS PAZ: UPC"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nVISITA CARLOS PAZ: UPC\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nVISITA CARLOS PAZ: UPC"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nSÉXTUPLES- ESCUCHÁ VILLA CARLOS PAZ- UPC\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- ESCUCHÁ VILLA CARLOS PAZ- UPC\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC"
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA DOLORES : UPC",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nESCUCHÁ VILLA DOLORES : UPC"
     },
     {
       "departamento": "SAN ALBERTO",
       "localidad": "VILLA CURA BROCHERO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 2\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1\nOBRAS VIALES 2"
     },
     {
-      "departamento": "TOTORAL",
-      "localidad": "VILLA DEL TOTORAL",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS-CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS-CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nOBRAS VIALES 2\nESCUCHÁ VILLA DOLORES : UPC\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA DOLORES : UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
-    },
-    {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA DOLORES : UPC",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA DOLORES : UPC\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
-    },
-    {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ UPC"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nOBRAS VIALES 1\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "ESCUCHÁ VILLA MARÍA: UNVM\nOBRAS VIALES 1\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VALLAS - CBA - PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "FONDO PARA ESCUELAS TÉCNICAS",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA NUEVA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA NUEVA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "VILLA SANTA ROSA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    },
-    {
-      "departamento": "TULUMBA",
-      "localidad": "VILLA TULUMBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-08-27",
-      "tema_anterior": "VISITA: TULUMBA Y RIO SECO\nHACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1",
-      "fecha_semana_actual": "2026-09-01",
-      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
-    }
-  ],
-  "total_caidos": 7,
-  "caidos": [
-    {
-      "departamento": "COLON",
-      "localidad": "COLONIA CAROYA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-08-27"
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHÁ MARCOS JUÁREZ: HOSPITAL\nESCUCHÁ MARCOS JUÁREZ: HOSPITAL",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ MARCOS JUÁREZ: HOSPITAL"
     },
     {
       "departamento": "CAPITAL",
       "localidad": "CORDOBA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nALTO NIVEL VALLE ESCONDIDO FINALIZADO\nDUPLICACION LUCHESSE FINALIZADO\nDUPLICACION BODEREAU FINALIZADO\nOBRA ALTO NIVEL VELEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS",
-      "fecha_ultima_vez": "2026-08-27"
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nINAUGURACIÓN AV. PADRE LUCHESSE\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nPADRE LUCHESSE TERMINADA\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER"
     },
     {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-08-27"
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CBA- MIRÁ ALMAFUERTE (SIST. SANEAMIENTO CLOACAL)",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CBA- MIRÁ ALMAFUERTE - SIST. SANEAMIENTO CLOACAL"
     },
     {
-      "departamento": "SOBREMONTE",
-      "localidad": "SAN FRANCISCO DEL CHAÑAR",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-08-27"
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "OBRAS VIALES 1\nVISITA RÍO CUARTO: JORNADA DE TRABAJO\nESCUCHÁ RÍO CUARTO: CEDIS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "PREVIA RURAL RIO CUARTO\nOBRAS VIALES 1\nESCUCHÁ RÍO CUARTO: CEDIS\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN"
     },
     {
       "departamento": "SAN JAVIER",
       "localidad": "VILLA DOLORES",
-      "tipo_medio": "GRÁFICA",
-      "ultimo_tema": "FONDO PARA ESCUELAS TÉCNICAS",
-      "fecha_ultima_vez": "2026-08-27"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "GRÁFICA",
-      "ultimo_tema": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN",
-      "fecha_ultima_vez": "2026-08-27"
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHÁ UPC",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ VILLA DOLORES:  UPC"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA NUEVA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nOBRAS VIALES 1\nESCUCHÁ VILLA MARÍA: UNVM\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 2\nESCUCHÁ RIÓ TERCERO : PUENTE LOS POTREROS\nESCUCHÁ RÍO TERCERO: UPC\nHACIENDO LOS DEBERES 1",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "HACIENDO LOS DEBERES 2\nHACIENDO LOS DEBERES 1\nESCUCHÁ RIÓ TERCERO : PUENTE LOS POTREROS\nESCUCHÁ RÍO TERCERO: UPC"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "FONDO PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PADRE LUCHESSE INAUGURACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "PADRE LUCHESSE TERMINADO"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: RN19",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nESCUCHÁ SAN FRANCISCO: RN19"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
       "tipo_medio": "WEB",
-      "ultimo_tema": "OBRAS QUE TRANFORMAN",
-      "fecha_ultima_vez": "2026-08-27"
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL\nCBA- MIRÁ BELL VILLE- UPC SEDE\nEMPLEO +26",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL\nCBA- MIRÁ BELL VILLE- UPC SEDE"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "FONDO PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO INAGURACIÓN\nLUNETAS - AVENIDA BODEREAU\nSÉXTUPLES- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- INAUGURACIÓN AV. PADRE LUCHESSE\nVALLAS- INAUGURACIÓN VALLE ESCONDIDO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nSÉXTUPLES- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "OBRAS VIALES 1\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nOBRAS VIALES 1\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ VILLA MARIA: UNVM"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nCÓRDOBA  LIDERA PRUEBAS APRENDER\nESCUCHÁ ALTA GRACIA : CENTRO DESARROLLO INFANTIL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: NUEVO CENTRO DE DESARROLLO INFANTIL",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "LUNETAS - DUPLICACIÓN LUCHESSE\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PADRE LUCHESSE INAUGURACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "PADRE LUCHESSE TERMINADA"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nOBRAS VIALES 2"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ RÍO CEBALLOS: ESCUELA",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nOBRAS VIALES 1\nOBRAS VIALES 2\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHAMOS - RIO IV CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nCÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "MIRÁ CAPILLA DEL MONTE - SEDE UPC",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "MIRÁ CAPILLA DEL MONTE - SEDE UPC\nAUTOVIA PUNILLA - CONSEJO DE SEGURIDAD"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: UPC"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "VISITA ALTONIVEL VÉLEZ SARSFIELD",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nVISITA ALTONIVEL VÉLEZ SARSFIELD"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "SANEAMIENTO PERILAGO",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nESCUCHÁ MALAGUEÑO: COLECTORA\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "HACIENDO LOS DEBERES 1\nENTREGA TECNOPRESENTE\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ DEAN FUNES : SEDE UPC"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ LABOULAYE: PLANTA DEPURADORA"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nESCUCHÁ: ALTONIVELES\nESCUCHÁ MALAGUEÑO: COLECTORA\nESCUCHÁ VILLA ALLENDE: PADRE LUCHESSE\nESCUCHÁ VILLA ALLENDE: AV BODEREAU\nESCUCHÁ RÍO CEBALLOS: ESCUELA",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "PREVIA- LANZAMIENTO PPP\nCÓRDOBA IMPULSA\nOBRAS VIALES V1\nOBRAS VIALES V2\nPNT- CIRCUNVALACIÓN DE RÍO CUARTO\nPNT- CRUCE TRASLASIERRA: LOS GIGANTES\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2\nPREVIA- EXPO RURAL RÍO CUARTO"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ MORTEROS: UPC"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: RN19\nESCUCHÁ SAN FRANCISCO: UPC",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: RN19\nCÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "OBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nESCUCHÁ SAN FRANCISCO: RN19\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA  LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nESCUCHÁ VILLA CARLOS PAZ :UPC\nCÓRDOBA  LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO INAUGURACIÓN\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - ALTONIVEL VALLE ESCONDIDO INAGURACIÓN",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "PRUEBAS APRENDER\nFONDOS PARA ESCUELAS TÉCNICAS",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA IMPULSA\nESCUCHÁ RÍO TERCERO: UPC\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "HACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nHACIENDO LOS DEBERES 1\nHACIENDO LOS DEBERES 2"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHAMOS - OBRAS HÍDRICA RÍO CTALAMOCHITA",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ - OBRAS HÍDRICA RÍO CTALAMOCHITA"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "ESCUCHAMOS - CENTRO DE DESAROLLO INFANTIL",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ - CENTRO DE DESARROLLO INFANTIL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-01",
+      "tema_anterior": "BOLETO EDUCATIVO CORDOBÉS\nPADRE LUCHESSE INAUGURACIÓN\nDUPLICACIÓN- AV. BODEREAU",
+      "fecha_semana_actual": "2026-09-04",
+      "tema_actual": "ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nBOLETO EDUCATIVO CORDOBÉS\nPADRE LUCHESSE INAUGURACIÓN\nDUPLICACIÓN- AV. BODEREAU"
+    }
+  ],
+  "total_caidos": 3,
+  "caidos": [
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "GRÁFICA",
+      "ultimo_tema": "PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-09-01"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "GRÁFICA",
+      "ultimo_tema": "PRUEBAS APRENDER",
+      "fecha_ultima_vez": "2026-09-01"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "CARTELERÍA",
+      "ultimo_tema": "PADRE LUCHESSE INAUGURACIÓN",
+      "fecha_ultima_vez": "2026-09-01"
     }
   ]
 }
