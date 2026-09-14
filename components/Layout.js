@@ -41,8 +41,10 @@ export default function Layout({ title, children }) {
   }, []);
 
   // Mientras /api/session todavía no resolvió, se muestran todas las tabs
-  // (igual que antes de este cambio, sin flicker) — ninguna está restringida
-  // hoy, así que el resultado final es el mismo de todas formas.
+  // (sin flicker) — incluida encuestas_localidades, la única restringida
+  // hoy (ver SECCIONES_RESTRINGIDAS en config/permisos.js): por un instante
+  // se ve incluso para quien después no tiene acceso, hasta que la sesión
+  // resuelve y el filtro de abajo la oculta.
   const tabsVisibles = useMemo(() => {
     if (!sesion) return TABS;
     return TABS.filter((tab) => tieneAccesoSeccion(sesion, tab.key));
