@@ -1,12 +1,14 @@
 import { leerJsonDeDatos } from '../../../lib/datos';
 import {
-  calcularVencimientos,
-  filtrarVencimientosPorArea,
+  calcularVencimientosMediosTradicionales,
+  calcularVencimientosPautaDigital,
   isoDe,
-  AREA_MEDIOS_TRADICIONALES,
-  AREA_PAUTA_DIGITAL,
 } from '../../../lib/vencimientos';
-import { enviarEmailVencimientos, enviarEmailVencimientosPorArea } from '../../../lib/mailer';
+import {
+  enviarEmailVencimientos,
+  enviarEmailVencimientosMediosTradicionales,
+  enviarEmailVencimientosPautaDigital,
+} from '../../../lib/mailer';
 
 /**
  * Cron semanal (vercel.json -> crons), lunes 07:00 ART. Vercel Cron manda
@@ -14,10 +16,13 @@ import { enviarEmailVencimientos, enviarEmailVencimientosPorArea } from '../../.
  * no sea invocable públicamente sin ese secreto (no requiere sesión de
  * usuario: /api/* está fuera del matcher de middleware.js).
  *
- * Manda 3 mails: el general combinado (EMAIL_TO, obligatoria) y dos por área
- * (EMAIL_TO_MEDIOS_TRADICIONALES / EMAIL_TO_PAUTA_DIGITAL, opcionales -- si
- * alguna todavía no está cargada, enviarEmailVencimientosPorArea() la
- * saltea con un console.warn en vez de tirar abajo el cron entero).
+ * Manda 3 mails con criterios DISTINTOS por área (no se mezclan, ver
+ * lib/vencimientos.js): Medios Tradicionales por antigüedad de actualización
+ * (semáforo 🟡/🔴), Pauta Digital por vencimiento real dentro de la ventana
+ * hoy..hoy+7. El general (EMAIL_TO, obligatoria) combina los dos bloques; los
+ * dos por área (EMAIL_TO_MEDIOS_TRADICIONALES / EMAIL_TO_PAUTA_DIGITAL) son
+ * opcionales -- si alguna todavía no está cargada, se saltea con un
+ * console.warn en vez de tirar abajo el cron entero.
  */
 export default async function handler(req, res) {
   const secretoEsperado = process.env.CRON_SECRET;
@@ -31,24 +36,18 @@ export default async function handler(req, res) {
     const pautaDigital = leerJsonDeDatos('pauta_digital.json');
 
     const hoyIso = isoDe(new Date());
-    const vencimientos = calcularVencimientos(mediosTradicionales, pautaDigital, hoyIso);
+    const datosMT = calcularVencimientosMediosTradicionales(mediosTradicionales);
+    const datosPD = calcularVencimientosPautaDigital(pautaDigital, hoyIso);
 
-    await enviarEmailVencimientos(vencimientos, hoyIso);
+    await enviarEmailVencimientos(datosMT, datosPD, hoyIso);
+    await enviarEmailVencimientosMediosTradicionales(datosMT, hoyIso);
+    await enviarEmailVencimientosPautaDigital(datosPD, hoyIso);
 
-    await enviarEmailVencimientosPorArea(
-      filtrarVencimientosPorArea(vencimientos, AREA_MEDIOS_TRADICIONALES),
-      hoyIso,
-      AREA_MEDIOS_TRADICIONALES,
-      'EMAIL_TO_MEDIOS_TRADICIONALES'
-    );
-    await enviarEmailVencimientosPorArea(
-      filtrarVencimientosPorArea(vencimientos, AREA_PAUTA_DIGITAL),
-      hoyIso,
-      AREA_PAUTA_DIGITAL,
-      'EMAIL_TO_PAUTA_DIGITAL'
-    );
-
-    return res.status(200).json({ ok: true, total: vencimientos.total, zonas: vencimientos.zonas.length });
+    return res.status(200).json({
+      ok: true,
+      mediosTradicionales: { temas: datosMT.grupos.length, ...datosMT.resumen },
+      pautaDigital: { campanas: datosPD.grupos.length, ...datosPD.resumen },
+    });
   } catch (e) {
     console.error('Error en cron de vencimientos semanales:', e);
     return res.status(500).json({ ok: false, error: e.message });
