@@ -328,8 +328,8 @@
   },
   "CARLOS PAZ": {
     "nombre_localidad": "CARLOS PAZ",
-    "cantidad_rondas": 1,
-    "tiene_comparativo": false,
+    "cantidad_rondas": 3,
+    "tiene_comparativo": true,
     "rondas": [
       {
         "fecha": "2026-02-06",
@@ -709,6 +709,338 @@
             }
           }
         ]
+      },
+      {
+        "fecha": "2026-07-28",
+        "casos_totales": null,
+        "preguntas": {
+          "Aprobación Gobernador": {
+            "Apruebo": 40.9,
+            "Desapruebo": 59.1
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 8.6,
+            "Buena": 12.9,
+            "Regular": 27.3,
+            "Mala": 49.4,
+            "No se": 1.8
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 10.3,
+            "Buena": 15.6,
+            "Regular": 34.7,
+            "Mala": 37.9,
+            "No se": 1.5
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 24.8,
+            "Buena": 22.4,
+            "Regular": 24.2,
+            "Mala": 27.9,
+            "No se": 0.6
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 19.3,
+            "Seguridad": 19.9,
+            "Inflación": 1.8,
+            "Estado de las calles": 13.5,
+            "Falta de pavimento": 1.5,
+            "Falta de agua potable": 0.3,
+            "Falta de viviendas": 3.1,
+            "Falta de cloacas": 6.4,
+            "Estado del lago": 12.3,
+            "Otro": 21.8
+          },
+          "Reelección Llaryora": {
+            "Si": 29.5,
+            "No": 70.5
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "OBRAS DE CLOACAS EN CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 54.9,
+                "No": 45.1
+              }
+            }
+          },
+          {
+            "nombre_obra": "EDIFICIO UNIVERSIDAD PROVINCIAL DE CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 79.4,
+                "No": 20.6
+              },
+              "Opinión sobre Obra": {
+                "Me parece bien": 76.4,
+                "Me parece mal": 8.6,
+                "No me importa": 15.0
+              }
+            }
+          },
+          {
+            "nombre_obra": "HOSPITAL CARLOS PAZ",
+            "preguntas": {
+              "Opinión sobre Obra": {
+                "Me parece bien": 90.8,
+                "Me parece mal": 4.3,
+                "No me importa": 4.9
+              }
+            }
+          },
+          {
+            "nombre_obra": "AVENIDA CÁRCANO CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 93.3,
+                "No": 6.7
+              },
+              "Evaluación de Obra": {
+                "Bien": 64.7,
+                "Regular": 28.5,
+                "Mal": 6.7
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {},
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-09-08",
+        "casos_totales": 233,
+        "preguntas": {
+          "Aprobación Gobernador": {
+            "Apruebo": 50.5,
+            "Desapruebo": 49.5
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 9.0,
+            "Buena": 13.7,
+            "Regular": 27.9,
+            "Mala": 47.6,
+            "No se": 1.7
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 13.2,
+            "Buena": 22.3,
+            "Regular": 33.5,
+            "Mala": 29.8,
+            "No se": 1.3
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 26.6,
+            "Buena": 22.7,
+            "Regular": 17.2,
+            "Mala": 33.0,
+            "No se": 0.4
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 12.4,
+            "Seguridad": 18.5,
+            "Inflación": 1.7,
+            "Estado de las calles": 14.2,
+            "Falta de pavimento": 3.4,
+            "Falta de agua potable": 2.1,
+            "Falta de viviendas": 4.3,
+            "Falta de cloacas": 9.4,
+            "Estado del lago": 17.6,
+            "Otro": 16.3
+          },
+          "Reelección Llaryora": {
+            "Si": 36.8,
+            "No": 63.2
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "OBRAS DE CLOACAS EN CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 47.2,
+                "No": 52.8
+              }
+            }
+          },
+          {
+            "nombre_obra": "EDIFICIO UNIVERSIDAD PROVINCIAL DE CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 88.8,
+                "No": 11.2
+              },
+              "Opinión sobre Obra": {
+                "Me parece bien": 78.1,
+                "Me parece mal": 8.6,
+                "No me importa": 13.3
+              }
+            }
+          },
+          {
+            "nombre_obra": "ESCUELA SECUNDARIA DE OFICIOS CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 43.8,
+                "No": 56.2
+              }
+            }
+          },
+          {
+            "nombre_obra": "HOSPITAL CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 80.7,
+                "No": 19.3
+              },
+              "Opinión sobre Obra": {
+                "Me parece bien": 92.3,
+                "Me parece mal": 3.4,
+                "No me importa": 4.3
+              }
+            }
+          },
+          {
+            "nombre_obra": "AVENIDA CÁRCANO CARLOS PAZ",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 85.0,
+                "No": 15.0
+              },
+              "Evaluación de Obra": {
+                "Bien": 61.4,
+                "Regular": 29.6,
+                "Mal": 9.0
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {
+          "Escenario 1": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 32.7
+            },
+            {
+              "candidato": "Otro",
+              "pct": 23.8
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 17.08
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 14.85
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 8.74
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.38
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.37
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 2": [
+            {
+              "candidato": "Otro",
+              "pct": 32.1
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 30.0
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 19.62
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 9.01
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 5.16
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.78
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.32
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "Otro",
+              "pct": 46.96
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 31.8
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 13.46
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 5.92
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.85
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 31.56
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 29.33
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 16.15
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 12.95
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 9.62
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.4
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
       }
     ]
   },
@@ -3105,8 +3437,8 @@
   },
   "RIO CUARTO": {
     "nombre_localidad": "RIO CUARTO",
-    "cantidad_rondas": 1,
-    "tiene_comparativo": false,
+    "cantidad_rondas": 5,
+    "tiene_comparativo": true,
     "rondas": [
       {
         "fecha": "2026-01-29",
@@ -3399,6 +3731,461 @@
         "candidatos_intendente": {},
         "candidatos_presidente": {},
         "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-03-07",
+        "casos_totales": null,
+        "preguntas": {
+          "Aprobación Gobernador": {
+            "Apruebo": 39.8,
+            "Desapruebo": 60.2
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 7.0,
+            "Buena": 9.1,
+            "Regular": 26.1,
+            "Mala": 56.5,
+            "No lo se": 1.3
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 11.5,
+            "Buena": 17.4,
+            "Regular": 30.0,
+            "Mala": 39.8,
+            "No lo se": 1.3
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 30.0,
+            "Buena": 20.9,
+            "Regular": 16.5,
+            "Mala": 30.4,
+            "No lo se": 2.2
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 12.2,
+            "Seguridad": 36.1,
+            "Inflación": 2.6,
+            "Estado de las calles": 28.3,
+            "Falta de pavimento": 10.4,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 4.8,
+            "Falta de cloacas": 0.0,
+            "Otro": 5.7
+          },
+          "Reelección Llaryora": {
+            "Si": 28.5,
+            "No": 81.5
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "CIRCUNVALACIÓN DE RÍO CUARTO",
+            "preguntas": {
+              "Motivo de Reelección por Obra": {
+                "Si": 22.4,
+                "No": 77.6
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {},
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-05-08",
+        "casos_totales": null,
+        "preguntas": {
+          "Aprobación Intendente": {
+            "Apruebo": 22.4,
+            "Desapruebo": 77.6
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 39.6,
+            "Desapruebo": 60.4
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 34.6,
+            "Desapruebo": 65.4
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 1.9,
+            "Buena": 12.2,
+            "Regular": 20.5,
+            "Mala": 63.5,
+            "No lo se": 1.9
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 12.1,
+            "Buena": 18.6,
+            "Regular": 35.9,
+            "Mala": 33.5,
+            "No lo se": 0.0
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 17.3,
+            "Buena": 23.1,
+            "Regular": 14.7,
+            "Mala": 44.2,
+            "No lo se": 0.6
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 11.5,
+            "Seguridad": 25.6,
+            "Inflación": 2.6,
+            "Estado de las calles": 28.8,
+            "Falta de pavimento": 5.1,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 3.8,
+            "Falta de cloacas": 0.6,
+            "Otro": 21.8
+          },
+          "Reelección Llaryora": {
+            "Si": 30.0,
+            "No": 70.0
+          },
+          "Reelección Milei": {
+            "Si": 46.8,
+            "No": 53.2
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "CIRCUNVALACIÓN DE RÍO CUARTO",
+            "preguntas": {
+              "Motivo de Reelección por Obra": {
+                "Si": 25.5,
+                "No": 74.5
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {},
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-06-23",
+        "casos_totales": null,
+        "preguntas": {
+          "Aprobación Intendente": {
+            "Apruebo": 28.6,
+            "Desapruebo": 71.4
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 39.9,
+            "Desapruebo": 60.1
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 55.9,
+            "Desapruebo": 44.1
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 4.9,
+            "Buena": 13.8,
+            "Regular": 27.0,
+            "Mala": 52.0,
+            "No lo se": 2.3
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 12.9,
+            "Buena": 18.8,
+            "Regular": 31.3,
+            "Mala": 35.5,
+            "No lo se": 1.6
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 22.4,
+            "Buena": 24.7,
+            "Regular": 19.1,
+            "Mala": 32.9,
+            "No lo se": 1.0
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 10.9,
+            "Seguridad": 28.0,
+            "Inflación": 2.3,
+            "Estado de las calles": 27.0,
+            "Falta de pavimento": 7.9,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 6.3,
+            "Falta de cloacas": 1.3,
+            "Otro": 16.4
+          },
+          "Reelección Llaryora": {
+            "Si": 30.3,
+            "No": 69.7
+          },
+          "Reelección Milei": {
+            "Si": 52.6,
+            "No": 47.4
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "CIRCUNVALACIÓN DE RÍO CUARTO",
+            "preguntas": {
+              "Motivo de Reelección por Obra": {
+                "Si": 22.1,
+                "No": 77.9
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {},
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-09-08",
+        "casos_totales": 314,
+        "preguntas": {
+          "Aprobación Intendente": {
+            "Apruebo": 28.7,
+            "Desapruebo": 71.3
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 49.9,
+            "Desapruebo": 50.1
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 51.9,
+            "Desapruebo": 48.1
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 4.1,
+            "Buena": 14.0,
+            "Regular": 29.3,
+            "Mala": 50.3,
+            "No lo se": 2.2
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 14.9,
+            "Buena": 23.2,
+            "Regular": 33.1,
+            "Mala": 26.5,
+            "No lo se": 2.2
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 21.3,
+            "Buena": 21.7,
+            "Regular": 18.2,
+            "Mala": 36.9,
+            "No lo se": 1.9
+          },
+          "Problemas principales": {
+            "Falta de trabajo": 12.1,
+            "Seguridad": 41.4,
+            "Inflación": 2.2,
+            "Estado de las calles": 18.2,
+            "Falta de pavimento": 9.6,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 3.8,
+            "Falta de cloacas": 1.9,
+            "Otro": 10.8
+          },
+          "Reelección Llaryora": {
+            "Si": 35.3,
+            "No": 64.7
+          },
+          "Reelección Milei": {
+            "Si": 49.7,
+            "No": 50.3
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "CIRCUNVALACIÓN DE RÍO CUARTO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 95.9,
+                "No": 4.1
+              },
+              "Opinión sobre Obra": {
+                "Me parece bien": 78.8,
+                "Me parece mal": 7.0,
+                "No me importa": 14.3
+              },
+              "Motivo de Reelección por Obra": {
+                "Si": 24.4,
+                "No": 75.6
+              }
+            }
+          },
+          {
+            "nombre_obra": "PAVIMENTACIÓN 100 CUADRAS RÍO CUARTO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 73.2,
+                "No": 26.8
+              }
+            }
+          },
+          {
+            "nombre_obra": "REMODELACIÓN AUTÓDROMO DE RÍO CUARTO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 73.2,
+                "No": 26.8
+              },
+              "Opinión sobre Obra": {
+                "Me parece bien": 42.0,
+                "Me parece mal": 17.8,
+                "No me importa": 40.1
+              }
+            }
+          }
+        ],
+        "dirigentes": [],
+        "candidatos_gobernador": {
+          "Escenario 1": [
+            {
+              "candidato": "Otro",
+              "pct": 33.5
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 27.6
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 14.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 12.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 7.6
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.9
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.6
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 2": [
+            {
+              "candidato": "Otro",
+              "pct": 38.6
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.7
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 22.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 8.9
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.2
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.3
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "Otro",
+              "pct": 53.0
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 22.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 12.7
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 3.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.5
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.3
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 30.3
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 28.7
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 16.2
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 12.7
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 11.1
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.0
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Sabe que Córdoba tiene los mejores alumnos de primaria en Matemática y Lengua según las pruebas APRENDER?",
+            "categorias": {
+              "Si": 59.9,
+              "No": 40.1
+            }
+          },
+          {
+            "pregunta_original": "¿Sabe que el gobierno provincial promueve un ALIVIO CORDOBÉS para deudores morosos?",
+            "categorias": {
+              "Si": 54.5,
+              "No": 45.5
+            }
+          },
+          {
+            "pregunta_original": "¿Está de acuerdo con medidas de este tipo por parte del gobierno provincial?",
+            "categorias": {
+              "Si": 57.6,
+              "No": 42.2
+            }
+          }
+        ]
       }
     ]
   },
