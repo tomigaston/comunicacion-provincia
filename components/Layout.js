@@ -5,12 +5,13 @@ import { useEffect, useMemo, useState } from 'react';
 import { tieneAccesoSeccion } from '../config/permisos';
 
 // La propiedad `key` identifica la sección para el esquema de permisos de
-// config/permisos.js. Hoy SECCIONES_RESTRINGIDAS está vacío, así que el
-// filtro de abajo no oculta nada: el menú se ve igual que siempre. Para
-// restringir una sección nueva en el futuro, alcanza con agregar su entrada
-// en SECCIONES_RESTRINGIDAS (config/permisos.js) — no hace falta tocar nada
-// más acá salvo, si es una sección que hoy no existe, sumar su `key` al tab
-// correspondiente.
+// config/permisos.js. Hoy solo encuestas_localidades está restringida (ver
+// SECCIONES_RESTRINGIDAS en config/permisos.js) — el filtro de abajo la
+// oculta del menú para quien no tenga acceso; el resto de las tabs se ve
+// igual que siempre. Para restringir una sección nueva en el futuro,
+// alcanza con agregar su entrada en SECCIONES_RESTRINGIDAS
+// (config/permisos.js) — no hace falta tocar nada más acá salvo, si es una
+// sección que hoy no existe, sumar su `key` al tab correspondiente.
 const TABS = [
   { href: '/localidades', label: 'Localidades', key: 'localidades' },
   { href: '/campanas', label: 'Campañas', key: 'campanas' },
