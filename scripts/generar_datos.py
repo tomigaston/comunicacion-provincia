@@ -815,12 +815,20 @@ def cargar_pauta_digital_global(
         # regla existente de "codigo_pieza null -> usar COD. CONTENIDO como
         # key" no alcanza acá porque ambos son null). Se incluyen igual, con
         # estado fijo "Pendiente", identificadas puntualmente por TITULO +
-        # LOCALIDAD/SUBCIRCUITO + PLATAFORMA + OBJETIVO DE CAMPAÑA (agregado
-        # este último porque dos piezas Pendiente pueden compartir título/
-        # localidad/plataforma y diferir solo en el objetivo planificado —
-        # ej. "Nos vemos en la Plaza Prussia" en Meta con Alcance vs.
-        # Visualizaciones). Si dos colisionaran igual con esta key, se corta
-        # la corrida: sería una pieza Pendiente perdida en silencio.
+        # LOCALIDAD/SUBCIRCUITO + PLATAFORMA + OBJETIVO DE CAMPAÑA + DEPARTAMENTO
+        # (agregado este último el 13/09/2026: una pieza "TODAS LAS
+        # LOCALIDADES" puede venir desagregada en una fila POR DEPARTAMENTO,
+        # cada una con su propio Universo/métricas planificadas -- igual que
+        # ya pasa con piezas no-Pendiente, donde _asignaciones_geograficas()
+        # expande cada fila "TODAS LAS LOCALIDADES"+Departamento a las
+        # localidades de las 60 que caen en ese departamento. Sin Departamento
+        # en la key, esas filas -legítimamente distintas y sin superposición
+        # una vez expandidas a Localidad- se veían como duplicadas. OBJETIVO
+        # DE CAMPAÑA se agregó antes porque dos piezas Pendiente pueden
+        # compartir título/localidad/plataforma y diferir solo en el objetivo
+        # planificado — ej. "Nos vemos en la Plaza Prussia" en Meta con
+        # Alcance vs. Visualizaciones. Si dos colisionaran igual con esta key,
+        # se corta la corrida: sería una pieza Pendiente perdida en silencio.
         es_pendiente = cod_contenido is None and fecha_envio is None
         if es_pendiente:
             metricas["filas_pendientes"] += 1
@@ -829,6 +837,7 @@ def cargar_pauta_digital_global(
                 limpio(row["LOCALIDAD / SUBCIRCUITO"]),
                 limpio(row["PLATAFORMA"]),
                 limpio(row["OBJETIVO DE CAMPAÑA"]),
+                limpio(row["DEPARTAMENTO"]),
             )
             if clave_pendiente in claves_pendientes_vistas:
                 raise SystemExit(
