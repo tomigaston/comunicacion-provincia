@@ -1446,6 +1446,21 @@ EXCLUSIONES_LUGAR_GNO_CONFIRMADAS = {
         # mundo real pero no son ninguna de las 60 -> mismo criterio.
         "BENJAMIN GOULD", "CANALS", "COLONIA BISMARK", "COLONIA BREMEN",
         "MIRAMAR DE ANSENUZA", "PUEBLO ITALIANO", "VIAMONTE",
+        # Sumadas 18/09/2026: confirmadas por el usuario tras el export GNO
+        # 18/09 -> nombres de departamento/región (agrupan varias localidades,
+        # no son una localidad puntual) y localidades reales fuera de las 60.
+        # El patrón "Nombre (N)" (ej. "Minas (4)") es nuevo y de origen
+        # desconocido -> mismo criterio: se excluye el token tal cual vino.
+        "AREA METROPOLITANA", "SIERRAS CHICAS", "PUNILLA",
+        "DEPTO TERCERO ARRIBA", "DEPARTAMENTO TERCERO ARRIBA",
+        "DEPARTAMENTO COLON", "DEPTO TULUMBA",
+        "MINAS (4)", "SAN JUSTO (4)", "UNION (4)", "GENERAL SAN MARTIN (3)",
+        "POCHO (2)", "SAN JAVIER (2)", "RIO SEGUNDO (1)", "JUAREZ CELMAN (1)",
+        "RIO CUARTO (1)", "SAN ALBERTO (1) Y TOTORAL (1).",
+        "VILLA GIARDINO", "VALLE HERMOSO", "CASA GRANDE", "MAYU SUMAJ",
+        "TINOCO", "LAS ISLETILLAS", "PUNTA DEL AGUA", "PAMPAYASTA SUD",
+        "PAMPAYASTA NORTE", "PARAJE LOS POTREROS", "DALMACIO VELEZ SARFIELD",
+        "CURA BROCHERO",
     ]
 }
 
