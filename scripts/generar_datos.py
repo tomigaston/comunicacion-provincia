@@ -82,8 +82,7 @@ def antiguedad_y_alerta_pauta_digital(estado, inicio_ts, umbral_amarilla, umbral
     """Pauta Digital no trae Antiguedad_Dias/Alerta precalculados (a diferencia
     de Medios Tradicionales) -- se calculan acá al vuelo, solo para piezas
     Vigentes, con los mismos umbrales de Parametros. inicio_ts ya viene resuelto
-    por el caller con el mismo criterio de fallback que FIN/FIN INFORMADO
-    (Inicio real si está cargado, si no Inicio del informe)."""
+    por el caller tomando siempre la columna AA (INICIO), sin fallback."""
     if estado != "Vigente" or inicio_ts is None:
         return None, None
     antiguedad_dias = (HOY - inicio_ts.date()).days
@@ -869,14 +868,12 @@ def cargar_pauta_digital_global(
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
         tipo_pauta = _forma_canonica(mapa_tipos_pauta, limpio(row["TIPO DE PAUTA"]))
 
-        # FIN INFORMADO como fallback de FIN: hay filas que todavía no tienen
-        # FIN real cargado pero sí traen la fecha comprometida en FIN
-        # INFORMADO -> se usa esa para no dejar la pieza sin fecha de fin ni
-        # estado. Nunca se usa la columna ESTADO cruda del excel (criterio
-        # fijo del proyecto).
+        # INICIO/FIN se toman siempre de las columnas AA/AB ("INICIO "/"FIN"),
+        # sin fallback a FIN INFORMADO (confirmado 20/09/2026, reemplaza al
+        # criterio anterior). Si FIN viene vacío, la pieza queda sin estado
+        # calculado (None) -- no se inventa. Nunca se usa la columna ESTADO
+        # cruda del excel (criterio fijo del proyecto).
         fin_ts = _a_timestamp(row["FIN"])
-        if fin_ts is None:
-            fin_ts = _a_timestamp(row["FIN INFORMADO"])
         estado_pieza = "Pendiente" if es_pendiente else estado_por_fecha(fin_ts)
         antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
             estado_pieza, _a_timestamp(row["INICIO "]), umbral_amarilla, umbral_roja
