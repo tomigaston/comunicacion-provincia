@@ -9,6 +9,7 @@ import difflib
 import json
 import re
 import unicodedata
+from collections import Counter
 from datetime import datetime, date
 from pathlib import Path
 
@@ -63,6 +64,26 @@ def estado_por_fecha(fecha_fin):
     if ts is None:
         return None
     return "Vigente" if ts.date() >= HOY else "Finalizada"
+
+
+def estado_pauta_digital_desde_crudo(valor_estado_crudo):
+    """Estado expuesto en Pauta Digital (fuente GLOBAL, Pauta RRSS_GLOBAL.xlsx):
+    se toma DIRECTO de la columna ESTADO del crudo, sin inventar categorías
+    propias (regla de negocio 24/09/2026, reemplaza al cálculo viejo por fecha
+    INICIO/FIN y también retira por completo el estado fijo "Pendiente" para
+    piezas sin COD. CONTENIDO/FECHA DE ENVÍO). Mapeo: ACTIVO -> "Vigente",
+    INACTIVO -> "Finalizada", OBSERVADO -> "Observada", vacío -> "S/D" (la
+    planilla de origen todavía no calculó ESTADO para esa fila -- no se
+    infiere nada). Cualquier otro valor se muestra TAL CUAL viene en el
+    crudo, sin forzarlo a estas categorías ni descartar la fila."""
+    valor = limpio(valor_estado_crudo)
+    if valor is None:
+        return "S/D"
+    return {
+        "ACTIVO": "Vigente",
+        "INACTIVO": "Finalizada",
+        "OBSERVADO": "Observada",
+    }.get(normalizar(valor), valor)
 
 
 def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
@@ -772,7 +793,6 @@ def cargar_pauta_digital_global(
         # expandir geografía) -- consistente con "Códigos únicos con COD.
         # CONTENIDO" más abajo, que también se cuenta sobre df completo.
         "filas_con_cod_contenido": int(df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None).sum()),
-        "filas_pendientes": 0,
     }
 
     localidades_60_normalizadas = set(localidad_a_oficial.keys())
@@ -782,7 +802,6 @@ def cargar_pauta_digital_global(
 
     piezas = []
     excluidas = 0
-    claves_pendientes_vistas = {}
     for _, row in df.iterrows():
         geo = clasificar_geografia_pauta_global(
             row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"],
@@ -809,43 +828,6 @@ def cargar_pauta_digital_global(
         _dedup_fecha_envio_ts = _a_timestamp(row["FECHA DE ENVÍO"])
         _dedup_estado_activo = normalizar(limpio(row["ESTADO"])) == "ACTIVO"
 
-        # Piezas cargadas pero nunca despachadas: sin COD. CONTENIDO ni FECHA
-        # DE ENVÍO no hay con qué calcular vigencia/finalización real (la
-        # regla existente de "codigo_pieza null -> usar COD. CONTENIDO como
-        # key" no alcanza acá porque ambos son null). Se incluyen igual, con
-        # estado fijo "Pendiente", identificadas puntualmente por TITULO +
-        # LOCALIDAD/SUBCIRCUITO + PLATAFORMA + OBJETIVO DE CAMPAÑA + DEPARTAMENTO
-        # (agregado este último el 13/09/2026: una pieza "TODAS LAS
-        # LOCALIDADES" puede venir desagregada en una fila POR DEPARTAMENTO,
-        # cada una con su propio Universo/métricas planificadas -- igual que
-        # ya pasa con piezas no-Pendiente, donde _asignaciones_geograficas()
-        # expande cada fila "TODAS LAS LOCALIDADES"+Departamento a las
-        # localidades de las 60 que caen en ese departamento. Sin Departamento
-        # en la key, esas filas -legítimamente distintas y sin superposición
-        # una vez expandidas a Localidad- se veían como duplicadas. OBJETIVO
-        # DE CAMPAÑA se agregó antes porque dos piezas Pendiente pueden
-        # compartir título/localidad/plataforma y diferir solo en el objetivo
-        # planificado — ej. "Nos vemos en la Plaza Prussia" en Meta con
-        # Alcance vs. Visualizaciones. Si dos colisionaran igual con esta key,
-        # se corta la corrida: sería una pieza Pendiente perdida en silencio.
-        es_pendiente = cod_contenido is None and fecha_envio is None
-        if es_pendiente:
-            metricas["filas_pendientes"] += 1
-            clave_pendiente = (
-                limpio(row["TITULO DE LA PIEZA"]),
-                limpio(row["LOCALIDAD / SUBCIRCUITO"]),
-                limpio(row["PLATAFORMA"]),
-                limpio(row["OBJETIVO DE CAMPAÑA"]),
-                limpio(row["DEPARTAMENTO"]),
-            )
-            if clave_pendiente in claves_pendientes_vistas:
-                raise SystemExit(
-                    "Colisión de key compuesta entre dos filas 'Pendiente' "
-                    f"(fila actual y fila {claves_pendientes_vistas[clave_pendiente]}): {clave_pendiente}. "
-                    "Deteniendo la corrida -- revisar antes de seguir."
-                )
-            claves_pendientes_vistas[clave_pendiente] = row.name
-
         link_material = limpiar_link(row["LINK MATERIAL"])
         link_ig = limpiar_link(row["IG"])
         link_fb = limpiar_link(row["FB"])
@@ -868,15 +850,34 @@ def cargar_pauta_digital_global(
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
         tipo_pauta = _forma_canonica(mapa_tipos_pauta, limpio(row["TIPO DE PAUTA"]))
 
-        # INICIO/FIN se toman siempre de las columnas AA/AB ("INICIO "/"FIN"),
-        # sin fallback a FIN INFORMADO (confirmado 20/09/2026, reemplaza al
-        # criterio anterior). Si FIN viene vacío, la pieza queda sin estado
-        # calculado (None) -- no se inventa. Nunca se usa la columna ESTADO
-        # cruda del excel (criterio fijo del proyecto).
+        # ESTADO expuesto en el tablero: se toma DIRECTO de la columna ESTADO
+        # del crudo (regla de negocio 24/09/2026, reemplaza al cálculo viejo
+        # por fecha INICIO/FIN -- ver estado_pauta_digital_desde_crudo()).
+        # INICIO/FIN se siguen tomando siempre de las columnas AA/AB ("INICIO
+        # "/"FIN"), sin fallback a FIN INFORMADO, pero solo para
+        # antiguedad_y_alerta_pauta_digital() de acá abajo: esa función NO se
+        # toca -- sigue gateando antigüedad/alerta con el Vigente/Finalizada
+        # calculado por fecha (no con el ESTADO crudo), porque alimenta otra
+        # funcionalidad (la ventana de vencimientos del mail) que no cambia
+        # con esta regla de negocio.
+        inicio_ts = _a_timestamp(row["INICIO "])
         fin_ts = _a_timestamp(row["FIN"])
-        estado_pieza = "Pendiente" if es_pendiente else estado_por_fecha(fin_ts)
+        estado_pieza = estado_pauta_digital_desde_crudo(row["ESTADO"])
+        estado_por_fecha_para_alerta = estado_por_fecha(fin_ts)
         antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
-            estado_pieza, _a_timestamp(row["INICIO "]), umbral_amarilla, umbral_roja
+            estado_por_fecha_para_alerta, inicio_ts, umbral_amarilla, umbral_roja
+        )
+        # Campo interno (no se muestra en el tablero), usado únicamente por
+        # calcularVencimientosPautaDigital() en lib/vencimientos.js para la
+        # ventana de 7 días del mail de vencimientos: True si INICIO <= hoy <=
+        # FIN (ambas fechas de las columnas AA/AB, sin fallback a
+        # INICIO/FIN INFORMADO). Reemplaza al criterio que antes daba
+        # "estado" == "Vigente" para ese mismo propósito -- no depende del
+        # ESTADO crudo ni de estado_pauta_digital_desde_crudo() (agregado
+        # 25/09/2026, junto con el cambio de "estado" a venir del crudo).
+        vigente_por_fecha = (
+            inicio_ts is not None and fin_ts is not None
+            and inicio_ts.date() <= HOY <= fin_ts.date()
         )
 
         for asignacion in asignaciones:
@@ -922,11 +923,10 @@ def cargar_pauta_digital_global(
                 "fin_informe": None,
                 "fecha_creacion": fecha_envio,
                 "finalizacion": fecha_iso(fin_ts),
-                # Pendiente sin excepciones: no se deriva de FIN/FIN INFORMADO
-                # (podrían traer una fecha comprometida que todavía no pasó
-                # nada) ni entra en los cálculos de vigencia/finalización del
-                # resto del pipeline -- construir_campanas() las excluye.
+                # Ver estado_pauta_digital_desde_crudo(): viene directo de la
+                # columna ESTADO del crudo, no se deriva de FIN/FIN INFORMADO.
                 "estado": estado_pieza,
+                "vigente_por_fecha": vigente_por_fecha,
                 "antiguedad_dias": antiguedad_dias,
                 "alerta": alerta,
                 "alcance": None,
@@ -1652,8 +1652,6 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
     for pieza in pauta_digital["piezas"]:
         if pieza["alcance_tipo"] is None:
             continue  # BARRIO/CIRCUITO/CODIGO_AUDIENCIA/OTRO/REGION: no aplican a la vista unificada por localidad/depto
-        if pieza["estado"] == "Pendiente":
-            continue  # piezas cargadas pero no despachadas: sin fecha real no entran en la vista de vigencia
         # en_60_localidades solo es la condición correcta para alcance_tipo=='localidad'
         # (ahí sí significa "esta Localidad puntual es una de las 60"). Para 'departamento'
         # y 'provincia' NO se filtra por en_60_localidades: esta es la vista unificada con
@@ -1778,17 +1776,19 @@ def main():
     # JSON, así un corte por pérdida de datos no esperada no llega a
     # sobreescribir el archivo anterior. -----------------------------------
     codigos_nuevos = {p["cod_contenido"] for p in piezas_global if p.get("cod_contenido") is not None}
-    piezas_pendientes = [p for p in piezas_global if p["estado"] == "Pendiente"]
     codigos_dados_de_baja = sorted(codigos_previos - codigos_nuevos, key=str)
+    conteo_estados = Counter(p["estado"] for p in piezas_global)
+    estados_no_mapeados = sorted(set(conteo_estados) - {"Vigente", "Finalizada", "Observada", "S/D"})
     print("  --- Verificación Pauta Digital (Pauta RRSS_GLOBAL.xlsx) ---")
     print(f"  Filas descartadas como basura: {metricas_global['filas_descartadas']} de {metricas_global['filas_totales']} totales")
     print(f"  Filas reales tras filtro: {metricas_global['filas_reales']}")
     print(f"  Filas con COD. CONTENIDO: {metricas_global['filas_con_cod_contenido']}")
-    print(f"  Filas 'Pendiente' sin código/fecha: {metricas_global['filas_pendientes']}")
     print(f"  Códigos únicos con COD. CONTENIDO: {metricas_global['codigos_unicos_con_cod_contenido']}")
     print(f"  Filas colapsadas por dedup: {metricas_global['filas_colapsadas_por_dedup']}")
     print(f"  Total de piezas fuente nueva en el JSON final: {len(piezas_global)}")
-    print(f"  Piezas con estado 'Pendiente': {len(piezas_pendientes)}")
+    print(f"  Piezas por estado (directo de ESTADO crudo): {dict(conteo_estados)}")
+    if estados_no_mapeados:
+        print(f"  ⚠️  Estados fuera de ACTIVO/INACTIVO/OBSERVADO/vacío, mostrados tal cual: {estados_no_mapeados}")
     if codigos_dados_de_baja:
         print(f"  Códigos dados de baja respecto al JSON anterior ({len(codigos_dados_de_baja)}): {codigos_dados_de_baja}")
         raise SystemExit(
