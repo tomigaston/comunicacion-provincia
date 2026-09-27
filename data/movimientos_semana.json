@@ -1,751 +1,1545 @@
 {
-  "total_avisos_cambiaron": 81,
+  "total_avisos_cambiaron": 170,
   "cambios": [
     {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ SAN FRANCISCO: RN19\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nOBRAS VIALES 1"
-    },
-    {
       "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
+      "localidad": "LA FALDA",
       "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "TULUMBA",
-      "localidad": "VILLA TULUMBA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "ESCUCHÁ - CIRCUNVALACIÓN RIO IV\nCÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ - CIRCUNVALACIÓN RIO IV\nCÓRDOBA LIDERA PRUEBAS APRENDER\nPUBLINOTA: RECONOCIMIENTO DOCENTES PRUEBAS PISA\nPRUEBAS PISA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PREVIA- LUNES ALMAFUERTE\nPPP\nPNT- CIRCUNVALACIÓN DE RÍO CUARTO\nPNT- CRUCE TRASLASIERRA: LOS GIGANTES\nPRUEBAS PISA\nESCUCHÁ: ALTONIVEL LA CALERA\nESCUCHÁ: VCP-  BARRIO COLINAS",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nPNT- CIRCUNVALACIÓN DE RÍO CUARTO\nPNT- CRUCE TRASLASIERRA: LOS GIGANTES\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL LA CALERA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nESCUCHA ISCHILIN: COLECTORA\nESCUCHA ISCHILIN: UPC\nCREDITOS CORDOBA IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SOBREMONTE",
-      "localidad": "SAN FRANCISCO DEL CHAÑAR",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nSÉXTUPLES- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: UPC\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nPRUEBAS PISA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "BOLETO EDUCATIVO CORDOBÉS\nEMPLEO +26\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "BOLETO EDUCATIVO CORDOBÉS\nEMPLEO +26\nCÓRDOBA LIDERA PRUEBAS APRENDER\nPPP\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "MALAGUEÑO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CRÉDITOS CÓRDOBA IMPULSA\nPPP\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "LOS GIGANTES\nBOLETO EDUCATIVO CORDOBÉS\nMIRÁ VILLA CARLOS PAZ - SEDE UPC\nMIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nMIRÁ VILLA CARLOS PAZ - CUENCA LAGO\nAUTOVÍA PUNILLA- CONSEJO SEGURIDAD\nESCUCHÁ  VILLA CARLOS PAZ - COLECTORA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ - UPC\nESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nMIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nMIRÁ VILLA CARLOS PAZ - CUENCA LAGO\nMIRÁ VILLA CARLOS PAZ - SEDE UPC\nAUTOVÍA PUNILLA- CONSEJO SEGURIDAD\nBOLETO EDUCATIVO CORDOBÉS\nLOS GIGANTES"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES- ESCUCHÁ VILLA CARLOS PAZ- UPC\nSÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "SANTA MARIA DE PUNILLA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ SAN FRANCISCO: RN19\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nCBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nCBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VISITA ALMAFUERTE: EDUCACIÓN\nPRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "CAPILLA DEL MONTE",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "ESCUCHÁ COSQUÍN : GAS NATURAL",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ COSQUÍN: GAS NATURAL"
-    },
-    {
-      "departamento": "RIO SECO",
-      "localidad": "VILLA DE MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA LIDERA  PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA\nOBRA ALTO NIVEL VELEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nESCUCHA ISCHILI: COLECTORA\nESCUCHA ISCHILIN: UPC\nPPP\nCRÉDITOS CORDOBA IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VISITA ALMAFUERTE: EDUCACIÓN\nPRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO\nESCUCHÁ RÍO TERCERO: UPC"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
     },
     {
       "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "localidad": "VILLA SANTA ROSA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
     },
     {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nPRUEBAS PISA\nESCUCHÁ: ALTONIVEL LA CALERA\nESCUCHÁ: VCP-  BARRIO COLINAS",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL LA CALERA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ RÍO CEBALLOS: ESCUELA PRIMARIA"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALDAN",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nPPP",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RIO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ: ALTONIVELES\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
     },
     {
       "departamento": "COLON",
       "localidad": "COLONIA CAROYA",
       "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nPNT- CIRCUNVALACIÓN DE RÍO CUARTO\nPNT- CRUCE TRASLASIERRA: LOS GIGANTES\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL LA CALERA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nPRUEBAS PISA\nOBRAS VIALES 2",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CORDOBA IMPULSA\nOBRAS VIALES 2\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "VALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nESCUCHA- VILLA MARÍA - RIO CTALOMOCHITA\nESCUCHA- VILLA MARÍA - UNVM",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nCBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nESCUCHA- VILLA MARÍA - RIO CTALOMOCHITA\nESCUCHA- VILLA MARÍA - UNVM"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COSQUÍN: GAS NATURAL\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ COSQUÍN: GAS NATURAL"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
     },
     {
       "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "CARTELERÍA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nBOLETO EDUCATIVO CORDOBÉS\nPADRE LUCHESSE INAUGURACIÓN\nDUPLICACIÓN- AV. BODEREAU",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "BOLETO EDUCATIVO CORDOBÉS\nPADRE LUCHESSE INAUGURACIÓN\nDUPLICACIÓN- AV. BODEREAU"
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
     },
     {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "AUTOVÍA CALAMUCHITA- CONSEJO SEGURIDAD",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "AUTOVÍA CALAMUCHITA- CONSEJO SEGURIDAD\nCÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
       "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nCÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nPRUEBAS PISA\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nCRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
     },
     {
       "departamento": "COLON",
       "localidad": "ESTACION JUAREZ CELMAN",
       "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1"
     },
     {
       "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
+      "localidad": "ONCATIVO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "ESCUCHÁ RUTA NACIONAL 158\nCÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "ESCUCHÁ RUTA NACIONAL 158\nCÓRDOBA  LIDERA PRUEBAS APRENDER\nPPP\nPRUEBAS PISA"
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "LOS GIGANTES\nAUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "ESCUCHÁ MALAGUEÑO: COLECTORA\nLOS GIGANTES\nAUTOVIA PUNILLA - CONSEJO DE SEGURIDAD"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA- MIRÁ LABOULAYE- UPC SEDE",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CBA- MIRÁ LABOULAYE- UPC SEDE\nESCUCHÁ LABOULAYE - PLANTA DEPURADORA\nESCUCHÁ LABOULAYE - ESCUELA SECUDARIA DE FORMACIÓN PROFESIONAL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBA PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nSÉXTUPLES - PPP"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
     },
     {
       "departamento": "TOTORAL",
       "localidad": "VILLA DEL TOTORAL",
       "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
     },
     {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "CÓRDOBA  LIDERA PRUEBAS APRENDER\nCÓRDOBA  IMPULSA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "CÓRDOBA  IMPULSA"
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA MARÍA: UNVM\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA MARÍA: UNVM"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA NUEVA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nCBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nPADRE LUCHESSE TERMINADA\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nPPP\nPADRE LUCHESSE TERMINADA\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM\nESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ CRUZ DEL EJE: ACUEDUCTO\nESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COSQUÍN: GAS NATURAL\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ COSQUÍN: GAS NATURAL"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nPRUEBAS PISA\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO\nSÉXTUPLES - PPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LA CALERA: ALTONIVEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nVISITA ALMAFUERTE: EDUCACIÓN\nPPP"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "MORTEROS",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-09-11",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-09-18",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA\nOBRAS VIALES 1"
-    }
-  ],
-  "total_caidos": 2,
-  "caidos": [
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ MORTEROS: UPC\nPRUEBAS PISA\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA\nOBRA ALTO NIVEL VELEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nOBRA ALTO NIVEL VÉLEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS\nALTO NIVEL VALLE ESCONDIDO TERMINADO\nDUPLICACION LUCHESSE TERMINADO\nDUPLICACION BODEREAU"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nPRUEBAS PISA\nESCUCHÁ LABOULAYE: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 1"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM\nESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARIA: UNVM\nESCUCHÁ VILLA MARIA: CIRCUNVALACIÓN"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ RUTA NACIONAL 158\nCÓRDOBA  LIDERA PRUEBAS APRENDER\nPPP\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "ESCUCHÁ RUTA NACIONAL 158\nCÓRDOBA  LIDERA PRUEBAS APRENDER\nCIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA TERMINADA"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
     {
       "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
       "tipo_medio": "TV",
-      "ultimo_tema": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
-      "fecha_ultima_vez": "2026-09-11"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN\nSÉXTUPLES - PPP"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL LA CALERA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PLAZA LEÓN XIV\nCRÉDITOS ALIVIO CORDOBÉS\nPPP"
     },
     {
       "departamento": "SAN JAVIER",
       "localidad": "VILLA DOLORES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nPRUEBAS PISA\nOBRAS VIALES 2",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN\nESCUCHÁ VILLA MARÍA: UNVM"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ: ALTONIVELES",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA LAS PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA LAS PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA LAS PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nCRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- PPP"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nVISITA ALMAFUERTE: EDUCACIÓN\nPPP"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ LA CALERA: ALTONIVEL",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LA CALERA: ALTONIVEL"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nPRUEBAS PISA\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ VILLA MARÍA: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA TERMINADA"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO CUARTO: ASFALTO\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nESCUCHÁ RÍO CUARTO: CENTRO DE DESARROLLO INFANTIL",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nCRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nOBRAS VIALES 2\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nCRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 1"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nCBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA-MIRÁ MORTEROS- UPC SEDE",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CBA-MIRÁ MORTEROS- UPC SEDE\nESCUCHÁ - UPC - SEDE MORTEROS"
+    },
+    {
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nPRUEBAS PISA\nESCUCHÁ LABOULAYE: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA  PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA  PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "PANTALLA LED",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA  IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
       "tipo_medio": "GRÁFICA",
-      "ultimo_tema": "CÓRDOBA  IMPULSA",
-      "fecha_ultima_vez": "2026-09-11"
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ - CIRCUNVALACIÓN RIO IV\nCÓRDOBA LIDERA PRUEBAS APRENDER\nPUBLINOTA: RECONOCIMIENTO DOCENTES PRUEBAS PISA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "ESCUCHÁ - CIRCUNVALACIÓN RIO IV\nCÓRDOBA LIDERA PRUEBAS APRENDER\nCRÉDITOS ALIVIO CORDOBÉS"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CBA- MIRÁ LAS VARILLAS- SEDE UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CBA- MIRÁ LAS VARILLAS- SEDE UPC\nCBA- ESCUCHÁ  LAS VARILLAS- SEDE UPC"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "PRUEBAS PISA\nCÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PRUEBAS PISA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "ESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO\nESCUCHÁ RÍO TERCERO: UPC",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RIÓ TERCERO : INAUGURACIÓN PUENTE LOS POTREROS\nPPP\nESCUCHÁ RÍO TERCERO: PLAZA Y BALNEARIO\nESCUCHÁ RÍO TERCERO: UPC"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SAN FRANCISCO: UPC\nESCUCHÁ SAN FRANCISCO: PARQUE CINCUENTENARIO\nESCUCHÁ SAN FRANCISCO: RN19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-09-18",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-09-25",
+      "tema_actual": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP"
+    }
+  ],
+  "total_caidos": 1,
+  "caidos": [
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "tipo_medio": "CARTELERÍA",
+      "ultimo_tema": "CBA- MIRÁ- AUTOPISTA RUTA 19",
+      "fecha_ultima_vez": "2026-09-18"
     }
   ]
 }
