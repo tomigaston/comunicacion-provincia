@@ -10,7 +10,6 @@ import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
-import { calcularAlertasLocalidades } from '../../lib/useAlertas';
 
 export default function LocalidadesIndex() {
   const router = useRouter();
@@ -48,16 +47,6 @@ export default function LocalidadesIndex() {
       if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
     }
 
-    // Semáforo de antigüedad (peor caso por área, sección 2.4 de la spec) --
-    // función compartida con la pestaña Semáforo (lib/useAlertas.js), para no
-    // duplicar esta lógica en dos lugares.
-    const alertasPorClave = new Map(
-      calcularAlertasLocalidades(localidadesData, mediosData, pautaData).map((a) => [
-        normalizarTexto(a.localidad),
-        a,
-      ])
-    );
-
     const audiovisualesPorLocalidad = new Set(
       audiovisualesData.items.filter((i) => i.en_60_prioritarias).map((i) => normalizarTexto(i.localidad))
     );
@@ -72,8 +61,6 @@ export default function LocalidadesIndex() {
         cobertura: cobertura ? cobertura.cobertura : {},
         tienePautaDigital: pautaPorLocalidad.has(clave),
         tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
-        alertaMedios: alertasPorClave.get(clave)?.alertaMedios ?? null,
-        alertaPautaDigital: alertasPorClave.get(clave)?.alertaPautaDigital ?? null,
       };
     });
   }, [datos]);
@@ -208,8 +195,6 @@ export default function LocalidadesIndex() {
                 totalTipos={l.totalTipos}
                 tienePautaDigital={l.tienePautaDigital}
                 tieneAudiovisuales={l.tieneAudiovisuales}
-                alertaMedios={l.alertaMedios}
-                alertaPautaDigital={l.alertaPautaDigital}
               />
             ))}
           </div>

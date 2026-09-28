@@ -1,10 +1,12 @@
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import SemaforoBadge from '../../components/SemaforoBadge';
 import { useAlertas } from '../../lib/useAlertas';
 import { pesoDeColor } from '../../lib/semaforo';
 import { slugificar } from '../../lib/texto';
+
+const textoTemas = (n) => `${n} ${n === 1 ? 'tema sin cambios' : 'temas sin cambios'} hace 30+ días`;
 
 const VISTAS = [
   { key: 'grilla', label: 'Grilla' },
@@ -38,8 +40,8 @@ export default function SemaforoIndex() {
         <div>
           <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo de antigüedad</h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 2 }}>
-            Medios Tradicionales y Pauta Digital, peor caso por área. Sin badge = sin dato de vigencia
-            cargado todavía (no es "verde por default").
+            Medios Tradicionales: peor entre frescura (tema activo más reciente) y cobertura (tipos de
+            medio con tema activo). Pauta Digital: peor caso por pieza. Tocá una localidad para ver el detalle.
           </p>
         </div>
         <div style={{ display: 'flex', gap: 4, background: 'var(--bg-secondary)', borderRadius: 999, padding: 3 }}>
@@ -77,42 +79,43 @@ export default function SemaforoIndex() {
 }
 
 function VistaGrilla({ localidades, router }) {
+  const [abierta, setAbierta] = useState(null);
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-        gap: 14,
-      }}
-    >
-      {localidades.map((l) => (
-        <div
-          key={l.localidad}
-          role="button"
-          tabIndex={0}
-          onClick={() => router.push(`/localidades/${slugificar(l.localidad)}`)}
-          onKeyDown={(e) => e.key === 'Enter' && router.push(`/localidades/${slugificar(l.localidad)}`)}
-          style={{
-            cursor: 'pointer',
-            background: 'var(--bg-primary)',
-            border: '1px solid var(--border)',
-            borderRadius: 12,
-            padding: '16px 18px',
-          }}
-        >
-          <div style={{ fontSize: 15, fontWeight: 700 }}>{l.localidad}</div>
-          <div style={{ fontSize: 12.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>{l.departamento}</div>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-            <BadgeConEtiqueta etiqueta="Medios Trad." alerta={l.alertaMedios} />
-            <BadgeConEtiqueta etiqueta="Pauta Digital" alerta={l.alertaPautaDigital} />
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 14 }}>
+      {localidades.map((l) => {
+        const expandida = abierta === l.localidad;
+        return (
+          <div
+            key={l.localidad}
+            role="button"
+            tabIndex={0}
+            onClick={() => setAbierta(expandida ? null : l.localidad)}
+            onKeyDown={(e) => e.key === 'Enter' && setAbierta(expandida ? null : l.localidad)}
+            style={{
+              cursor: 'pointer',
+              background: 'var(--bg-primary)',
+              border: '1px solid var(--border)',
+              borderRadius: 12,
+              padding: '16px 18px',
+              gridColumn: expandida ? '1 / -1' : undefined,
+            }}
+          >
+            <div style={{ fontSize: 15, fontWeight: 700 }}>{l.localidad}</div>
+            <div style={{ fontSize: 12.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>{l.departamento}</div>
+            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+              <BadgeConEtiqueta etiqueta="Medios Trad." alerta={l.alertaMedios} />
+              <BadgeConEtiqueta etiqueta="Pauta Digital" alerta={l.alertaPautaDigital} />
+            </div>
+            {expandida && <DetalleMedios l={l} router={router} />}
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
 
 function VistaLista({ localidades, router }) {
+  const [abierta, setAbierta] = useState(null);
   return (
     <table style={{ width: '100%', borderCollapse: 'collapse' }}>
       <thead>
@@ -124,24 +127,87 @@ function VistaLista({ localidades, router }) {
         </tr>
       </thead>
       <tbody>
-        {localidades.map((l) => (
-          <tr
-            key={l.localidad}
-            onClick={() => router.push(`/localidades/${slugificar(l.localidad)}`)}
-            style={{ borderBottom: '1px solid var(--border)', cursor: 'pointer' }}
-          >
-            <td style={{ ...td, fontWeight: 600 }}>{l.localidad}</td>
-            <td style={{ ...td, color: 'var(--text-secondary)' }}>{l.departamento}</td>
-            <td style={td}>
-              <SemaforoBadge alerta={l.alertaMedios} />
-            </td>
-            <td style={td}>
-              <SemaforoBadge alerta={l.alertaPautaDigital} />
-            </td>
-          </tr>
-        ))}
+        {localidades.map((l) => {
+          const expandida = abierta === l.localidad;
+          return (
+            <Fragment key={l.localidad}>
+              <tr
+                onClick={() => setAbierta(expandida ? null : l.localidad)}
+                style={{ borderBottom: expandida ? 'none' : '1px solid var(--border)', cursor: 'pointer' }}
+              >
+                <td style={{ ...td, fontWeight: 600 }}>{l.localidad}</td>
+                <td style={{ ...td, color: 'var(--text-secondary)' }}>{l.departamento}</td>
+                <td style={td}>
+                  <SemaforoBadge alerta={l.alertaMedios} />
+                </td>
+                <td style={td}>
+                  <SemaforoBadge alerta={l.alertaPautaDigital} />
+                </td>
+              </tr>
+              {expandida && (
+                <tr style={{ borderBottom: '1px solid var(--border)' }}>
+                  <td style={td} colSpan={4}>
+                    <DetalleMedios l={l} router={router} />
+                  </td>
+                </tr>
+              )}
+            </Fragment>
+          );
+        })}
       </tbody>
     </table>
+  );
+}
+
+/** Detalle de Medios Tradicionales: por qué dio ese color (motivo) y temas
+ * activos con fecha sin cambios hace 30+ días (independiente del color). */
+function DetalleMedios({ l, router }) {
+  const sm = l.semaforoMedios;
+  return (
+    <div
+      onClick={(e) => e.stopPropagation()}
+      style={{ marginTop: 14, paddingTop: 12, borderTop: '1px solid var(--border)', fontSize: 13 }}
+    >
+      {sm ? (
+        <>
+          <div style={{ fontWeight: 600, marginBottom: 4 }}>Medios Tradicionales</div>
+          {sm.motivo.length === 0 ? (
+            <p style={{ color: 'var(--text-secondary)' }}>
+              Frescura y cobertura en verde ({sm.frescura.dias} días desde el tema activo más reciente; {sm.cobertura.tipos} de{' '}
+              {sm.cobertura.total} tipos de medio activos).
+            </p>
+          ) : (
+            <ul style={{ margin: 0, paddingLeft: 18, color: 'var(--text-secondary)' }}>
+              {sm.motivo.map((m) => (
+                <li key={m}>{m}</li>
+              ))}
+            </ul>
+          )}
+          {sm.estancados.length > 0 && (
+            <div style={{ marginTop: 10 }}>
+              <div style={{ fontWeight: 600, marginBottom: 4 }}>{textoTemas(sm.estancados.length)}</div>
+              <ul style={{ margin: 0, paddingLeft: 18 }}>
+                {sm.estancados.map((v, i) => (
+                  <li key={i} style={{ marginBottom: 2 }}>
+                    <SemaforoBadge alerta={v.alerta} antiguedadDias={v.antiguedad_dias} compacto />{' '}
+                    {v.tema} <span style={{ color: 'var(--text-tertiary)' }}>· {v.tipo_medio} · {v.antiguedad_dias} días</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
+      ) : (
+        <p style={{ color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
+      )}
+      <button
+        type="button"
+        onClick={() => router.push(`/localidades/${slugificar(l.localidad)}`)}
+        style={{ marginTop: 10, background: 'none', border: 'none', color: 'var(--text-secondary)', textDecoration: 'underline', cursor: 'pointer', fontSize: 12.5, padding: 0 }}
+      >
+        Ver ficha de la localidad
+      </button>
+    </div>
   );
 }
 
