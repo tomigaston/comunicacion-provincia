@@ -1,6 +1,8 @@
 const ESTILOS = {
   Vigente: { bg: 'var(--cov-alta-bg)', fg: 'var(--cov-alta)' },
   Finalizada: { bg: 'var(--bg-secondary)', fg: 'var(--text-secondary)' },
+  Observada: { bg: 'var(--cov-media-bg)', fg: 'var(--cov-media)' },
+  'S/D': { bg: 'var(--cov-sin-bg)', fg: 'var(--cov-sin)' },
 };
 
 export default function StatusBadge({ estado }) {

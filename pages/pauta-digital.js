@@ -29,7 +29,7 @@ function ambitoLabel(p) {
   return AMBITOS.find((a) => a.key === p.alcance_tipo)?.label || p.alcance_detectado || '—';
 }
 
-const ESTADOS = ['Todas', 'Vigente', 'Finalizada'];
+const ESTADOS = ['Todas', 'Vigente', 'Finalizada', 'Observada', 'S/D'];
 const TAMANO_PAGINA = 50;
 
 function valorDeOrden(pieza, campo) {
