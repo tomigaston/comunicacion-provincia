@@ -25,28 +25,14 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 1,
-      "banda_cobertura": "Baja",
-      "vigentes": [
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - UPC SEDES",
-          "link_material": "https://drive.google.com/file/d/1FMFbxtjk_mEb0zu3RXyxNGsf8KThWA95/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1FMFbxtjk_mEb0zu3RXyxNGsf8KThWA95/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        }
-      ]
+      "total_tipos": 0,
+      "banda_cobertura": "Sin",
+      "vigentes": []
     },
     {
       "departamento": "CALAMUCHITA",
@@ -56,11 +42,11 @@
         "RADIO": 1,
         "WEB": 1,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 4,
+      "total_tipos": 3,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -465,32 +451,6 @@
           "fecha_hasta": "2026-10-31",
           "antiguedad_dias": 46.0,
           "alerta": "🟡 REVISAR HACE 46 DIAS"
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_linkk",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_linkk"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -501,13 +461,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 4,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -872,58 +832,6 @@
           "fecha_hasta": "2026-08-06",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVÍA CALAMUCHITA- CONSEJO SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1epAujVzrnSVbrD0ar97CaPGojKwWZr_V/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1epAujVzrnSVbrD0ar97CaPGojKwWZr_V/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -934,12 +842,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -2373,344 +2281,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/1qSLm1zg-JqDoFwduA6Ci_5ZR3T3uzPh4/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1qSLm1zg-JqDoFwduA6Ci_5ZR3T3uzPh4/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "INAUGURACIÓN VALLE ESCONDIDO",
-          "link_material": "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "LOS GIGANTES",
-          "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PPP",
-          "link_material": "https://drive.google.com/file/d/1zjx80Pb2u19onOZjBr5JYpNRZFPA3LBt/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1zjx80Pb2u19onOZjBr5JYpNRZFPA3LBt/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PADRE LUCHESSE TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1XVbjAoEAWt-QocXJ9urYT_MHChcDPWWR/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - PLAN OBRAS VIALES",
-          "link_material": "https://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1yLNG0tAvKD7zkoONCYkxyQp3R4Ou5qDE/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- DUPLICACIÓN BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1PAXIXG-US6lMOhTI0YHRoaOuaA_s9BIS/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1PAXIXG-US6lMOhTI0YHRoaOuaA_s9BIS/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ALTONIVEL VELÉZ SARSFIELD",
-          "link_material": "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ALTONIVEL MALVINAS ARGENTINAS",
-          "link_material": "https://drive.google.com/file/d/1mgeypF46vmLLklhvyEHvk8P8Ik-FAxIg/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1mgeypF46vmLLklhvyEHvk8P8Ik-FAxIg/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1WpFnewqljjvrikHVr6leWwOBjQ29cEcP/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1WpFnewqljjvrikHVr6leWwOBjQ29cEcP/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - MIRÁ UPC 15 SEDES",
-          "link_material": "https://drive.google.com/file/d/1nlWNKegcH5GEz90gyquMiOw1bHNfLYy6/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1nlWNKegcH5GEz90gyquMiOw1bHNfLYy6/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - MIRÁ INFRAESTRUCTURA VIAL",
-          "link_material": "https://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1grGi3yOLYmCXSDwdhSDC3zZlv8tWFxA6/view?usp=sharing"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO",
-          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - AVENIDA BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - PPP",
-          "link_material": "https://drive.google.com/file/d/1s5rNgjSV7lS0LSe2uieWv-vBCu2L_vEp/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1s5rNgjSV7lS0LSe2uieWv-vBCu2L_vEp/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- ALTONIVELES MALVINAS",
-          "link_material": "https://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1xA-YQGOM5vmb52hw9fjvfK81cUfMx0KL/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- ALTONIVELES VELEZ SARSFIELD",
-          "link_material": "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1XJDSOX6nCZ0m2rhVIdWdV__2l3QYNCjZ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA-DUPLICACION BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1VGLfinTwIHBcfwycAtSXsiRVdz9m2ai4/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- AV. PADRE LUCHESSE TERMINADO",
-          "link_material": "https://drive.google.com/file/d/10ubKw09zOzvVl_DaLl1F1uvfZ1z0NxcB/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/10ubKw09zOzvVl_DaLl1F1uvfZ1z0NxcB/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- VALLE ESCONDIDO TERMINADO",
-          "link_material": "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1ELb5P6NKpAMD7XpTFIjsHjnzvYOJyd3e/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/14RA-G3rKNxFTzEo_n21uEoxVLYdbc9oT/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/14RA-G3rKNxFTzEo_n21uEoxVLYdbc9oT/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- ALTONIVEL MALVINAS ARGENTINAS",
-          "link_material": "https://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - ALTONIVEL VELEZ SARSFIELD",
-          "link_material": "https://drive.google.com/file/d/16Q0s9zbI_v6NHJhH-z1fM-C457wunzwe/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/16Q0s9zbI_v6NHJhH-z1fM-C457wunzwe/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
@@ -2746,45 +2316,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-03",
           "fecha_hasta": "2026-08-17",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - BOLETO EDUCATIVO CORDOBES",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view",
-          "links_material": [
-            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1HDc6-byNalNGXDYEl_yrxwa1H9E2diiU/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1HDc6-byNalNGXDYEl_yrxwa1H9E2diiU/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -2901,66 +2432,14 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ COLONIA CAROYA - PAVIMENTACION RPS433",
-          "link_material": "https://drive.google.com/file/d/1COckushow3WNWQacr9wbUB2QZpekTiVN/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1COckushow3WNWQacr9wbUB2QZpekTiVN/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ COLONIA CAROYA - PAVIMENTACIÓN RPS433",
-          "link_material": "https://drive.google.com/file/d/1COckushow3WNWQacr9wbUB2QZpekTiVN/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1COckushow3WNWQacr9wbUB2QZpekTiVN/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
         {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
@@ -2984,19 +2463,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-01",
           "fecha_hasta": "2026-08-31",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -3104,12 +2570,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -3594,84 +3060,6 @@
           "alerta": "🟡 REVISAR HACE 45 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1P3nRbTGYgqVMcV0Dy6vkJsfGOdXxxMlj/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1P3nRbTGYgqVMcV0Dy6vkJsfGOdXxxMlj/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PPP",
-          "link_material": "https://drive.google.com/file/d/13l_SRC-aepV_u4O-79L3RVm7_-dYtNlP/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/13l_SRC-aepV_u4O-79L3RVm7_-dYtNlP/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL",
-          "link_material": "https://drive.google.com/file/d/1dynczrzVYXtOYz7u-9BUcaQUPJxF2lrq/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1dynczrzVYXtOYz7u-9BUcaQUPJxF2lrq/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -3694,19 +3082,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-01",
           "fecha_hasta": "2026-08-31",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -3758,12 +3133,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -4209,84 +3584,6 @@
           "alerta": "🟡 REVISAR HACE 45 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ALTO NIVEL VALLE ESCONDIDO",
-          "link_material": "https://drive.google.com/file/d/1jhZygu4f2D_7SaCttZrirT-YfNqGLova/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1jhZygu4f2D_7SaCttZrirT-YfNqGLova/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA",
-          "link_material": "https://drive.google.com/file/d/1z84_cGt844YD1kyIbK1QCdSlcveHqMIU/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1z84_cGt844YD1kyIbK1QCdSlcveHqMIU/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ- LA CALERA- AV. SIMON BOLIVAR",
-          "link_material": "https://drive.google.com/file/d/1QFywQrSog7VbVYJka8NwZ3SY7_x0yqYK/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1QFywQrSog7VbVYJka8NwZ3SY7_x0yqYK/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA",
-          "link_material": "https://drive.google.com/file/d/1LmLvfDrDrTdRLLq-bOrn9Dxj6T5-uIq-/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1LmLvfDrDrTdRLLq-bOrn9Dxj6T5-uIq-/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO",
-          "link_material": "https://drive.google.com/file/d/149K2YvxLJyYhIKwJrQEhuD_fAi-8HSq5/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/149K2YvxLJyYhIKwJrQEhuD_fAi-8HSq5/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO",
-          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
@@ -4373,54 +3670,14 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 0,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 2,
-      "banda_cobertura": "Baja",
-      "vigentes": [
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ALTONIVEL MALVINAS ARGENTINAS",
-          "link_material": "https://drive.google.com/file/d/1rjE_Q17legMQXGntfA-OjURwq8wgtH7A/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1rjE_Q17legMQXGntfA-OjURwq8wgtH7A/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - ALTONIVEL MALVINAS ARGENTINAS",
-          "link_material": "https://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/10TGbdT_Afc-OH6gbpuI3rRmWDdJZTFbf/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        }
-      ]
+      "total_tipos": 0,
+      "banda_cobertura": "Sin",
+      "vigentes": []
     },
     {
       "departamento": "COLON",
@@ -4429,13 +3686,13 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 1,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "WEB",
@@ -4475,45 +3732,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PADRE LUCHESSE INAGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1upxWwK2LYKRQ33fQkb8hrhmg5QH_lQwa/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1upxWwK2LYKRQ33fQkb8hrhmg5QH_lQwa/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- DUPLICACIÓN CALZADA- AV. BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1r_ajCck5mdv1ihfQN80F_odifJ8yltPF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1r_ajCck5mdv1ihfQN80F_odifJ8yltPF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -4524,12 +3742,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -4988,71 +4206,6 @@
           "alerta": "🟡 REVISAR HACE 38 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PADRE LUCHESSE INAUGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1WuruLuaemJKx4zOUruih9NP4inj5d0h8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1WuruLuaemJKx4zOUruih9NP4inj5d0h8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "DUPLICACIÓN- AV. BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1dLq_8tzWoc3FMQoOwioRsI3tCK0XeY4L/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1dLq_8tzWoc3FMQoOwioRsI3tCK0XeY4L/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA",
-          "link_material": "https://drive.google.com/file/d/16TJRQaH5zAzhSSrkcnPCkRabGg1XHFON/view",
-          "links_material": [
-            "https://drive.google.com/file/d/16TJRQaH5zAzhSSrkcnPCkRabGg1XHFON/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -5127,26 +4280,13 @@
         "RADIO": 0,
         "WEB": 0,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 2,
+      "total_tipos": 1,
       "banda_cobertura": "Baja",
       "vigentes": [
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
         {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
@@ -5195,12 +4335,12 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 4,
+      "total_tipos": 3,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -5421,32 +4561,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-09-24",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PADRE LUCHESSE INAUGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -5970,12 +5084,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -6460,71 +5574,6 @@
           "alerta": "🟡 REVISAR HACE 49 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "PADRE LUCHESSE INAGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1qdbiEsVP7d1SlQlm5QELz-k6_-Tz7teh/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- ESCUCHA VILLA ALLENDE - PADRE LUCHESSE INAGURACIÓN",
-          "link_material": "https://drive.google.com/file/d/1kQ4Jm2jdokb-gLG7hx_3VSuB0u1flEhV/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kQ4Jm2jdokb-gLG7hx_3VSuB0u1flEhV/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHA VILLA ALLENDE - AV. BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1tXPhSQ8XW6QXO8aGib5PLDigRoNEzuKY/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1tXPhSQ8XW6QXO8aGib5PLDigRoNEzuKY/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - ESCUCHA PADRE LUCHESSE TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -6572,13 +5621,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -7127,58 +6176,6 @@
           "alerta": "🟡 REVISAR HACE 45 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ CRUZ DEL EJE- SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1S01B3Csi5PoMY1IIYsgEI9VZ48_SF2m3/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1S01B3Csi5PoMY1IIYsgEI9VZ48_SF2m3/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/1Io2H2UZ_3gwPYl0PcFl8p6xFOaD1QfZD/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Io2H2UZ_3gwPYl0PcFl8p6xFOaD1QfZD/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ CRUZ DEL EJE - ACUEDUCTO",
-          "link_material": "https://drive.google.com/file/d/1iijG41uJ1voLpFC_UHxTX0YXYoiGB5LL/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1iijG41uJ1voLpFC_UHxTX0YXYoiGB5LL/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ CRUZ DEL EJE - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/19H5TeuuA0evKFXdMx2ZpVLm7wWHZHQy0/view",
-          "links_material": [
-            "https://drive.google.com/file/d/19H5TeuuA0evKFXdMx2ZpVLm7wWHZHQy0/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -7438,12 +6435,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -8176,110 +7173,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1BDfx5w1bwC-SgoUa9waH7GDJxjV9oSFe/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1BDfx5w1bwC-SgoUa9waH7GDJxjV9oSFe/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHA- VILLA MARÍA - RIO CTALOMOCHITA",
-          "link_material": "https://drive.google.com/file/d/18H7eNb8yFmiG9Hzebp43_Cn_eFGMRFlO/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/18H7eNb8yFmiG9Hzebp43_Cn_eFGMRFlO/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHA- VILLA MARÍA - UNVM",
-          "link_material": "https://drive.google.com/file/d/1lbxEMeA1Z-231TetBxMP0-oCqN4ygS1a/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1lbxEMeA1Z-231TetBxMP0-oCqN4ygS1a/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1zcGN-JInUZp-7lfX1c6gMEpRokof1udN/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1zcGN-JInUZp-7lfX1c6gMEpRokof1udN/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - CBA - PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1eeVpT-xcoD2YVwr5YzBu6dAboXxlYvQl/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1eeVpT-xcoD2YVwr5YzBu6dAboXxlYvQl/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1IgUxcrtaQ4Wz8Uqw9Ze-awcL_c_eszhQ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1IgUxcrtaQ4Wz8Uqw9Ze-awcL_c_eszhQ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA",
           "link_material": "https://drive.google.com/file/d/1zcGN-JInUZp-7lfX1c6gMEpRokof1udN/view?usp=sharing",
@@ -8315,19 +7208,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-09-14",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -8479,12 +7359,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 4,
+      "total_tipos": 3,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -8956,32 +7836,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1BDfx5w1bwC-SgoUa9waH7GDJxjV9oSFe/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1BDfx5w1bwC-SgoUa9waH7GDJxjV9oSFe/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1r8pykOUDkK1iVU77qCcPhWe3mqoxxQEB/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "TV",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=drive_link",
@@ -9090,12 +7944,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -9615,19 +8469,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-09-03",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ - DEAN FUNES - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1FtHwSeRpb4p4kv0KIdmCcepz4fnrAj7o/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1FtHwSeRpb4p4kv0KIdmCcepz4fnrAj7o/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -11095,13 +9936,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -11505,32 +10346,6 @@
           "fecha_hasta": "2026-08-06",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1SxwkIHaHd5yNSJzM1IBhOYqqHxvT8d6n/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1SxwkIHaHd5yNSJzM1IBhOYqqHxvT8d6n/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - LEONES- ESTACION TRANSFORMADORA",
-          "link_material": "https://drive.google.com/file/d/1lBsZr45jXcmpjzauRLmP381hgWL1XImr/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1lBsZr45jXcmpjzauRLmP381hgWL1XImr/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -11541,13 +10356,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -12070,58 +10885,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/1FH2TYKqyX1HPJerJ1RkvCLoO2vdk0xRp/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1FH2TYKqyX1HPJerJ1RkvCLoO2vdk0xRp/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ MARCOS JUÁREZ: UPC",
-          "link_material": "https://drive.google.com/file/d/1eNwGu959JNIY_eEsSAlzfi1taIy5-znv/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1eNwGu959JNIY_eEsSAlzfi1taIy5-znv/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ MARCOS JUÁREZ: HOSPITAL AYERZA",
-          "link_material": "https://drive.google.com/file/d/1mD_YgnbYXrfn5RppFnqEIJxI2ZN5AGHP/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1mD_YgnbYXrfn5RppFnqEIJxI2ZN5AGHP/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - MARCOS JUÁREZ- CENTRO REHABILITACIÓN",
-          "link_material": "https://drive.google.com/file/d/1XJIfMoeYF6lVaJefhm4QJFFYfmhf-Az8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1XJIfMoeYF6lVaJefhm4QJFFYfmhf-Az8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -12169,12 +10932,12 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 2,
+      "total_tipos": 1,
       "banda_cobertura": "Baja",
       "vigentes": [
         {
@@ -12358,19 +11121,6 @@
           "fecha_hasta": "2026-08-05",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "LOS GIGANTES",
-          "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -12381,13 +11131,13 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -12609,19 +11359,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "LOS GIGANTES",
-          "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -12632,13 +11369,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -13018,45 +11755,6 @@
           "alerta": "🟡 REVISAR HACE 38 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ LABOULAYE- UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1nejlnPfsBsa6WXZgAWlD0Bv5WXH5SDH7/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1nejlnPfsBsa6WXZgAWlD0Bv5WXH5SDH7/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ LABOULAYE - PLANTA DEPURADORA",
-          "link_material": "https://drive.google.com/file/d/130Tq1FfW8QEt-va1wl2eutYG-EdaKK8o/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/130Tq1FfW8QEt-va1wl2eutYG-EdaKK8o/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ LABOULAYE - ESCUELA SECUDARIA DE FORMACIÓN PROFESIONAL",
-          "link_material": "https://drive.google.com/file/d/1yA8KShUBmnc29Exr-GrfxUQlFw9x66Mw/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1yA8KShUBmnc29Exr-GrfxUQlFw9x66Mw/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -13104,13 +11802,13 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 3,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -13373,32 +12071,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ CAPILLA DEL MONTE - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1bS-ubEEn_f0BPd2RCCDWUFnJu6kUW3rc/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1bS-ubEEn_f0BPd2RCCDWUFnJu6kUW3rc/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1rJrMgxYrQ7ZJ1QpI4nx04YQZXYnrkOS8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1rJrMgxYrQ7ZJ1QpI4nx04YQZXYnrkOS8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -13446,12 +12118,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -14014,84 +12686,6 @@
           "alerta": "🟡 REVISAR HACE 38 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVÍA PUNILLA - CONSEJO DE SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1YKtiY-flYErIsN2QfDLGt7IK25iAXap5/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1YKtiY-flYErIsN2QfDLGt7IK25iAXap5/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ COSQUIN: GAS NATURAL",
-          "link_material": "https://drive.google.com/file/d/1obJbK3IQ-Z_N4ub6LRdtrHYDsf4QPyfY/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1obJbK3IQ-Z_N4ub6LRdtrHYDsf4QPyfY/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHA COSQUIN - GAS NATURAL",
-          "link_material": "https://drive.google.com/file/d/1obJbK3IQ-Z_N4ub6LRdtrHYDsf4QPyfY/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1obJbK3IQ-Z_N4ub6LRdtrHYDsf4QPyfY/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - DUPLICACION BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - DUPLICACIÓN LUCHESSE TERMINADA",
-          "link_material": "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1ffxYuq8G-k66hk4P_3TV3yKIUfr7dGtA/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -14101,19 +12695,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-09-01",
           "fecha_hasta": "2026-09-30",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - UPC -15 SEDES",
-          "link_material": "https://drive.google.com/file/d/1FZb60rezAEULavtwVQYZ6M4NRSKh_3IB/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1FZb60rezAEULavtwVQYZ6M4NRSKh_3IB/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -14728,40 +13309,14 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVÍA PUNILLA - CONSEJO DE SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1p8ANvip3RDzt1cv9N4gY-Amp-XdSSCx0/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
         {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
@@ -14836,12 +13391,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -15612,188 +14167,6 @@
           "alerta": "🟡 REVISAR HACE 44 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ VILLA CARLOS PAZ - UPC",
-          "link_material": "https://drive.google.com/file/d/1wTf_7GKYRTWCY9-FJZzMcx1gj2Y09SZN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1wTf_7GKYRTWCY9-FJZzMcx1gj2Y09SZN/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1u89cCrkST7lVJU639BNseqldi7Pf_bBJ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1u89cCrkST7lVJU639BNseqldi7Pf_bBJ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL",
-          "link_material": "https://drive.google.com/file/d/1RAfRUkQpGfWwF2j9LaJUGi5L-zMI_Igi/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1RAfRUkQpGfWwF2j9LaJUGi5L-zMI_Igi/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ VILLA CARLOS PAZ - CUENCA LAGO",
-          "link_material": "https://drive.google.com/file/d/1b7YmmLWWuqAI-YCD-yo824KOH4haD704/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1b7YmmLWWuqAI-YCD-yo824KOH4haD704/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ VILLA CARLOS PAZ - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1TCzJaSjVwvffny4FRYNVv14psPq4qmfK/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1TCzJaSjVwvffny4FRYNVv14psPq4qmfK/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVÍA PUNILLA- CONSEJO SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1rWXFu3vL7qq4-lIV-1MvgIycmfNS5y59/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1rWXFu3vL7qq4-lIV-1MvgIycmfNS5y59/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1sum5Kk4NS2--s3ty_2N0-2oxOkxB4bPQ/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1sum5Kk4NS2--s3ty_2N0-2oxOkxB4bPQ/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "LOS GIGANTES",
-          "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1u89cCrkST7lVJU639BNseqldi7Pf_bBJ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1u89cCrkST7lVJU639BNseqldi7Pf_bBJ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO",
-          "link_material": "https://drive.google.com/file/d/1msnpB-u7puybuawTRfxPRMa6nZapk__v/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1msnpB-u7puybuawTRfxPRMa6nZapk__v/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/11b0Q5_tQi9aDnMultdD1qK0Ef6bT0buD/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/11b0Q5_tQi9aDnMultdD1qK0Ef6bT0buD/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1JBCX9oDaEM-I0gpMDk0CQDhk_hGIfcqY/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1JBCX9oDaEM-I0gpMDk0CQDhk_hGIfcqY/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL",
-          "link_material": "https://drive.google.com/file/d/1EDzs2XgdqkcZWZIUFYDHbmU6bbtAI8Fe/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1EDzs2XgdqkcZWZIUFYDHbmU6bbtAI8Fe/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES- PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
@@ -15880,12 +14253,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -16812,214 +15185,6 @@
           "alerta": "🟡 REVISAR HACE 45 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1P3nRbTGYgqVMcV0Dy6vkJsfGOdXxxMlj/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1P3nRbTGYgqVMcV0Dy6vkJsfGOdXxxMlj/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1Hedd9dkyZueVoYNY0-TganrukiJB3-WV/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1Hedd9dkyZueVoYNY0-TganrukiJB3-WV/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1PtCJNCScFt3R0RlJJyvFL4JZC1OjvliY/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1PtCJNCScFt3R0RlJJyvFL4JZC1OjvliY/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- ASFALTO",
-          "link_material": "https://drive.google.com/file/d/1GveB1_3XmbM4LTVVz1Qdffgw6MTL-0-l/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1GveB1_3XmbM4LTVVz1Qdffgw6MTL-0-l/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL",
-          "link_material": "https://drive.google.com/file/d/12BQjZAsnFqc9cryefgHO6TjYy5n91Fd1/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12BQjZAsnFqc9cryefgHO6TjYy5n91Fd1/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30",
-          "link_material": "https://drive.google.com/file/d/1l8c0pFSvgzO2a1LraR7JXLBjGhOcnOBG/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1l8c0pFSvgzO2a1LraR7JXLBjGhOcnOBG/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ RÍO CUARTO- 100 CUADRAS",
-          "link_material": "https://drive.google.com/file/d/1Sqyek6BwG__7ZTa5eyUiKm_H06l80C4A/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1Sqyek6BwG__7ZTa5eyUiKm_H06l80C4A/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30",
-          "link_material": "https://drive.google.com/file/d/1dJsf0uUPo31_bMdNxYddU7Dfru6hk9J9/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1dJsf0uUPo31_bMdNxYddU7Dfru6hk9J9/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS",
-          "link_material": "https://drive.google.com/file/d/1E3wLWsT9FVyjCwkQiJAgxJJYvSx7eM1Y/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1E3wLWsT9FVyjCwkQiJAgxJJYvSx7eM1Y/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "VALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1Q7wmBQu2MldR8gwtBuIb8AZFYqctIfR4/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1Q7wmBQu2MldR8gwtBuIb8AZFYqctIfR4/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/1pVjgSJGTWkXI-0u1xbMNolW0du8Plqsx/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1pVjgSJGTWkXI-0u1xbMNolW0du8Plqsx/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- ASFALTO",
-          "link_material": "https://drive.google.com/file/d/19JTEs_RTV0Og5D-nmSrbb91TpPF8m4-R/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/19JTEs_RTV0Og5D-nmSrbb91TpPF8m4-R/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL",
-          "link_material": "https://drive.google.com/file/d/1KW6MnzJkWsp-_QC4ohESyfD929KdpM2O/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1KW6MnzJkWsp-_QC4ohESyfD929KdpM2O/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "CBA- ESCUCHÁ RÍO CUARTO- CEDIS",
-          "link_material": "https://drive.google.com/file/d/1qm9uZ2K8vp5SmlZwF7Ug89-tnKz5BDG1/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1qm9uZ2K8vp5SmlZwF7Ug89-tnKz5BDG1/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN",
-          "link_material": "https://drive.google.com/file/d/16bO5RMvx_fl_xn1j8UtG48GcLktb3zXR/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/16bO5RMvx_fl_xn1j8UtG48GcLktb3zXR/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
@@ -17132,12 +15297,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -17765,19 +15930,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ- CIRCUNVALACIÓN RÍO CUARTO",
-          "link_material": "https://drive.google.com/file/d/1zlJ6jXdwpzKfJpBHSV1FHMY2mK5uPZcY/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1zlJ6jXdwpzKfJpBHSV1FHMY2mK5uPZcY/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -17825,13 +15977,13 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 3,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -18105,32 +16257,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ- AUTOPISTA NACIONAL RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1FwaZP59qGAQLkSDBFUVtJacw4vn_ItQR/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1FwaZP59qGAQLkSDBFUVtJacw4vn_ItQR/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -18141,13 +16267,13 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -18436,45 +16562,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ- AUTOPISTA NACIONAL RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF",
-          "link_material": "https://drive.google.com/file/d/1QzmqzxadZWj3qk8b52dk55r3YHccTefU/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1QzmqzxadZWj3qk8b52dk55r3YHccTefU/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -18522,13 +16609,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -18893,19 +16980,6 @@
           "fecha_hasta": "2026-08-06",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ- AUTOPISTA RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1BSh4V9hjaWIRV_ynyHJ9l2wT5oNOiV8f/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -18917,12 +16991,12 @@
         "RADIO": 1,
         "WEB": 0,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 3,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -19107,19 +17181,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -19167,12 +17228,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -19605,19 +17666,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -19691,13 +17739,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -20090,32 +18138,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -20138,19 +18160,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-01",
           "fecha_hasta": "2026-08-31",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view",
-          "links_material": [
-            "https://drive.google.com/file/d/10ugP2bWHp1tGW71BVCX0zfa0cAr9CRR1/view"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -20202,12 +18211,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -20718,32 +18727,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHA - RIO SEGUNDO - SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1b3Sa4TOyrARrbICn06o_DZRjSIevlAuR/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1b3Sa4TOyrARrbICn06o_DZRjSIevlAuR/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
@@ -20753,19 +18736,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-09-14",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         }
@@ -21986,12 +19956,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -22463,45 +20433,6 @@
           "alerta": "🟡 REVISAR HACE 42 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - ESCUCHÁ VILLA DOLORES - UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1Yn9A4h5RtUztKJ1tTg50HS0LiNENj2E3/view",
-          "links_material": [
-            "https://drive.google.com/file/d/1Yn9A4h5RtUztKJ1tTg50HS0LiNENj2E3/view"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA - MIRA VILLA DOLORES - UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1Q846ZpI3kbmPmvZGPtc5alCDvqGAR3Ur/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1Q846ZpI3kbmPmvZGPtc5alCDvqGAR3Ur/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/17zCG1pVwTVWNouBBUKk6-nO4QhbGdlMl/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -22550,12 +20481,12 @@
         "RADIO": 1,
         "WEB": 1,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -23052,19 +20983,6 @@
           "alerta": "🟡 REVISAR HACE 38 DIAS"
         },
         {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -23112,13 +21030,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 6,
-      "banda_cobertura": "Alta",
+      "total_tipos": 4,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -23743,45 +21661,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ LAS VARILLAS- SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1jyPm9bZSlURtcezzH7seduU4c0uXcUPS/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1jyPm9bZSlURtcezzH7seduU4c0uXcUPS/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- ESCUCHÁ  LAS VARILLAS- SEDE UPC",
-          "link_material": "https://drive.google.com/file/d/1hOUiGuTf3TEBAKuQCH_zqBBFdVoMrcNx/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hOUiGuTf3TEBAKuQCH_zqBBFdVoMrcNx/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -23792,12 +21671,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -24360,32 +22239,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA-MIRÁ MORTEROS- UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1kn1ZMTqdYimTutg6JEMJitpxKijTYwuQ/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kn1ZMTqdYimTutg6JEMJitpxKijTYwuQ/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ - UPC - SEDE MORTEROS",
-          "link_material": "https://drive.google.com/file/d/1ejwKX8mifv-JO4Pm7lIUoBrs4VGqWEu8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1ejwKX8mifv-JO4Pm7lIUoBrs4VGqWEu8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -24433,12 +22286,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -25142,58 +22995,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - SAN FCO - AUTOPISTA RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1CU5HghT6tzT_c1zC-T6M1wCNG7E95vPC/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1CU5HghT6tzT_c1zC-T6M1wCNG7E95vPC/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ SAN FRANCISCO: RN19",
-          "link_material": "https://drive.google.com/file/d/1eg2-beDyGatIbXj7KLRa9TqjhU1tOV5f/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1eg2-beDyGatIbXj7KLRa9TqjhU1tOV5f/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "MIRÁ - SAN FCO - UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1wLu2VjQpqyeFp3U3JBcraGlsMYcIXI6H/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1wLu2VjQpqyeFp3U3JBcraGlsMYcIXI6H/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -25241,12 +23042,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 1,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -25731,71 +23532,6 @@
           "alerta": "🟡 REVISAR HACE 46 DIAS"
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1jkobZUNsCvHgJYNty6DWuwOvZ6AqLjo6/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1jkobZUNsCvHgJYNty6DWuwOvZ6AqLjo6/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)",
-          "link_material": "https://drive.google.com/file/d/1Btcyxv5vteiVBxOQdrPeGlTKw_xEnpH8/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Btcyxv5vteiVBxOQdrPeGlTKw_xEnpH8/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)",
-          "link_material": "https://drive.google.com/file/d/1LrJE8DuG_o01OyVfJ8ElzloFeiVmTE12/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1LrJE8DuG_o01OyVfJ8ElzloFeiVmTE12/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
@@ -25818,19 +23554,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-09-14",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -25882,12 +23605,12 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 2,
+      "total_tipos": 1,
       "banda_cobertura": "Baja",
       "vigentes": [
         {
@@ -26071,45 +23794,6 @@
           "fecha_hasta": "2026-09-03",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ MALAGUEÑO: COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1RGBSqSPinfHrE7FupjmQ50F2Q3TZvOaS/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1RGBSqSPinfHrE7FupjmQ50F2Q3TZvOaS/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "LOS GIGANTES",
-          "link_material": "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1b65rlyc8cUqErIe25kAI1K2ewB3XoqSG/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
-          "link_material": "https://drive.google.com/file/d/1hgKYJKM98d_1kZe2mQo6LVCTOrMPt7bH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hgKYJKM98d_1kZe2mQo6LVCTOrMPt7bH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -26120,13 +23804,13 @@
         "TV": 0,
         "RADIO": 1,
         "WEB": 0,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 4,
-      "banda_cobertura": "Media",
+      "total_tipos": 2,
+      "banda_cobertura": "Baja",
       "vigentes": [
         {
           "tipo_medio": "RADIO",
@@ -26311,32 +23995,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "EMPLEO +26",
-          "link_material": "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1TNKauSr9e8JsHWhap7YyUJQPhXofuuaw/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -26384,13 +24042,13 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
-        "VIA_PUBLICA": 1,
+        "CARTELERIA": 0,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 5,
-      "banda_cobertura": "Alta",
+      "total_tipos": 3,
+      "banda_cobertura": "Media",
       "vigentes": [
         {
           "tipo_medio": "TV",
@@ -26794,45 +24452,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ ALMAFUERTE - SIST. SANEAMIENTO CLOACAL",
-          "link_material": "https://drive.google.com/file/d/1EZ6_nmjeGw5beEEuGBuD6I-6LqJriN-2/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1EZ6_nmjeGw5beEEuGBuD6I-6LqJriN-2/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/12sKctd5LdcpgMj-bMHn-YzOO5vHonUNN/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -26844,11 +24463,11 @@
         "RADIO": 1,
         "WEB": 1,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 0
       },
-      "total_tipos": 4,
+      "total_tipos": 3,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -27227,32 +24846,6 @@
           "fecha_hasta": "2026-09-24",
           "antiguedad_dias": null,
           "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
         }
       ]
     },
@@ -27263,12 +24856,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -27701,19 +25294,6 @@
           "alerta": null
         },
         {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1JYwRyqXtaEOgaQZ7-pwYHD9DstuMVqF8/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "CRÉDITOS ALIVIO CORDOBÉS",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -27762,11 +25342,11 @@
         "RADIO": 1,
         "WEB": 1,
         "CARTELERIA": 0,
-        "VIA_PUBLICA": 1,
+        "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -28342,32 +25922,6 @@
           "alerta": "🟡 REVISAR HACE 39 DIAS"
         },
         {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- BOLETO EDUCATIVO CORDOBÉS",
-          "link_material": "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1kJk3BNZnGRdaOAd5lrq7V8B7KgBW9-AE/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
           "tipo_medio": "PANTALLA LED",
           "tema": "ALIVIO CORDOBÉS CON CORDOBESA",
           "link_material": "https://drive.google.com/file/d/1Oj3DbPhcTNzvGWVxHcIZvPjCCNqL5aUm/view?usp=drive_link",
@@ -28628,19 +26182,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-01",
           "fecha_hasta": "2026-08-06",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS-CÓRDOBA  LIDERA PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1hnf5Ps3YbKbgG-Xdvd42bN7FZ--jeYoH/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
@@ -28995,12 +26536,12 @@
         "TV": 1,
         "RADIO": 1,
         "WEB": 1,
-        "CARTELERIA": 1,
+        "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -29650,58 +27191,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-10-06",
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL",
-          "link_material": "https://drive.google.com/file/d/18a9hkZgrwSYy697G6I8FMi7b_M6uiArN/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/18a9hkZgrwSYy697G6I8FMi7b_M6uiArN/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "CBA- MIRÁ BELL VILLE- UPC SEDE",
-          "link_material": "https://drive.google.com/file/d/1R9wyLVsi9LEe6DIrg6cG50-itoQNj6xW/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1R9wyLVsi9LEe6DIrg6cG50-itoQNj6xW/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ BELL VILLE - OBRA HIDRICA",
-          "link_material": "https://drive.google.com/file/d/1GfS0XP9HLOM3E3dOeEyrtisd0J-GPCdh/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1GfS0XP9HLOM3E3dOeEyrtisd0J-GPCdh/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null
-        },
-        {
-          "tipo_medio": "CARTELERÍA",
-          "tema": "ESCUCHÁ BELL VILLE - HOSPITAL JOSE CEBALLOS",
-          "link_material": "https://drive.google.com/file/d/1DrGIWGa5kJzRDu1w0z-9PaRuzPFO9i2-/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1DrGIWGa5kJzRDu1w0z-9PaRuzPFO9i2-/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
           "antiguedad_dias": null,
           "alerta": null
         },
