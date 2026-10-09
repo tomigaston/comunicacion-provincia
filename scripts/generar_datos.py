@@ -224,6 +224,14 @@ def cargar_medios_tradicionales():
         tipo_medio = limpio(row["Tipo_Medio"])
         if tipo_medio == "REDES":
             continue
+        # Regla de negocio (Tomás): una fila sin Fecha_Desde NI Fecha_Hasta no
+        # se tiene en cuenta para nada (tabla, cobertura, semáforo, mails,
+        # Campañas, Gantt, conteos), sea Activo o Inactivo. Se descarta acá
+        # para que todo lo posterior ya no la vea.
+        fecha_desde = fecha_iso(row["Fecha_Desde"])
+        fecha_hasta = fecha_iso(row["Fecha_Hasta"])
+        if fecha_desde is None and fecha_hasta is None:
+            continue
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
         # .strip() acá (no en limpio(), que es genérico para todo el pipeline):
         # la fuente puede traer variantes del mismo tema con \n/espacios finales
@@ -239,12 +247,11 @@ def cargar_medios_tradicionales():
             "link_material": limpio(row["Link_Material"]),  # string crudo, se mantiene por compatibilidad
             "links_material": lista_links(row["Link_Material"]),  # lista lista para listar en el front
             "estado": limpio(row["Estado"]),  # Activo / Inactivo
-            "fecha_desde": fecha_iso(row["Fecha_Desde"]),
-            "fecha_hasta": fecha_iso(row["Fecha_Hasta"]),
+            "fecha_desde": fecha_desde,
+            "fecha_hasta": fecha_hasta,
             # Ya calculados en la planilla contra los umbrales de Parametros
-            # (30/50 días) -- Cartelería/Gráfica y parte de Vía Pública
-            # todavía no tienen Fecha_Desde cargada en la fuente, así que
-            # vienen en None (no se inventa un verde por default).
+            # (30/50 días). Quedan en None cuando solo hay Fecha_Hasta (no se
+            # inventa un verde por default).
             "antiguedad_dias": limpio(row["Antiguedad_Dias"]),
             "alerta": limpio(row["Alerta"]),
         })
@@ -252,10 +259,16 @@ def cargar_medios_tradicionales():
     localidades = []
     for _, row in cobertura_df.iterrows():
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
-        # Total_Tipos/Diagnóstico de la fila cuentan REDES (bug de la planilla,
-        # ver nota de arriba) -- se recalculan acá a partir de los 7 tipos
-        # válidos en vez de confiar en esas dos columnas.
-        cobertura = {clave_json: int(row[col_original]) for col_original, clave_json in COBERTURA_COLS.items()}
+        # La cobertura NO se lee de las columnas de la hoja Cobertura: se
+        # recalcula desde las filas de Maestro_Vigente que sobreviven al
+        # filtro de arriba (REDES y filas sin ninguna fecha quedan fuera).
+        # 1 si queda al menos una fila de ese tipo, 0 si no.
+        vigentes_loc = vigentes_por_localidad.get(clave, [])
+        tipos_presentes = {v["tipo_medio"] for v in vigentes_loc}
+        cobertura = {
+            clave_json: int(col_original in tipos_presentes)
+            for col_original, clave_json in COBERTURA_COLS.items()
+        }
         total_tipos = sum(cobertura.values())
         localidades.append({
             "departamento": str(row["Departamento"]).strip(),
@@ -263,7 +276,7 @@ def cargar_medios_tradicionales():
             "cobertura": cobertura,
             "total_tipos": total_tipos,
             "banda_cobertura": banda_cobertura(total_tipos),
-            "vigentes": vigentes_por_localidad.get(clave, []),
+            "vigentes": vigentes_loc,
         })
 
     cambios = []
@@ -315,6 +328,15 @@ def cargar_historico_medios():
     de Maestro_Vigente, que no alcanza para mostrar más de la semana actual)."""
     xls = CONTEXTO / "Medios tradicionales.xlsx"
     historico_df = pd.read_excel(xls, sheet_name="Historico")
+
+    # Misma regla de negocio que en cargar_medios_tradicionales(): una fila sin
+    # Fecha_Desde NI Fecha_Hasta no se tiene en cuenta. Los snapshots anteriores
+    # al esquema con fechas (31/08/2026; ninguna de sus filas trae fechas) se
+    # conservan enteros: aplicarles la regla borraría todo el histórico previo.
+    sin_fechas = historico_df["Fecha_Desde"].isna() & historico_df["Fecha_Hasta"].isna()
+    snapshots_con_fechas = set(historico_df.loc[~sin_fechas, "Fecha_Snapshot"])
+    descartar = sin_fechas & historico_df["Fecha_Snapshot"].isin(snapshots_con_fechas)
+    historico_df = historico_df[~descartar]
 
     por_localidad = {}
     for _, row in historico_df.iterrows():
