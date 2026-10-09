@@ -1,1216 +1,1069 @@
 {
-  "total_avisos_cambiaron": 100,
+  "total_avisos_cambiaron": 118,
   "cambios": [
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN"
     },
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN"
     },
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "VILLA GENERAL BELGRANO",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "VILLA GENERAL BELGRANO",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "INAUGURACIÓN CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA-RADIO\nCRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "INAUGURACIÓN CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA-RADIO\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "INAUGURACIÓN CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA-RADIO\nCRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
       "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "PPP\nPRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nPRUEBAS PISA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "PRUEBAS PISA\nESCUCHÁ ALTA GRACIA : CENTRO DESARROLLO INFANTIL"
     },
     {
-      "departamento": "COLON",
-      "localidad": "COLONIA CAROYA",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - ESCUCHÁ COLONIA CAROYA - PAVIMENTACIÓN RPS433\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VALLAS - ESCUCHÁ COLONIA CAROYA - PAVIMENTACIÓN RPS433\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
     },
     {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
     },
     {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LA CALERA: ALTONIVEL",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
     },
     {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LA CALERA: ALTONIVEL",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALSIPUEDES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALSIPUEDES",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
-    },
-    {
-      "departamento": "GENERAL ROCA",
-      "localidad": "VILLA HUIDOBRO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA NUEVA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "NUEVA COMISARÍA VILLA NUEVA\nCIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA NUEVA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL CABRERA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL CABRERA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "PPP\nCRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "LEONES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "LEONES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL"
-    },
-    {
-      "departamento": "MINAS",
-      "localidad": "SAN CARLOS MINAS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "POCHO",
-      "localidad": "SALSACATE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nALIVIO CORDOBÉS CON CORDOBESA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "CAPILLA DEL MONTE",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "INAUGURACIÓN CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA-RADIO\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "PREVIA - RECEPCIÓN A JUNTA DE GALICIA -CAMINO DE BROCHERO\nNUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N\nPREVIA- INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nPRUEBAS PISA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "PPP\nPRUEBAS PISA"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nCÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN\nSÉXTUPLES - PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "COSQUIN",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ COSQUÍN: GAS NATURAL",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "COSQUIN",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ COSQUÍN: GAS NATURAL",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - UPC -15 SEDES\nLUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - DUPLICACION BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE TERMINADA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VALLAS - ESCUCHA COSQUIN - GAS NATURAL\nLUNETAS - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS - DUPLICACION BODEREAU\nLUNETAS - DUPLICACIÓN LUCHESSE TERMINADA"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO\nSÉXTUPLES - PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "LA FALDA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "PUNILLA",
       "localidad": "LA FALDA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "SANTA MARIA DE PUNILLA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nVALLAS - AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VALLAS - AUTOVIA PUNILLA - CONSEJO DE SEGURIDAD"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ RÍO CUARTO: CIRCUNVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "MONTE CRISTO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "VILLA SANTA ROSA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "VILLA SANTA ROSA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SECO",
-      "localidad": "VILLA DE MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "VISITA : LOCALIDADES CURA BROCHERO\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "VILLA CURA BROCHERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "VISITA : LOCALIDADES CURA BROCHERO\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "LAS VARILLAS",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "LAS VARILLAS",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
     },
     {
       "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
     },
     {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
       "departamento": "SANTA MARIA",
       "localidad": "MALAGUEÑO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "SOBREMONTE",
-      "localidad": "SAN FRANCISCO DEL CHAÑAR",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nVISITA ALMAFUERTE: EDUCACIÓN\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nVISITA ALMAFUERTE: EDUCACIÓN\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "PPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nCRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA"
-    },
-    {
-      "departamento": "TOTORAL",
-      "localidad": "VILLA DEL TOTORAL",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP"
-    },
-    {
-      "departamento": "TOTORAL",
-      "localidad": "VILLA DEL TOTORAL",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS-CÓRDOBA  LIDERA PRUEBAS APRENDER",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "LUNETAS-CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "TULUMBA",
-      "localidad": "VILLA TULUMBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "VISITA BELL VILLE : EXPO BELL 2026\nCRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-01",
-      "tema_anterior": "VISITA BELL VILLE : EXPO BELL 2026\nCRÉDITOS ALIVIO CORDOBÉS\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-10-05",
-      "tema_actual": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA"
-    }
-  ],
-  "total_caidos": 44,
-  "caidos": [
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS\nOBRA ALTO NIVEL VÉLEZ SARSFIELD\nOBRA ALTO NIVEL MALVINAS\nALTO NIVEL VALLE ESCONDIDO TERMINADO\nDUPLICACION LUCHESSE TERMINADO\nDUPLICACION BODEREAU",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "COLONIA CAROYA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "ESTACION JUAREZ CELMAN",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALDAN",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "VIA PÚBLICA",
-      "ultimo_tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "GENERAL ROCA",
-      "localidad": "VILLA HUIDOBRO",
-      "tipo_medio": "TV",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS\nPPP",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "GENERAL SAN MARTIN",
-      "localidad": "VILLA MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "VIA PÚBLICA",
-      "ultimo_tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "MARCOS JUAREZ",
       "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
     },
     {
-      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
-      "localidad": "LABOULAYE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "CAPILLA DEL MONTE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ MARCOS JUÁREZ: HOSPITAL",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ MARCOS JUAREZ : UPC"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "VIA PÚBLICA",
-      "ultimo_tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "SANTA MARIA DE PUNILLA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
       "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
-      "departamento": "RIO SECO",
-      "localidad": "VILLA DE MARIA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "VIA PÚBLICA",
-      "ultimo_tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
       "departamento": "SAN JUSTO",
       "localidad": "MORTEROS",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
     },
     {
       "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "SOBREMONTE",
-      "localidad": "SAN FRANCISCO DEL CHAÑAR",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "localidad": "MORTEROS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
     },
     {
       "departamento": "TERCERO ARRIBA",
       "localidad": "OLIVA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
       "departamento": "TERCERO ARRIBA",
       "localidad": "RIO TERCERO",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO TERCERO: RUTA 6"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO TERCERO: RUTA 6"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBA PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: RN19",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ SAN FRANCISCO : UPC"
+    },
+    {
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
       "departamento": "TOTORAL",
       "localidad": "VILLA DEL TOTORAL",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+    },
+    {
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nCRÉDITOS CÓRDOBA IMPULSA\nNUEVA PICK UP SANTA ISABEL"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA TERMINADA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nSÉXTUPLES - PPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
     },
     {
       "departamento": "TULUMBA",
       "localidad": "VILLA TULUMBA",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "GRÁFICA",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "PANTALLA LED",
-      "ultimo_tema": "CRÉDITOS ALIVIO CORDOBÉS",
-      "fecha_ultima_vez": "2026-10-01"
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-05",
+      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
+      "fecha_semana_actual": "2026-10-09",
+      "tema_actual": "NUEVA PICK UP   SANTA ISABEL\nRUTAS QUE CONECTAN"
     }
-  ]
+  ],
+  "total_caidos": 0,
+  "caidos": []
 }
