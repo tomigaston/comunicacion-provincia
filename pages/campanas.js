@@ -7,7 +7,17 @@ import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 
 const AREAS = ['Todas', 'Medios tradicionales', 'Pauta digital', 'Audiovisuales'];
-// Estado de Pauta digital (único área de Campañas con este vocabulario).
+// Vocabulario de Pauta digital. Medios tradicionales se mapea para el filtro
+// (Activo -> Vigente, Inactivo -> Finalizada) sin cambiar lo que se muestra;
+// Audiovisuales ya trae Vigente/Finalizada; Programada/Observada/S/D solo
+// existen en Pauta digital.
+const ESTADO_MT_A_FILTRO = { Activo: 'Vigente', Inactivo: 'Finalizada' };
+
+function estadoParaFiltro(it) {
+  const e = it.detalle?.estado;
+  return it.area_origen === 'Medios tradicionales' ? ESTADO_MT_A_FILTRO[e] || e : e;
+}
+
 const ESTADOS = ['Todos', 'Vigente', 'Finalizada', 'Observada', 'Programada', 'S/D'];
 const TAMANO_PAGINA = 50;
 
@@ -36,7 +46,7 @@ export default function Campanas() {
     const q = normalizarTexto(busqueda);
     return items.filter((it) => {
       if (area !== 'Todas' && it.area_origen !== area) return false;
-      if (estado !== 'Todos' && it.detalle?.estado !== estado) return false;
+      if (estado !== 'Todos' && estadoParaFiltro(it) !== estado) return false;
       if (!q) return true;
       return (
         normalizarTexto(it.campana).includes(q) ||
