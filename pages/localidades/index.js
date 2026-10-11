@@ -37,6 +37,8 @@ export default function LocalidadesIndex() {
     const pautaPorLocalidad = new Set();
     for (const p of pautaData.piezas) {
       if (!p.en_60_localidades) continue;
+      // Programada (aún no empezó) no cuenta como "tiene pauta digital".
+      if (p.estado === 'Programada') continue;
       // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
       // manda, no el texto crudo de Localidad (evita que filas OTRO/REGION/
       // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA/DEPARTAMENTO marquen una localidad

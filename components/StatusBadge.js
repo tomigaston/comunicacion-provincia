@@ -2,6 +2,7 @@ const ESTILOS = {
   Vigente: { bg: 'var(--cov-alta-bg)', fg: 'var(--cov-alta)' },
   Finalizada: { bg: 'var(--bg-secondary)', fg: 'var(--text-secondary)' },
   Observada: { bg: 'var(--cov-media-bg)', fg: 'var(--cov-media)' },
+  Programada: { bg: '#e0edfb', fg: '#1976d2' },
   'S/D': { bg: 'var(--cov-sin-bg)', fg: 'var(--cov-sin)' },
 };
 

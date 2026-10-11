@@ -7,11 +7,14 @@ import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 
 const AREAS = ['Todas', 'Medios tradicionales', 'Pauta digital', 'Audiovisuales'];
+// Estado de Pauta digital (único área de Campañas con este vocabulario).
+const ESTADOS = ['Todos', 'Vigente', 'Finalizada', 'Observada', 'Programada', 'S/D'];
 const TAMANO_PAGINA = 50;
 
 export default function Campanas() {
   const { cargando, error, datos } = useApiData(['/api/data/campanas']);
   const [area, setArea] = useState('Todas');
+  const [estado, setEstado] = useState('Todos');
   const [busqueda, setBusqueda] = useState('');
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
@@ -33,6 +36,7 @@ export default function Campanas() {
     const q = normalizarTexto(busqueda);
     return items.filter((it) => {
       if (area !== 'Todas' && it.area_origen !== area) return false;
+      if (estado !== 'Todos' && it.detalle?.estado !== estado) return false;
       if (!q) return true;
       return (
         normalizarTexto(it.campana).includes(q) ||
@@ -40,7 +44,7 @@ export default function Campanas() {
         normalizarTexto(it.departamento).includes(q)
       );
     });
-  }, [items, area, busqueda]);
+  }, [items, area, estado, busqueda]);
 
   return (
     <Layout title="Campañas">
@@ -86,6 +90,33 @@ export default function Campanas() {
                       }}
                     >
                       {a}
+                    </button>
+                  );
+                })}
+              </div>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                {ESTADOS.map((e) => {
+                  const activo = estado === e;
+                  return (
+                    <button
+                      key={e}
+                      type="button"
+                      onClick={() => {
+                        setEstado(e);
+                        setVisibles(TAMANO_PAGINA);
+                      }}
+                      style={{
+                        padding: '8px 14px',
+                        borderRadius: 999,
+                        border: `1.5px solid ${activo ? 'var(--accent)' : 'var(--border)'}`,
+                        background: activo ? '#e0edfb' : 'var(--bg-secondary)',
+                        color: activo ? 'var(--accent)' : 'var(--text-secondary)',
+                        fontSize: 13.5,
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                      }}
+                    >
+                      {e === 'Todos' ? 'Todos los estados' : e}
                     </button>
                   );
                 })}

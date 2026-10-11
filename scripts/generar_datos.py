@@ -72,7 +72,10 @@ def estado_pauta_digital_desde_crudo(valor_estado_crudo):
     propias (regla de negocio 24/09/2026, reemplaza al cálculo viejo por fecha
     INICIO/FIN y también retira por completo el estado fijo "Pendiente" para
     piezas sin COD. CONTENIDO/FECHA DE ENVÍO). Mapeo: ACTIVO -> "Vigente",
-    INACTIVO -> "Finalizada", OBSERVADO -> "Observada", vacío -> "S/D" (la
+    INACTIVO -> "Finalizada", OBSERVADO -> "Observada", PROGRAMADO ->
+    "Programada" (11/10/2026: pieza cargada que todavía no empezó; categoría
+    propia, no se mapea a Vigente ni a Finalizada ni se recalcula por fecha),
+    vacío -> "S/D" (la
     planilla de origen todavía no calculó ESTADO para esa fila -- no se
     infiere nada). Cualquier otro valor se muestra TAL CUAL viene en el
     crudo, sin forzarlo a estas categorías ni descartar la fila."""
@@ -83,6 +86,7 @@ def estado_pauta_digital_desde_crudo(valor_estado_crudo):
         "ACTIVO": "Vigente",
         "INACTIVO": "Finalizada",
         "OBSERVADO": "Observada",
+        "PROGRAMADO": "Programada",
     }.get(normalizar(valor), valor)
 
 
@@ -105,6 +109,11 @@ def antiguedad_y_alerta_pauta_digital(estado, inicio_ts, umbral_amarilla, umbral
     Vigentes, con los mismos umbrales de Parametros. inicio_ts ya viene resuelto
     por el caller tomando siempre la columna AA (INICIO), sin fallback."""
     if estado != "Vigente" or inicio_ts is None:
+        return None, None
+    # Pieza que todavía no empezó (INICIO > hoy, ej. ESTADO=PROGRAMADO): no hay
+    # antigüedad ni alerta que calcular -- sin esto daría antigüedad negativa
+    # y un 🟢 falso.
+    if inicio_ts.date() > HOY:
         return None, None
     antiguedad_dias = (HOY - inicio_ts.date()).days
     return antiguedad_dias, calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja)
@@ -1800,7 +1809,7 @@ def main():
     codigos_nuevos = {p["cod_contenido"] for p in piezas_global if p.get("cod_contenido") is not None}
     codigos_dados_de_baja = sorted(codigos_previos - codigos_nuevos, key=str)
     conteo_estados = Counter(p["estado"] for p in piezas_global)
-    estados_no_mapeados = sorted(set(conteo_estados) - {"Vigente", "Finalizada", "Observada", "S/D"})
+    estados_no_mapeados = sorted(set(conteo_estados) - {"Vigente", "Finalizada", "Observada", "Programada", "S/D"})
     print("  --- Verificación Pauta Digital (Pauta RRSS_GLOBAL.xlsx) ---")
     print(f"  Filas descartadas como basura: {metricas_global['filas_descartadas']} de {metricas_global['filas_totales']} totales")
     print(f"  Filas reales tras filtro: {metricas_global['filas_reales']}")
@@ -1810,7 +1819,7 @@ def main():
     print(f"  Total de piezas fuente nueva en el JSON final: {len(piezas_global)}")
     print(f"  Piezas por estado (directo de ESTADO crudo): {dict(conteo_estados)}")
     if estados_no_mapeados:
-        print(f"  ⚠️  Estados fuera de ACTIVO/INACTIVO/OBSERVADO/vacío, mostrados tal cual: {estados_no_mapeados}")
+        print(f"  ⚠️  Estados fuera de ACTIVO/INACTIVO/OBSERVADO/PROGRAMADO/vacío, mostrados tal cual: {estados_no_mapeados}")
     if codigos_dados_de_baja:
         print(f"  Códigos dados de baja respecto al JSON anterior ({len(codigos_dados_de_baja)}): {codigos_dados_de_baja}")
         raise SystemExit(

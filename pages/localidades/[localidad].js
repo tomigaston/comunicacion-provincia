@@ -144,20 +144,36 @@ export default function DetalleLocalidad() {
       vigentes: info.medios
         ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana))
         : [],
-      piezasPauta: info.piezasPauta.filter((p) => rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)),
+      // Programada (INICIO futuro): con un preset (siempre hacia atrás desde hoy) se
+      // muestra igual; mes/rango personalizado sí se respetan.
+      piezasPauta: info.piezasPauta.filter(
+        (p) =>
+          (p.estado === 'Programada' && periodo.tipo === 'preset') ||
+          rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)
+      ),
       itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
         fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
       ),
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
       publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
     };
-  }, [info, ventana]);
+  }, [info, ventana, periodo]);
 
   // Canales con al menos una pieza dentro del período elegido (mismo cálculo
   // que ya filtra visible.piezasPauta), para los chips del bloque Pauta
   // digital.
   const canalesActivos = useMemo(
-    () => new Set(visible ? visible.piezasPauta.flatMap(canalesDePieza) : []),
+    () => new Set(visible ? visible.piezasPauta.filter((p) => p.estado !== 'Programada').flatMap(canalesDePieza) : []),
+    [visible]
+  );
+  // Programadas (aún no empezaron) van en un bloque aparte: no cuentan como
+  // pauta vigente ni marcan canales como presentes.
+  const piezasProgramadas = useMemo(
+    () => (visible ? visible.piezasPauta.filter((p) => p.estado === 'Programada') : []),
+    [visible]
+  );
+  const piezasPautaActual = useMemo(
+    () => (visible ? visible.piezasPauta.filter((p) => p.estado !== 'Programada') : []),
     [visible]
   );
 
@@ -317,7 +333,7 @@ export default function DetalleLocalidad() {
                   Ninguna pieza de pauta digital cae dentro del período elegido (hay{' '}
                   {info.piezasPauta.length} en total). Probá con "Todo".
                 </p>
-              ) : (
+              ) : piezasPautaActual.length === 0 ? null : (
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
@@ -330,7 +346,7 @@ export default function DetalleLocalidad() {
                     </tr>
                   </thead>
                   <tbody>
-                    {visible.piezasPauta.map((p, i) => (
+                    {piezasPautaActual.map((p, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                         <td style={td}>{p.titulo_pieza || '—'}</td>
                         <td style={td}>
@@ -351,6 +367,52 @@ export default function DetalleLocalidad() {
                     ))}
                   </tbody>
                 </table>
+              )}
+
+              {piezasProgramadas.length > 0 && (
+                <div style={{ marginTop: 22 }}>
+                  <h3 style={{ fontSize: 14, fontWeight: 700, margin: '0 0 4px', color: '#1976d2' }}>
+                    Programadas ({piezasProgramadas.length})
+                  </h3>
+                  <p style={{ fontSize: 12.5, color: 'var(--text-tertiary)', margin: '0 0 8px' }}>
+                    Todavía no empezaron: no cuentan como pauta vigente.
+                  </p>
+                  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                    <thead>
+                      <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+                        <th style={th}>Título de la pieza</th>
+                        <th style={th}>Canal</th>
+                        <th style={th}>Tipo de pauta</th>
+                        <th style={th}>Plataforma</th>
+                        <th style={th}>Inicio – Fin</th>
+                        <th style={th}>Material</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {piezasProgramadas.map((p, i) => (
+                        <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                          <td style={td}>{p.titulo_pieza || '—'}</td>
+                          <td style={td}>
+                            <CanalBadges pieza={p} />
+                          </td>
+                          <td style={td}>{p.tipo_pauta || '—'}</td>
+                          <td style={td}>{p.plataforma || '—'}</td>
+                          <td style={td}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <span>
+                                {formatearFechaCorta(p.inicio) || '—'} – {formatearFechaCorta(p.finalizacion) || '—'}
+                              </span>
+                              <StatusBadge estado={p.estado} />
+                            </div>
+                          </td>
+                          <td style={td}>
+                            <VerMaterial links={p.links_material} />
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               )}
             </Seccion>
           )}

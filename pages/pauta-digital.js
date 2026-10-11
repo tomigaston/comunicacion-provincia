@@ -29,7 +29,7 @@ function ambitoLabel(p) {
   return AMBITOS.find((a) => a.key === p.alcance_tipo)?.label || p.alcance_detectado || '—';
 }
 
-const ESTADOS = ['Todas', 'Vigente', 'Finalizada', 'Observada', 'S/D'];
+const ESTADOS = ['Todas', 'Vigente', 'Finalizada', 'Observada', 'Programada', 'S/D'];
 const TAMANO_PAGINA = 50;
 
 function valorDeOrden(pieza, campo) {
@@ -49,6 +49,8 @@ export default function PautaDigital() {
   const piezas = datos ? datos[0].piezas : [];
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const fechasDisponibles = useMemo(() => piezas.map((p) => p.finalizacion), [piezas]);
+  const totalProgramadas = useMemo(() => piezas.filter((p) => p.estado === 'Programada').length, [piezas]);
+  const filtradasProgramadas = (lista) => lista.filter((p) => p.estado === 'Programada').length;
 
   const itemsBusqueda = useMemo(() => {
     const vistos = new Set();
@@ -65,7 +67,11 @@ export default function PautaDigital() {
   const filtradas = useMemo(() => {
     const q = normalizarTexto(busqueda);
     let salida = piezas.filter((p) => {
-      if (!rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)) return false;
+      // Programada (INICIO futuro): los presets miran para atrás desde hoy y
+      // la dejarían siempre afuera; con preset se muestra igual. Mes/rango
+      // personalizado sí se respetan (alcanzan fechas futuras por solapamiento).
+      const programadaConPreset = p.estado === 'Programada' && periodo.tipo === 'preset';
+      if (!programadaConPreset && !rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)) return false;
       if (ambitos.size > 0 && !ambitos.has(p.alcance_tipo)) return false;
       if (estado !== 'Todas' && p.estado !== estado) return false;
       if (!q) return true;
@@ -82,7 +88,7 @@ export default function PautaDigital() {
       return orden.direccion === 'asc' ? cmp : -cmp;
     });
     return salida;
-  }, [piezas, ventana, ambitos, estado, busqueda, orden]);
+  }, [piezas, ventana, periodo, ambitos, estado, busqueda, orden]);
 
   function alternarAmbito(key) {
     setAmbitos((actual) => {
@@ -201,6 +207,8 @@ export default function PautaDigital() {
 
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
             {filtradas.length} de {piezas.length} piezas de pauta digital
+            {totalProgramadas > 0 &&
+              ` (incluye ${filtradasProgramadas(filtradas)} de ${totalProgramadas} programadas, que aún no empezaron)`}
             {filtradas.length === 0 && piezas.length > 0 && ' — probá un período más amplio o "Todo"'}
           </p>
 
