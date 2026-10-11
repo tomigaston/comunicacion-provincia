@@ -90,6 +90,25 @@ def estado_pauta_digital_desde_crudo(valor_estado_crudo):
     }.get(normalizar(valor), valor)
 
 
+def estado_audiovisual(fecha_inicio, fecha_fin):
+    """Estado de Audiovisuales (11/10/2026), mismo vocabulario que Pauta Digital:
+    INICIO > hoy -> "Programada"; INICIO <= hoy <= FIN -> "Vigente"; FIN < hoy
+    -> "Finalizada"; sin ninguna de las dos fechas -> "S/D". Sin Fecha_Inicio
+    pero con Fecha_Fin se mantiene la lógica anterior por fin (estado_por_fecha).
+    Con Fecha_Inicio <= hoy y sin Fecha_Fin no se infiere nada: "S/D"."""
+    inicio_ts = _a_timestamp(fecha_inicio)
+    fin_ts = _a_timestamp(fecha_fin)
+    if inicio_ts is None and fin_ts is None:
+        return "S/D"
+    if inicio_ts is None:
+        return estado_por_fecha(fin_ts)
+    if inicio_ts.date() > HOY:
+        return "Programada"
+    if fin_ts is None:
+        return "S/D"
+    return estado_por_fecha(fin_ts)
+
+
 def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
     """🟢/🟡/🔴 según antigüedad en días contra los umbrales de Parametros
     (30/50, confirmados por el gobernador el 31/08/2026). None si no hay
@@ -1025,7 +1044,7 @@ def cargar_audiovisuales():
             "en_60_prioritarias": str(row.get("En_60_Prioritarias", "")).strip().lower() == "sí",
             "fecha_inicio": fecha_iso(row["Fecha_Inicio"]),
             "fecha_fin": fecha_iso(row["Fecha_Fin"]),
-            "estado": estado_por_fecha(row["Fecha_Fin"]),
+            "estado": estado_audiovisual(row["Fecha_Inicio"], row["Fecha_Fin"]),
             "link": limpio(row["Link"]),  # string crudo, se mantiene por compatibilidad
             "links": lista_links(row["Link"]),  # lista lista para listar en el front (por si trae más de uno)
             "copy": limpio(row["Copy"]),

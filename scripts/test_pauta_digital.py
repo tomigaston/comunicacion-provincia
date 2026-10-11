@@ -408,6 +408,19 @@ def caso_12_programado_es_categoria_propia_sin_alerta():
     assert g.antiguedad_y_alerta_pauta_digital("Vigente", pasado, 30, 50) == (60, "🔴")
 
 
+def caso_13_estado_audiovisual():
+    """Audiovisuales (11/10/2026): INICIO>hoy Programada; INICIO<=hoy<=FIN
+    Vigente; FIN<hoy Finalizada; sin fechas S/D; sin INICIO usa solo FIN."""
+    d = lambda n: (pd.Timestamp(g.HOY) + pd.Timedelta(days=n)).strftime("%Y-%m-%d")
+    assert g.estado_audiovisual(d(3), d(10)) == "Programada"
+    assert g.estado_audiovisual(d(-3), d(10)) == "Vigente"
+    assert g.estado_audiovisual(d(-3), d(0)) == "Vigente"
+    assert g.estado_audiovisual(d(-10), d(-1)) == "Finalizada"
+    assert g.estado_audiovisual(None, None) == "S/D"
+    assert g.estado_audiovisual(None, d(5)) == "Vigente"
+    assert g.estado_audiovisual(None, d(-5)) == "Finalizada"
+
+
 def main():
     df = cargar_df_historico()
     localidades, claves_60 = g.cargar_localidades()
@@ -439,6 +452,7 @@ def main():
         caso_10_dedup_gana_fecha_envio_mas_reciente,
         caso_11_dedup_tiebreak_estado_activo,
         caso_12_programado_es_categoria_propia_sin_alerta,
+        caso_13_estado_audiovisual,
     ):
         try:
             caso()
@@ -451,7 +465,7 @@ def main():
             print(f"  - {f}")
         return 1
 
-    print("OK — los 12 casos de regresión de matching de Pauta Digital pasan.")
+    print("OK — los 13 casos de regresión de matching de Pauta Digital pasan.")
     return 0
 
 
