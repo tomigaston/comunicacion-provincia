@@ -478,6 +478,16 @@ ALCANCE_A_TIPO = {
 CORTE_HISTORICO_PAUTA_DIGITAL = "2026-07-02"
 
 
+# sub_ambito del histórico: la fuente vieja nunca expande una pieza a varias
+# localidades, así que el mapeo sale directo de alcance_tipo.
+SUB_AMBITO_HISTORICO = {
+    "localidad": "localidad_directa",
+    "departamento": "departamento",
+    "provincia": "multiple_provincia",
+    None: "sin_ambito",
+}
+
+
 def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
     """Traduce Alcance_Detectado (+ Departamento/Localidad crudos) a
     (en_60_localidades, alcance_tipo) para una fila del histórico (Medios
@@ -546,6 +556,7 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
             "campana": parseo["campana"],
             "alcance_detectado": alcance_detectado,
             "alcance_tipo": alcance_tipo,
+            "sub_ambito": SUB_AMBITO_HISTORICO.get(alcance_tipo),
             "en_60_localidades": en_60,
             "departamento": depto,
             "localidad": loc,
@@ -628,6 +639,13 @@ def clasificar_geografia_pauta_global(
        fija del proyecto: una pieza se atribuye a una Localidad SOLO si su
        Localidad puntual es una de las 60 — ya no hay fallback a Departamento
        acá (antes lo había; se sacó a propósito).
+    Cada resultado trae además `sub_ambito` (D2 de la spec de cobertura del
+    11/10/2026): localidad_directa | circuito_capital | multiple_depto |
+    multiple_provincia | departamento | sin_ambito. Distingue la pieza dirigida a
+    una localidad de la expandida desde "provincia entera", que `ambito`
+    colapsa en "localidad". Solo los tres primeros + multiple_depto cuentan
+    como cobertura de una localidad; multiple_provincia, departamento y
+    sin_ambito no.
     Devuelve localidad/departamento en forma NORMALIZADA (sin tildes,
     mayúscula) — el caller la resuelve a la forma oficial de Localidades(1).
     """
@@ -641,6 +659,7 @@ def clasificar_geografia_pauta_global(
         return {
             "excluida": False, "ambito": "localidad", "localidad": "CORDOBA",
             "departamento": None, "circuito_codigo_original": loc_str,
+            "sub_ambito": "circuito_capital",
         }
 
     if loc_str == "TODAS LAS LOCALIDADES":
@@ -650,11 +669,16 @@ def clasificar_geografia_pauta_global(
                 return {
                     "excluida": False, "ambito": "localidad_multiple",
                     "localidades": localidades_del_depto, "departamento": None,
+                    "sub_ambito": "multiple_depto",
                 }
-            return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
+            return {
+                "excluida": False, "ambito": "departamento", "localidad": None,
+                "departamento": depto_candidato, "sub_ambito": "departamento",
+            }
         return {
             "excluida": False, "ambito": "localidad_multiple",
             "localidades": sorted(localidades_60_normalizadas), "departamento": None,
+            "sub_ambito": "multiple_provincia",
         }
 
     if loc_str:
@@ -662,15 +686,21 @@ def clasificar_geografia_pauta_global(
         n_candidata = normalizar(candidata)
         n_candidata = ALIAS_LOCALIDAD_PAUTA_GLOBAL.get(n_candidata, n_candidata)
         if n_candidata in localidades_60_normalizadas:
-            return {"excluida": False, "ambito": "localidad", "localidad": n_candidata, "departamento": None}
+            return {
+                "excluida": False, "ambito": "localidad", "localidad": n_candidata,
+                "departamento": None, "sub_ambito": "localidad_directa",
+            }
         # Existe pero no es una de las 60 -> fallback a Departamento, regla
         # fija del proyecto: nunca se crea una localidad nueva.
-        return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
+        return {
+            "excluida": False, "ambito": "departamento", "localidad": None,
+            "departamento": depto_candidato, "sub_ambito": "departamento",
+        }
 
     # Sin Localidad puntual (loc_str vacío): ya no hay fallback a
     # Departamento. Regla sin excepciones: ámbito=None, la pieza no se
     # atribuye a ninguna Localidad.
-    return {"excluida": False, "ambito": None, "localidad": None, "departamento": None}
+    return {"excluida": False, "ambito": None, "localidad": None, "departamento": None, "sub_ambito": "sin_ambito"}
 
 
 def elegir_forma_canonica(variantes):
@@ -944,6 +974,7 @@ def cargar_pauta_digital_global(
                 "campana": campana,
                 "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(ambito_pieza),
                 "alcance_tipo": ambito_pieza,
+                "sub_ambito": geo["sub_ambito"],
                 # Regla sin excepciones (igual que clasificar_alcance_historico() para la
                 # fuente vieja): en_60_localidades es True SOLO si la pieza tiene una
                 # Localidad puntual de las 60 (ambito=localidad, incluye las expandidas
