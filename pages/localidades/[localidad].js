@@ -278,7 +278,11 @@ export default function DetalleLocalidad() {
                             <td style={{ ...td, whiteSpace: 'pre-wrap' }}>{v.tema}</td>
                             <td style={td}>
                               <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                                <span>{rangoVigencia || '—'}</span>
+                                {v.sin_fecha ? (
+                                  <span style={{ color: 'var(--text-tertiary)' }}>Sin fecha cargada</span>
+                                ) : (
+                                  <span>{rangoVigencia || '—'}</span>
+                                )}
                                 <SemaforoBadge alerta={v.alerta} antiguedadDias={v.antiguedad_dias} />
                               </div>
                             </td>

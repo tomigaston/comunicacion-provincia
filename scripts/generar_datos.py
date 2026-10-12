@@ -205,14 +205,31 @@ COBERTURA_COLS = {
 }
 
 
+# Cortes de banda de cobertura MT (confirmados 11/10/2026): 1-2 Baja, 3-4
+# Media, 5+ Alta; 0 = Sin. Única fuente de verdad: se exponen en el JSON
+# (`cortes_cobertura`) y el front (grilla, semáforo) NO recalcula bandas, lee
+# `banda_cobertura` / `total_tipos` de cada localidad.
+CORTES_COBERTURA = {"baja_max": 2, "media_max": 4}
+
+
 def banda_cobertura(total_tipos):
     if total_tipos <= 0:
         return "Sin"
-    if total_tipos <= 2:
+    if total_tipos <= CORTES_COBERTURA["baja_max"]:
         return "Baja"
-    if total_tipos <= 4:
+    if total_tipos <= CORTES_COBERTURA["media_max"]:
         return "Media"
     return "Alta"
+
+
+def es_mt_activo(estado):
+    """Predicado único de presencia/cobertura MT (spec 11/10/2026, Regla 3,
+    ajustado): Estado = Activo, nada más. Lo Inactivo no suma. No exige
+    Fecha_Desde: sin fecha de inicio no hay antigüedad que medir (las ALERTAS
+    sí piden Activo + Fecha_Desde), pero el tema está en el aire igual. Las
+    filas Activas sin ninguna fecha entran a `vigentes` con sin_fecha=True
+    (carve-out del 11/10, solo MT); las Inactivas sin fecha se descartan."""
+    return (estado or "").strip().lower() == "activo"
 
 
 def cargar_medios_tradicionales():
@@ -252,13 +269,19 @@ def cargar_medios_tradicionales():
         tipo_medio = limpio(row["Tipo_Medio"])
         if tipo_medio == "REDES":
             continue
-        # Regla de negocio (Tomás): una fila sin Fecha_Desde NI Fecha_Hasta no
-        # se tiene en cuenta para nada (tabla, cobertura, semáforo, mails,
-        # Campañas, Gantt, conteos), sea Activo o Inactivo. Se descarta acá
-        # para que todo lo posterior ya no la vea.
+        # Regla de negocio (Tomás): una fila Inactiva sin Fecha_Desde NI
+        # Fecha_Hasta no se tiene en cuenta para nada. Excepción (11/10/2026,
+        # solo MT): una fila ACTIVA sin ninguna fecha entra como "presente"
+        # (`sin_fecha`: True) y cuenta SOLO para cobertura. Sin fecha no hay
+        # antigüedad que medir: alerta/antiguedad_dias quedan en None y las
+        # excluyen del semáforo, el mail, Campañas/Gantt y la cronología (ver
+        # construir_campanas y lib/semaforo.js). Se listan para el equipo de MT
+        # en Contexto/Medios tradicionales - Activos sin fecha.md (dato de
+        # calidad: no se parchea).
         fecha_desde = fecha_iso(row["Fecha_Desde"])
         fecha_hasta = fecha_iso(row["Fecha_Hasta"])
-        if fecha_desde is None and fecha_hasta is None:
+        sin_fecha = fecha_desde is None and fecha_hasta is None
+        if sin_fecha and not es_mt_activo(limpio(row["Estado"])):
             continue
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
         # .strip() acá (no en limpio(), que es genérico para todo el pipeline):
@@ -280,19 +303,24 @@ def cargar_medios_tradicionales():
             # Ya calculados en la planilla contra los umbrales de Parametros
             # (30/50 días). Quedan en None cuando solo hay Fecha_Hasta (no se
             # inventa un verde por default).
-            "antiguedad_dias": limpio(row["Antiguedad_Dias"]),
-            "alerta": limpio(row["Alerta"]),
+            "antiguedad_dias": None if sin_fecha else limpio(row["Antiguedad_Dias"]),
+            "alerta": None if sin_fecha else limpio(row["Alerta"]),
+            "sin_fecha": sin_fecha,
         })
 
     localidades = []
     for _, row in cobertura_df.iterrows():
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
-        # La cobertura NO se lee de las columnas de la hoja Cobertura: se
-        # recalcula desde las filas de Maestro_Vigente que sobreviven al
-        # filtro de arriba (REDES y filas sin ninguna fecha quedan fuera).
-        # 1 si queda al menos una fila de ese tipo, 0 si no.
+        # La cobertura NO se lee de las columnas de la hoja Cobertura (queda
+        # solo para listar las 60 localidades): se recalcula desde las filas de
+        # Maestro_Vigente que sobreviven al filtro de arriba (REDES y filas
+        # sin ninguna fecha quedan fuera) y cumplen es_mt_activo().
+        # 1 si queda al menos una fila ACTIVA de ese tipo, 0 si no
+        # (es_mt_activo): lo Inactivo no suma.
         vigentes_loc = vigentes_por_localidad.get(clave, [])
-        tipos_presentes = {v["tipo_medio"] for v in vigentes_loc}
+        tipos_presentes = {
+            v["tipo_medio"] for v in vigentes_loc if es_mt_activo(v["estado"])
+        }
         cobertura = {
             clave_json: int(col_original in tipos_presentes)
             for col_original, clave_json in COBERTURA_COLS.items()
@@ -339,6 +367,7 @@ def cargar_medios_tradicionales():
         # reales -- ver calcular_alerta()).
         "umbral_alerta_amarilla_dias": umbral_amarilla,
         "umbral_alerta_roja_dias": umbral_roja,
+        "cortes_cobertura": CORTES_COBERTURA,
         "localidades": localidades,
     }
     movimientos_semana = {
@@ -1712,6 +1741,8 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
 
     for loc in medios_tradicionales["localidades"]:
         for v in loc["vigentes"]:
+            if v["sin_fecha"]:
+                continue  # Activo sin fecha: solo cobertura, fuera de Campañas/Gantt
             items.append({
                 "area_origen": "Medios tradicionales",
                 "campana": v["tema"],
