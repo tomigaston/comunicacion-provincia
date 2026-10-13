@@ -13,24 +13,43 @@ import { isoDe } from '../../lib/vencimientos';
 import { resumenGeneral } from '../../lib/resumen';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
+// Categorías del grupo "Pauta digital" (eje B de la cobertura): color de la próxima
+// vencimiento de la pauta VIVA y DIRIGIDA a la localidad, o 'sin'.
+const OPCIONES_PD = [
+  { key: '🔴', label: 'Vence ≤3d 🔴', fg: 'var(--cov-baja)', bg: 'var(--cov-baja-bg)' },
+  { key: '🟡', label: 'Vence 4–7d 🟡', fg: 'var(--cov-media)', bg: 'var(--cov-media-bg)' },
+  { key: '🟢', label: 'Vigente >7d 🟢', fg: 'var(--cov-alta)', bg: 'var(--cov-alta-bg)' },
+  { key: 'sin', label: 'Sin PD viva dirigida', fg: 'var(--cov-sin)', bg: 'var(--cov-sin-bg)' },
+];
+
+const etiquetaGrupo = {
+  fontSize: 11.5,
+  fontWeight: 700,
+  letterSpacing: 0.4,
+  textTransform: 'uppercase',
+  color: 'var(--text-tertiary)',
+  marginBottom: 6,
+};
+
 export default function LocalidadesIndex() {
   const router = useRouter();
   const { cargando, error, datos } = useApiData([
     '/api/data/localidades',
     '/api/data/medios-tradicionales',
     '/api/data/pauta-digital',
-    '/api/data/audiovisuales',
   ]);
 
   const [busqueda, setBusqueda] = useState('');
   const [bandasActivas, setBandasActivas] = useState(new Set(ORDEN_BANDAS));
+  // Grupo "Pauta digital": vacío = sin filtro; si hay opciones, OR entre ellas.
+  const [pdActivos, setPdActivos] = useState(new Set());
   const [mediosEstado, setMediosEstado] = useState(() =>
     Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off']))
   );
 
   const combinado = useMemo(() => {
     if (!datos) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData] = datos;
+    const [localidadesData, mediosData, pautaData] = datos;
 
     const coberturaPorClave = new Map(
       mediosData.localidades.map((l) => [normalizarTexto(l.localidad), l])
@@ -39,10 +58,6 @@ export default function LocalidadesIndex() {
     // Eje B (PD viva dirigida a la localidad + peor color de vencimiento),
     // independiente del eje A (banda MT). Ver calcularEjePDPorLocalidad().
     const ejePDPorLocalidad = calcularEjePDPorLocalidad(pautaData.piezas, isoDe(new Date()));
-
-    const audiovisualesPorLocalidad = new Set(
-      audiovisualesData.items.filter((i) => i.en_60_prioritarias).map((i) => normalizarTexto(i.localidad))
-    );
 
     return localidadesData.localidades.map((loc) => {
       const clave = normalizarTexto(loc.localidad);
@@ -53,7 +68,6 @@ export default function LocalidadesIndex() {
         totalTipos: cobertura ? cobertura.total_tipos : 0,
         cobertura: cobertura ? cobertura.cobertura : {},
         ejePD: ejePDPorLocalidad.get(clave) || null,
-        tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
       };
     });
   }, [datos]);
@@ -74,15 +88,19 @@ export default function LocalidadesIndex() {
       if (q && !normalizarTexto(l.localidad).includes(q) && !normalizarTexto(l.departamento).includes(q)) {
         return false;
       }
+      // AND entre grupos, OR dentro de cada grupo.
+      // Cobertura MT: la banda de la localidad es una de las activas.
       if (!bandasActivas.has(l.bandaCobertura)) return false;
-      for (const tipo of TIPOS_MEDIO) {
-        const estado = mediosEstado[tipo.key];
-        if (estado === 'incluir' && !l.cobertura[tipo.key]) return false;
-        if (estado === 'excluir' && l.cobertura[tipo.key]) return false;
-      }
+      // Tipo de medio MT: con alguno de los "✓" (OR) y sin ninguno de los "✕ Sin".
+      const incluidos = TIPOS_MEDIO.filter((t) => mediosEstado[t.key] === 'incluir');
+      const excluidos = TIPOS_MEDIO.filter((t) => mediosEstado[t.key] === 'excluir');
+      if (incluidos.length > 0 && !incluidos.some((t) => l.cobertura[t.key])) return false;
+      if (excluidos.some((t) => l.cobertura[t.key])) return false;
+      // Pauta digital (eje B: viva + dirigida, D2): su categoría está entre las elegidas.
+      if (pdActivos.size > 0 && !pdActivos.has(l.ejePD ? l.ejePD.color : 'sin')) return false;
       return true;
     });
-  }, [combinado, busqueda, bandasActivas, mediosEstado]);
+  }, [combinado, busqueda, bandasActivas, mediosEstado, pdActivos]);
 
   // Cards de resumen: salen de los mismos predicados y ejes que la grilla, el
   // semáforo y el mail (ver lib/resumen.js), no de un cálculo propio.
@@ -97,6 +115,15 @@ export default function LocalidadesIndex() {
     setBandasActivas(new Set(bandas));
     const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
     if (grilla) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function alternarPD(clave) {
+    setPdActivos((actual) => {
+      const nuevo = new Set(actual);
+      if (nuevo.has(clave)) nuevo.delete(clave);
+      else nuevo.add(clave);
+      return nuevo;
+    });
   }
 
   function alternarBanda(banda) {
@@ -123,40 +150,74 @@ export default function LocalidadesIndex() {
             onQueryChange={setBusqueda}
             onSelect={(item) => router.push(`/localidades/${item.value}`)}
           />
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            {ORDEN_BANDAS.map((banda) => {
-              const activa = bandasActivas.has(banda);
-              const cfg = BANDA_COBERTURA[banda];
-              return (
-                <button
-                  key={banda}
-                  type="button"
-                  onClick={() => alternarBanda(banda)}
-                  style={{
-                    padding: '8px 14px',
-                    borderRadius: 999,
-                    border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
-                    background: activa ? cfg.bg : 'var(--bg-secondary)',
-                    color: activa ? cfg.fg : 'var(--text-tertiary)',
-                    fontSize: 13.5,
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                  }}
-                >
-                  {cfg.label}
-                </button>
-              );
-            })}
+          <div>
+            <div style={etiquetaGrupo}>Cobertura MT</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {ORDEN_BANDAS.map((banda) => {
+                const activa = bandasActivas.has(banda);
+                const cfg = BANDA_COBERTURA[banda];
+                return (
+                  <button
+                    key={banda}
+                    type="button"
+                    onClick={() => alternarBanda(banda)}
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 999,
+                      border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
+                      background: activa ? cfg.bg : 'var(--bg-secondary)',
+                      color: activa ? cfg.fg : 'var(--text-tertiary)',
+                      fontSize: 13.5,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {cfg.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            {TIPOS_MEDIO.map((tipo) => (
-              <MedioFilterChip
-                key={tipo.key}
-                medio={tipo.label}
-                estado={mediosEstado[tipo.key]}
-                onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
-              />
-            ))}
+          <div>
+            <div style={etiquetaGrupo}>Tipo de medio MT</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {TIPOS_MEDIO.map((tipo) => (
+                <MedioFilterChip
+                  key={tipo.key}
+                  medio={tipo.label}
+                  estado={mediosEstado[tipo.key]}
+                  onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div style={etiquetaGrupo}>Pauta digital</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {OPCIONES_PD.map((op) => {
+                const activa = pdActivos.has(op.key);
+                return (
+                  <button
+                    key={op.key}
+                    type="button"
+                    onClick={() => alternarPD(op.key)}
+                    aria-pressed={activa}
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 999,
+                      border: `1.5px solid ${activa ? op.fg : 'var(--border)'}`,
+                      background: activa ? op.bg : 'var(--bg-secondary)',
+                      color: activa ? op.fg : 'var(--text-secondary)',
+                      fontSize: 13.5,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {op.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </FilterBar>
       </div>
@@ -181,7 +242,6 @@ export default function LocalidadesIndex() {
                 bandaCobertura={l.bandaCobertura}
                 totalTipos={l.totalTipos}
                 ejePD={l.ejePD}
-                tieneAudiovisuales={l.tieneAudiovisuales}
               />
             ))}
           </div>

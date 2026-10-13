@@ -16,7 +16,6 @@ export default function LocalidadCard({
   bandaCobertura,
   totalTipos,
   ejePD,
-  tieneAudiovisuales,
 }) {
   return (
     <Link
@@ -47,7 +46,6 @@ export default function LocalidadCard({
             Sin PD viva
           </span>
         )}
-        {tieneAudiovisuales && <span style={etiquetaExtra}>+ Audiovisuales</span>}
       </div>
     </Link>
   );
