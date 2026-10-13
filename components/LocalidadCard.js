@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import CoverageBadge from './CoverageBadge';
-import { slugificar } from '../lib/texto';
+import { hrefLocalidad } from '../lib/rutas';
 import { textoVencimiento } from '../lib/coverage';
 
 // Eje B (Pauta Digital viva dirigida a la localidad): color por proximidad a FIN.
@@ -19,7 +19,7 @@ export default function LocalidadCard({
 }) {
   return (
     <Link
-      href={`/localidades/${slugificar(localidad)}`}
+      href={hrefLocalidad(localidad)}
       style={{
         display: 'block',
         background: 'var(--bg-primary)',

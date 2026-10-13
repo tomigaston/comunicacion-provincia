@@ -17,6 +17,7 @@ import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
+import { claveTipoMedio } from '../../lib/resumen';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
@@ -74,6 +75,9 @@ export default function DetalleLocalidad() {
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const [modalTimelineAbierto, setModalTimelineAbierto] = useState(false);
+  // Recorte de la tabla de MT pedido desde las cards: solo temas ACTIVOS, de un
+  // tipo (o de todos). null = sin recorte.
+  const [filtroTemas, setFiltroTemas] = useState(null);
 
   // Datos base de la localidad, SIN filtrar por período — de acá sale tanto
   // lo que se termina mostrando (una vez aplicado el filtro) como la lista
@@ -147,12 +151,30 @@ export default function DetalleLocalidad() {
     return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()), datos[2].generado_el);
   }, [info, datos]);
 
+  // Click en un número de la card de MT: muestra en la tabla exactamente esos
+  // temas (Estado=Activo, de ese tipo), con el período en "Todo" para que el
+  // conteo de la tabla sea el de la card, y baja hasta la tabla.
+  function filtrarTemas({ tipo }) {
+    setFiltroTemas({ tipo });
+    setPeriodo({ tipo: 'preset', valor: 'todo' });
+    setTimeout(() => {
+      const el = typeof document !== 'undefined' && document.getElementById('seccion-mt');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0);
+  }
+
   // Listas efectivamente visibles, ya con el filtro de período aplicado.
   const visible = useMemo(() => {
     if (!info || info.noEncontrada) return null;
     return {
       vigentes: info.medios
-        ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana))
+        ? info.medios.vigentes.filter(
+            (v) =>
+              fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana) &&
+              (!filtroTemas ||
+                ((v.estado || '').trim().toLowerCase() === 'activo' &&
+                  (!filtroTemas.tipo || claveTipoMedio(v.tipo_medio) === filtroTemas.tipo)))
+          )
         : [],
       // Programada (INICIO futuro): con un preset (siempre hacia atrás desde hoy) se
       // muestra igual; mes/rango personalizado sí se respetan.
@@ -167,7 +189,7 @@ export default function DetalleLocalidad() {
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
       publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
     };
-  }, [info, ventana, periodo]);
+  }, [info, ventana, periodo, filtroTemas]);
 
   // Canales con al menos una pieza dentro del período elegido (mismo cálculo
   // que ya filtra visible.piezasPauta), para los chips del bloque Pauta
@@ -209,7 +231,7 @@ export default function DetalleLocalidad() {
             {info.base.poblacion ? ` · ${info.base.poblacion.toLocaleString('es-AR')} habitantes` : ''}
           </p>
 
-          {resumen && <ResumenLocalidad r={resumen} />}
+          {resumen && <ResumenLocalidad r={resumen} onFiltrarTemas={filtrarTemas} />}
 
           <div
             style={{
@@ -227,6 +249,7 @@ export default function DetalleLocalidad() {
             </p>
           </div>
 
+          <div id="seccion-mt">
           <Seccion titulo="Medios tradicionales">
             {info.medios ? (
               <>
@@ -262,6 +285,17 @@ export default function DetalleLocalidad() {
                   Ver línea de tiempo completa
                 </button>
 
+                {filtroTemas && (
+                  <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 10 }}>
+                    Mostrando {visible.vigentes.length} tema{visible.vigentes.length === 1 ? '' : 's'} activo
+                    {visible.vigentes.length === 1 ? '' : 's'}
+                    {filtroTemas.tipo ? ` de ${TIPOS_MEDIO.find((t) => t.key === filtroTemas.tipo).label}` : ''}
+                    {' · '}
+                    <button type="button" onClick={() => setFiltroTemas(null)} style={enlaceEstilo}>
+                      Quitar filtro
+                    </button>
+                  </p>
+                )}
                 {info.medios.vigentes.length === 0 ? (
                   <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                     No hay ningún tema vigente cargado para esta localidad.
@@ -312,6 +346,7 @@ export default function DetalleLocalidad() {
               <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
             )}
           </Seccion>
+          </div>
 
           {modalTimelineAbierto && info.medios && (
             <ModalLineaTiempoMedios

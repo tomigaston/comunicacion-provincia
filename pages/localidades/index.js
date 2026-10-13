@@ -7,8 +7,9 @@ import Autocomplete from '../../components/Autocomplete';
 import { ResumenGeneral } from '../../components/ResumenCards';
 import LocalidadCard from '../../components/LocalidadCard';
 import { useApiData } from '../../lib/useApiData';
-import { normalizarTexto, slugificar } from '../../lib/texto';
-import { ORDEN_BANDAS, BANDA_COBERTURA, calcularEjePDPorLocalidad } from '../../lib/coverage';
+import { slugificar } from '../../lib/texto';
+import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
+import { combinarLocalidades, filtrarLocalidades } from '../../lib/filtrosLocalidades';
 import { isoDe } from '../../lib/vencimientos';
 import { resumenGeneral } from '../../lib/resumen';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
@@ -50,26 +51,7 @@ export default function LocalidadesIndex() {
   const combinado = useMemo(() => {
     if (!datos) return null;
     const [localidadesData, mediosData, pautaData] = datos;
-
-    const coberturaPorClave = new Map(
-      mediosData.localidades.map((l) => [normalizarTexto(l.localidad), l])
-    );
-
-    // Eje B (PD viva dirigida a la localidad + peor color de vencimiento),
-    // independiente del eje A (banda MT). Ver calcularEjePDPorLocalidad().
-    const ejePDPorLocalidad = calcularEjePDPorLocalidad(pautaData.piezas, isoDe(new Date()));
-
-    return localidadesData.localidades.map((loc) => {
-      const clave = normalizarTexto(loc.localidad);
-      const cobertura = coberturaPorClave.get(clave);
-      return {
-        ...loc,
-        bandaCobertura: cobertura ? cobertura.banda_cobertura : 'Sin',
-        totalTipos: cobertura ? cobertura.total_tipos : 0,
-        cobertura: cobertura ? cobertura.cobertura : {},
-        ejePD: ejePDPorLocalidad.get(clave) || null,
-      };
-    });
+    return combinarLocalidades(localidadesData, mediosData, pautaData, isoDe(new Date()));
   }, [datos]);
 
   const itemsBusqueda = useMemo(() => {
@@ -83,24 +65,19 @@ export default function LocalidadesIndex() {
 
   const filtrados = useMemo(() => {
     if (!combinado) return [];
-    const q = normalizarTexto(busqueda);
-    return combinado.filter((l) => {
-      if (q && !normalizarTexto(l.localidad).includes(q) && !normalizarTexto(l.departamento).includes(q)) {
-        return false;
-      }
-      // AND entre grupos, OR dentro de cada grupo.
-      // Cobertura MT: la banda de la localidad es una de las activas.
-      if (!bandasActivas.has(l.bandaCobertura)) return false;
-      // Tipo de medio MT: con alguno de los "✓" (OR) y sin ninguno de los "✕ Sin".
-      const incluidos = TIPOS_MEDIO.filter((t) => mediosEstado[t.key] === 'incluir');
-      const excluidos = TIPOS_MEDIO.filter((t) => mediosEstado[t.key] === 'excluir');
-      if (incluidos.length > 0 && !incluidos.some((t) => l.cobertura[t.key])) return false;
-      if (excluidos.some((t) => l.cobertura[t.key])) return false;
-      // Pauta digital (eje B: viva + dirigida, D2): su categoría está entre las elegidas.
-      if (pdActivos.size > 0 && !pdActivos.has(l.ejePD ? l.ejePD.color : 'sin')) return false;
-      return true;
-    });
+    return filtrarLocalidades(combinado, { busqueda, bandasActivas, mediosEstado, pdActivos });
   }, [combinado, busqueda, bandasActivas, mediosEstado, pdActivos]);
+
+  const hayFiltros =
+    bandasActivas.size !== ORDEN_BANDAS.length ||
+    pdActivos.size > 0 ||
+    Object.values(mediosEstado).some((e) => e !== 'off');
+
+  function limpiarFiltros() {
+    setBandasActivas(new Set(ORDEN_BANDAS));
+    setPdActivos(new Set());
+    setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+  }
 
   // Cards de resumen: salen de los mismos predicados y ejes que la grilla, el
   // semáforo y el mail (ver lib/resumen.js), no de un cálculo propio.
@@ -226,6 +203,18 @@ export default function LocalidadesIndex() {
         <>
           <p id="grilla-localidades" style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
             Mostrando {filtrados.length} de {combinado.length} localidades
+            {hayFiltros && (
+              <>
+                {' · '}
+                <button
+                  type="button"
+                  onClick={limpiarFiltros}
+                  style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                  Limpiar filtros
+                </button>
+              </>
+            )}
           </p>
           <div
             style={{

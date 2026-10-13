@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
 import FilterBar from '../components/FilterBar';
 import Autocomplete from '../components/Autocomplete';
@@ -22,10 +23,19 @@ const ESTADOS = ['Todos', 'Vigente', 'Finalizada', 'Observada', 'Programada', 'S
 const TAMANO_PAGINA = 50;
 
 export default function Campanas() {
+  const router = useRouter();
   const { cargando, error, datos } = useApiData(['/api/data/campanas']);
   const [area, setArea] = useState('Todas');
   const [estado, setEstado] = useState('Todos');
   const [busqueda, setBusqueda] = useState('');
+  // ?q=<campaña>: llegada desde las cards de resumen de Localidades.
+  const [qInicial, setQInicial] = useState('');
+  useEffect(() => {
+    if (router.isReady && typeof router.query.q === 'string') {
+      setQInicial(router.query.q);
+      setBusqueda(router.query.q);
+    }
+  }, [router.isReady, router.query.q]);
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
   const items = datos ? datos[0].items : [];
@@ -66,6 +76,8 @@ export default function Campanas() {
           <div style={{ marginBottom: 20 }}>
             <FilterBar>
               <Autocomplete
+                key={qInicial}
+                valorInicial={qInicial}
                 items={itemsBusqueda}
                 placeholder="Buscar campaña, localidad o departamento..."
                 onQueryChange={(q) => {
