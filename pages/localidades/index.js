@@ -92,6 +92,13 @@ export default function LocalidadesIndex() {
     return resumenGeneral(mediosData, pautaData, isoDe(new Date()));
   }, [datos]);
 
+  // Drill-down desde las cards: deja activas solo esas bandas y baja a la grilla.
+  function filtrarBandas(bandas) {
+    setBandasActivas(new Set(bandas));
+    const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
+    if (grilla) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   function alternarBanda(banda) {
     setBandasActivas((actual) => {
       const nuevo = new Set(actual);
@@ -106,7 +113,7 @@ export default function LocalidadesIndex() {
       {cargando && <p>Cargando datos del tablero...</p>}
       {error && <p style={{ color: 'var(--cov-baja)' }}>No se pudieron cargar los datos: {error}</p>}
 
-      {resumen && <ResumenGeneral r={resumen} />}
+      {resumen && <ResumenGeneral r={resumen} onFiltrarBandas={filtrarBandas} />}
 
       <div style={{ marginBottom: 20 }}>
         <FilterBar>
@@ -156,7 +163,7 @@ export default function LocalidadesIndex() {
 
       {combinado && (
         <>
-          <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
+          <p id="grilla-localidades" style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
             Mostrando {filtrados.length} de {combinado.length} localidades
           </p>
           <div

@@ -144,7 +144,7 @@ export default function DetalleLocalidad() {
   // (estado actual), mismas fuentes que la grilla y el semáforo (lib/resumen.js).
   const resumen = useMemo(() => {
     if (!info || !info.base || !datos) return null;
-    return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()));
+    return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()), datos[2].generado_el);
   }, [info, datos]);
 
   // Listas efectivamente visibles, ya con el filtro de período aplicado.

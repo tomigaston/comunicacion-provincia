@@ -222,6 +222,31 @@ def es_mt_activo(estado):
     return (estado or "").strip().lower() == "activo"
 
 
+def snapshot_anterior_mt(previo, actual):
+    """Foto de cobertura MT de la carga ANTERIOR, para mostrar el movimiento
+    semana a semana (cards de resumen). La hoja Historico del Excel no trae
+    Estado, así que no se puede reconstruir con el mismo predicado de cobertura
+    (Estado=Activo); por eso se guarda en cada carga la banda de cada localidad
+    y la próxima carga la lee. Si la corrida es del MISMO snapshot (reproceso),
+    se conserva la foto anterior que ya traía el JSON. Sin JSON previo o sin
+    semanas cargadas -> None (el front oculta el delta, no inventa un 0)."""
+    if not previo:
+        return None
+    semanas_prev = previo.get("semanas_cargadas") or []
+    semanas_act = actual.get("semanas_cargadas") or []
+    if not semanas_prev or not semanas_act:
+        return None
+    if semanas_prev[-1] == semanas_act[-1]:
+        return previo.get("snapshot_anterior")
+    return {
+        "fecha": semanas_prev[-1],
+        "localidades": {
+            l["localidad"]: {"banda": l["banda_cobertura"], "total_tipos": l["total_tipos"]}
+            for l in previo["localidades"]
+        },
+    }
+
+
 def cargar_medios_tradicionales():
     xls = CONTEXTO / "Medios tradicionales.xlsx"
     cobertura_df = pd.read_excel(xls, sheet_name="Cobertura")
@@ -1829,6 +1854,16 @@ def main():
         departamento_a_localidades_normalizadas.setdefault(n_depto, []).append(n_loc)
 
     medios_tradicionales, movimientos_semana = cargar_medios_tradicionales()
+    # Foto de la carga anterior (antes de sobreescribir) + fecha de generación,
+    # que el front usa para el delta semanal y para detectar anomalías
+    # (Vigente con FIN anterior a esta fecha).
+    mt_previo_path = DATA_OUT / "medios_tradicionales.json"
+    mt_previo = None
+    if mt_previo_path.exists():
+        with open(mt_previo_path, encoding="utf-8") as f:
+            mt_previo = json.load(f)
+    medios_tradicionales["generado_el"] = HOY.isoformat()
+    medios_tradicionales["snapshot_anterior"] = snapshot_anterior_mt(mt_previo, medios_tradicionales)
     escribir_json("medios_tradicionales.json", medios_tradicionales)
     escribir_json("movimientos_semana.json", movimientos_semana)
 
@@ -1880,7 +1915,10 @@ def main():
     else:
         print("  Códigos dados de baja respecto al JSON anterior: 0")
 
-    pauta_digital = {"piezas": piezas_historico + piezas_global}
+    # generado_el: fecha de corte del dato. Una pieza Vigente (ESTADO=ACTIVO en la
+    # fuente) con FIN anterior a esta fecha es una anomalía de la fuente
+    # ("vencida sin renovar"), distinta de la que venció después de la carga.
+    pauta_digital = {"generado_el": HOY.isoformat(), "piezas": piezas_historico + piezas_global}
     escribir_json("pauta_digital.json", pauta_digital)
 
     audiovisuales = cargar_audiovisuales()
