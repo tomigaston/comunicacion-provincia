@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import CoverageBadge from '../../components/CoverageBadge';
 import StatusBadge from '../../components/StatusBadge';
-import AnioBadge from '../../components/AnioBadge';
 import FiltroPeriodo from '../../components/FiltroPeriodo';
 import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
@@ -67,7 +66,6 @@ export default function DetalleLocalidad() {
     '/api/data/localidades',
     '/api/data/medios-tradicionales',
     '/api/data/pauta-digital',
-    '/api/data/audiovisuales',
     '/api/data/sms',
     '/api/data/contenido-organico',
   ]);
@@ -84,7 +82,7 @@ export default function DetalleLocalidad() {
   // de meses reales para el dropdown "mes puntual".
   const info = useMemo(() => {
     if (!datos || !slug) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData, smsData, contenidoOrganicoData] = datos;
+    const [localidadesData, mediosData, pautaData, smsData, contenidoOrganicoData] = datos;
 
     const base = localidadesData.localidades.find((l) => slugificar(l.localidad) === slug);
     if (!base) return { noEncontrada: true };
@@ -107,10 +105,6 @@ export default function DetalleLocalidad() {
       )
       .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));
 
-    const itemsAudiovisuales = audiovisualesData.items
-      .filter((i) => i.en_60_prioritarias && normalizarTexto(i.localidad) === clave)
-      .sort((a, b) => (b.fecha_fin || b.fecha_inicio || '').localeCompare(a.fecha_fin || a.fecha_inicio || ''));
-
     // Mismo criterio que Pauta digital: solo se atribuye a ESTA localidad
     // cuando algún alcance del envío es tipo "localidad" y coincide por
     // nombre — un alcance "departamento" en el mismo envío no cuenta acá
@@ -128,7 +122,7 @@ export default function DetalleLocalidad() {
       .filter((p) => (p.localidades || []).some((l) => normalizarTexto(l) === clave))
       .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''));
 
-    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms, publicacionesOrganico };
+    return { base, medios, piezasPauta, enviosSms, publicacionesOrganico };
   }, [datos, slug]);
 
   // Fechas reales de esta localidad (las 3 áreas juntas), para armar el
@@ -138,7 +132,6 @@ export default function DetalleLocalidad() {
     const fechas = [];
     if (info.medios) info.medios.vigentes.forEach((v) => fechas.push(v.fecha_hasta || v.fecha_desde));
     info.piezasPauta.forEach((p) => fechas.push(p.finalizacion));
-    info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || it.fecha_inicio));
     info.enviosSms.forEach((e) => fechas.push(e.fecha_inicio));
     info.publicacionesOrganico.forEach((p) => fechas.push(p.fecha));
     return fechas;
@@ -182,9 +175,6 @@ export default function DetalleLocalidad() {
         (p) =>
           (p.estado === 'Programada' && periodo.tipo === 'preset') ||
           rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)
-      ),
-      itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
-        fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
       ),
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
       publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
@@ -464,47 +454,6 @@ export default function DetalleLocalidad() {
                     </tbody>
                   </table>
                 </div>
-              )}
-            </Seccion>
-          )}
-
-          {info.itemsAudiovisuales.length > 0 && (
-            <Seccion titulo="Audiovisuales">
-              {visible.itemsAudiovisuales.length === 0 ? (
-                <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
-                  Ningún contenido audiovisual cae dentro del período elegido (hay{' '}
-                  {info.itemsAudiovisuales.length} en total — varios sin fecha cargada, por eso no
-                  entran salvo con "Todo"). Probá con "Todo".
-                </p>
-              ) : (
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                  <thead>
-                    <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                      <th style={th}>Campaña</th>
-                      <th style={th}>Tipo de contenido</th>
-                      <th style={th}>Fecha</th>
-                      <th style={th}>Estado</th>
-                      <th style={th}>Material</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {visible.itemsAudiovisuales.map((it, i) => (
-                      <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                        <td style={td}>{it.campana}</td>
-                        <td style={td}>{it.tipo_contenido}</td>
-                        <td style={td}>
-                          <AnioBadge fechaInicio={it.fecha_inicio} fechaFin={it.fecha_fin} />
-                        </td>
-                        <td style={td}>
-                          <StatusBadge estado={it.estado} />
-                        </td>
-                        <td style={td}>
-                          <VerMaterial links={it.links} />
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
               )}
             </Seccion>
           )}

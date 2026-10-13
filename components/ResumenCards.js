@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento } from '../lib/coverage';
+import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento, textoSigueAlAire } from '../lib/coverage';
 import { hrefLocalidad, hrefCampana } from '../lib/rutas';
 
 // "¿Qué necesita atención esta semana?": arriba lo accionable y nombrado,
@@ -326,6 +326,7 @@ export function ResumenGeneral({ r, onFiltrarBandas }) {
                       <LinkCampana nombre={c.campana} />
                     </strong>{' '}
                     · {textoVencimiento(c.dias)} 🔴
+                    {c.sigueAlAire > 0 && ` · ${textoSigueAlAire(c.sigueAlAire, { deCampana: true })}`}
                     {c.continua && <span style={{ color: 'var(--text-tertiary)' }}> · sigue con otras piezas</span>}
                   </li>
                 ))}
@@ -355,6 +356,7 @@ export function ResumenGeneral({ r, onFiltrarBandas }) {
                       <LinkCampana nombre={c.campana} />
                     </strong>{' '}
                     · {textoVencimiento(c.dias)}
+                    {c.color === '🔴' && c.sigueAlAire > 0 && ` · ${textoSigueAlAire(c.sigueAlAire, { deCampana: true })}`}
                     {c.continua && <span style={{ color: 'var(--text-tertiary)' }}> · sigue con otras piezas</span>}
                   </li>
                 ))}
@@ -469,6 +471,9 @@ export function ResumenLocalidad({ r, onFiltrarTemas }) {
                 {pd.campanasVivasDirigidas} campaña{pd.campanasVivasDirigidas === 1 ? '' : 's'} viva{pd.campanasVivasDirigidas === 1 ? '' : 's'} dirigida{pd.campanasVivasDirigidas === 1 ? '' : 's'}
               </button>
               {' · '}próxima {textoVencimiento(pd.proxima.dias)} <Chip color={pd.proxima.color}>{pd.proxima.color}</Chip>
+              {pd.proxima.color === '🔴' && pd.proxima.sigueAlAire > 0 && (
+                <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)' }}> · {textoSigueAlAire(pd.proxima.sigueAlAire)}</span>
+              )}
             </div>
             {pd.plataformas.length > 1 && (
               <div style={detalle}>

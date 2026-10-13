@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import CoverageBadge from './CoverageBadge';
 import { hrefLocalidad } from '../lib/rutas';
-import { textoVencimiento } from '../lib/coverage';
+import { textoVencimiento, textoSigueAlAire } from '../lib/coverage';
 
 // Eje B (Pauta Digital viva dirigida a la localidad): color por proximidad a FIN.
 const COLOR_EJE_PD = {
@@ -40,6 +40,7 @@ export default function LocalidadCard({
             title={`${ejePD.piezas} pieza${ejePD.piezas === 1 ? '' : 's'} de pauta digital viva dirigida a la localidad`}
           >
             PD activa · {textoVencimiento(ejePD.dias)} {ejePD.color}
+            {ejePD.color === '🔴' && ejePD.sigueAlAire > 0 && ` · ${textoSigueAlAire(ejePD.sigueAlAire)}`}
           </span>
         ) : (
           <span style={etiquetaExtra} title="Sin pauta digital viva dirigida a esta localidad">

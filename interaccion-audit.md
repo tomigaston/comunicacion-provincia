@@ -91,26 +91,19 @@ Todo se calcula con el código de la pantalla, no con una reimplementación.
 - **Campañas 🔴 (35):** 1 vence hoy, 29 en 2 días (15/10), 5 en 3 días (16/10).
 - **¿Artefacto?** No de una sola campaña repetida: lo causan muchas campañas distintas (Comunicación Institucional en 10 localidades, Obras que transforman en 6, Hitos de gestión en 5, …). Es una cohorte con cierre común (jueves 15/10). El matiz está en la regla de peor caso: una localidad queda 🔴 con que una sola campaña venza, aunque tenga otras al aire; 19 de las 37 campañas que vencen siguen con otras piezas después (ver `continua`). 8 de las 31 localidades están en rojo solo por piezas `multiple_depto`.
 
-## 4. Audiovisuales en la vista de localidades
-Grilla, resumen y filtros: **0 referencias.**
+## 4. Audiovisuales en la vista de localidades (grilla + ficha)
+**0 referencias** en `pages/localidades/` (índice y ficha), en las cards, filtros, badges, modales y librerías que usa la vista. La ficha ya no pide `/api/data/audiovisuales` ni arma ni muestra la sección.
 ```
-exit=1
+$ grep -rniE "audiovisual" pages/localidades components/LocalidadCard.js components/ResumenCards.js components/FilterBar.js components/MedioFilterChip.js components/Autocomplete.js components/CoverageBadge.js components/FiltroPeriodo.js components/VerMaterial.js components/StatusBadge.js components/ModalLineaTiempoMedios.js components/LineaTiempoMedios.js components/MensajeTruncado.js components/SemaforoBadge.js lib/filtrosLocalidades.js lib/resumen.js lib/coverage.js lib/rutas.js lib/semaforo.js lib/tiposMedio.js
+exit=1   (sin coincidencias)
 ```
-La **ficha de detalle** (`[localidad].js`) conserva su sección "Audiovisuales", fuera del alcance de este pedido (solo grilla):
-```
-pages/localidades/[localidad].js:70:    '/api/data/audiovisuales',
-pages/localidades/[localidad].js:87:    const [localidadesData, mediosData, pautaData, audiovisualesData, smsD
-pages/localidades/[localidad].js:110:    const itemsAudiovisuales = audiovisualesData.items
-pages/localidades/[localidad].js:131:    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms, pu
-pages/localidades/[localidad].js:141:    info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || i
-pages/localidades/[localidad].js:186:      itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
-pages/localidades/[localidad].js:471:          {info.itemsAudiovisuales.length > 0 && (
-pages/localidades/[localidad].js:472:            <Seccion titulo="Audiovisuales">
-pages/localidades/[localidad].js:473:              {visible.itemsAudiovisuales.length === 0 ? (
-pages/localidades/[localidad].js:475:                  Ningún contenido audiovisual cae dentro del período ele
-pages/localidades/[localidad].js:476:                  {info.itemsAudiovisuales.length} en total — varios sin 
-pages/localidades/[localidad].js:491:                    {visible.itemsAudiovisuales.map((it, i) => (
-```
+Audiovisuales sigue existiendo solo en `/campanas` (`CampanaRow.js`, `AnioBadge.js`) y en su propio endpoint, fuera de la vista de localidades.
+
+## 4b. Contexto del 🔴 de PD ("sigue con N campañas al aire")
+Solo suma contexto; no cambia color ni conteos (la sección 3 da los mismos valores después del cambio).
+- **Definición:** `sigueAlAire` = campañas distintas con alguna pieza viva dirigida (D2) que sigue más allá de la ventana roja (> 3 días). En una localidad es lo que le queda al vencer lo que hoy la pinta de 🔴; en una campaña ("Renovar primero") es lo MÍNIMO que le queda a alguna de las localidades que toca, sin contarse a sí misma.
+- **Se muestra** solo con 🔴 y N > 0 (tarjeta de la grilla, card de la ficha, "Renovar primero" y la lista de vencen). Con N = 0 el rojo va solo.
+- **Hoy (13/10):** de las 31 localidades 🔴, las 31 conservan entre 3 y 17 campañas al aire; **ninguna** se queda sin PD dirigida al vencer. De las 35 campañas 🔴, 34 llevan contexto y 1 (ESTUDIANTES AL CENTRO, solo ámbito departamental, sin localidad puntual) va sin contexto porque no se puede afirmar qué localidad toca.
 
 ## 5. Observaciones
 - Los elementos 7, 8 y 19 no se renderizan con los datos de hoy (no hay `snapshot_anterior` ni campañas vencidas sin renovar). Su cableado está verificado en código; el movimiento se probó con una foto sintética.
