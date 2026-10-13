@@ -8,7 +8,8 @@ import KpiTile from '../../components/KpiTile';
 import LocalidadCard from '../../components/LocalidadCard';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
-import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
+import { ORDEN_BANDAS, BANDA_COBERTURA, calcularEjePDPorLocalidad } from '../../lib/coverage';
+import { isoDe } from '../../lib/vencimientos';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 export default function LocalidadesIndex() {
@@ -34,20 +35,9 @@ export default function LocalidadesIndex() {
       mediosData.localidades.map((l) => [normalizarTexto(l.localidad), l])
     );
 
-    const pautaPorLocalidad = new Set();
-    for (const p of pautaData.piezas) {
-      if (!p.en_60_localidades) continue;
-      // Programada (aún no empezó) no cuenta como "tiene pauta digital".
-      if (p.estado === 'Programada') continue;
-      // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
-      // manda, no el texto crudo de Localidad (evita que filas OTRO/REGION/
-      // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA/DEPARTAMENTO marquen una localidad
-      // como "con pauta digital" solo porque su columna Localidad o Departamento
-      // menciona su nombre). Regla sin excepciones: una pieza cuenta para una
-      // Localidad SOLO si su Localidad puntual es una de las 60 — sin fallback
-      // por Departamento en común.
-      if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
-    }
+    // Eje B (PD viva dirigida a la localidad + peor color de vencimiento),
+    // independiente del eje A (banda MT). Ver calcularEjePDPorLocalidad().
+    const ejePDPorLocalidad = calcularEjePDPorLocalidad(pautaData.piezas, isoDe(new Date()));
 
     const audiovisualesPorLocalidad = new Set(
       audiovisualesData.items.filter((i) => i.en_60_prioritarias).map((i) => normalizarTexto(i.localidad))
@@ -61,7 +51,7 @@ export default function LocalidadesIndex() {
         bandaCobertura: cobertura ? cobertura.banda_cobertura : 'Sin',
         totalTipos: cobertura ? cobertura.total_tipos : 0,
         cobertura: cobertura ? cobertura.cobertura : {},
-        tienePautaDigital: pautaPorLocalidad.has(clave),
+        ejePD: ejePDPorLocalidad.get(clave) || null,
         tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
       };
     });
@@ -195,7 +185,7 @@ export default function LocalidadesIndex() {
                 departamento={l.departamento}
                 bandaCobertura={l.bandaCobertura}
                 totalTipos={l.totalTipos}
-                tienePautaDigital={l.tienePautaDigital}
+                ejePD={l.ejePD}
                 tieneAudiovisuales={l.tieneAudiovisuales}
               />
             ))}
