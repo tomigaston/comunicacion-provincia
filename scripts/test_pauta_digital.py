@@ -394,18 +394,13 @@ def caso_5_localidad_fuera_de_60_no_se_atribuye(df, claves_60):
                 )
 
 
-def caso_12_programado_es_categoria_propia_sin_alerta():
+def caso_12_programado_es_categoria_propia():
     """ESTADO=PROGRAMADO (11/10/2026): se expone como "Programada" (no Vigente
-    ni Finalizada), y una pieza con INICIO futuro no genera antigüedad ni
-    alerta. Vacío -> S/D y valores desconocidos se muestran tal cual."""
+    ni Finalizada). Vacío -> S/D y valores desconocidos se muestran tal cual."""
     assert g.estado_pauta_digital_desde_crudo("PROGRAMADO") == "Programada"
     assert g.estado_pauta_digital_desde_crudo("programado ") == "Programada"
     assert g.estado_pauta_digital_desde_crudo(None) == "S/D"
     assert g.estado_pauta_digital_desde_crudo("PAUSADO") == "PAUSADO"
-    futuro = pd.Timestamp(g.HOY) + pd.Timedelta(days=3)
-    assert g.antiguedad_y_alerta_pauta_digital("Vigente", futuro, 30, 50) == (None, None)
-    pasado = pd.Timestamp(g.HOY) - pd.Timedelta(days=60)
-    assert g.antiguedad_y_alerta_pauta_digital("Vigente", pasado, 30, 50) == (60, "🔴")
 
 
 def caso_13_estado_audiovisual():
@@ -461,7 +456,7 @@ def main():
     for caso in (
         caso_10_dedup_gana_fecha_envio_mas_reciente,
         caso_11_dedup_tiebreak_estado_activo,
-        caso_12_programado_es_categoria_propia_sin_alerta,
+        caso_12_programado_es_categoria_propia,
         caso_13_estado_audiovisual,
         caso_14_bordes_de_alerta_30_50,
     ):

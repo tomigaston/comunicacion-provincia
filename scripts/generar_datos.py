@@ -115,7 +115,9 @@ def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
     tablero (spec 11/10/2026): 0-29 🟢, 30-49 🟡, 50+ 🔴, o sea el umbral
     cuenta como parte de la banda superior (>=). Es el mismo borde de la
     planilla de MT ("🟡 hace 30 días", "🔴 hace 50") y de colorFrescura() en
-    lib/semaforo.js. None si no hay antigüedad calculable -- no se inventa un
+    lib/semaforo.js. Hoy ninguna carga la llama (MT lee Alerta ya calculada de
+    la planilla; PD alerta por vencimiento en el front): queda como definición
+    de referencia del borde, cubierta por test_pauta_digital.py (caso 14). None si no hay antigüedad calculable -- no se inventa un
     verde por default."""
     if antiguedad_dias is None or umbral_amarilla is None or umbral_roja is None:
         return None
@@ -124,22 +126,6 @@ def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
     if antiguedad_dias >= umbral_amarilla:
         return "🟡"
     return "🟢"
-
-
-def antiguedad_y_alerta_pauta_digital(estado, inicio_ts, umbral_amarilla, umbral_roja):
-    """Pauta Digital no trae Antiguedad_Dias/Alerta precalculados (a diferencia
-    de Medios Tradicionales) -- se calculan acá al vuelo, solo para piezas
-    Vigentes, con los mismos umbrales de Parametros. inicio_ts ya viene resuelto
-    por el caller tomando siempre la columna AA (INICIO), sin fallback."""
-    if estado != "Vigente" or inicio_ts is None:
-        return None, None
-    # Pieza que todavía no empezó (INICIO > hoy, ej. ESTADO=PROGRAMADO): no hay
-    # antigüedad ni alerta que calcular -- sin esto daría antigüedad negativa
-    # y un 🟢 falso.
-    if inicio_ts.date() > HOY:
-        return None, None
-    antiguedad_dias = (HOY - inicio_ts.date()).days
-    return antiguedad_dias, calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja)
 
 
 def lista_links(v):
@@ -558,7 +544,7 @@ def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
     return en_60, ALCANCE_A_TIPO.get(alcance_detectado)
 
 
-def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=None):
+def cargar_pauta_digital_historico(claves_60):
     """Fuente vieja (Meta Ads, Ene-Jul). Esquema propio, se mantiene tal cual
     —no se lo fuerza al esquema nuevo— para todo lo anterior al corte."""
     df = pd.read_excel(CONTEXTO / "Medios Digitales.xlsx", sheet_name="Pauta Digital Curada")
@@ -574,11 +560,6 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
         loc = limpio(row["Localidad"])
         en_60, alcance_tipo = clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60)
         estado = estado_por_fecha(row["Finalización"])
-        # Sin columna "Inicio" propia en esta fuente vieja -- se usa Inicio del
-        # informe como base de antigüedad (ver antiguedad_y_alerta_pauta_digital).
-        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
-            estado, _a_timestamp(row["Inicio del informe"]), umbral_amarilla, umbral_roja
-        )
 
         piezas.append({
             "fuente": "historico",
@@ -600,8 +581,6 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
             "fecha_creacion": fecha_iso(row["Fecha de creación"]),
             "finalizacion": finalizacion,
             "estado": estado,
-            "antiguedad_dias": antiguedad_dias,
-            "alerta": alerta,
             "alcance": limpio(row["Alcance"]),
             "frecuencia": limpio(row["Frecuencia"]),
             "impresiones": limpio(row["Impresiones"]),
@@ -890,7 +869,6 @@ def _dedup_pauta_global_por_cod_contenido(piezas):
 
 def cargar_pauta_digital_global(
     localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas,
-    umbral_amarilla=None, umbral_roja=None,
 ):
     """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
     (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
@@ -966,20 +944,13 @@ def cargar_pauta_digital_global(
         # ESTADO expuesto en el tablero: se toma DIRECTO de la columna ESTADO
         # del crudo (regla de negocio 24/09/2026, reemplaza al cálculo viejo
         # por fecha INICIO/FIN -- ver estado_pauta_digital_desde_crudo()).
-        # INICIO/FIN se siguen tomando siempre de las columnas AA/AB ("INICIO
-        # "/"FIN"), sin fallback a FIN INFORMADO, pero solo para
-        # antiguedad_y_alerta_pauta_digital() de acá abajo: esa función NO se
-        # toca -- sigue gateando antigüedad/alerta con el Vigente/Finalizada
-        # calculado por fecha (no con el ESTADO crudo), porque alimenta otra
-        # funcionalidad (la ventana de vencimientos del mail) que no cambia
-        # con esta regla de negocio.
+        # INICIO/FIN se toman siempre de las columnas AA/AB ("INICIO "/"FIN"),
+        # sin fallback a FIN INFORMADO. La alerta de PD ya no se calcula acá:
+        # es por vencimiento y se resuelve en el front (lib/semaforo.js,
+        # colorVencimientoPD), a partir de `finalizacion` y `vigente_por_fecha`.
         inicio_ts = _a_timestamp(row["INICIO "])
         fin_ts = _a_timestamp(row["FIN"])
         estado_pieza = estado_pauta_digital_desde_crudo(row["ESTADO"])
-        estado_por_fecha_para_alerta = estado_por_fecha(fin_ts)
-        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
-            estado_por_fecha_para_alerta, inicio_ts, umbral_amarilla, umbral_roja
-        )
         # Campo interno (no se muestra en el tablero), usado únicamente por
         # calcularVencimientosPautaDigital() en lib/vencimientos.js para la
         # ventana de 7 días del mail de vencimientos: True si INICIO <= hoy <=
@@ -1041,8 +1012,6 @@ def cargar_pauta_digital_global(
                 # columna ESTADO del crudo, no se deriva de FIN/FIN INFORMADO.
                 "estado": estado_pieza,
                 "vigente_por_fecha": vigente_por_fecha,
-                "antiguedad_dias": antiguedad_dias,
-                "alerta": alerta,
                 "alcance": None,
                 "frecuencia": None,
                 "impresiones": None,
@@ -1875,13 +1844,10 @@ def main():
             piezas_anteriores = json.load(f)["piezas"]
         codigos_previos = {p["cod_contenido"] for p in piezas_anteriores if p.get("cod_contenido") is not None}
 
-    umbral_amarilla_dias = medios_tradicionales["umbral_alerta_amarilla_dias"]
-    umbral_roja_dias = medios_tradicionales["umbral_alerta_roja_dias"]
-    piezas_historico = cargar_pauta_digital_historico(claves_60, umbral_amarilla_dias, umbral_roja_dias)
+    piezas_historico = cargar_pauta_digital_historico(claves_60)
     piezas_global, excluidas_global, descartadas_dedup_global, metricas_global = cargar_pauta_digital_global(
         localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
         departamento_a_localidades_normalizadas,
-        umbral_amarilla_dias, umbral_roja_dias,
     )
     print(
         f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "
