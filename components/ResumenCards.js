@@ -276,12 +276,14 @@ export function ResumenLocalidad({ r }) {
         {mt ? (
           <>
             <div style={titular}>
-              Cobertura {mt.tipos} de {mt.total} tipos · {BANDA_COBERTURA[mt.banda].label.replace('Cobertura ', '').replace('Sin cobertura', 'Sin')}
+              {mt.temasActivos} tema{mt.temasActivos === 1 ? '' : 's'} activo{mt.temasActivos === 1 ? '' : 's'} · {mt.tipos} de {mt.total} tipos ·{' '}
+              {BANDA_COBERTURA[mt.banda].label.replace('Cobertura ', '').replace('Sin cobertura', 'Sin').toLowerCase()}
             </div>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 10 }}>
               {mt.chips.map((c) => (
                 <span key={c.label} style={{ padding: '3px 10px', borderRadius: 999, fontSize: 12.5, fontWeight: 600, background: c.presente ? 'var(--cov-alta-bg)' : 'var(--bg-secondary)', color: c.presente ? 'var(--cov-alta)' : 'var(--text-tertiary)' }}>
                   {c.presente ? '✓' : '—'} {c.label}
+                  {c.presente ? ` ${c.temas}` : ''}
                 </span>
               ))}
             </div>
@@ -307,11 +309,15 @@ export function ResumenLocalidad({ r }) {
         {pd.proxima ? (
           <>
             <div style={titular}>
-              Al aire · próxima {textoVencimiento(pd.proxima.dias)} <Chip color={pd.proxima.color}>{pd.proxima.color}</Chip>
+              {pd.campanasVivasDirigidas} campaña{pd.campanasVivasDirigidas === 1 ? '' : 's'} viva{pd.campanasVivasDirigidas === 1 ? '' : 's'} dirigida{pd.campanasVivasDirigidas === 1 ? '' : 's'}
+              {' · '}próxima {textoVencimiento(pd.proxima.dias)} <Chip color={pd.proxima.color}>{pd.proxima.color}</Chip>
             </div>
-            <div style={chico}>
-              {pd.campanasVivasDirigidas} campaña{pd.campanasVivasDirigidas === 1 ? '' : 's'} viva{pd.campanasVivasDirigidas === 1 ? '' : 's'} dirigida{pd.campanasVivasDirigidas === 1 ? '' : 's'}.
-            </div>
+            {pd.plataformas.length > 1 && (
+              <div style={detalle}>
+                {pd.plataformas.map((x) => `${x.plataforma} ${x.campanas}`).join(' · ')}
+                <span style={{ color: 'var(--text-tertiary)' }}> (campañas por plataforma; una puede estar en varias)</span>
+              </div>
+            )}
           </>
         ) : (
           <div style={titular}>Sin pauta digital viva dirigida</div>
