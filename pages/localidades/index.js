@@ -4,12 +4,13 @@ import Layout from '../../components/Layout';
 import FilterBar from '../../components/FilterBar';
 import MedioFilterChip from '../../components/MedioFilterChip';
 import Autocomplete from '../../components/Autocomplete';
-import KpiTile from '../../components/KpiTile';
+import { ResumenGeneral } from '../../components/ResumenCards';
 import LocalidadCard from '../../components/LocalidadCard';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA, calcularEjePDPorLocalidad } from '../../lib/coverage';
 import { isoDe } from '../../lib/vencimientos';
+import { resumenGeneral } from '../../lib/resumen';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 
 export default function LocalidadesIndex() {
@@ -83,12 +84,13 @@ export default function LocalidadesIndex() {
     });
   }, [combinado, busqueda, bandasActivas, mediosEstado]);
 
-  const kpis = useMemo(() => {
-    if (!combinado) return null;
-    const sinCobertura = combinado.filter((l) => l.bandaCobertura === 'Sin').length;
-    const coberturaBaja = combinado.filter((l) => l.bandaCobertura === 'Baja').length;
-    return { total: combinado.length, sinCobertura, coberturaBaja };
-  }, [combinado]);
+  // Cards de resumen: salen de los mismos predicados y ejes que la grilla, el
+  // semáforo y el mail (ver lib/resumen.js), no de un cálculo propio.
+  const resumen = useMemo(() => {
+    if (!datos) return null;
+    const [, mediosData, pautaData] = datos;
+    return resumenGeneral(mediosData, pautaData, isoDe(new Date()));
+  }, [datos]);
 
   function alternarBanda(banda) {
     setBandasActivas((actual) => {
@@ -104,21 +106,7 @@ export default function LocalidadesIndex() {
       {cargando && <p>Cargando datos del tablero...</p>}
       {error && <p style={{ color: 'var(--cov-baja)' }}>No se pudieron cargar los datos: {error}</p>}
 
-      {kpis && (
-        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 20 }}>
-          <KpiTile valor={kpis.total} etiqueta="Localidades prioritarias en el tablero" />
-          <KpiTile
-            valor={kpis.sinCobertura}
-            etiqueta="Sin ningún tipo de publicidad esta semana"
-            subtitulo="Medios tradicionales"
-          />
-          <KpiTile
-            valor={kpis.coberturaBaja}
-            etiqueta="Con cobertura baja (1 o 2 tipos de medio)"
-            subtitulo="Medios tradicionales"
-          />
-        </div>
-      )}
+      {resumen && <ResumenGeneral r={resumen} />}
 
       <div style={{ marginBottom: 20 }}>
         <FilterBar>

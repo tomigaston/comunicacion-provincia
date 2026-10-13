@@ -10,6 +10,9 @@ import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import MensajeTruncado from '../../components/MensajeTruncado';
 import SemaforoBadge from '../../components/SemaforoBadge';
+import { ResumenLocalidad } from '../../components/ResumenCards';
+import { resumenLocalidad } from '../../lib/resumen';
+import { isoDe } from '../../lib/vencimientos';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
@@ -137,6 +140,13 @@ export default function DetalleLocalidad() {
     return fechas;
   }, [info]);
 
+  // Cards de resumen de esta localidad: no dependen del filtro de período
+  // (estado actual), mismas fuentes que la grilla y el semáforo (lib/resumen.js).
+  const resumen = useMemo(() => {
+    if (!info || !info.base || !datos) return null;
+    return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()));
+  }, [info, datos]);
+
   // Listas efectivamente visibles, ya con el filtro de período aplicado.
   const visible = useMemo(() => {
     if (!info || info.noEncontrada) return null;
@@ -198,6 +208,8 @@ export default function DetalleLocalidad() {
             Departamento {info.base.departamento}
             {info.base.poblacion ? ` · ${info.base.poblacion.toLocaleString('es-AR')} habitantes` : ''}
           </p>
+
+          {resumen && <ResumenLocalidad r={resumen} />}
 
           <div
             style={{
