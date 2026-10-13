@@ -421,6 +421,16 @@ def caso_13_estado_audiovisual():
     assert g.estado_audiovisual(None, d(-5)) == "Finalizada"
 
 
+def caso_14_bordes_de_alerta_30_50():
+    """Borde único 30/50 (spec 11/10/2026): 29 -> 🟢, 30 -> 🟡, 49 -> 🟡, 50 -> 🔴."""
+    assert g.calcular_alerta(0, 30, 50) == "🟢"
+    assert g.calcular_alerta(29, 30, 50) == "🟢"
+    assert g.calcular_alerta(30, 30, 50) == "🟡"
+    assert g.calcular_alerta(49, 30, 50) == "🟡"
+    assert g.calcular_alerta(50, 30, 50) == "🔴"
+    assert g.calcular_alerta(None, 30, 50) is None
+
+
 def main():
     df = cargar_df_historico()
     localidades, claves_60 = g.cargar_localidades()
@@ -453,6 +463,7 @@ def main():
         caso_11_dedup_tiebreak_estado_activo,
         caso_12_programado_es_categoria_propia_sin_alerta,
         caso_13_estado_audiovisual,
+        caso_14_bordes_de_alerta_30_50,
     ):
         try:
             caso()
@@ -465,7 +476,7 @@ def main():
             print(f"  - {f}")
         return 1
 
-    print("OK — los 13 casos de regresión de matching de Pauta Digital pasan.")
+    print("OK — los 14 casos de regresión de matching de Pauta Digital pasan.")
     return 0
 
 

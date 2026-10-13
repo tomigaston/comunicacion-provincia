@@ -111,13 +111,17 @@ def estado_audiovisual(fecha_inicio, fecha_fin):
 
 def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
     """🟢/🟡/🔴 según antigüedad en días contra los umbrales de Parametros
-    (30/50, confirmados por el gobernador el 31/08/2026). None si no hay
-    antigüedad calculable -- no se inventa un verde por default."""
+    (30/50, confirmados por el gobernador el 31/08/2026). Borde único del
+    tablero (spec 11/10/2026): 0-29 🟢, 30-49 🟡, 50+ 🔴, o sea el umbral
+    cuenta como parte de la banda superior (>=). Es el mismo borde de la
+    planilla de MT ("🟡 hace 30 días", "🔴 hace 50") y de colorFrescura() en
+    lib/semaforo.js. None si no hay antigüedad calculable -- no se inventa un
+    verde por default."""
     if antiguedad_dias is None or umbral_amarilla is None or umbral_roja is None:
         return None
-    if antiguedad_dias > umbral_roja:
+    if antiguedad_dias >= umbral_roja:
         return "🔴"
-    if antiguedad_dias > umbral_amarilla:
+    if antiguedad_dias >= umbral_amarilla:
         return "🟡"
     return "🟢"
 
