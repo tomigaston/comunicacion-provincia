@@ -38,10 +38,10 @@ export default function SemaforoIndex() {
     <Layout title="Semáforo">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
         <div>
-          <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo de antigüedad</h1>
+          <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo</h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 2 }}>
             Medios Tradicionales: peor entre frescura (tema activo más reciente) y cobertura (tipos de
-            medio con tema activo). Pauta Digital: peor caso por pieza. Tocá una localidad para ver el detalle.
+            medio con tema activo). Pauta Digital: peor caso por vencimiento (días que faltan para el FIN de las piezas vivas dirigidas a la localidad). Tocá una localidad para ver el detalle.
           </p>
         </div>
         <div style={{ display: 'flex', gap: 4, background: 'var(--bg-secondary)', borderRadius: 999, padding: 3 }}>
@@ -104,7 +104,7 @@ function VistaGrilla({ localidades, router }) {
             <div style={{ fontSize: 12.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>{l.departamento}</div>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
               <BadgeConEtiqueta etiqueta="Medios Trad." alerta={l.alertaMedios} />
-              <BadgeConEtiqueta etiqueta="Pauta Digital" alerta={l.alertaPautaDigital} />
+              <BadgeConEtiqueta etiqueta="Pauta Digital" alerta={l.alertaPautaDigital} tipo="vencimiento" />
             </div>
             {expandida && <DetalleMedios l={l} router={router} />}
           </div>
@@ -141,7 +141,7 @@ function VistaLista({ localidades, router }) {
                   <SemaforoBadge alerta={l.alertaMedios} />
                 </td>
                 <td style={td}>
-                  <SemaforoBadge alerta={l.alertaPautaDigital} />
+                  <SemaforoBadge alerta={l.alertaPautaDigital} tipo="vencimiento" />
                 </td>
               </tr>
               {expandida && (
@@ -211,12 +211,12 @@ function DetalleMedios({ l, router }) {
   );
 }
 
-function BadgeConEtiqueta({ etiqueta, alerta }) {
+function BadgeConEtiqueta({ etiqueta, alerta, tipo }) {
   if (!alerta) return null;
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
       <span style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>{etiqueta}</span>
-      <SemaforoBadge alerta={alerta} compacto />
+      <SemaforoBadge alerta={alerta} tipo={tipo} compacto />
     </div>
   );
 }
