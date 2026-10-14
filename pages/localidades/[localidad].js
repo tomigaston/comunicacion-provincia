@@ -12,7 +12,6 @@ import SemaforoBadge from '../../components/SemaforoBadge';
 import { ResumenLocalidad } from '../../components/ResumenCards';
 import { resumenLocalidad } from '../../lib/resumen';
 import { isoDe } from '../../lib/vencimientos';
-import { estadoVisiblePD } from '../../lib/semaforo';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
@@ -88,7 +87,6 @@ export default function DetalleLocalidad() {
     const base = localidadesData.localidades.find((l) => slugificar(l.localidad) === slug);
     if (!base) return { noEncontrada: true };
 
-    const hoyIso = isoDe(new Date());
     const clave = normalizarTexto(base.localidad);
     const medios = mediosData.localidades.find((l) => normalizarTexto(l.localidad) === clave);
 
@@ -105,9 +103,7 @@ export default function DetalleLocalidad() {
           // por Departamento en común.
           p.alcance_tipo === 'localidad' && normalizarTexto(p.localidad) === clave
       )
-      .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''))
-      // Estado mostrado (badge y bloque Programadas): mismo que Pauta Digital.
-      .map((p) => ({ ...p, estado: estadoVisiblePD(p, hoyIso) }));
+      .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));
 
     // Mismo criterio que Pauta digital: solo se atribuye a ESTA localidad
     // cuando algún alcance del envío es tipo "localidad" y coincide por
