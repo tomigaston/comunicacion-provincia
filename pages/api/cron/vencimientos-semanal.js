@@ -58,7 +58,7 @@ export default async function handler(req, res) {
       mediosTradicionales: { temas: datosMT.grupos.length, ...datosMT.resumen },
       pautaDigital: { campanas: datosPD.grupos.length, ...datosPD.resumen },
       cobertura: {
-        mtLocalidadesConFaltantes: coberturaMT.localidades.length,
+        mtLocalidadesConFaltantes: coberturaMT.resumen.total,
         pdLocalidadesSinPautaViva: coberturaPD.localidades.length,
         localidadesSinCobertura: sinCobertura.localidades.map((l) => l.localidad),
       },
