@@ -8,6 +8,8 @@ import VerMaterial from '../components/VerMaterial';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 import { formatearFechaCorta, calcularVentana, rangoDentroDeVentana } from '../lib/fechas';
+import { estadoVisiblePD } from '../lib/semaforo';
+import { isoDe } from '../lib/vencimientos';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
@@ -46,7 +48,12 @@ export default function PautaDigital() {
   const [orden, setOrden] = useState({ campo: 'finalizacion', direccion: 'desc' });
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
-  const piezas = datos ? datos[0].piezas : [];
+  // Estado mostrado: "Vigente" = viva hoy (estadoVisiblePD); el resto del
+  // componente (filtro, badge, Programadas) lo lee desde `estado`.
+  const piezas = useMemo(() => {
+    const hoyIso = isoDe(new Date());
+    return datos ? datos[0].piezas.map((p) => ({ ...p, estado: estadoVisiblePD(p, hoyIso) })) : [];
+  }, [datos]);
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const fechasDisponibles = useMemo(() => piezas.map((p) => p.finalizacion), [piezas]);
   const totalProgramadas = useMemo(() => piezas.filter((p) => p.estado === 'Programada').length, [piezas]);

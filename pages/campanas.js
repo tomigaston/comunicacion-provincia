@@ -6,6 +6,8 @@ import Autocomplete from '../components/Autocomplete';
 import CampanaRow from '../components/CampanaRow';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
+import { aplicarEstadoVisibleACampanas } from '../lib/semaforo';
+import { isoDe } from '../lib/vencimientos';
 
 const AREAS = ['Todas', 'Medios tradicionales', 'Pauta digital', 'Audiovisuales'];
 // Vocabulario de Pauta digital. Medios tradicionales se mapea para el filtro
@@ -24,7 +26,7 @@ const TAMANO_PAGINA = 50;
 
 export default function Campanas() {
   const router = useRouter();
-  const { cargando, error, datos } = useApiData(['/api/data/campanas']);
+  const { cargando, error, datos } = useApiData(['/api/data/campanas', '/api/data/pauta-digital']);
   const [area, setArea] = useState('Todas');
   const [estado, setEstado] = useState('Todos');
   const [busqueda, setBusqueda] = useState('');
@@ -38,7 +40,11 @@ export default function Campanas() {
   }, [router.isReady, router.query.q]);
   const [visibles, setVisibles] = useState(TAMANO_PAGINA);
 
-  const items = datos ? datos[0].items : [];
+  // Estado de las campañas de PD alineado con la pestaña Pauta Digital (estadoVisiblePD).
+  const items = useMemo(
+    () => (datos ? aplicarEstadoVisibleACampanas(datos[0].items, datos[1].piezas, isoDe(new Date())) : []),
+    [datos]
+  );
 
   const itemsBusqueda = useMemo(() => {
     const vistos = new Set();
