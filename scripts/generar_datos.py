@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTEXTO = ROOT / "contexto"
+CONTEXTO = ROOT / "Contexto"
 DATA_OUT = ROOT / "data"
 
 HOY = date.today()
