@@ -952,14 +952,13 @@ def cargar_pauta_digital_global(
         # UTMs a la que apunta la pauta -- distinta de LINK MATERIAL (el
         # Drive con la pieza creativa). Campo separado, mismo patrón que
         # IG/FB/YT: no se mezcla con link_material/links_material.
-        # UTM´S como fallback de URL: confirmado el 06/09/2026 que las dos
-        # columnas traen el link real en forma mutuamente excluyente (0
-        # filas con las dos a la vez) -- 82 filas lo traen en URL, 566 en
-        # UTM´S (que para esas filas SÍ es un link real a pesar del nombre
-        # de la columna, no una query de UTMs suelta) y en las 277 filas
-        # donde URL trae basura (un string de plantilla de UTMs sin http,
-        # siempre el mismo valor) el link real está en UTM´S. Sin este
-        # fallback quedaban 277+289=566 links reales sin capturar.
+        # UTM´S como fallback de URL: las dos columnas traen el link real en
+        # forma mutuamente excluyente (0 filas con las dos a la vez). Con el
+        # export vigente (4.009 filas reales, verificado 14/10/2026): 1.514
+        # lo traen en URL, 82 solo en UTM´S (que para esas filas SÍ es un link
+        # real a pesar del nombre de la columna) y 2.413 en ninguna. Las 6
+        # filas donde URL trae texto sin http ("---") no tienen link en UTM´S
+        # tampoco. Sin este fallback quedarían 82 links reales sin capturar.
         link_destino = limpiar_link(row["URL"]) or limpiar_link(row["UTM´S"])
 
         campana = _forma_canonica(mapa_campanas, limpio(row["CAMPAÑA"]))
@@ -972,18 +971,17 @@ def cargar_pauta_digital_global(
         # INICIO/FIN se toman siempre de las columnas AA/AB ("INICIO "/"FIN"),
         # sin fallback a FIN INFORMADO. La alerta de PD ya no se calcula acá:
         # es por vencimiento y se resuelve en el front (lib/semaforo.js,
-        # colorVencimientoPD), a partir de `finalizacion` y `vigente_por_fecha`.
+        # colorVencimientoPD / esPiezaPDViva), a partir de `estado`, `inicio`
+        # y `finalizacion` evaluados contra la fecha de hoy.
         inicio_ts = _a_timestamp(row["INICIO "])
         fin_ts = _a_timestamp(row["FIN"])
         estado_pieza = estado_pauta_digital_desde_crudo(row["ESTADO"])
-        # Campo interno (no se muestra en el tablero), usado únicamente por
-        # calcularVencimientosPautaDigital() en lib/vencimientos.js para la
-        # ventana de 7 días del mail de vencimientos: True si INICIO <= hoy <=
-        # FIN (ambas fechas de las columnas AA/AB, sin fallback a
-        # INICIO/FIN INFORMADO). Reemplaza al criterio que antes daba
-        # "estado" == "Vigente" para ese mismo propósito -- no depende del
-        # ESTADO crudo ni de estado_pauta_digital_desde_crudo() (agregado
-        # 25/09/2026, junto con el cambio de "estado" a venir del crudo).
+        # Campo informativo congelado a la fecha de generación: True si
+        # INICIO <= hoy <= FIN (ambas fechas de las columnas AA/AB, sin
+        # fallback a INICIO/FIN INFORMADO). Hoy NO lo lee ningún consumidor:
+        # el front y el mail evalúan esPiezaPDViva(p, hoyIso) (lib/semaforo.js)
+        # contra la fecha de hoy, porque este valor queda viejo apenas pasa un
+        # día. Se conserva en el JSON (agregado 25/09/2026).
         vigente_por_fecha = (
             inicio_ts is not None and fin_ts is not None
             and inicio_ts.date() <= HOY <= fin_ts.date()
