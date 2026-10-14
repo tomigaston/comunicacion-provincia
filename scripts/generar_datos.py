@@ -971,17 +971,18 @@ def cargar_pauta_digital_global(
         # INICIO/FIN se toman siempre de las columnas AA/AB ("INICIO "/"FIN"),
         # sin fallback a FIN INFORMADO. La alerta de PD ya no se calcula acá:
         # es por vencimiento y se resuelve en el front (lib/semaforo.js,
-        # colorVencimientoPD / esPiezaPDViva), a partir de `estado`, `inicio`
-        # y `finalizacion` evaluados contra la fecha de hoy.
+        # colorVencimientoPD), a partir de `finalizacion` y `vigente_por_fecha`.
         inicio_ts = _a_timestamp(row["INICIO "])
         fin_ts = _a_timestamp(row["FIN"])
         estado_pieza = estado_pauta_digital_desde_crudo(row["ESTADO"])
-        # Campo informativo congelado a la fecha de generación: True si
-        # INICIO <= hoy <= FIN (ambas fechas de las columnas AA/AB, sin
-        # fallback a INICIO/FIN INFORMADO). Hoy NO lo lee ningún consumidor:
-        # el front y el mail evalúan esPiezaPDViva(p, hoyIso) (lib/semaforo.js)
-        # contra la fecha de hoy, porque este valor queda viejo apenas pasa un
-        # día. Se conserva en el JSON (agregado 25/09/2026).
+        # Campo interno (no se muestra en el tablero), usado únicamente por
+        # calcularVencimientosPautaDigital() en lib/vencimientos.js para la
+        # ventana de 7 días del mail de vencimientos: True si INICIO <= hoy <=
+        # FIN (ambas fechas de las columnas AA/AB, sin fallback a
+        # INICIO/FIN INFORMADO). Reemplaza al criterio que antes daba
+        # "estado" == "Vigente" para ese mismo propósito -- no depende del
+        # ESTADO crudo ni de estado_pauta_digital_desde_crudo() (agregado
+        # 25/09/2026, junto con el cambio de "estado" a venir del crudo).
         vigente_por_fecha = (
             inicio_ts is not None and fin_ts is not None
             and inicio_ts.date() <= HOY <= fin_ts.date()
