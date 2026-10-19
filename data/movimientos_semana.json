@@ -1,1069 +1,1165 @@
 {
-  "total_avisos_cambiaron": 118,
+  "total_avisos_cambiaron": 127,
   "cambios": [
     {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VISITA ALMAFUERTE: EDUCACIÓN\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "ALMAFUERTE",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "PRUEBAS PISA\nESCUCHÁ ALTA GRACIA : CENTRO DESARROLLO INFANTIL"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "ALTA GRACIA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "LUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "ARROYITO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "UNION",
-      "localidad": "BELL VILLE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "CAPILLA DEL MONTE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "INAUGURACIÓN CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA-RADIO\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "PREVIA - RECEPCIÓN A JUNTA DE GALICIA -CAMINO DE BROCHERO\nNUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N\nPREVIA- INAUGURACIÓN TRAMO RUTA 19"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "GRÁFICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nPRUEBAS PISA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "PPP\nPRUEBAS PISA"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nCÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "CAPITAL",
-      "localidad": "CORDOBA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN\nSÉXTUPLES - PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "COSQUIN",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ COSQUÍN: ADOQUINADO",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
-    },
-    {
-      "departamento": "CRUZ DEL EJE",
-      "localidad": "CRUZ DEL EJE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
-    },
-    {
-      "departamento": "ISCHILIN",
-      "localidad": "DEAN FUNES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL CABRERA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL CABRERA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "GENERAL DEHEZA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "HERNANDO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "JESUS MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nPPP\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ LA CALERA: ALTONIVEL\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "LA CALERA",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO\nSÉXTUPLES - PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VALLAS- ESCUCHÁ- LA CALERA- ALTONIVEL RUTA LA CALERA/ CÓRDOBA\nVALLAS- CBA- ALTO NIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - ALTONIVEL VALLE ESCONDIDO TERMINADO"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "JUAREZ CELMAN",
-      "localidad": "LA CARLOTA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "PUNILLA",
-      "localidad": "LA FALDA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "LAS VARILLAS",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "LEONES",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "LEONES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "SANTA MARIA",
-      "localidad": "MALAGUEÑO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "MARCOS JUAREZ",
-      "localidad": "MARCOS JUAREZ",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ MARCOS JUÁREZ: HOSPITAL",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ MARCOS JUAREZ : UPC"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "MENDIOLAZA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN ALBERTO",
-      "localidad": "MINA CLAVERO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "MONTE CRISTO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "MONTE CRISTO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "MORTEROS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "OLIVA",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "ONCATIVO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "PILAR",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "RIO CEBALLOS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "RIO CUARTO",
-      "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES - PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO PRIMERO",
-      "localidad": "RIO PRIMERO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "RIO SEGUNDO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO TERCERO: RUTA 6"
-    },
-    {
-      "departamento": "TERCERO ARRIBA",
-      "localidad": "RIO TERCERO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ RÍO TERCERO: RUTA 6\nPPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO TERCERO: RUTA 6"
-    },
-    {
-      "departamento": "POCHO",
-      "localidad": "SALSACATE",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "POCHO",
-      "localidad": "SALSACATE",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALSIPUEDES",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "SALSIPUEDES",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBA PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "MINAS",
-      "localidad": "SAN CARLOS MINAS",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SAN FRANCISCO: BICISENDA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19"
-    },
-    {
-      "departamento": "SAN JUSTO",
-      "localidad": "SAN FRANCISCO",
-      "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: RN19",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ SAN FRANCISCO : UPC"
-    },
-    {
-      "departamento": "SOBREMONTE",
-      "localidad": "SAN FRANCISCO DEL CHAÑAR",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN"
-    },
-    {
       "departamento": "CALAMUCHITA",
       "localidad": "SANTA ROSA DE CALAMUCHITA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN"
     },
     {
       "departamento": "CALAMUCHITA",
       "localidad": "SANTA ROSA DE CALAMUCHITA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: \nRUTA S-372\nRUTAS QUE CONECTAN"
     },
     {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "UNQUILLO",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "RIO CUARTO",
-      "localidad": "VICUÑA MACKENNA",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SANTA ROSA DE CALAMUCHITA: PUENTE SOBRE RUTA S 228",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUHÁ SANTA ROSA DE CALAMUCHITA: RUTA PROV. S372"
+    },
+    {
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
       "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
-      "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL"
-    },
-    {
-      "departamento": "COLON",
-      "localidad": "VILLA ALLENDE",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nNUEVA PICK UP SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PREVIA - RECEPCIÓN A JUNTA DE GALICIA -CAMINO DE BROCHERO\nNUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: AUTOVÍA RUTA 9 N\nPREVIA- INAUGURACIÓN TRAMO RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
     },
     {
-      "departamento": "PUNILLA",
-      "localidad": "VILLA CARLOS PAZ",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "EMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nPPP\nPADRE LUCHESSE TERMINADA\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nEMPLEO +26\nINAUGURACIÓN VALLE ESCONDIDO\nLOS GIGANTES\nPPP\nPADRE LUCHESSE TERMINADA\nCBA - PLAN OBRAS VIALES\nCBA- DUPLICACIÓN BODEREAU\nCBA- ALTONIVEL VELÉZ SARSFIELD\nCBA- ALTONIVEL MALVINAS ARGENTINAS\nCBA - BOLETO EDUCATIVO CORDOBÉS\nCBA- CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nSÉXTUPLES- PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VALLAS - ESCUCHÁ  VILLA CARLOS PAZ - COLECTORA\nVALLAS - ESCUCHÁ  VILLA CARLOS PAZ - ACUEDUCTO\nVALLAS - ESCUCHÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - SEDE UPC\nVALLAS - MIRÁ VILLA CARLOS PAZ - HOSPITAL REGIONAL\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nVALLAS - RUTAS QUE CONECTAN\nLUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO\nLUNETAS - AVENIDA BODEREAU\nVALLAS - PPP\nVALLAS- CBA- ALTONIVELES MALVINAS\nVALLAS- CBA- ALTONIVELES VELEZ SARSFIELD\nVALLAS- CBA-DUPLICACION BODEREAU\nVALLAS- AV. PADRE LUCHESSE TERMINADO\nVALLAS- VALLE ESCONDIDO TERMINADO\nVALLAS- CBA- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER\nLUNETAS- ALTONIVEL MALVINAS ARGENTINAS\nLUNETAS - ALTONIVEL VELEZ SARSFIELD\nLUNETAS - DUPLICACIÓN LUCHESSE INAGURACIÓN"
     },
     {
-      "departamento": "SAN ALBERTO",
-      "localidad": "VILLA CURA BROCHERO",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PPP\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PPP\nPRUEBAS PISA\nINAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nVISITA : LOCALIDADES CURA BROCHERO\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL\nESCUCHÁ COLONIA CAROYA: PAVIMENTO RUTA S-433\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ JESÚS MARÍA: AGUA POTABLE\nRUTAS QUE CONECTAN\nESCUCHÁ JESÚS MARÍA: RUTA 9"
     },
     {
-      "departamento": "SAN ALBERTO",
-      "localidad": "VILLA CURA BROCHERO",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "BOLETO EDUCATIVO CORDOBÉS\nEMPLEO +26\nCÓRDOBA LIDERA PRUEBAS APRENDER\nPPP\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "BOLETO EDUCATIVO CORDOBÉS\nESCUCHÁ - JESÚS MARÍA - RUTA 9N\nEMPLEO +26\nCÓRDOBA LIDERA PRUEBAS APRENDER\nPPP\nESCUCHÁ JESÚS MARÍA: CENTRO DE DESARROLLO INFANTIL"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ LA CALERA: POLIDEPORTIVO\nRUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nESCUCHÁ: ALTONIVELES"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ LA CALERA: POLIDEPORTIVO\nRUTAS QUE CONECTAN\nESCUCHÁ LA CALERA: ALTONIVEL\nESCUCHÁ: ALTONIVELES"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ LA CALERA: ALTONIVEL LA CALERA-CÓRDOBA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ LA CALERA: ALTONIVEL"
     },
     {
-      "departamento": "RIO SECO",
-      "localidad": "VILLA DE MARIA",
-      "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
-    },
-    {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO CEBALLOS: ESCUELA"
     },
     {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RÍO CEBALLOS: ESCUELA"
     },
     {
-      "departamento": "RIO SEGUNDO",
-      "localidad": "VILLA DEL ROSARIO",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PRUEBAS PISA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ RÍO CEBALLOS: ESCUELA PRIMARIA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ RÍO CEBALLOS: ESCUELA"
     },
     {
-      "departamento": "TOTORAL",
-      "localidad": "VILLA DEL TOTORAL",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA PRIMARIA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VALLAS - ESCUCHÁ RIO CEBALLOS: ESCUELA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA ESCUELA PRIMARIA: ETAPA FINAL\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ RÍO CEBALLOS: ESCUELA\nPRUEBAS PISA"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ SALSIPUEDES: CDI\nRUTAS QUE CONECTAN"
     },
     {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ SALSIPUEDES: CDI"
+    },
+    {
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES"
     },
     {
-      "departamento": "SAN JAVIER",
-      "localidad": "VILLA DOLORES",
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CRÉDITOS ALIVIO CORDOBÉS\nPPP\nPRUEBAS PISA\nOBRAS VIALES 2",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2\nNUEVA PICK UP SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES"
     },
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "VILLA GENERAL BELGRANO",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
     },
     {
-      "departamento": "CALAMUCHITA",
-      "localidad": "VILLA GENERAL BELGRANO",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ: ALTONIVELES\nESCUCHÁ VILLA ALLENDE : BODEREAU\nESCUCHÁ VILLA ALLENDE : LUCHESSE"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAGURACIÓN TRAMO RUTA 19\nRUTAS QUE CONECTAN\nESCUCHA CRUZ DEL EJE: UPC\nESCUCHA CRUZ DEL EJE: SANEAMIENTO"
+    },
+    {
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ CRUZ DEL EJE: PAVIMENTO PERILAGO",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ CRUZ DEL EJE: SANEAMIENTO Y RED AGUA POTABLE"
     },
     {
       "departamento": "GENERAL ROCA",
       "localidad": "VILLA HUIDOBRO",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "PPP\nCRÉDITOS CÓRDOBA IMPULSA\nALIVIO CORDOBÉS CON CORDOBESA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nCRÉDITOS CÓRDOBA IMPULSA\nNUEVA PICK UP SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nCRÉDITOS CÓRDOBA IMPULSA\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE\nINAUGURACIÓN TRAMO RUTA 19"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE\nINAUGURACIÓN TRAMO RUTA 19"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA TERMINADA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CIRCUNVALACIÓN SUDESTE VILLA MARIA - VILLA NUEVA TERMINADA"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nCBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nESCUCHA- VILLA MARÍA - RIO CTALOMOCHITA\nESCUCHA- VILLA MARÍA - UNVM",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CIRCUNVALACIÓN SUEDESTE VILLA MARÍA- VILLA NUEVA TERMINADA\nESCUCHA- VILLA MARÍA - RIO CTALOMOCHITA\nESCUCHA- VILLA MARÍA - UNVM"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA MARIA",
       "tipo_medio": "VIA PÚBLICA",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nSÉXTUPLES - PPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VALLAS- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nVALLAS - CBA - PRUEBAS APRENDER\nVALLAS- CBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER\nSÉXTUPLES- CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VALLAS- CIRCUNVALACIÓN SUDESTE VILLA MARÍA- VILLA NUEVA TERMINADA\nLUNETAS- CÓRDOBA  LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PRUEBAS PISA\nCIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA TERMINADA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PRUEBAS PISA\nCIRCUNVALACIÓN SUDESTE VILLA MARÍA - VILLA NUEVA TERMINADA"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA NUEVA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA COMISARÍA VILLA NUEVA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA NUEVA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA\nNUEVA COMISARÍA VILLA NUEVA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nVISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS\nVISITA VILLA MARÍA: CASA DEL ESTUDIANTE"
     },
     {
       "departamento": "GENERAL SAN MARTIN",
       "localidad": "VILLA NUEVA",
       "tipo_medio": "WEB",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ESCUCHÁ VILLA NUEVA: CIRCUNVALACIÓN",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CIRCUNVALACIÓN SUDESTE VILLA MARIA - VILLA NUEVA TERMINADA"
+    },
+    {
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CIRCUNVALACIÓN VILLA MARÍA- VILLA NUEVA TERMINADA\nCBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CIRCUNVALACIÓN SUDESTE VILLA MARÍA- VILLA NUEVA TERMINADA\nCBA- MIRÁ VILLA MARÍA- CIRCUNVALACIÓN"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHÁ DEÁN FUNES : COLECTORA\nESCUCHÁ DEÁN FUNES: UPC"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN\nESCUCHA ISCHILÍN: COLECTORA\nESCUCHA ISCHILÍN: UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHA  DEÁN FUNES : COLECTORA\nESCUCHÁ DEÁN FUNES: UPC"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ DEAN FUNES : SEDE UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHA  DEÁN FUNES: COLECTORA"
+    },
+    {
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ - DEAN FUNES - SEDE UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ DEAN FUNES: UPC"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nESCUCHÁ MARCOS JUAREZ: UPC"
+    },
+    {
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN  TRAMO RUTA 19\nESCUCHÁ MARCOS JUAREZ: UPC\nESCUCHÁ MARCOS JUAREZ: HOSPITAL"
+    },
+    {
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PPP\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC\nALIVIO CORDOBÉS CON CORDOBESA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ LABOULAYE: PLANTA DEPURADORA\nESCUCHÁ LABOULAYE: UPC"
+    },
+    {
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ LABOULAYE: PLANTA DEPURADORA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ LABOULAYE : UPC"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ CAPILLA DEL MONTE: UPC\nOBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ COSQUÍN: ADOQUINADO\nRUTAS QUE CONECTAN\nESCUCHÁ COSQUÍN: AGUA EN SAN JOSÉ OBRERO\nESCUCHÁ COSQUÍN: AUTOVIA PUNILLA"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "OBRAS VIALES 2\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ VILLA CARLOS PAZ: BARRIO COLINAS\nESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AV. CÁRCANO\nESCUCHÁ VILLA CARLOS PAZ: UPC"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ VILLA CARLOS PAZ: ACUEDUCTO Y AVENIDA CÁRCANO",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ VILLA CARLOS PAZ : UPC"
+    },
+    {
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PRUEBAS PISA\nESCUCHÁ VILLA CARLOS PAZ : ACUEDUCTO PRINCIPAL Y REPAV. AV. CÁRCANO"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL\nRUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCUNVALACIÓN"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nESCUCHÁ RIO CUARTO: CENTRO DE FORMACIÓN PROFESIONAL\nESCUCHÁ RIO CUARTO: ESCUELA PROA\nVISITA RÍO CUARTO: CIRCUNVALACIÓN\nVISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO:  CENTRO  DE DESARROLLO INFANTIL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "tipo_medio": "VIA PÚBLICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VALLAS- CBA- MIRÁ RÍO CUARTO- DUP. CALZADA R30\nVALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO INFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VALLAS- CBA- MIRÁ RÍO CUARTO- 100 CUADRAS\nVALLAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- CIRCUNVALACIÓN\nCBA- ESCUCHÁ RÍO CUARTO- ASFALTO\nCBA- ESCUCHÁ RÍO CUARTO- CENTRO DE DESARROLLO NFANTIL\nCBA- ESCUCHÁ RÍO CUARTO- CEDIS\nLUNETAS- CBA- MIRÁ RÍO CUARTO- CIRCUNVALACIÓN\nLUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nESCUCHÁ RÍO CUARTO: CEDIS\nVISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL"
+    },
+    {
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nVISITA RÍO CUARTO: CIRCINVALACIÓN\nESCUCHÁ RÍO CUARTO: CEDIS\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD\nRUTAS QUE CONECTAN\nVISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "GUARDIAS LOCALES"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "MIRÁ- AUTOPISTA NACIONAL RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "MIRÁ- AUTOPISTA NACIONAL RUTA 19\nCBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nCBA- MIRÁ RÍO PRIMERO- CENTRO DE DESARROLLO INF"
     },
     {
       "departamento": "RIO PRIMERO",
       "localidad": "VILLA SANTA ROSA",
       "tipo_medio": "TV",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAGURACIÓN TRAMO RUTA 19"
     },
     {
       "departamento": "RIO PRIMERO",
       "localidad": "VILLA SANTA ROSA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CBA- MIRÁ- AUTOPISTA RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ RÍO SEGUNDO: UPC\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHÁ RÍO SEGUNDO: DUPLICACIÓN DE CALZADA RUTA NACIONAL 9\nESCUCHÁ RÍO SEGUNDO : CORDÓN Y PLAZA"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nESCUCHÁ VILLA DEL ROSARIO: PUENTE"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ MINA CLAVERO: UPC\nVISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VISITA : LOCALIDADES CURA BROCHERO\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHÁ VILLA DOLORES : UPC"
+    },
+    {
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nCRÉDITOS ALIVIO CORDOBÉS\nPRUEBAS PISA\nOBRAS VIALES 2\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN\nOBRAS VIALES 2\nESCUCHÁ VILLA DOLORES : UPC"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ ARROYITO: UPC\nESCUCHÁ ARROYITO: AUTOPISTA RN19\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ ARROYITO: AUTOPISTA RN19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "OBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ MORTEROS: UPC\nOBRAS VIALES 1\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ MORTEROS: UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO: BICISENDA\nRUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL\nPREVIA INAGURACIÓN RUTA 19",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ SAN FRANCISCO : UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "MIRÁ - SAN FCO - AUTOPISTA RUTA 19\nESCUCHÁ SAN FRANCISCO: RN19\nMIRÁ - SAN FCO - UPC SEDE",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19\nMIRA - SAN FRANCISCO - UPC SEDE"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PPP\nCÓRDOBA LIDERA PRUEBAS APRENDER\nCBA- MIRÁ ALTA GRACIA (AV. LIBERTADOR)\nBOLETO EDUCATIVO CORDOBÉS\nAUTOVÍA CALAMUCHITA (CONSEJO SEGURIDAD)"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PRUEBAS PISA\nESCUCHÁ ALTA GRACIA : CENTRO DESARROLLO INFANTIL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PRUEBAS PISA"
+    },
+    {
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nNUEVA PICK UP SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "RUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK-UP PLANTA SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "RUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "SANEAMIENTO CLOACAL- ALMAFUERTE\nRUTAS QUE CONECTAN\nVISITA ALMAFUERTE: EDUCACIÓN"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PLAZA SAN MARTÍN Y BALNEARIO RÍO CTALAMOCHITA\nPRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ RIÓ TERCERO : PLAZA SAN MARTIN Y BALNEARIO RÍO CATALAMOCHITA\nPRUEBAS PISA"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "WEB",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "ESCUCHÁ RÍO TERCERO : UPC",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ RIÓ TERCERO : PLAZA Y BALNEARIO"
+    },
+    {
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "tipo_medio": "GRÁFICA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "PRUEBAS PISA",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "PRUEBAS PISA\nCAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA"
+    },
+    {
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK UP SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
     },
     {
       "departamento": "TULUMBA",
       "localidad": "VILLA TULUMBA",
       "tipo_medio": "RADIO",
-      "fecha_semana_anterior": "2026-10-05",
-      "tema_anterior": "ALIVIO CORDOBÉS CON CORDOBESA\nPPP\nCRÉDITOS CÓRDOBA IMPULSA",
-      "fecha_semana_actual": "2026-10-09",
-      "tema_actual": "NUEVA PICK UP   SANTA ISABEL\nRUTAS QUE CONECTAN"
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "NUEVA PICK UP   SANTA ISABEL\nRUTAS QUE CONECTAN",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "INAUGURACIÓN TRAMO RUTA 19"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "TV",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP  SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ BELL VILLE : POLIDEPORTIVO SOCIAL\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "RADIO",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "VISITA BELL VILLE : EXPO BELL 2026\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN\nNUEVA PICK UP   SANTA ISABEL",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "ESCUCHÁ BELL VILLE : POLIDEPORTIVO SOCIAL\nESCUCHÁ BELL VILLE : HOSPITAL\nESCUCHÁ BELL VILLE: OBRA HÍDRICA  RÍO CTALAMOCHITA\nRUTAS QUE CONECTAN"
+    },
+    {
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "tipo_medio": "CARTELERÍA",
+      "fecha_semana_anterior": "2026-10-09",
+      "tema_anterior": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL\nCBA- MIRÁ BELL VILLE- UPC SEDE\nESCUCHÁ BELL VILLE - OBRA HIDRICA\nESCUCHÁ BELL VILLE - HOSPITAL JOSE CEBALLOS",
+      "fecha_semana_actual": "2026-10-17",
+      "tema_actual": "CBA- MIRÁ BELL VILLE- NUEVO HOSPITAL REGIONAL\nCBA- MIRÁ BELL VILLE- UPC SEDE\nESCUCHÁ BELL VILLE - OBRA HIDRICA RÍO CTALAMOCHITA\nESCUCHÁ BELL VILLE - HOSPITAL JOSE CEBALLOS"
     }
   ],
-  "total_caidos": 0,
-  "caidos": []
+  "total_caidos": 2,
+  "caidos": [
+    {
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "tipo_medio": "GRÁFICA",
+      "ultimo_tema": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA",
+      "fecha_ultima_vez": "2026-10-09"
+    },
+    {
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "tipo_medio": "WEB",
+      "ultimo_tema": "RUTAS QUE CONECTAN",
+      "fecha_ultima_vez": "2026-10-09"
+    }
+  ]
 }
