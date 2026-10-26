@@ -7,6 +7,7 @@ Qué cambió entre `Manual metodológico — Pauta Digital (v14-10).md` y `Manua
 | Encabezado | “Borrador para validación del área · Oct 14, 2026” | “Versión para validación del área · 26/10/2026 · reemplaza al borrador del 14/10/2026” | Versión nueva |
 | Para qué sirve | “carga del 11/10/2026 (4.009 filas), vista con fecha 14/10/2026” | “planilla del 23/10/2026 … MD5 33ab84dd… 4.941 filas reales, con fecha de control 26/10/2026” | Carga nueva |
 | Para qué sirve | “Versión del tablero: describe el tablero con los cambios de alertas y cobertura que están en revisión…” | (se saca) y se agrega la lista de archivos que acompañan cada carga | Los cambios ya están en el tablero; archivos A–C |
+| Para qué sirve · Fuente congelada | “el histórico (`Medios_Digitales.xlsx`, hasta el 02/07) no se toca y no se describe acá.” | Se agrega: es la única fuente con ámbito “departamento” (372 piezas, “Depto. X” en Pauta Digital y Campañas, nunca activas, fuera de paneles, cobertura y mail); las reglas del manual valen solo para `GLOBAL_ImportRange` | Decisión del bloqueo 1 de la Fase 2 |
 | Glosario · Fila real | “es un renglón arrastrado por las fórmulas” | “es un renglón vacío o arrastrado” | La hoja trae 45.558 renglones solo con formato |
 | Glosario · Las 60 | “Una localidad que no está entre ellas no se atribuye a ninguna.” | “Una localidad que no está entre ellas queda fuera del tablero.” | D1 |
 | Glosario | — | Nuevas entradas: “Universo del tablero”, “Entrada”, “Duplicada” | D1, D4 |

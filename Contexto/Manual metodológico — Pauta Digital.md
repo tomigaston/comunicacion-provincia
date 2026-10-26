@@ -11,7 +11,7 @@ Está escrito para quienes arman y mantienen la planilla de pauta digital (hoja 
 - **Estado del documento:** versión para validación del área.
 - **Base de los ejemplos:** planilla del 23/10/2026 (`Pauta RRSS_GLOBAL.xlsx`, MD5 `33ab84dd4f71f86133d2a1c3ee5399e8`, 4.941 filas reales), con fecha de control 26/10/2026. Los números de 26/10 y 27/10 son iguales en esta carga. Dependen de esa fecha y de esa versión de la planilla.
 - **Alcance:** solo Pauta Digital. Medios Tradicionales, Audiovisuales, SMS y Contenido Orgánico (GNO) tienen reglas propias.
-- **Fuente congelada:** el histórico (`Medios_Digitales.xlsx`, hasta el 02/07) no se toca y no se describe acá. Es la única fuente que todavía muestra piezas con ámbito “departamento”.
+- **Fuente congelada:** el histórico (`Medios_Digitales.xlsx`, hasta el 02/07) no se toca y no se describe acá. Es la única fuente que todavía muestra piezas con ámbito “departamento”: sus 372 piezas de departamento se ven como “Depto. X” en la pestaña Pauta Digital y en Campañas, nunca están activas y no entran en paneles de localidad, cobertura ni mail. Las reglas de este manual (incluida la de que el ámbito departamento queda fuera) valen solo para la planilla `GLOBAL_ImportRange`.
 - **Archivos que acompañan cada carga:** `Filas_no_procesadas_Pauta_Digital.xlsx` (qué filas no entraron y por qué), `Parejas_duplicadas_a_confirmar_por_el_area.xlsx` y `Nombres_a_confirmar_por_el_area.xlsx`.
 
 ## Glosario
