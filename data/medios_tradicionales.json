@@ -14,7 +14,8 @@
     "2026-10-01",
     "2026-10-05",
     "2026-10-09",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-23"
   ],
   "umbral_alerta_amarilla_dias": 30,
   "umbral_alerta_roja_dias": 50,
@@ -79,8 +80,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-02",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 45.0,
-          "alerta": "🟡 REVISAR HACE 45.0 DIAS",
+          "antiguedad_dias": 51.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 51.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -93,7 +94,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -289,8 +290,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-02",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 45.0,
-          "alerta": "🟡 REVISAR HACE 45.0 DIAS",
+          "antiguedad_dias": 51.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 51.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -303,7 +304,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -499,7 +500,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -558,7 +559,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -754,7 +755,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -942,6 +943,20 @@
         },
         {
           "tipo_medio": "CARTELERÍA",
+          "tema": "RUTAS QUE CONECTAN",
+          "link_material": "https://drive.google.com/file/d/1ysp8KG7rwmgQaz9Z3qLzMMSjo2mS5dTr/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1ysp8KG7rwmgQaz9Z3qLzMMSjo2mS5dTr/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "CARTELERÍA",
           "tema": "AUTOVÍA CALAMUCHITA- CONSEJO SEGURIDAD",
           "link_material": "https://drive.google.com/file/d/1TzT7aeXTDp98nFkg4FIwYKIykoPopWr8/view?usp=drive_link",
           "links_material": [
@@ -1009,7 +1024,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
           "fecha_hasta": "2026-10-26",
-          "antiguedad_dias": 2.0,
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -1420,7 +1435,105 @@
           "sin_fecha": false
         },
         {
-          "tipo_medio": "TV",
+          "tipo_medio": "RADIO",
+          "tema": "ALTONIVEL AVENIDA VÉLEZ SARSFIELD",
+          "link_material": "https://drive.google.com/file/d/1EAtxq9x-c0Dfv4UALUCesHdBgtvXJY5p/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1EAtxq9x-c0Dfv4UALUCesHdBgtvXJY5p/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-21",
+          "fecha_hasta": "2026-10-27",
+          "antiguedad_dias": 2.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1rhJUaqCUSioqrUtjf_Y8OWQ_DiCrHbSd/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1rhJUaqCUSioqrUtjf_Y8OWQ_DiCrHbSd/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-16",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "PREVIA- ANIVERSARIO PLANTA PALMAR",
+          "link_material": "https://drive.google.com/file/d/1gR-aJsn20eRqmT7ke784Lrdvc2wauLbb/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1gR-aJsn20eRqmT7ke784Lrdvc2wauLbb/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-23",
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 0.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "FIESTA DE LA TRADICIÓN DE LA CARLOTA",
+          "link_material": "https://drive.google.com/file/d/1zsaFlcNieHVSzRFZ3mGjjHpTfnVmP6hc/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1zsaFlcNieHVSzRFZ3mGjjHpTfnVmP6hc/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-23",
+          "fecha_hasta": "2026-11-04",
+          "antiguedad_dias": 0.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "PREVIA- ALIVIO CORDOBÉS CONSTRUCCIÓN",
+          "link_material": "https://drive.google.com/file/d/1ord9vl-x3e0P8AyWSpKYrPGPqGOSuhGc/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1ord9vl-x3e0P8AyWSpKYrPGPqGOSuhGc/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "PREVIA - CERTIFICACIÓN ESCUELAS PRECURSOS",
+          "link_material": "https://drive.google.com/file/d/1ccrIbwgLkzh0JYOgRLMl6WkO_DIhTvEs/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1ccrIbwgLkzh0JYOgRLMl6WkO_DIhTvEs/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "PREVIA- ENTREGA GUARDIA LOCAL",
+          "link_material": "https://drive.google.com/file/d/1VEKO_AsvarSJFYyGUmZxlhYZi0aBLKU4/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1VEKO_AsvarSJFYyGUmZxlhYZi0aBLKU4/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-22",
+          "fecha_hasta": "2026-10-22",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
           "tema": "PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1HBIE-rwfJtJPLwoPW_cDzfM_EdUA7mvh/view?usp=sharing",
           "links_material": [
@@ -1435,16 +1548,30 @@
         },
         {
           "tipo_medio": "RADIO",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1rhJUaqCUSioqrUtjf_Y8OWQ_DiCrHbSd/view?usp=drive_link",
+          "tema": "PREVIA - CRÉDITOS PARA EL CONSUMO - CONSTRUCCIÓN",
+          "link_material": "https://drive.google.com/file/d/1fTvxmCAg9XoKIn9CRP30qCbGHVlCtpAI/view?usp=drive_link",
           "links_material": [
-            "https://drive.google.com/file/d/1rhJUaqCUSioqrUtjf_Y8OWQ_DiCrHbSd/view?usp=drive_link"
+            "https://drive.google.com/file/d/1fTvxmCAg9XoKIn9CRP30qCbGHVlCtpAI/view?usp=drive_link"
           ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-26",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-19",
+          "fecha_hasta": "2026-10-19",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "PREVIA - JORNADA DESARROLLO PRODUCITIVO REGION CENTRO",
+          "link_material": "https://drive.google.com/file/d/1CuvXrGuAmC5Vat8EYiYeNrvGgkrNWU8Q/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1CuvXrGuAmC5Vat8EYiYeNrvGgkrNWU8Q/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-20",
+          "fecha_hasta": "2026-10-20",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -2317,20 +2444,6 @@
         },
         {
           "tipo_medio": "RADIO",
-          "tema": "PRUEBAS APRENDER",
-          "link_material": "https://drive.google.com/file/d/1yfJf77R9kWrZ6TxLvMJN8pYniEL-LDwE/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1yfJf77R9kWrZ6TxLvMJN8pYniEL-LDwE/view?usp=sharing"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": "2026-07-28",
-          "fecha_hasta": "2026-08-06",
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
           "tema": "PREVIA- VISITA ADELIA MARÍA",
           "link_material": "https://drive.google.com/file/d/1SPpLnYhDIqpUbbEkBbjdzDZmCP4b6bXW/view?usp=drive_link",
           "links_material": [
@@ -2367,7 +2480,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -2381,22 +2494,22 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
         {
           "tipo_medio": "GRÁFICA",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/17MtNZzQTJBuAOAPRcav5jrCBRD73uLcv/view?usp=sharing",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1St0iRJoKSokBl8Z-SvJgUCjC-t9WrAQ9/view?usp=sharing",
           "links_material": [
-            "https://drive.google.com/file/d/17MtNZzQTJBuAOAPRcav5jrCBRD73uLcv/view?usp=sharing"
+            "https://drive.google.com/file/d/1St0iRJoKSokBl8Z-SvJgUCjC-t9WrAQ9/view?usp=sharing"
           ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-14",
-          "fecha_hasta": "2026-10-18",
-          "antiguedad_dias": 3.0,
-          "alerta": "🟢",
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-24",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -2409,6 +2522,20 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-10-18",
           "fecha_hasta": "2026-10-19",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/17MtNZzQTJBuAOAPRcav5jrCBRD73uLcv/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/17MtNZzQTJBuAOAPRcav5jrCBRD73uLcv/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-14",
+          "fecha_hasta": "2026-10-18",
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
@@ -2548,19 +2675,35 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "fecha_hasta": "2026-10-24",
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
         {
           "tipo_medio": "WEB",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1IHSvfOm_n90SB2JHvfOSsWHZ5owCM54S/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IHSvfOm_n90SB2JHvfOSsWHZ5owCM54S/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-25",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "WEB",
           "tema": "CÓRDOBA ATENTA : EL NIÑO",
-          "link_material": null,
-          "links_material": [],
+          "link_material": "https://drive.google.com/file/d/1X0nbIiwCjUVFvuec3UtrobMCV9sagqUe/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1X0nbIiwCjUVFvuec3UtrobMCV9sagqUe/view?usp=sharing"
+          ],
           "estado": "Inactivo",
           "fecha_desde": "2026-10-18",
-          "fecha_hasta": "2026-10-18",
+          "fecha_hasta": "2026-10-19",
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
@@ -2832,11 +2975,11 @@
           "sin_fecha": true
         },
         {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "tipo_medio": "CARTELERÍA",
+          "tema": "BIENVENIDO SANTO PADRE",
+          "link_material": "https://drive.google.com/file/d/17FAsAb82m4LU0xmMKy4ASeSlWpSnD6fd/view?usp=sharing",
           "links_material": [
-            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+            "https://drive.google.com/file/d/17FAsAb82m4LU0xmMKy4ASeSlWpSnD6fd/view?usp=sharing"
           ],
           "estado": "Activo",
           "fecha_desde": null,
@@ -2861,24 +3004,10 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO",
-          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing",
+          "tema": "VALLAS - BIENVENIDO SANTO PADRE",
+          "link_material": "https://drive.google.com/file/d/17FAsAb82m4LU0xmMKy4ASeSlWpSnD6fd/view?usp=sharing",
           "links_material": [
-            "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": null,
-          "fecha_hasta": null,
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": true
-        },
-        {
-          "tipo_medio": "VIA PÚBLICA",
-          "tema": "LUNETAS - AVENIDA BODEREAU",
-          "link_material": "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing"
+            "https://drive.google.com/file/d/17FAsAb82m4LU0xmMKy4ASeSlWpSnD6fd/view?usp=sharing"
           ],
           "estado": "Activo",
           "fecha_desde": null,
@@ -2987,6 +3116,34 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "LUNETAS- ALTONIVEL VALLE ESCONDIDO TERMINADO",
+          "link_material": "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Y8RidcAjJEwUy4Hnk_9UtoKciMcw1aEY/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "LUNETAS - AVENIDA BODEREAU",
+          "link_material": "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1exY0MyPCAqlV2iGBy3AnQzP_yy3Fuiea/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
           "links_material": [
@@ -3043,6 +3200,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
           "links_material": [
@@ -3092,8 +3263,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3256,6 +3427,18 @@
         },
         {
           "tipo_medio": "CARTELERÍA",
+          "tema": "ESCUCHÁ COLONIA CAROYA - RUTA 9N",
+          "link_material": null,
+          "links_material": [],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "CARTELERÍA",
           "tema": "CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -3267,6 +3450,20 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
         },
         {
           "tipo_medio": "VIA PÚBLICA",
@@ -3334,7 +3531,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3389,14 +3586,28 @@
         "TV": 0,
         "RADIO": 0,
         "WEB": 0,
-        "CARTELERIA": 0,
+        "CARTELERIA": 1,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 1,
+      "total_tipos": 2,
       "banda_cobertura": "Baja",
       "vigentes": [
+        {
+          "tipo_medio": "CARTELERÍA",
+          "tema": "ESCUCHÁ - JUAREZ CELMAN - IPET 386",
+          "link_material": "https://drive.google.com/file/d/1tt3_3Hux65Goyk0KRp9g2Nsd8BN0eYoZ/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1tt3_3Hux65Goyk0KRp9g2Nsd8BN0eYoZ/view"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
         {
           "tipo_medio": "PANTALLA LED",
           "tema": "RUTAS QUE CONECTAN",
@@ -3407,7 +3618,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3480,7 +3691,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3494,7 +3705,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3508,7 +3719,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-05",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 12.0,
+          "antiguedad_dias": 18.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3732,7 +3943,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3746,7 +3957,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3760,7 +3971,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-05",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 12.0,
+          "antiguedad_dias": 18.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -3984,8 +4195,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 53.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
+          "antiguedad_dias": 59.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 59.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4008,6 +4219,20 @@
           "link_material": "https://drive.google.com/file/d/1oLgjw5h950H__qup5WLBBFcYX7F2Gnls/view?usp=drive_link",
           "links_material": [
             "https://drive.google.com/file/d/1oLgjw5h950H__qup5WLBBFcYX7F2Gnls/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "CARTELERÍA",
+          "tema": "ESCUCHÁ - CAMINO INTERCOUNTRY",
+          "link_material": "https://drive.google.com/file/d/1uTlZuL_eb-21wnkkxRz5aTuVKYl3RQFa/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1uTlZuL_eb-21wnkkxRz5aTuVKYl3RQFa/view"
           ],
           "estado": "Activo",
           "fecha_desde": null,
@@ -4074,6 +4299,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "LUNETAS- CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1B0FAsLTIkiAUehj5m4ax2Hoszajp2UxF/view?usp=drive_link",
           "links_material": [
@@ -4124,7 +4363,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4197,7 +4436,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4211,7 +4450,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4225,8 +4464,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4239,8 +4478,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4435,7 +4674,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4449,7 +4688,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4463,8 +4702,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 53.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
+          "antiguedad_dias": 59.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 59.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4477,8 +4716,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4687,8 +4926,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 53.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
+          "antiguedad_dias": 59.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 59.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -4777,6 +5016,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
           "links_material": [
@@ -4827,7 +5080,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -4959,7 +5212,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5060,7 +5313,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5074,8 +5327,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 51.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 51.0 DIAS",
+          "antiguedad_dias": 57.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 57.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -5270,7 +5523,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5284,8 +5537,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-27",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 51.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 51.0 DIAS",
+          "antiguedad_dias": 57.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 57.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -5494,7 +5747,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5508,7 +5761,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5536,8 +5789,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 46.0,
-          "alerta": "🟡 REVISAR HACE 46.0 DIAS",
+          "antiguedad_dias": 52.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 52.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -5581,6 +5834,20 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
         },
         {
           "tipo_medio": "VIA PÚBLICA",
@@ -5648,7 +5915,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5735,7 +6002,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5808,7 +6075,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 2.0,
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -5822,7 +6089,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6018,7 +6285,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6077,6 +6344,34 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": true
+        },
+        {
+          "tipo_medio": "CARTELERÍA",
+          "tema": "ESCUCHÁ - SALSIPUEDES - CDI",
+          "link_material": "https://drive.google.com/file/d/1ZYS1eQG_IO8BH0iHnQOlcmRBQ7JFU8vG/view",
+          "links_material": [
+            "https://drive.google.com/file/d/1ZYS1eQG_IO8BH0iHnQOlcmRBQ7JFU8vG/view"
+          ],
+          "estado": "Activo",
+          "fecha_desde": null,
+          "fecha_hasta": null,
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
         },
         {
           "tipo_medio": "VIA PÚBLICA",
@@ -6147,7 +6442,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6161,8 +6456,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6357,7 +6652,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6371,8 +6666,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6581,7 +6876,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6668,7 +6963,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6682,8 +6977,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6696,8 +6991,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-20",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 58.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 58.0 DIAS",
+          "antiguedad_dias": 64.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6710,8 +7005,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-20",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 58.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 58.0 DIAS",
+          "antiguedad_dias": 64.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6892,7 +7187,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -6906,8 +7201,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6920,8 +7215,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-20",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 58.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 58.0 DIAS",
+          "antiguedad_dias": 64.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -6934,8 +7229,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-20",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 58.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 58.0 DIAS",
+          "antiguedad_dias": 64.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -7130,7 +7425,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -7172,8 +7467,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 57.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 57.0 DIAS",
+          "antiguedad_dias": 63.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 63.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -7189,6 +7484,20 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1RfrVRN2SqqWR_3yAwOW18zP-ezEfWxnm/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
         },
         {
           "tipo_medio": "VIA PÚBLICA",
@@ -7256,7 +7565,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -7328,8 +7637,36 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHA CRUZ DEL EJE: UPC",
+          "link_material": "https://drive.google.com/file/d/1SXOzXqXoNzssHSSMrkz5dgGwK4w_aF3B/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1SXOzXqXoNzssHSSMrkz5dgGwK4w_aF3B/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-29",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 24.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+          "link_material": "https://drive.google.com/file/d/19eU4ict-D7QTAj6e0OJ3L_yG-uLr2vua/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/19eU4ict-D7QTAj6e0OJ3L_yG-uLr2vua/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-29",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 24.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -7359,34 +7696,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "ESCUCHA CRUZ DEL EJE: UPC",
-          "link_material": "https://drive.google.com/file/d/1SXOzXqXoNzssHSSMrkz5dgGwK4w_aF3B/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1SXOzXqXoNzssHSSMrkz5dgGwK4w_aF3B/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-29",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "ESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-          "link_material": "https://drive.google.com/file/d/19eU4ict-D7QTAj6e0OJ3L_yG-uLr2vua/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/19eU4ict-D7QTAj6e0OJ3L_yG-uLr2vua/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-29",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -7622,8 +7931,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -7637,7 +7946,35 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHA CRUZ DEL EJE: UPC",
+          "link_material": "https://drive.google.com/file/d/1IZmPfiJor6LbKAjk2Oxbr9a5iO9cR-So/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IZmPfiJor6LbKAjk2Oxbr9a5iO9cR-So/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-29",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 24.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHA CRUZ DEL EJE: SANEAMIENTO",
+          "link_material": "https://drive.google.com/file/d/1kIG8uirl9ayUJakVK1NmFyWr-FGyxklQ/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1kIG8uirl9ayUJakVK1NmFyWr-FGyxklQ/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-29",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 24.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -7653,34 +7990,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "ESCUCHA CRUZ DEL EJE: UPC",
-          "link_material": "https://drive.google.com/file/d/1IZmPfiJor6LbKAjk2Oxbr9a5iO9cR-So/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1IZmPfiJor6LbKAjk2Oxbr9a5iO9cR-So/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-29",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "ESCUCHA CRUZ DEL EJE: SANEAMIENTO",
-          "link_material": "https://drive.google.com/file/d/1kIG8uirl9ayUJakVK1NmFyWr-FGyxklQ/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1kIG8uirl9ayUJakVK1NmFyWr-FGyxklQ/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-29",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -7931,7 +8240,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -8014,8 +8323,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -8102,7 +8411,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -8321,20 +8630,6 @@
       "vigentes": [
         {
           "tipo_medio": "TV",
-          "tema": "RUTAS QUE CONECTAN",
-          "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=drive_link"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": "2026-10-06",
-          "fecha_hasta": "2026-10-16",
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
           "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO",
           "link_material": "https://drive.google.com/file/d/1mIMma1u-pX7s3yF5aZekXFejWSvbqDUX/view?usp=drive_link",
           "links_material": [
@@ -8343,7 +8638,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -8357,8 +8652,36 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-16",
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "RUTAS QUE CONECTAN",
+          "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-06",
+          "fecha_hasta": "2026-10-16",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -8387,20 +8710,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -8657,20 +8966,6 @@
         },
         {
           "tipo_medio": "RADIO",
-          "tema": "RUTAS QUE CONECTAN",
-          "link_material": "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": "2026-10-06",
-          "fecha_hasta": "2026-10-16",
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
           "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINERO",
           "link_material": "https://drive.google.com/file/d/1SrXb0e5YnNs9dcWCFepYTEbf1jVNQ-aa/view?usp=sharing",
           "links_material": [
@@ -8679,7 +8974,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -8693,8 +8988,36 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1xWNlvRVoqeMQmZYcR-IMKoMeT5M2NIFv/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1xWNlvRVoqeMQmZYcR-IMKoMeT5M2NIFv/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-16",
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "RUTAS QUE CONECTAN",
+          "link_material": "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-06",
+          "fecha_hasta": "2026-10-16",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -8723,20 +9046,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1xWNlvRVoqeMQmZYcR-IMKoMeT5M2NIFv/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1xWNlvRVoqeMQmZYcR-IMKoMeT5M2NIFv/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -9015,7 +9324,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -9029,8 +9338,22 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1VdWPF0jLQX4wT3gxiQXUsotQadikZ-kq/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1VdWPF0jLQX4wT3gxiQXUsotQadikZ-kq/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-25",
+          "fecha_hasta": "2026-10-25",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -9254,7 +9577,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -9386,6 +9709,20 @@
         },
         {
           "tipo_medio": "PANTALLA LED",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-16",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view",
           "links_material": [
@@ -9396,20 +9733,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "PANTALLA LED",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -9481,7 +9804,35 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS",
+          "link_material": "https://drive.google.com/file/d/1mIMma1u-pX7s3yF5aZekXFejWSvbqDUX/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1mIMma1u-pX7s3yF5aZekXFejWSvbqDUX/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-09",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 14.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "VISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+          "link_material": "https://drive.google.com/file/d/1jTTiVxQ01muUY06Nbg_y1bcoh8Mx-O5w/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1jTTiVxQ01muUY06Nbg_y1bcoh8Mx-O5w/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-09",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -9497,34 +9848,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS",
-          "link_material": "https://drive.google.com/file/d/1mIMma1u-pX7s3yF5aZekXFejWSvbqDUX/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1mIMma1u-pX7s3yF5aZekXFejWSvbqDUX/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-09",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "VISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
-          "link_material": "https://drive.google.com/file/d/1jTTiVxQ01muUY06Nbg_y1bcoh8Mx-O5w/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1jTTiVxQ01muUY06Nbg_y1bcoh8Mx-O5w/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-09",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -9775,7 +10098,35 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS",
+          "link_material": "https://drive.google.com/file/d/1SrXb0e5YnNs9dcWCFepYTEbf1jVNQ-aa/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1SrXb0e5YnNs9dcWCFepYTEbf1jVNQ-aa/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-09",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 14.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "VISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
+          "link_material": "https://drive.google.com/file/d/1grzEaqFVj-l1PE5p7SmwaYrU7P_61gPF/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1grzEaqFVj-l1PE5p7SmwaYrU7P_61gPF/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-09",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -9791,34 +10142,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "VISITA VILLA MARÍA: ANIVERSARIO CONSORCIOS CAMINEROS",
-          "link_material": "https://drive.google.com/file/d/1SrXb0e5YnNs9dcWCFepYTEbf1jVNQ-aa/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1SrXb0e5YnNs9dcWCFepYTEbf1jVNQ-aa/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-09",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "VISITA VILLA MARÍA: CASA DEL ESTUDIANTE",
-          "link_material": "https://drive.google.com/file/d/1grzEaqFVj-l1PE5p7SmwaYrU7P_61gPF/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1grzEaqFVj-l1PE5p7SmwaYrU7P_61gPF/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-09",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -10083,7 +10406,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -10170,8 +10493,36 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHÁ DEÁN FUNES : COLECTORA",
+          "link_material": "https://drive.google.com/file/d/1Zy9Snyckf3SRozKgghau9E5uytwY1nk-/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Zy9Snyckf3SRozKgghau9E5uytwY1nk-/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-10",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 43.0,
+          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHÁ DEÁN FUNES: UPC",
+          "link_material": "https://drive.google.com/file/d/1jsgyCCnKYFqkpzAUV50mRSMARAaqXoVo/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1jsgyCCnKYFqkpzAUV50mRSMARAaqXoVo/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-10",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 43.0,
+          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -10186,34 +10537,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "ESCUCHÁ DEÁN FUNES : COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1Zy9Snyckf3SRozKgghau9E5uytwY1nk-/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Zy9Snyckf3SRozKgghau9E5uytwY1nk-/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-10",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 37.0,
-          "alerta": "🟡 REVISAR HACE 37.0 DIAS",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
-          "tema": "ESCUCHÁ DEÁN FUNES: UPC",
-          "link_material": "https://drive.google.com/file/d/1jsgyCCnKYFqkpzAUV50mRSMARAaqXoVo/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1jsgyCCnKYFqkpzAUV50mRSMARAaqXoVo/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-10",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 37.0,
-          "alerta": "🟡 REVISAR HACE 37.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -10422,8 +10745,36 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHA  DEÁN FUNES : COLECTORA",
+          "link_material": "https://drive.google.com/file/d/1EjEMqc8JS5UKO90ZcMyrfuBPavlQ1yFY/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1EjEMqc8JS5UKO90ZcMyrfuBPavlQ1yFY/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-10",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 43.0,
+          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHÁ DEÁN FUNES: UPC",
+          "link_material": "https://drive.google.com/file/d/1bvqVqKx2juek00UMhh3dzm-fUtSuUnFf/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1bvqVqKx2juek00UMhh3dzm-fUtSuUnFf/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-10",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 43.0,
+          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -10438,34 +10789,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "ESCUCHA  DEÁN FUNES : COLECTORA",
-          "link_material": "https://drive.google.com/file/d/1EjEMqc8JS5UKO90ZcMyrfuBPavlQ1yFY/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1EjEMqc8JS5UKO90ZcMyrfuBPavlQ1yFY/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-10",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 37.0,
-          "alerta": "🟡 REVISAR HACE 37.0 DIAS",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "ESCUCHÁ DEÁN FUNES: UPC",
-          "link_material": "https://drive.google.com/file/d/1bvqVqKx2juek00UMhh3dzm-fUtSuUnFf/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1bvqVqKx2juek00UMhh3dzm-fUtSuUnFf/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-09-10",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 37.0,
-          "alerta": "🟡 REVISAR HACE 37.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -10688,7 +11011,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -10730,7 +11053,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-09",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 8.0,
+          "antiguedad_dias": 14.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -10813,8 +11136,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -10886,9 +11209,9 @@
         "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
-        "PANTALLA_LED": 0
+        "PANTALLA_LED": 1
       },
-      "total_tipos": 3,
+      "total_tipos": 4,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -10901,7 +11224,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11097,7 +11420,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11293,7 +11616,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11324,6 +11647,20 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
+          "tema": "RUTAS QUE CONECTAN",
+          "link_material": "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-07",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 16.0,
+          "alerta": "🟢",
+          "sin_fecha": false
         }
       ]
     },
@@ -11352,7 +11689,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11548,7 +11885,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11744,7 +12081,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -11801,10 +12138,10 @@
         "WEB": 1,
         "CARTELERIA": 1,
         "VIA_PUBLICA": 0,
-        "GRAFICA": 0,
+        "GRAFICA": 1,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 5,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -11817,7 +12154,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12013,7 +12350,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12201,6 +12538,34 @@
         },
         {
           "tipo_medio": "GRÁFICA",
+          "tema": "CÓRDOBA ATENTA : EL NIÑO",
+          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-19",
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 4.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/12sgUylyy9l0Q1dH_rZt1mZwObeXlThgC/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/12sgUylyy9l0Q1dH_rZt1mZwObeXlThgC/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-10-30",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
           "tema": "CAMINOS QUE CONECTAN: CIRCUNVALACIÓN VILLA MARÍA - VILLA NUEVA",
           "link_material": "https://drive.google.com/file/d/1c5GShHcj9ZNb_HhXsRI2Y98WBgpJhQJs/view?usp=sharing",
           "links_material": [
@@ -12209,20 +12574,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-10-12",
           "fecha_hasta": "2026-10-16",
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "GRÁFICA",
-          "tema": "CÓRDOBA ATENTA : EL NIÑO",
-          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": "2026-10-19",
-          "fecha_hasta": "2026-10-23",
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
@@ -12307,7 +12658,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12363,7 +12714,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12435,8 +12786,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12673,8 +13024,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12942,8 +13293,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -12957,8 +13308,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-12",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 66.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 66.0 DIAS",
+          "antiguedad_dias": 72.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 72.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -12971,8 +13322,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -13222,8 +13573,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -13237,8 +13588,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -13251,8 +13602,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -13503,7 +13854,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -13586,8 +13937,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -13674,7 +14025,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -13901,7 +14252,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14089,16 +14440,30 @@
         },
         {
           "tipo_medio": "WEB",
+          "tema": "ESCUCHÁ SALSACATE : SEDE ESCUELA DE SUBOFICILES DE LA PROVINCIA",
+          "link_material": "https://drive.google.com/file/d/1kgOXUYv2QfcNf3xOiJB8etYbVc6rWaK7/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1kgOXUYv2QfcNf3xOiJB8etYbVc6rWaK7/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-20",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 3.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "WEB",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/18rSid9tq9oeVLB1IRmXzsmKTy128x7yV/view?usp=sharing",
           "links_material": [
             "https://drive.google.com/file/d/18rSid9tq9oeVLB1IRmXzsmKTy128x7yV/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
+          "fecha_hasta": "2026-10-20",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -14170,7 +14535,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14184,8 +14549,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 47.0,
-          "alerta": "🟡 REVISAR HACE 47.0 DIAS",
+          "antiguedad_dias": 53.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14198,8 +14563,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 47.0,
-          "alerta": "🟡 REVISAR HACE 47.0 DIAS",
+          "antiguedad_dias": 53.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14394,7 +14759,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14408,8 +14773,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 47.0,
-          "alerta": "🟡 REVISAR HACE 47.0 DIAS",
+          "antiguedad_dias": 53.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14422,8 +14787,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-31",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 47.0,
-          "alerta": "🟡 REVISAR HACE 47.0 DIAS",
+          "antiguedad_dias": 53.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14618,7 +14983,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14688,7 +15053,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14761,7 +15126,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -14775,8 +15140,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14789,8 +15154,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -14803,7 +15168,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15013,7 +15378,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-08",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 9.0,
+          "antiguedad_dias": 15.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15074,6 +15439,20 @@
           "sin_fecha": true
         },
         {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
           "tipo_medio": "PANTALLA LED",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view?usp=sharing",
@@ -15083,7 +15462,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15155,8 +15534,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15170,7 +15549,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15183,8 +15562,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15197,9 +15576,37 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHÁ COSQUÍN: SANEAMIENTO",
+          "link_material": "https://drive.google.com/file/d/1nClOGsbVNbX3KfgJGtuhG22TA4QjzkjA/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1nClOGsbVNbX3KfgJGtuhG22TA4QjzkjA/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-30",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "ESCUCHÁ COSQUÍN: ESCUELA ROCA",
+          "link_material": "https://drive.google.com/file/d/17xS6HgNDVl8FNDe9vMqiTa0dBW714rbf/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/17xS6HgNDVl8FNDe9vMqiTa0dBW714rbf/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-30",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -15435,8 +15842,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15450,7 +15857,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15463,23 +15870,51 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 10.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
         {
           "tipo_medio": "RADIO",
           "tema": "ESCUCHÁ COSQUÍN: AUTOVIA PUNILLA",
-          "link_material": "https://drive.google.com/file/d/1uqRd5oX_cZy6dGy0dFVvuM5t3ir7dWBg/view?usp=sharing",
+          "link_material": "https://drive.google.com/file/d/1IqDw63PcP7ulAtaHb3-WXx8PjpHN9aqv/view?usp=sharing",
           "links_material": [
-            "https://drive.google.com/file/d/1uqRd5oX_cZy6dGy0dFVvuM5t3ir7dWBg/view?usp=sharing"
+            "https://drive.google.com/file/d/1IqDw63PcP7ulAtaHb3-WXx8PjpHN9aqv/view?usp=sharing"
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 10.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHÁ COSQUÍN: SANEAMIENTO",
+          "link_material": "https://drive.google.com/file/d/1w0pKB-ITlOnxW_HAu75sg_xu_COqFCnN/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1w0pKB-ITlOnxW_HAu75sg_xu_COqFCnN/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-30",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "ESCUCHÁ COSQUÍN: ESCUELA ROCA",
+          "link_material": "https://drive.google.com/file/d/1esqRyU6p-HFnuYRneMpFubt0J6qQBbQ_/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1esqRyU6p-HFnuYRneMpFubt0J6qQBbQ_/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-30",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -15744,8 +16179,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 46.0,
-          "alerta": "🟡 REVISAR HACE 46.0 DIAS",
+          "antiguedad_dias": 52.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 52.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -15834,6 +16269,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -15870,7 +16319,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -15943,8 +16392,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -15957,8 +16406,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -15971,7 +16420,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -16181,8 +16630,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -16195,8 +16644,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -16209,7 +16658,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -16475,7 +16924,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -16604,7 +17053,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -16677,8 +17126,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -16691,8 +17140,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -16705,8 +17154,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -16719,7 +17168,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17013,7 +17462,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17027,8 +17476,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -17041,8 +17490,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -17055,8 +17504,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -17363,7 +17812,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17402,11 +17851,11 @@
           "links_material": [
             "https://drive.google.com/file/d/1ADi3rABtFtXNGye4d5YRKPqAwX_z9PqL/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-17",
           "fecha_hasta": "2026-10-17",
-          "antiguedad_dias": 0.0,
-          "alerta": "🟢",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -17517,7 +17966,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17733,6 +18182,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES- PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
           "links_material": [
@@ -17783,7 +18246,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17848,20 +18311,6 @@
       "vigentes": [
         {
           "tipo_medio": "TV",
-          "tema": "VISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL",
-          "link_material": "https://drive.google.com/file/d/1Ybx4wlUSajw9N6d3b8YeJ-4zqEOsAQZb/view?usp=drive_link",
-          "links_material": [
-            "https://drive.google.com/file/d/1Ybx4wlUSajw9N6d3b8YeJ-4zqEOsAQZb/view?usp=drive_link"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing",
           "links_material": [
@@ -17870,7 +18319,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17884,7 +18333,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17898,7 +18347,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -17912,8 +18361,22 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-02",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 15.0,
+          "antiguedad_dias": 21.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "VISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL",
+          "link_material": "https://drive.google.com/file/d/1Ybx4wlUSajw9N6d3b8YeJ-4zqEOsAQZb/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1Ybx4wlUSajw9N6d3b8YeJ-4zqEOsAQZb/view?usp=drive_link"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-07",
+          "fecha_hasta": "2026-10-21",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -18276,7 +18739,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -18290,7 +18753,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -18304,7 +18767,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 22.0,
+          "antiguedad_dias": 28.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -18318,7 +18781,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-02",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 15.0,
+          "antiguedad_dias": 21.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -18332,7 +18795,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -18724,8 +19187,22 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "CÓRDOBA ATENTA : EL NIÑO",
+          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-25",
+          "fecha_hasta": "2026-10-25",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -18878,8 +19355,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-25",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 53.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 53.0 DIAS",
+          "antiguedad_dias": 59.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 59.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -19136,6 +19613,48 @@
         },
         {
           "tipo_medio": "PANTALLA LED",
+          "tema": "ESCUCHA - RIO CUARTO - CIRCUNVALACIÓN",
+          "link_material": "https://drive.google.com/file/d/1pUh2DbrP143cGRHXcxPrX1gt9chiJGR1/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1pUh2DbrP143cGRHXcxPrX1gt9chiJGR1/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-22",
+          "fecha_hasta": "2026-11-22",
+          "antiguedad_dias": 1.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
+          "tema": "PPP",
+          "link_material": "https://drive.google.com/file/d/1BofAmBQYc1yw67nRXnakfzleokSv-bua/view?usp=drive_link",
+          "links_material": [
+            "https://drive.google.com/file/d/1BofAmBQYc1yw67nRXnakfzleokSv-bua/view?usp=drive_link"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-22",
+          "fecha_hasta": "2026-11-22",
+          "antiguedad_dias": 1.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
+          "tema": "BOLETO EDUCATIVO CORDOBÉS",
+          "link_material": "https://drive.google.com/file/d/1rEeTZMGMFaOq6-tbM3iSTfiXQAMeFREC/view?usp=drive_linkk",
+          "links_material": [
+            "https://drive.google.com/file/d/1rEeTZMGMFaOq6-tbM3iSTfiXQAMeFREC/view?usp=drive_linkk"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-22",
+          "fecha_hasta": "2026-11-22",
+          "antiguedad_dias": 1.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view",
           "links_material": [
@@ -19144,7 +19663,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -19209,20 +19728,6 @@
       "vigentes": [
         {
           "tipo_medio": "TV",
-          "tema": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD",
-          "link_material": "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "TV",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/1m9NxACPnFUmeUa2feUblbKWh9_EKKBeD/view?usp=sharing",
           "links_material": [
@@ -19231,7 +19736,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -19245,8 +19750,22 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 64.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 64.0 DIAS",
+          "antiguedad_dias": 70.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 70.0 DIAS",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "TV",
+          "tema": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD",
+          "link_material": "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-07",
+          "fecha_hasta": "2026-10-21",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -19256,11 +19775,11 @@
           "links_material": [
             "https://drive.google.com/file/d/1Ybx4wlUSajw9N6d3b8YeJ-4zqEOsAQZb/view?usp=drive_link"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -19503,20 +20022,6 @@
         },
         {
           "tipo_medio": "RADIO",
-          "tema": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD",
-          "link_material": "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing",
           "links_material": [
@@ -19525,8 +20030,36 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "VISITA  VICUÑA MACKENNA: EDUCACIÓN Y SALUD",
+          "link_material": "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1iLErSMzjDcF9wIEzcgXget61Oxp74oJ3/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-07",
+          "fecha_hasta": "2026-10-21",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
+          "tema": "VISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL",
+          "link_material": "https://drive.google.com/file/d/1sHTNNJxu720GuNrpJk8nMc7H8dIkqYLp/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1sHTNNJxu720GuNrpJk8nMc7H8dIkqYLp/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-07",
+          "fecha_hasta": "2026-10-21",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -19541,20 +20074,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "VISITA: ANUNCIOS DE OBRAS Y RECORRIDO PRIMER GASODUCTO VIRTUAL",
-          "link_material": "https://drive.google.com/file/d/1sHTNNJxu720GuNrpJk8nMc7H8dIkqYLp/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1sHTNNJxu720GuNrpJk8nMc7H8dIkqYLp/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-21",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -19833,7 +20352,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -19875,7 +20394,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -19931,7 +20450,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20003,8 +20522,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20242,7 +20761,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20276,7 +20795,7 @@
         },
         {
           "tipo_medio": "WEB",
-          "tema": "GUARDIAS LOCALES",
+          "tema": "ESCUCHÁ MONTECRISTO : GUARDIAS LOCALES",
           "link_material": "https://drive.google.com/file/d/1XeVVFm_yLdN5AxiIle-O1MeO1d19cLs_/view?usp=sharing",
           "links_material": [
             "https://drive.google.com/file/d/1XeVVFm_yLdN5AxiIle-O1MeO1d19cLs_/view?usp=sharing"
@@ -20284,7 +20803,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20384,8 +20903,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20623,7 +21142,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20637,7 +21156,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20671,16 +21190,30 @@
         },
         {
           "tipo_medio": "WEB",
+          "tema": "ESCUCHÁ RIO PRIMERO : VADO SOBRE RÍO SUQUÍA",
+          "link_material": "https://drive.google.com/file/d/1g8jeYcIIGO_8MLq17JJ2VfAXiUSJR4iB/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1g8jeYcIIGO_8MLq17JJ2VfAXiUSJR4iB/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-19",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 4.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "WEB",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/18rSid9tq9oeVLB1IRmXzsmKTy128x7yV/view?usp=sharing",
           "links_material": [
             "https://drive.google.com/file/d/18rSid9tq9oeVLB1IRmXzsmKTy128x7yV/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-07",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
-          "alerta": "🟢",
+          "fecha_hasta": "2026-10-19",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -20762,8 +21295,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -20849,8 +21382,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -21059,8 +21592,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -21315,7 +21848,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -21538,8 +22071,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -21625,9 +22158,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -21849,9 +22382,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22088,8 +22621,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-04",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 43.0,
-          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
+          "antiguedad_dias": 49.0,
+          "alerta": "🟡 REVISAR HACE 49.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22102,7 +22635,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -22150,6 +22683,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -22185,8 +22732,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -22272,9 +22819,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22496,9 +23043,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22755,6 +23302,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -22790,8 +23351,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -22877,9 +23438,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22892,8 +23453,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-22",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 25.0,
-          "alerta": "🟢",
+          "antiguedad_dias": 31.0,
+          "alerta": "🟡 REVISAR HACE 31.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -22906,8 +23467,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-21",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 26.0,
-          "alerta": "🟢",
+          "antiguedad_dias": 32.0,
+          "alerta": "🟡 REVISAR HACE 32.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -23129,8 +23690,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -23144,8 +23705,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-22",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 25.0,
-          "alerta": "🟢",
+          "antiguedad_dias": 31.0,
+          "alerta": "🟡 REVISAR HACE 31.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -23158,8 +23719,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-21",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 26.0,
-          "alerta": "🟢",
+          "antiguedad_dias": 32.0,
+          "alerta": "🟡 REVISAR HACE 32.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -23396,7 +23957,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -23438,8 +23999,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-04",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 43.0,
-          "alerta": "🟡 REVISAR HACE 43.0 DIAS",
+          "antiguedad_dias": 49.0,
+          "alerta": "🟡 REVISAR HACE 49.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -23486,6 +24047,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -23506,13 +24081,13 @@
       "cobertura": {
         "TV": 1,
         "RADIO": 1,
-        "WEB": 0,
+        "WEB": 1,
         "CARTELERIA": 0,
         "VIA_PUBLICA": 0,
         "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 3,
+      "total_tipos": 4,
       "banda_cobertura": "Media",
       "vigentes": [
         {
@@ -23524,8 +24099,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -23748,8 +24323,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -23763,7 +24338,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -23992,6 +24567,20 @@
           "sin_fecha": false
         },
         {
+          "tipo_medio": "WEB",
+          "tema": "ESCUCHÁ RIO SEGUNDO : UPC",
+          "link_material": "https://drive.google.com/file/d/1vL0LMKHmrJfxWxwAPkuipvbTW0x1j3-a/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1vL0LMKHmrJfxWxwAPkuipvbTW0x1j3-a/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-09-04",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 49.0,
+          "alerta": "🟡 REVISAR HACE 49.0 DIAS",
+          "sin_fecha": false
+        },
+        {
           "tipo_medio": "PANTALLA LED",
           "tema": "INAUGURACIÓN TRAMO RUTA 19",
           "link_material": "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing",
@@ -24000,8 +24589,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24088,7 +24677,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24298,7 +24887,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24312,7 +24901,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 23.0,
+          "antiguedad_dias": 29.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24326,7 +24915,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24536,7 +25125,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24587,6 +25176,20 @@
       "vigentes": [
         {
           "tipo_medio": "RADIO",
+          "tema": "RUTAS QUE CONECTAN",
+          "link_material": "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-06",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 17.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "RADIO",
           "tema": "VISITA : LOCALIDADES CURA BROCHERO",
           "link_material": "https://drive.google.com/file/d/1brmp0BnTC_zZmoURjvi2H0ADZ73ZYTTJ/view?usp=drive_link",
           "links_material": [
@@ -24597,20 +25200,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "RADIO",
-          "tema": "RUTAS QUE CONECTAN",
-          "link_material": "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1cxGR7-4LmLSl76U-4f_p20NX9Tj549Vk/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-06",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -24819,7 +25408,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24862,10 +25451,10 @@
         "WEB": 1,
         "CARTELERIA": 1,
         "VIA_PUBLICA": 0,
-        "GRAFICA": 1,
+        "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 6,
+      "total_tipos": 5,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -24878,7 +25467,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -24892,8 +25481,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -24906,8 +25495,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 72.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 72.0 DIAS",
+          "antiguedad_dias": 78.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 78.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -25060,7 +25649,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -25074,8 +25663,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -25088,8 +25677,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 72.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 72.0 DIAS",
+          "antiguedad_dias": 78.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 78.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -25253,11 +25842,11 @@
           "links_material": [
             "https://drive.google.com/file/d/1YA_Mf1IAPvi1oAYsIMERyWtt1_HIkXq2/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-17",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -25368,8 +25957,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-28",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 50.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 50.0 DIAS",
+          "antiguedad_dias": 56.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -25424,7 +26013,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -25496,9 +26085,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -25762,9 +26351,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -26043,7 +26632,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -26098,8 +26687,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -26185,9 +26774,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -26423,9 +27012,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -26885,8 +27474,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -27000,9 +27589,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -27252,9 +27841,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -27511,6 +28100,20 @@
         },
         {
           "tipo_medio": "GRÁFICA",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1mS3SZ9sMXfEmMfNWYR5s9YnEcSOkqnfl/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1mS3SZ9sMXfEmMfNWYR5s9YnEcSOkqnfl/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-27",
+          "fecha_hasta": "2026-10-27",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
           "tema": "CÓRDOBA  ATENTA  : EL NIÑO",
           "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
           "links_material": [
@@ -27616,8 +28219,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -27686,8 +28289,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -27758,10 +28361,10 @@
         "WEB": 1,
         "CARTELERIA": 1,
         "VIA_PUBLICA": 1,
-        "GRAFICA": 1,
+        "GRAFICA": 0,
         "PANTALLA_LED": 1
       },
-      "total_tipos": 7,
+      "total_tipos": 6,
       "banda_cobertura": "Alta",
       "vigentes": [
         {
@@ -27773,9 +28376,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -28067,9 +28670,9 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-02-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 244.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 244.0 DIAS",
+          "fecha_hasta": "2026-10-26",
+          "antiguedad_dias": 250.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 250.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -28382,14 +28985,14 @@
         },
         {
           "tipo_medio": "GRÁFICA",
-          "tema": "CÓRDOBA ATENTA : EL NIÑO",
-          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1-KOsXlnGxIr_Q31bjiZgoGJv6g1na4XK/view?usp=sharing",
           "links_material": [
-            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
+            "https://drive.google.com/file/d/1-KOsXlnGxIr_Q31bjiZgoGJv6g1na4XK/view?usp=sharing"
           ],
           "estado": "Inactivo",
-          "fecha_desde": "2026-10-18",
-          "fecha_hasta": "2026-10-18",
+          "fecha_desde": "2026-10-25",
+          "fecha_hasta": "2026-10-25",
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
@@ -28401,11 +29004,25 @@
           "links_material": [
             "https://drive.google.com/file/d/152ePO_ksmAusAhM9_Lmc-hC2kRf95TGD/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-17",
           "fecha_hasta": "2026-10-19",
-          "antiguedad_dias": 0.0,
-          "alerta": "🟢",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "CÓRDOBA ATENTA : EL NIÑO",
+          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-18",
+          "fecha_hasta": "2026-10-18",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -28529,9 +29146,23 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-14",
-          "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 3.0,
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 9.0,
           "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "WEB",
+          "tema": "AUTOPISTA CÓRDOBA - SAN FRANCISCO",
+          "link_material": "https://drive.google.com/file/d/1IHSvfOm_n90SB2JHvfOSsWHZ5owCM54S/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IHSvfOm_n90SB2JHvfOSsWHZ5owCM54S/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-25",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -28627,8 +29258,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-15",
-          "fecha_hasta": "2026-10-22",
-          "antiguedad_dias": 2.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 8.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -28715,7 +29346,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -28911,7 +29542,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -29107,7 +29738,21 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "GRÁFICA",
+          "tema": "CÓRDOBA ATENTA : EL NIÑO",
+          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-21",
+          "fecha_hasta": "2026-10-23",
+          "antiguedad_dias": 2.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -29121,20 +29766,6 @@
           "estado": "Inactivo",
           "fecha_desde": "2026-10-14",
           "fecha_hasta": "2026-10-16",
-          "antiguedad_dias": null,
-          "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "GRÁFICA",
-          "tema": "CÓRDOBA ATENTA : EL NIÑO",
-          "link_material": "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1Z3GH6RBtAQBNXEQisJVFOfIAlnvS7Vkx/view?usp=sharing"
-          ],
-          "estado": "Inactivo",
-          "fecha_desde": "2026-10-21",
-          "fecha_hasta": "2026-10-23",
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": false
@@ -29233,8 +29864,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-24",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 54.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 54.0 DIAS",
+          "antiguedad_dias": 60.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 60.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -29323,6 +29954,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - PPP",
           "link_material": "https://drive.google.com/file/d/1v1i2t7Mx8dvpHSNVx7S3DdOjj3blwEXz/view?usp=drive_link",
           "links_material": [
@@ -29359,7 +30004,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -29432,7 +30077,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -29659,6 +30304,20 @@
           "antiguedad_dias": null,
           "alerta": null,
           "sin_fecha": true
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
         }
       ]
     },
@@ -29687,7 +30346,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -29917,6 +30576,20 @@
         },
         {
           "tipo_medio": "PANTALLA LED",
+          "tema": "INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing"
+          ],
+          "estado": "Activo",
+          "fecha_desde": "2026-10-16",
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
+          "alerta": "🟢",
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "PANTALLA LED",
           "tema": "RUTAS QUE CONECTAN",
           "link_material": "https://drive.google.com/file/d/10tBnv7zU8qEJne7WvUNgpvvJeqoZX14S/view",
           "links_material": [
@@ -29927,20 +30600,6 @@
           "fecha_hasta": "2026-10-16",
           "antiguedad_dias": null,
           "alerta": null,
-          "sin_fecha": false
-        },
-        {
-          "tipo_medio": "PANTALLA LED",
-          "tema": "INAUGURACIÓN TRAMO RUTA 19",
-          "link_material": "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing",
-          "links_material": [
-            "https://drive.google.com/file/d/1mb5cZo20IRgwiM4v3Zmh1bh3nODj6XNd/view?usp=sharing"
-          ],
-          "estado": "Activo",
-          "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
-          "alerta": "🟢",
           "sin_fecha": false
         },
         {
@@ -30012,7 +30671,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30026,8 +30685,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-17",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 30.0,
-          "alerta": "🟡 REVISAR HACE 30.0 DIAS",
+          "antiguedad_dias": 36.0,
+          "alerta": "🟡 REVISAR HACE 36.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -30222,7 +30881,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30236,7 +30895,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30250,8 +30909,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-17",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 30.0,
-          "alerta": "🟡 REVISAR HACE 30.0 DIAS",
+          "antiguedad_dias": 36.0,
+          "alerta": "🟡 REVISAR HACE 36.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -30446,7 +31105,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30533,7 +31192,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30729,7 +31388,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30925,7 +31584,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -30998,7 +31657,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31194,7 +31853,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31390,7 +32049,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31404,7 +32063,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31446,7 +32105,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31516,7 +32175,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31589,7 +32248,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31603,7 +32262,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-29",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
+          "antiguedad_dias": 24.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31827,7 +32486,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -31841,7 +32500,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-09-29",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 18.0,
+          "antiguedad_dias": 24.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32065,7 +32724,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-01",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 16.0,
+          "antiguedad_dias": 22.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32104,11 +32763,11 @@
           "links_material": [
             "https://drive.google.com/file/d/1c5GShHcj9ZNb_HhXsRI2Y98WBgpJhQJs/view?usp=sharing"
           ],
-          "estado": "Activo",
+          "estado": "Inactivo",
           "fecha_desde": "2026-10-17",
           "fecha_hasta": "2026-10-17",
-          "antiguedad_dias": 0.0,
-          "alerta": "🟢",
+          "antiguedad_dias": null,
+          "alerta": null,
           "sin_fecha": false
         },
         {
@@ -32233,7 +32892,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32275,7 +32934,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32348,7 +33007,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32592,6 +33251,20 @@
         },
         {
           "tipo_medio": "VIA PÚBLICA",
+          "tema": "SÉXTUPLES - INAUGURACIÓN TRAMO RUTA 19",
+          "link_material": "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing",
+          "links_material": [
+            "https://drive.google.com/file/d/1IehBXH-8eqg_8JEk3ryQIJ1F6GVppL-b/view?usp=sharing"
+          ],
+          "estado": "Inactivo",
+          "fecha_desde": "2026-10-26",
+          "fecha_hasta": "2026-11-09",
+          "antiguedad_dias": null,
+          "alerta": null,
+          "sin_fecha": false
+        },
+        {
+          "tipo_medio": "VIA PÚBLICA",
           "tema": "SÉXTUPLES - CÓRDOBA LIDERA PRUEBAS APRENDER",
           "link_material": "https://drive.google.com/file/d/1PrM7KSLQUBPwNQnQ8rCa-D0PzrjWqTGO/view?usp=drive_link",
           "links_material": [
@@ -32627,8 +33300,8 @@
           ],
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
-          "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "fecha_hasta": "2026-10-31",
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32715,7 +33388,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-16",
           "fecha_hasta": "2026-10-23",
-          "antiguedad_dias": 1.0,
+          "antiguedad_dias": 7.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32984,7 +33657,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -32998,8 +33671,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-22",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 56.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
+          "antiguedad_dias": 62.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 62.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -33012,8 +33685,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-22",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 56.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 56.0 DIAS",
+          "antiguedad_dias": 62.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 62.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -33026,7 +33699,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -33278,7 +33951,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-13",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 4.0,
+          "antiguedad_dias": 10.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -33292,8 +33965,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 57.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 57.0 DIAS",
+          "antiguedad_dias": 63.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 63.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -33306,8 +33979,8 @@
           "estado": "Activo",
           "fecha_desde": "2026-08-21",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 57.0,
-          "alerta": "🔴 SIN CAMBIOS HACE 57.0 DIAS",
+          "antiguedad_dias": 63.0,
+          "alerta": "🔴 SIN CAMBIOS HACE 63.0 DIAS",
           "sin_fecha": false
         },
         {
@@ -33320,7 +33993,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-06",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 11.0,
+          "antiguedad_dias": 17.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -33698,7 +34371,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -33782,7 +34455,7 @@
           "estado": "Activo",
           "fecha_desde": "2026-10-07",
           "fecha_hasta": "2026-10-31",
-          "antiguedad_dias": 10.0,
+          "antiguedad_dias": 16.0,
           "alerta": "🟢",
           "sin_fecha": false
         },
@@ -33831,9 +34504,9 @@
       ]
     }
   ],
-  "generado_el": "2026-10-19",
+  "generado_el": "2026-10-26",
   "snapshot_anterior": {
-    "fecha": "2026-10-09",
+    "fecha": "2026-10-17",
     "localidades": {
       "SAN AGUSTIN": {
         "banda": "Baja",
@@ -33849,23 +34522,23 @@
       },
       "CORDOBA": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "COLONIA CAROYA": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "ESTACION JUAREZ CELMAN": {
-        "banda": "Sin",
-        "total_tipos": 0
+        "banda": "Baja",
+        "total_tipos": 1
       },
       "JESUS MARIA": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "LA CALERA": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "MALVINAS ARGENTINAS": {
         "banda": "Baja",
@@ -33877,11 +34550,11 @@
       },
       "RIO CEBALLOS": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "SALDAN": {
         "banda": "Baja",
-        "total_tipos": 1
+        "total_tipos": 2
       },
       "SALSIPUEDES": {
         "banda": "Media",
@@ -33893,11 +34566,11 @@
       },
       "VILLA ALLENDE": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "CRUZ DEL EJE": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "VILLA HUIDOBRO": {
         "banda": "Baja",
@@ -33905,7 +34578,7 @@
       },
       "VILLA MARIA": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "VILLA NUEVA": {
         "banda": "Media",
@@ -33913,15 +34586,15 @@
       },
       "DEAN FUNES": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "GENERAL CABRERA": {
         "banda": "Media",
         "total_tipos": 3
       },
       "GENERAL DEHEZA": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "LA CARLOTA": {
         "banda": "Alta",
@@ -33932,8 +34605,8 @@
         "total_tipos": 3
       },
       "MARCOS JUAREZ": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       },
       "SAN CARLOS MINAS": {
         "banda": "Baja",
@@ -33944,36 +34617,36 @@
         "total_tipos": 3
       },
       "LABOULAYE": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       },
       "CAPILLA DEL MONTE": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       },
       "COSQUIN": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "LA FALDA": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "SANTA MARIA DE PUNILLA": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "VILLA CARLOS PAZ": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "RIO CUARTO": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "VICUÑA MACKENNA": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "MONTE CRISTO": {
         "banda": "Alta",
@@ -33981,23 +34654,23 @@
       },
       "RIO PRIMERO": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "VILLA SANTA ROSA": {
         "banda": "Media",
         "total_tipos": 3
       },
       "VILLA DE MARIA": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "ONCATIVO": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       },
       "PILAR": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       },
       "RIO SEGUNDO": {
         "banda": "Alta",
@@ -34017,27 +34690,27 @@
       },
       "VILLA DOLORES": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "ARROYITO": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 6
       },
       "LAS VARILLAS": {
         "banda": "Alta",
         "total_tipos": 5
       },
       "MORTEROS": {
-        "banda": "Media",
-        "total_tipos": 4
-      },
-      "SAN FRANCISCO": {
         "banda": "Alta",
         "total_tipos": 5
       },
+      "SAN FRANCISCO": {
+        "banda": "Alta",
+        "total_tipos": 7
+      },
       "ALTA GRACIA": {
         "banda": "Alta",
-        "total_tipos": 6
+        "total_tipos": 7
       },
       "MALAGUEÑO": {
         "banda": "Baja",
@@ -34045,7 +34718,7 @@
       },
       "SAN FRANCISCO DEL CHAÑAR": {
         "banda": "Media",
-        "total_tipos": 3
+        "total_tipos": 4
       },
       "ALMAFUERTE": {
         "banda": "Alta",
@@ -34057,23 +34730,23 @@
       },
       "OLIVA": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 7
       },
       "RIO TERCERO": {
         "banda": "Alta",
-        "total_tipos": 5
+        "total_tipos": 6
       },
       "VILLA DEL TOTORAL": {
-        "banda": "Baja",
-        "total_tipos": 2
+        "banda": "Media",
+        "total_tipos": 3
       },
       "VILLA TULUMBA": {
         "banda": "Baja",
         "total_tipos": 1
       },
       "BELL VILLE": {
-        "banda": "Media",
-        "total_tipos": 4
+        "banda": "Alta",
+        "total_tipos": 5
       }
     }
   }
