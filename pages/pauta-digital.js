@@ -16,6 +16,8 @@ const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 // excel viejo). Se filtra por alcance_tipo (ya normalizado en
 // generar_datos.py), no por alcance_detectado — así agrupa también las
 // piezas históricas de Capital (bucket "CAPITAL") dentro de "Localidad".
+// "Departamento" solo existe en el histórico (Medios Digitales.xlsx): desde el
+// 26/10/2026 la fuente nueva no tiene ese ámbito (esas filas quedan fuera).
 const AMBITOS = [
   { key: 'localidad', label: 'Localidad puntual' },
   { key: 'departamento', label: 'Departamento' },

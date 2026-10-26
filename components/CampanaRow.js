@@ -11,6 +11,7 @@ const AREA_COLOR = {
 
 function alcanceLabel(item) {
   if (item.alcance_tipo === 'provincia') return 'Toda la provincia';
+  // Solo piezas del histórico: la fuente nueva ya no tiene ámbito departamento.
   if (item.alcance_tipo === 'departamento') return `Depto. ${item.departamento}`;
   return item.localidad || item.departamento || '—';
 }
