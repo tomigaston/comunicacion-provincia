@@ -6,20 +6,19 @@ const ESTILOS = {
   '🟢': { bg: 'var(--cov-alta-bg)', fg: 'var(--cov-alta)' },
 };
 
-/** Badge de semáforo para una alerta puntual: de antigüedad (fila de tema
- * vigente de MT, por defecto) o de vencimiento (`tipo="vencimiento"`, Pauta
- * Digital). `null` si no hay alerta -- no se pinta nada (Activos de MT sin
- * Fecha_Desde, piezas de PD que no están vivas). */
-export default function SemaforoBadge({ alerta, antiguedadDias, tipo = 'antiguedad', compacto = false }) {
+/** Badge de semáforo para una alerta puntual de antigüedad (fila de tema
+ * vigente de MT). `null` si no hay alerta -- no se pinta nada (Activos de MT
+ * sin Fecha_Desde). Pauta Digital usa SemaforoPDBadge. */
+export default function SemaforoBadge({ alerta, antiguedadDias, compacto = false }) {
   const color = colorDeAlerta(alerta);
   if (!color) return null;
   const cfg = ESTILOS[color];
   const texto = compacto
     ? color
-    : `${color} ${etiquetaAlerta(alerta, tipo)}${typeof antiguedadDias === 'number' ? ` (${antiguedadDias} días)` : ''}`;
+    : `${color} ${etiquetaAlerta(alerta)}${typeof antiguedadDias === 'number' ? ` (${antiguedadDias} días)` : ''}`;
   return (
     <span
-      title={etiquetaAlerta(alerta, tipo) || undefined}
+      title={etiquetaAlerta(alerta) || undefined}
       style={{
         display: 'inline-block',
         padding: compacto ? '2px 6px' : '3px 10px',
