@@ -13,14 +13,14 @@ import { combinarLocalidades, filtrarLocalidades } from '../../lib/filtrosLocali
 import { isoDe } from '../../lib/vencimientos';
 import { resumenGeneral } from '../../lib/resumen';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
+import { PD_MIN_AMARILLO, PD_MIN_VERDE } from '../../lib/semaforo';
 
-// Categorías del grupo "Pauta digital" (eje B de la cobertura): color de la próxima
-// vencimiento de la pauta VIVA y DIRIGIDA a la localidad, o 'sin'.
+// Categorías del grupo "Pauta digital" (eje B de la cobertura): color por
+// cantidad de piezas activas en la localidad (dirigidas y provinciales).
 const OPCIONES_PD = [
-  { key: '🔴', label: 'Vence ≤3d 🔴', fg: 'var(--cov-baja)', bg: 'var(--cov-baja-bg)' },
-  { key: '🟡', label: 'Vence 4–7d 🟡', fg: 'var(--cov-media)', bg: 'var(--cov-media-bg)' },
-  { key: '🟢', label: 'Vigente >7d 🟢', fg: 'var(--cov-alta)', bg: 'var(--cov-alta-bg)' },
-  { key: 'sin', label: 'Sin PD viva dirigida', fg: 'var(--cov-sin)', bg: 'var(--cov-sin-bg)' },
+  { key: '🔴', label: `0–${PD_MIN_AMARILLO - 1} activas 🔴`, fg: 'var(--cov-baja)', bg: 'var(--cov-baja-bg)' },
+  { key: '🟡', label: `${PD_MIN_AMARILLO}–${PD_MIN_VERDE - 1} activas 🟡`, fg: 'var(--cov-media)', bg: 'var(--cov-media-bg)' },
+  { key: '🟢', label: `${PD_MIN_VERDE}+ activas 🟢`, fg: 'var(--cov-alta)', bg: 'var(--cov-alta-bg)' },
 ];
 
 const etiquetaGrupo = {

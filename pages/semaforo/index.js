@@ -2,8 +2,11 @@ import { Fragment, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import SemaforoBadge from '../../components/SemaforoBadge';
+import SemaforoPDBadge from '../../components/SemaforoPDBadge';
 import { useAlertas } from '../../lib/useAlertas';
-import { pesoDeColor } from '../../lib/semaforo';
+import { pesoDeColor, PD_MIN_AMARILLO, PD_MIN_VERDE, PD_DIAS_VENTANA, AVISO_PD } from '../../lib/semaforo';
+import { textoActivasPD, textoVencimiento } from '../../lib/coverage';
+import { formatearFechaDiaMes } from '../../lib/fechas';
 import { slugificar } from '../../lib/texto';
 
 const textoTemas = (n) => `${n} ${n === 1 ? 'tema sin cambios' : 'temas sin cambios'} hace 30+ días`;
@@ -41,7 +44,8 @@ export default function SemaforoIndex() {
           <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo</h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 2 }}>
             Medios Tradicionales: peor entre frescura (tema activo más reciente) y cobertura (tipos de
-            medio con tema activo). Pauta Digital: peor caso por vencimiento (días que faltan para el FIN de las piezas vivas dirigidas a la localidad). Tocá una localidad para ver el detalle.
+            medio con tema activo). Pauta Digital: cantidad de piezas activas en la localidad, dirigidas y
+            provinciales (0–{PD_MIN_AMARILLO - 1} 🔴 · {PD_MIN_AMARILLO}–{PD_MIN_VERDE - 1} 🟡 · {PD_MIN_VERDE}+ 🟢). Tocá una localidad para ver el detalle.
           </p>
         </div>
         <div style={{ display: 'flex', gap: 4, background: 'var(--bg-secondary)', borderRadius: 999, padding: 3 }}>
@@ -104,7 +108,10 @@ function VistaGrilla({ localidades, router }) {
             <div style={{ fontSize: 12.5, color: 'var(--text-tertiary)', marginBottom: 12 }}>{l.departamento}</div>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
               <BadgeConEtiqueta etiqueta="Medios Trad." alerta={l.alertaMedios} />
-              <BadgeConEtiqueta etiqueta="Pauta Digital" alerta={l.alertaPautaDigital} tipo="vencimiento" />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                <span style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>Pauta Digital</span>
+                <SemaforoPDBadge pd={l.semaforoPD} />
+              </div>
             </div>
             {expandida && <DetalleMedios l={l} router={router} />}
           </div>
@@ -141,7 +148,7 @@ function VistaLista({ localidades, router }) {
                   <SemaforoBadge alerta={l.alertaMedios} />
                 </td>
                 <td style={td}>
-                  <SemaforoBadge alerta={l.alertaPautaDigital} tipo="vencimiento" />
+                  <SemaforoPDBadge pd={l.semaforoPD} />
                 </td>
               </tr>
               {expandida && (
@@ -159,8 +166,9 @@ function VistaLista({ localidades, router }) {
   );
 }
 
-/** Detalle de Medios Tradicionales: por qué dio ese color (motivo) y temas
- * activos con fecha sin cambios hace 30+ días (independiente del color). */
+/** Detalle de la localidad. Medios Tradicionales: por qué dio ese color
+ * (motivo) y temas activos con fecha sin cambios hace 30+ días (independiente
+ * del color). Pauta Digital: ver DetallePD. */
 function DetalleMedios({ l, router }) {
   const sm = l.semaforoMedios;
   return (
@@ -200,6 +208,7 @@ function DetalleMedios({ l, router }) {
       ) : (
         <p style={{ color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
       )}
+      <DetallePD pd={l.semaforoPD} />
       <button
         type="button"
         onClick={() => router.push(`/localidades/${slugificar(l.localidad)}`)}
@@ -211,12 +220,46 @@ function DetalleMedios({ l, router }) {
   );
 }
 
-function BadgeConEtiqueta({ etiqueta, alerta, tipo }) {
+function BadgeConEtiqueta({ etiqueta, alerta }) {
   if (!alerta) return null;
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
       <span style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>{etiqueta}</span>
-      <SemaforoBadge alerta={alerta} tipo={tipo} compacto />
+      <SemaforoBadge alerta={alerta} compacto />
+    </div>
+  );
+}
+
+const TEXTO_AVISO_PD = {
+  [AVISO_PD.ATENCION]: (pd) =>
+    `⚠️ Atención: si no se renueva lo que vence en los próximos ${PD_DIAS_VENTANA} días, pasa de ${pd.color} a ${pd.colorActivasDespues} (quedarían ${pd.activasDespues} activas; con las Programadas, ${pd.conProgramadas}).`,
+  [AVISO_PD.CUBIERTO]: (pd) =>
+    `ℹ️ Cubierto por programadas: lo que vence en los próximos ${PD_DIAS_VENTANA} días la bajaría a ${pd.colorActivasDespues} (${pd.activasDespues} activas), pero con las Programadas que arrancan queda en ${pd.colorConProgramadas} (${pd.conProgramadas}).`,
+};
+
+/** Detalle de Pauta Digital: activas con desglose, aviso de la ventana de 7
+ * días, próximo vencimiento y Programadas que arrancan en la ventana. */
+function DetallePD({ pd }) {
+  const prog = pd.programadasVentana;
+  return (
+    <div style={{ marginTop: 12 }}>
+      <div style={{ fontWeight: 600, marginBottom: 4 }}>Pauta Digital</div>
+      <ul style={{ margin: 0, paddingLeft: 18, color: 'var(--text-secondary)' }}>
+        <li>
+          {pd.color} {textoActivasPD(pd)}
+        </li>
+        {pd.aviso && <li style={{ color: 'var(--text-primary)' }}>{TEXTO_AVISO_PD[pd.aviso](pd)}</li>}
+        <li>
+          {pd.proximoVencimiento
+            ? `Próximo vencimiento: ${formatearFechaDiaMes(pd.proximoVencimiento)} (${textoVencimiento(pd.diasProximoVencimiento)})`
+            : 'Sin piezas activas que venzan'}
+        </li>
+        <li>
+          {prog.cantidad > 0
+            ? `Programadas que arrancan en los próximos ${PD_DIAS_VENTANA} días: ${prog.cantidad} (la primera el ${formatearFechaDiaMes(prog.fechaMasProxima)})`
+            : `Sin Programadas que arranquen en los próximos ${PD_DIAS_VENTANA} días`}
+        </li>
+      </ul>
     </div>
   );
 }

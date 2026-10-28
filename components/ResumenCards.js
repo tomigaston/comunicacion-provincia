@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento, textoSigueAlAire } from '../lib/coverage';
+import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento, textoActivasPD } from '../lib/coverage';
+import { PD_DIAS_VENTANA } from '../lib/semaforo';
 import { hrefLocalidad, hrefCampana } from '../lib/rutas';
 
 // "¿Qué necesita atención esta semana?": arriba lo accionable y nombrado,
@@ -78,9 +79,38 @@ function conResto(items, max) {
   return { visibles: items.slice(0, max), resto: Math.max(0, items.length - max) };
 }
 
-function Tira({ r, abierto, onAbrir }) {
+/** "2026-11-06" -> "06/11". */
+const diaMes = (iso) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}`;
+
+/** Bloque de aviso de PD (Atención / Cubierto por programadas), misma
+ * estructura que el mail: un renglón por fecha de FIN y la lista compacta de
+ * localidades "activas hoy → proyectadas color". `b` = armarBloqueAvisoPD(). */
+function BloqueAvisoPD({ b }) {
+  return (
+    <>
+      <ul style={lista}>
+        {b.fechas.map((f) => (
+          <li key={f.fecha}>
+            <strong>{diaMes(f.fecha)}:</strong> vencen {f.piezas.toLocaleString('es-AR')} pieza{f.piezas === 1 ? '' : 's'} de {f.campanas.length} campaña
+            {f.campanas.length === 1 ? '' : 's'}: {f.campanas.join(', ')}
+          </li>
+        ))}
+      </ul>
+      <div style={detalle}>
+        {b.localidades.map((l, i) => (
+          <span key={l.localidad}>
+            {i > 0 ? ' · ' : ''}
+            <LinkLocalidad nombre={l.localidad} /> {l.activas} → {l.proyectadas} {l.colorProyectado}
+          </span>
+        ))}
+      </div>
+    </>
+  );
+}
+
+function Tira({ r }) {
   const ok = r.sinCobertura === 0;
-  const vencenAbierto = abierto.vista === 'vencen';
+  const { atencion, cubiertas } = r.pd;
   return (
     <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 14 }}>
       <div style={{ ...cardEstilo, borderColor: ok ? 'var(--cov-alta)' : 'var(--cov-baja)' }}>
@@ -89,7 +119,7 @@ function Tira({ r, abierto, onAbrir }) {
         </div>
         <div style={detalle}>
           {ok ? (
-            'Todas tienen Medios Tradicionales activos o Pauta Digital viva dirigida.'
+            'Todas tienen Medios Tradicionales activos o Pauta Digital activa.'
           ) : (
             r.sinCoberturaNombres.map((n, i) => (
               <span key={n}>
@@ -100,24 +130,27 @@ function Tira({ r, abierto, onAbrir }) {
           )}
         </div>
       </div>
-      <div style={cardEstilo}>
-        <button
-          type="button"
-          onClick={() => onAbrir('vencen', null)}
-          aria-expanded={vencenAbierto}
-          style={{ ...titular, background: 'none', border: 'none', padding: 0, textAlign: 'left', cursor: 'pointer', color: 'inherit', font: 'inherit', fontSize: 20, fontWeight: 700 }}
-        >
-          Vencen esta semana: {r.pd.vencenTotal} campaña{r.pd.vencenTotal === 1 ? '' : 's'}
-        </button>
-        <div style={detalle}>
-          <Chip color="🔴" onClick={() => onAbrir('vencen', '🔴')} activo={vencenAbierto && abierto.color === '🔴'}>
-            🔴 {r.pd.vencenRojas} (≤3d)
-          </Chip>{' '}
-          <Chip color="🟡" onClick={() => onAbrir('vencen', '🟡')} activo={vencenAbierto && abierto.color === '🟡'}>
-            🟡 {r.pd.vencenAmarillas} (4–7d)
-          </Chip>{' '}
-          <span style={{ color: 'var(--text-tertiary)' }}>incl. provincial</span>
-        </div>
+      <div style={{ ...cardEstilo, borderColor: atencion.total ? 'var(--cov-baja)' : 'var(--cov-alta)' }}>
+        <div style={tituloCard}>Atención — próximos {PD_DIAS_VENTANA} días</div>
+        {atencion.total ? (
+          <>
+            <div style={titular}>
+              ⚠️ {atencion.total} localidad{atencion.total === 1 ? ' baja' : 'es bajan'} de color en Pauta Digital
+            </div>
+            <div style={chico}>Si no se renueva lo que vence hasta el {diaMes(r.pd.ventanaHasta)}, aun contando las Programadas.</div>
+            <BloqueAvisoPD b={atencion} />
+          </>
+        ) : (
+          <div style={{ ...titular, color: 'var(--cov-alta)' }}>Ninguna localidad baja de color en Pauta Digital</div>
+        )}
+        {cubiertas.total > 0 && (
+          <div style={{ marginTop: 12 }}>
+            <div style={{ ...detalle, fontWeight: 600 }}>
+              ℹ️ {cubiertas.total} localidad{cubiertas.total === 1 ? '' : 'es'} cubierta{cubiertas.total === 1 ? '' : 's'} por Programadas
+            </div>
+            <BloqueAvisoPD b={cubiertas} />
+          </div>
+        )}
       </div>
     </div>
   );
@@ -219,20 +252,18 @@ function Movimiento({ r, abierto, onToggle, onFiltrarBandas }) {
 /** Pantalla general. `r` = resumenGeneral(); `onFiltrarBandas(['Sin','Baja'])`
  * filtra la grilla de abajo y lleva hasta ella. */
 export function ResumenGeneral({ r, onFiltrarBandas }) {
-  // vista: 'vencen' | 'temas' | 'cambios' | 'dirigidas' | null; color: filtro 🔴/🟡 de esa lista.
+  // vista: 'temas' | 'cambios' | 'campanas' | null; color: filtro 🔴/🟡 de esa lista.
   const [abierto, setAbierto] = useState({ vista: null, color: null });
   const abrir = (vista, color = null) =>
     setAbierto((a) => (a.vista === vista && a.color === color ? { vista: null, color: null } : { vista, color }));
 
-  const rojasNombradas = conResto(r.pd.vencen.filter((c) => c.color === '🔴'), 3);
   const debiles = conResto(r.mt.debiles, 3);
   const viejos = conResto(r.mt.temas, 3);
-  const vencenLista = r.pd.vencen.filter((c) => !abierto.color || c.color === abierto.color);
   const temasLista = r.mt.temas.filter((t) => !abierto.color || t.color === abierto.color);
 
   return (
     <div style={{ marginBottom: 20 }}>
-      <Tira r={r} abierto={abierto} onAbrir={abrir} />
+      <Tira r={r} />
       <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
         <div style={cardEstilo}>
           <div style={tituloCard}>Medios tradicionales</div>
@@ -316,64 +347,27 @@ export function ResumenGeneral({ r, onFiltrarBandas }) {
               ))}
             </div>
           )}
-          {rojasNombradas.visibles.length > 0 ? (
-            <>
-              <div style={titular}>Renovar primero</div>
-              <ul style={lista}>
-                {rojasNombradas.visibles.map((c) => (
-                  <li key={c.campana}>
-                    <strong>
-                      <LinkCampana nombre={c.campana} />
-                    </strong>{' '}
-                    · {textoVencimiento(c.dias)} 🔴
-                    {c.sigueAlAire > 0 && ` · ${textoSigueAlAire(c.sigueAlAire, { deCampana: true })}`}
-                    {c.continua && <span style={{ color: 'var(--text-tertiary)' }}> · sigue con otras piezas</span>}
-                  </li>
-                ))}
-              </ul>
-              {rojasNombradas.resto > 0 && (
-                <div style={detalle}>
-                  <button type="button" style={enlace} onClick={() => abrir('vencen', '🔴')}>
-                    (+{rojasNombradas.resto} más)
-                  </button>
-                </div>
-              )}
-            </>
-          ) : (
-            <div style={{ ...titular, color: 'var(--cov-alta)' }}>Nada vence en 3 días o menos</div>
-          )}
-          {abierto.vista === 'vencen' && (
-            <div style={{ marginTop: 10 }}>
-              <div style={chico}>
-                {vencenLista.length} de {r.pd.vencenTotal} campañas que vencen en los próximos 7 días
-                {abierto.color ? ` (${abierto.color})` : ''}; {r.pd.vencenSinContinuidad} del total sin otras piezas después. Incluye pauta provincial.
-              </div>
-              <ul style={lista}>
-                {vencenLista.map((c) => (
-                  <li key={c.campana}>
-                    {c.color}{' '}
-                    <strong>
-                      <LinkCampana nombre={c.campana} />
-                    </strong>{' '}
-                    · {textoVencimiento(c.dias)}
-                    {c.color === '🔴' && c.sigueAlAire > 0 && ` · ${textoSigueAlAire(c.sigueAlAire, { deCampana: true })}`}
-                    {c.continua && <span style={{ color: 'var(--text-tertiary)' }}> · sigue con otras piezas</span>}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <div style={chico}>
-            <button type="button" style={enlace} onClick={() => abrir('dirigidas')} aria-expanded={abierto.vista === 'dirigidas'}>
-              {r.pd.campanasVivasDirigidas} campañas vivas dirigidas
-            </button>{' '}
-            a las localidades.
+          <div style={titular}>
+            <button
+              type="button"
+              onClick={() => abrir('campanas')}
+              aria-expanded={abierto.vista === 'campanas'}
+              style={{ ...enlace, fontSize: 20, fontWeight: 700, textDecoration: 'none' }}
+            >
+              {r.pd.activas.toLocaleString('es-AR')} piezas activas
+            </button>
           </div>
-          {abierto.vista === 'dirigidas' && (
+          <div style={detalle}>
+            {r.pd.dirigidas.toLocaleString('es-AR')} dirigidas · {r.pd.provinciales.toLocaleString('es-AR')} provinciales, de{' '}
+            {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}.
+          </div>
+          <div style={chico}>Suma de las 60 localidades: una pieza provincial cuenta una vez en cada localidad.</div>
+          {abierto.vista === 'campanas' && (
             <ul style={lista}>
-              {r.pd.dirigidas.map((c) => (
+              {r.pd.campanas.map((c) => (
                 <li key={c.campana}>
-                  <LinkCampana nombre={c.campana} /> · {c.localidades} localidad{c.localidades === 1 ? '' : 'es'}
+                  <LinkCampana nombre={c.campana} /> · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} · {c.localidades} localidad
+                  {c.localidades === 1 ? '' : 'es'}
                 </li>
               ))}
             </ul>
@@ -456,7 +450,7 @@ export function ResumenLocalidad({ r, onFiltrarTemas }) {
             ))}
           </div>
         )}
-        {pd.proxima ? (
+        {pd.semaforo.activas > 0 ? (
           <>
             <div style={titular}>
               <button
@@ -468,12 +462,13 @@ export function ResumenLocalidad({ r, onFiltrarTemas }) {
                 aria-expanded={listaPD}
                 style={{ ...enlace, fontSize: 20, fontWeight: 700, textDecoration: 'none' }}
               >
-                {pd.campanasVivasDirigidas} campaña{pd.campanasVivasDirigidas === 1 ? '' : 's'} viva{pd.campanasVivasDirigidas === 1 ? '' : 's'} dirigida{pd.campanasVivasDirigidas === 1 ? '' : 's'}
-              </button>
-              {' · '}próxima {textoVencimiento(pd.proxima.dias)} <Chip color={pd.proxima.color}>{pd.proxima.color}</Chip>
-              {pd.proxima.color === '🔴' && pd.proxima.sigueAlAire > 0 && (
-                <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)' }}> · {textoSigueAlAire(pd.proxima.sigueAlAire)}</span>
-              )}
+                {textoActivasPD(pd.semaforo)}
+              </button>{' '}
+              <Chip color={pd.semaforo.color}>{pd.semaforo.color}</Chip>
+              <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)' }}>
+                {' · '}
+                {pd.campanasActivas} campaña{pd.campanasActivas === 1 ? '' : 's'} · próxima {textoVencimiento(pd.semaforo.diasProximoVencimiento)}
+              </span>
             </div>
             {pd.plataformas.length > 1 && (
               <div style={detalle}>
@@ -499,12 +494,12 @@ export function ResumenLocalidad({ r, onFiltrarTemas }) {
             {listaPD && (
               <>
                 <div style={chico}>
-                  {campanas.length} de {pd.campanasVivasDirigidas} campañas{plataforma ? ` en ${plataforma}` : ''}, por vencimiento más próximo.
+                  {campanas.length} de {pd.campanasActivas} campañas{plataforma ? ` en ${plataforma}` : ''}, por vencimiento más próximo.
                 </div>
                 <ul style={lista}>
                   {campanas.map((c) => (
                     <li key={c.campana}>
-                      {c.color} <LinkCampana nombre={c.campana} /> · {textoVencimiento(c.dias)}
+                      <LinkCampana nombre={c.campana} /> · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} · {textoVencimiento(c.dias)}
                       <span style={{ color: 'var(--text-tertiary)' }}> · {c.plataformas.join(', ')}</span>
                     </li>
                   ))}
@@ -513,7 +508,9 @@ export function ResumenLocalidad({ r, onFiltrarTemas }) {
             )}
           </>
         ) : (
-          <div style={titular}>Sin pauta digital viva dirigida</div>
+          <div style={titular}>
+            0 activas <Chip color={pd.semaforo.color}>{pd.semaforo.color}</Chip>
+          </div>
         )}
       </div>
     </div>
