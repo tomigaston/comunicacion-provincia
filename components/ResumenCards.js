@@ -83,9 +83,11 @@ function conResto(items, max) {
 const diaMes = (iso) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}`;
 
 /** Bloque de aviso de PD (Atención / Cubierto por programadas), misma
- * estructura que el mail: un renglón por fecha de FIN y la lista compacta de
- * localidades "activas hoy → proyectadas color". `b` = armarBloqueAvisoPD(). */
-function BloqueAvisoPD({ b }) {
+ * estructura que el mail: un renglón por fecha de FIN (piezas distintas) y la
+ * lista compacta de localidades. Atención: "activas hoy → (ii) color";
+ * cubiertas: "activas hoy → (i) sin programadas · (ii) con programadas".
+ * `b` = armarBloqueAvisoPD(). */
+function BloqueAvisoPD({ b, cubiertas = false }) {
   return (
     <>
       <ul style={lista}>
@@ -100,7 +102,10 @@ function BloqueAvisoPD({ b }) {
         {b.localidades.map((l, i) => (
           <span key={l.localidad}>
             {i > 0 ? ' · ' : ''}
-            <LinkLocalidad nombre={l.localidad} /> {l.activas} → {l.proyectadas} {l.colorProyectado}
+            <LinkLocalidad nombre={l.localidad} /> {l.activas} →{' '}
+            {cubiertas
+              ? `${l.sinProgramadas} ${l.colorSinProgramadas} sin programadas · ${l.proyectadas} ${l.colorProyectado} con programadas`
+              : `${l.proyectadas} ${l.colorProyectado}`}
           </span>
         ))}
       </div>
@@ -148,7 +153,7 @@ function Tira({ r }) {
             <div style={{ ...detalle, fontWeight: 600 }}>
               ℹ️ {cubiertas.total} localidad{cubiertas.total === 1 ? '' : 'es'} cubierta{cubiertas.total === 1 ? '' : 's'} por Programadas
             </div>
-            <BloqueAvisoPD b={cubiertas} />
+            <BloqueAvisoPD b={cubiertas} cubiertas />
           </div>
         )}
       </div>
