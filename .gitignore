@@ -7,3 +7,9 @@ node_modules/
 
 __pycache__/
 *.pyc
+
+# Archivos sueltos/sensibles que no van al repo
+.env.local.rtf
+Contraseñas.rtf
+Contexto/MAESTRO_TABLERO_COMUNICACION.xlsx
+diff_sms_*.txt

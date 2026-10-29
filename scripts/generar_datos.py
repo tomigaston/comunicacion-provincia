@@ -7,18 +7,26 @@ Uso: python3 scripts/generar_datos.py
 """
 import difflib
 import json
+import os
 import re
 import unicodedata
+from collections import Counter
 from datetime import datetime, date
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTEXTO = ROOT / "contexto"
+CONTEXTO = ROOT / "Contexto"
 DATA_OUT = ROOT / "data"
+# Entregables de control (archivo de filas no procesadas de Pauta Digital).
+# Fuera de public/: Next no la sirve y ninguna api route la lee.
+ENTREGABLES_PD = ROOT / "entregables" / "pauta_digital"
 
-HOY = date.today()
+# Fecha de control ("hoy"). Única forma de fijarla: la variable de entorno
+# PD_FECHA_CONTROL en formato ISO (ej. PD_FECHA_CONTROL=2026-10-24); sin la
+# variable se usa la fecha del día. Ver el manual metodológico de Pauta Digital.
+HOY = date.fromisoformat(os.environ["PD_FECHA_CONTROL"]) if os.environ.get("PD_FECHA_CONTROL") else date.today()
 
 
 def normalizar(s):
@@ -65,29 +73,66 @@ def estado_por_fecha(fecha_fin):
     return "Vigente" if ts.date() >= HOY else "Finalizada"
 
 
+def estado_pauta_digital_desde_crudo(valor_estado_crudo):
+    """Estado expuesto en Pauta Digital (fuente GLOBAL, Pauta RRSS_GLOBAL.xlsx):
+    se toma DIRECTO de la columna ESTADO del crudo, sin inventar categorías
+    propias (regla de negocio 24/09/2026, reemplaza al cálculo viejo por fecha
+    INICIO/FIN y también retira por completo el estado fijo "Pendiente" para
+    piezas sin COD. CONTENIDO/FECHA DE ENVÍO). Mapeo: ACTIVO -> "Vigente",
+    INACTIVO -> "Finalizada", OBSERVADO -> "Observada", PROGRAMADO ->
+    "Programada" (11/10/2026: pieza cargada que todavía no empezó; categoría
+    propia, no se mapea a Vigente ni a Finalizada ni se recalcula por fecha),
+    vacío -> "S/D" (la
+    planilla de origen todavía no calculó ESTADO para esa fila -- no se
+    infiere nada). Cualquier otro valor se muestra TAL CUAL viene en el
+    crudo, sin forzarlo a estas categorías ni descartar la fila."""
+    valor = limpio(valor_estado_crudo)
+    if valor is None:
+        return "S/D"
+    return {
+        "ACTIVO": "Vigente",
+        "INACTIVO": "Finalizada",
+        "OBSERVADO": "Observada",
+        "PROGRAMADO": "Programada",
+    }.get(normalizar(valor), valor)
+
+
+def estado_audiovisual(fecha_inicio, fecha_fin):
+    """Estado de Audiovisuales (11/10/2026), mismo vocabulario que Pauta Digital:
+    INICIO > hoy -> "Programada"; INICIO <= hoy <= FIN -> "Vigente"; FIN < hoy
+    -> "Finalizada"; sin ninguna de las dos fechas -> "S/D". Sin Fecha_Inicio
+    pero con Fecha_Fin se mantiene la lógica anterior por fin (estado_por_fecha).
+    Con Fecha_Inicio <= hoy y sin Fecha_Fin no se infiere nada: "S/D"."""
+    inicio_ts = _a_timestamp(fecha_inicio)
+    fin_ts = _a_timestamp(fecha_fin)
+    if inicio_ts is None and fin_ts is None:
+        return "S/D"
+    if inicio_ts is None:
+        return estado_por_fecha(fin_ts)
+    if inicio_ts.date() > HOY:
+        return "Programada"
+    if fin_ts is None:
+        return "S/D"
+    return estado_por_fecha(fin_ts)
+
+
 def calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja):
     """🟢/🟡/🔴 según antigüedad en días contra los umbrales de Parametros
-    (30/50, confirmados por el gobernador el 31/08/2026). None si no hay
-    antigüedad calculable -- no se inventa un verde por default."""
+    (30/50, confirmados por el gobernador el 31/08/2026). Borde único del
+    tablero (spec 11/10/2026): 0-29 🟢, 30-49 🟡, 50+ 🔴, o sea el umbral
+    cuenta como parte de la banda superior (>=). Es el mismo borde de la
+    planilla de MT ("🟡 hace 30 días", "🔴 hace 50") y de colorFrescura() en
+    lib/semaforo.js. Hoy ninguna carga la llama (MT lee Alerta ya calculada de
+    la planilla; PD alerta por vencimiento en el front): queda como definición
+    de referencia del borde, cubierta por test_pauta_digital.py (caso 14). None si no hay antigüedad calculable -- no se inventa un
+    verde por default."""
     if antiguedad_dias is None or umbral_amarilla is None or umbral_roja is None:
         return None
-    if antiguedad_dias > umbral_roja:
+    if antiguedad_dias >= umbral_roja:
         return "🔴"
-    if antiguedad_dias > umbral_amarilla:
+    if antiguedad_dias >= umbral_amarilla:
         return "🟡"
     return "🟢"
-
-
-def antiguedad_y_alerta_pauta_digital(estado, inicio_ts, umbral_amarilla, umbral_roja):
-    """Pauta Digital no trae Antiguedad_Dias/Alerta precalculados (a diferencia
-    de Medios Tradicionales) -- se calculan acá al vuelo, solo para piezas
-    Vigentes, con los mismos umbrales de Parametros. inicio_ts ya viene resuelto
-    por el caller con el mismo criterio de fallback que FIN/FIN INFORMADO
-    (Inicio real si está cargado, si no Inicio del informe)."""
-    if estado != "Vigente" or inicio_ts is None:
-        return None, None
-    antiguedad_dias = (HOY - inicio_ts.date()).days
-    return antiguedad_dias, calcular_alerta(antiguedad_dias, umbral_amarilla, umbral_roja)
 
 
 def lista_links(v):
@@ -157,14 +202,56 @@ COBERTURA_COLS = {
 }
 
 
+# Cortes de banda de cobertura MT (confirmados 11/10/2026): 1-2 Baja, 3-4
+# Media, 5+ Alta; 0 = Sin. Única fuente de verdad: se exponen en el JSON
+# (`cortes_cobertura`) y el front (grilla, semáforo) NO recalcula bandas, lee
+# `banda_cobertura` / `total_tipos` de cada localidad.
+CORTES_COBERTURA = {"baja_max": 2, "media_max": 4}
+
+
 def banda_cobertura(total_tipos):
     if total_tipos <= 0:
         return "Sin"
-    if total_tipos <= 2:
+    if total_tipos <= CORTES_COBERTURA["baja_max"]:
         return "Baja"
-    if total_tipos <= 4:
+    if total_tipos <= CORTES_COBERTURA["media_max"]:
         return "Media"
     return "Alta"
+
+
+def es_mt_activo(estado):
+    """Predicado único de presencia/cobertura MT (spec 11/10/2026, Regla 3,
+    ajustado): Estado = Activo, nada más. Lo Inactivo no suma. No exige
+    Fecha_Desde: sin fecha de inicio no hay antigüedad que medir (las ALERTAS
+    sí piden Activo + Fecha_Desde), pero el tema está en el aire igual. Las
+    filas Activas sin ninguna fecha entran a `vigentes` con sin_fecha=True
+    (carve-out del 11/10, solo MT); las Inactivas sin fecha se descartan."""
+    return (estado or "").strip().lower() == "activo"
+
+
+def snapshot_anterior_mt(previo, actual):
+    """Foto de cobertura MT de la carga ANTERIOR, para mostrar el movimiento
+    semana a semana (cards de resumen). La hoja Historico del Excel no trae
+    Estado, así que no se puede reconstruir con el mismo predicado de cobertura
+    (Estado=Activo); por eso se guarda en cada carga la banda de cada localidad
+    y la próxima carga la lee. Si la corrida es del MISMO snapshot (reproceso),
+    se conserva la foto anterior que ya traía el JSON. Sin JSON previo o sin
+    semanas cargadas -> None (el front oculta el delta, no inventa un 0)."""
+    if not previo:
+        return None
+    semanas_prev = previo.get("semanas_cargadas") or []
+    semanas_act = actual.get("semanas_cargadas") or []
+    if not semanas_prev or not semanas_act:
+        return None
+    if semanas_prev[-1] == semanas_act[-1]:
+        return previo.get("snapshot_anterior")
+    return {
+        "fecha": semanas_prev[-1],
+        "localidades": {
+            l["localidad"]: {"banda": l["banda_cobertura"], "total_tipos": l["total_tipos"]}
+            for l in previo["localidades"]
+        },
+    }
 
 
 def cargar_medios_tradicionales():
@@ -204,6 +291,20 @@ def cargar_medios_tradicionales():
         tipo_medio = limpio(row["Tipo_Medio"])
         if tipo_medio == "REDES":
             continue
+        # Regla de negocio (Tomás): una fila Inactiva sin Fecha_Desde NI
+        # Fecha_Hasta no se tiene en cuenta para nada. Excepción (11/10/2026,
+        # solo MT): una fila ACTIVA sin ninguna fecha entra como "presente"
+        # (`sin_fecha`: True) y cuenta SOLO para cobertura. Sin fecha no hay
+        # antigüedad que medir: alerta/antiguedad_dias quedan en None y las
+        # excluyen del semáforo, el mail, Campañas/Gantt y la cronología (ver
+        # construir_campanas y lib/semaforo.js). Se listan para el equipo de MT
+        # en Contexto/Medios tradicionales - Activos sin fecha.md (dato de
+        # calidad: no se parchea).
+        fecha_desde = fecha_iso(row["Fecha_Desde"])
+        fecha_hasta = fecha_iso(row["Fecha_Hasta"])
+        sin_fecha = fecha_desde is None and fecha_hasta is None
+        if sin_fecha and not es_mt_activo(limpio(row["Estado"])):
+            continue
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
         # .strip() acá (no en limpio(), que es genérico para todo el pipeline):
         # la fuente puede traer variantes del mismo tema con \n/espacios finales
@@ -219,23 +320,33 @@ def cargar_medios_tradicionales():
             "link_material": limpio(row["Link_Material"]),  # string crudo, se mantiene por compatibilidad
             "links_material": lista_links(row["Link_Material"]),  # lista lista para listar en el front
             "estado": limpio(row["Estado"]),  # Activo / Inactivo
-            "fecha_desde": fecha_iso(row["Fecha_Desde"]),
-            "fecha_hasta": fecha_iso(row["Fecha_Hasta"]),
+            "fecha_desde": fecha_desde,
+            "fecha_hasta": fecha_hasta,
             # Ya calculados en la planilla contra los umbrales de Parametros
-            # (30/50 días) -- Cartelería/Gráfica y parte de Vía Pública
-            # todavía no tienen Fecha_Desde cargada en la fuente, así que
-            # vienen en None (no se inventa un verde por default).
-            "antiguedad_dias": limpio(row["Antiguedad_Dias"]),
-            "alerta": limpio(row["Alerta"]),
+            # (30/50 días). Quedan en None cuando solo hay Fecha_Hasta (no se
+            # inventa un verde por default).
+            "antiguedad_dias": None if sin_fecha else limpio(row["Antiguedad_Dias"]),
+            "alerta": None if sin_fecha else limpio(row["Alerta"]),
+            "sin_fecha": sin_fecha,
         })
 
     localidades = []
     for _, row in cobertura_df.iterrows():
         clave = (normalizar(row["Departamento"]), normalizar(row["Localidad"]))
-        # Total_Tipos/Diagnóstico de la fila cuentan REDES (bug de la planilla,
-        # ver nota de arriba) -- se recalculan acá a partir de los 7 tipos
-        # válidos en vez de confiar en esas dos columnas.
-        cobertura = {clave_json: int(row[col_original]) for col_original, clave_json in COBERTURA_COLS.items()}
+        # La cobertura NO se lee de las columnas de la hoja Cobertura (queda
+        # solo para listar las 60 localidades): se recalcula desde las filas de
+        # Maestro_Vigente que sobreviven al filtro de arriba (REDES y filas
+        # sin ninguna fecha quedan fuera) y cumplen es_mt_activo().
+        # 1 si queda al menos una fila ACTIVA de ese tipo, 0 si no
+        # (es_mt_activo): lo Inactivo no suma.
+        vigentes_loc = vigentes_por_localidad.get(clave, [])
+        tipos_presentes = {
+            v["tipo_medio"] for v in vigentes_loc if es_mt_activo(v["estado"])
+        }
+        cobertura = {
+            clave_json: int(col_original in tipos_presentes)
+            for col_original, clave_json in COBERTURA_COLS.items()
+        }
         total_tipos = sum(cobertura.values())
         localidades.append({
             "departamento": str(row["Departamento"]).strip(),
@@ -243,7 +354,7 @@ def cargar_medios_tradicionales():
             "cobertura": cobertura,
             "total_tipos": total_tipos,
             "banda_cobertura": banda_cobertura(total_tipos),
-            "vigentes": vigentes_por_localidad.get(clave, []),
+            "vigentes": vigentes_loc,
         })
 
     cambios = []
@@ -278,6 +389,7 @@ def cargar_medios_tradicionales():
         # reales -- ver calcular_alerta()).
         "umbral_alerta_amarilla_dias": umbral_amarilla,
         "umbral_alerta_roja_dias": umbral_roja,
+        "cortes_cobertura": CORTES_COBERTURA,
         "localidades": localidades,
     }
     movimientos_semana = {
@@ -295,6 +407,15 @@ def cargar_historico_medios():
     de Maestro_Vigente, que no alcanza para mostrar más de la semana actual)."""
     xls = CONTEXTO / "Medios tradicionales.xlsx"
     historico_df = pd.read_excel(xls, sheet_name="Historico")
+
+    # Misma regla de negocio que en cargar_medios_tradicionales(): una fila sin
+    # Fecha_Desde NI Fecha_Hasta no se tiene en cuenta. Los snapshots anteriores
+    # al esquema con fechas (31/08/2026; ninguna de sus filas trae fechas) se
+    # conservan enteros: aplicarles la regla borraría todo el histórico previo.
+    sin_fechas = historico_df["Fecha_Desde"].isna() & historico_df["Fecha_Hasta"].isna()
+    snapshots_con_fechas = set(historico_df.loc[~sin_fechas, "Fecha_Snapshot"])
+    descartar = sin_fechas & historico_df["Fecha_Snapshot"].isin(snapshots_con_fechas)
+    historico_df = historico_df[~descartar]
 
     por_localidad = {}
     for _, row in historico_df.iterrows():
@@ -408,6 +529,16 @@ ALCANCE_A_TIPO = {
 CORTE_HISTORICO_PAUTA_DIGITAL = "2026-07-02"
 
 
+# sub_ambito del histórico: la fuente vieja nunca expande una pieza a varias
+# localidades, así que el mapeo sale directo de alcance_tipo.
+SUB_AMBITO_HISTORICO = {
+    "localidad": "localidad_directa",
+    "departamento": "departamento",
+    "provincia": "multiple_provincia",
+    None: "sin_ambito",
+}
+
+
 def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
     """Traduce Alcance_Detectado (+ Departamento/Localidad crudos) a
     (en_60_localidades, alcance_tipo) para una fila del histórico (Medios
@@ -445,7 +576,7 @@ def clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60):
     return en_60, ALCANCE_A_TIPO.get(alcance_detectado)
 
 
-def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=None):
+def cargar_pauta_digital_historico(claves_60):
     """Fuente vieja (Meta Ads, Ene-Jul). Esquema propio, se mantiene tal cual
     —no se lo fuerza al esquema nuevo— para todo lo anterior al corte."""
     df = pd.read_excel(CONTEXTO / "Medios Digitales.xlsx", sheet_name="Pauta Digital Curada")
@@ -461,11 +592,6 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
         loc = limpio(row["Localidad"])
         en_60, alcance_tipo = clasificar_alcance_historico(alcance_detectado, depto, loc, claves_60)
         estado = estado_por_fecha(row["Finalización"])
-        # Sin columna "Inicio" propia en esta fuente vieja -- se usa Inicio del
-        # informe como base de antigüedad (ver antiguedad_y_alerta_pauta_digital).
-        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
-            estado, _a_timestamp(row["Inicio del informe"]), umbral_amarilla, umbral_roja
-        )
 
         piezas.append({
             "fuente": "historico",
@@ -476,6 +602,7 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
             "campana": parseo["campana"],
             "alcance_detectado": alcance_detectado,
             "alcance_tipo": alcance_tipo,
+            "sub_ambito": SUB_AMBITO_HISTORICO.get(alcance_tipo),
             "en_60_localidades": en_60,
             "departamento": depto,
             "localidad": loc,
@@ -486,8 +613,6 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
             "fecha_creacion": fecha_iso(row["Fecha de creación"]),
             "finalizacion": finalizacion,
             "estado": estado,
-            "antiguedad_dias": antiguedad_dias,
-            "alerta": alerta,
             "alcance": limpio(row["Alcance"]),
             "frecuencia": limpio(row["Frecuencia"]),
             "impresiones": limpio(row["Impresiones"]),
@@ -512,7 +637,73 @@ def cargar_pauta_digital_historico(claves_60, umbral_amarilla=None, umbral_roja=
 # real de cada pieza.
 
 CODIGO_CIRCUITO_RE = re.compile(r"^\d{3,4}[A-Za-z]?\s*-")
-ALIAS_LOCALIDAD_PAUTA_GLOBAL = {"CORDOBA CAPITAL": "CORDOBA"}
+# Alias de localidad (texto antes de la primera coma de LOCALIDAD / SUBCIRCUITO,
+# normalizado) -> (localidad de las 60, departamento al que se restringe o
+# None). Ningún alias por parecido automático: cada uno lo confirma el usuario.
+#   - "CORDOBA CAPITAL" es CORDOBA (sin restricción).
+#   - "VILLA SANTA ROSA DE RIO" es VILLA SANTA ROSA solo si DEPARTAMENTO es Río
+#     Primero (D2, confirmado para la carga del 23/10/2026).
+ALIAS_LOCALIDAD_PAUTA_GLOBAL = {
+    "CORDOBA CAPITAL": ("CORDOBA", None),
+    "VILLA SANTA ROSA DE RIO": ("VILLA SANTA ROSA", "RIO PRIMERO"),
+}
+
+# Universo del tablero (D1): los cuatro ámbitos que entran. Todo lo demás
+# (localidad fuera de las 60, "TODAS LAS LOCALIDADES" de un departamento sin
+# ninguna de las 60, fuera de Córdoba) queda fuera y se informa en el archivo
+# de filas no procesadas. El ámbito "departamento" ya no existe en la fuente
+# nueva.
+SUB_AMBITOS_UNIVERSO_PAUTA_GLOBAL = ("localidad_directa", "circuito_capital", "multiple_depto", "multiple_provincia")
+# Dirigida = cuenta para la cobertura de una localidad (lib/semaforo.js
+# SUB_AMBITOS_QUE_CUENTAN). La provincial repartida a las 60 no es dirigida.
+SUB_AMBITOS_DIRIGIDOS_PAUTA_GLOBAL = ("localidad_directa", "circuito_capital", "multiple_depto")
+
+# Motivos de fila no procesada, en lenguaje claro para el área (archivo A).
+MOTIVOS_FUERA_PAUTA_GLOBAL = {
+    "fuera_de_cordoba": "DEPARTAMENTO no dice Córdoba: la pieza no es de la provincia. Si era de Córdoba, corregir la columna DEPARTAMENTO.",
+    "localidad_fuera_de_las_60": "La localidad no está entre las 60 localidades del tablero. Si correspondía a una de las 60, escribirla como figura en la lista oficial.",
+    "departamento_sin_localidades_de_las_60": "\"TODAS LAS LOCALIDADES\" de un departamento que no tiene ninguna de las 60 localidades del tablero.",
+    "pendiente_sin_localidad": "LOCALIDAD / SUBCIRCUITO vacía: no se puede ubicar la pieza. Completar la localidad, el circuito o \"TODAS LAS LOCALIDADES\".",
+}
+
+# Columnas de GLOBAL_ImportRange que lee el generador, por nombre EXACTO
+# (con sus espacios). Si falta alguna, la carga se corta diciendo cuál.
+COLUMNA_AUDIENCIA_PAUTA_GLOBAL = "AUDIENCIA  (Barrios o publicos) "
+COLUMNAS_PAUTA_GLOBAL = [
+    "CAMPAÑA", "TITULO DE LA PIEZA", "EJE", "MINISTERIO", "DEPARTAMENTO", "LOCALIDAD / SUBCIRCUITO",
+    COLUMNA_AUDIENCIA_PAUTA_GLOBAL, "COD. CONTENIDO", "PLATAFORMA", "TIPO DE PAUTA", "ORIGEN", "LINK MATERIAL",
+    "URL", "UTM´S", "TIPO DE MATERIAL", "IG", "FB", "YT", "FECHA DE ENVÍO", "INICIO ", "FIN", "ESTADO",
+    "Cobertura Planificada META", "Cobertura Ejecutada META", "Impresiones Planificada META",
+    "Impresiones Ejecutada META", "Frecuencia (Meta) Planificada", "Frecuencia (Meta) Ejecutada",
+    "CPM Planificada META", "CPM Real META", "Visualizaciones Planificadas ", "Visualizaciones Ejecutadas GOOGLE",
+    "CPV Planificada GOOGLE", "CPV Real GOOGLE", "Inversión planificada ", "Inversión ejecutada ", "PROVEEDOR",
+    "Hold rate Ejecutado (Truhplay)",
+]
+# Rango de métricas que se comparan (nunca se suman) entre filas duplicadas.
+PRIMERA_METRICA_PAUTA_GLOBAL = "Cobertura Planificada META"
+ULTIMA_METRICA_PAUTA_GLOBAL = "Hold rate Ejecutado (Truhplay)"
+
+
+def validar_columnas_pauta_global(columnas):
+    """Corta la carga si falta alguna columna que el generador lee, diciendo
+    cuál (y si existe con otros espacios, cómo viene escrita)."""
+    presentes = set(columnas)
+    faltan = [c for c in COLUMNAS_PAUTA_GLOBAL if c not in presentes]
+    if not faltan:
+        return
+    detalle = []
+    for c in faltan:
+        parecidas = [p for p in columnas if normalizar(p) == normalizar(c)]
+        detalle.append(f"{c!r}" + (f" (en la planilla está como {parecidas[0]!r})" if parecidas else ""))
+    raise SystemExit(
+        "Pauta RRSS_GLOBAL.xlsx: falta(n) la(s) columna(s) " + ", ".join(detalle)
+        + " en la hoja GLOBAL_ImportRange. Se corta la carga (los JSON escritos antes de este punto ya se actualizaron)."
+    )
+
+
+def columnas_metricas_pauta_global(columnas):
+    columnas = list(columnas)
+    return columnas[columnas.index(PRIMERA_METRICA_PAUTA_GLOBAL): columnas.index(ULTIMA_METRICA_PAUTA_GLOBAL) + 1]
 
 
 def _departamento_candidato(depto_raw):
@@ -527,50 +718,54 @@ def _departamento_candidato(depto_raw):
     return m.group(2).strip() if m else None
 
 
+def _resolver_alias_localidad(n_candidata, depto_candidato):
+    """Aplica ALIAS_LOCALIDAD_PAUTA_GLOBAL respetando su restricción de
+    departamento. Devuelve (localidad normalizada, alias aplicado o None)."""
+    alias = ALIAS_LOCALIDAD_PAUTA_GLOBAL.get(n_candidata)
+    if alias is None:
+        return n_candidata, None
+    destino, solo_en_depto = alias
+    if solo_en_depto is not None and normalizar(depto_candidato) != solo_en_depto:
+        return n_candidata, None
+    return destino, n_candidata
+
+
 def clasificar_geografia_pauta_global(
     depto_raw, loc_raw, localidades_60_normalizadas, departamento_a_localidades_normalizadas
 ):
-    """Reglas de clasificación de LOCALIDAD / SUBCIRCUITO, en este orden:
-    1) DEPARTAMENTO sin "CÓRDOBA" (ej. Santa Fe, Entre Ríos) -> excluida.
-    2) Código de subcircuito de Capital (ej. "010A - CABILDO") -> localidad
-       Córdoba (Capital no distingue circuito en este tablero).
-    3) "TODAS LAS LOCALIDADES" con un DEPARTAMENTO puntual (ej. "DEPARTAMENTO
-       RIO CUARTO, PROVINCIA DE CÓRDOBA, ARGENTINA") -> ámbito
-       "localidad_multiple": la pieza no es de alcance provincial, es ese
-       Departamento entero -> se resuelve a la lista de sus localidades
-       dentro de las 60 (Localidades(1).xlsx) y el caller genera una fila de
-       salida por cada una, con las métricas completas (sin dividir) en
-       todas. Si el Departamento no tiene ninguna de las 60 -> no hay nada
-       que expandir, cae al mismo fallback que el punto 4 (ámbito
-       departamento, sin crear Localidad nueva).
-       "TODAS LAS LOCALIDADES" SIN un Departamento puntual (DEPARTAMENTO =
-       "PROVINCIA DE CÓRDOBA, ARGENTINA", la provincia entera) -> mismo
-       patrón que el caso anterior pero con las 60 localidades completas
-       (no hay un Departamento puntual contra el cual acotar): también
-       ámbito "localidad_multiple", con las métricas completas replicadas
-       en las 60, sin prorratear.
-    4) "X, DEPARTAMENTO, PROVINCIA..." -> candidata = texto antes de la
-       primera coma; si matchea una de las 60 -> ámbito localidad; si no
-       -> fallback a ámbito departamento (NO se crea localidad nueva; sirve
-       solo como etiqueta para la pestaña propia de Pauta Digital y Campañas,
-       nunca atribuye la pieza a ningún panel de Localidad).
-    5) Vacío (sin Localidad puntual) -> ámbito=None, sin excepciones. Regla
-       fija del proyecto: una pieza se atribuye a una Localidad SOLO si su
-       Localidad puntual es una de las 60 — ya no hay fallback a Departamento
-       acá (antes lo había; se sacó a propósito).
-    Devuelve localidad/departamento en forma NORMALIZADA (sin tildes,
-    mayúscula) — el caller la resuelve a la forma oficial de Localidades(1).
-    """
-    if "CORDOBA" not in normalizar(depto_raw):
-        return {"excluida": True}
-
+    """Geografía de una fila de GLOBAL_ImportRange (D1, 26/10/2026). Mira solo
+    DEPARTAMENTO (E) y LOCALIDAD / SUBCIRCUITO (F), en este orden:
+    1) E sin "CÓRDOBA" -> fuera (fuera_de_cordoba).
+    2) F vacío -> pendiente (pendiente_sin_localidad): no hay con qué ubicarla.
+    3) F empieza con un código de subcircuito de Capital (3-4 dígitos, letra
+       opcional y guion, ej. "010A - CABILDO") -> CORDOBA (circuito_capital).
+    4) F = "TODAS LAS LOCALIDADES" (literal, en mayúsculas):
+       - E con un departamento puntual que tiene localidades de las 60 -> una
+         pieza por cada una de esas localidades (multiple_depto);
+       - E con un departamento puntual SIN ninguna de las 60 -> fuera
+         (departamento_sin_localidades_de_las_60);
+       - E sin departamento puntual (provincia entera) -> una pieza en cada
+         una de las 60 (multiple_provincia).
+    5) Texto de F antes de la primera coma, normalizado y con
+       ALIAS_LOCALIDAD_PAUTA_GLOBAL aplicado: si es una de las 60 -> esa
+       localidad (localidad_directa); si no -> fuera (localidad_fuera_de_las_60).
+       Nunca se crea una localidad nueva ni se atribuye al departamento.
+    Las filas que entran traen `excluida=False` y `sub_ambito`; las que no,
+    `excluida=True` y `motivo` (clave de MOTIVOS_FUERA_PAUTA_GLOBAL).
+    Localidad/departamento vuelven NORMALIZADOS (el caller los resuelve a la
+    forma oficial de Localidades(1).xlsx)."""
     depto_candidato = _departamento_candidato(depto_raw)
-    loc_str = None if (loc_raw is None or (isinstance(loc_raw, float) and pd.isna(loc_raw))) else str(loc_raw).strip()
+    if "CORDOBA" not in normalizar(depto_raw):
+        return {"excluida": True, "motivo": "fuera_de_cordoba", "departamento": depto_candidato}
 
-    if loc_str and CODIGO_CIRCUITO_RE.match(loc_str):
+    loc_str = None if (loc_raw is None or (isinstance(loc_raw, float) and pd.isna(loc_raw))) else str(loc_raw).strip()
+    if not loc_str:
+        return {"excluida": True, "motivo": "pendiente_sin_localidad", "departamento": depto_candidato}
+
+    if CODIGO_CIRCUITO_RE.match(loc_str):
         return {
             "excluida": False, "ambito": "localidad", "localidad": "CORDOBA",
-            "departamento": None, "circuito_codigo_original": loc_str,
+            "circuito_codigo_original": loc_str, "sub_ambito": "circuito_capital", "alias_aplicado": None,
         }
 
     if loc_str == "TODAS LAS LOCALIDADES":
@@ -578,29 +773,26 @@ def clasificar_geografia_pauta_global(
             localidades_del_depto = departamento_a_localidades_normalizadas.get(normalizar(depto_candidato), [])
             if localidades_del_depto:
                 return {
-                    "excluida": False, "ambito": "localidad_multiple",
-                    "localidades": localidades_del_depto, "departamento": None,
+                    "excluida": False, "ambito": "localidad_multiple", "localidades": localidades_del_depto,
+                    "sub_ambito": "multiple_depto", "alias_aplicado": None,
                 }
-            return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
+            return {"excluida": True, "motivo": "departamento_sin_localidades_de_las_60", "departamento": depto_candidato}
         return {
-            "excluida": False, "ambito": "localidad_multiple",
-            "localidades": sorted(localidades_60_normalizadas), "departamento": None,
+            "excluida": False, "ambito": "localidad_multiple", "localidades": sorted(localidades_60_normalizadas),
+            "sub_ambito": "multiple_provincia", "alias_aplicado": None,
         }
 
-    if loc_str:
-        candidata = loc_str.split(",")[0].strip()
-        n_candidata = normalizar(candidata)
-        n_candidata = ALIAS_LOCALIDAD_PAUTA_GLOBAL.get(n_candidata, n_candidata)
-        if n_candidata in localidades_60_normalizadas:
-            return {"excluida": False, "ambito": "localidad", "localidad": n_candidata, "departamento": None}
-        # Existe pero no es una de las 60 -> fallback a Departamento, regla
-        # fija del proyecto: nunca se crea una localidad nueva.
-        return {"excluida": False, "ambito": "departamento", "localidad": None, "departamento": depto_candidato}
-
-    # Sin Localidad puntual (loc_str vacío): ya no hay fallback a
-    # Departamento. Regla sin excepciones: ámbito=None, la pieza no se
-    # atribuye a ninguna Localidad.
-    return {"excluida": False, "ambito": None, "localidad": None, "departamento": None}
+    candidata = loc_str.split(",")[0].strip()
+    n_candidata, alias_aplicado = _resolver_alias_localidad(normalizar(candidata), depto_candidato)
+    if n_candidata in localidades_60_normalizadas:
+        return {
+            "excluida": False, "ambito": "localidad", "localidad": n_candidata,
+            "sub_ambito": "localidad_directa", "alias_aplicado": alias_aplicado,
+        }
+    return {
+        "excluida": True, "motivo": "localidad_fuera_de_las_60", "departamento": depto_candidato,
+        "localidad_texto": candidata,
+    }
 
 
 def elegir_forma_canonica(variantes):
@@ -621,9 +813,9 @@ def elegir_forma_canonica(variantes):
 def construir_mapa_formas_canonicas(serie):
     """Agrupa los valores de una columna por su forma normalizada (sin
     tildes/mayúscula) y elige una forma canónica por grupo — usado para
-    CAMPAÑA, PLATAFORMA y TIPO DE PAUTA, que traen las mismas variantes de
-    mayúsculas/tildes para un mismo valor (ej. "Meta"/"META", "Dark
-    Post"/"DARK POST")."""
+    MOSTRAR CAMPAÑA, PLATAFORMA y TIPO DE PAUTA, que traen las mismas
+    variantes de mayúsculas/tildes para un mismo valor (ej. "Meta"/"META",
+    "Dark Post"/"DARK POST"). No entra en la clave de duplicados (D4)."""
     grupos = {}
     for texto, cantidad in serie.dropna().value_counts().items():
         grupos.setdefault(normalizar(texto), []).append((texto, cantidad))
@@ -645,35 +837,26 @@ def limpiar_link(v):
     return s
 
 
-def _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial):
-    """Traduce un `geo` de clasificar_geografia_pauta_global() a la lista de
-    asignaciones (Localidad, Departamento) en forma OFICIAL que la fila de
-    Pauta RRSS_GLOBAL debe producir. Normalmente es una sola asignación (una
-    fila fuente = una pieza); para ambito="localidad_multiple" ("TODAS LAS
-    LOCALIDADES" + un Departamento puntual, ver clasificar_geografia_pauta_global)
-    es una asignación POR CADA Localidad de las 60 que cae en ese
-    Departamento — de ahí sale la fila de salida por Localidad que pide el
-    proyecto, con localidad_asignada seteada explícitamente (no re-derivada
-    por texto: viene directo de Localidades(1).xlsx, no de un nuevo match de
-    string)."""
+def _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento_oficial):
+    """Traduce un `geo` de clasificar_geografia_pauta_global() (que entra al
+    universo) a la lista de asignaciones (Localidad, Departamento) en forma
+    OFICIAL: una para ambito="localidad", una POR CADA localidad de las 60
+    alcanzada para ambito="localidad_multiple" (localidad_asignada viene de
+    Localidades(1).xlsx, no de un nuevo match de texto)."""
     if geo["ambito"] == "localidad":
-        localidad = localidad_a_oficial[geo["localidad"]]
-        departamento = localidad_a_departamento_oficial[geo["localidad"]]
-        return [{"localidad": localidad, "departamento": departamento, "localidad_asignada": localidad}]
-    if geo["ambito"] == "localidad_multiple":
-        asignaciones = []
-        for n_loc in geo["localidades"]:
-            localidad = localidad_a_oficial[n_loc]
-            asignaciones.append({
-                "localidad": localidad,
-                "departamento": localidad_a_departamento_oficial[n_loc],
-                "localidad_asignada": localidad,
-            })
-        return asignaciones
-    if geo["ambito"] == "departamento":
-        departamento = deptos_a_oficial.get(normalizar(geo["departamento"]), geo["departamento"])
-        return [{"localidad": None, "departamento": departamento, "localidad_asignada": None}]
-    return [{"localidad": None, "departamento": None, "localidad_asignada": None}]
+        n_locs = [geo["localidad"]]
+    elif geo["ambito"] == "localidad_multiple":
+        n_locs = geo["localidades"]
+    else:
+        raise ValueError(f"ámbito fuera del universo: {geo!r}")
+    return [
+        {
+            "localidad": localidad_a_oficial[n_loc],
+            "departamento": localidad_a_departamento_oficial[n_loc],
+            "localidad_asignada": localidad_a_oficial[n_loc],
+        }
+        for n_loc in n_locs
+    ]
 
 
 def _fila_real_pauta_global(row):
@@ -683,98 +866,117 @@ def _fila_real_pauta_global(row):
     return limpio(row["CAMPAÑA"]) is not None or limpio(row["TITULO DE LA PIEZA"]) is not None
 
 
+def clave_dedup_pauta_global(campana, titulo, plataforma, localidad_asignada, inicio_iso, fin_iso,
+                             link_material, tipo_material, audiencia):
+    """Clave de duplicados (D4, 26/10/2026), evaluada por ENTRADA (después de
+    repartir la geografía). Texto normalizado (sin espacios al principio/
+    final, espacios repetidos a uno, mayúsculas, sin tildes); fechas como
+    fecha ISO; vacío coincide con vacío. CAMPAÑA y PLATAFORMA van crudas
+    normalizadas (no la forma canónica de visualización). COD. CONTENIDO no
+    entra (D3: es solo informativo)."""
+    return (
+        normalizar(campana), normalizar(titulo), normalizar(plataforma), localidad_asignada,
+        inicio_iso, fin_iso, normalizar(link_material), normalizar(tipo_material), normalizar(audiencia),
+    )
+
+
+def clave_freno_pauta_global(campana, titulo):
+    """Clave del freno de bajas (D5): CAMPAÑA + TITULO normalizados."""
+    return (normalizar(campana), normalizar(titulo))
+
+
 def _gana_pieza(candidata, actual):
     """True si `candidata` debe reemplazar a `actual` como ganadora de su
-    clave de dedup. Orden de criterios (confirmado 06/09/2026, reemplaza al
-    criterio viejo de "se queda la primera vista"):
+    clave de duplicados. Orden de criterios:
+    0) (B2, 26/10/2026) Entre una entrada DIRIGIDA y una provincial repartida
+       a las 60 en la misma localidad, gana la dirigida.
     1) FECHA DE ENVÍO más reciente gana. None cuenta como la más vieja
        posible (pierde contra cualquier fecha real).
     2) Si empatan en fecha (incluido el caso de ambas None), gana la que
        tenga ESTADO=ACTIVO en el excel crudo, contra cualquier otro valor.
     3) Si siguen empatadas, se queda `actual` (la primera vista en orden de
        aparición) -- desempate determinístico, no se reemplaza.
+    Las métricas nunca se suman: se conserva la entrada ganadora tal cual.
 
     Usa .get() con default: piezas sintéticas de test que no seteen estas
-    claves internas (ej. CASO 9 de test_pauta_digital.py) valen como
-    fecha=None/estado_activo=False, así no cambia el desempate 3 para ellas."""
-    ts_candidata = candidata.get("_dedup_fecha_envio_ts")
-    ts_actual = actual.get("_dedup_fecha_envio_ts")
-    if ts_candidata != ts_actual:
-        if ts_actual is None:
-            return True
-        if ts_candidata is None:
-            return False
-        return ts_candidata > ts_actual
-    if candidata.get("_dedup_estado_activo", False) != actual.get("_dedup_estado_activo", False):
-        return candidata.get("_dedup_estado_activo", False)
-    return False
+    claves internas valen como no dirigida, fecha=None y estado_activo=False."""
+    criterio = _criterio_desempate(candidata, actual)
+    return criterio is not None and criterio[0]
 
 
-def _dedup_pauta_global_por_cod_contenido(piezas):
-    """Corre DESPUÉS de expandir "TODAS LAS LOCALIDADES" + Departamento en una
-    fila por Localidad (nunca antes: antes de expandir no existen todavía los
-    localidad_asignada por los que se agrupa acá). Si dos piezas comparten
-    COD. CONTENIDO Y la misma clave (Campaña, Título, localidad_asignada), son
-    la misma pieza contada dos veces para esa Localidad —típicamente porque
-    además de su fila "TODAS LAS LOCALIDADES"+Departamento (que ya la expande
-    a esa Localidad) esa pieza también tiene una fila propia apuntando
-    directo a esa misma Localidad— y se descarta la repetición para no
-    duplicar métricas ahí. COD. CONTENIDO por sí solo NO alcanza como clave:
-    se reutiliza entre piezas distintas (mismo código, Campaña/Título
-    distintos) en los datos reales, así que sin el resto de la clave se
-    fusionarían piezas que no son la misma. Piezas sin COD. CONTENIDO (None)
-    nunca se descartan acá: no hay con qué agruparlas de forma confiable.
+def _criterio_desempate(a, b):
+    """(gana_a, nombre del criterio) para la primera regla de _gana_pieza()
+    que distingue a `a` de `b`; None si empatan en todo (gana la primera)."""
+    dir_a, dir_b = a.get("_dedup_dirigida", False), b.get("_dedup_dirigida", False)
+    if dir_a != dir_b:
+        return dir_a, "entrada dirigida antes que provincial repartida"
+    ts_a, ts_b = a.get("_dedup_fecha_envio_ts"), b.get("_dedup_fecha_envio_ts")
+    if ts_a != ts_b:
+        if ts_b is None:
+            return True, "FECHA DE ENVÍO más reciente"
+        if ts_a is None:
+            return False, "FECHA DE ENVÍO más reciente"
+        return ts_a > ts_b, "FECHA DE ENVÍO más reciente"
+    act_a, act_b = a.get("_dedup_estado_activo", False), b.get("_dedup_estado_activo", False)
+    if act_a != act_b:
+        return act_a, "ESTADO=ACTIVO"
+    return None
 
-    Entre las filas que comparten clave, la ganadora se elige con
-    _gana_pieza() (ver ahí el criterio: FECHA DE ENVÍO más reciente, tiebreak
-    ESTADO=ACTIVO, tiebreak final la primera en orden de aparición) --
-    criterio confirmado 06/09/2026, reemplaza al anterior de "se queda la
-    primera vista sin mirar fecha ni estado"."""
+
+def motivo_desempate(ganadora, descartada):
+    criterio = _criterio_desempate(ganadora, descartada)
+    return "primera de la planilla" if criterio is None else criterio[1]
+
+
+def _dedup_pauta_global(piezas):
+    """Duplicados (D4 + B2). Corre DESPUÉS de repartir la geografía: dos
+    entradas son la misma pieza si comparten clave_dedup_pauta_global()
+    (`_dedup_clave`). Entre las que comparten clave queda una, elegida con
+    _gana_pieza(); las métricas no se suman. Una entrada sin clave (piezas
+    sintéticas de test) nunca se descarta.
+    Devuelve (piezas que quedan, en orden de primera aparición de su clave;
+    lista de (descartada, ganadora) para el archivo de filas no procesadas)."""
     ganadoras = {}
+    grupos = {}
     orden = []
-    sin_cod = []
-    descartadas = 0
     for pieza in piezas:
-        cod = pieza.get("cod_contenido")
-        if cod is None:
-            sin_cod.append(pieza)
-            continue
-        clave = (cod, pieza["campana"], pieza["titulo_pieza"], pieza["localidad_asignada"])
+        clave = pieza.get("_dedup_clave")
+        if clave is None:
+            clave = ("__sin_clave__", id(pieza))
         if clave not in ganadoras:
             ganadoras[clave] = pieza
+            grupos[clave] = [pieza]
             orden.append(clave)
             continue
-        descartadas += 1
+        grupos[clave].append(pieza)
         if _gana_pieza(pieza, ganadoras[clave]):
             ganadoras[clave] = pieza
+    resultado = [ganadoras[clave] for clave in orden]
+    descartes = [
+        (p, ganadoras[clave]) for clave in orden for p in grupos[clave] if p is not ganadoras[clave]
+    ]
+    return resultado, descartes
 
-    resultado = sin_cod + [ganadoras[clave] for clave in orden]
-    for pieza in resultado:
-        pieza.pop("_dedup_fecha_envio_ts", None)
-        pieza.pop("_dedup_estado_activo", None)
-    return resultado, descartadas
+
+def _limpiar_internos(pieza):
+    for k in [k for k in pieza if k.startswith("_")]:
+        pieza.pop(k)
+    return pieza
 
 
-def cargar_pauta_digital_global(
-    localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial, departamento_a_localidades_normalizadas,
-    umbral_amarilla=None, umbral_roja=None,
-):
+def cargar_pauta_digital_global(localidad_a_oficial, localidad_a_departamento_oficial,
+                                departamento_a_localidades_normalizadas):
     """Fuente nueva, reemplaza a Medios Digitales.xlsx de acá en adelante
     (desde el 3/7/2026). No se fuerza al esquema del histórico —Planificado/
-    Ejecutado quedan separados por plataforma (Meta/Google), ver Tarea 5."""
-    df_crudo = pd.read_excel(CONTEXTO / "Pauta RRSS_GLOBAL.xlsx", sheet_name="GLOBAL_ImportRange")
+    Ejecutado quedan separados por plataforma (Meta/Google), ver Tarea 5.
+    Devuelve (piezas finales, control) — `control` trae todo lo necesario para
+    el archivo de filas no procesadas y el cuadre (ver escribir_no_procesadas_pauta_digital())."""
+    ruta = CONTEXTO / "Pauta RRSS_GLOBAL.xlsx"
+    df_crudo = pd.read_excel(ruta, sheet_name="GLOBAL_ImportRange")
+    validar_columnas_pauta_global(list(df_crudo.columns))
     mascara_real = df_crudo.apply(_fila_real_pauta_global, axis=1)
-    df = df_crudo[mascara_real].reset_index(drop=True)
-    metricas = {
-        "filas_totales": len(df_crudo),
-        "filas_descartadas": len(df_crudo) - len(df),
-        "filas_reales": len(df),
-        # A nivel de fila real (antes de excluir por fuera de provincia o
-        # expandir geografía) -- consistente con "Códigos únicos con COD.
-        # CONTENIDO" más abajo, que también se cuenta sobre df completo.
-        "filas_con_cod_contenido": int(df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None).sum()),
-        "filas_pendientes": 0,
-    }
+    df = df_crudo[mascara_real]
+    columnas_metricas = columnas_metricas_pauta_global(df_crudo.columns)
 
     localidades_60_normalizadas = set(localidad_a_oficial.keys())
     mapa_campanas = construir_mapa_formas_canonicas(df["CAMPAÑA"])
@@ -782,109 +984,70 @@ def cargar_pauta_digital_global(
     mapa_tipos_pauta = construir_mapa_formas_canonicas(df["TIPO DE PAUTA"])
 
     piezas = []
-    excluidas = 0
-    claves_pendientes_vistas = {}
-    for _, row in df.iterrows():
+    fuera = []
+    alias_aplicados = []
+    for idx, row in df.iterrows():
+        fila = int(idx) + 2  # nº de fila en la planilla (encabezado en la fila 1)
         geo = clasificar_geografia_pauta_global(
             row["DEPARTAMENTO"], row["LOCALIDAD / SUBCIRCUITO"],
             localidades_60_normalizadas, departamento_a_localidades_normalizadas,
         )
         if geo["excluida"]:
-            excluidas += 1
+            fuera.append({
+                "fila": fila, "motivo": geo["motivo"], "campana": limpio(row["CAMPAÑA"]),
+                "titulo": limpio(row["TITULO DE LA PIEZA"]), "localidad": limpio(row["LOCALIDAD / SUBCIRCUITO"]),
+                "departamento": limpio(row["DEPARTAMENTO"]), "departamento_candidato": geo.get("departamento"),
+                "localidad_texto": geo.get("localidad_texto"), "estado": limpio(row["ESTADO"]),
+            })
             continue
+        if geo.get("alias_aplicado"):
+            alias_aplicados.append({"fila": fila, "alias": geo["alias_aplicado"],
+                                    "localidad_texto": str(row["LOCALIDAD / SUBCIRCUITO"]).split(",")[0].strip(),
+                                    "localidad": localidad_a_oficial[geo["localidad"]], "estado": limpio(row["ESTADO"])})
 
-        asignaciones = _asignaciones_geograficas(
-            geo, localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial
-        )
-        # ambito="localidad_multiple" es el único caso con más de una
-        # asignación: todas las demás (localidad / departamento / None)
-        # siguen siendo, como antes, una sola pieza por fila fuente.
-        ambito_pieza = "localidad" if geo["ambito"] == "localidad_multiple" else geo["ambito"]
-        cod_contenido = limpio(row["COD. CONTENIDO"])
+        asignaciones = _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento_oficial)
+        cod_contenido = limpio(row["COD. CONTENIDO"])  # D3: solo informativo
         fecha_envio = fecha_iso(row["FECHA DE ENVÍO"])
-        # Timestamp completo (no solo la fecha) y ESTADO crudo, usados
-        # únicamente por _dedup_pauta_global_por_cod_contenido() para elegir
-        # entre filas duplicadas -- ver ese criterio ahí. Se descartan del
-        # dict antes de devolver la pieza final (no forman parte del esquema
-        # de salida ni de campanas.json).
+        # Internos de la elección entre duplicados (se sacan antes de devolver).
         _dedup_fecha_envio_ts = _a_timestamp(row["FECHA DE ENVÍO"])
         _dedup_estado_activo = normalizar(limpio(row["ESTADO"])) == "ACTIVO"
-
-        # Piezas cargadas pero nunca despachadas: sin COD. CONTENIDO ni FECHA
-        # DE ENVÍO no hay con qué calcular vigencia/finalización real (la
-        # regla existente de "codigo_pieza null -> usar COD. CONTENIDO como
-        # key" no alcanza acá porque ambos son null). Se incluyen igual, con
-        # estado fijo "Pendiente", identificadas puntualmente por TITULO +
-        # LOCALIDAD/SUBCIRCUITO + PLATAFORMA + OBJETIVO DE CAMPAÑA + DEPARTAMENTO
-        # (agregado este último el 13/09/2026: una pieza "TODAS LAS
-        # LOCALIDADES" puede venir desagregada en una fila POR DEPARTAMENTO,
-        # cada una con su propio Universo/métricas planificadas -- igual que
-        # ya pasa con piezas no-Pendiente, donde _asignaciones_geograficas()
-        # expande cada fila "TODAS LAS LOCALIDADES"+Departamento a las
-        # localidades de las 60 que caen en ese departamento. Sin Departamento
-        # en la key, esas filas -legítimamente distintas y sin superposición
-        # una vez expandidas a Localidad- se veían como duplicadas. OBJETIVO
-        # DE CAMPAÑA se agregó antes porque dos piezas Pendiente pueden
-        # compartir título/localidad/plataforma y diferir solo en el objetivo
-        # planificado — ej. "Nos vemos en la Plaza Prussia" en Meta con
-        # Alcance vs. Visualizaciones. Si dos colisionaran igual con esta key,
-        # se corta la corrida: sería una pieza Pendiente perdida en silencio.
-        es_pendiente = cod_contenido is None and fecha_envio is None
-        if es_pendiente:
-            metricas["filas_pendientes"] += 1
-            clave_pendiente = (
-                limpio(row["TITULO DE LA PIEZA"]),
-                limpio(row["LOCALIDAD / SUBCIRCUITO"]),
-                limpio(row["PLATAFORMA"]),
-                limpio(row["OBJETIVO DE CAMPAÑA"]),
-                limpio(row["DEPARTAMENTO"]),
-            )
-            if clave_pendiente in claves_pendientes_vistas:
-                raise SystemExit(
-                    "Colisión de key compuesta entre dos filas 'Pendiente' "
-                    f"(fila actual y fila {claves_pendientes_vistas[clave_pendiente]}): {clave_pendiente}. "
-                    "Deteniendo la corrida -- revisar antes de seguir."
-                )
-            claves_pendientes_vistas[clave_pendiente] = row.name
+        _dedup_dirigida = geo["sub_ambito"] in SUB_AMBITOS_DIRIGIDOS_PAUTA_GLOBAL
 
         link_material = limpiar_link(row["LINK MATERIAL"])
         link_ig = limpiar_link(row["IG"])
         link_fb = limpiar_link(row["FB"])
         link_yt = limpiar_link(row["YT"])
-        # Columna nueva del export (carga del 06/09/2026): landing page con
-        # UTMs a la que apunta la pauta -- distinta de LINK MATERIAL (el
-        # Drive con la pieza creativa). Campo separado, mismo patrón que
-        # IG/FB/YT: no se mezcla con link_material/links_material.
-        # UTM´S como fallback de URL: confirmado el 06/09/2026 que las dos
-        # columnas traen el link real en forma mutuamente excluyente (0
-        # filas con las dos a la vez) -- 82 filas lo traen en URL, 566 en
-        # UTM´S (que para esas filas SÍ es un link real a pesar del nombre
-        # de la columna, no una query de UTMs suelta) y en las 277 filas
-        # donde URL trae basura (un string de plantilla de UTMs sin http,
-        # siempre el mismo valor) el link real está en UTM´S. Sin este
-        # fallback quedaban 277+289=566 links reales sin capturar.
+        # UTM´S como fallback de URL: las dos columnas traen el link real en
+        # forma mutuamente excluyente (0 filas con las dos a la vez).
         link_destino = limpiar_link(row["URL"]) or limpiar_link(row["UTM´S"])
 
         campana = _forma_canonica(mapa_campanas, limpio(row["CAMPAÑA"]))
         plataforma = _forma_canonica(mapa_plataformas, limpio(row["PLATAFORMA"]))
         tipo_pauta = _forma_canonica(mapa_tipos_pauta, limpio(row["TIPO DE PAUTA"]))
 
-        # FIN INFORMADO como fallback de FIN: hay filas que todavía no tienen
-        # FIN real cargado pero sí traen la fecha comprometida en FIN
-        # INFORMADO -> se usa esa para no dejar la pieza sin fecha de fin ni
-        # estado. Nunca se usa la columna ESTADO cruda del excel (criterio
-        # fijo del proyecto).
+        # ESTADO directo de la columna ESTADO (regla 24/09/2026). INICIO/FIN
+        # siempre de las columnas "INICIO "/"FIN", sin fallback a INICIO/FIN
+        # INFORMADO. La alerta de PD se resuelve en el front (lib/semaforo.js).
+        inicio_ts = _a_timestamp(row["INICIO "])
         fin_ts = _a_timestamp(row["FIN"])
-        if fin_ts is None:
-            fin_ts = _a_timestamp(row["FIN INFORMADO"])
-        estado_pieza = "Pendiente" if es_pendiente else estado_por_fecha(fin_ts)
-        antiguedad_dias, alerta = antiguedad_y_alerta_pauta_digital(
-            estado_pieza, _a_timestamp(row["INICIO "]), umbral_amarilla, umbral_roja
+        estado_pieza = estado_pauta_digital_desde_crudo(row["ESTADO"])
+        # Informativo, congelado a la fecha de generación (ningún consumidor
+        # lo lee: front y mail evalúan esPiezaPDViva contra la fecha de hoy).
+        vigente_por_fecha = (
+            inicio_ts is not None and fin_ts is not None
+            and inicio_ts.date() <= HOY <= fin_ts.date()
         )
 
         for asignacion in asignaciones:
             piezas.append({
                 "fuente": "global",
+                "_fila": fila,
+                "_dedup_clave": clave_dedup_pauta_global(
+                    row["CAMPAÑA"], row["TITULO DE LA PIEZA"], row["PLATAFORMA"], asignacion["localidad_asignada"],
+                    fecha_iso(inicio_ts), fecha_iso(fin_ts), row["LINK MATERIAL"], row["TIPO DE MATERIAL"],
+                    row[COLUMNA_AUDIENCIA_PAUTA_GLOBAL],
+                ),
+                "_dedup_dirigida": _dedup_dirigida,
                 "_dedup_fecha_envio_ts": _dedup_fecha_envio_ts,
                 "_dedup_estado_activo": _dedup_estado_activo,
                 "codigo_pieza": None,
@@ -894,24 +1057,15 @@ def cargar_pauta_digital_global(
                 "area_tematica": limpio(row["EJE"]),
                 "ministerio": limpio(row["MINISTERIO"]),
                 "campana": campana,
-                "alcance_detectado": {"localidad": "LOCALIDAD", "departamento": "DEPARTAMENTO", "provincia": "PROVINCIA"}.get(ambito_pieza),
-                "alcance_tipo": ambito_pieza,
-                # Regla sin excepciones (igual que clasificar_alcance_historico() para la
-                # fuente vieja): en_60_localidades es True SOLO si la pieza tiene una
-                # Localidad puntual de las 60 (ambito=localidad, incluye las expandidas
-                # desde "TODAS LAS LOCALIDADES"+Departamento) o es de alcance provincial
-                # (ambito=provincia, aplica al universo entero por definición). ambito=
-                # departamento NO cuenta como "en las 60 localidades" —el dato ya viene
-                # acotado a un Departamento, sin Localidad puntual, así que no se atribuye
-                # a ninguna Localidad— y ambito=None tampoco.
-                "en_60_localidades": ambito_pieza in ("localidad", "provincia"),
+                "alcance_detectado": "LOCALIDAD",
+                # Toda pieza de la fuente nueva tiene una localidad de las 60
+                # (D1): alcance_tipo "localidad" y en_60_localidades True. Si
+                # cuenta o no para la cobertura lo dice sub_ambito.
+                "alcance_tipo": "localidad",
+                "sub_ambito": geo["sub_ambito"],
+                "en_60_localidades": True,
                 "departamento": asignacion["departamento"],
                 "localidad": asignacion["localidad"],
-                # Explícita para las piezas expandidas por Departamento (y, por
-                # consistencia de esquema, también para el resto): NO se re-deriva
-                # por texto en ningún punto posterior (construir_campanas() y el
-                # dedup de más abajo la toman tal cual). None si la pieza no tiene
-                # Localidad puntual (ambito departamento/provincia/None).
                 "localidad_asignada": asignacion["localidad_asignada"],
                 "circuito_codigo_original": geo.get("circuito_codigo_original"),
                 "barrio": None,
@@ -925,13 +1079,8 @@ def cargar_pauta_digital_global(
                 "fin_informe": None,
                 "fecha_creacion": fecha_envio,
                 "finalizacion": fecha_iso(fin_ts),
-                # Pendiente sin excepciones: no se deriva de FIN/FIN INFORMADO
-                # (podrían traer una fecha comprometida que todavía no pasó
-                # nada) ni entra en los cálculos de vigencia/finalización del
-                # resto del pipeline -- construir_campanas() las excluye.
                 "estado": estado_pieza,
-                "antiguedad_dias": antiguedad_dias,
-                "alerta": alerta,
+                "vigente_por_fecha": vigente_por_fecha,
                 "alcance": None,
                 "frecuencia": None,
                 "impresiones": None,
@@ -947,9 +1096,7 @@ def cargar_pauta_digital_global(
                 "cpm_real_meta": limpio(row["CPM Real META"]),
                 # La columna se llamaba "Visualizaciones Planificadas GOOGLE"; el
                 # export del 31/08/2026 la renombró a "Visualizaciones Planificadas "
-                # (perdió el sufijo GOOGLE, quedó con espacio final) al sumar nuevas
-                # columnas de métricas de Google (Impresiones/CPM/Vistas GOOGLE, etc.)
-                # que todavía no se mapean a ningún campo del JSON -- ver prompt del 31/08.
+                # (perdió el sufijo GOOGLE, quedó con espacio final).
                 "visualizaciones_planificadas_google": limpio(row["Visualizaciones Planificadas "]),
                 "visualizaciones_ejecutadas_google": limpio(row["Visualizaciones Ejecutadas GOOGLE"]),
                 "cpv_planificada_google": limpio(row["CPV Planificada GOOGLE"]),
@@ -969,12 +1116,167 @@ def cargar_pauta_digital_global(
                 "links_material": [l for l in (link_material, link_ig, link_fb, link_yt) if l],
             })
 
-    piezas, descartadas_dedup = _dedup_pauta_global_por_cod_contenido(piezas)
-    metricas["codigos_unicos_con_cod_contenido"] = int(
-        df[df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None)]["COD. CONTENIDO"].nunique()
+    entradas = len(piezas)
+    filas_que_entran = {p["_fila"] for p in piezas}
+    resultado, descartes = _dedup_pauta_global(piezas)
+    filas_con_entrada = {p["_fila"] for p in resultado}
+    control = {
+        "ruta": ruta,
+        "df": df,
+        "columnas_metricas": columnas_metricas,
+        "filas_leidas": len(df_crudo),
+        "filas_reales": len(df),
+        "fuera": fuera,
+        "alias_aplicados": alias_aplicados,
+        "filas_que_entran": len(filas_que_entran),
+        "entradas": entradas,
+        "descartes": [
+            {
+                "fila_descartada": d["_fila"], "fila_queda": g["_fila"], "localidad": d["localidad_asignada"],
+                "campana": d["campana"], "titulo": d["titulo_pieza"],
+                "motivo": motivo_desempate(g, d),
+                "fila_perdio_todas": d["_fila"] not in filas_con_entrada,
+            }
+            for d, g in descartes
+        ],
+        "filas_duplicadas": sorted(filas_que_entran - filas_con_entrada),
+        "filas_con_entrada_en_piezas": len(filas_con_entrada),
+        "filas_con_cod_contenido": int(df["COD. CONTENIDO"].apply(lambda v: limpio(v) is not None).sum()),
+    }
+    for pieza in resultado:
+        _limpiar_internos(pieza)
+    return resultado, control
+
+
+def renglones_hoja_pauta_global(ruta):
+    """Renglones de GLOBAL_ImportRange según la dimensión de la hoja (sin el
+    encabezado), incluidos los que solo tienen formato y ningún valor."""
+    import openpyxl
+    wb = openpyxl.load_workbook(ruta, read_only=True)
+    try:
+        return wb["GLOBAL_ImportRange"].max_row - 1
+    finally:
+        wb.close()
+
+
+def freno_bajas_pauta_global(piezas_anteriores, piezas_global):
+    """Freno de bajas (D5 + B1, 26/10/2026): compara CAMPAÑA + TÍTULO
+    normalizados -- no el COD. CONTENIDO -- de las piezas de la fuente nueva
+    del JSON anterior que siguen dentro del universo (sub_ambito de
+    SUB_AMBITOS_UNIVERSO_PAUTA_GLOBAL) contra las de esta carga.
+    Devuelve (bajas reales, salidas por cambio de regla): las segundas son
+    claves que el JSON anterior solo tenía fuera del universo actual (ej. el
+    ámbito "departamento" que ya no existe) y no cuentan como baja."""
+    nuevas = {clave_freno_pauta_global(p["campana"], p["titulo_pieza"]) for p in piezas_global}
+    previas_universo, previas_fuera = {}, {}
+    for p in piezas_anteriores:
+        if p.get("fuente") != "global":
+            continue
+        clave = clave_freno_pauta_global(p.get("campana"), p.get("titulo_pieza"))
+        en_universo = p.get("sub_ambito", "localidad_directa") in SUB_AMBITOS_UNIVERSO_PAUTA_GLOBAL
+        (previas_universo if en_universo else previas_fuera).setdefault(clave, []).append(p)
+    bajas = {k: v for k, v in previas_universo.items() if k not in nuevas}
+    salidas_por_regla = {k: v for k, v in previas_fuera.items() if k not in nuevas and k not in previas_universo}
+    return bajas, salidas_por_regla
+
+
+def cuadre_pauta_global(control, piezas_global):
+    """Cuadre del archivo de filas no procesadas contra el tablero. Lista de
+    (paso, valor) + lista de chequeos (descripción, ok)."""
+    fuera = Counter(f["motivo"] for f in control["fuera"])
+    renglones = control["renglones_hoja"]
+    pasos = [
+        ("Renglones de la hoja GLOBAL_ImportRange (sin encabezado)", renglones),
+        ("Vacíos con formato (sin ningún valor), descartados", renglones - control["filas_leidas"]),
+        ("Renglones con algún valor pero sin CAMPAÑA ni TITULO (arrastre), descartados", control["filas_leidas"] - control["filas_reales"]),
+        ("Filas reales (CAMPAÑA o TITULO DE LA PIEZA cargados)", control["filas_reales"]),
+        ("Fuera de Córdoba", fuera["fuera_de_cordoba"]),
+        ("Fuera del universo: localidad fuera de las 60", fuera["localidad_fuera_de_las_60"]),
+        ("Fuera del universo: TODAS LAS LOCALIDADES de un departamento sin ninguna de las 60", fuera["departamento_sin_localidades_de_las_60"]),
+        ("Pendientes (LOCALIDAD / SUBCIRCUITO vacía)", fuera["pendiente_sin_localidad"]),
+        ("Filas que entran al tablero", control["filas_que_entran"]),
+        ("Duplicadas: perdieron todas sus entradas (repetición genuina, sin métricas, a confirmar por el área)", len(control["filas_duplicadas"])),
+        ("Filas con al menos una entrada en el tablero", control["filas_que_entran"] - len(control["filas_duplicadas"])),
+        ("Entradas generadas (una por localidad alcanzada)", control["entradas"]),
+        ("Entradas unificadas (descartadas por duplicado)", len(control["descartes"])),
+        ("Piezas del tablero (fuente Pauta RRSS_GLOBAL)", len(piezas_global)),
+    ]
+    v = dict(pasos)
+    chequeos = [
+        ("renglones - vacíos - arrastre = filas reales",
+         renglones - v[pasos[1][0]] - v[pasos[2][0]] == control["filas_reales"]),
+        ("filas reales - fuera de Córdoba - fuera del universo - pendientes = filas que entran",
+         control["filas_reales"] - sum(fuera.values()) == control["filas_que_entran"]),
+        ("entradas generadas - unificadas = piezas del tablero",
+         control["entradas"] - len(control["descartes"]) == len(piezas_global)),
+        ("filas que entran - duplicadas = filas distintas presentes en las piezas",
+         control["filas_que_entran"] - len(control["filas_duplicadas"]) == control["filas_con_entrada_en_piezas"]),
+    ]
+    return pasos, chequeos
+
+
+def escribir_no_procesadas_pauta_digital(control, pasos, salidas_por_regla, destino):
+    """Archivo A: Filas_no_procesadas_Pauta_Digital.xlsx, escrito en la misma
+    corrida que el tablero (mismos datos)."""
+    df = control["df"]
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    fuera_por_depto = Counter(
+        f["departamento_candidato"] or "(sin departamento puntual)"
+        for f in control["fuera"] if f["motivo"] in ("localidad_fuera_de_las_60", "departamento_sin_localidades_de_las_60")
     )
-    metricas["filas_colapsadas_por_dedup"] = descartadas_dedup
-    return piezas, excluidas, descartadas_dedup, metricas
+    resumen = pd.DataFrame(pasos, columns=["Paso", "Cantidad"])
+    desglose = pd.DataFrame(sorted(fuera_por_depto.items(), key=lambda x: (-x[1], x[0])),
+                            columns=["Departamento (columna DEPARTAMENTO)", "Filas fuera del universo"])
+    fuera_rows = [f for f in control["fuera"] if f["motivo"] != "pendiente_sin_localidad"]
+    hoja_fuera = pd.DataFrame([{
+        "Fila de la planilla": f["fila"], "CAMPAÑA": f["campana"], "TITULO DE LA PIEZA": f["titulo"],
+        "LOCALIDAD / SUBCIRCUITO": f["localidad"], "DEPARTAMENTO": f["departamento"], "ESTADO": f["estado"],
+        "Motivo": MOTIVOS_FUERA_PAUTA_GLOBAL[f["motivo"]],
+    } for f in fuera_rows])
+    pend = [f for f in control["fuera"] if f["motivo"] == "pendiente_sin_localidad"]
+    hoja_pend = pd.DataFrame([{
+        "Fila de la planilla": f["fila"], "CAMPAÑA": f["campana"], "TITULO DE LA PIEZA": f["titulo"],
+        "DEPARTAMENTO": f["departamento"], "ESTADO": f["estado"], "Motivo": MOTIVOS_FUERA_PAUTA_GLOBAL[f["motivo"]],
+    } for f in pend]) if pend else pd.DataFrame({"Pendientes": ["Sin pendientes en esta carga"]})
+    met = control["columnas_metricas"]
+    filas_dup = []
+    for d in control["descartes"]:
+        r_d, r_q = df.loc[d["fila_descartada"] - 2], df.loc[d["fila_queda"] - 2]
+        fila = {
+            "Fila descartada": d["fila_descartada"], "Fila que queda": d["fila_queda"],
+            "¿La fila descartada perdió todas sus entradas?": "Sí" if d["fila_perdio_todas"] else "No (solo esta localidad)",
+            "Localidad": d["localidad"], "CAMPAÑA": d["campana"], "TITULO DE LA PIEZA": d["titulo"],
+            "Por qué queda esa fila": d["motivo"],
+            "Métricas": "MISMAS" if all(_mismo_valor(r_d[c], r_q[c]) for c in met) else "DISTINTAS",
+        }
+        for c in met:
+            fila[f"{c.strip()} (descartada)"] = limpio(r_d[c])
+            fila[f"{c.strip()} (queda)"] = limpio(r_q[c])
+        filas_dup.append(fila)
+    hoja_dup = pd.DataFrame(filas_dup) if filas_dup else pd.DataFrame({"Duplicadas": ["Sin duplicados en esta carga"]})
+    filas_regla = []
+    for (camp, tit), ps in sorted(salidas_por_regla.items()):
+        filas_regla.append({
+            "CAMPAÑA (normalizada)": camp, "TITULO (normalizado)": tit,
+            "CAMPAÑA (carga anterior)": ps[0].get("campana"), "TITULO (carga anterior)": ps[0].get("titulo_pieza"),
+            "ESTADO en la carga anterior": ", ".join(f"{k}: {v}" for k, v in sorted(Counter(p.get("estado") for p in ps).items())),
+            "Piezas en la carga anterior": len(ps),
+            "Ámbito en la carga anterior": ", ".join(sorted({str(p.get("sub_ambito")) for p in ps})),
+            "Motivo": "Salida por cambio de regla: el ámbito \"solo departamento\" ya no entra al tablero. No cuenta como baja.",
+        })
+    hoja_regla = pd.DataFrame(filas_regla) if filas_regla else pd.DataFrame({"Salidas por cambio de regla": ["Sin salidas por cambio de regla en esta carga"]})
+    with pd.ExcelWriter(destino, engine="openpyxl") as xw:
+        resumen.to_excel(xw, sheet_name="Resumen", index=False)
+        desglose.to_excel(xw, sheet_name="Resumen", index=False, startrow=len(resumen) + 3)
+        hoja_fuera.to_excel(xw, sheet_name="Fuera_del_universo", index=False)
+        hoja_pend.to_excel(xw, sheet_name="Pendientes", index=False)
+        hoja_dup.to_excel(xw, sheet_name="Duplicadas", index=False)
+        hoja_regla.to_excel(xw, sheet_name="Salidas por cambio de regla", index=False)
+
+
+def _mismo_valor(a, b):
+    va, vb = limpio(a), limpio(b)
+    return va == vb
 
 
 # ---------------------------------------------------------------------------
@@ -997,7 +1299,7 @@ def cargar_audiovisuales():
             "en_60_prioritarias": str(row.get("En_60_Prioritarias", "")).strip().lower() == "sí",
             "fecha_inicio": fecha_iso(row["Fecha_Inicio"]),
             "fecha_fin": fecha_iso(row["Fecha_Fin"]),
-            "estado": estado_por_fecha(row["Fecha_Fin"]),
+            "estado": estado_audiovisual(row["Fecha_Inicio"], row["Fecha_Fin"]),
             "link": limpio(row["Link"]),  # string crudo, se mantiene por compatibilidad
             "links": lista_links(row["Link"]),  # lista lista para listar en el front (por si trae más de uno)
             "copy": limpio(row["Copy"]),
@@ -1449,6 +1751,21 @@ EXCLUSIONES_LUGAR_GNO_CONFIRMADAS = {
         # mundo real pero no son ninguna de las 60 -> mismo criterio.
         "BENJAMIN GOULD", "CANALS", "COLONIA BISMARK", "COLONIA BREMEN",
         "MIRAMAR DE ANSENUZA", "PUEBLO ITALIANO", "VIAMONTE",
+        # Sumadas 18/09/2026: confirmadas por el usuario tras el export GNO
+        # 18/09 -> nombres de departamento/región (agrupan varias localidades,
+        # no son una localidad puntual) y localidades reales fuera de las 60.
+        # El patrón "Nombre (N)" (ej. "Minas (4)") es nuevo y de origen
+        # desconocido -> mismo criterio: se excluye el token tal cual vino.
+        "AREA METROPOLITANA", "SIERRAS CHICAS", "PUNILLA",
+        "DEPTO TERCERO ARRIBA", "DEPARTAMENTO TERCERO ARRIBA",
+        "DEPARTAMENTO COLON", "DEPTO TULUMBA",
+        "MINAS (4)", "SAN JUSTO (4)", "UNION (4)", "GENERAL SAN MARTIN (3)",
+        "POCHO (2)", "SAN JAVIER (2)", "RIO SEGUNDO (1)", "JUAREZ CELMAN (1)",
+        "RIO CUARTO (1)", "SAN ALBERTO (1) Y TOTORAL (1).",
+        "VILLA GIARDINO", "VALLE HERMOSO", "CASA GRANDE", "MAYU SUMAJ",
+        "TINOCO", "LAS ISLETILLAS", "PUNTA DEL AGUA", "PAMPAYASTA SUD",
+        "PAMPAYASTA NORTE", "PARAJE LOS POTREROS", "DALMACIO VELEZ SARFIELD",
+        "CURA BROCHERO",
     ]
 }
 
@@ -1619,6 +1936,8 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
 
     for loc in medios_tradicionales["localidades"]:
         for v in loc["vigentes"]:
+            if v["sin_fecha"]:
+                continue  # Activo sin fecha: solo cobertura, fuera de Campañas/Gantt
             items.append({
                 "area_origen": "Medios tradicionales",
                 "campana": v["tema"],
@@ -1640,14 +1959,12 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
     for pieza in pauta_digital["piezas"]:
         if pieza["alcance_tipo"] is None:
             continue  # BARRIO/CIRCUITO/CODIGO_AUDIENCIA/OTRO/REGION: no aplican a la vista unificada por localidad/depto
-        if pieza["estado"] == "Pendiente":
-            continue  # piezas cargadas pero no despachadas: sin fecha real no entran en la vista de vigencia
         # en_60_localidades solo es la condición correcta para alcance_tipo=='localidad'
         # (ahí sí significa "esta Localidad puntual es una de las 60"). Para 'departamento'
         # y 'provincia' NO se filtra por en_60_localidades: esta es la vista unificada con
-        # el ámbito etiquetado, no una vista por Localidad — una pieza DEPARTAMENTO sigue
-        # entrando acá (con su Departamento a la vista) aunque ya no cuente para ningún
-        # panel de Localidad puntual.
+        # el ámbito etiquetado. Desde el 26/10/2026 (D1) la fuente nueva ya no tiene
+        # ámbito 'departamento' (esas filas quedan fuera del tablero): solo lo traen
+        # piezas del histórico (Medios Digitales.xlsx, fuente congelada).
         if pieza["alcance_tipo"] == "localidad" and not pieza["en_60_localidades"]:
             continue
         items.append({
@@ -1656,13 +1973,11 @@ def construir_campanas(medios_tradicionales, pauta_digital, audiovisuales):
             "alcance_tipo": pieza["alcance_tipo"],
             "departamento": pieza["departamento"],
             "localidad": pieza["localidad"],
-            # localidad_asignada + cod_contenido viajan acá (no solo en
-            # pauta_digital.json) para que un futuro total en esta vista
-            # pueda dedupear las filas expandidas por Departamento (ver
-            # _dedup_pauta_global_por_cod_contenido) sin tener que volver a
-            # cruzar con pauta_digital.json. None en piezas del histórico
-            # (Medios Digitales.xlsx no trae COD. CONTENIDO) y en piezas sin
-            # Localidad puntual (ambito departamento/provincia).
+            # localidad_asignada viaja acá (no solo en pauta_digital.json)
+            # para que un futuro total en esta vista pueda agrupar por
+            # localidad sin volver a cruzar con pauta_digital.json. None en
+            # piezas del histórico sin Localidad puntual. cod_contenido es
+            # solo informativo (D3): no decide nada.
             "localidad_asignada": pieza.get("localidad_asignada"),
             "detalle": {
                 "area_tematica": pieza["area_tematica"],
@@ -1719,7 +2034,6 @@ def main():
     # el excel crudo.
     localidad_a_oficial = {}
     localidad_a_departamento_oficial = {}
-    deptos_a_oficial = {}
     # Inversa de localidad_a_departamento_oficial: de Departamento (normalizado)
     # a la lista de sus localidades (normalizadas) dentro de las 60 — la usa
     # clasificar_geografia_pauta_global() para expandir una fila "TODAS LAS
@@ -1730,63 +2044,84 @@ def main():
         n_depto = normalizar(loc["departamento"])
         localidad_a_oficial[n_loc] = loc["localidad"]
         localidad_a_departamento_oficial[n_loc] = loc["departamento"]
-        deptos_a_oficial[n_depto] = loc["departamento"]
         departamento_a_localidades_normalizadas.setdefault(n_depto, []).append(n_loc)
 
     medios_tradicionales, movimientos_semana = cargar_medios_tradicionales()
+    # Foto de la carga anterior (antes de sobreescribir) + fecha de generación,
+    # que el front usa para el delta semanal y para detectar anomalías
+    # (Vigente con FIN anterior a esta fecha).
+    mt_previo_path = DATA_OUT / "medios_tradicionales.json"
+    mt_previo = None
+    if mt_previo_path.exists():
+        with open(mt_previo_path, encoding="utf-8") as f:
+            mt_previo = json.load(f)
+    medios_tradicionales["generado_el"] = HOY.isoformat()
+    medios_tradicionales["snapshot_anterior"] = snapshot_anterior_mt(mt_previo, medios_tradicionales)
     escribir_json("medios_tradicionales.json", medios_tradicionales)
     escribir_json("movimientos_semana.json", movimientos_semana)
 
     historico_medios = cargar_historico_medios()
     escribir_json("historico_medios.json", historico_medios)
 
-    # Códigos del JSON ANTERIOR (antes de sobreescribirlo) para el chequeo de
-    # bajas del punto 6: se lee acá, antes de escribir_json("pauta_digital.json"...).
+    # Piezas del JSON ANTERIOR (antes de sobreescribirlo) para el freno de
+    # bajas: se lee acá, antes de escribir_json("pauta_digital.json"...).
     pauta_digital_anterior_path = DATA_OUT / "pauta_digital.json"
-    codigos_previos = set()
+    piezas_anteriores = []
     if pauta_digital_anterior_path.exists():
         with open(pauta_digital_anterior_path, encoding="utf-8") as f:
             piezas_anteriores = json.load(f)["piezas"]
-        codigos_previos = {p["cod_contenido"] for p in piezas_anteriores if p.get("cod_contenido") is not None}
 
-    umbral_amarilla_dias = medios_tradicionales["umbral_alerta_amarilla_dias"]
-    umbral_roja_dias = medios_tradicionales["umbral_alerta_roja_dias"]
-    piezas_historico = cargar_pauta_digital_historico(claves_60, umbral_amarilla_dias, umbral_roja_dias)
-    piezas_global, excluidas_global, descartadas_dedup_global, metricas_global = cargar_pauta_digital_global(
-        localidad_a_oficial, localidad_a_departamento_oficial, deptos_a_oficial,
-        departamento_a_localidades_normalizadas,
-        umbral_amarilla_dias, umbral_roja_dias,
+    piezas_historico = cargar_pauta_digital_historico(claves_60)
+    piezas_global, control_global = cargar_pauta_digital_global(
+        localidad_a_oficial, localidad_a_departamento_oficial, departamento_a_localidades_normalizadas,
     )
+    control_global["renglones_hoja"] = renglones_hoja_pauta_global(control_global["ruta"])
     print(
         f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "
-        f"+ {len(piezas_global)} piezas fuente nueva ({excluidas_global} excluidas por estar fuera de la provincia, "
-        f"{descartadas_dedup_global} descartadas por dedup de COD. CONTENIDO tras expandir Departamentos)"
+        f"+ {len(piezas_global)} piezas fuente nueva"
     )
     # --- Verificación (Pauta RRSS_GLOBAL.xlsx) — corre ANTES de escribir el
-    # JSON, así un corte por pérdida de datos no esperada no llega a
-    # sobreescribir el archivo anterior. -----------------------------------
-    codigos_nuevos = {p["cod_contenido"] for p in piezas_global if p.get("cod_contenido") is not None}
-    piezas_pendientes = [p for p in piezas_global if p["estado"] == "Pendiente"]
-    codigos_dados_de_baja = sorted(codigos_previos - codigos_nuevos, key=str)
-    print("  --- Verificación Pauta Digital (Pauta RRSS_GLOBAL.xlsx) ---")
-    print(f"  Filas descartadas como basura: {metricas_global['filas_descartadas']} de {metricas_global['filas_totales']} totales")
-    print(f"  Filas reales tras filtro: {metricas_global['filas_reales']}")
-    print(f"  Filas con COD. CONTENIDO: {metricas_global['filas_con_cod_contenido']}")
-    print(f"  Filas 'Pendiente' sin código/fecha: {metricas_global['filas_pendientes']}")
-    print(f"  Códigos únicos con COD. CONTENIDO: {metricas_global['codigos_unicos_con_cod_contenido']}")
-    print(f"  Filas colapsadas por dedup: {metricas_global['filas_colapsadas_por_dedup']}")
-    print(f"  Total de piezas fuente nueva en el JSON final: {len(piezas_global)}")
-    print(f"  Piezas con estado 'Pendiente': {len(piezas_pendientes)}")
-    if codigos_dados_de_baja:
-        print(f"  Códigos dados de baja respecto al JSON anterior ({len(codigos_dados_de_baja)}): {codigos_dados_de_baja}")
+    # JSON, así un corte (cuadre o pérdida de datos no esperada) no llega a
+    # sobreescribir el archivo anterior. ------------------------------------
+    pasos, chequeos = cuadre_pauta_global(control_global, piezas_global)
+    conteo_estados = Counter(p["estado"] for p in piezas_global)
+    estados_no_mapeados = sorted(set(conteo_estados) - {"Vigente", "Finalizada", "Observada", "Programada", "S/D"})
+    print(f"  --- Verificación Pauta Digital (Pauta RRSS_GLOBAL.xlsx, fecha de control {HOY.isoformat()}) ---")
+    for paso, valor in pasos:
+        print(f"  {paso}: {valor}")
+    print(f"  Fuera del universo por departamento: {dict(Counter(f['departamento_candidato'] for f in control_global['fuera'] if f['motivo'] == 'localidad_fuera_de_las_60').most_common())}")
+    for alias, filas_alias in sorted(Counter(a["alias"] for a in control_global["alias_aplicados"]).items()):
+        print(f"  Alias {alias!r} -> {ALIAS_LOCALIDAD_PAUTA_GLOBAL[alias][0]!r}: {filas_alias} filas")
+    print(f"  Grupos de duplicados: {len({(d['fila_queda'], d['localidad']) for d in control_global['descartes']})}")
+    print(f"  Filas con COD. CONTENIDO (informativo, no decide nada): {control_global['filas_con_cod_contenido']}")
+    print(f"  Piezas por ámbito: {dict(Counter(p['sub_ambito'] for p in piezas_global))}")
+    print(f"  Piezas por estado (directo de ESTADO crudo): {dict(conteo_estados)}")
+    if estados_no_mapeados:
+        print(f"  ⚠️  Estados fuera de ACTIVO/INACTIVO/OBSERVADO/PROGRAMADO/vacío, mostrados tal cual: {estados_no_mapeados}")
+    for descripcion, ok in chequeos:
+        print(f"  Cuadre — {descripcion}: {'OK' if ok else 'NO CUADRA'}")
+    if not all(ok for _, ok in chequeos):
+        raise SystemExit(
+            "El cuadre de filas no procesadas no coincide con el tablero. Deteniendo la corrida sin "
+            "escribir pauta_digital.json ni el archivo de filas no procesadas."
+        )
+    bajas, salidas_por_regla = freno_bajas_pauta_global(piezas_anteriores, piezas_global)
+    print(f"  Salidas por cambio de regla (no cuentan como baja): {len(salidas_por_regla)} piezas (campaña + título)")
+    if bajas:
+        print(f"  Bajas respecto al JSON anterior ({len(bajas)}, campaña + título): {sorted(bajas)}")
         raise SystemExit(
             "Aparecieron bajas respecto al JSON anterior. Deteniendo la corrida sin "
             "escribir pauta_digital.json -- podría ser una pérdida de datos no esperada."
         )
-    else:
-        print("  Códigos dados de baja respecto al JSON anterior: 0")
+    print("  Bajas respecto al JSON anterior (campaña + título): 0")
+    archivo_a = ENTREGABLES_PD / "Filas_no_procesadas_Pauta_Digital.xlsx"
+    escribir_no_procesadas_pauta_digital(control_global, pasos, salidas_por_regla, archivo_a)
+    print(f"  {archivo_a.relative_to(ROOT)}: escrito")
 
-    pauta_digital = {"piezas": piezas_historico + piezas_global}
+    # generado_el: fecha de corte del dato. Una pieza Vigente (ESTADO=ACTIVO en la
+    # fuente) con FIN anterior a esta fecha es una anomalía de la fuente
+    # ("vencida sin renovar"), distinta de la que venció después de la carga.
+    pauta_digital = {"generado_el": HOY.isoformat(), "piezas": piezas_historico + piezas_global}
     escribir_json("pauta_digital.json", pauta_digital)
 
     audiovisuales = cargar_audiovisuales()

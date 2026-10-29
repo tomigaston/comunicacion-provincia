@@ -4,13 +4,33 @@ import Layout from '../../components/Layout';
 import FilterBar from '../../components/FilterBar';
 import MedioFilterChip from '../../components/MedioFilterChip';
 import Autocomplete from '../../components/Autocomplete';
-import KpiTile from '../../components/KpiTile';
+import { ResumenGeneral } from '../../components/ResumenCards';
 import LocalidadCard from '../../components/LocalidadCard';
 import { useApiData } from '../../lib/useApiData';
-import { normalizarTexto, slugificar } from '../../lib/texto';
+import { slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
+import { combinarLocalidades, filtrarLocalidades } from '../../lib/filtrosLocalidades';
+import { isoDe } from '../../lib/vencimientos';
+import { resumenGeneral } from '../../lib/resumen';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
-import { calcularAlertasLocalidades } from '../../lib/useAlertas';
+
+// Categorías del grupo "Pauta digital" (eje B de la cobertura): color de la próxima
+// vencimiento de la pauta VIVA y DIRIGIDA a la localidad, o 'sin'.
+const OPCIONES_PD = [
+  { key: '🔴', label: 'Vence ≤3d 🔴', fg: 'var(--cov-baja)', bg: 'var(--cov-baja-bg)' },
+  { key: '🟡', label: 'Vence 4–7d 🟡', fg: 'var(--cov-media)', bg: 'var(--cov-media-bg)' },
+  { key: '🟢', label: 'Vigente >7d 🟢', fg: 'var(--cov-alta)', bg: 'var(--cov-alta-bg)' },
+  { key: 'sin', label: 'Sin PD viva dirigida', fg: 'var(--cov-sin)', bg: 'var(--cov-sin-bg)' },
+];
+
+const etiquetaGrupo = {
+  fontSize: 11.5,
+  fontWeight: 700,
+  letterSpacing: 0.4,
+  textTransform: 'uppercase',
+  color: 'var(--text-tertiary)',
+  marginBottom: 6,
+};
 
 export default function LocalidadesIndex() {
   const router = useRouter();
@@ -18,64 +38,20 @@ export default function LocalidadesIndex() {
     '/api/data/localidades',
     '/api/data/medios-tradicionales',
     '/api/data/pauta-digital',
-    '/api/data/audiovisuales',
   ]);
 
   const [busqueda, setBusqueda] = useState('');
   const [bandasActivas, setBandasActivas] = useState(new Set(ORDEN_BANDAS));
+  // Grupo "Pauta digital": vacío = sin filtro; si hay opciones, OR entre ellas.
+  const [pdActivos, setPdActivos] = useState(new Set());
   const [mediosEstado, setMediosEstado] = useState(() =>
     Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off']))
   );
 
   const combinado = useMemo(() => {
     if (!datos) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData] = datos;
-
-    const coberturaPorClave = new Map(
-      mediosData.localidades.map((l) => [normalizarTexto(l.localidad), l])
-    );
-
-    const pautaPorLocalidad = new Set();
-    for (const p of pautaData.piezas) {
-      if (!p.en_60_localidades) continue;
-      // Mismo criterio que en el panel de detalle de Localidad: alcance_tipo
-      // manda, no el texto crudo de Localidad (evita que filas OTRO/REGION/
-      // CIRCUITO/CODIGO_AUDIENCIA/PROVINCIA/DEPARTAMENTO marquen una localidad
-      // como "con pauta digital" solo porque su columna Localidad o Departamento
-      // menciona su nombre). Regla sin excepciones: una pieza cuenta para una
-      // Localidad SOLO si su Localidad puntual es una de las 60 — sin fallback
-      // por Departamento en común.
-      if (p.alcance_tipo === 'localidad' && p.localidad) pautaPorLocalidad.add(normalizarTexto(p.localidad));
-    }
-
-    // Semáforo de antigüedad (peor caso por área, sección 2.4 de la spec) --
-    // función compartida con la pestaña Semáforo (lib/useAlertas.js), para no
-    // duplicar esta lógica en dos lugares.
-    const alertasPorClave = new Map(
-      calcularAlertasLocalidades(localidadesData, mediosData, pautaData).map((a) => [
-        normalizarTexto(a.localidad),
-        a,
-      ])
-    );
-
-    const audiovisualesPorLocalidad = new Set(
-      audiovisualesData.items.filter((i) => i.en_60_prioritarias).map((i) => normalizarTexto(i.localidad))
-    );
-
-    return localidadesData.localidades.map((loc) => {
-      const clave = normalizarTexto(loc.localidad);
-      const cobertura = coberturaPorClave.get(clave);
-      return {
-        ...loc,
-        bandaCobertura: cobertura ? cobertura.banda_cobertura : 'Sin',
-        totalTipos: cobertura ? cobertura.total_tipos : 0,
-        cobertura: cobertura ? cobertura.cobertura : {},
-        tienePautaDigital: pautaPorLocalidad.has(clave),
-        tieneAudiovisuales: audiovisualesPorLocalidad.has(clave),
-        alertaMedios: alertasPorClave.get(clave)?.alertaMedios ?? null,
-        alertaPautaDigital: alertasPorClave.get(clave)?.alertaPautaDigital ?? null,
-      };
-    });
+    const [localidadesData, mediosData, pautaData] = datos;
+    return combinarLocalidades(localidadesData, mediosData, pautaData, isoDe(new Date()));
   }, [datos]);
 
   const itemsBusqueda = useMemo(() => {
@@ -89,27 +65,43 @@ export default function LocalidadesIndex() {
 
   const filtrados = useMemo(() => {
     if (!combinado) return [];
-    const q = normalizarTexto(busqueda);
-    return combinado.filter((l) => {
-      if (q && !normalizarTexto(l.localidad).includes(q) && !normalizarTexto(l.departamento).includes(q)) {
-        return false;
-      }
-      if (!bandasActivas.has(l.bandaCobertura)) return false;
-      for (const tipo of TIPOS_MEDIO) {
-        const estado = mediosEstado[tipo.key];
-        if (estado === 'incluir' && !l.cobertura[tipo.key]) return false;
-        if (estado === 'excluir' && l.cobertura[tipo.key]) return false;
-      }
-      return true;
-    });
-  }, [combinado, busqueda, bandasActivas, mediosEstado]);
+    return filtrarLocalidades(combinado, { busqueda, bandasActivas, mediosEstado, pdActivos });
+  }, [combinado, busqueda, bandasActivas, mediosEstado, pdActivos]);
 
-  const kpis = useMemo(() => {
-    if (!combinado) return null;
-    const sinCobertura = combinado.filter((l) => l.bandaCobertura === 'Sin').length;
-    const coberturaBaja = combinado.filter((l) => l.bandaCobertura === 'Baja').length;
-    return { total: combinado.length, sinCobertura, coberturaBaja };
-  }, [combinado]);
+  const hayFiltros =
+    bandasActivas.size !== ORDEN_BANDAS.length ||
+    pdActivos.size > 0 ||
+    Object.values(mediosEstado).some((e) => e !== 'off');
+
+  function limpiarFiltros() {
+    setBandasActivas(new Set(ORDEN_BANDAS));
+    setPdActivos(new Set());
+    setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+  }
+
+  // Cards de resumen: salen de los mismos predicados y ejes que la grilla, el
+  // semáforo y el mail (ver lib/resumen.js), no de un cálculo propio.
+  const resumen = useMemo(() => {
+    if (!datos) return null;
+    const [, mediosData, pautaData] = datos;
+    return resumenGeneral(mediosData, pautaData, isoDe(new Date()));
+  }, [datos]);
+
+  // Drill-down desde las cards: deja activas solo esas bandas y baja a la grilla.
+  function filtrarBandas(bandas) {
+    setBandasActivas(new Set(bandas));
+    const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
+    if (grilla) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function alternarPD(clave) {
+    setPdActivos((actual) => {
+      const nuevo = new Set(actual);
+      if (nuevo.has(clave)) nuevo.delete(clave);
+      else nuevo.add(clave);
+      return nuevo;
+    });
+  }
 
   function alternarBanda(banda) {
     setBandasActivas((actual) => {
@@ -125,21 +117,7 @@ export default function LocalidadesIndex() {
       {cargando && <p>Cargando datos del tablero...</p>}
       {error && <p style={{ color: 'var(--cov-baja)' }}>No se pudieron cargar los datos: {error}</p>}
 
-      {kpis && (
-        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 20 }}>
-          <KpiTile valor={kpis.total} etiqueta="Localidades prioritarias en el tablero" />
-          <KpiTile
-            valor={kpis.sinCobertura}
-            etiqueta="Sin ningún tipo de publicidad esta semana"
-            subtitulo="Medios tradicionales"
-          />
-          <KpiTile
-            valor={kpis.coberturaBaja}
-            etiqueta="Con cobertura baja (1 o 2 tipos de medio)"
-            subtitulo="Medios tradicionales"
-          />
-        </div>
-      )}
+      {resumen && <ResumenGeneral r={resumen} onFiltrarBandas={filtrarBandas} />}
 
       <div style={{ marginBottom: 20 }}>
         <FilterBar>
@@ -149,48 +127,94 @@ export default function LocalidadesIndex() {
             onQueryChange={setBusqueda}
             onSelect={(item) => router.push(`/localidades/${item.value}`)}
           />
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            {ORDEN_BANDAS.map((banda) => {
-              const activa = bandasActivas.has(banda);
-              const cfg = BANDA_COBERTURA[banda];
-              return (
-                <button
-                  key={banda}
-                  type="button"
-                  onClick={() => alternarBanda(banda)}
-                  style={{
-                    padding: '8px 14px',
-                    borderRadius: 999,
-                    border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
-                    background: activa ? cfg.bg : 'var(--bg-secondary)',
-                    color: activa ? cfg.fg : 'var(--text-tertiary)',
-                    fontSize: 13.5,
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                  }}
-                >
-                  {cfg.label}
-                </button>
-              );
-            })}
+          <div>
+            <div style={etiquetaGrupo}>Cobertura MT</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {ORDEN_BANDAS.map((banda) => {
+                const activa = bandasActivas.has(banda);
+                const cfg = BANDA_COBERTURA[banda];
+                return (
+                  <button
+                    key={banda}
+                    type="button"
+                    onClick={() => alternarBanda(banda)}
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 999,
+                      border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
+                      background: activa ? cfg.bg : 'var(--bg-secondary)',
+                      color: activa ? cfg.fg : 'var(--text-tertiary)',
+                      fontSize: 13.5,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {cfg.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            {TIPOS_MEDIO.map((tipo) => (
-              <MedioFilterChip
-                key={tipo.key}
-                medio={tipo.label}
-                estado={mediosEstado[tipo.key]}
-                onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
-              />
-            ))}
+          <div>
+            <div style={etiquetaGrupo}>Tipo de medio MT</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {TIPOS_MEDIO.map((tipo) => (
+                <MedioFilterChip
+                  key={tipo.key}
+                  medio={tipo.label}
+                  estado={mediosEstado[tipo.key]}
+                  onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div style={etiquetaGrupo}>Pauta digital</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {OPCIONES_PD.map((op) => {
+                const activa = pdActivos.has(op.key);
+                return (
+                  <button
+                    key={op.key}
+                    type="button"
+                    onClick={() => alternarPD(op.key)}
+                    aria-pressed={activa}
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 999,
+                      border: `1.5px solid ${activa ? op.fg : 'var(--border)'}`,
+                      background: activa ? op.bg : 'var(--bg-secondary)',
+                      color: activa ? op.fg : 'var(--text-secondary)',
+                      fontSize: 13.5,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {op.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </FilterBar>
       </div>
 
       {combinado && (
         <>
-          <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
+          <p id="grilla-localidades" style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
             Mostrando {filtrados.length} de {combinado.length} localidades
+            {hayFiltros && (
+              <>
+                {' · '}
+                <button
+                  type="button"
+                  onClick={limpiarFiltros}
+                  style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                  Limpiar filtros
+                </button>
+              </>
+            )}
           </p>
           <div
             style={{
@@ -206,10 +230,7 @@ export default function LocalidadesIndex() {
                 departamento={l.departamento}
                 bandaCobertura={l.bandaCobertura}
                 totalTipos={l.totalTipos}
-                tienePautaDigital={l.tienePautaDigital}
-                tieneAudiovisuales={l.tieneAudiovisuales}
-                alertaMedios={l.alertaMedios}
-                alertaPautaDigital={l.alertaPautaDigital}
+                ejePD={l.ejePD}
               />
             ))}
           </div>

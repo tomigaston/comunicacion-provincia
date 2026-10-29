@@ -12755,8 +12755,8 @@
       "fecha": "2026-08-29",
       "red_social": null,
       "redes_sociales": [],
-      "nombre_contenido": "CAMINO DE BROCHERO",
-      "link": null,
+      "nombre_contenido": "IG MLL | CAMINO DE BROCHERO",
+      "link": "https://www.instagram.com/reel/DcpB-UeKWvg/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
       "lugar_raw": null,
       "lugar_excluido_por_link": false,
       "ambito_provincial": false,
@@ -12808,8 +12808,43 @@
       "redes_sociales": [
         "TIKTOK MLL"
       ],
-      "nombre_contenido": "Tik Tok MLL. El Papa visitará Córdoba. Con portada",
+      "nombre_contenido": null,
       "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "IG MLL | Reel Avance 30% Autopista Ruta 19",
+      "link": "https://www.instagram.com/reel/Dcq3T8UoCKu/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "IG MLL | RECORRIDA NOROESTE",
+      "link": "https://www.instagram.com/reel/DcrwXpfoCKT/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-30",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": null,
+      "link": "https://www.tiktok.com/@martinllaryora/video/7679980479394729236?lang=es-419",
       "lugar_raw": null,
       "lugar_excluido_por_link": false,
       "ambito_provincial": false,
@@ -12817,10 +12852,417 @@
     },
     {
       "fecha": "2026-08-31",
-      "red_social": null,
-      "redes_sociales": [],
-      "nombre_contenido": "AgroImperio: https://drive.google.com/drive/folders/1LtGB9YA4_bwWr2YX9ayIg6mW5e_F9WZL?usp=sharing",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Vivo Córdoba Impulsa",
+      "link": "https://www.facebook.com/gobdecordoba/videos/1537606777661581",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Avanza la obra de modernización hospital Marcos Juárez",
+      "link": "https://www.facebook.com/reel/1815432503229701",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Avanza la nueva sede UPC Marcos Juárez",
+      "link": "https://www.instagram.com/reel/DctUcXtRFOh/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Angioplastia coronaria Hospital Córdoba",
+      "link": "https://www.instagram.com/reel/Dctgk2CIKWW/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Angioplastia coronaria Hospital Córdoba",
+      "link": "https://www.facebook.com/reel/2588392564931776",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "IncubaCor LITE 2026",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7500250903409594368",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "La tierra habla. Día Internacional de las Víctimas de Desapariciones Forzadas. (spot del Equipo de Antropología forense)",
+      "link": "https://youtu.be/N8xOZCwSIAE",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "Short Gobierno",
+      "redes_sociales": [
+        "Short Gobierno"
+      ],
+      "nombre_contenido": "La tierra habla. Día Internacional de las Víctimas de Desapariciones Forzadas. (spot del Equipo de Antropología forense)",
+      "link": "https://youtube.com/shorts/TeG43S3NTZA",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO - Reel Orgullo productivo en el interior / Min Economía",
+      "link": "https://www.facebook.com/reel/28159219523761502",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO - Reel Orgullo productivo en el interior / Min Economía",
+      "link": "https://www.instagram.com/p/DctQG7GBTpR/",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "13° Festival de Teatro de la Infancia y la Juventud",
       "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Córdoba Impulsa",
+      "link": "https://vt.tiktok.com/ZSVTuhrmx/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "IG GOBIERNO, IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "IG GNO -  Carrusel Córdoba Impulsa",
+      "link": "https://www.instagram.com/p/DcuPfJcjaIS/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "IG MLL, MLL COLAB CON OTRAS CUENTAS",
+      "redes_sociales": [
+        "IG MLL",
+        "MLL COLAB CON OTRAS CUENTAS"
+      ],
+      "nombre_contenido": "IG MLL - Carrusel Córdoba Impulsa",
+      "link": "https://www.instagram.com/p/DcuN8AOFZh3/?igsi=NnNyb2o4eDkzZWlp",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB Carrusel Córdoba Impulsa",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02rARubjoeteLKSEN6L8FiKVhjGT8zREDMGLU2nAvjmvGJ3dckBrkX2aFJnn2oTUQCl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Historia Carrusel Córdoba Impulsa",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-08-31",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. 35 escuelas rurales con un alumno. Dos posibles portadas",
+      "link": "https://vt.tiktok.com/ZSVTxW1Sj/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Reel Avance 30% Autopista Ruta 19",
+      "link": "https://www.facebook.com/reel/1063596016381023",
+      "lugar_raw": "San Francisco",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SAN FRANCISCO"
+      ]
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "DELEGACIÓN DEL VATICANO",
+      "link": "https://www.instagram.com/p/Dcv9tsAlfuq/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIAS Centro de Idiomas CBA Nivel 1 UPC",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA Premios al comercio 2026",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Reel Avance 30% Autopista Ruta 19",
+      "link": "https://www.instagram.com/p/DcwZLzvqKpH/",
+      "lugar_raw": "San Francisco",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SAN FRANCISCO"
+      ]
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "DELEGACIÓN DEL VATICANO",
+      "link": "https://www.facebook.com/reel/2015099475860584",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "DELEGACIÓN DEL VATICANO",
+      "link": "https://vt.tiktok.com/ZSVK78XnH/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Centro de Idiomas CBA Nivel 1 UPC",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0243Yi12ipB3hmVjwqgbQ4k5KtGnj1aEstq8nFVrRTz1pxwsz3cUFuEL8B8ReanhH1l",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Centro de Idiomas CBA Nivel 1 UPC",
+      "link": "https://www.instagram.com/p/Dcwu0PwlHvH/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia Riesgo de incendios Extremo",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "CÓRDOBA AVANZA PARA VOLVER A RECIBIR AL RALLY MUNDIAL",
+      "link": "https://www.instagram.com/p/Dcw4uj2lVMA/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "CÓRDOBA AVANZA PARA VOLVER A RECIBIR AL RALLY MUNDIAL",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02E7bwEu3X6PugKFQcTU8JfnEYixGHxK2zeZCdBsxhDqH6Ay2UgCMqYhp9SckqUvY7l",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-01",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Cursos Campus CBA Sept",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7500571173374623744",
       "lugar_raw": null,
       "lugar_excluido_por_link": false,
       "ambito_provincial": false,
@@ -12828,9 +13270,4307 @@
     },
     {
       "fecha": "2026-09-02",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Día de la Industria",
+      "link": "https://www.instagram.com/p/DcyNAcbKB2M/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Día de la Industria",
+      "link": "https://www.facebook.com/reel/2134597650789046",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIK TOK GNO | Avance Autopista Ruta 19",
+      "link": "https://vt.tiktok.com/ZSq1u6TFw/",
+      "lugar_raw": "San Francisco",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SAN FRANCISCO"
+      ]
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Premios al comercio Manuel Belgrano",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7500992166987657216",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Pavimentación Tinoco- Colonia Caroya",
+      "link": "https://www.instagram.com/p/DczJYWeqgK8/",
+      "lugar_raw": "Tinoco, Colonia Caroya",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "COLONIA CAROYA"
+      ]
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Pavimentación Tinoco- Colonia Caroya",
+      "link": "https://www.facebook.com/reel/985985481170479",
+      "lugar_raw": "Tinoco, Colonia Caroya",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "COLONIA CAROYA"
+      ]
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | LEY DE PROMOCIÓN INDUSTRIAL INGRESOS BRUTOS",
+      "link": "https://www.facebook.com/reel/1725728791817385",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO | LEY DE PROMOCIÓN INDUSTRIAL INGRESOS BRUTOS",
+      "link": "https://www.instagram.com/p/Dczb6L7NKqz/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | LEY DE PROMOCIÓN INDUSTRIAL INGRESOS BRUTOS",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "LEY DE PROMOCIÓN INDUSTRIAL INGRESOS BRUTOS",
+      "link": "https://vt.tiktok.com/ZSq1Gr5mX/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-02",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Historia Plazas Renovadas",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO - Campaña La tierra habla. Tu sangre puede darles nombre.\n// Música Milo J",
+      "link": "https://www.instagram.com/p/Dc049gvkSdi/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO - Campaña La tierra habla. Tu sangre puede darles nombre.",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02Jh6R9HiwUsEWC2vrzWUXG34j1vqL5rmr4HtgTN7hgP1gXyiz1puGhsmC2q1k6E6Ul",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Recorrido Depto Punilla - Educación",
+      "link": "https://www.instagram.com/p/Dc09e7xo3n4/",
+      "lugar_raw": "Punilla",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA GNO - Campaña La tierra habla. Tu sangre puede darles nombre.",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "YT GNO - Spot Escuchá - 3 Altoniveles en Córdoba Capital",
+      "link": "https://youtu.be/7IIOuk3XnHY",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "Short Gobierno",
+      "redes_sociales": [
+        "Short Gobierno"
+      ],
+      "nombre_contenido": "YT short GNO - Spot Escuchá - 3 Altoniveles en Córdoba Capital",
+      "link": "https://youtube.com/shorts/0RmLGJP1s6s?feature=share",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO - Spot Escuchá - 3 Altoniveles en Córdoba Capital",
+      "link": "https://www.instagram.com/p/Dc1p7mUKObv/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO - Spot Escuchá - 3 Altoniveles en Córdoba Capital",
+      "link": "https://www.facebook.com/reel/1707029953732226",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Portada que lleva a Spot Escuchá - 3 Altoniveles en Córdoba Capital",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "LEY DE PROMOCIÓN INDUSTRIAL INGRESOS BRUTOS",
+      "link": "https://www.linkedin.com/posts/martinllaryora_daedadelaindustria-caejrdoba-pymes-activity-7501288422301659136-Nx4b?utm_source=share&utm_medium=member_android&rcm=ACoAAAhrN2gBuyoEwaF3web8UAd9NBCvxpokido",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Reel Visita Fundación Kalen",
+      "link": "https://www.instagram.com/p/Dc2Bahztg0-/",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO | Reel Visita Fundación Kalen",
+      "link": "https://www.facebook.com/reel/1088653876986319",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL. Boca Vs Vélez en el Estadio Kempes",
+      "link": "https://www.instagram.com/p/Dc19FwwI8wO/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-03",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Boca Vs Vélez en el Estadio Kempes",
+      "link": "https://vt.tiktok.com/ZSqdmUsxe/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG Reel Capacitaciones - Sube SecGral y aceptamos colaboración",
+      "link": "https://www.instagram.com/p/Dc3ZepoIV70/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel Programa Con Vos",
+      "link": "https://www.instagram.com/p/Dc3tiK9lcP6/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Exposición Argentina x Mondongo",
+      "link": "https://www.instagram.com/p/Dc383B0qHJ6/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA Exposición Argentina x Mondongo",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Exposición Argentina x Mondongo",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02PAo8tU86yzFqQejuQkFcvdCXG9tWM3N2UXQq4q8job6W1pVLnyHHRKeYN1bkdWZjl",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Cursos CBA Me Capacita sept",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7501624132304789504",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "CÓRDOBA AVANZA PARA VOLVER A RECIBIR AL RALLY MUNDIAL",
+      "link": "https://lnkd.in/p/dD-CHUhV",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL | IG MLL | Recorrido Depto Punilla - Educación",
+      "link": "https://www.facebook.com/reel/2011839479529641",
+      "lugar_raw": "Punilla",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Recorrido Depto Punilla - Educación",
+      "link": "https://www.instagram.com/p/Dc4h-CmtqLf/",
+      "lugar_raw": "Punilla",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TT MLL | Potasio",
+      "link": "https://vt.tiktok.com/ZSqLjtJXd/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Capacitaciones Campus Córdoba en septiembre",
+      "link": "https://vt.tiktok.com/ZSqL8hTSR/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel En 92.ª Exposición @ruralriocuarto",
+      "link": "https://www.instagram.com/p/Dc4pj2vlWQZ/?img_index=1",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-04",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel En 92.ª Exposición @ruralriocuarto",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid0ckK1m8R6tL85hJAE4wscfAKStakdeCMD4uHsZaPHqeeX4gQXeyVT7vwCap4UyMm8l",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Capacitación a Bomberos \"Operaciones seguras con aeronaves",
+      "link": "https://www.facebook.com/reel/896549979975401",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Capacitación a Bomberos \"Operaciones seguras con aeronaves",
+      "link": "https://www.instagram.com/p/Dc6MVVyxrza/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "La tierra habla. Día Internacional de las Víctimas de Desapariciones Forzadas. (spot del Equipo de Antropología forense)",
+      "link": "https://vt.tiktok.com/ZSqMcU4sN/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Altonivel Malvinas Argentinas.80% de avance",
+      "link": "https://www.facebook.com/reel/2314336426055770",
+      "lugar_raw": "Malvinas Argentinas",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MALVINAS ARGENTINAS"
+      ]
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Altonivel Malvinas Argentinas.80% de avance",
+      "link": "https://www.instagram.com/p/Dc6Ro5coGQc/",
+      "lugar_raw": "Malvinas Argentinas",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MALVINAS ARGENTINAS"
+      ]
+    },
+    {
+      "fecha": "2026-09-05",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Córdoba es sede de la Semana Social 2026",
+      "link": "https://www.instagram.com/p/Dc6r-SilUEJ/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GOB. Paloma Tapia. Egresada de la UPC. Con portada",
+      "link": "https://www.facebook.com/reel/1069441082452903",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia GOB. Paloma Tapia. Egresada de la UPC",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GOB. Paloma Tapia. Egresada de la UPC. Con portada",
+      "link": "https://www.instagram.com/p/Dc8r0yeRQ2A/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Elecciones MJ. Felicitaciones a Font",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02otWS62qoyaeqRe3P9it5R6TkRAniJkSs1zekJ86HFf8tKLwmGPpYFN46UEkq1prAl",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Gas natural en Mayu Sumaj",
+      "link": "https://www.instagram.com/p/Dc9gjYMokDq/",
+      "lugar_raw": "Mayú Sumaj",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-06",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Elecciones MJ. Felicitaciones a Font",
+      "link": "https://www.instagram.com/p/Dc9s0P5labn/?img_index=1",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | PLAZA INTEGRADORA PARA SALDÁN",
+      "link": "https://www.facebook.com/reel/4456279761307964",
+      "lugar_raw": "Saldán",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | PLAZA INTEGRADORA PARA SALDÁN",
+      "link": "https://www.instagram.com/p/Dc_JPHCRoTT/",
+      "lugar_raw": "Saldán",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "SALDAN"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA Exposición Argentina x Mondongo",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "YTB GNO | Pulso Firme, Estudiantes ProA Alta Gracia desarrollaron un guante para el Parkinson y la artritis",
+      "link": "https://youtu.be/T0NgP-jGjgc",
+      "lugar_raw": "Alta Gracia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALTA GRACIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Transmisión en vivo Nueva edición del PPP",
+      "link": "https://www.facebook.com/gobdecordoba/videos/2846510202397676",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Reunión con Germán Font",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02PS62DnLxK5phL1PxNDgmRco241jGRdt6RzMbBxdWjbgCXqL66HsKsbGwUJWRXawdl",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "Transmisión en vivo Nueva edición del PPP",
+      "link": "https://www.youtube.com/watch?v=eDsa2Xu1T3k",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO IncubaCor LITE 2026",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0zjEQN1kW2sLq8agstBTJNiZ9Y2dy29eq3ZgDhiX5jjedyGt9PNJJTHx7sHf8VxJ7l",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIAS IncubaCor LITE 2026",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG LK GNO IncubaCor LITE 2026",
+      "link": "https://www.instagram.com/p/Dc_5552lCEB/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Presentación del Programa Con Vos",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02Po4BihFgZSHXrMEKQPynnjA63EKoL8WrqP5KdBuo16sieqoAjRr7BgyUj9zwJjZbl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Presentación del Programa Con Vos",
+      "link": "https://vt.tiktok.com/ZSqM3UHYt/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Presentación del Programa Con Vos",
+      "link": "https://vt.tiktok.com/ZSqMTRRuy/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "PPP - CARRUSEL",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0wYtKd9Q2nUp8Kp2K79EMuBz7Y76mVgFDCnZfJymngH4gAuhbN8oCAH9hTgt4iSwnl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-07",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "PPP - CARRUSEL",
+      "link": "https://www.instagram.com/p/DdATiA-DdzQ/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | 60 km de pavimento en la Ruta Provincial 10",
+      "link": "https://www.instagram.com/p/DdB339hIa_t/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | GAS NATURAL PARA MAYU SUMAJ",
+      "link": "https://www.instagram.com/reel/DdB2aFQxvqo/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Mayú Sumaj",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO | GAS NATURAL PARA MAYU SUMAJ",
+      "link": "https://www.facebook.com/reel/1664118761768394",
+      "lugar_raw": "Mayú Sumaj",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "Video pantalla PPP",
+      "link": "https://youtu.be/O1ajks8Uy2E",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "YOUTUBE MLL",
+      "redes_sociales": [
+        "YOUTUBE MLL"
+      ],
+      "nombre_contenido": "Video pantalla PPP",
+      "link": "https://youtu.be/sRpfW4GEuMQ",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "PPP - CARRUSEL",
+      "link": "https://lnkd.in/p/e2ZhrnaM",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIKTOK GNO | Placas Córdoba Impulsa",
+      "link": "https://vt.tiktok.com/ZSqkXr4ay/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG LK GNO Premios al comercio 2026",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0259f6d7WRgYB1UaooqBKRYKKq7umDUjdD7a1XZC2nKTddqVpfKffLbD5KyQdihphil",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Premios al comercio 2026",
+      "link": "https://www.instagram.com/p/DdCtDmYlJsp/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Elecciones Marcos Juárez",
+      "link": "https://vt.tiktok.com/ZSqkQtxdb/",
+      "lugar_raw": "Marcos Juárez",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MARCOS JUAREZ"
+      ]
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Cruz del Eje OBRA de Saneamiento y Agua Potable",
+      "link": "https://www.facebook.com/reel/1728831574862433",
+      "lugar_raw": "Cruz del Eje",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE"
+      ]
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Córdoba Impulsa",
+      "link": "https://www.instagram.com/p/DdC5Hr0Ne00/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | 60 km de pavimento en la Ruta Provincial 10",
+      "link": "https://www.facebook.com/reel/3011791275833117",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-08",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel Entrega de 29 ambulancias 0KM",
+      "link": "https://www.instagram.com/p/DdCx0xSleam/?img_index=1",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Carrusel PPP informativo",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0vHpmxo7uYWk7MY5TBAdGp8LwLfnxEa1vg1VLhksZxkGBXqjfsJYgaroQocgLQKnhl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Carrusel PPP informativo",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Vivo desfile Río Tercero",
+      "link": "https://www.facebook.com/watch/live/?ref=watch_permalink&v=1585661633338180",
+      "lugar_raw": "Río Tercero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO TERCERO"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA Carrusel PPP informativo",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "LK  Carrusel PPP informativo",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7503522685986181122",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "Créditos CFI",
+      "link": "https://www.linkedin.com/posts/martinllaryora_pymes-caejrdoba-hacerparacrecer-activity-7503476492551540736-CXK_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAeSrmcB9sFzIhF0jt1rX6sY8H_pCdUVmow",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Córdoba Impulsa",
+      "link": "https://www.facebook.com/reel/1232904109126675",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Cruz del Eje OBRA de Saneamiento y Agua Potable",
+      "link": "https://www.instagram.com/p/DdFI7xjq75M/",
+      "lugar_raw": "Cruz del Eje",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB  | Obra Pavimentación Policial – 16 de Noviembre junto a intendente",
+      "link": "https://www.facebook.com/reel/27087514947591308",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Obra Pavimentación Policial – 16 de Noviembre junto a intendente",
+      "link": "https://www.instagram.com/p/DdEfJsiotXl/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Créditos para productores agropecuarios. Con portada",
+      "link": "https://vt.tiktok.com/ZSqAG1pWN/",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TT GNO | Pavimentación Alta Córdoba y Comunidad Renó",
+      "link": "https://vt.tiktok.com/ZSqAqVRAh/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Desfile aniversario Río Tercero",
+      "link": "https://www.instagram.com/p/DdFXgz_lZoi/?img_index=1",
+      "lugar_raw": "Río Tercero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO TERCERO"
+      ]
+    },
+    {
+      "fecha": "2026-09-09",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Desfile aniversario Río Tercero",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid036VJhCTWE11Fyp8kFHLv9ucSCGZMdJBrvT9wHp2wScjr8yL1PBMV1cuJYSzLM3Nril",
+      "lugar_raw": "Río Tercero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO TERCERO"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL | Mensaje de agradecimiento MLL Cordobeses en Alerta",
+      "link": "https://www.facebook.com/reel/1607968347706347",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Mensaje de agradecimiento MLL Cordobeses en Alerta",
+      "link": "https://www.instagram.com/p/DdG17C3IHd7/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "PREVENCIÓN DEL SUICIDIO",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "PREVENCIÓN DEL SUICIDIO",
+      "link": "https://www.instagram.com/p/DdGz_99kYWC/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "PREVENCIÓN DEL SUICIDIO",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid09BG2nK4iaViD69RstgYVJNkjTBHxZhjZkBCtLR6eL3u2yGUBc2StcMKSVmoRWmCTl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "Pruebas PISA",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "VUELO SANITARIO CÓRDOBA - ROSARIO",
+      "link": "https://www.instagram.com/p/DdHYFYIlcVG/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Carrusel Entrega de 29 ambulancias 0KM",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Pruebas PISA",
+      "link": "https://vt.tiktok.com/ZSqykPTWg/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Feria de Artesanías en el Centro Cultural Córdoba",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Feria Provincial de Artesanias",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0bKKFkDaHt3fzZmKPTpTLtxbu9aMKfcKoQ3DVXbQpbLixaSL1ESxdNVMujfEpvHfEl",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Feria Provincial de Artesanias",
+      "link": "https://www.instagram.com/p/DdH-jtkjfkC/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Feria Provincial de Artesanias",
+      "link": "https://vt.tiktok.com/ZSqyP2mQV/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Pruebas PISA: Córdoba en el podio latinoamericano",
+      "link": "https://www.instagram.com/p/DdIA9wNIt-t/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Pruebas PISA: Córdoba en el podio latinoamericano",
+      "link": "https://www.facebook.com/share/r/1GXAVnD9Lk/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL | Homenaje al JAZZ en el Teatro del Libertador",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-10",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL | Homenaje al JAZZ en el Teatro del Libertador",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "IG GOBIERNO, FB GOBIERNO, FB MLL, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "FB GOBIERNO",
+        "FB MLL",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG/FB MLL/GNO - 11 de septiembre: Día del Maestro - PROVINCIA",
+      "link": "https://www.instagram.com/reel/DdJTKUTRE2l/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "COLAB. CON ACJOVEN CENTRO DE IDIOMAS",
+      "link": "https://www.instagram.com/p/DdJyS4Puycn/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "FB GNO COLAB OTROS",
+      "redes_sociales": [
+        "FB GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "COLAB. CON ACJOVEN CENTRO DE IDIOMAS",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02VrPQp65GAK5UsLx5JVdzjEjkpPm3DpG2Qu1wZRhe3xe6wxs7AJxrr7tmtShFK3YJl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Emprende +",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7504178823366840321",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Homenaje al JAZZ en el Teatro del Libertador",
+      "link": "https://vt.tiktok.com/ZSq5uwLQD/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "11 de septiembre: Día del Maestro - PROVINCIA",
+      "link": "https://vt.tiktok.com/ZSq5rHDtm/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Día del maestro: Córdoba se prende de blanco",
+      "link": "https://vt.tiktok.com/ZSq5rhEUh/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Reel Obra agua potable Depto. Colón",
+      "link": "https://www.facebook.com/reel/1409377297954147",
+      "lugar_raw": "Departamento Colón",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Reel Ente Metropolitano TecnoPresent",
+      "link": "https://www.instagram.com/p/DdKXLE7KP7J/",
+      "lugar_raw": "Ente Metropolitano",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel Impira y Del Viso",
+      "link": "https://www.instagram.com/p/DdKe6tgFY7K/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Historia 79° Expo Rural de Jesús María",
+      "link": null,
+      "lugar_raw": "Jesús María",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "JESUS MARIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "MLL saluda a los docentes en Jesús María - Pruebas Aprender y PISA",
+      "link": "https://vt.tiktok.com/ZSq5A8A7G/",
+      "lugar_raw": "Jesús María",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "JESUS MARIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "YOUTUBE GNO - Empleo +26 Inclusión",
+      "link": "https://www.youtube.com/watch?v=AaZTg0TRVzE",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel  79° Expo Rural de Jesús María",
+      "link": null,
+      "lugar_raw": "Jesús María",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "JESUS MARIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel  79° Expo Rural de Jesús María",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid0y6sno5rj7qEuv732Fa8o9V34jcAcKoZXoPuJBYAZq5zZVkKgSj9LmEBEPPmgbqKXl",
+      "lugar_raw": "Jesús María",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "JESUS MARIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TT MLL | Farmeando Aura JM",
+      "link": "https://vt.tiktok.com/ZSq5uj4xM/",
+      "lugar_raw": "Jesús María",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "JESUS MARIA"
+      ]
+    },
+    {
+      "fecha": "2026-09-11",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "STORY GNO Y MLL| Testimonio intendentes/gfes comunales entrega de ambulancias",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-12",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO/MLL - Apoyo a la Cultura Comunitaria",
+      "link": "https://www.facebook.com/reel/2166482127266994",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-12",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO/MLL - Apoyo a la Cultura Comunitaria",
+      "link": "https://www.instagram.com/p/DdMH1hqx8rv/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-12",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "MLL IG Inauguración puente sobre el río Ctalamochita en Los Potreros",
+      "link": "https://www.instagram.com/p/DdM9c2_oHnx/",
+      "lugar_raw": "Departamento Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-12",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "MLL FB Inauguración puente sobre el río Ctalamochita en Los Potreros",
+      "link": "https://www.facebook.com/reel/1720301249056159",
+      "lugar_raw": "Departamento Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-12",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK MLL | FOGÓN PATRIO SAN JOSÉ DE LA DORMIDA",
+      "link": null,
+      "lugar_raw": "San José de la Dormida, Depto Tulumba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-13",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO - Empleo +26 Inclusión",
+      "link": "https://www.facebook.com/reel/1720301249056159",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-13",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "HISTORIA GNO - Empleo +26 Inclusión",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-13",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO - Empleo +26 Inclusión",
+      "link": "https://www.instagram.com/p/DdOxtvTRt_d/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-13",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIK TOK GNO - Apoyo a la Cultura Comunitaria",
+      "link": "https://vt.tiktok.com/ZSqVhYAgE/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-13",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK MLL | Regalo de camiseta a MLL por parte de los chicos del club de Dalmacio Vélez",
+      "link": "https://www.tiktok.com/@martinllaryora/video/7685051164852849928",
+      "lugar_raw": "Depto Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO - Créditos CFI blandos para el sector productivo cordobés",
+      "link": "https://www.instagram.com/p/DdRThr8EWUD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO - Créditos CFI blandos para el sector productivo cordobés",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid02uXVD7wGx5ADny58MKpdDQZUxiLnT51kbrW7D4ARo3Y9tf4xYUDUnxhjZ5B36NdEKl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL - Carrusel entrega de ambulancias",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02rXdD8XNqwukeDjea8whAuviynXcPhF8YmzSZEmxScRFMak97MuZuPqK4K7m7xAeTl",
+      "lugar_raw": "Cruz del Eje (5), Minas (4), San Justo (4), Unión (4), General San Martín (3), Pocho (2), San Javier (2), Río Segundo (1), Juárez Celman (1), Río Cuarto (1), San Alberto (1) y Totoral (1).",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CRUZ DEL EJE"
+      ]
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia MLL. Créditos para productores agropecuarios",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL - Carrusel Desfile Cívico Militar en Almafuerte",
+      "link": "https://www.instagram.com/p/DdR9ajGlVGm/?stkn=MXFqc3Jxc2s0ajU5aA==",
+      "lugar_raw": "Almafuerte, Depto Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL -  Desfile Cívico Militar en Almafuerte",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid0bykzEVoN2bf1LT6fHvGULcAS1qoRfTyiaZkHJw2V5EW5VrmbrXXkaiqwG4iMQ3qzl",
+      "lugar_raw": "Almafuerte, Depto Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIK TOK GNO - Empleo +26 Inclusión",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Ojos en Alerta 800.000 vecinos de 234 barrios",
+      "link": "https://www.tiktok.com/@martinllaryora/video/7685470507357031700",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-14",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Desfile Cívico Militar en Almafuerte",
+      "link": null,
+      "lugar_raw": "Almafuerte, Depto Tercero Arriba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Créditos CFI blandos para el sector productivo cordobés",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7505608640863801344",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Cba Crea Futuro",
+      "link": "https://www.instagram.com/reel/DdTsOpNILoW/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Cba Crea Futuro",
+      "link": "https://www.facebook.com/reel/1648699220157498",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Aniversario fallecimiento DE LA SOTA",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid02oAaMSZRMsqSxeiecWAuwXyWWeTBFWVe4cL8pp9G2JdT3dkFo6jGLS6nsxKC5YWNql",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Aniversario fallecimiento DE LA SOTA",
+      "link": "https://www.instagram.com/p/DdTz-1gIZ9I/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Cba Crea Futuro",
+      "link": "https://vt.tiktok.com/ZSqVrqk4F/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO Y MLL Créditos para productores agropecuarios. Con portada",
+      "link": "https://www.facebook.com/reel/1062718146656075",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Media sanción Ley de Biocombustibles. Con portada",
+      "link": "https://vt.tiktok.com/ZSqVLfbwD/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "La selección jugará en Córdoba",
+      "link": "https://www.instagram.com/p/DdUTuqvlmnM/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Espectáculos. Córdoba, corazón de la Agentina - MLL en Cadena 3",
+      "link": "https://vt.tiktok.com/ZSqVr7UnR/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Nuevo edificio de la Escuela de Suboficiales de la Policía",
+      "link": "https://www.instagram.com/reel/DdU9aVVo9iC/?stkn=MTFvbm5vY2YzODY2eg==",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Nuevo edificio de la Escuela de Suboficiales de la Policía",
+      "link": "https://www.facebook.com/reel/2031495624219694",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-15",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Nuevo edificio de la Escuela de Suboficiales de la Policía",
+      "link": "https://www.facebook.com/share/r/1JY514oy3N/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | INAUGURACIÓN ACCESOS AL PUENTE CTAMOLOCHITA",
+      "link": "https://www.facebook.com/share/v/1DLQZG4KSa/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GNO | INAUGURACIÓN ACCESOS AL PUENTE CTAMOLOCHITA",
+      "link": "https://www.facebook.com/share/v/1DMmUPsgys/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel recorrido Tercero Arriba",
+      "link": null,
+      "lugar_raw": "Las Isletillas, Punta del Agua, Pampayasta Sud, Pampayasta Norte",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Vivo Pruebas PISA",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Colab. CON ACJOVEN Noche delos lápices",
+      "link": "https://www.instagram.com/p/DdWbbRrDqLw/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Nuevo dinosaurio gigante en Parque de las Teja",
+      "link": "https://www.instagram.com/p/DdXMt55KG_-/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Nuevo dinosaurio gigante en Parque de las Teja",
+      "link": "https://www.facebook.com/reel/1725078748750459",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Dinosaurio en el Parque de las Tejas",
+      "link": "https://vt.tiktok.com/ZSqbo7R7q/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "Córdoba Crea Futuro",
+      "link": "https://lnkd.in/p/dNraP-ER",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Acto resultados Pruebas PISA",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | Nueva planta de saneamiento cloacal Almafuerte",
+      "link": "https://www.instagram.com/p/DdXK19Bo5n2/",
+      "lugar_raw": "Almafuerte",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Acto resultados Pruebas PISA",
+      "link": "https://www.instagram.com/reel/DdXiyABNMyV/?stkn=Yjc4M2Foang1YzVm",
+      "lugar_raw": "Ciudad de Córdoba, Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Acto resultados Pruebas PISA",
+      "link": "https://www.facebook.com/reel/1653951613102352",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Acto resultados Pruebas PISA",
+      "link": "https://www.facebook.com/reel/932181719485925",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK MLL | PAVIMENTO EN B° POLICIAL",
+      "link": "https://vt.tiktok.com/ZSqbvHofs/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-16",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Dinosaurio en el Parque de las Tejas",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Obra Pavimentación Policial – 16 de Noviembre junto a intendente",
+      "link": "https://www.instagram.com/p/DdY-5CEx4sl/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Testimonio intendentes/gfes comunales entrega de ambulancias",
+      "link": "https://www.facebook.com/reel/2888722934827510",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL | REEL Visita Obra Pavimento Alta Cba Y Comunidad Renó",
+      "link": "https://www.instagram.com/p/DdY7blwIxUe/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Pruebas PISA y Aprender - Conferencia Teatro Libertador. Con portada",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Capacitación en finanzas",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7506337539495190528",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | INAUGURACIÓN ACCESOS AL PUENTE CTAMOLOCHITA",
+      "link": "https://www.instagram.com/p/DdZguREqeRM/",
+      "lugar_raw": "Paraje Los Potreros",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB Prog. Lazos 21 edición",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0kxoWmbqcUdomk7M57UQu289EnLz5W3pBpRtQbc3uSYU296gWcUfSKT1KE2p8ceTBl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "Short Gobierno",
+      "redes_sociales": [
+        "Short Gobierno"
+      ],
+      "nombre_contenido": "Nuevo dinosaurio gigante en Parque de las Teja",
+      "link": "https://youtube.com/shorts/ulE-LeNqcQM?feature=share",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "LK GNO Prog. Lazos 21 edición",
+      "link": "https://www.linkedin.com/posts/gobierno-de-cordoba_pymes-mipymes-hacerparacrecer-activity-7506422178373029888-DLhP?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAhrN2gBuyoEwaF3web8UAd9NBCvxpokido&utm_campaign=copy_link",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Obra Pavimentación Policial – 16 de Noviembre junto a intendente",
+      "link": "https://www.facebook.com/reel/1397500219194430",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Testimonio intendentes/gfes comunales entrega de ambulancias",
+      "link": "https://www.instagram.com/p/DdZy58LKnQU/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | REEL Visita Obra Pavimento Alta Cba Y Comunidad Renó",
+      "link": "https://www.facebook.com/martinllaryoraoficial",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel Presentación Hola Familia",
+      "link": "https://www.instagram.com/p/DdZyGiZlbPT/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia Prog. Lazos 21 edición",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK GNO | Director club Damlasio Velez Sarsfield",
+      "link": "https://vt.tiktok.com/ZSqsQ9XkS/",
+      "lugar_raw": "Dalmacio Vélez Sarfield",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "PRUEBAS PISA Y APRENDER",
+      "link": "https://www.tiktok.com/@martinllaryora/video/7686626889338719506?is_from_webapp=1&sender_device=pc",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Habilitación del primer tramo Av. Bodereau",
+      "link": "https://www.instagram.com/p/DdaIjmzNLbG/",
+      "lugar_raw": "Villa Allende, Saldán, Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA ALLENDE",
+        "SALDAN",
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Habilitación del primer tramo Av. Bodereau",
+      "link": "https://www.facebook.com/reel/1676961417384051",
+      "lugar_raw": "Villa Allende, Saldán, Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA ALLENDE",
+        "SALDAN",
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Habilitación del primer tramo Av. Bodereau",
+      "link": "https://www.facebook.com/reel/1400055218970331",
+      "lugar_raw": "Villa Allende, Saldán, Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "VILLA ALLENDE",
+        "SALDAN",
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "IG GOBIERNO, FB GOBIERNO, FB MLL, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "FB GOBIERNO",
+        "FB MLL",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO Día de la Bandera de Córdoba",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-17",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Día de la Bandera de Córdoba",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Créditos para productores agropecuarios. Con portada",
+      "link": "https://www.instagram.com/reel/DdbuaYCReot/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Río Cuarto",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "RIO CUARTO"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Educación rural Pocho - Alumna hidroponía",
+      "link": "https://www.facebook.com/reel/1067658582642001",
+      "lugar_raw": "Pocho",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Concurso Ideas Emprendedoras 2026",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Habilitación del Parque “Papa León XIV”",
+      "link": "https://www.instagram.com/p/DdcQOWxlXD0/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Carrusel Habilitación del Parque “Papa León XIV”",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid0w3J6yWpWwvA1LQxsfADefvSkhAC7GACHNbJ1AnHwN7RsgEkumeSwukdNn9kGXhNol",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Día de la Bandera de Córdoba",
+      "link": "https://vt.tiktok.com/ZSqnF7sMk/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "IG/FB GNO | Avance Altonivel Malvinas 80%",
+      "link": "https://www.instagram.com/p/DdcdV4rq--l/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG/FB GNO | Avance Altonivel Malvinas 80%",
+      "link": "https://www.facebook.com/reel/1069404735720502",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "Short Gobierno",
+      "redes_sociales": [
+        "Short Gobierno"
+      ],
+      "nombre_contenido": "Día de la Bandera de Córdoba",
+      "link": "https://www.youtube.com/shorts/w1G_0B1dw4Q",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "YOUTUBE GOBIERNO",
+      "redes_sociales": [
+        "YOUTUBE GOBIERNO"
+      ],
+      "nombre_contenido": "Día de la Bandera de Córdoba",
+      "link": "https://www.youtube.com/watch?v=fXDi0rxEYcs",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Promesa a la Bandera",
+      "link": "https://www.instagram.com/reel/DdczzmBtsjC/?stkn=azlxYXNoNTZvMXR1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Promesa a la Bandera",
+      "link": "https://www.facebook.com/reel/1083039970873685",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TikTok Habilitación del Parque “Papa León XIV”",
+      "link": "https://vt.tiktok.com/ZSqnuRQLf/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TikTok Habilitación del Parque “Papa León XIV”",
+      "link": "https://www.tiktok.com/@martinllaryora/video/7687036248204053780?lang=es",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-18",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Invitación a la peregrinación",
+      "link": null,
+      "lugar_raw": "Cura Brochero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Manejo del Fuego colab Sec Gral",
+      "link": "https://www.instagram.com/p/DdeE5ofIoVy/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "FB GNO COLAB OTROS",
+      "redes_sociales": [
+        "FB GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Manejo del Fuego compartido desde Sec Gral",
+      "link": "https://web.facebook.com/gobdecordoba/posts/pfbid02mwNcTqAuctDP3tdN5oJQSaxttTR1a2RY7eauKPkUe6F5FKCHvbvx1KDLYP7QQCJwl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Perenigración",
+      "link": "https://www.instagram.com/",
+      "lugar_raw": "Cura Brochero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Peregrinación",
+      "link": "https://web.facebook.com/martinllaryoraoficial/posts/pfbid02jsa4PyWLsgQx7zAVXsdp7V3ViNte2sdaeqecYYofkiXnGXDoGqDsXfTHDxkqXRUSl",
+      "lugar_raw": "Cura Brochero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Viista café Telma",
+      "link": "https://vt.tiktok.com/ZSq7gtoDj/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Reel recorrido Camino de Brochero",
+      "link": "https://www.instagram.com/p/Ddfh62ioH2A/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Finde en el Parque Papa León XIV",
+      "link": "https://web.facebook.com/reel/1107487848516357",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Finde en el Parque Papa León XIV",
+      "link": "https://www.instagram.com/p/DdfRJ7EI8h3/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-19",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Finde en el Parque Papa León XIV",
+      "link": "https://vt.tiktok.com/ZSqwdFoJJ/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Recorrido Tercero Arriba",
+      "link": "https://web.facebook.com/reel/28307996368868900",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Recorrido Tercero Arriba",
+      "link": "https://www.instagram.com/p/DdgvCsKIcGP/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "Recorrido Tercero Arriba",
+      "link": "https://web.facebook.com/reel/1394392832238145",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL. 70.000 netbooks y 1.200.000 libros. Con portada",
+      "link": "https://www.instagram.com/p/DdhvpEQImPK/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL. 70.000 netbooks y 1.200.000 libros. Con portada",
+      "link": "https://web.facebook.com/reel/1073304931945254",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Historia MLL. 70.000 netbooks y 1.200.000 libros",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-20",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Visita a Even-Ezer licorería",
+      "link": "https://www.tiktok.com/@martinllaryora/video/7687724502490352917?_r=1&_t=ZS-99uz0qv6yaA",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Día del Estudiante (Video Quo)",
+      "link": "https://www.instagram.com/p/DdjW36FR4vN/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Día del Estudiante (Video Quo)",
+      "link": "https://www.facebook.com/reel/1026982000342381",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Día del Estudiante (Video Quo)",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Día del Estudiante (Video Quo)",
+      "link": "https://www.tiktok.com/@cordobaok/video/7687995852480154900",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Servicio del Quemado Hospital Cba",
+      "link": "https://www.facebook.com/reel/1110288148005889",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Servicio del Quemado Hospital Cba",
+      "link": "https://www.facebook.com/reel/937686378926245",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL | Servicio del Quemado Hospital Cba",
+      "link": "https://www.instagram.com/p/Ddj7bUKIbo5/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "STORY MLL | Servicio del Quemado Hospital Cba",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. 70.000 netbooks y 1.200.000 libros. Con portada",
+      "link": "https://vt.tiktok.com/ZSqwtvq3t/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA Emprende +",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "HISTORIA Emprende +",
+      "link": "https://vt.tiktok.com/ZSqwKo9eT/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO | CARRUSEL RED DOMICILIARIA DE GAS NATURAL",
+      "link": "https://www.instagram.com/p/DdkZS5TjfY6/?stkn=cmtlMXh1azZibTNt",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | CARRUSEL RED DOMICILIARIA DE GAS NA",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0ZECxsWtYEa1WDCpCv3fRNcZAoBgAqz31nFW62kwdCbHGgTeU4ipKzSh1fpAyb78rl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": null,
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "LINKEDIN GOBIERNO",
+      "redes_sociales": [
+        "LINKEDIN GOBIERNO"
+      ],
+      "nombre_contenido": "Cursos Academia Digitalers",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7507860546709356546",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-21",
+      "red_social": "LINKEDIN MLL",
+      "redes_sociales": [
+        "LINKEDIN MLL"
+      ],
+      "nombre_contenido": "PANELES SOLARES EN DEÁN FUNES",
+      "link": "https://www.linkedin.com/posts/martinllaryora_caejrdoba-progreso-epec-activity-7507865003916644354-2w9j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAeSrmcB9sFzIhF0jt1rX6sY8H_pCdUVmow",
+      "lugar_raw": "Deán Funes",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "DEAN FUNES"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "PANELES SOLARES EN DEÁN FUNES",
+      "link": "https://www.facebook.com/martinllaryoraoficial/posts/pfbid044DSWpRLqxjV2jaDvVStVHUMN5tBafZLzPACAVtp7DmRKHgoyKK3u37rRhTdh6Mql",
+      "lugar_raw": "Deán Funes",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "DEAN FUNES"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | REEL Visita Obra Pavimento Alta Cba Y Comunidad Renó",
+      "link": "https://www.instagram.com/reel/Ddl64-hRMKL/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | REEL Visita Obra Pavimento Alta Cba Y Comunidad Renó",
+      "link": "https://www.facebook.com/reel/2398215637651305",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG/FB GNO - Nueva Plaza Central Papa León XIV",
+      "link": "https://www.instagram.com/p/Ddmc48pK1Um/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "IG/FB GNO - Nueva Plaza Central Papa León XIV",
+      "link": "https://www.facebook.com/reel/1758223035388801",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Reel inauguración Parque Leon XIV",
+      "link": "https://www.facebook.com/reel/1771910364125556",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "IG/FB GNO - Nueva Plaza Central Papa León XIV",
+      "link": "https://vt.tiktok.com/ZSqoA8Bfc/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TT MLL | Plaza José Evaristo Fernandez",
+      "link": "https://vt.tiktok.com/ZSqoCftQH/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Video Mensaje MLL \"La discapacidad es prioridad\"",
+      "link": "https://www.instagram.com/reel/Ddm_SMoI3dj/?stkn=MWs4NjkxdXJia25xNw==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Video Mensaje MLL \"La discapacidad es prioridad\"",
+      "link": "https://www.facebook.com/reel/2165207467433124?locale=es_LA",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-22",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Video Mensaje MLL \"La discapacidad es prioridad\"",
+      "link": "https://vt.tiktok.com/ZSqoG7vxr/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "Carrusel Nueva etapa de Córdoba Impulsa",
+      "link": "https://www.instagram.com/p/DdoazODEfuB/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "Carrusel Nueva etapa de Córdoba Impulsa",
+      "link": "https://www.facebook.com/gobdecordoba/posts/pfbid0ynkAUpa5QbomMoq7duHPj3VPNSBwsAKFqfS9twzoLWTJrpHc6T1pqFLsckNMchPpl",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "Entregamos 29 ambulancias cero kilómetro",
+      "link": "https://www.instagram.com/p/Ddo07F2o805/",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "FB GNO COLAB OTROS",
+      "redes_sociales": [
+        "FB GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Video Serie Visceral",
+      "link": "https://www.instagram.com/p/Ddo2Je6pTu-/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO Cursos Academia Digitalers",
+      "link": "https://www.instagram.com/p/DdpSRwWqmTw/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "GNO Cursos Academia Digitalers",
+      "link": "https://www.facebook.com/reel/2193590417853068",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia Córdoba Impulsa",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "Historia nuevos radios urbanos en 22 localidades",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TT MLL en UPC Mina Clavero",
+      "link": "https://vt.tiktok.com/ZSbeUcS9c/",
+      "lugar_raw": "Mina Clavero",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "MINA CLAVERO"
+      ]
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Tik Tok GNO | Combate incendios con helicopeteros con sistema Bambi Bucket",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Pavimentación Cba Capital - Gral Paz - Velez Sarsfield",
+      "link": "https://www.instagram.com/p/DdpfeJTRKfT/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "FB GNO COLAB OTROS",
+      "redes_sociales": [
+        "FB GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Pavimentación Cba Capital - Gral Paz - Velez Sarsfield",
+      "link": "https://www.facebook.com/reel/1752994459269124",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-23",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Testimonio intedentes/gfes comunales entrega de ambulancias",
+      "link": "https://www.facebook.com/reel/1074258521892035",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Nueva planta de saneamiento cloacal Almafuerte",
+      "link": "https://www.instagram.com/reel/Ddq9IlNxzlV/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Almafuerte",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO Serie Visceral Cine cordobés",
+      "link": "https://www.facebook.com/share/r/1K6NgpSfQu/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL Nuevos radios 22 municipios y comunas",
+      "link": "https://www.instagram.com/p/Ddq48cmFSTf/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIA GNO Premios a la producción 2026",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Historia GOB Programa Primer Paso 2026 en marcha",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "FB GOBIERNO, FB MLL",
+      "redes_sociales": [
+        "FB GOBIERNO",
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB GOB Programa Primer Paso 2026 en marcha. Con portada",
+      "link": "https://www.facebook.com/share/r/1F7WGisQmE/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GOB Programa Primer Paso 2026 en marcha. Con portada",
+      "link": "https://www.instagram.com/reel/DdrYaAlqh9y/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. Automovilismo y turismo en Córdoba. Con portada",
+      "link": "https://vt.tiktok.com/ZSb81c7vb/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "Tik Tok GOB. Obras en Av. Bodereau. Con portada",
+      "link": "https://vt.tiktok.com/ZSb8e3qkv/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Nueva planta de saneamiento cloacal Almafuerte",
+      "link": "https://www.facebook.com/reel/2522813141545363",
+      "lugar_raw": "Almafuerte",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "ALMAFUERTE"
+      ]
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "Jardín Bartolomé Mitre",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG MLL - DONDE HAY OBRAS, HAY PROGRESO (Interruptor que prende y apaga)",
+      "link": "https://www.instagram.com/p/DdsAjBMlQTw/?img_index=1",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-24",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB MLL - DONDE HAY OBRAS, HAY PROGRESO (Interruptor que prende y apaga)",
+      "link": "https://www.facebook.com/reel/1360807099550082",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL | Llaryora inauguró el nuevo edificio del Centro Educativo de Nivel Inicial (CENI) Bartolomé Mitre",
+      "link": "https://www.facebook.com/share/r/18UAnHy5ah/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Llaryora inauguró el nuevo edificio del Centro Educativo de Nivel Inicial (CENI) Bartolomé Mitre",
+      "link": "https://www.facebook.com/share/r/19i3KtyFvJ/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO | Llaryora inauguró el nuevo edificio del Centro Educativo de Nivel Inicial (CENI) Bartolomé Mitre",
+      "link": "https://www.instagram.com/reel/DdthZwYRp0l/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "HISTORIA META",
+      "redes_sociales": [
+        "HISTORIA META"
+      ],
+      "nombre_contenido": "HISTORIAS GNO Certificado de discapacidad FAQ",
+      "link": null,
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
       "red_social": null,
       "redes_sociales": [],
-      "nombre_contenido": "carrusel familiar desaparecidos! para hacer colab.",
+      "nombre_contenido": "Anuncio de vivo Circunvalación Sudeste Villa María–Villa Nueva",
+      "link": "https://www.instagram.com/p/DduAZC7FP0e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "HISTORIA META, HISTORIA MLL META",
+      "redes_sociales": [
+        "HISTORIA META",
+        "HISTORIA MLL META"
+      ],
+      "nombre_contenido": "18 h. HISTORIA Y TW ANUNCIO VIVO DE CIRCUNVALACIÓN VILLA MARÍA",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "TIKTOK GOBIERNO",
+      "redes_sociales": [
+        "TIKTOK GOBIERNO"
+      ],
+      "nombre_contenido": "TIKTOK GNO Cursos Academia Digitalers",
+      "link": "https://vt.tiktok.com/ZSbNQ7Cmd/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "Tik Tok MLL. PPP 2026. Dos opciones de portada",
+      "link": "https://vt.tiktok.com/ZSbNpKFDq/",
+      "lugar_raw": "Toda la provincia",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": true,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Reel Ente Metropolitano TecnoPresente",
+      "link": "https://www.facebook.com/reel/4466016320314672",
+      "lugar_raw": "Área Metropolitana",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Mensaje de agradecimiento MLL Cordobeses en Alerta",
+      "link": "https://www.instagram.com/p/DduhdySKYZb/",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "FB GNO COLAB OTROS",
+      "redes_sociales": [
+        "FB GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Carrusel Obras en la peatonal",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "IG GNO COLAB OTROS",
+      "redes_sociales": [
+        "IG GNO COLAB OTROS"
+      ],
+      "nombre_contenido": "Carrusel Obras en la peatonal",
+      "link": "https://www.instagram.com/p/Ddum9ifkV8V/?img_index=1",
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL Visita al MAC",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-25",
+      "red_social": "IG MLL",
+      "redes_sociales": [
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG MLL Visita al MAC",
+      "link": null,
+      "lugar_raw": "Ciudad de Córdoba",
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": [
+        "CORDOBA"
+      ]
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": "FB MLL, FB GOBIERNO",
+      "redes_sociales": [
+        "FB MLL",
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Emprende +",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": "IG MLL, IG GOBIERNO",
+      "redes_sociales": [
+        "IG MLL",
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "Carrusel Emprende +",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Escuela Formación Profesional - Villa General Belgrano",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Escuela Formación Profesional - Villa General Belgrano",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "Circunvalación Villa María",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-26",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TIK TOK MLL | FOGÓN VILLA DEL TOTORAL",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "IG GOBIERNO",
+      "redes_sociales": [
+        "IG GOBIERNO"
+      ],
+      "nombre_contenido": "IG GNO | Carrusel Miel en Polvo",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": null,
+      "redes_sociales": [],
+      "nombre_contenido": "HISTORIA GNO Miel en polvo",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO | Carrusel Miel en Polvo",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "FB MLL",
+      "redes_sociales": [
+        "FB MLL"
+      ],
+      "nombre_contenido": "FB MLL - Escuchá. Altonivel de Av. Vélez Sarsfield 80% de avance",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "FB GOBIERNO",
+      "redes_sociales": [
+        "FB GOBIERNO"
+      ],
+      "nombre_contenido": "FB GNO - Escuchá. Altonivel de Av. Vélez Sarsfield 80% de avance",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "IG GOBIERNO, IG MLL",
+      "redes_sociales": [
+        "IG GOBIERNO",
+        "IG MLL"
+      ],
+      "nombre_contenido": "IG GNO - Escuchá. Altonivel de Av. Vélez Sarsfield 80% de avance",
+      "link": null,
+      "lugar_raw": null,
+      "lugar_excluido_por_link": false,
+      "ambito_provincial": false,
+      "localidades": []
+    },
+    {
+      "fecha": "2026-09-27",
+      "red_social": "TIKTOK MLL",
+      "redes_sociales": [
+        "TIKTOK MLL"
+      ],
+      "nombre_contenido": "TT MLL | Arroyo los Patos Gas Natural",
       "link": null,
       "lugar_raw": null,
       "lugar_excluido_por_link": false,
@@ -12838,63 +17578,13 @@
       "localidades": []
     }
   ],
-  "no_identificados": [
+  "no_identificados": [],
+  "fuzzy_aplicados": [
     {
-      "fila": 900,
-      "token": "Villa Giardino",
-      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
-      "fecha": "2026-08-25"
-    },
-    {
-      "fila": 900,
-      "token": "Valle Hermoso",
-      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
-      "fecha": "2026-08-25"
-    },
-    {
-      "fila": 900,
-      "token": "Casa Grande",
-      "lugar_original": "Carlos Paz, Villa Giardino, Valle Hermoso, Casa Grande, Santa María de Punilla",
-      "fecha": "2026-08-25"
-    },
-    {
-      "fila": 923,
-      "token": "Sierras Chicas",
-      "lugar_original": "Sierras Chicas",
-      "fecha": "2026-08-27"
-    },
-    {
-      "fila": 926,
-      "token": "Sierras Chicas",
-      "lugar_original": "Sierras Chicas",
-      "fecha": "2026-08-27"
-    },
-    {
-      "fila": 933,
-      "token": "Área Metropolitana",
-      "lugar_original": "Saldán, Área Metropolitana",
-      "fecha": "2026-08-28"
-    },
-    {
-      "fila": 934,
-      "token": "Área Metropolitana",
-      "lugar_original": "Saldán, Área Metropolitana",
-      "fecha": "2026-08-28"
-    },
-    {
-      "fila": 935,
-      "token": "Área Metropolitana",
-      "lugar_original": "Saldán, Área Metropolitana",
-      "fecha": "2026-08-28"
-    },
-    {
-      "fila": 936,
-      "token": "Área Metropolitana",
-      "lugar_original": "Saldán, Área Metropolitana",
-      "fecha": "2026-08-28"
+      "token_original": "Cruz del Eje (5)",
+      "matcheado_con": "CRUZ DEL EJE"
     }
   ],
-  "fuzzy_aplicados": [],
   "lugares_con_link_excluidos": [
     {
       "fila": 572,
@@ -12913,18 +17603,33 @@
     {
       "fila": 949,
       "fecha": "2026-08-29",
-      "nombre_contenido": "CAMINO DE BROCHERO"
+      "nombre_contenido": "IG MLL | CAMINO DE BROCHERO"
     },
     {
-      "fila": 964,
-      "fecha": "2026-08-31",
-      "nombre_contenido": "AgroImperio: https://drive.google.com/drive/folders/1LtGB9YA4_bwWr2YX9ayIg6mW5e_F9WZL?usp=sharing"
+      "fila": 958,
+      "fecha": "2026-08-30",
+      "nombre_contenido": "IG MLL | Reel Avance 30% Autopista Ruta 19"
     },
     {
-      "fila": 983,
-      "fecha": "2026-09-02",
-      "nombre_contenido": "carrusel familiar desaparecidos! para hacer colab."
+      "fila": 959,
+      "fecha": "2026-08-30",
+      "nombre_contenido": "IG MLL | RECORRIDA NOROESTE"
+    },
+    {
+      "fila": 1283,
+      "fecha": "2026-09-25",
+      "nombre_contenido": "Anuncio de vivo Circunvalación Sudeste Villa María–Villa Nueva"
+    },
+    {
+      "fila": 1301,
+      "fecha": "2026-09-26",
+      "nombre_contenido": "Circunvalación Villa María"
+    },
+    {
+      "fila": 1305,
+      "fecha": "2026-09-27",
+      "nombre_contenido": "HISTORIA GNO Miel en polvo"
     }
   ],
-  "filas_descartadas_vacias": 43
+  "filas_descartadas_vacias": 24
 }

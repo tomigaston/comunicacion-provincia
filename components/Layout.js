@@ -5,12 +5,13 @@ import { useEffect, useMemo, useState } from 'react';
 import { tieneAccesoSeccion } from '../config/permisos';
 
 // La propiedad `key` identifica la sección para el esquema de permisos de
-// config/permisos.js. Hoy SECCIONES_RESTRINGIDAS está vacío, así que el
-// filtro de abajo no oculta nada: el menú se ve igual que siempre. Para
-// restringir una sección nueva en el futuro, alcanza con agregar su entrada
-// en SECCIONES_RESTRINGIDAS (config/permisos.js) — no hace falta tocar nada
-// más acá salvo, si es una sección que hoy no existe, sumar su `key` al tab
-// correspondiente.
+// config/permisos.js. Hoy solo encuestas_localidades está restringida (ver
+// SECCIONES_RESTRINGIDAS en config/permisos.js) — el filtro de abajo la
+// oculta del menú para quien no tenga acceso; el resto de las tabs se ve
+// igual que siempre. Para restringir una sección nueva en el futuro,
+// alcanza con agregar su entrada en SECCIONES_RESTRINGIDAS
+// (config/permisos.js) — no hace falta tocar nada más acá salvo, si es una
+// sección que hoy no existe, sumar su `key` al tab correspondiente.
 const TABS = [
   { href: '/localidades', label: 'Localidades', key: 'localidades' },
   { href: '/campanas', label: 'Campañas', key: 'campanas' },
@@ -40,8 +41,10 @@ export default function Layout({ title, children }) {
   }, []);
 
   // Mientras /api/session todavía no resolvió, se muestran todas las tabs
-  // (igual que antes de este cambio, sin flicker) — ninguna está restringida
-  // hoy, así que el resultado final es el mismo de todas formas.
+  // (sin flicker) — incluida encuestas_localidades, la única restringida
+  // hoy (ver SECCIONES_RESTRINGIDAS en config/permisos.js): por un instante
+  // se ve incluso para quien después no tiene acceso, hasta que la sesión
+  // resuelve y el filtro de abajo la oculta.
   const tabsVisibles = useMemo(() => {
     if (!sesion) return TABS;
     return TABS.filter((tab) => tieneAccesoSeccion(sesion, tab.key));

@@ -4,16 +4,19 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import CoverageBadge from '../../components/CoverageBadge';
 import StatusBadge from '../../components/StatusBadge';
-import AnioBadge from '../../components/AnioBadge';
 import FiltroPeriodo from '../../components/FiltroPeriodo';
 import VerMaterial, { enlaceEstilo } from '../../components/VerMaterial';
 import ModalLineaTiempoMedios from '../../components/ModalLineaTiempoMedios';
 import MensajeTruncado from '../../components/MensajeTruncado';
 import SemaforoBadge from '../../components/SemaforoBadge';
+import { ResumenLocalidad } from '../../components/ResumenCards';
+import { resumenLocalidad } from '../../lib/resumen';
+import { isoDe } from '../../lib/vencimientos';
 import { useApiData } from '../../lib/useApiData';
 import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
+import { claveTipoMedio } from '../../lib/resumen';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
@@ -63,7 +66,6 @@ export default function DetalleLocalidad() {
     '/api/data/localidades',
     '/api/data/medios-tradicionales',
     '/api/data/pauta-digital',
-    '/api/data/audiovisuales',
     '/api/data/sms',
     '/api/data/contenido-organico',
   ]);
@@ -71,13 +73,16 @@ export default function DetalleLocalidad() {
   const [periodo, setPeriodo] = useState(PERIODO_DEFAULT);
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const [modalTimelineAbierto, setModalTimelineAbierto] = useState(false);
+  // Recorte de la tabla de MT pedido desde las cards: solo temas ACTIVOS, de un
+  // tipo (o de todos). null = sin recorte.
+  const [filtroTemas, setFiltroTemas] = useState(null);
 
   // Datos base de la localidad, SIN filtrar por período — de acá sale tanto
   // lo que se termina mostrando (una vez aplicado el filtro) como la lista
   // de meses reales para el dropdown "mes puntual".
   const info = useMemo(() => {
     if (!datos || !slug) return null;
-    const [localidadesData, mediosData, pautaData, audiovisualesData, smsData, contenidoOrganicoData] = datos;
+    const [localidadesData, mediosData, pautaData, smsData, contenidoOrganicoData] = datos;
 
     const base = localidadesData.localidades.find((l) => slugificar(l.localidad) === slug);
     if (!base) return { noEncontrada: true };
@@ -100,10 +105,6 @@ export default function DetalleLocalidad() {
       )
       .sort((a, b) => (b.finalizacion || '').localeCompare(a.finalizacion || ''));
 
-    const itemsAudiovisuales = audiovisualesData.items
-      .filter((i) => i.en_60_prioritarias && normalizarTexto(i.localidad) === clave)
-      .sort((a, b) => (b.fecha_fin || b.fecha_inicio || '').localeCompare(a.fecha_fin || a.fecha_inicio || ''));
-
     // Mismo criterio que Pauta digital: solo se atribuye a ESTA localidad
     // cuando algún alcance del envío es tipo "localidad" y coincide por
     // nombre — un alcance "departamento" en el mismo envío no cuenta acá
@@ -121,7 +122,7 @@ export default function DetalleLocalidad() {
       .filter((p) => (p.localidades || []).some((l) => normalizarTexto(l) === clave))
       .sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''));
 
-    return { base, medios, piezasPauta, itemsAudiovisuales, enviosSms, publicacionesOrganico };
+    return { base, medios, piezasPauta, enviosSms, publicacionesOrganico };
   }, [datos, slug]);
 
   // Fechas reales de esta localidad (las 3 áreas juntas), para armar el
@@ -131,33 +132,70 @@ export default function DetalleLocalidad() {
     const fechas = [];
     if (info.medios) info.medios.vigentes.forEach((v) => fechas.push(v.fecha_hasta || v.fecha_desde));
     info.piezasPauta.forEach((p) => fechas.push(p.finalizacion));
-    info.itemsAudiovisuales.forEach((it) => fechas.push(it.fecha_fin || it.fecha_inicio));
     info.enviosSms.forEach((e) => fechas.push(e.fecha_inicio));
     info.publicacionesOrganico.forEach((p) => fechas.push(p.fecha));
     return fechas;
   }, [info]);
+
+  // Cards de resumen de esta localidad: no dependen del filtro de período
+  // (estado actual), mismas fuentes que la grilla y el semáforo (lib/resumen.js).
+  const resumen = useMemo(() => {
+    if (!info || !info.base || !datos) return null;
+    return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()), datos[2].generado_el);
+  }, [info, datos]);
+
+  // Click en un número de la card de MT: muestra en la tabla exactamente esos
+  // temas (Estado=Activo, de ese tipo), con el período en "Todo" para que el
+  // conteo de la tabla sea el de la card, y baja hasta la tabla.
+  function filtrarTemas({ tipo }) {
+    setFiltroTemas({ tipo });
+    setPeriodo({ tipo: 'preset', valor: 'todo' });
+    setTimeout(() => {
+      const el = typeof document !== 'undefined' && document.getElementById('seccion-mt');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0);
+  }
 
   // Listas efectivamente visibles, ya con el filtro de período aplicado.
   const visible = useMemo(() => {
     if (!info || info.noEncontrada) return null;
     return {
       vigentes: info.medios
-        ? info.medios.vigentes.filter((v) => fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana))
+        ? info.medios.vigentes.filter(
+            (v) =>
+              fechaDentroDeVentana(v.fecha_hasta || v.fecha_desde, ventana) &&
+              (!filtroTemas ||
+                ((v.estado || '').trim().toLowerCase() === 'activo' &&
+                  (!filtroTemas.tipo || claveTipoMedio(v.tipo_medio) === filtroTemas.tipo)))
+          )
         : [],
-      piezasPauta: info.piezasPauta.filter((p) => rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)),
-      itemsAudiovisuales: info.itemsAudiovisuales.filter((it) =>
-        fechaDentroDeVentana(it.fecha_fin || it.fecha_inicio, ventana)
+      // Programada (INICIO futuro): con un preset (siempre hacia atrás desde hoy) se
+      // muestra igual; mes/rango personalizado sí se respetan.
+      piezasPauta: info.piezasPauta.filter(
+        (p) =>
+          (p.estado === 'Programada' && periodo.tipo === 'preset') ||
+          rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)
       ),
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
       publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
     };
-  }, [info, ventana]);
+  }, [info, ventana, periodo, filtroTemas]);
 
   // Canales con al menos una pieza dentro del período elegido (mismo cálculo
   // que ya filtra visible.piezasPauta), para los chips del bloque Pauta
   // digital.
   const canalesActivos = useMemo(
-    () => new Set(visible ? visible.piezasPauta.flatMap(canalesDePieza) : []),
+    () => new Set(visible ? visible.piezasPauta.filter((p) => p.estado !== 'Programada').flatMap(canalesDePieza) : []),
+    [visible]
+  );
+  // Programadas (aún no empezaron) van en un bloque aparte: no cuentan como
+  // pauta vigente ni marcan canales como presentes.
+  const piezasProgramadas = useMemo(
+    () => (visible ? visible.piezasPauta.filter((p) => p.estado === 'Programada') : []),
+    [visible]
+  );
+  const piezasPautaActual = useMemo(
+    () => (visible ? visible.piezasPauta.filter((p) => p.estado !== 'Programada') : []),
     [visible]
   );
 
@@ -183,6 +221,8 @@ export default function DetalleLocalidad() {
             {info.base.poblacion ? ` · ${info.base.poblacion.toLocaleString('es-AR')} habitantes` : ''}
           </p>
 
+          {resumen && <ResumenLocalidad r={resumen} onFiltrarTemas={filtrarTemas} />}
+
           <div
             style={{
               background: 'var(--bg-primary)',
@@ -199,6 +239,7 @@ export default function DetalleLocalidad() {
             </p>
           </div>
 
+          <div id="seccion-mt">
           <Seccion titulo="Medios tradicionales">
             {info.medios ? (
               <>
@@ -234,6 +275,17 @@ export default function DetalleLocalidad() {
                   Ver línea de tiempo completa
                 </button>
 
+                {filtroTemas && (
+                  <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 10 }}>
+                    Mostrando {visible.vigentes.length} tema{visible.vigentes.length === 1 ? '' : 's'} activo
+                    {visible.vigentes.length === 1 ? '' : 's'}
+                    {filtroTemas.tipo ? ` de ${TIPOS_MEDIO.find((t) => t.key === filtroTemas.tipo).label}` : ''}
+                    {' · '}
+                    <button type="button" onClick={() => setFiltroTemas(null)} style={enlaceEstilo}>
+                      Quitar filtro
+                    </button>
+                  </p>
+                )}
                 {info.medios.vigentes.length === 0 ? (
                   <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                     No hay ningún tema vigente cargado para esta localidad.
@@ -262,7 +314,11 @@ export default function DetalleLocalidad() {
                             <td style={{ ...td, whiteSpace: 'pre-wrap' }}>{v.tema}</td>
                             <td style={td}>
                               <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                                <span>{rangoVigencia || '—'}</span>
+                                {v.sin_fecha ? (
+                                  <span style={{ color: 'var(--text-tertiary)' }}>Sin fecha cargada</span>
+                                ) : (
+                                  <span>{rangoVigencia || '—'}</span>
+                                )}
                                 <SemaforoBadge alerta={v.alerta} antiguedadDias={v.antiguedad_dias} />
                               </div>
                             </td>
@@ -280,6 +336,7 @@ export default function DetalleLocalidad() {
               <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
             )}
           </Seccion>
+          </div>
 
           {modalTimelineAbierto && info.medios && (
             <ModalLineaTiempoMedios
@@ -317,7 +374,7 @@ export default function DetalleLocalidad() {
                   Ninguna pieza de pauta digital cae dentro del período elegido (hay{' '}
                   {info.piezasPauta.length} en total). Probá con "Todo".
                 </p>
-              ) : (
+              ) : piezasPautaActual.length === 0 ? null : (
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
@@ -330,7 +387,7 @@ export default function DetalleLocalidad() {
                     </tr>
                   </thead>
                   <tbody>
-                    {visible.piezasPauta.map((p, i) => (
+                    {piezasPautaActual.map((p, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                         <td style={td}>{p.titulo_pieza || '—'}</td>
                         <td style={td}>
@@ -352,46 +409,51 @@ export default function DetalleLocalidad() {
                   </tbody>
                 </table>
               )}
-            </Seccion>
-          )}
 
-          {info.itemsAudiovisuales.length > 0 && (
-            <Seccion titulo="Audiovisuales">
-              {visible.itemsAudiovisuales.length === 0 ? (
-                <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
-                  Ningún contenido audiovisual cae dentro del período elegido (hay{' '}
-                  {info.itemsAudiovisuales.length} en total — varios sin fecha cargada, por eso no
-                  entran salvo con "Todo"). Probá con "Todo".
-                </p>
-              ) : (
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                  <thead>
-                    <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                      <th style={th}>Campaña</th>
-                      <th style={th}>Tipo de contenido</th>
-                      <th style={th}>Fecha</th>
-                      <th style={th}>Estado</th>
-                      <th style={th}>Material</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {visible.itemsAudiovisuales.map((it, i) => (
-                      <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                        <td style={td}>{it.campana}</td>
-                        <td style={td}>{it.tipo_contenido}</td>
-                        <td style={td}>
-                          <AnioBadge fechaInicio={it.fecha_inicio} fechaFin={it.fecha_fin} />
-                        </td>
-                        <td style={td}>
-                          <StatusBadge estado={it.estado} />
-                        </td>
-                        <td style={td}>
-                          <VerMaterial links={it.links} />
-                        </td>
+              {piezasProgramadas.length > 0 && (
+                <div style={{ marginTop: 22 }}>
+                  <h3 style={{ fontSize: 14, fontWeight: 700, margin: '0 0 4px', color: '#1976d2' }}>
+                    Programadas ({piezasProgramadas.length})
+                  </h3>
+                  <p style={{ fontSize: 12.5, color: 'var(--text-tertiary)', margin: '0 0 8px' }}>
+                    Todavía no empezaron: no cuentan como pauta vigente.
+                  </p>
+                  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                    <thead>
+                      <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+                        <th style={th}>Título de la pieza</th>
+                        <th style={th}>Canal</th>
+                        <th style={th}>Tipo de pauta</th>
+                        <th style={th}>Plataforma</th>
+                        <th style={th}>Inicio – Fin</th>
+                        <th style={th}>Material</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {piezasProgramadas.map((p, i) => (
+                        <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                          <td style={td}>{p.titulo_pieza || '—'}</td>
+                          <td style={td}>
+                            <CanalBadges pieza={p} />
+                          </td>
+                          <td style={td}>{p.tipo_pauta || '—'}</td>
+                          <td style={td}>{p.plataforma || '—'}</td>
+                          <td style={td}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <span>
+                                {formatearFechaCorta(p.inicio) || '—'} – {formatearFechaCorta(p.finalizacion) || '—'}
+                              </span>
+                              <StatusBadge estado={p.estado} />
+                            </div>
+                          </td>
+                          <td style={td}>
+                            <VerMaterial links={p.links_material} />
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               )}
             </Seccion>
           )}

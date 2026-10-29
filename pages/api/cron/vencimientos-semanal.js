@@ -2,6 +2,9 @@ import { leerJsonDeDatos } from '../../../lib/datos';
 import {
   calcularVencimientosMediosTradicionales,
   calcularVencimientosPautaDigital,
+  calcularCoberturaFaltanteMT,
+  calcularLocalidadesSinPautaViva,
+  calcularLocalidadesSinCobertura,
   isoDe,
 } from '../../../lib/vencimientos';
 import {
@@ -19,7 +22,9 @@ import {
  * Manda 3 mails con criterios DISTINTOS por área (no se mezclan, ver
  * lib/vencimientos.js): Medios Tradicionales por antigüedad de actualización
  * (semáforo 🟡/🔴), Pauta Digital por vencimiento real dentro de la ventana
- * hoy..hoy+7. El general (EMAIL_TO, obligatoria) combina los dos bloques; los
+ * hoy..hoy+7. Cada mail suma su sección de cobertura (MT: tipos que faltan por
+ * localidad; PD: localidades sin pauta viva) y el general suma el flag global
+ * "sin cobertura" (cero MT activo Y cero PD que cuenta). El general (EMAIL_TO, obligatoria) combina los dos bloques; los
  * dos por área (EMAIL_TO_MEDIOS_TRADICIONALES / EMAIL_TO_PAUTA_DIGITAL) son
  * opcionales -- si alguna todavía no está cargada, se saltea con un
  * console.warn en vez de tirar abajo el cron entero.
@@ -39,14 +44,24 @@ export default async function handler(req, res) {
     const datosMT = calcularVencimientosMediosTradicionales(mediosTradicionales);
     const datosPD = calcularVencimientosPautaDigital(pautaDigital, hoyIso);
 
-    await enviarEmailVencimientos(datosMT, datosPD, hoyIso);
-    await enviarEmailVencimientosMediosTradicionales(datosMT, hoyIso);
-    await enviarEmailVencimientosPautaDigital(datosPD, hoyIso);
+    // Cobertura (spec 11/10/2026, D5): operativa por área + flag global.
+    const coberturaMT = calcularCoberturaFaltanteMT(mediosTradicionales);
+    const coberturaPD = calcularLocalidadesSinPautaViva(mediosTradicionales, pautaDigital, hoyIso);
+    const sinCobertura = calcularLocalidadesSinCobertura(mediosTradicionales, pautaDigital, hoyIso);
+
+    await enviarEmailVencimientos(datosMT, datosPD, hoyIso, sinCobertura);
+    await enviarEmailVencimientosMediosTradicionales(datosMT, hoyIso, coberturaMT);
+    await enviarEmailVencimientosPautaDigital(datosPD, hoyIso, coberturaPD);
 
     return res.status(200).json({
       ok: true,
       mediosTradicionales: { temas: datosMT.grupos.length, ...datosMT.resumen },
       pautaDigital: { campanas: datosPD.grupos.length, ...datosPD.resumen },
+      cobertura: {
+        mtLocalidadesConFaltantes: coberturaMT.resumen.total,
+        pdLocalidadesSinPautaViva: coberturaPD.localidades.length,
+        localidadesSinCobertura: sinCobertura.localidades.map((l) => l.localidad),
+      },
     });
   } catch (e) {
     console.error('Error en cron de vencimientos semanales:', e);

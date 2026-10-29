@@ -1,5 +1,6 @@
 import AnioBadge from './AnioBadge';
 import VerMaterial from './VerMaterial';
+import StatusBadge from './StatusBadge';
 import { rangoFechaDesdeHasta } from '../lib/fechas';
 
 const AREA_COLOR = {
@@ -10,16 +11,9 @@ const AREA_COLOR = {
 
 function alcanceLabel(item) {
   if (item.alcance_tipo === 'provincia') return 'Toda la provincia';
+  // Solo piezas del histórico: la fuente nueva ya no tiene ámbito departamento.
   if (item.alcance_tipo === 'departamento') return `Depto. ${item.departamento}`;
   return item.localidad || item.departamento || '—';
-}
-
-function detalleTexto(item) {
-  const d = item.detalle || {};
-  if (item.area_origen === 'Pauta digital') {
-    return d.estado || '—';
-  }
-  return '—';
 }
 
 function DetalleMediosTradicionales({ detalle }) {
@@ -73,8 +67,10 @@ export default function CampanaRow({ item }) {
           <DetalleAudiovisuales detalle={item.detalle} />
         ) : item.area_origen === 'Medios tradicionales' ? (
           <DetalleMediosTradicionales detalle={item.detalle} />
+        ) : item.area_origen === 'Pauta digital' ? (
+          <StatusBadge estado={item.detalle?.estado} />
         ) : (
-          detalleTexto(item)
+          '—'
         )}
       </td>
     </tr>
