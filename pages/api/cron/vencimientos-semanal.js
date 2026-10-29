@@ -13,10 +13,13 @@ import {
   armarHtmlVencimientos,
   armarHtmlVencimientosMediosTradicionales,
   armarHtmlCoberturaPautaDigital,
+  asuntoGeneral,
+  asuntoMediosTradicionales,
+  asuntoPautaDigital,
 } from '../../../lib/mailer';
 
-// Modo de prueba: `?dryRun=1&mail=general|mt|pd` devuelve el HTML de ese mail
-// sin enviar nada. `&fecha=AAAA-MM-DD` (opcional, solo en este modo) fija la
+// Modo de prueba: `?dryRun=1&mail=general|mt|pd` devuelve el HTML de ese mail,
+// con su asunto arriba, sin enviar nada. `&fecha=AAAA-MM-DD` (opcional, solo en este modo) fija la
 // fecha de control en lugar de hoy. Pide el mismo `Authorization: Bearer
 // $CRON_SECRET` que el cron.
 const MAILS_DRY_RUN = ['general', 'mt', 'pd'];
@@ -71,14 +74,19 @@ export default async function handler(req, res) {
     const sinCobertura = calcularLocalidadesSinCobertura(mediosTradicionales, pautaDigital, hoyIso);
 
     if (dryRun) {
-      const html = {
-        general: () => armarHtmlVencimientos(datosMT, coberturaPD, sinCobertura),
-        mt: () => armarHtmlVencimientosMediosTradicionales(datosMT, coberturaMT),
-        pd: () => armarHtmlCoberturaPautaDigital(coberturaPD),
+      const [asunto, html] = {
+        general: () => [asuntoGeneral(hoyIso), armarHtmlVencimientos(datosMT, coberturaPD, sinCobertura)],
+        mt: () => [asuntoMediosTradicionales(hoyIso), armarHtmlVencimientosMediosTradicionales(datosMT, coberturaMT)],
+        pd: () => [asuntoPautaDigital(hoyIso), armarHtmlCoberturaPautaDigital(coberturaPD)],
       }[req.query.mail]();
+      const asuntoHtml = asunto.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       res.setHeader('Cache-Control', 'no-store');
-      return res.status(200).send(`<!doctype html><meta charset="utf-8">${html}`);
+      return res
+        .status(200)
+        .send(
+          `<!doctype html><meta charset="utf-8"><p style="font-family: -apple-system, Arial, sans-serif; max-width: 640px; margin: 16px auto; padding: 8px 12px; background: #f2f2f2; border-radius: 6px;"><strong>Asunto:</strong> ${asuntoHtml}</p>${html}`
+        );
     }
 
     await enviarEmailVencimientos(datosMT, coberturaPD, hoyIso, sinCobertura);
