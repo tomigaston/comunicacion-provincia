@@ -10,7 +10,7 @@
     "generar-datos": "python3 scripts/generar_datos.py"
   },
   "dependencies": {
-    "next": "14.2.35",
+    "next": "15.5.28",
     "nodemailer": "^6.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
