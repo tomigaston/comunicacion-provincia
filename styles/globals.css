@@ -1,12 +1,25 @@
 :root {
+  /* Colores del Manual de marca del Gobierno de Córdoba (noviembre 2026):
+     celeste #6caee5, rojo #bc1734, dorado #cfa55b, gris #808080. */
+  --marca-celeste: #6caee5;
+  --marca-rojo: #bc1734;
+  --marca-dorado: #cfa55b;
+  --marca-gris: #808080;
+
   --bg-primary: #ffffff;
   --bg-secondary: #f5f6f8;
   --bg-tertiary: #eef0f3;
   --text-primary: #1a1a1a;
-  --text-secondary: #5a5f66;
-  --text-tertiary: #8a8f96;
+  --text-secondary: #5f6368;
+  --text-tertiary: #6b7280;
   --border: #e2e4e8;
-  --accent: #1976d2;
+  /* Acento: el celeste de marca sobre blanco no alcanza para texto (2,3:1),
+     así que para links, texto y bordes activos se usa un celeste más oscuro
+     del mismo tono; el celeste del manual va en fondos, subrayados y
+     rellenos (--accent-bg es su versión clara para chips activos). */
+  --accent: #2970a8; /* 5,3:1 sobre blanco, 4,6:1 sobre --accent-bg */
+  --accent-bg: #e3f1fa;
+  --accent-relleno: var(--marca-celeste);
 
   /* Escala de cobertura: salto de matiz real, no tonos de un mismo color */
   --cov-sin: #9ca3af;
@@ -26,8 +39,12 @@
 }
 
 html,
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+body,
+.app-raiz {
+  /* Poppins (manual de marca), cargada en pages/_app.js con next/font. Si la
+     variable no está (por ejemplo en el primer dibujo del servidor), queda la
+     fuente del sistema. */
+  font-family: var(--fuente-poppins, 'Poppins'), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: var(--bg-tertiary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
@@ -77,4 +94,183 @@ select {
 
 tbody tr:hover {
   background-color: rgba(25, 118, 210, 0.04);
+}
+
+/* Encabezado y contenido: márgenes de 24px en escritorio, más angostos en
+   celular (debajo de 600px se perdía un 13% del ancho útil). */
+.encabezado-app {
+  padding: 0 24px;
+  border-top: 3px solid var(--marca-celeste);
+}
+
+/* Logos del encabezado (manual de marca): la versión horizontal en
+   escritorio, solo el escudo en celular. */
+.logo-escritorio {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.logo-celular {
+  height: 32px;
+  width: auto;
+  display: none;
+}
+
+.titulo-app {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.contenido-principal {
+  padding: 24px;
+}
+
+/* Menú de pestañas: en pantallas chicas se desplaza de costado en vez de
+   cortarse (antes, a 375px solo se veían las primeras cuatro pestañas). */
+.menu-pestanas {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.menu-pestanas a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Tablas anchas dentro de una tarjeta: desplazamiento propio, para que no
+   corran toda la página de costado en celular. */
+.tabla-desplazable {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Desplegables nativos (<details>): título siempre visible, lista plegada,
+   cerrados por defecto y accesibles con teclado. */
+.desplegable > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
+  cursor: pointer;
+  padding: 6px 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.desplegable > summary::-webkit-details-marker {
+  display: none;
+}
+
+.desplegable > summary::after {
+  content: '▾';
+  color: var(--accent);
+  margin-left: auto;
+}
+
+.desplegable[open] > summary::after {
+  content: '▴';
+}
+
+.desplegable > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Secciones de la ficha de localidad: tarjeta plegable con el resumen en el
+   encabezado. */
+.seccion {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 6px 20px;
+  margin-bottom: 18px;
+}
+
+.seccion[open] {
+  padding-bottom: 20px;
+}
+
+.seccion > summary {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.desplegable-accion {
+  color: var(--accent);
+  margin-left: auto;
+}
+
+/* Con una acción ("Ver campañas") a la derecha, la flecha va pegada a ella:
+   si las dos llevan margen automático, el espacio libre se reparte y las
+   acciones de renglones distintos quedan desalineadas. */
+.desplegable > summary:has(.desplegable-accion)::after {
+  margin-left: 0;
+}
+
+/* Renglones del bloque Atención: sombreado alternado. */
+.renglones-alternados > details:nth-child(odd) > summary {
+  background: var(--bg-secondary);
+}
+
+.renglones-alternados > details > summary {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+/* Desplegables destacados (más débiles, temas por revisar, contenido
+   repetido): el título lleva fondo de color para que se vea de lejos. */
+.desplegable-destacado > summary {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.desplegable-destacado.tono-rojo > summary {
+  background: var(--cov-baja-bg);
+}
+
+.desplegable-destacado.tono-ambar > summary {
+  background: var(--cov-media-bg);
+}
+
+.desplegable-destacado.tono-dorado > summary {
+  background: #f7efe0;
+  border: 1px solid var(--marca-dorado);
+}
+
+.desplegable-destacado.tono-celeste > summary {
+  background: var(--accent-bg);
+}
+
+/* Propuesta de inicio (6/11/2026): celdas del mapa de 60 localidades. */
+.mapa-celda:hover {
+  filter: brightness(0.95);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .encabezado-app {
+    padding: 0 12px;
+  }
+
+  .logo-escritorio {
+    display: none;
+  }
+
+  .logo-celular {
+    display: block;
+  }
+
+  .contenido-principal {
+    padding: 16px 12px;
+  }
 }
