@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
@@ -17,6 +17,8 @@ import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 import { claveTipoMedio } from '../../lib/resumen';
+import { nombreCampana, PD_DIAS_VENTANA } from '../../lib/semaforo';
+import { BANDA_COBERTURA, textoActivasPD, textoVencimiento } from '../../lib/coverage';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
 
@@ -58,6 +60,13 @@ function CanalBadges({ pieza }) {
   );
 }
 
+// Vistas de la tabla de Pauta digital (2.4): "piezas" es la de siempre.
+const VISTAS_PD = [
+  { key: 'piezas', label: 'Todas las piezas' },
+  { key: 'campana', label: 'Por campaña' },
+];
+const SIN_PLATAFORMA = 'Sin plataforma';
+
 export default function DetalleLocalidad() {
   const router = useRouter();
   const slug = typeof router.query.localidad === 'string' ? router.query.localidad : '';
@@ -76,6 +85,15 @@ export default function DetalleLocalidad() {
   // Recorte de la tabla de MT pedido desde las cards: solo temas ACTIVOS, de un
   // tipo (o de todos). null = sin recorte.
   const [filtroTemas, setFiltroTemas] = useState(null);
+  // Buscador por tema de la tabla de MT (2.5).
+  const [busquedaTema, setBusquedaTema] = useState('');
+  // Tabla de Pauta digital (2.4): vista, buscador y filtros. Por defecto se
+  // muestra todo, como siempre.
+  const [vistaPD, setVistaPD] = useState('piezas');
+  const [busquedaPD, setBusquedaPD] = useState('');
+  const [estadoPD, setEstadoPD] = useState('Todos');
+  const [plataformaPD, setPlataformaPD] = useState('Todas');
+  const refSeccionMT = useRef(null);
 
   // Datos base de la localidad, SIN filtrar por período — de acá sale tanto
   // lo que se termina mostrando (una vez aplicado el filtro) como la lista
@@ -144,15 +162,36 @@ export default function DetalleLocalidad() {
     return resumenLocalidad(info.medios, datos[2].piezas, info.base.localidad, isoDe(new Date()), datos[2].generado_el);
   }, [info, datos]);
 
+  // 2.2: tema activo más reciente de cada tipo de medio. Se elige la fila
+  // Activa con la Fecha_Desde más nueva de cada tipo y se muestra tal cual,
+  // con la alerta de antigüedad que esa fila ya trae de la planilla
+  // (Maestro_Vigente: Antiguedad_Dias y Alerta, contra Fecha_Desde). Sin
+  // Fecha_Desde no hay antigüedad: esas filas no participan.
+  const recientePorTipo = useMemo(() => {
+    const salida = {};
+    if (!info || !info.medios) return salida;
+    for (const v of info.medios.vigentes) {
+      if ((v.estado || '').trim().toLowerCase() !== 'activo' || !v.fecha_desde) continue;
+      const k = claveTipoMedio(v.tipo_medio);
+      if (!salida[k] || v.fecha_desde > salida[k].fecha_desde) {
+        salida[k] = { fecha_desde: v.fecha_desde, alerta: v.alerta, antiguedad_dias: v.antiguedad_dias };
+      }
+    }
+    return salida;
+  }, [info]);
+
   // Click en un número de la card de MT: muestra en la tabla exactamente esos
   // temas (Estado=Activo, de ese tipo), con el período en "Todo" para que el
   // conteo de la tabla sea el de la card, y baja hasta la tabla.
   function filtrarTemas({ tipo }) {
     setFiltroTemas({ tipo });
+    setBusquedaTema('');
     setPeriodo({ tipo: 'preset', valor: 'todo' });
     setTimeout(() => {
-      const el = typeof document !== 'undefined' && document.getElementById('seccion-mt');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (refSeccionMT.current) {
+        refSeccionMT.current.open = true;
+        refSeccionMT.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }, 0);
   }
 
@@ -181,6 +220,15 @@ export default function DetalleLocalidad() {
     };
   }, [info, ventana, periodo, filtroTemas]);
 
+  // 2.5: buscador por tema sobre la tabla de MT (después del período y del
+  // recorte por tipo que viene de las cards).
+  const vigentesBuscados = useMemo(() => {
+    if (!visible) return [];
+    const q = normalizarTexto(busquedaTema);
+    if (!q) return visible.vigentes;
+    return visible.vigentes.filter((v) => normalizarTexto(v.tema).includes(q));
+  }, [visible, busquedaTema]);
+
   // Canales con al menos una pieza dentro del período elegido (mismo cálculo
   // que ya filtra visible.piezasPauta), para los chips del bloque Pauta
   // digital.
@@ -198,6 +246,64 @@ export default function DetalleLocalidad() {
     () => (visible ? visible.piezasPauta.filter((p) => p.estado !== 'Programada') : []),
     [visible]
   );
+
+  // 2.4: opciones de los filtros (de las piezas reales del período) y listas
+  // filtradas por buscador, estado y plataforma. Sin nada elegido se ve todo.
+  const estadosPD = useMemo(
+    () => (visible ? Array.from(new Set(visible.piezasPauta.map((p) => p.estado).filter(Boolean))).sort() : []),
+    [visible]
+  );
+  const plataformasPD = useMemo(
+    () => (visible ? Array.from(new Set(visible.piezasPauta.map((p) => p.plataforma || SIN_PLATAFORMA))).sort() : []),
+    [visible]
+  );
+  const hayFiltroPD = !!busquedaPD.trim() || estadoPD !== 'Todos' || plataformaPD !== 'Todas';
+  const filtrarPD = (lista) => {
+    const q = normalizarTexto(busquedaPD);
+    return lista.filter(
+      (p) =>
+        (!q || normalizarTexto(p.titulo_pieza).includes(q) || normalizarTexto(nombreCampana(p)).includes(q)) &&
+        (estadoPD === 'Todos' || p.estado === estadoPD) &&
+        (plataformaPD === 'Todas' || (p.plataforma || SIN_PLATAFORMA) === plataformaPD)
+    );
+  };
+  const piezasActualFiltradas = useMemo(() => filtrarPD(piezasPautaActual), [piezasPautaActual, busquedaPD, estadoPD, plataformaPD]);
+  const programadasFiltradas = useMemo(() => filtrarPD(piezasProgramadas), [piezasProgramadas, busquedaPD, estadoPD, plataformaPD]);
+
+  // Vista "Por campaña": las mismas piezas filtradas, agrupadas por el nombre
+  // de campaña que ya usan las cards (nombreCampana). Solo se agrupan y se
+  // cuentan; no se calcula nada nuevo.
+  const porCampana = useMemo(() => {
+    const grupos = new Map();
+    for (const p of piezasActualFiltradas) {
+      const n = nombreCampana(p);
+      if (!grupos.has(n)) grupos.set(n, { campana: n, piezas: [], plataformas: new Set(), estados: new Set() });
+      const g = grupos.get(n);
+      g.piezas.push(p);
+      g.plataformas.add(p.plataforma || SIN_PLATAFORMA);
+      g.estados.add(p.estado);
+    }
+    return Array.from(grupos.values())
+      .map((g) => ({ ...g, plataformas: Array.from(g.plataformas).sort(), estados: Array.from(g.estados).sort() }))
+      .sort((a, b) => b.piezas.length - a.piezas.length || a.campana.localeCompare(b.campana, 'es'));
+  }, [piezasActualFiltradas]);
+
+  function limpiarFiltrosPD() {
+    setBusquedaPD('');
+    setEstadoPD('Todos');
+    setPlataformaPD('Todas');
+  }
+
+  // Resúmenes para el encabezado de cada sección (2.1): mismos valores que
+  // las cards de arriba y los conteos de las listas.
+  const resumenMT = resumen && resumen.mt
+    ? `${resumen.mt.temasActivos} tema${resumen.mt.temasActivos === 1 ? '' : 's'} activo${resumen.mt.temasActivos === 1 ? '' : 's'} · ${resumen.mt.tipos} de ${resumen.mt.total} tipos · ${BANDA_COBERTURA[resumen.mt.banda].label.toLowerCase()}`
+    : 'sin datos';
+  const resumenPD = resumen
+    ? resumen.pd.semaforo.activas > 0
+      ? `${textoActivasPD(resumen.pd.semaforo, { desglose: false })} · ${resumen.pd.campanasActivas} campaña${resumen.pd.campanasActivas === 1 ? '' : 's'} · próxima ${textoVencimiento(resumen.pd.semaforo.diasProximoVencimiento)}`
+      : '0 activas'
+    : '';
 
   return (
     <Layout title={info && info.base ? info.base.localidad : 'Localidad'}>
@@ -221,7 +327,7 @@ export default function DetalleLocalidad() {
             {info.base.poblacion ? ` · ${info.base.poblacion.toLocaleString('es-AR')} habitantes` : ''}
           </p>
 
-          {resumen && <ResumenLocalidad r={resumen} onFiltrarTemas={filtrarTemas} />}
+          {resumen && <ResumenLocalidad r={resumen} recientePorTipo={recientePorTipo} onFiltrarTemas={filtrarTemas} />}
 
           <div
             style={{
@@ -239,8 +345,7 @@ export default function DetalleLocalidad() {
             </p>
           </div>
 
-          <div id="seccion-mt">
-          <Seccion titulo="Medios tradicionales">
+          <Seccion id="seccion-mt" titulo="Medios tradicionales" resumen={resumenMT} refDetails={refSeccionMT}>
             {info.medios ? (
               <>
                 <div style={{ marginBottom: 14 }}>
@@ -267,13 +372,19 @@ export default function DetalleLocalidad() {
                   })}
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => setModalTimelineAbierto(true)}
-                  style={{ ...enlaceEstilo, display: 'block', marginBottom: 14 }}
-                >
-                  Ver línea de tiempo completa
-                </button>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', marginBottom: 14 }}>
+                  <button type="button" onClick={() => setModalTimelineAbierto(true)} style={enlaceEstilo}>
+                    Ver línea de tiempo completa
+                  </button>
+                  <input
+                    type="search"
+                    value={busquedaTema}
+                    onChange={(e) => setBusquedaTema(e.target.value)}
+                    placeholder="Buscar tema..."
+                    aria-label="Buscar tema"
+                    style={{ ...inputEstilo, marginLeft: 'auto' }}
+                  />
+                </div>
 
                 {filtroTemas && (
                   <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 10 }}>
@@ -286,6 +397,15 @@ export default function DetalleLocalidad() {
                     </button>
                   </p>
                 )}
+                {busquedaTema.trim() && (
+                  <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 10 }}>
+                    {vigentesBuscados.length} de {visible.vigentes.length} tema{visible.vigentes.length === 1 ? '' : 's'} con «{busquedaTema.trim()}»
+                    {' · '}
+                    <button type="button" onClick={() => setBusquedaTema('')} style={enlaceEstilo}>
+                      Limpiar búsqueda
+                    </button>
+                  </p>
+                )}
                 {info.medios.vigentes.length === 0 ? (
                   <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                     No hay ningún tema vigente cargado para esta localidad.
@@ -295,7 +415,10 @@ export default function DetalleLocalidad() {
                     Ningún tema vigente cae dentro del período elegido (hay {info.medios.vigentes.length}{' '}
                     en total). Probá con "Todo".
                   </p>
+                ) : vigentesBuscados.length === 0 ? (
+                  <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Ningún tema coincide con la búsqueda.</p>
                 ) : (
+                  <div className="tabla-desplazable">
                   <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                     <thead>
                       <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
@@ -306,7 +429,7 @@ export default function DetalleLocalidad() {
                       </tr>
                     </thead>
                     <tbody>
-                      {visible.vigentes.map((v, i) => {
+                      {vigentesBuscados.map((v, i) => {
                         const rangoVigencia = rangoFechaDesdeHasta(v.fecha_desde, v.fecha_hasta);
                         return (
                           <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
@@ -330,13 +453,13 @@ export default function DetalleLocalidad() {
                       })}
                     </tbody>
                   </table>
+                  </div>
                 )}
               </>
             ) : (
               <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Sin datos de medios tradicionales.</p>
             )}
           </Seccion>
-          </div>
 
           {modalTimelineAbierto && info.medios && (
             <ModalLineaTiempoMedios
@@ -347,7 +470,7 @@ export default function DetalleLocalidad() {
           )}
 
           {info.piezasPauta.length > 0 && (
-            <Seccion titulo="Pauta digital">
+            <Seccion titulo="Pauta digital" resumen={resumenPD}>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 18 }}>
                 {CANALES_PAUTA.map((canal) => {
                   const presente = canalesActivos.has(canal.key);
@@ -374,98 +497,116 @@ export default function DetalleLocalidad() {
                   Ninguna pieza de pauta digital cae dentro del período elegido (hay{' '}
                   {info.piezasPauta.length} en total). Probá con "Todo".
                 </p>
-              ) : piezasPautaActual.length === 0 ? null : (
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                  <thead>
-                    <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                      <th style={th}>Título de la pieza</th>
-                      <th style={th}>Canal</th>
-                      <th style={th}>Tipo de pauta</th>
-                      <th style={th}>Plataforma</th>
-                      <th style={th}>Vigente hasta</th>
-                      <th style={th}>Material</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {piezasPautaActual.map((p, i) => (
-                      <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                        <td style={td}>{p.titulo_pieza || '—'}</td>
-                        <td style={td}>
-                          <CanalBadges pieza={p} />
-                        </td>
-                        <td style={td}>{p.tipo_pauta || '—'}</td>
-                        <td style={td}>{p.plataforma || '—'}</td>
-                        <td style={td}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                            <span>{formatearFechaCorta(p.finalizacion) || '—'}</span>
-                            <StatusBadge estado={p.estado} />
+              ) : (
+                <>
+                  {/* 2.4: vista, buscador y filtros. Por defecto, todo. */}
+                  <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
+                    <div style={{ display: 'flex', gap: 4, background: 'var(--bg-secondary)', borderRadius: 999, padding: 3 }}>
+                      {VISTAS_PD.map((v) => (
+                        <button
+                          key={v.key}
+                          type="button"
+                          onClick={() => setVistaPD(v.key)}
+                          aria-pressed={vistaPD === v.key}
+                          style={{
+                            padding: '6px 14px',
+                            borderRadius: 999,
+                            border: 'none',
+                            background: vistaPD === v.key ? 'var(--bg-primary)' : 'transparent',
+                            color: vistaPD === v.key ? 'var(--text-primary)' : 'var(--text-secondary)',
+                            fontWeight: vistaPD === v.key ? 700 : 500,
+                            fontSize: 13,
+                            cursor: 'pointer',
+                            boxShadow: vistaPD === v.key ? '0 1px 2px rgba(0,0,0,0.08)' : 'none',
+                          }}
+                        >
+                          {v.label}
+                        </button>
+                      ))}
+                    </div>
+                    <input
+                      type="search"
+                      value={busquedaPD}
+                      onChange={(e) => setBusquedaPD(e.target.value)}
+                      placeholder="Buscar título o campaña..."
+                      aria-label="Buscar título o campaña"
+                      style={{ ...inputEstilo, flex: '1 1 220px' }}
+                    />
+                    <select value={estadoPD} onChange={(e) => setEstadoPD(e.target.value)} aria-label="Estado" style={selectEstilo}>
+                      <option value="Todos">Todos los estados</option>
+                      {estadosPD.map((e) => (
+                        <option key={e} value={e}>
+                          {e}
+                        </option>
+                      ))}
+                    </select>
+                    <select value={plataformaPD} onChange={(e) => setPlataformaPD(e.target.value)} aria-label="Plataforma" style={selectEstilo}>
+                      <option value="Todas">Todas las plataformas</option>
+                      {plataformasPD.map((p) => (
+                        <option key={p} value={p}>
+                          {p}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  {hayFiltroPD && (
+                    <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 10 }}>
+                      {piezasActualFiltradas.length} de {piezasPautaActual.length} pieza{piezasPautaActual.length === 1 ? '' : 's'}
+                      {piezasProgramadas.length > 0 ? ` · ${programadasFiltradas.length} de ${piezasProgramadas.length} programadas` : ''}
+                      {' · '}
+                      <button type="button" onClick={limpiarFiltrosPD} style={enlaceEstilo}>
+                        Limpiar filtros
+                      </button>
+                    </p>
+                  )}
+
+                  {piezasPautaActual.length === 0 ? null : piezasActualFiltradas.length === 0 ? (
+                    <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>Ninguna pieza coincide con los filtros.</p>
+                  ) : vistaPD === 'piezas' ? (
+                    <TablaPiezas piezas={piezasActualFiltradas} />
+                  ) : (
+                    <div>
+                      {porCampana.map((g) => (
+                        <details key={g.campana} className="desplegable" style={{ borderBottom: '1px solid var(--border)' }}>
+                          <summary>
+                            <span style={{ flex: '1 1 260px' }}>{g.campana}</span>
+                            <span style={{ fontWeight: 500, color: 'var(--text-secondary)', fontSize: 13 }}>
+                              {g.piezas.length} pieza{g.piezas.length === 1 ? '' : 's'} · {g.plataformas.join(', ')} · {g.estados.join(', ')}
+                            </span>
+                          </summary>
+                          <div style={{ margin: '4px 0 10px' }}>
+                            <TablaPiezas piezas={g.piezas} sinCampana />
                           </div>
-                        </td>
-                        <td style={td}>
-                          <VerMaterial links={p.links_material} />
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                        </details>
+                      ))}
+                    </div>
+                  )}
+                </>
               )}
 
-              {piezasProgramadas.length > 0 && (
+              {programadasFiltradas.length > 0 && (
                 <div style={{ marginTop: 22 }}>
-                  <h3 style={{ fontSize: 14, fontWeight: 700, margin: '0 0 4px', color: '#1976d2' }}>
-                    Programadas ({piezasProgramadas.length})
+                  <h3 style={{ fontSize: 14, fontWeight: 700, margin: '0 0 4px', color: 'var(--accent)' }}>
+                    Programadas ({programadasFiltradas.length})
                   </h3>
                   <p style={{ fontSize: 12.5, color: 'var(--text-tertiary)', margin: '0 0 8px' }}>
                     Todavía no empezaron: no cuentan como pauta vigente.
                   </p>
-                  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                    <thead>
-                      <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                        <th style={th}>Título de la pieza</th>
-                        <th style={th}>Canal</th>
-                        <th style={th}>Tipo de pauta</th>
-                        <th style={th}>Plataforma</th>
-                        <th style={th}>Inicio – Fin</th>
-                        <th style={th}>Material</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {piezasProgramadas.map((p, i) => (
-                        <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                          <td style={td}>{p.titulo_pieza || '—'}</td>
-                          <td style={td}>
-                            <CanalBadges pieza={p} />
-                          </td>
-                          <td style={td}>{p.tipo_pauta || '—'}</td>
-                          <td style={td}>{p.plataforma || '—'}</td>
-                          <td style={td}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                              <span>
-                                {formatearFechaCorta(p.inicio) || '—'} – {formatearFechaCorta(p.finalizacion) || '—'}
-                              </span>
-                              <StatusBadge estado={p.estado} />
-                            </div>
-                          </td>
-                          <td style={td}>
-                            <VerMaterial links={p.links_material} />
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                  <TablaPiezas piezas={programadasFiltradas} programadas />
                 </div>
               )}
             </Seccion>
           )}
 
           {info.enviosSms.length > 0 && (
-            <Seccion titulo="SMS">
+            <Seccion titulo="SMS" resumen={`${info.enviosSms.length} envío${info.enviosSms.length === 1 ? '' : 's'}`}>
               {visible.enviosSms.length === 0 ? (
                 <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                   Ningún envío de SMS cae dentro del período elegido (hay {info.enviosSms.length}{' '}
                   en total). Probá con "Todo".
                 </p>
               ) : (
+                <div className="tabla-desplazable">
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
@@ -496,18 +637,23 @@ export default function DetalleLocalidad() {
                     ))}
                   </tbody>
                 </table>
+                </div>
               )}
             </Seccion>
           )}
 
           {info.publicacionesOrganico.length > 0 && (
-            <Seccion titulo="Contenido Orgánico">
+            <Seccion
+              titulo="Contenido Orgánico"
+              resumen={`${info.publicacionesOrganico.length} publicaci${info.publicacionesOrganico.length === 1 ? 'ón' : 'ones'}`}
+            >
               {visible.publicacionesOrganico.length === 0 ? (
                 <p style={{ fontSize: 13.5, color: 'var(--text-tertiary)' }}>
                   Ninguna publicación cae dentro del período elegido (hay{' '}
                   {info.publicacionesOrganico.length} en total). Probá con "Todo".
                 </p>
               ) : (
+                <div className="tabla-desplazable">
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
@@ -530,6 +676,7 @@ export default function DetalleLocalidad() {
                     ))}
                   </tbody>
                 </table>
+                </div>
               )}
             </Seccion>
           )}
@@ -539,20 +686,66 @@ export default function DetalleLocalidad() {
   );
 }
 
-function Seccion({ titulo, children }) {
+/** Tabla de piezas de Pauta digital (2.4): misma de siempre más la columna
+ * Campaña. `programadas`: columna Inicio – Fin en vez de Vigente hasta.
+ * `sinCampana`: dentro de la vista "Por campaña" la columna sobra. */
+function TablaPiezas({ piezas, programadas = false, sinCampana = false }) {
   return (
-    <div
-      style={{
-        background: 'var(--bg-primary)',
-        border: '1px solid var(--border)',
-        borderRadius: 12,
-        padding: 20,
-        marginBottom: 18,
-      }}
-    >
-      <h2 style={{ fontSize: 16, fontWeight: 700, marginBottom: 14 }}>{titulo}</h2>
-      {children}
+    <div className="tabla-desplazable">
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+            <th style={th}>Título de la pieza</th>
+            {!sinCampana && <th style={th}>Campaña</th>}
+            <th style={th}>Canal</th>
+            <th style={th}>Tipo de pauta</th>
+            <th style={th}>Plataforma</th>
+            <th style={th}>{programadas ? 'Inicio – Fin' : 'Vigente hasta'}</th>
+            <th style={th}>Material</th>
+          </tr>
+        </thead>
+        <tbody>
+          {piezas.map((p, i) => (
+            <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+              <td style={td}>{p.titulo_pieza || '—'}</td>
+              {!sinCampana && <td style={{ ...td, color: 'var(--text-secondary)' }}>{p.campana || '—'}</td>}
+              <td style={td}>
+                <CanalBadges pieza={p} />
+              </td>
+              <td style={td}>{p.tipo_pauta || '—'}</td>
+              <td style={td}>{p.plataforma || '—'}</td>
+              <td style={td}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span>
+                    {programadas
+                      ? `${formatearFechaCorta(p.inicio) || '—'} – ${formatearFechaCorta(p.finalizacion) || '—'}`
+                      : formatearFechaCorta(p.finalizacion) || '—'}
+                  </span>
+                  <StatusBadge estado={p.estado} />
+                </div>
+              </td>
+              <td style={td}>
+                <VerMaterial links={p.links_material} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
+  );
+}
+
+/** Sección plegable (2.1): el encabezado muestra el título y un resumen
+ * aunque esté cerrada. Arranca abierta. */
+function Seccion({ id, titulo, resumen, children, refDetails }) {
+  return (
+    <details id={id} ref={refDetails} open className="desplegable seccion">
+      <summary>
+        <h2 style={{ fontSize: 16, fontWeight: 700, margin: 0 }}>{titulo}</h2>
+        {resumen && <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-secondary)' }}>· {resumen}</span>}
+      </summary>
+      <div style={{ marginTop: 8 }}>{children}</div>
+    </details>
   );
 }
 
@@ -565,4 +758,21 @@ const badgeCanal = {
   fontWeight: 600,
   background: 'var(--bg-secondary)',
   color: 'var(--text-secondary)',
+};
+const inputEstilo = {
+  padding: '8px 12px',
+  borderRadius: 8,
+  border: '1px solid var(--border)',
+  fontSize: 13.5,
+  background: 'var(--bg-primary)',
+  color: 'var(--text-primary)',
+  minWidth: 180,
+};
+const selectEstilo = {
+  padding: '8px 10px',
+  borderRadius: 8,
+  border: '1px solid var(--border)',
+  fontSize: 13,
+  background: 'var(--bg-primary)',
+  color: 'var(--text-primary)',
 };
