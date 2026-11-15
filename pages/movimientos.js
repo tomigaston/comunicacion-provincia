@@ -1,10 +1,19 @@
 import Layout from '../components/Layout';
 import KpiTile from '../components/KpiTile';
 import { useApiData } from '../lib/useApiData';
+import { formatearFechaCorta } from '../lib/fechas';
 
 export default function Movimientos() {
   const { cargando, error, datos } = useApiData(['/api/data/movimientos']);
   const movimientos = datos ? datos[0] : null;
+
+  // Semana comparada: las fechas ya vienen en cada fila del JSON
+  // (fecha_semana_anterior / fecha_semana_actual); se toman de la primera.
+  const primerCambio = movimientos && movimientos.cambios.length > 0 ? movimientos.cambios[0] : null;
+  const semana =
+    primerCambio && primerCambio.fecha_semana_anterior && primerCambio.fecha_semana_actual
+      ? `${formatearFechaCorta(primerCambio.fecha_semana_anterior)} → ${formatearFechaCorta(primerCambio.fecha_semana_actual)}`
+      : null;
 
   return (
     <Layout title="Movimientos de la semana">
@@ -13,6 +22,12 @@ export default function Movimientos() {
 
       {movimientos && (
         <>
+          <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 4 }}>Movimientos de la semana</h1>
+          {semana && (
+            <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16 }}>
+              Comparación entre las cargas del {semana}.
+            </p>
+          )}
           <div style={{ marginBottom: 20 }}>
             <KpiTile
               valor={movimientos.total_avisos_cambiaron}

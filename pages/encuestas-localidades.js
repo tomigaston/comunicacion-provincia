@@ -201,7 +201,7 @@ export default function EncuestasLocalidades() {
                               padding: '8px 14px',
                               borderRadius: 999,
                               border: `1.5px solid ${activa ? 'var(--accent)' : 'var(--border)'}`,
-                              background: activa ? '#e0edfb' : 'var(--bg-secondary)',
+                              background: activa ? 'var(--accent-bg)' : 'var(--bg-secondary)',
                               color: activa ? 'var(--accent)' : 'var(--text-secondary)',
                               fontSize: 13.5,
                               fontWeight: 600,

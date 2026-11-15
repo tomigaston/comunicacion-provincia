@@ -79,6 +79,12 @@ export default function Login() {
             border: '1px solid var(--border)',
           }}
         >
+          {/* Logo vertical del manual de marca (public/). */}
+          <img
+            src="/logo-gobierno-vertical.png"
+            alt="Gobierno de la Provincia de Córdoba — Hacer para crecer"
+            style={{ display: 'block', height: 120, width: 'auto', margin: '0 auto 20px' }}
+          />
           <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 4 }}>Tablero de Comunicación</h1>
           <p style={{ fontSize: 13.5, color: 'var(--text-secondary)', marginBottom: 24 }}>
             Gobierno de Córdoba — 60 localidades prioritarias
@@ -133,7 +139,7 @@ export default function Login() {
               padding: '12px 16px',
               borderRadius: 8,
               border: 'none',
-              background: cargando ? '#90b8dd' : 'var(--accent)',
+              background: cargando ? 'var(--marca-celeste)' : 'var(--accent)',
               color: '#fff',
               fontSize: 14.5,
               fontWeight: 600,

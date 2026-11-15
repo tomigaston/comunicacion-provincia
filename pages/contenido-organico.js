@@ -8,7 +8,10 @@ import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../lib/fechas';
 
-const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
+// Arranca en "Todo": Contenido Orgánico todavía no tiene carga semanal y con
+// "Último mes" la pestaña abría vacía (la última publicación cargada es
+// anterior). La fecha del último dato se muestra arriba.
+const PERIODO_DEFAULT = { tipo: 'preset', valor: 'todo' };
 const TAMANO_PAGINA = 50;
 const TODA_LA_PROVINCIA_LABEL = 'Toda la provincia';
 
@@ -57,6 +60,11 @@ export default function ContenidoOrganico() {
 
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const fechasDisponibles = useMemo(() => publicaciones.map((p) => p.fecha), [publicaciones]);
+  // Fecha de la publicación más reciente cargada (solo para el aviso de arriba).
+  const ultimaFecha = useMemo(
+    () => publicaciones.reduce((max, p) => (p.fecha && p.fecha > max ? p.fecha : max), ''),
+    [publicaciones]
+  );
 
   const itemsLugares = useMemo(() => {
     const vistos = new Set();
@@ -95,6 +103,12 @@ export default function ContenidoOrganico() {
 
       {datos && publicaciones.length > 0 && (
         <>
+          {ultimaFecha && (
+            <p style={avisoUltimoDato}>
+              <strong>Última publicación cargada: {formatearFechaCorta(ultimaFecha)}.</strong> Contenido
+              Orgánico todavía no tiene carga semanal: se muestran todas las publicaciones del export disponible.
+            </p>
+          )}
           <div
             style={{
               background: 'var(--bg-primary)',
@@ -191,3 +205,12 @@ export default function ContenidoOrganico() {
 
 const th = { padding: '10px 14px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
 const td = { padding: '10px 14px', fontSize: 13.5 };
+const avisoUltimoDato = {
+  background: '#fff7ed',
+  border: '1px solid #fdba74',
+  color: '#9a3412',
+  borderRadius: 10,
+  padding: '10px 14px',
+  fontSize: 13.5,
+  marginBottom: 14,
+};

@@ -7,7 +7,10 @@ import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana } from '../lib/fechas';
 
-const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
+// Arranca en "Todo": SMS todavía no tiene carga semanal y con "Último mes" la
+// pestaña abría vacía (el último envío cargado es anterior). La fecha del
+// último dato se muestra arriba para que se entienda qué tan vieja es la carga.
+const PERIODO_DEFAULT = { tipo: 'preset', valor: 'todo' };
 const TAMANO_PAGINA = 50;
 
 // Desde el cambio de regla del 22/08/2026 ya no existe ningún alcance de
@@ -80,6 +83,11 @@ export default function Sms() {
 
   const ventana = useMemo(() => calcularVentana(periodo), [periodo]);
   const fechasDisponibles = useMemo(() => envios.map((e) => e.fecha_inicio), [envios]);
+  // Fecha del envío más reciente cargado (solo para el aviso de arriba).
+  const ultimaFecha = useMemo(
+    () => envios.reduce((max, e) => (e.fecha_inicio && e.fecha_inicio > max ? e.fecha_inicio : max), ''),
+    [envios]
+  );
 
   // Vocabularios de filtro generados de los datos reales -nunca hardcodeados-
   // porque Eje/Temática/Estado son texto libre de la fuente, a diferencia de
@@ -162,6 +170,12 @@ export default function Sms() {
 
       {datos && envios.length > 0 && (
         <>
+          {ultimaFecha && (
+            <p style={avisoUltimoDato}>
+              <strong>Último envío cargado: {formatearFechaCorta(ultimaFecha)}.</strong> SMS todavía no tiene
+              carga semanal: se muestran todos los envíos del export disponible.
+            </p>
+          )}
           <div
             style={{
               background: 'var(--bg-primary)',
@@ -239,7 +253,7 @@ export default function Sms() {
                         padding: '7px 12px',
                         borderRadius: 999,
                         border: `1.5px solid ${activo ? 'var(--accent)' : 'var(--border)'}`,
-                        background: activo ? '#e0edfb' : 'var(--bg-secondary)',
+                        background: activo ? 'var(--accent-bg)' : 'var(--bg-secondary)',
                         color: activo ? 'var(--accent)' : 'var(--text-secondary)',
                         fontSize: 12.5,
                         fontWeight: 600,
@@ -328,6 +342,16 @@ export default function Sms() {
 
 const th = { padding: '10px 14px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
 const td = { padding: '10px 14px', fontSize: 13.5 };
+const avisoUltimoDato = {
+  background: '#fff7ed',
+  border: '1px solid #fdba74',
+  color: '#9a3412',
+  borderRadius: 10,
+  padding: '10px 14px',
+  fontSize: 13.5,
+  marginBottom: 14,
+};
+
 const selectEstilo = {
   padding: '9px 12px',
   borderRadius: 8,
