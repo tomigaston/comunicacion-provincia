@@ -43,10 +43,18 @@ export default function SemaforoIndex() {
         <div>
           <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo</h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 2 }}>
-            Medios Tradicionales: peor entre frescura (tema activo más reciente) y cobertura (tipos de
-            medio con tema activo). Pauta Digital: cantidad de piezas activas en la localidad, dirigidas y
-            provinciales (0–{PD_MIN_AMARILLO - 1} 🔴 · {PD_MIN_AMARILLO}–{PD_MIN_VERDE - 1} 🟡 · {PD_MIN_VERDE}+ 🟢). Tocá una localidad para ver el detalle.
+            Tocá una localidad para ver el detalle.
           </p>
+          {/* La explicación de las reglas va plegada: antes ocupaba cuatro
+              líneas arriba de la grilla en cada visita. Mismo texto. */}
+          <details style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 4 }}>
+            <summary style={{ cursor: 'pointer', color: 'var(--accent)', fontWeight: 600 }}>¿Cómo se calcula?</summary>
+            <p style={{ marginTop: 6 }}>
+              Medios Tradicionales: peor entre frescura (tema activo más reciente) y cobertura (tipos de
+              medio con tema activo). Pauta Digital: cantidad de piezas activas en la localidad, dirigidas y
+              provinciales (0–{PD_MIN_AMARILLO - 1} 🔴 · {PD_MIN_AMARILLO}–{PD_MIN_VERDE - 1} 🟡 · {PD_MIN_VERDE}+ 🟢).
+            </p>
+          </details>
         </div>
         <div style={{ display: 'flex', gap: 4, background: 'var(--bg-secondary)', borderRadius: 999, padding: 3 }}>
           {VISTAS.map((v) => (
