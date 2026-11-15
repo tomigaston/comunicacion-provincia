@@ -44,7 +44,7 @@ function BloqueCandidatos({ titulo, porEscenario }) {
                   padding: '7px 14px',
                   borderRadius: 999,
                   border: `1.5px solid ${on ? 'var(--accent)' : 'var(--border)'}`,
-                  background: on ? '#e0edfb' : 'var(--bg-secondary)',
+                  background: on ? 'var(--accent-bg)' : 'var(--bg-secondary)',
                   color: on ? 'var(--accent)' : 'var(--text-secondary)',
                   fontSize: 13,
                   fontWeight: 600,

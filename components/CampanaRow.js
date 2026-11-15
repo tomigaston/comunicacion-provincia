@@ -3,10 +3,13 @@ import VerMaterial from './VerMaterial';
 import StatusBadge from './StatusBadge';
 import { rangoFechaDesdeHasta } from '../lib/fechas';
 
+// Colores de área con la paleta del manual de marca: celeste, dorado y gris.
+// Para el texto se usan tonos más oscuros de cada color (el dorado y el gris
+// del manual sobre fondo claro no se leen); el relleno es la versión clara.
 const AREA_COLOR = {
-  'Medios tradicionales': { bg: '#e0edfb', fg: '#1976d2' },
-  'Pauta digital': { bg: '#fce7f3', fg: '#be185d' },
-  Audiovisuales: { bg: '#ede9fe', fg: '#6d28d9' },
+  'Medios tradicionales': { bg: 'var(--accent-bg)', fg: 'var(--accent)' },
+  'Pauta digital': { bg: '#f7efe0', fg: '#8a6a2b' },
+  Audiovisuales: { bg: 'var(--bg-secondary)', fg: 'var(--text-secondary)' },
 };
 
 function alcanceLabel(item) {

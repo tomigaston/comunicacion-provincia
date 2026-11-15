@@ -104,7 +104,7 @@ function chipEstilo(activo) {
     padding: '7px 13px',
     borderRadius: 999,
     border: `1.5px solid ${activo ? 'var(--accent)' : 'var(--border)'}`,
-    background: activo ? '#e0edfb' : 'var(--bg-secondary)',
+    background: activo ? 'var(--accent-bg)' : 'var(--bg-secondary)',
     color: activo ? 'var(--accent)' : 'var(--text-secondary)',
     fontSize: 13,
     fontWeight: 600,

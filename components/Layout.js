@@ -62,10 +62,10 @@ export default function Layout({ title, children }) {
       </Head>
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <header
+          className="encabezado-app"
           style={{
             background: 'var(--bg-primary)',
             borderBottom: '1px solid var(--border)',
-            padding: '0 24px',
           }}
         >
           <div
@@ -78,7 +78,12 @@ export default function Layout({ title, children }) {
               height: 56,
             }}
           >
-            <div style={{ fontWeight: 700, fontSize: 15 }}>Tablero de Comunicación — Córdoba</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, minWidth: 0 }}>
+              {/* Logos del manual de marca (public/): horizontal en escritorio, escudo en celular. */}
+              <img src="/logo-gobierno-horizontal.png" alt="Gobierno de la Provincia de Córdoba — Hacer para crecer" className="logo-escritorio" />
+              <img src="/escudo-cordoba.png" alt="Gobierno de la Provincia de Córdoba" className="logo-celular" />
+              <span className="titulo-app">Tablero de Comunicación</span>
+            </div>
             <button
               type="button"
               onClick={salir}
@@ -95,7 +100,7 @@ export default function Layout({ title, children }) {
               Cerrar sesión
             </button>
           </div>
-          <nav style={{ maxWidth: 1400, margin: '0 auto', display: 'flex', gap: 4 }}>
+          <nav className="menu-pestanas" style={{ maxWidth: 1400, margin: '0 auto' }}>
             {tabsVisibles.map((tab) => {
               const activo = router.pathname.startsWith(tab.href);
               return (
@@ -107,7 +112,7 @@ export default function Layout({ title, children }) {
                     fontSize: 14,
                     fontWeight: activo ? 700 : 500,
                     color: activo ? 'var(--accent)' : 'var(--text-secondary)',
-                    borderBottom: activo ? '2.5px solid var(--accent)' : '2.5px solid transparent',
+                    borderBottom: activo ? '3px solid var(--marca-celeste)' : '3px solid transparent',
                   }}
                 >
                   {tab.label}
@@ -117,7 +122,7 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
 
-        <main style={{ flex: 1, width: '100%', maxWidth: 1400, margin: '0 auto', padding: 24 }}>
+        <main className="contenido-principal" style={{ flex: 1, width: '100%', maxWidth: 1400, margin: '0 auto' }}>
           {children}
         </main>
       </div>

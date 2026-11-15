@@ -6,7 +6,7 @@ const ORDEN = ['off', 'incluir', 'excluir'];
 
 const ESTILOS = {
   off: { bg: 'var(--bg-secondary)', fg: 'var(--text-secondary)', border: 'var(--border)', prefijo: '' },
-  incluir: { bg: '#e0edfb', fg: '#1976d2', border: '#1976d2', prefijo: '✓ ' },
+  incluir: { bg: 'var(--accent-bg)', fg: 'var(--accent)', border: 'var(--accent)', prefijo: '✓ ' },
   excluir: { bg: 'var(--cov-baja-bg)', fg: '#b91c1c', border: '#b91c1c', prefijo: '✕ Sin ' },
 };
 

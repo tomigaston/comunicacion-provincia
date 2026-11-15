@@ -40,7 +40,7 @@ export default function ModalLineaTiempoMedios({ localidad, semanasCargadas, onC
                 padding: '7px 14px',
                 borderRadius: 999,
                 border: `1.5px solid ${activo ? 'var(--accent)' : 'var(--border)'}`,
-                background: activo ? '#e0edfb' : disponible ? 'var(--bg-secondary)' : 'var(--bg-tertiary)',
+                background: activo ? 'var(--accent-bg)' : disponible ? 'var(--bg-secondary)' : 'var(--bg-tertiary)',
                 color: activo ? 'var(--accent)' : disponible ? 'var(--text-secondary)' : 'var(--text-tertiary)',
                 fontSize: 13,
                 fontWeight: 600,
