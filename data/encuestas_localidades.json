@@ -4920,8 +4920,8 @@
   },
   "JESUS MARIA": {
     "nombre_localidad": "JESUS MARIA",
-    "cantidad_rondas": 1,
-    "tiene_comparativo": false,
+    "cantidad_rondas": 2,
+    "tiene_comparativo": true,
     "rondas": [
       {
         "fecha": "2026-02-13",
@@ -4930,7 +4930,7 @@
           "Problemas principales": {
             "Falta de trabajo": 11.6,
             "Seguridad": 8.0,
-            "Inflación": 6.2,
+            "Inflación": 6.3,
             "Estado de las calles": 18.8,
             "Falta de pavimento": 5.4,
             "Falta de agua potable": 1.8,
@@ -5087,16 +5087,16 @@
         "candidatos_gobernador": {
           "Escenario base": [
             {
-              "candidato": "Martín Llaryora",
-              "pct": 27.3
-            },
-            {
-              "candidato": "Otro",
-              "pct": 25.4
+              "candidato": "No se",
+              "pct": 30.4
             },
             {
               "candidato": "Rodrigo De Loredo",
               "pct": 24.1
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 22.3
             },
             {
               "candidato": "Gabriel Bornoroni",
@@ -5191,6 +5191,242 @@
             {
               "candidato": "Liliana Olivero",
               "pct": 0.0
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-10-27",
+        "casos_totales": 168,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 23.2,
+            "Seguridad": 21.4,
+            "Inflación": 3.6,
+            "Estado de las calles": 10.1,
+            "Falta de pavimento": 4.2,
+            "Falta de agua potable": 1.2,
+            "Falta de viviendas": 14.3,
+            "Falta de cloacas": 1.8,
+            "Estado del lago": 0.0,
+            "Costo del peaje": 1.8,
+            "Otro": 18.5
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 17.3,
+            "Buena": 28.6,
+            "Regular": 26.8,
+            "Mala": 25.0,
+            "No se": 2.4
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 11.6,
+            "Buena": 21.4,
+            "Regular": 37.5,
+            "Mala": 27.1,
+            "No se": 2.4
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 18.5,
+            "Buena": 28.6,
+            "Regular": 22.6,
+            "Mala": 28.6,
+            "No se": 1.8
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 58.9,
+            "Desapruebo": 41.1
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 46.1,
+            "Desapruebo": 53.9
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 58.9,
+            "Desapruebo": 41.1
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Federico Zarate",
+            "categorias": {
+              "Muy buena": 16.7,
+              "Buena": 27.4,
+              "Regular": 28.6,
+              "Mala": 24.4,
+              "No se": 3.0
+            }
+          },
+          {
+            "nombre": "Gabriel Frizza",
+            "categorias": {
+              "Muy buena": 6.6,
+              "Buena": 28.6,
+              "Regular": 23.8,
+              "Mala": 31.6,
+              "No se": 9.5
+            }
+          },
+          {
+            "nombre": "Mauro Di Poi",
+            "categorias": {
+              "Muy buena": 4.2,
+              "Buena": 14.9,
+              "Regular": 23.2,
+              "Mala": 27.4,
+              "No se": 30.4
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 24.2
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 22.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 20.2
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 20.2
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 10.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.4
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.6
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "No se",
+              "pct": 29.5
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 24.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 23.8
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 19.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.6
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 39.1
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 28.2
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 25.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 4.2
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.2
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.6
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 37.9
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 31.6
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.2
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 3.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.6
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 27.0
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 24.4
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 20.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 13.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 10.5
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.4
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.2
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.6
             }
           ]
         },
@@ -5869,7 +6105,7 @@
   },
   "COSQUIN": {
     "nombre_localidad": "COSQUIN",
-    "cantidad_rondas": 2,
+    "cantidad_rondas": 3,
     "tiene_comparativo": true,
     "rondas": [
       {
@@ -6209,50 +6445,50 @@
         "casos_totales": 209,
         "preguntas": {
           "Problemas principales": {
-            "Falta de trabajo": 35.9,
-            "Seguridad": 10.0,
-            "Inflación": 2.9,
+            "Falta de trabajo": 36.3,
+            "Seguridad": 9.9,
+            "Inflación": 2.8,
             "Estado de las calles": 19.6,
             "Falta de pavimento": 3.8,
             "Falta de agua potable": 8.6,
-            "Falta de viviendas": 1.4,
-            "Falta de cloacas": 4.3,
+            "Falta de viviendas": 1.5,
+            "Falta de cloacas": 4.2,
             "Costo del peaje": 0.5,
-            "Estado del rio": 2.4,
+            "Estado del rio": 2.3,
             "Otro": 10.5
           },
           "Gestión del Intendente": {
-            "Muy buena": 34.9,
-            "Buena": 17.7,
-            "Regular": 24.4,
-            "Mala": 21.1,
-            "No se": 1.9
+            "Muy buena": 35.3,
+            "Buena": 17.9,
+            "Regular": 24.3,
+            "Mala": 20.5,
+            "No se": 2.0
           },
           "Gestión del Gobernador": {
             "Muy buena": 22.7,
-            "Buena": 26.3,
-            "Regular": 23.0,
-            "Mala": 24.2,
+            "Buena": 26.6,
+            "Regular": 23.3,
+            "Mala": 25.5,
             "No se": 3.8
           },
           "Gestión del Presidente": {
-            "Muy buena": 12.9,
-            "Buena": 15.8,
-            "Regular": 16.3,
-            "Mala": 54.1,
+            "Muy buena": 12.6,
+            "Buena": 15.7,
+            "Regular": 16.1,
+            "Mala": 54.6,
             "No se": 1.0
           },
           "Aprobación Intendente": {
-            "Apruebo": 67.0,
-            "Desapruebo": 33.0
+            "Apruebo": 67.6,
+            "Desapruebo": 32.4
           },
           "Aprobación Gobernador": {
-            "Apruebo": 57.6,
-            "Desapruebo": 42.4
+            "Apruebo": 58.1,
+            "Desapruebo": 41.9
           },
           "Aprobación Presidente": {
-            "Apruebo": 35.9,
-            "Desapruebo": 64.1
+            "Apruebo": 35.4,
+            "Desapruebo": 64.6
           },
           "Reelección Intendente": {
             "Si": 58.9,
@@ -6354,31 +6590,31 @@
           {
             "nombre": "Raúl Cardinalli",
             "categorias": {
-              "Muy buena": 34.9,
-              "Buena": 20.1,
-              "Regular": 23.4,
-              "Mala": 19.6,
-              "No se": 1.9
+              "Muy buena": 35.4,
+              "Buena": 20.3,
+              "Regular": 23.2,
+              "Mala": 19.2,
+              "No se": 2.0
             }
           },
           {
             "nombre": "Rodolfo Milani",
             "categorias": {
-              "Muy buena": 13.9,
-              "Buena": 18.2,
+              "Muy buena": 13.8,
+              "Buena": 18.5,
               "Regular": 17.7,
-              "Mala": 26.3,
-              "No lo se": 23.9
+              "Mala": 25.9,
+              "No lo se": 24.1
             }
           },
           {
             "nombre": "Gabriel Musso",
             "categorias": {
-              "Muy buena": 4.8,
-              "Buena": 12.4,
+              "Muy buena": 4.7,
+              "Buena": 12.5,
               "Regular": 26.3,
               "Mala": 53.1,
-              "No lo se": 3.3
+              "No lo se": 3.4
             }
           },
           {
@@ -6426,23 +6662,23 @@
           "Escenario base": [
             {
               "candidato": "Martín Llaryora",
-              "pct": 43.8
+              "pct": 42.2
             },
             {
               "candidato": "No se",
-              "pct": 24.6
+              "pct": 27.5
             },
             {
               "candidato": "Rodrigo De Loredo",
-              "pct": 10.0
+              "pct": 9.8
             },
             {
               "candidato": "Luis Juez",
-              "pct": 9.1
+              "pct": 8.8
             },
             {
               "candidato": "Gabriel Bornoroni",
-              "pct": 7.2
+              "pct": 7.1
             },
             {
               "candidato": "Liliana Olivero",
@@ -6456,19 +6692,19 @@
           "Escenario 1": [
             {
               "candidato": "Martín Llaryora",
-              "pct": 45.2
+              "pct": 45.5
             },
             {
-              "candidato": "Otro",
+              "candidato": "No se",
               "pct": 36.2
             },
             {
               "candidato": "Gabriel Bornoroni",
-              "pct": 11.5
+              "pct": 11.2
             },
             {
               "candidato": "Liliana Olivero",
-              "pct": 5.7
+              "pct": 5.8
             },
             {
               "candidato": "Agustin Spaccesi",
@@ -6526,19 +6762,19 @@
           "Escenario 4 (sin indecisos)": [
             {
               "candidato": "Martín Llaryora",
-              "pct": 45.0
+              "pct": 45.4
             },
             {
               "candidato": "Rodrigo De Loredo",
-              "pct": 20.6
+              "pct": 20.3
             },
             {
               "candidato": "Liliana Olivero",
-              "pct": 19.6
+              "pct": 19.7
             },
             {
               "candidato": "Gabriel Bornoroni",
-              "pct": 12.9
+              "pct": 12.7
             },
             {
               "candidato": "Agustin Spaccesi",
@@ -6549,6 +6785,357 @@
         "candidatos_intendente": {},
         "candidatos_presidente": {},
         "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-11-05",
+        "casos_totales": 198,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 29.3,
+            "Seguridad": 16.2,
+            "Inflación": 2.5,
+            "Estado de las calles": 23.2,
+            "Falta de pavimento": 3.2,
+            "Falta de agua potable": 11.0,
+            "Falta de viviendas": 1.0,
+            "Falta de cloacas": 2.5,
+            "Costo del peaje": 0.6,
+            "Estado del rio": 1.6,
+            "Otro": 8.9
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 28.0,
+            "Buena": 16.3,
+            "Regular": 28.0,
+            "Mala": 27.3,
+            "No se": 0.5
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 21.2,
+            "Buena": 19.5,
+            "Regular": 31.4,
+            "Mala": 26.1,
+            "No se": 1.9
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 14.7,
+            "Buena": 18.0,
+            "Regular": 19.8,
+            "Mala": 46.2,
+            "No se": 1.4
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 59.0,
+            "Desapruebo": 41.0
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 53.0,
+            "Desapruebo": 47.0
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 44.7,
+            "Desapruebo": 55.3
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Raúl Cardinalli",
+            "categorias": {
+              "Muy buena": 28.3,
+              "Buena": 16.8,
+              "Regular": 26.7,
+              "Mala": 27.3,
+              "No se": 1.0
+            }
+          },
+          {
+            "nombre": "Rodolfo Milani",
+            "categorias": {
+              "Muy buena": 10.0,
+              "Buena": 13.2,
+              "Regular": 22.6,
+              "Mala": 31.2,
+              "No se": 23.0
+            }
+          },
+          {
+            "nombre": "Gabriel Musso",
+            "categorias": {
+              "Muy buena": 3.5,
+              "Buena": 10.1,
+              "Regular": 23.7,
+              "Mala": 56.4,
+              "No se": 6.2
+            }
+          },
+          {
+            "nombre": "Karuba Borges",
+            "categorias": {
+              "Muy buena": 1.7,
+              "Buena": 3.4,
+              "Regular": 11.7,
+              "Mala": 42.9,
+              "No se": 40.3
+            }
+          },
+          {
+            "nombre": "Mario Panizza",
+            "categorias": {
+              "Muy buena": 1.9,
+              "Buena": 4.6,
+              "Regular": 10.3,
+              "Mala": 31.2,
+              "No se": 52.1
+            }
+          },
+          {
+            "nombre": "Emilio Aphalo",
+            "categorias": {
+              "Muy buena": 1.4,
+              "Buena": 4.9,
+              "Regular": 8.1,
+              "Mala": 47.6,
+              "No se": 38.1
+            }
+          },
+          {
+            "nombre": "Lorena Peinado",
+            "categorias": {
+              "Muy buena": 2.6,
+              "Buena": 6.7,
+              "Regular": 13.2,
+              "Mala": 30.4,
+              "No se": 47.1
+            }
+          },
+          {
+            "nombre": "Walter Wisner",
+            "categorias": {
+              "Muy buena": 3.2,
+              "Buena": 7.6,
+              "Regular": 18.0,
+              "Mala": 33.0,
+              "No se": 38.2
+            }
+          },
+          {
+            "nombre": "Leonardo Wendel",
+            "categorias": {
+              "Muy buena": 1.9,
+              "Buena": 4.4,
+              "Regular": 16.7,
+              "Mala": 39.5,
+              "No se": 37.4
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 38.3
+            },
+            {
+              "candidato": "No se",
+              "pct": 17.6
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 14.8
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 12.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 10.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 4.2
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 0.5
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 36.8
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 14.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 12.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 4.4
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.4
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 37.8
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 36.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 15.6
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 4.1
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 3.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 38.3
+            },
+            {
+              "candidato": "No se",
+              "pct": 37.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 16.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 3.5
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 2.5
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.9
+            }
+          ],
+          "Escenario 4 (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 39.0
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 18.0
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 17.8
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 16.3
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.1
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.0
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Percibiste alguna mejora en la actividad turística de Cosquín a partir de la inauguración de la Autovía Punilla?",
+            "categorias": {
+              "Si, mucha": 18.4,
+              "Si, algo": 35.3,
+              "No": 37.1,
+              "No se": 9.2
+            }
+          },
+          {
+            "pregunta_original": "¿Ud. cree que el gobernador Llaryora y el intendente Cardinali trabajan en equipo para mejorar Cosquín?",
+            "categorias": {
+              "Si, mucho": 19.6,
+              "Si, algo": 29.6,
+              "No": 36.1,
+              "No se": 14.7
+            }
+          },
+          {
+            "pregunta_original": "Si el gobernador decidiera una rebaja impositiva ¿Cuál de estos impuestos prefiere que baje?",
+            "categorias": {
+              "Ingresos brutos": 28.0,
+              "Inmobiliario urbano": 64.5,
+              "Sellos": 7.6
+            }
+          },
+          {
+            "pregunta_original": "¿Cree Ud que si el gobernador reduce el impuesto a los Ingresos Brutos los comerciantes y empresarios bajarán el precio de sus productos?",
+            "categorias": {
+              "Si": 20.5,
+              "No": 51.2,
+              "No se": 28.3
+            }
+          },
+          {
+            "pregunta_original": "¿Estaría de acuerdo Ud. con una reducción de impuestos, aunque eso implique menos obras públicas?",
+            "categorias": {
+              "Si": 47.1,
+              "No": 36.1,
+              "No se": 16.9
+            }
+          },
+          {
+            "pregunta_original": "¿Estaría de acuerdo Ud. con una reducción de impuestos que implique menos inversión en salud, educación o seguridad?",
+            "categorias": {
+              "Si": 16.0,
+              "No": 79.0,
+              "No se": 5.0
+            }
+          }
+        ]
       }
     ]
   },
@@ -8556,8 +9143,8 @@
   },
   "LA FALDA": {
     "nombre_localidad": "LA FALDA",
-    "cantidad_rondas": 1,
-    "tiene_comparativo": false,
+    "cantidad_rondas": 4,
+    "tiene_comparativo": true,
     "rondas": [
       {
         "fecha": "2026-02-20",
@@ -8582,10 +9169,10 @@
             "No se": 1.3
           },
           "Gestión del Gobernador": {
-            "Muy buena": 8.0,
+            "Muy buena": 13.0,
             "Buena": 22.3,
             "Regular": 26.3,
-            "Mala": 38.8,
+            "Mala": 33.8,
             "No se": 4.5
           },
           "Gestión del Presidente": {
@@ -8600,8 +9187,8 @@
             "Desapruebo": 73.7
           },
           "Aprobación Gobernador": {
-            "Apruebo": 42.9,
-            "Desapruebo": 57.1
+            "Apruebo": 47.9,
+            "Desapruebo": 52.1
           },
           "Aprobación Presidente": {
             "Apruebo": 70.5,
@@ -8775,12 +9362,12 @@
         "candidatos_gobernador": {
           "Escenario base": [
             {
-              "candidato": "Otro",
-              "pct": 26.8
+              "candidato": "Martín Llaryora",
+              "pct": 28.4
             },
             {
-              "candidato": "Martín Llaryora",
-              "pct": 25.4
+              "candidato": "No se",
+              "pct": 21.8
             },
             {
               "candidato": "Rodrigo De Loredo",
@@ -8884,6 +9471,957 @@
         },
         "candidatos_intendente": {},
         "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-09-24",
+        "casos_totales": 127,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 42.5,
+            "Seguridad": 10.2,
+            "Inflación": 0.8,
+            "Estado de las calles": 12.6,
+            "Falta de pavimento": 3.1,
+            "Falta de agua potable": 2.4,
+            "Falta de viviendas": 0.8,
+            "Falta de cloacas": 0.8,
+            "Otro": 26.8
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 5.5,
+            "Buena": 11.0,
+            "Regular": 16.5,
+            "Mala": 66.9,
+            "No se": 0.0
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 13.2,
+            "Buena": 19.7,
+            "Regular": 29.9,
+            "Mala": 32.8,
+            "No se": 2.4
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 21.3,
+            "Buena": 21.3,
+            "Regular": 17.3,
+            "Mala": 38.6,
+            "No se": 1.6
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 21.3,
+            "Desapruebo": 78.7
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 47.5,
+            "Desapruebo": 52.5
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 51.2,
+            "Desapruebo": 48.8
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Javier Dieminger",
+            "categorias": {
+              "Muy buena": 7.1,
+              "Buena": 11.8,
+              "Regular": 15.7,
+              "Mala": 63.0,
+              "No se": 2.4
+            }
+          },
+          {
+            "nombre": "Lucas Véliz",
+            "categorias": {
+              "Muy buena": 11.0,
+              "Buena": 8.7,
+              "Regular": 24.4,
+              "Mala": 23.6,
+              "No se": 32.3
+            }
+          },
+          {
+            "nombre": "Luciana Pacha",
+            "categorias": {
+              "Muy buena": 8.7,
+              "Buena": 11.8,
+              "Regular": 13.4,
+              "Mala": 49.6,
+              "No se": 16.5
+            }
+          },
+          {
+            "nombre": "Javier Montes",
+            "categorias": {
+              "Muy buena": 21.3,
+              "Buena": 18.9,
+              "Regular": 22.8,
+              "Mala": 13.4,
+              "No se": 23.6
+            }
+          },
+          {
+            "nombre": "Mario Sanz",
+            "categorias": {
+              "Muy buena": 3.9,
+              "Buena": 11.0,
+              "Regular": 11.0,
+              "Mala": 29.9,
+              "No se": 44.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 31.8
+            },
+            {
+              "candidato": "No se",
+              "pct": 26.5
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 22.0
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 7.1
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.5
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 3.1
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.6
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.8
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 44.9
+            },
+            {
+              "candidato": "Otro",
+              "pct": 18.9
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 15.7
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 8.7
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 5.5
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 5.5
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 0.8
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 45.7
+            },
+            {
+              "candidato": "No se",
+              "pct": 29.1
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 10.2
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 7.1
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 6.3
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 1.6
+            }
+          ]
+        },
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-10-20",
+        "casos_totales": 110,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 31.4,
+            "Seguridad": 17.4,
+            "Inflación": 4.5,
+            "Estado de las calles": 14.0,
+            "Falta de pavimento": 1.9,
+            "Falta de agua potable": 2.7,
+            "Falta de viviendas": 3.8,
+            "Falta de cloacas": 0.0,
+            "Otro": 24.2
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 9.5,
+            "Buena": 6.8,
+            "Regular": 14.0,
+            "Mala": 68.2,
+            "No se": 1.5
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 18.9,
+            "Buena": 25.4,
+            "Regular": 29.9,
+            "Mala": 22.4,
+            "No se": 3.4
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 20.1,
+            "Buena": 19.7,
+            "Regular": 22.7,
+            "Mala": 36.7,
+            "No se": 0.8
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 23.1,
+            "Desapruebo": 76.9
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 61.1,
+            "Desapruebo": 43.9
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 46.6,
+            "Desapruebo": 53.4
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Javier Dieminger",
+            "categorias": {
+              "Muy buena": 10.2,
+              "Buena": 8.7,
+              "Regular": 9.8,
+              "Mala": 69.7,
+              "No se": 1.5
+            }
+          },
+          {
+            "nombre": "Lucas Véliz",
+            "categorias": {
+              "Muy buena": 8.0,
+              "Buena": 12.1,
+              "Regular": 20.1,
+              "Mala": 36.7,
+              "No se": 23.1
+            }
+          },
+          {
+            "nombre": "Luciana Pacha",
+            "categorias": {
+              "Muy buena": 8.7,
+              "Buena": 9.8,
+              "Regular": 18.9,
+              "Mala": 53.8,
+              "No se": 8.7
+            }
+          },
+          {
+            "nombre": "Javier Montes",
+            "categorias": {
+              "Muy buena": 12.9,
+              "Buena": 10.2,
+              "Regular": 20.5,
+              "Mala": 33.0,
+              "No se": 23.5
+            }
+          },
+          {
+            "nombre": "Mario Sanz",
+            "categorias": {
+              "Muy buena": 29.9,
+              "Buena": 16.7,
+              "Regular": 7.6,
+              "Mala": 26.9,
+              "No se": 18.9
+            }
+          },
+          {
+            "nombre": "Leonardo Gribaudo",
+            "categorias": {
+              "Muy buena": 4.5,
+              "Buena": 3.0,
+              "Regular": 8.7,
+              "Mala": 38.6,
+              "No se": 45.1
+            }
+          },
+          {
+            "nombre": "Carlos Moriones",
+            "categorias": {
+              "Muy buena": 6.4,
+              "Buena": 8.0,
+              "Regular": 9.8,
+              "Mala": 30.7,
+              "No se": 45.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 42.1
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 18.9
+            },
+            {
+              "candidato": "No se",
+              "pct": 18.1
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 10.2
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 4.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 3.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.1
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 36.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 26.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 18.6
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 11.7
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 3.4
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 3.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 0.8
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 40.1
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 36.1
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 17.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 3.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.1
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.1
+            }
+          ],
+          "Escenario 4 (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 40.9
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 21.2
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 13.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 10.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 6.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 4.2
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 3.0
+            }
+          ]
+        },
+        "candidatos_intendente": {
+          "Escenario base": [
+            {
+              "candidato": "Mario Saenz",
+              "pct": 35.2
+            },
+            {
+              "candidato": "Lucas Veliz",
+              "pct": 18.2
+            },
+            {
+              "candidato": "No se",
+              "pct": 14.8
+            },
+            {
+              "candidato": "Luciana Pacha",
+              "pct": 13.3
+            },
+            {
+              "candidato": "Javier Montes",
+              "pct": 8.3
+            },
+            {
+              "candidato": "Carlos Moriones",
+              "pct": 8.3
+            },
+            {
+              "candidato": "Leonardo Gribaudo",
+              "pct": 1.9
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Mario Saenz",
+              "pct": 37.5
+            },
+            {
+              "candidato": "Carlos Moriones",
+              "pct": 15.2
+            },
+            {
+              "candidato": "Javier Montes",
+              "pct": 14.8
+            },
+            {
+              "candidato": "Lucas Veliz",
+              "pct": 13.6
+            },
+            {
+              "candidato": "Leonardo Gribaudo",
+              "pct": 9.8
+            },
+            {
+              "candidato": "Luciana Pacha",
+              "pct": 9.1
+            }
+          ]
+        },
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 44.3
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 19.7
+            },
+            {
+              "candidato": "Otro",
+              "pct": 18.2
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 10.6
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 3.4
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 3.0
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 0.8
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 45.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.4
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 10.6
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 7.6
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 6.1
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 2.3
+            }
+          ]
+        },
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-11-12",
+        "casos_totales": 139,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 34.5,
+            "Seguridad": 12.9,
+            "Inflación": 2.9,
+            "Estado de las calles": 17.3,
+            "Falta de pavimento": 1.4,
+            "Falta de agua potable": 3.6,
+            "Falta de viviendas": 0.7,
+            "Falta de cloacas": 6.5,
+            "Otro": 20.1
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 5.0,
+            "Buena": 2.9,
+            "Regular": 7.9,
+            "Mala": 84.2,
+            "No se": 0.0
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 21.0,
+            "Buena": 28.1,
+            "Regular": 23.7,
+            "Mala": 22.9,
+            "No se": 4.3
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 12.9,
+            "Buena": 28.1,
+            "Regular": 25.2,
+            "Mala": 33.1,
+            "No se": 0.7
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 9.4,
+            "Desapruebo": 90.6
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 64.9,
+            "Desapruebo": 38.1
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 50.4,
+            "Desapruebo": 49.6
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Javier Dieminger",
+            "categorias": {
+              "Muy buena": 5.8,
+              "Buena": 3.6,
+              "Regular": 10.8,
+              "Mala": 78.4,
+              "No se": 1.4
+            }
+          },
+          {
+            "nombre": "Lucas Véliz",
+            "categorias": {
+              "Muy buena": 11.5,
+              "Buena": 5.0,
+              "Regular": 15.8,
+              "Mala": 39.6,
+              "No se": 28.1
+            }
+          },
+          {
+            "nombre": "Luciana Pacha",
+            "categorias": {
+              "Muy buena": 5.8,
+              "Buena": 4.3,
+              "Regular": 11.5,
+              "Mala": 68.3,
+              "No se": 10.1
+            }
+          },
+          {
+            "nombre": "Javier Montes",
+            "categorias": {
+              "Muy buena": 7.9,
+              "Buena": 13.7,
+              "Regular": 23.7,
+              "Mala": 32.4,
+              "No se": 22.3
+            }
+          },
+          {
+            "nombre": "Mario Sanz",
+            "categorias": {
+              "Muy buena": 27.3,
+              "Buena": 7.9,
+              "Regular": 12.2,
+              "Mala": 23.7,
+              "No se": 28.8
+            }
+          },
+          {
+            "nombre": "Leonardo Gribaudo",
+            "categorias": {
+              "Muy buena": 2.2,
+              "Buena": 4.3,
+              "Regular": 5.0,
+              "Mala": 41.0,
+              "No se": 47.5
+            }
+          },
+          {
+            "nombre": "Carlos Moriones",
+            "categorias": {
+              "Muy buena": 5.0,
+              "Buena": 8.6,
+              "Regular": 7.9,
+              "Mala": 27.3,
+              "No se": 51.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 46.2
+            },
+            {
+              "candidato": "No se",
+              "pct": 25.1
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 10.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 7.9
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 5.8
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.4
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.7
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 41.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 31.5
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 15.1
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 7.9
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.4
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.7
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 41.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 35.8
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 15.8
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.4
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.7
+            }
+          ],
+          "Escenario 4 (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 49.8
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 23.0
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 10.1
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 7.9
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 4.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.2
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 2.2
+            }
+          ]
+        },
+        "candidatos_intendente": {
+          "Escenario base": [
+            {
+              "candidato": "Mario Saenz",
+              "pct": 35.3
+            },
+            {
+              "candidato": "No se",
+              "pct": 20.9
+            },
+            {
+              "candidato": "Lucas Veliz",
+              "pct": 16.5
+            },
+            {
+              "candidato": "Javier Montes",
+              "pct": 11.5
+            },
+            {
+              "candidato": "Carlos Moriones",
+              "pct": 6.5
+            },
+            {
+              "candidato": "Leonardo Gribaudo",
+              "pct": 5.0
+            },
+            {
+              "candidato": "Luciana Pacha",
+              "pct": 4.3
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Mario Saenz",
+              "pct": 40.3
+            },
+            {
+              "candidato": "Lucas Veliz",
+              "pct": 20.9
+            },
+            {
+              "candidato": "Javier Montes",
+              "pct": 12.9
+            },
+            {
+              "candidato": "Carlos Moriones",
+              "pct": 10.1
+            },
+            {
+              "candidato": "Luciana Pacha",
+              "pct": 9.4
+            },
+            {
+              "candidato": "Leonardo Gribaudo",
+              "pct": 6.5
+            }
+          ]
+        },
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 43.2
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 20.9
+            },
+            {
+              "candidato": "Otro",
+              "pct": 14.4
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 12.2
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 3.6
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 2.9
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 2.9
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 45.3
+            },
+            {
+              "candidato": "No se",
+              "pct": 29.5
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 10.1
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 7.2
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 4.3
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 3.6
+            }
+          ]
+        },
         "otras_preguntas": []
       }
     ]
@@ -13935,6 +15473,2631 @@
         "candidatos_intendente": {},
         "candidatos_presidente": {},
         "otras_preguntas": []
+      }
+    ]
+  },
+  "ARIAS": {
+    "nombre_localidad": "ARIAS",
+    "cantidad_rondas": 1,
+    "tiene_comparativo": false,
+    "rondas": [
+      {
+        "fecha": "2026-09-17",
+        "casos_totales": 67,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 10.4,
+            "Seguridad": 6.0,
+            "Inflación": 4.5,
+            "Estado de las calles": 4.5,
+            "Falta de pavimento": 4.5,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 23.9,
+            "Falta de cloacas": 11.9,
+            "Otro": 34.3
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 19.9,
+            "Buena": 14.9,
+            "Regular": 29.9,
+            "Mala": 30.8,
+            "No se": 4.5
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 26.9,
+            "Buena": 25.4,
+            "Regular": 19.4,
+            "Mala": 26.9,
+            "No se": 1.5
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 48.3,
+            "Desapruebo": 51.7
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 61.2,
+            "Desapruebo": 38.8
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 13.4,
+            "Buena": 6.0,
+            "Regular": 22.4,
+            "Mala": 55.2,
+            "No se": 3.0
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 28.4,
+            "Desapruebo": 71.6
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "OBRAS EN CONJUNTO GOBIERNO PROVINCIAL Y MUNICIPAL ARIAS",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 59.7,
+                "No": 40.3
+              }
+            }
+          }
+        ],
+        "dirigentes": [
+          {
+            "nombre": "Javier Defagot",
+            "categorias": {
+              "Muy buena": 13.4,
+              "Buena": 11.9,
+              "Regular": 20.9,
+              "Mala": 52.2,
+              "No se": 1.5
+            }
+          },
+          {
+            "nombre": "Matías Gvozdenovich",
+            "categorias": {
+              "Muy buena": 26.9,
+              "Buena": 32.8,
+              "Regular": 29.9,
+              "Mala": 10.4,
+              "No lo se": 0.0
+            }
+          },
+          {
+            "nombre": "Emerson Sampietro",
+            "categorias": {
+              "Muy buena": 9.0,
+              "Buena": 13.4,
+              "Regular": 7.5,
+              "Mala": 20.9,
+              "No lo se": 49.3
+            }
+          },
+          {
+            "nombre": "Guillermo Pioli",
+            "categorias": {
+              "Muy buena": 19.4,
+              "Buena": 28.4,
+              "Regular": 14.9,
+              "Mala": 4.5,
+              "No lo se": 32.8
+            }
+          },
+          {
+            "nombre": "Verónica Atlanta",
+            "categorias": {
+              "Muy buena": 3.0,
+              "Buena": 14.9,
+              "Regular": 28.4,
+              "Mala": 22.4,
+              "No lo se": 31.3
+            }
+          },
+          {
+            "nombre": "Raúl Berigozzi",
+            "categorias": {
+              "Muy buena": 11.9,
+              "Buena": 11.9,
+              "Regular": 25.4,
+              "Mala": 14.9,
+              "No lo se": 35.8
+            }
+          },
+          {
+            "nombre": "Leopoldo Fiorito",
+            "categorias": {
+              "Muy buena": 3.0,
+              "Buena": 14.9,
+              "Regular": 19.4,
+              "Mala": 9.0,
+              "No lo se": 53.7
+            }
+          },
+          {
+            "nombre": "Joaquín Sangiorgi",
+            "categorias": {
+              "Muy buena": 10.4,
+              "Buena": 23.9,
+              "Regular": 14.9,
+              "Mala": 17.9,
+              "No lo se": 32.8
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 28.4
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 22.9
+            },
+            {
+              "candidato": "No se",
+              "pct": 20.3
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 19.4
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 7.5
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 50.2
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 31.9
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 14.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.5
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 2": [
+            {
+              "candidato": "No se",
+              "pct": 39.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 29.9
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 3.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 41.3
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 31.3
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 0.0
+            }
+          ]
+        },
+        "candidatos_intendente": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 41.8
+            },
+            {
+              "candidato": "Guillermo Pioli",
+              "pct": 22.4
+            },
+            {
+              "candidato": "Emerson Sampietro",
+              "pct": 20.9
+            },
+            {
+              "candidato": "Javier Defagot",
+              "pct": 14.9
+            }
+          ]
+        },
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 56.7
+            },
+            {
+              "candidato": "Otro",
+              "pct": 16.4
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 11.9
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 4.5
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 4.5
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 3.0
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 3.0
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 56.7
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.4
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 4.5
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 4.5
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 3.0
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 3.0
+            }
+          ]
+        },
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Cómo evalúa la presencia del gobierno provincial en la solución de los problemas de ARIAS?",
+            "categorias": {
+              "Se percibe presencia": 14.9,
+              "No se percibe presencia": 47.8,
+              "Se percibe presencia pero falta más": 37.3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "RIO SEGUNDO": {
+    "nombre_localidad": "RIO SEGUNDO",
+    "cantidad_rondas": 2,
+    "tiene_comparativo": true,
+    "rondas": [
+      {
+        "fecha": "2026-02-19",
+        "casos_totales": 137,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 13.9,
+            "Seguridad": 24.1,
+            "Inflación": 0.0,
+            "Estado de las calles": 17.5,
+            "Falta de pavimento": 10.9,
+            "Falta de agua potable": 0.7,
+            "Falta de viviendas": 13.1,
+            "Falta de cloacas": 6.6,
+            "Costo del peaje": 0.0,
+            "Estado del río": 2.2,
+            "Otro": 10.9
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 14.5,
+            "Buena": 21.2,
+            "Regular": 26.3,
+            "Mala": 36.5,
+            "No se": 1.5
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 21.2,
+            "Buena": 27.7,
+            "Regular": 19.0,
+            "Mala": 28.5,
+            "No se": 3.6
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 43.7,
+            "Desapruebo": 56.3
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 57.7,
+            "Desapruebo": 42.3
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 8.0,
+            "Buena": 11.7,
+            "Regular": 18.2,
+            "Mala": 59.9,
+            "No se": 2.2
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 27.0,
+            "Desapruebo": 73.0
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "REDES DE GAS NATURAL RÍO SEGUNDO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 47.4,
+                "No": 52.6
+              }
+            }
+          },
+          {
+            "nombre_obra": "PAVIMENTACIÓN Y PLAZA SARMIENTO RÍO SEGUNDO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 67.2,
+                "No": 32.8
+              }
+            }
+          },
+          {
+            "nombre_obra": "DUPLICACIÓN DE CALZADA RUTA 9",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 52.6,
+                "No": 47.4
+              }
+            }
+          }
+        ],
+        "dirigentes": [
+          {
+            "nombre": "Darío Chesta",
+            "categorias": {
+              "Muy buena": 8.0,
+              "Buena": 12.4,
+              "Regular": 21.9,
+              "Mala": 56.9,
+              "No se": 0.7
+            }
+          },
+          {
+            "nombre": "Ricardo Granja",
+            "categorias": {
+              "Muy buena": 8.8,
+              "Buena": 13.1,
+              "Regular": 24.8,
+              "Mala": 38.0,
+              "No lo se": 15.3
+            }
+          },
+          {
+            "nombre": "Javier “Chueca” Romero",
+            "categorias": {
+              "Muy buena": 2.2,
+              "Buena": 5.1,
+              "Regular": 8.0,
+              "Mala": 59.1,
+              "No lo se": 25.5
+            }
+          },
+          {
+            "nombre": "Ariel Bernabei",
+            "categorias": {
+              "Muy buena": 2.2,
+              "Buena": 8.8,
+              "Regular": 10.9,
+              "Mala": 38.7,
+              "No lo se": 39.4
+            }
+          },
+          {
+            "nombre": "Rodrigo Correa",
+            "categorias": {
+              "Muy buena": 6.6,
+              "Buena": 12.4,
+              "Regular": 17.5,
+              "Mala": 43.8,
+              "No lo se": 19.7
+            }
+          },
+          {
+            "nombre": "Javier Monte",
+            "categorias": {
+              "Muy buena": 13.1,
+              "Buena": 26.3,
+              "Regular": 19.0,
+              "Mala": 32.8,
+              "No lo se": 8.8
+            }
+          },
+          {
+            "nombre": "Romina Rapetti",
+            "categorias": {
+              "Muy buena": 6.6,
+              "Buena": 10.2,
+              "Regular": 16.1,
+              "Mala": 28.5,
+              "No lo se": 38.7
+            }
+          },
+          {
+            "nombre": "Osvaldo “Killy” Villalón",
+            "categorias": {
+              "Muy buena": 2.2,
+              "Buena": 5.8,
+              "Regular": 11.7,
+              "Mala": 28.9,
+              "No lo se": 31.4
+            }
+          },
+          {
+            "nombre": "Fernanda Zarate",
+            "categorias": {
+              "Muy buena": 7.3,
+              "Buena": 16.8,
+              "Regular": 26.3,
+              "Mala": 27.7,
+              "No lo se": 21.9
+            }
+          },
+          {
+            "nombre": "Agustina Sosa",
+            "categorias": {
+              "Muy buena": 2.9,
+              "Buena": 4.4,
+              "Regular": 13.9,
+              "Mala": 40.9,
+              "No lo se": 38.0
+            }
+          },
+          {
+            "nombre": "Alejandro Chiechi",
+            "categorias": {
+              "Muy buena": 2.9,
+              "Buena": 5.8,
+              "Regular": 10.2,
+              "Mala": 52.6,
+              "No lo se": 28.5
+            }
+          },
+          {
+            "nombre": "Hernán “Flaco” Boyero",
+            "categorias": {
+              "Muy buena": 3.6,
+              "Buena": 9.5,
+              "Regular": 17.5,
+              "Mala": 33.6,
+              "No lo se": 35.8
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 31.3
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 24.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 18.4
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 13.1
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 9.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.7
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 42.4
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 31.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 18.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.5
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 35.1
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 29.8
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 27.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.9
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.9
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-09-14",
+        "casos_totales": 114,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 16.7,
+            "Seguridad": 22.8,
+            "Inflación": 0.0,
+            "Estado de las calles": 14.0,
+            "Falta de pavimento": 16.7,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 6.1,
+            "Falta de cloacas": 4.4,
+            "Costo del peaje": 0.9,
+            "Estado del río": 0.0,
+            "Otro": 18.4
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 11.2,
+            "Buena": 17.5,
+            "Regular": 23.7,
+            "Mala": 45.0,
+            "No se": 2.6
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 22.8,
+            "Buena": 24.6,
+            "Regular": 19.3,
+            "Mala": 31.6,
+            "No se": 1.8
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 40.1,
+            "Desapruebo": 59.9
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 61.4,
+            "Desapruebo": 38.6
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 0.9,
+            "Buena": 8.8,
+            "Regular": 7.9,
+            "Mala": 79.8,
+            "No se": 2.6
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 14.0,
+            "Desapruebo": 86.0
+          }
+        },
+        "obras": [
+          {
+            "nombre_obra": "REDES DE GAS NATURAL RÍO SEGUNDO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 52.6,
+                "No": 47.4
+              }
+            }
+          },
+          {
+            "nombre_obra": "PAVIMENTACIÓN Y PLAZA SARMIENTO RÍO SEGUNDO",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 60.5,
+                "No": 39.5
+              }
+            }
+          },
+          {
+            "nombre_obra": "DUPLICACIÓN DE CALZADA RUTA 9",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 58.8,
+                "No": 41.2
+              }
+            }
+          },
+          {
+            "nombre_obra": "REHABILITACIÓN AUTOPISTA CÓRDOBA-BUENOS AIRES (TRAMO PILAR)",
+            "preguntas": {
+              "Conocimiento de Obra": {
+                "Si": 43.9,
+                "No": 56.1
+              },
+              "Importancia de Obra": {
+                "Si": 72.8,
+                "No": 11.4,
+                "No me importa": 15.8
+              }
+            }
+          }
+        ],
+        "dirigentes": [
+          {
+            "nombre": "Darío Chesta",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 12.3,
+              "Regular": 8.8,
+              "Mala": 77.2,
+              "No se": 1.8
+            }
+          },
+          {
+            "nombre": "Ricardo Granja",
+            "categorias": {
+              "Muy buena": 7.9,
+              "Buena": 18.4,
+              "Regular": 31.6,
+              "Mala": 38.6,
+              "No lo se": 3.5
+            }
+          },
+          {
+            "nombre": "Javier “Chueca” Romero",
+            "categorias": {
+              "Muy buena": 0.9,
+              "Buena": 5.3,
+              "Regular": 12.3,
+              "Mala": 50.9,
+              "No lo se": 30.7
+            }
+          },
+          {
+            "nombre": "Ariel Bernabei",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 5.3,
+              "Regular": 9.6,
+              "Mala": 31.6,
+              "No lo se": 53.5
+            }
+          },
+          {
+            "nombre": "Rodrigo Correa",
+            "categorias": {
+              "Muy buena": 0.9,
+              "Buena": 6.1,
+              "Regular": 28.1,
+              "Mala": 39.5,
+              "No lo se": 25.4
+            }
+          },
+          {
+            "nombre": "Javier Monte",
+            "categorias": {
+              "Muy buena": 17.5,
+              "Buena": 13.2,
+              "Regular": 31.6,
+              "Mala": 30.7,
+              "No lo se": 7.0
+            }
+          },
+          {
+            "nombre": "Romina Rapetti",
+            "categorias": {
+              "Muy buena": 5.3,
+              "Buena": 8.8,
+              "Regular": 14.9,
+              "Mala": 25.4,
+              "No lo se": 45.6
+            }
+          },
+          {
+            "nombre": "Osvaldo “Killy” Villalón",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 4.4,
+              "Regular": 13.2,
+              "Mala": 37.7,
+              "No lo se": 44.7
+            }
+          },
+          {
+            "nombre": "Fernanda Zarate",
+            "categorias": {
+              "Muy buena": 7.0,
+              "Buena": 14.0,
+              "Regular": 28.9,
+              "Mala": 24.6,
+              "No lo se": 25.4
+            }
+          },
+          {
+            "nombre": "Agustina Sosa",
+            "categorias": {
+              "Muy buena": 1.8,
+              "Buena": 3.5,
+              "Regular": 16.7,
+              "Mala": 27.2,
+              "No lo se": 50.9
+            }
+          },
+          {
+            "nombre": "Alejandro Chiechi",
+            "categorias": {
+              "Muy buena": 2.6,
+              "Buena": 6.1,
+              "Regular": 14.0,
+              "Mala": 37.7,
+              "No lo se": 39.5
+            }
+          },
+          {
+            "nombre": "Hernán “Flaco” Boyero",
+            "categorias": {
+              "Muy buena": 6.1,
+              "Buena": 8.8,
+              "Regular": 17.5,
+              "Mala": 21.9,
+              "No lo se": 45.6
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 28.3
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 23.5
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 18.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 17.5
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 9.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 41.5
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 26.9
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 22.8
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.6
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.9
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 35.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 31.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 15.1
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 8.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 4.4
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 4.4
+            }
+          ],
+          "Escenario 2": [
+            {
+              "candidato": "No se",
+              "pct": 38.9
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 26.9
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 26.3
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 3.5
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 2.6
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 34.3
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 29.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 27.2
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.9
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.9
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 50.9
+            },
+            {
+              "candidato": "Otro",
+              "pct": 21.1
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 12.3
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 3.5
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 1.8
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 52.6
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.1
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 6.1
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 4.4
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 3.5
+            }
+          ]
+        },
+        "otras_preguntas": []
+      }
+    ]
+  },
+  "UNQUILLO": {
+    "nombre_localidad": "UNQUILLO",
+    "cantidad_rondas": 2,
+    "tiene_comparativo": true,
+    "rondas": [
+      {
+        "fecha": "2026-02-19",
+        "casos_totales": 169,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 14.8,
+            "Seguridad": 24.3,
+            "Inflación": 2.4,
+            "Estado de las calles": 5.9,
+            "Falta de pavimento": 5.9,
+            "Falta de agua potable": 1.8,
+            "Falta de viviendas": 0.6,
+            "Falta de cloacas": 2.4,
+            "Costo del peaje": 2.4,
+            "Estado del rio": 1.8,
+            "Otro": 37.9
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 8.9,
+            "Buena": 23.1,
+            "Regular": 24.9,
+            "Mala": 39.1,
+            "No se": 4.1
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 13.3,
+            "Buena": 20.7,
+            "Regular": 32.5,
+            "Mala": 28.7,
+            "No se": 4.7
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 19.5,
+            "Buena": 18.9,
+            "Regular": 17.2,
+            "Mala": 42.6,
+            "No se": 1.8
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 45.0,
+            "Desapruebo": 55.0
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 48.2,
+            "Desapruebo": 51.8
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 48.5,
+            "Desapruebo": 51.5
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Guillermo Valli",
+            "categorias": {
+              "Muy buena": 11.2,
+              "Buena": 19.5,
+              "Regular": 23.1,
+              "Mala": 38.5,
+              "No se": 7.7
+            }
+          },
+          {
+            "nombre": "Luciana Presas",
+            "categorias": {
+              "Muy buena": 9.5,
+              "Buena": 14.8,
+              "Regular": 17.2,
+              "Mala": 27.8,
+              "No se": 30.8
+            }
+          },
+          {
+            "nombre": "Germán Jalil",
+            "categorias": {
+              "Muy buena": 5.9,
+              "Buena": 13.6,
+              "Regular": 24.3,
+              "Mala": 41.4,
+              "No se": 14.8
+            }
+          },
+          {
+            "nombre": "José Cabrera",
+            "categorias": {
+              "Muy buena": 4.7,
+              "Buena": 7.7,
+              "Regular": 17.2,
+              "Mala": 21.3,
+              "No se": 49.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 35.5
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 30.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 14.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 11.8
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 6.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.9
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 47.9
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 30.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 14.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 8.3
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.6
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-10-27",
+        "casos_totales": 152,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 17.8,
+            "Seguridad": 36.2,
+            "Inflación": 0.0,
+            "Estado de las calles": 16.5,
+            "Falta de pavimento": 7.9,
+            "Falta de agua potable": 0.7,
+            "Falta de viviendas": 0.0,
+            "Falta de cloacas": 5.3,
+            "Costo del peaje": 1.3,
+            "Estado del rio": 1.3,
+            "Otro": 13.2
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 5.3,
+            "Buena": 16.5,
+            "Regular": 25.7,
+            "Mala": 46.7,
+            "No se": 5.9
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 15.5,
+            "Buena": 21.1,
+            "Regular": 33.6,
+            "Mala": 27.2,
+            "No se": 2.6
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 9.2,
+            "Buena": 13.8,
+            "Regular": 21.7,
+            "Mala": 53.3,
+            "No se": 2.0
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 32.2,
+            "Desapruebo": 67.8
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 56.3,
+            "Desapruebo": 43.7
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 34.9,
+            "Desapruebo": 65.1
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Guillermo Valli",
+            "categorias": {
+              "Muy buena": 5.3,
+              "Buena": 18.4,
+              "Regular": 28.3,
+              "Mala": 40.1,
+              "No se": 7.9
+            }
+          },
+          {
+            "nombre": "Luciana Presas",
+            "categorias": {
+              "Muy buena": 13.2,
+              "Buena": 8.6,
+              "Regular": 19.1,
+              "Mala": 23.7,
+              "No se": 35.5
+            }
+          },
+          {
+            "nombre": "Germán Jalil",
+            "categorias": {
+              "Muy buena": 4.6,
+              "Buena": 14.5,
+              "Regular": 23.7,
+              "Mala": 39.5,
+              "No se": 17.8
+            }
+          },
+          {
+            "nombre": "José Cabrera",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 7.2,
+              "Regular": 16.5,
+              "Mala": 25.7,
+              "No se": 50.7
+            }
+          },
+          {
+            "nombre": "Pablo Milder",
+            "categorias": {
+              "Muy buena": 0.7,
+              "Buena": 2.6,
+              "Regular": 10.5,
+              "Mala": 19.1,
+              "No se": 67.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 33.8
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 32.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 11.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 7.9
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 7.2
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 4.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.7
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "No se",
+              "pct": 37.8
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 33.3
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 15.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 6.6
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 4.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.7
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 47.0
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 33.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 9.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.9
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 4.0
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.7
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 43.0
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 34.0
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 14.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.3
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.3
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 36.2
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 17.1
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 14.5
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 13.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 11.8
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 4.0
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.6
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.7
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Ud cree que trabajan en equipo el intendente y el gobernador?",
+            "categorias": {
+              "Si, mucho": 4.6,
+              "Si, algo": 36.8,
+              "No": 58.6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "COLONIA CAROYA": {
+    "nombre_localidad": "COLONIA CAROYA",
+    "cantidad_rondas": 1,
+    "tiene_comparativo": false,
+    "rondas": [
+      {
+        "fecha": "2026-10-29",
+        "casos_totales": 188,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 9.6,
+            "Seguridad": 9.0,
+            "Inflación": 1.1,
+            "Estado de las calles": 27.7,
+            "Falta de pavimento": 22.9,
+            "Falta de agua potable": 0.0,
+            "Falta de viviendas": 3.7,
+            "Falta de cloacas": 12.2,
+            "Costo del peaje": 0.0,
+            "Estado del rio": 0.5,
+            "Otro": 13.3
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 10.6,
+            "Buena": 11.7,
+            "Regular": 26.6,
+            "Mala": 48.9,
+            "No se": 2.1
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 17.2,
+            "Buena": 14.9,
+            "Regular": 28.7,
+            "Mala": 36.5,
+            "No se": 2.7
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 16.0,
+            "Buena": 22.3,
+            "Regular": 21.8,
+            "Mala": 36.7,
+            "No se": 3.2
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 34.0,
+            "Desapruebo": 66.0
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 40.6,
+            "Desapruebo": 59.4
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 50.0,
+            "Desapruebo": 50.0
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Paola Nanini",
+            "categorias": {
+              "Muy buena": 10.1,
+              "Buena": 16.5,
+              "Regular": 33.0,
+              "Mala": 37.2,
+              "No se": 3.2
+            }
+          },
+          {
+            "nombre": "Matias Roldan",
+            "categorias": {
+              "Muy buena": 7.5,
+              "Buena": 13.8,
+              "Regular": 26.6,
+              "Mala": 27.7,
+              "No se": 24.5
+            }
+          },
+          {
+            "nombre": "Matias Peralta Cruz",
+            "categorias": {
+              "Muy buena": 6.4,
+              "Buena": 12.8,
+              "Regular": 31.4,
+              "Mala": 24.5,
+              "No se": 25.0
+            }
+          },
+          {
+            "nombre": "Cristian Almada",
+            "categorias": {
+              "Muy buena": 2.1,
+              "Buena": 2.7,
+              "Regular": 16.5,
+              "Mala": 39.4,
+              "No se": 39.4
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 29.6
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.7
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 16.5
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 15.4
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 7.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 3.2
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.1
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "No se",
+              "pct": 32.2
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 27.3
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 18.6
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 16.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 3.2
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.1
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 44.5
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 28.9
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 20.7
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 3.2
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 1.1
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 37.0
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 27.9
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 27.7
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 2.7
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.1
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.5
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 25.5
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 20.2
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 17.6
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 15.4
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 13.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.3
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 2.1
+            }
+          ]
+        },
+        "candidatos_intendente": {
+          "Escenario base": [
+            {
+              "candidato": "No se",
+              "pct": 39.9
+            },
+            {
+              "candidato": "Paola Nanini",
+              "pct": 20.7
+            },
+            {
+              "candidato": "Matias Roldan",
+              "pct": 19.2
+            },
+            {
+              "candidato": "Matias Peralta Cruz",
+              "pct": 15.4
+            },
+            {
+              "candidato": "Cristian Almada",
+              "pct": 4.8
+            }
+          ]
+        },
+        "candidatos_presidente": {},
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Ud cree que trabajan en equipo el intendente y el gobernador?",
+            "categorias": {
+              "Si, mucho": 16.5,
+              "Si, algo": 41.0,
+              "No": 42.6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "MENDIOLAZA": {
+    "nombre_localidad": "MENDIOLAZA",
+    "cantidad_rondas": 2,
+    "tiene_comparativo": true,
+    "rondas": [
+      {
+        "fecha": "2026-03-25",
+        "casos_totales": 84,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 1.2,
+            "Seguridad": 3.6,
+            "Inflación": 1.2,
+            "Estado de las calles": 51.2,
+            "Falta de pavimento": 10.7,
+            "Falta de agua potable": 7.1,
+            "Falta de viviendas": 1.2,
+            "Falta de cloacas": 6.0,
+            "Transporte": 3.6,
+            "Otro": 14.3
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 13.1,
+            "Buena": 13.1,
+            "Regular": 23.8,
+            "Mala": 46.4,
+            "No se": 3.6
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 12.1,
+            "Buena": 20.2,
+            "Regular": 32.1,
+            "Mala": 34.3,
+            "No se": 1.2
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 25.0,
+            "Buena": 17.9,
+            "Regular": 13.1,
+            "Mala": 42.9,
+            "No se": 1.2
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 53.6,
+            "Desapruebo": 46.4
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 47.9,
+            "Desapruebo": 52.1
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 34.5,
+            "Desapruebo": 65.5
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Adela Arning",
+            "categorias": {
+              "Muy buena": 15.5,
+              "Buena": 9.5,
+              "Regular": 26.2,
+              "Mala": 47.6,
+              "No se": 1.2
+            }
+          },
+          {
+            "nombre": "Angela Alessio",
+            "categorias": {
+              "Muy buena": 6.0,
+              "Buena": 9.5,
+              "Regular": 17.9,
+              "Mala": 16.7,
+              "No se": 50.0
+            }
+          },
+          {
+            "nombre": "Fabiana Ismail",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 1.2,
+              "Regular": 4.8,
+              "Mala": 11.9,
+              "No se": 82.1
+            }
+          },
+          {
+            "nombre": "Daniel Salibi",
+            "categorias": {
+              "Muy buena": 7.1,
+              "Buena": 20.2,
+              "Regular": 23.8,
+              "Mala": 47.6,
+              "No se": 1.2
+            }
+          },
+          {
+            "nombre": "Nicolás Martínez Dalke",
+            "categorias": {
+              "Muy buena": 8.3,
+              "Buena": 10.7,
+              "Regular": 14.3,
+              "Mala": 39.3,
+              "No se": 27.4
+            }
+          },
+          {
+            "nombre": "Luciana Presas",
+            "categorias": {
+              "Muy buena": 2.4,
+              "Buena": 4.8,
+              "Regular": 14.3,
+              "Mala": 11.9,
+              "No se": 66.7
+            }
+          },
+          {
+            "nombre": "Gustavo Brandán",
+            "categorias": {
+              "Muy buena": 2.4,
+              "Buena": 9.5,
+              "Regular": 8.3,
+              "Mala": 11.9,
+              "No se": 67.9
+            }
+          }
+        ],
+        "candidatos_gobernador": {},
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": []
+      },
+      {
+        "fecha": "2026-10-30",
+        "casos_totales": 176,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 8.8,
+            "Seguridad": 7.1,
+            "Inflación": 4.2,
+            "Estado de las calles": 25.3,
+            "Falta de pavimento": 8.7,
+            "Falta de agua potable": 5.0,
+            "Falta de viviendas": 1.4,
+            "Falta de cloacas": 4.0,
+            "Transporte": 8.5,
+            "Otro": 27.0
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 17.3,
+            "Buena": 19.4,
+            "Regular": 16.1,
+            "Mala": 44.9,
+            "No se": 2.4
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 14.0,
+            "Buena": 23.6,
+            "Regular": 29.5,
+            "Mala": 28.1,
+            "No se": 4.7
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 12.5,
+            "Buena": 18.0,
+            "Regular": 21.3,
+            "Mala": 46.3,
+            "No se": 1.9
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 47.8,
+            "Desapruebo": 52.2
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 52.3,
+            "Desapruebo": 47.7
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 43.1,
+            "Desapruebo": 56.9
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Adela Arning",
+            "categorias": {
+              "Muy buena": 17.0,
+              "Buena": 19.6,
+              "Regular": 16.3,
+              "Mala": 45.1,
+              "No se": 1.9
+            }
+          },
+          {
+            "nombre": "Angela Alessio",
+            "categorias": {
+              "Muy buena": 8.3,
+              "Buena": 8.1,
+              "Regular": 16.5,
+              "Mala": 20.3,
+              "No se": 46.8
+            }
+          },
+          {
+            "nombre": "Fabiana Ismail",
+            "categorias": {
+              "Muy buena": 0.7,
+              "Buena": 1.4,
+              "Regular": 6.4,
+              "Mala": 16.5,
+              "No se": 74.9
+            }
+          },
+          {
+            "nombre": "Daniel Salibi",
+            "categorias": {
+              "Muy buena": 9.2,
+              "Buena": 9.2,
+              "Regular": 23.6,
+              "Mala": 54.8,
+              "No se": 3.1
+            }
+          },
+          {
+            "nombre": "Nicolás Martínez Dalke",
+            "categorias": {
+              "Muy buena": 14.9,
+              "Buena": 12.1,
+              "Regular": 13.3,
+              "Mala": 34.0,
+              "No se": 25.8
+            }
+          },
+          {
+            "nombre": "Luciana Presas",
+            "categorias": {
+              "Muy buena": 2.4,
+              "Buena": 5.2,
+              "Regular": 7.5,
+              "Mala": 17.5,
+              "No se": 67.4
+            }
+          },
+          {
+            "nombre": "Gustavo Brandán",
+            "categorias": {
+              "Muy buena": 7.8,
+              "Buena": 8.5,
+              "Regular": 9.7,
+              "Mala": 15.9,
+              "No se": 58.1
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario base": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 34.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 27.4
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 14.4
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 10.9
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 6.4
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 4.0
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.8
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 34.1
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.1
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 18.7
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 12.1
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 4.7
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.4
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 37.3
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 34.8
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 18.5
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.2
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 2.8
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 1.4
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 36.6
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 33.6
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 21.0
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 5.2
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 3.5
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 34.5
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 18.7
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 16.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 12.8
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 8.0
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 6.8
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 2.8
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {},
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Sabe que el Papa León XIV visita Córdoba próximamente?",
+            "categorias": {
+              "Si": 97.9,
+              "No": 2.1
+            }
+          },
+          {
+            "pregunta_original": "¿Qué opinión le merece la visita del Papa León XIV a Córdoba?",
+            "categorias": {
+              "Me encanta": 23.2,
+              "Me parece bien": 35.2,
+              "Me parece mal": 1.2,
+              "Me es indiferente": 40.4
+            }
+          },
+          {
+            "pregunta_original": "¿Cree que la visita del Papa a Córdoba moviliza la economía?",
+            "categorias": {
+              "Si": 64.1,
+              "No": 14.2,
+              "No se": 21.7
+            }
+          },
+          {
+            "pregunta_original": "¿Está enterado de la realización de un plebiscito para revocar el mandato de la intendenta Arning?",
+            "categorias": {
+              "Si": 93.4,
+              "No": 6.6
+            }
+          },
+          {
+            "pregunta_original": "¿Piensa participar de ese plebiscito de revocatoria?",
+            "categorias": {
+              "Si": 75.0,
+              "No": 25.0
+            }
+          },
+          {
+            "pregunta_original": "En caso de participar ¿Cómo votaría?",
+            "categorias": {
+              "Para que se vaya": 50.1,
+              "Para que se quede": 49.9
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "OLIVA": {
+    "nombre_localidad": "OLIVA",
+    "cantidad_rondas": 1,
+    "tiene_comparativo": false,
+    "rondas": [
+      {
+        "fecha": "2026-11-13",
+        "casos_totales": 121,
+        "preguntas": {
+          "Problemas principales": {
+            "Falta de trabajo": 61.1,
+            "Seguridad": 5.0,
+            "Inflación": 0.8,
+            "Estado de las calles": 7.4,
+            "Falta de pavimento": 4.1,
+            "Falta de viviendas": 2.5,
+            "Falta de cloacas": 6.6,
+            "Estado del lago": 0.8,
+            "Costo del peaje": 0.8,
+            "Otro": 10.8
+          },
+          "Gestión del Intendente": {
+            "Muy buena": 6.6,
+            "Buena": 11.6,
+            "Regular": 29.8,
+            "Mala": 51.2,
+            "No se": 0.8
+          },
+          "Gestión del Gobernador": {
+            "Muy buena": 16.5,
+            "Buena": 16.5,
+            "Regular": 27.3,
+            "Mala": 36.3,
+            "No se": 3.3
+          },
+          "Gestión del Presidente": {
+            "Muy buena": 26.4,
+            "Buena": 27.2,
+            "Regular": 19.0,
+            "Mala": 26.4,
+            "No se": 0.8
+          },
+          "Aprobación Intendente": {
+            "Apruebo": 26.4,
+            "Desapruebo": 73.6
+          },
+          "Aprobación Gobernador": {
+            "Apruebo": 45.5,
+            "Desapruebo": 54.5
+          },
+          "Aprobación Presidente": {
+            "Apruebo": 63.6,
+            "Desapruebo": 36.4
+          }
+        },
+        "obras": [],
+        "dirigentes": [
+          {
+            "nombre": "Oscar Tamiz",
+            "categorias": {
+              "Muy buena": 24.8,
+              "Buena": 28.9,
+              "Regular": 17.4,
+              "Mala": 21.5,
+              "No se": 7.5
+            }
+          },
+          {
+            "nombre": "Victoria Narvaja",
+            "categorias": {
+              "Muy buena": 7.4,
+              "Buena": 14.9,
+              "Regular": 16.6,
+              "Mala": 48.7,
+              "No se": 12.4
+            }
+          },
+          {
+            "nombre": "Lucas Stefani",
+            "categorias": {
+              "Muy buena": 10.8,
+              "Buena": 29.0,
+              "Regular": 21.4,
+              "Mala": 31.4,
+              "No se": 7.4
+            }
+          },
+          {
+            "nombre": "Martín Del Bell",
+            "categorias": {
+              "Muy buena": 2.5,
+              "Buena": 12.4,
+              "Regular": 23.9,
+              "Mala": 51.3,
+              "No se": 9.9
+            }
+          },
+          {
+            "nombre": "César Salvatori",
+            "categorias": {
+              "Muy buena": 6.6,
+              "Buena": 16.5,
+              "Regular": 18.2,
+              "Mala": 43.8,
+              "No se": 14.9
+            }
+          },
+          {
+            "nombre": "Carlos Actiz Pozzo",
+            "categorias": {
+              "Muy buena": 14.1,
+              "Buena": 35.5,
+              "Regular": 24.8,
+              "Mala": 16.5,
+              "No se": 9.1
+            }
+          },
+          {
+            "nombre": "Juan Pablo Peirone",
+            "categorias": {
+              "Muy buena": 1.7,
+              "Buena": 7.4,
+              "Regular": 6.6,
+              "Mala": 14.8,
+              "No se": 69.5
+            }
+          },
+          {
+            "nombre": "Rubén Dagúm",
+            "categorias": {
+              "Muy buena": 0.0,
+              "Buena": 5.8,
+              "Regular": 8.3,
+              "Mala": 14.0,
+              "No se": 71.9
+            }
+          },
+          {
+            "nombre": "Gustavo Botasso",
+            "categorias": {
+              "Muy buena": 1.6,
+              "Buena": 4.9,
+              "Regular": 9.1,
+              "Mala": 14.8,
+              "No se": 69.5
+            }
+          },
+          {
+            "nombre": "Davis Consalvi",
+            "categorias": {
+              "Muy buena": 5.8,
+              "Buena": 9.9,
+              "Regular": 8.3,
+              "Mala": 25.5,
+              "No se": 50.5
+            }
+          }
+        ],
+        "candidatos_gobernador": {
+          "Escenario 1": [
+            {
+              "candidato": "No se",
+              "pct": 40.2
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 24.0
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 22.2
+            },
+            {
+              "candidato": "Natalia de la Sota",
+              "pct": 13.5
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 3": [
+            {
+              "candidato": "No se",
+              "pct": 40.3
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 24.7
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 21.5
+            },
+            {
+              "candidato": "Natalia de la Sota",
+              "pct": 12.7
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.8
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 2": [
+            {
+              "candidato": "No se",
+              "pct": 48.4
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 22.3
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 15.7
+            },
+            {
+              "candidato": "Natalia de la Sota",
+              "pct": 11.9
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 1.7
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 4": [
+            {
+              "candidato": "No se",
+              "pct": 41.4
+            },
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 28.9
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 15.7
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 13.2
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 0.8
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.0
+            }
+          ],
+          "Escenario base (sin indecisos)": [
+            {
+              "candidato": "Martín Llaryora",
+              "pct": 38.9
+            },
+            {
+              "candidato": "Rodrigo De Loredo",
+              "pct": 22.3
+            },
+            {
+              "candidato": "Gabriel Bornoroni",
+              "pct": 15.7
+            },
+            {
+              "candidato": "Luis Juez",
+              "pct": 14.1
+            },
+            {
+              "candidato": "El Presto",
+              "pct": 6.6
+            },
+            {
+              "candidato": "Liliana Olivero",
+              "pct": 1.7
+            },
+            {
+              "candidato": "Agustin Spaccesi",
+              "pct": 0.8
+            },
+            {
+              "candidato": "Hernandez Maqueda",
+              "pct": 0.0
+            }
+          ]
+        },
+        "candidatos_intendente": {},
+        "candidatos_presidente": {
+          "Escenario base": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 58.6
+            },
+            {
+              "candidato": "No se",
+              "pct": 13.3
+            },
+            {
+              "candidato": "Juan Schiaretti",
+              "pct": 12.4
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 7.4
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 5.8
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 1.7
+            },
+            {
+              "candidato": "Hadad",
+              "pct": 0.8
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 0.0
+            }
+          ],
+          "Escenario 1": [
+            {
+              "candidato": "Javier Milei",
+              "pct": 53.6
+            },
+            {
+              "candidato": "No se",
+              "pct": 28.2
+            },
+            {
+              "candidato": "Axel Kiciloff",
+              "pct": 8.3
+            },
+            {
+              "candidato": "Sergio Massa",
+              "pct": 5.8
+            },
+            {
+              "candidato": "Myriam Bregman",
+              "pct": 1.7
+            },
+            {
+              "candidato": "Hadad",
+              "pct": 1.6
+            },
+            {
+              "candidato": "Dante Gebel",
+              "pct": 0.8
+            }
+          ]
+        },
+        "otras_preguntas": [
+          {
+            "pregunta_original": "¿Qué opina de la posibilidad de que el intendente Ibarra se sume a trabajar en el equipo de Llaryora?",
+            "categorias": {
+              "Me parece buena idea": 27.2,
+              "No me parece buena idea": 54.5,
+              "No se": 18.3
+            }
+          }
+        ]
       }
     ]
   }
