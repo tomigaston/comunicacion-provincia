@@ -321,8 +321,8 @@ export default function DetalleLocalidad() {
 
       {info && info.base && (
         <div style={{ marginTop: 20 }}>
-          <h1 style={{ fontSize: 24, fontWeight: 700 }}>{info.base.localidad}</h1>
-          <p style={{ fontSize: 14, color: 'var(--text-secondary)', marginBottom: 16 }}>
+          <h1 style={{ fontSize: 20, fontWeight: 600, letterSpacing: -0.2 }}>{info.base.localidad}</h1>
+          <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16 }}>
             Departamento {info.base.departamento}
             {info.base.poblacion ? ` · ${info.base.poblacion.toLocaleString('es-AR')} habitantes` : ''}
           </p>
@@ -586,7 +586,7 @@ export default function DetalleLocalidad() {
 
               {programadasFiltradas.length > 0 && (
                 <div style={{ marginTop: 22 }}>
-                  <h3 style={{ fontSize: 14, fontWeight: 700, margin: '0 0 4px', color: 'var(--accent)' }}>
+                  <h3 style={{ fontSize: 13.5, fontWeight: 600, margin: '0 0 4px', color: 'var(--accent)' }}>
                     Programadas ({programadasFiltradas.length})
                   </h3>
                   <p style={{ fontSize: 12.5, color: 'var(--text-tertiary)', margin: '0 0 8px' }}>
@@ -741,7 +741,7 @@ function Seccion({ id, titulo, resumen, children, refDetails }) {
   return (
     <details id={id} ref={refDetails} open className="desplegable seccion">
       <summary>
-        <h2 style={{ fontSize: 16, fontWeight: 700, margin: 0 }}>{titulo}</h2>
+        <h2 style={{ fontSize: 15, fontWeight: 600, margin: 0 }}>{titulo}</h2>
         {resumen && <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-secondary)' }}>· {resumen}</span>}
       </summary>
       <div style={{ marginTop: 8 }}>{children}</div>
@@ -749,8 +749,8 @@ function Seccion({ id, titulo, resumen, children, refDetails }) {
   );
 }
 
-const th = { padding: '8px 10px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
-const td = { padding: '10px 10px', fontSize: 13.5 };
+const th = { padding: '8px 10px', fontSize: 12, color: 'var(--text-tertiary)', fontWeight: 600 };
+const td = { padding: '8px 10px', fontSize: 13 };
 const badgeCanal = {
   padding: '2px 8px',
   borderRadius: 999,

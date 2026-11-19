@@ -8,11 +8,11 @@
 
   --bg-primary: #ffffff;
   --bg-secondary: #f5f6f8;
-  --bg-tertiary: #eef0f3;
+  --bg-tertiary: #f4f5f7;
   --text-primary: #1a1a1a;
   --text-secondary: #5f6368;
   --text-tertiary: #6b7280;
-  --border: #e2e4e8;
+  --border: #e6e8ec;
   /* Acento: el celeste de marca sobre blanco no alcanza para texto (2,3:1),
      así que para links, texto y bordes activos se usa un celeste más oscuro
      del mismo tono; el celeste del manual va en fondos, subrayados y
@@ -226,29 +226,31 @@ tbody tr:hover {
   border-radius: 8px;
 }
 
-/* Desplegables destacados (más débiles, temas por revisar, contenido
-   repetido): el título lleva fondo de color para que se vea de lejos. */
+/* Desplegables destacados (temas por revisar, contenido repetido, campañas,
+   pauta dirigida): fondo gris claro y una línea fina a la izquierda del color
+   del tono (estética sobria, 19/11/2026). */
 .desplegable-destacado > summary {
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 6px;
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--border);
 }
 
 .desplegable-destacado.tono-rojo > summary {
-  background: var(--cov-baja-bg);
+  border-left-color: var(--cov-baja);
 }
 
 .desplegable-destacado.tono-ambar > summary {
-  background: var(--cov-media-bg);
+  border-left-color: var(--cov-media);
 }
 
 .desplegable-destacado.tono-dorado > summary {
-  background: #f7efe0;
-  border: 1px solid var(--marca-dorado);
+  border-left-color: var(--marca-dorado);
 }
 
 .desplegable-destacado.tono-celeste > summary {
-  background: var(--accent-bg);
+  border-left-color: var(--marca-celeste);
 }
 
 /* Propuesta de inicio (6/11/2026): celdas del mapa de 60 localidades. */

@@ -80,4 +80,4 @@ export default function CampanaRow({ item }) {
   );
 }
 
-const celda = { padding: '10px 14px', fontSize: 13.5, verticalAlign: 'top' };
+const celda = { padding: '8px 12px', fontSize: 13, verticalAlign: 'top' };

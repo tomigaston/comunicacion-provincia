@@ -37,8 +37,10 @@ const tipoMedioEstilo = {
   padding: '7px 10px',
   borderRadius: 10,
   border: '1px solid transparent',
-  fontSize: 12.5,
+  // `font` va antes que el tamaño: si va después, lo pisa y la casilla
+  // queda con la letra de la página (16px).
   font: 'inherit',
+  fontSize: 12.5,
   lineHeight: 1.3,
 };
 
@@ -48,12 +50,12 @@ const cardEstilo = {
   minWidth: 280,
   background: 'var(--bg-primary)',
   border: '1px solid var(--border)',
-  borderTop: '4px solid var(--marca-celeste)',
   borderRadius: 12,
-  padding: '14px 20px 16px',
+  padding: '16px 20px 18px',
+  boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)',
 };
-const tituloCard = { fontSize: 13, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 };
-const titular = { fontSize: 20, fontWeight: 700, lineHeight: 1.2 };
+const tituloCard = { fontSize: 11.5, fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
+const titular = { fontSize: 18, fontWeight: 600, lineHeight: 1.25, letterSpacing: -0.2 };
 const detalle = { fontSize: 13.5, color: 'var(--text-secondary)', marginTop: 8 };
 const chico = { fontSize: 12.5, color: 'var(--text-tertiary)', marginTop: 8 };
 const lista = { margin: '6px 0 0', paddingLeft: 18, fontSize: 13.5, color: 'var(--text-primary)' };
@@ -142,12 +144,12 @@ function Indicador({ valor, sufijo, etiqueta, detalle, tono = null, onClick, tit
   const franja = tono === 'rojo' ? 'var(--cov-baja)' : tono === 'discreto' ? 'var(--border)' : 'var(--marca-celeste)';
   const fondo = tono === 'rojo' ? 'var(--cov-baja-bg)' : 'var(--bg-primary)';
   return (
-    <button type="button" onClick={onClick} title={title} style={{ ...indicadorEstilo, borderColor: borde, borderTop: `4px solid ${franja}`, background: fondo }}>
-      <div style={{ fontSize: 28, fontWeight: 700, lineHeight: 1.1, color: colorValor }}>
+    <button type="button" onClick={onClick} title={title} style={{ ...indicadorEstilo, borderColor: borde, borderLeft: tono === 'rojo' ? `4px solid ${franja}` : `1px solid ${borde}`, background: fondo, boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)' }}>
+      <div style={{ fontSize: 26, fontWeight: 600, lineHeight: 1.1, color: colorValor, fontVariantNumeric: 'tabular-nums', letterSpacing: -0.3 }}>
         {valor}
         {sufijo && <span style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-secondary)' }}>{sufijo}</span>}
       </div>
-      <div style={{ fontSize: 13, fontWeight: 600, marginTop: 6, color: tono === 'discreto' ? 'var(--text-secondary)' : 'var(--text-primary)' }}>{etiqueta}</div>
+      <div style={{ fontSize: 13, fontWeight: 500, marginTop: 6, color: tono === 'discreto' ? 'var(--text-secondary)' : 'var(--text-primary)' }}>{etiqueta}</div>
       {detalle && <div style={{ fontSize: 12.5, color: 'var(--text-secondary)', marginTop: 2 }}>{detalle}</div>}
     </button>
   );
@@ -317,7 +319,7 @@ function BloqueAtencion({ r, hoy, refBloque, refPrimeraFecha }) {
   const { atencion, cubiertas, ventanaHasta } = r.pd;
   const colorBorde = atencion.total ? 'var(--cov-baja)' : 'var(--cov-alta)';
   return (
-    <div ref={refBloque} style={{ ...cardEstilo, flex: '1 1 100%', padding: '14px 18px 16px', marginBottom: 14, borderColor: colorBorde, borderTopColor: colorBorde }}>
+    <div ref={refBloque} style={{ ...cardEstilo, flex: '1 1 100%', padding: '14px 18px 16px', marginBottom: 14, borderLeft: `4px solid ${colorBorde}` }}>
       <div style={tituloCard}>Atención — próximos {PD_DIAS_VENTANA} días</div>
       {atencion.total ? (
         <>
@@ -331,7 +333,7 @@ function BloqueAtencion({ r, hoy, refBloque, refPrimeraFecha }) {
           <BloqueAvisoPD b={atencion} ventanaHasta={ventanaHasta} refPrimeraFecha={refPrimeraFecha} />
         </>
       ) : (
-        <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--cov-alta)' }}>Ninguna localidad baja de color en Pauta Digital</div>
+        <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)' }}>Ninguna localidad baja de color en Pauta Digital</div>
       )}
       {cubiertas.total > 0 && (
         <div style={{ marginTop: 12 }}>
@@ -398,9 +400,10 @@ function Movimiento({ r, abierto, onToggle }) {
       {visibles.map((c, i) => (
         <span key={c.localidad}>
           {i > 0 ? ', ' : ''}
-          <LinkLocalidad nombre={c.localidad} style={{ color: c.empeoro ? 'var(--cov-baja)' : 'var(--cov-alta)', fontWeight: 600 }}>
-            {c.localidad} {c.empeoro ? '↓' : '↑'} {c.a}
-          </LinkLocalidad>
+          <LinkLocalidad nombre={c.localidad} style={{ color: 'var(--text-primary)', fontWeight: 500, textDecorationColor: 'var(--border)' }}>
+            {c.localidad}
+          </LinkLocalidad>{' '}
+          <span style={{ color: c.empeoro ? 'var(--cov-baja)' : 'var(--cov-alta)', fontWeight: 600 }}>{c.empeoro ? '↓' : '↑'}</span> {c.a}
         </span>
       ))}
       {resto > 0 && (
@@ -508,7 +511,7 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
                 </div>
               )}
               {/* Letra más grande y color de marca (pedido del 6/11/2026). */}
-              <div style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.2, color: 'var(--accent)' }}>
+              <div style={{ fontSize: 22, fontWeight: 600, lineHeight: 1.2, color: 'var(--accent)', letterSpacing: -0.3 }}>
                 {r.pd.activas.toLocaleString('es-AR')} piezas activas
                 <span style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}> · {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}</span>
               </div>
@@ -611,7 +614,7 @@ export function ResumenLocalidad({ r, recientePorTipo = {}, onFiltrarTemas }) {
                 type="button"
                 onClick={() => onFiltrarTemas({ tipo: null })}
                 title="Ver los temas activos en la tabla"
-                style={{ ...enlace, fontSize: 20, fontWeight: 700, textDecoration: 'none' }}
+                style={{ ...enlace, fontSize: 18, fontWeight: 600, textDecoration: 'none' }}
               >
                 {mt.temasActivos} tema{mt.temasActivos === 1 ? '' : 's'} activo{mt.temasActivos === 1 ? '' : 's'}
               </button>{' '}
@@ -635,7 +638,7 @@ export function ResumenLocalidad({ r, recientePorTipo = {}, onFiltrarTemas }) {
                     title={`Ver los ${c.temas} temas activos de ${c.label} en la tabla`}
                     style={{ ...tipoMedioEstilo, background: 'var(--cov-alta-bg)', borderColor: 'transparent', cursor: 'pointer' }}
                   >
-                    <span style={{ color: 'var(--cov-alta)', fontWeight: 700 }}>✓ {c.label}</span>
+                    <span style={{ color: 'var(--cov-alta)', fontWeight: 600 }}>✓ {c.label}</span>
                     <span style={{ color: 'var(--text-primary)' }}>
                       {c.temas} tema{c.temas === 1 ? '' : 's'}
                     </span>
@@ -645,7 +648,7 @@ export function ResumenLocalidad({ r, recientePorTipo = {}, onFiltrarTemas }) {
                   </button>
                 ) : (
                   <span key={c.key} style={{ ...tipoMedioEstilo, background: 'var(--bg-secondary)', borderColor: 'transparent', color: 'var(--text-tertiary)' }}>
-                    <span style={{ fontWeight: 700 }}>— {c.label}</span>
+                    <span style={{ fontWeight: 600 }}>— {c.label}</span>
                     <span>sin tema activo</span>
                   </span>
                 );
@@ -689,7 +692,7 @@ export function ResumenLocalidad({ r, recientePorTipo = {}, onFiltrarTemas }) {
                   setPlataforma(null);
                 }}
                 aria-expanded={listaPD}
-                style={{ ...enlace, fontSize: 20, fontWeight: 700, textDecoration: 'none' }}
+                style={{ ...enlace, fontSize: 18, fontWeight: 600, textDecoration: 'none' }}
               >
                 {textoActivasPD(pd.semaforo)}
               </button>{' '}
@@ -730,7 +733,7 @@ export function ResumenLocalidad({ r, recientePorTipo = {}, onFiltrarTemas }) {
                           borderColor: activa ? 'var(--accent)' : 'transparent',
                         }}
                       >
-                        <span style={{ fontSize: 20, fontWeight: 700, color: 'var(--accent)', lineHeight: 1.1 }}>{x.campanas}</span>
+                        <span style={{ fontSize: 18, fontWeight: 600, color: 'var(--accent)', lineHeight: 1.1, fontVariantNumeric: 'tabular-nums' }}>{x.campanas}</span>
                         <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{x.plataforma}</span>
                         <span style={{ color: 'var(--text-tertiary)', fontSize: 11.5 }}>campaña{x.campanas === 1 ? '' : 's'}</span>
                       </button>

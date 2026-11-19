@@ -54,7 +54,7 @@ export default function Modal({ abierto, onCerrar, titulo, children, anchoMax = 
             marginBottom: 16,
           }}
         >
-          <h2 style={{ fontSize: 17, fontWeight: 700 }}>{titulo}</h2>
+          <h2 style={{ fontSize: 16, fontWeight: 600 }}>{titulo}</h2>
           <button type="button" onClick={onCerrar} aria-label="Cerrar" style={cerrarEstilo}>
             ×
           </button>

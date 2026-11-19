@@ -445,7 +445,7 @@ function chipEstilo(activo) {
   };
 }
 
-const th = { padding: '10px 14px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
+const th = { padding: '8px 12px', fontSize: 12, color: 'var(--text-tertiary)', fontWeight: 600 };
 const selectEstilo = {
   padding: '8px 10px',
   borderRadius: 8,

@@ -23,11 +23,11 @@ export const tarjeta = {
   minWidth: 280,
   background: 'var(--bg-primary)',
   border: '1px solid var(--border)',
-  borderTop: '4px solid var(--marca-celeste)',
   borderRadius: 12,
-  padding: '14px 20px 16px',
+  padding: '16px 20px 18px',
+  boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)',
 };
-export const tituloTarjeta = { fontSize: 13, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 };
+export const tituloTarjeta = { fontSize: 11.5, fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
 const nota = { fontSize: 12.5, color: 'var(--text-tertiary)', marginTop: 8, lineHeight: 1.4 };
 // `font: 'inherit'` va primero: si va después, pisa el tamaño y el botón
 // queda con la letra de la página (16px) en vez de 12,5.
@@ -266,9 +266,9 @@ function CeldaCruce({ n, c, activa, onClick }) {
       title={activa ? 'Clic para sacar el filtro' : `Ver estas ${n} localidades en la grilla`}
       style={{ background: fondo, borderRadius: 10, padding: '10px 12px', textAlign: 'left', font: 'inherit', color: 'inherit', cursor: 'pointer', border: `2px solid ${activa ? color : 'transparent'}` }}
     >
-      <div style={{ fontSize: 24, fontWeight: 700, color, lineHeight: 1.1 }}>{n}</div>
+      <div style={{ fontSize: 24, fontWeight: 600, color, lineHeight: 1.1, fontVariantNumeric: 'tabular-nums' }}>{n}</div>
       {/* Si no entra en un renglón, corta entre MT y PD, nunca en el medio. */}
-      <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2 }}>
+      <div style={{ fontSize: 12, fontWeight: 500, marginTop: 2, color: 'var(--text-secondary)' }}>
         <span style={{ whiteSpace: 'nowrap' }}>MT {c.mt}</span> · <span style={{ whiteSpace: 'nowrap' }}>PD {c.pd}</span>
       </div>
     </button>
@@ -367,7 +367,7 @@ export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
   return (
     <div style={tarjeta}>
       <div style={tituloTarjeta}>Pauta dirigida por localidad</div>
-      <div style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.2, color: 'var(--accent)' }}>
+      <div style={{ fontSize: 20, fontWeight: 600, lineHeight: 1.2, color: 'var(--accent)', letterSpacing: -0.3 }}>
         {bajo.length} localidad{bajo.length === 1 ? '' : 'es'} <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>con menos de {umbral} piezas dirigidas</span>
       </div>
       <div style={{ fontSize: 12.5, color: 'var(--text-secondary)', marginTop: 4 }}>
@@ -394,9 +394,9 @@ export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
 /** `t` = { tramos: {verde, amarillo, rojo, sinFecha}, sinFechaPorTipo: [{tipo, n}], total }. */
 export function AntiguedadMT({ t }) {
   const segmentos = [
-    { clave: 'verde', etiqueta: '🟢 0–29 días', n: t.tramos.verde, color: 'var(--cov-alta)' },
-    { clave: 'amarillo', etiqueta: '🟡 30–49 días', n: t.tramos.amarillo, color: 'var(--cov-media)' },
-    { clave: 'rojo', etiqueta: '🔴 50 días o más', n: t.tramos.rojo, color: 'var(--cov-baja)' },
+    { clave: 'verde', etiqueta: '0–29 días', n: t.tramos.verde, color: 'var(--cov-alta)' },
+    { clave: 'amarillo', etiqueta: '30–49 días', n: t.tramos.amarillo, color: 'var(--cov-media)' },
+    { clave: 'rojo', etiqueta: '50 días o más', n: t.tramos.rojo, color: 'var(--cov-baja)' },
     { clave: 'sinFecha', etiqueta: 'sin fecha de inicio', n: t.tramos.sinFecha, color: 'var(--cov-sin)' },
   ];
   return (
@@ -426,7 +426,7 @@ export function AntiguedadMT({ t }) {
 export function ComoLeer({ cortes, umbrales }) {
   const li = { marginBottom: 4 };
   return (
-    <details className="desplegable" style={{ ...tarjeta, borderTopColor: 'var(--marca-gris)', padding: '6px 20px', marginTop: 14 }}>
+    <details className="desplegable" style={{ ...tarjeta, padding: '6px 20px', marginTop: 14 }}>
       <summary>
         <span style={{ fontSize: 15 }}>¿Cómo leer este tablero?</span>
       </summary>

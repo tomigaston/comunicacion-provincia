@@ -22,7 +22,7 @@ export default function Movimientos() {
 
       {movimientos && (
         <>
-          <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 4 }}>Movimientos de la semana</h1>
+          <h1 style={{ fontSize: 20, fontWeight: 600, letterSpacing: -0.2, marginBottom: 4 }}>Movimientos de la semana</h1>
           {semana && (
             <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16 }}>
               Comparación entre las cargas del {semana}.
@@ -82,5 +82,5 @@ export default function Movimientos() {
   );
 }
 
-const th = { padding: '10px 14px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
-const td = { padding: '10px 14px', fontSize: 13.5 };
+const th = { padding: '8px 12px', fontSize: 12, color: 'var(--text-tertiary)', fontWeight: 600 };
+const td = { padding: '8px 12px', fontSize: 13 };

@@ -85,7 +85,7 @@ export default function Login() {
             alt="Gobierno de la Provincia de Córdoba — Hacer para crecer"
             style={{ display: 'block', height: 120, width: 'auto', margin: '0 auto 20px' }}
           />
-          <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 4 }}>Tablero de Comunicación</h1>
+          <h1 style={{ fontSize: 20, fontWeight: 600, letterSpacing: -0.2, marginBottom: 4 }}>Tablero de Comunicación</h1>
           <p style={{ fontSize: 13.5, color: 'var(--text-secondary)', marginBottom: 24 }}>
             Gobierno de Córdoba — 60 localidades prioritarias
           </p>

@@ -149,7 +149,7 @@ export default function EncuestasLocalidades() {
                 >
                   ‹ Volver al listado
                 </button>
-                <h2 style={{ fontSize: 20, fontWeight: 700 }}>{localidad.nombre_localidad}</h2>
+                <h2 style={{ fontSize: 18, fontWeight: 600, letterSpacing: -0.2 }}>{localidad.nombre_localidad}</h2>
                 <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>
                   {localidad.cantidad_rondas} {localidad.cantidad_rondas === 1 ? 'ronda' : 'rondas'} de encuesta
                   {vista === 'resumen' && ronda.casos_totales != null ? ` · ${ronda.casos_totales} casos` : ''}

@@ -178,6 +178,7 @@ export default function VerMaterial({ links, children }) {
 export const enlaceEstilo = {
   fontSize: 13,
   fontWeight: 600,
+  whiteSpace: 'nowrap',
   color: 'var(--accent)',
   background: 'none',
   border: 'none',

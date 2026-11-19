@@ -41,7 +41,7 @@ export default function SemaforoIndex() {
     <Layout title="Semáforo">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
         <div>
-          <h1 style={{ fontSize: 20, fontWeight: 700 }}>Semáforo</h1>
+          <h1 style={{ fontSize: 20, fontWeight: 600, letterSpacing: -0.2 }}>Semáforo</h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 2 }}>
             Tocá una localidad para ver el detalle.
           </p>
@@ -272,5 +272,5 @@ function DetallePD({ pd }) {
   );
 }
 
-const th = { padding: '8px 10px', fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 600 };
-const td = { padding: '10px 10px', fontSize: 13.5 };
+const th = { padding: '8px 10px', fontSize: 12, color: 'var(--text-tertiary)', fontWeight: 600 };
+const td = { padding: '8px 10px', fontSize: 13 };

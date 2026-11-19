@@ -14,6 +14,7 @@ export default function FilterBar({ children, compacto = false }) {
         background: 'var(--bg-primary)',
         border: '1px solid var(--border)',
         borderRadius: 12,
+        boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)',
         minHeight: compacto ? 0 : 64,
       }}
     >
