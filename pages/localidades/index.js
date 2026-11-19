@@ -6,6 +6,7 @@ import MedioFilterChip from '../../components/MedioFilterChip';
 import Autocomplete from '../../components/Autocomplete';
 import { ResumenGeneral } from '../../components/ResumenCards';
 import LocalidadCard from '../../components/LocalidadCard';
+import { CruceMTPD, GrillaLocalidades } from '../../components/InicioPropuesta';
 import { useApiData } from '../../lib/useApiData';
 import { slugificar } from '../../lib/texto';
 import { ORDEN_BANDAS, BANDA_COBERTURA } from '../../lib/coverage';
@@ -28,14 +29,17 @@ const OPCIONES_PD = [
   { key: '🟢', label: `${PD_MIN_VERDE}+ activas 🟢`, fg: 'var(--cov-alta)', bg: 'var(--cov-alta-bg)' },
 ];
 
+// Filtros más chicos (19/11/2026): el título de cada grupo va al costado de
+// sus botones, no arriba, y los botones son más bajos.
 const etiquetaGrupo = {
-  fontSize: 11.5,
+  fontSize: 10.5,
   fontWeight: 700,
   letterSpacing: 0.4,
   textTransform: 'uppercase',
   color: 'var(--text-tertiary)',
-  marginBottom: 6,
+  whiteSpace: 'nowrap',
 };
+const grupoEnLinea = { display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' };
 
 export default function LocalidadesIndex() {
   const router = useRouter();
@@ -264,21 +268,43 @@ export default function LocalidadesIndex() {
     };
   }, [datos]);
 
+  // Lleva hasta la grilla solo si no está a la vista (en dos columnas suele
+  // estarlo y no conviene que la página salte).
+  function irAGrilla() {
+    const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
+    if (!grilla) return;
+    const { top } = grilla.getBoundingClientRect();
+    if (top < 0 || top > window.innerHeight * 0.6) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Filtros que vienen de los resúmenes (19/11/2026): dejan solo ese recorte
+  // (limpian los demás filtros, así la grilla muestra la misma cantidad que el
+  // número que se tocó). Si ese recorte ya estaba elegido, lo limpian.
+  const sinOtrosFiltros = Object.values(mediosEstado).every((e) => e === 'off');
+  const mismo = (set, lista) => set.size === lista.length && lista.every((x) => set.has(x));
+  function filtrarRecorte(bandas, colores) {
+    if (sinOtrosFiltros && mismo(bandasActivas, bandas) && mismo(pdActivos, colores)) {
+      limpiarFiltros();
+      return;
+    }
+    setBandasActivas(new Set(bandas));
+    setPdActivos(new Set(colores));
+    setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+    irAGrilla();
+  }
+
   // Drill-down desde las cards: deja activas solo esas bandas y baja a la grilla.
   function filtrarBandas(bandas) {
-    setBandasActivas(new Set(bandas));
-    const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
-    if (grilla) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    filtrarRecorte(bandas, []);
   }
+  // Banda que hoy filtra sola la grilla (para marcarla en la barra de MT).
+  const bandaActiva = bandasActivas.size === 1 && pdActivos.size === 0 && sinOtrosFiltros ? Array.from(bandasActivas)[0] : null;
 
   // Indicador "Sin cobertura": grilla en banda Sin + Pauta Digital 🔴 (0–5
   // activas). Es el recorte más cercano al criterio del indicador (Sin MT y
   // 0 piezas activas): puede incluir localidades con 1 a 5 activas.
   function filtrarSinCobertura() {
-    setBandasActivas(new Set(['Sin']));
-    setPdActivos(new Set(['🔴']));
-    const grilla = typeof document !== 'undefined' && document.getElementById('grilla-localidades');
-    if (grilla) grilla.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    filtrarRecorte(['Sin'], ['🔴']);
   }
 
   function alternarPD(clave) {
@@ -312,126 +338,126 @@ export default function LocalidadesIndex() {
           filas={combinado}
           onFiltrarBandas={filtrarBandas}
           onFiltrarSinCobertura={filtrarSinCobertura}
+          bandaActiva={bandaActiva}
+          ladoIzquierdo={
+            <>
+              {/* Resumen de estados arriba de las localidades (19/11/2026): las 60, sin filtros; cada una filtra la grilla. */}
+              {combinado && (
+                <CruceMTPD filas={combinado} filtro={{ bandas: bandasActivas, pd: pdActivos, sinOtros: sinOtrosFiltros }} onFiltrar={filtrarRecorte} />
+              )}
+
+              <div style={{ marginBottom: 14 }}>
+                <FilterBar compacto>
+                  <Autocomplete
+                    compacto
+                    items={itemsBusqueda}
+                    placeholder="Buscar localidad o departamento..."
+                    onQueryChange={setBusqueda}
+                    onSelect={(item) => router.push(`/localidades/${item.value}`)}
+                  />
+                  <div style={grupoEnLinea}>
+                    <div style={etiquetaGrupo}>Cobertura MT</div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      {ORDEN_BANDAS.map((banda) => {
+                        const activa = bandasActivas.has(banda);
+                        const cfg = BANDA_COBERTURA[banda];
+                        return (
+                          <button
+                            key={banda}
+                            type="button"
+                            onClick={() => alternarBanda(banda)}
+                            style={{
+                              padding: '4px 10px',
+                              borderRadius: 999,
+                              border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
+                              background: activa ? cfg.bg : 'var(--bg-secondary)',
+                              color: activa ? cfg.fg : 'var(--text-tertiary)',
+                              fontSize: 12.5,
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {cfg.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div style={grupoEnLinea}>
+                    <div style={etiquetaGrupo}>Tipo de medio MT</div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      {TIPOS_MEDIO.map((tipo) => (
+                        <MedioFilterChip
+                          key={tipo.key}
+                          medio={tipo.label}
+                          estado={mediosEstado[tipo.key]}
+                          onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <div style={grupoEnLinea}>
+                    <div style={etiquetaGrupo}>Pauta digital</div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      {OPCIONES_PD.map((op) => {
+                        const activa = pdActivos.has(op.key);
+                        return (
+                          <button
+                            key={op.key}
+                            type="button"
+                            onClick={() => alternarPD(op.key)}
+                            aria-pressed={activa}
+                            style={{
+                              padding: '4px 10px',
+                              borderRadius: 999,
+                              border: `1.5px solid ${activa ? op.fg : 'var(--border)'}`,
+                              background: activa ? op.bg : 'var(--bg-secondary)',
+                              color: activa ? op.fg : 'var(--text-secondary)',
+                              fontSize: 12.5,
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {op.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </FilterBar>
+              </div>
+
+              {combinado && (
+                <div id="grilla-localidades">
+                  {/* Vista resumida / completa y orden (19/11/2026): mismas filas filtradas. */}
+                  <GrillaLocalidades
+                    filas={filtrados}
+                    Tarjeta={LocalidadCard}
+                    encabezado={
+                      <>
+                        Mostrando {filtrados.length} de {combinado.length} localidades
+                        {hayFiltros && (
+                          <>
+                            {' · '}
+                            <button
+                              type="button"
+                              onClick={limpiarFiltros}
+                              style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline' }}
+                            >
+                              Limpiar filtros
+                            </button>
+                          </>
+                        )}
+                      </>
+                    }
+                  />
+                </div>
+              )}
+            </>
+          }
         />
       )}
 
-      <div style={{ marginBottom: 20 }}>
-        <FilterBar>
-          <Autocomplete
-            items={itemsBusqueda}
-            placeholder="Buscar localidad o departamento..."
-            onQueryChange={setBusqueda}
-            onSelect={(item) => router.push(`/localidades/${item.value}`)}
-          />
-          <div>
-            <div style={etiquetaGrupo}>Cobertura MT</div>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              {ORDEN_BANDAS.map((banda) => {
-                const activa = bandasActivas.has(banda);
-                const cfg = BANDA_COBERTURA[banda];
-                return (
-                  <button
-                    key={banda}
-                    type="button"
-                    onClick={() => alternarBanda(banda)}
-                    style={{
-                      padding: '8px 14px',
-                      borderRadius: 999,
-                      border: `1.5px solid ${activa ? cfg.fg : 'var(--border)'}`,
-                      background: activa ? cfg.bg : 'var(--bg-secondary)',
-                      color: activa ? cfg.fg : 'var(--text-tertiary)',
-                      fontSize: 13.5,
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                    }}
-                  >
-                    {cfg.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-          <div>
-            <div style={etiquetaGrupo}>Tipo de medio MT</div>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              {TIPOS_MEDIO.map((tipo) => (
-                <MedioFilterChip
-                  key={tipo.key}
-                  medio={tipo.label}
-                  estado={mediosEstado[tipo.key]}
-                  onChange={(nuevo) => setMediosEstado((actual) => ({ ...actual, [tipo.key]: nuevo }))}
-                />
-              ))}
-            </div>
-          </div>
-          <div>
-            <div style={etiquetaGrupo}>Pauta digital</div>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              {OPCIONES_PD.map((op) => {
-                const activa = pdActivos.has(op.key);
-                return (
-                  <button
-                    key={op.key}
-                    type="button"
-                    onClick={() => alternarPD(op.key)}
-                    aria-pressed={activa}
-                    style={{
-                      padding: '8px 14px',
-                      borderRadius: 999,
-                      border: `1.5px solid ${activa ? op.fg : 'var(--border)'}`,
-                      background: activa ? op.bg : 'var(--bg-secondary)',
-                      color: activa ? op.fg : 'var(--text-secondary)',
-                      fontSize: 13.5,
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                    }}
-                  >
-                    {op.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </FilterBar>
-      </div>
-
-      {combinado && (
-        <>
-          <p id="grilla-localidades" style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
-            Mostrando {filtrados.length} de {combinado.length} localidades
-            {hayFiltros && (
-              <>
-                {' · '}
-                <button
-                  type="button"
-                  onClick={limpiarFiltros}
-                  style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                  Limpiar filtros
-                </button>
-              </>
-            )}
-          </p>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-              gap: 14,
-            }}
-          >
-            {filtrados.map((l) => (
-              <LocalidadCard
-                key={l.localidad}
-                localidad={l.localidad}
-                departamento={l.departamento}
-                bandaCobertura={l.bandaCobertura}
-                totalTipos={l.totalTipos}
-                ejePD={l.ejePD}
-              />
-            ))}
-          </div>
-        </>
-      )}
     </Layout>
   );
 }

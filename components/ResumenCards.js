@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento, textoActivasPD } from '../lib/coverage';
 import { PD_DIAS_VENTANA, colorDeAlerta } from '../lib/semaforo';
 import { hrefLocalidad, hrefCampana } from '../lib/rutas';
@@ -7,13 +8,9 @@ import { formatearFechaDiaMes } from '../lib/fechas';
 import {
   FechaDelDato,
   GraficoVencimientos,
-  MapaLocalidades,
-  CruceMTPD,
   GraficoAreas,
   TarjetaDirigidas,
   AntiguedadMT,
-  AreasSinCargaReciente,
-  TarjetaMovimientos,
   ComoLeer,
 } from './InicioPropuesta';
 
@@ -158,17 +155,14 @@ function Indicador({ valor, sufijo, etiqueta, detalle, tono = null, onClick, tit
 
 /** Fila de indicadores (1.1). Valores: los mismos que ya mostraban las cards.
  * "Sin cobertura" va última y discreta en 0; en rojo y primera si es mayor a 0.
- * Vencimientos: no existe un total de piezas de toda la ventana ya calculado,
- * así que se muestra el de la fecha más próxima del bloque Atención. */
-function Indicadores({ r, onFiltrarBandas, onFiltrarSinCobertura, onVerCampanasPD, onVerVencimientos }) {
+ * Movimientos de la semana (19/11/2026): reemplaza al de vencimientos, que se
+ * sigue viendo en el bloque Atención. Mismo dato que la pestaña Movimientos
+ * (total_avisos_cambiaron); `movimientos` = propuesta.movimientos. */
+function Indicadores({ r, movimientos = null, onFiltrarBandas, onFiltrarSinCobertura, onVerCampanasPD, onVerMovimientos }) {
   const m = r.mt.movimiento;
   const flecha = !m ? '' : m.variacion > 0 ? '▲' : m.variacion < 0 ? '▼' : '=';
   const signo = m && m.variacion > 0 ? '+' : '';
   const [dd, mm] = m ? m.fecha.split('-').slice(1).reverse() : [];
-  const proxima = r.pd.atencion.fechas[0] || null;
-  // B5: total de la ventana = suma de los renglones del bloque Atención
-  // (piezas distintas por fecha de FIN; una pieza tiene un solo FIN).
-  const totalVentana = r.pd.atencion.fechas.reduce((s, f) => s + f.piezas, 0);
   const haySinCobertura = r.sinCobertura > 0;
 
   const sinCobertura = (
@@ -214,18 +208,16 @@ function Indicadores({ r, onFiltrarBandas, onFiltrarSinCobertura, onVerCampanasP
       title="Ver esas localidades en la grilla"
       onClick={() => onFiltrarBandas(['Media', 'Alta'])}
     />,
-    <Indicador
-      key="vencimientos"
-      valor={proxima ? totalVentana.toLocaleString('es-AR') : 0}
-      etiqueta={proxima ? `piezas vencen en ${PD_DIAS_VENTANA} días` : 'vencimientos que cambian el color'}
-      detalle={
-        proxima
-          ? `${proxima.piezas.toLocaleString('es-AR')} el ${diaMes(proxima.fecha)} · de ${r.pd.atencion.fechas.length} fecha${r.pd.atencion.fechas.length === 1 ? '' : 's'} de vencimiento`
-          : `Ninguna localidad baja de color en ${PD_DIAS_VENTANA} días`
-      }
-      title="Ver el detalle en el bloque Atención"
-      onClick={onVerVencimientos}
-    />,
+    movimientos && (
+      <Indicador
+        key="movimientos"
+        valor={movimientos.total.toLocaleString('es-AR')}
+        etiqueta="avisos cambiaron de tema"
+        detalle={`Movimientos de la semana · Medios Tradicionales${movimientos.anterior && movimientos.actual ? ` · ${formatearFechaDiaMes(movimientos.anterior)} → ${formatearFechaDiaMes(movimientos.actual)}` : ''}`}
+        title="Un aviso es localidad + tipo de medio. Clic para ver el detalle en Movimientos de la semana."
+        onClick={onVerMovimientos}
+      />
+    ),
   ];
 
   const tarjetas = haySinCobertura ? [sinCobertura, ...resto] : [...resto, sinCobertura];
@@ -353,7 +345,8 @@ function BloqueAtencion({ r, hoy, refBloque, refPrimeraFecha }) {
   );
 }
 
-function BarraApilada({ bandas, total, onFiltrarBandas }) {
+/** `activa`: banda que hoy filtra la grilla sola (null si no hay una sola). */
+function BarraApilada({ bandas, total, onFiltrarBandas, activa = null }) {
   const orden = ORDEN_BANDAS.slice().reverse();
   return (
     <div>
@@ -366,7 +359,8 @@ function BarraApilada({ bandas, total, onFiltrarBandas }) {
               onClick={() => onFiltrarBandas([b])}
               title={`${BANDA_COBERTURA[b].label}: ${bandas[b]} · ver en la grilla`}
               aria-label={`${BANDA_COBERTURA[b].label}: ${bandas[b]} localidades, ver en la grilla`}
-              style={{ width: `${(bandas[b] / total) * 100}%`, background: BANDA_COBERTURA[b].fg, border: 'none', padding: 0, cursor: 'pointer' }}
+              aria-pressed={activa === b}
+              style={{ width: `${(bandas[b] / total) * 100}%`, background: BANDA_COBERTURA[b].fg, border: 'none', padding: 0, cursor: 'pointer', opacity: activa && activa !== b ? 0.3 : 1 }}
             />
           ) : null
         )}
@@ -378,7 +372,8 @@ function BarraApilada({ bandas, total, onFiltrarBandas }) {
             type="button"
             onClick={() => onFiltrarBandas([b])}
             title={`Ver las ${bandas[b]} localidades en banda ${b} en la grilla`}
-            style={{ ...enlace, textDecoration: 'none', color: 'var(--text-secondary)' }}
+            aria-pressed={activa === b}
+            style={{ ...enlace, textDecoration: activa === b ? 'underline' : 'none', color: activa === b ? 'var(--text-primary)' : 'var(--text-secondary)', fontWeight: activa === b ? 700 : 400 }}
           >
             <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: BANDA_COBERTURA[b].fg, marginRight: 5 }} />
             {b} {bandas[b]}
@@ -421,24 +416,24 @@ function Movimiento({ r, abierto, onToggle }) {
 }
 
 /** Pantalla general. `r` = resumenGeneral(); `onFiltrarBandas(['Sin','Baja'])`
- * filtra la grilla de abajo y lleva hasta ella; `onFiltrarSinCobertura()` deja
- * la grilla en banda Sin + Pauta Digital 🔴. */
-export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas = null, onFiltrarBandas, onFiltrarSinCobertura }) {
+ * filtra la grilla y lleva hasta ella; `onFiltrarSinCobertura()` deja la grilla
+ * en banda Sin + Pauta Digital 🔴. `bandaActiva`: banda que hoy filtra sola la
+ * grilla (para marcarla en la barra). Dos columnas (19/11/2026): `ladoIzquierdo`
+ * (filtros y grilla de localidades) va a la izquierda y los resúmenes a la
+ * derecha; en pantallas angostas se apilan (styles/globals.css). */
+export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas = null, onFiltrarBandas, onFiltrarSinCobertura, bandaActiva = null, ladoIzquierdo = null }) {
   const [cambiosAbiertos, setCambiosAbiertos] = useState(false);
   // Filtro 🔴/🟡 de la lista de temas por revisar (null = todos).
   const [colorTemas, setColorTemas] = useState(null);
   const refAtencion = useRef(null);
   const refPrimeraFecha = useRef(null);
   const refListaPD = useRef(null);
+  const router = useRouter();
 
   const temasLista = r.mt.temas.filter((t) => !colorTemas || t.color === colorTemas);
 
   function irA(ref) {
     if (ref.current) ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-  function verVencimientos() {
-    if (refPrimeraFecha.current) refPrimeraFecha.current.open = true;
-    irA(refAtencion);
   }
   function verCampanasPD() {
     if (refListaPD.current) refListaPD.current.open = true;
@@ -454,164 +449,143 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
         onFiltrarBandas={onFiltrarBandas}
         onFiltrarSinCobertura={onFiltrarSinCobertura}
         onVerCampanasPD={verCampanasPD}
-        onVerVencimientos={verVencimientos}
+        movimientos={propuesta ? propuesta.movimientos : null}
+        onVerMovimientos={() => router.push('/movimientos')}
       />
       <BloqueAtencion r={r} hoy={propuesta ? propuesta.hoy : null} refBloque={refAtencion} refPrimeraFecha={refPrimeraFecha} />
-      {/* C1 + C2: el mapa de 60 celdas antes de las tarjetas grandes. */}
-      {filas && <MapaLocalidades filas={filas} />}
-      <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-        <div style={cardEstilo}>
-          <div style={tituloCard}>Medios tradicionales</div>
-          <BarraApilada bandas={r.mt.bandas} total={r.total} onFiltrarBandas={onFiltrarBandas} />
-          <Movimiento r={r} abierto={cambiosAbiertos} onToggle={() => setCambiosAbiertos((v) => !v)} />
-          {r.mt.debiles.length > 0 && (
-            <details className="desplegable desplegable-destacado tono-rojo" style={{ marginTop: 10 }}>
-              <summary>
-                <span>
-                  {/* A4: el título dice que es solo Medios Tradicionales. */}
-                  <span style={{ color: 'var(--cov-baja)', fontSize: 15 }}>Más débiles en Medios Tradicionales: {r.mt.debiles.length} localidad{r.mt.debiles.length === 1 ? '' : 'es'}</span>{' '}
-                  <span style={{ fontWeight: 500, color: 'var(--text-secondary)' }}>(sin MT o cobertura baja)</span>
-                </span>
-              </summary>
-              <ul style={lista}>
-                {r.mt.debiles.map((l) => (
-                  <li key={l.localidad}>
-                    <LinkLocalidad nombre={l.localidad} style={{ fontWeight: 600 }} /> ({l.banda === 'Sin' ? 'sin MT' : `${l.tipos} tipo${l.tipos === 1 ? '' : 's'}`})
-                  </li>
-                ))}
-              </ul>
-              <button type="button" style={{ ...enlace, marginTop: 6, fontSize: 13 }} onClick={() => onFiltrarBandas(['Sin', 'Baja'])}>
-                Ver las {r.mt.debiles.length} en la grilla →
-              </button>
-            </details>
-          )}
-          <details className="desplegable desplegable-destacado tono-ambar" style={{ marginTop: 4 }}>
-            <summary>
-              <span>
-                <span style={{ fontSize: 15 }}>
-                  {r.mt.temasPorRevisar} tema{r.mt.temasPorRevisar === 1 ? '' : 's'} por revisar
-                </span>{' '}
-                · 🔴 {r.mt.rojos} · 🟡 {r.mt.amarillos}{' '}
-                <span style={{ fontWeight: 500, color: 'var(--text-secondary)' }}>(más antiguos primero)</span>
-              </span>
-            </summary>
-            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', margin: '4px 0 6px' }}>
-              <Chip color={null} onClick={() => setColorTemas(null)} activo={colorTemas === null}>
-                Todos
-              </Chip>
-              <Chip color="🔴" onClick={() => setColorTemas('🔴')} activo={colorTemas === '🔴'}>
-                🔴 {r.mt.rojos}
-              </Chip>
-              <Chip color="🟡" onClick={() => setColorTemas('🟡')} activo={colorTemas === '🟡'}>
-                🟡 {r.mt.amarillos}
-              </Chip>
-            </div>
-            <ul style={lista}>
-              {temasLista.map((t) => (
-                <li key={t.tema + t.dias}>
-                  {t.color} <LinkCampana nombre={t.tema} /> · {t.tipo} · {t.dias} días · {t.localidades} localidad{t.localidades === 1 ? '' : 'es'}
-                </li>
-              ))}
-            </ul>
-          </details>
-          {/* E5 + B8: antigüedad por tramo y temas sin fecha. */}
-          {propuesta && <AntiguedadMT t={propuesta.antiguedadMT} />}
-        </div>
-
-        <div style={cardEstilo}>
-          <div style={tituloCard}>Pauta digital</div>
-          {r.pd.vencidasSinRenovar.length > 0 && (
-            <div style={{ background: 'var(--cov-baja-bg)', color: 'var(--cov-baja)', borderRadius: 8, padding: '8px 12px', marginBottom: 10, fontSize: 13.5, fontWeight: 600 }}>
-              {r.pd.vencidasSinRenovar.length} campaña{r.pd.vencidasSinRenovar.length === 1 ? '' : 's'} vencida{r.pd.vencidasSinRenovar.length === 1 ? '' : 's'} sin renovar — renovar o cerrar:{' '}
-              {r.pd.vencidasSinRenovar.map((c, i) => (
-                <span key={c.campana}>
-                  {i > 0 ? ', ' : ''}
-                  <LinkCampana nombre={c.campana} />
-                </span>
-              ))}
-            </div>
-          )}
-          {/* Letra más grande y color de marca (pedido del 6/11/2026). */}
-          <div style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.2, color: 'var(--accent)' }}>
-            {r.pd.activas.toLocaleString('es-AR')} piezas activas
-            <span style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}> · {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}</span>
-          </div>
-          <div style={{ fontSize: 15, color: 'var(--text-primary)', marginTop: 6 }}>
-            <strong>{r.pd.dirigidas.toLocaleString('es-AR')}</strong> dirigidas a localidades · <strong>{r.pd.provinciales.toLocaleString('es-AR')}</strong> provinciales
-          </div>
-          {/* A3: las provinciales son pocas piezas repetidas en las 60. */}
-          {propuesta && propuesta.provinciales ? (
-            <div style={{ ...chico, fontSize: 13 }}>
-              Cada localidad cuenta {propuesta.provinciales.porLocalidad} piezas provinciales, las mismas en las {r.total} ({propuesta.provinciales.distintas} contenidos distintos): por eso suman{' '}
-              {r.pd.provinciales.toLocaleString('es-AR')}.
-            </div>
-          ) : (
-            <div style={{ ...chico, fontSize: 13 }}>Suma de las 60 localidades: una pieza provincial cuenta una vez en cada localidad.</div>
-          )}
-          {repetidosPD && (
-            <details className="desplegable desplegable-destacado tono-dorado" style={{ marginTop: 10 }}>
-              <summary>
-                <span>
-                  <span style={{ fontSize: 15 }}>
-                    {repetidosPD.antiguos.length} contenido{repetidosPD.antiguos.length === 1 ? '' : 's'} vigente{repetidosPD.antiguos.length === 1 ? '' : 's'} hace 2 meses o más
-                  </span>{' '}
-                  <span style={{ fontWeight: 500, color: 'var(--text-secondary)' }}>
-                    ({repetidosPD.provinciales} provincial{repetidosPD.provinciales === 1 ? '' : 'es'} · {repetidosPD.soloDirigidos} solo dirigido{repetidosPD.soloDirigidos === 1 ? '' : 's'})
+      <div className="inicio-dos-columnas">
+        {ladoIzquierdo && <div className="inicio-col-localidades">{ladoIzquierdo}</div>}
+        <div className="inicio-col-resumen">
+          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+            <div style={cardEstilo}>
+              <div style={tituloCard}>Medios tradicionales</div>
+              <BarraApilada bandas={r.mt.bandas} total={r.total} onFiltrarBandas={onFiltrarBandas} activa={bandaActiva} />
+              <Movimiento r={r} abierto={cambiosAbiertos} onToggle={() => setCambiosAbiertos((v) => !v)} />
+              <details className="desplegable desplegable-destacado tono-ambar" style={{ marginTop: 10 }}>
+                <summary>
+                  <span>
+                    <span style={{ fontSize: 14 }}>
+                      {r.mt.temasPorRevisar} tema{r.mt.temasPorRevisar === 1 ? '' : 's'} por revisar
+                    </span>{' '}
+                    · 🔴 {r.mt.rojos} · 🟡 {r.mt.amarillos}{' '}
+                    <span style={{ fontWeight: 500, color: 'var(--text-secondary)' }}>(más antiguos primero)</span>
                   </span>
-                </span>
-              </summary>
-              <div style={chico}>
-                Contenido = campaña + título de la pieza. Solo piezas activas hoy ({repetidosPD.vigentes} contenidos vigentes). Los días se cuentan desde el
-                primer inicio registrado de ese contenido: una renovación con fechas nuevas no reinicia el conteo. Del más antiguo al más nuevo.
-              </div>
-              <ul style={lista}>
-                {repetidosPD.antiguos.map((c) => (
-                  <li key={c.clave}>
-                    <strong style={{ color: c.dias >= 90 ? 'var(--cov-baja)' : 'var(--text-primary)' }}>{c.dias} días</strong>
-                    <span style={{ color: 'var(--text-tertiary)' }}> (desde el {diaMes(c.inicio)})</span> · <LinkCampana nombre={c.campana}>{c.titulo}</LinkCampana>
-                    <span style={{ color: 'var(--text-secondary)' }}> · {c.campana}</span> · {c.localidades} localidad{c.localidades === 1 ? '' : 'es'}
-                    <span style={{ color: 'var(--text-tertiary)' }}>
-                      {' '}
-                      ({c.provincial ? 'provincial' : 'dirigido'}
-                      {c.provincial && c.dirigidas > 0 ? ` y dirigido a ${c.dirigidas}` : ''} · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} activa{c.piezas === 1 ? '' : 's'})
+                </summary>
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', margin: '4px 0 6px' }}>
+                  <Chip color={null} onClick={() => setColorTemas(null)} activo={colorTemas === null}>
+                    Todos
+                  </Chip>
+                  <Chip color="🔴" onClick={() => setColorTemas('🔴')} activo={colorTemas === '🔴'}>
+                    🔴 {r.mt.rojos}
+                  </Chip>
+                  <Chip color="🟡" onClick={() => setColorTemas('🟡')} activo={colorTemas === '🟡'}>
+                    🟡 {r.mt.amarillos}
+                  </Chip>
+                </div>
+                <ul style={lista}>
+                  {temasLista.map((t) => (
+                    <li key={t.tema + t.dias}>
+                      {t.color} <LinkCampana nombre={t.tema} /> · {t.tipo} · {t.dias} días · {t.localidades} localidad{t.localidades === 1 ? '' : 'es'}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+              {/* E5 + B8: antigüedad por tramo y temas sin fecha. */}
+              {propuesta && <AntiguedadMT t={propuesta.antiguedadMT} />}
+            </div>
+
+            <div style={cardEstilo}>
+              <div style={tituloCard}>Pauta digital</div>
+              {r.pd.vencidasSinRenovar.length > 0 && (
+                <div style={{ background: 'var(--cov-baja-bg)', color: 'var(--cov-baja)', borderRadius: 8, padding: '8px 12px', marginBottom: 10, fontSize: 13.5, fontWeight: 600 }}>
+                  {r.pd.vencidasSinRenovar.length} campaña{r.pd.vencidasSinRenovar.length === 1 ? '' : 's'} vencida{r.pd.vencidasSinRenovar.length === 1 ? '' : 's'} sin renovar — renovar o cerrar:{' '}
+                  {r.pd.vencidasSinRenovar.map((c, i) => (
+                    <span key={c.campana}>
+                      {i > 0 ? ', ' : ''}
+                      <LinkCampana nombre={c.campana} />
                     </span>
-                  </li>
-                ))}
-              </ul>
-            </details>
+                  ))}
+                </div>
+              )}
+              {/* Letra más grande y color de marca (pedido del 6/11/2026). */}
+              <div style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.2, color: 'var(--accent)' }}>
+                {r.pd.activas.toLocaleString('es-AR')} piezas activas
+                <span style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}> · {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}</span>
+              </div>
+              <div style={{ fontSize: 15, color: 'var(--text-primary)', marginTop: 6 }}>
+                <strong>{r.pd.dirigidas.toLocaleString('es-AR')}</strong> dirigidas a localidades · <strong>{r.pd.provinciales.toLocaleString('es-AR')}</strong> provinciales
+              </div>
+              {/* A3: las provinciales son pocas piezas repetidas en las 60. */}
+              {propuesta && propuesta.provinciales ? (
+                <div style={{ ...chico, fontSize: 13 }}>
+                  Cada localidad cuenta {propuesta.provinciales.porLocalidad} piezas provinciales, las mismas en las {r.total} ({propuesta.provinciales.distintas} contenidos distintos): por eso suman{' '}
+                  {r.pd.provinciales.toLocaleString('es-AR')}.
+                </div>
+              ) : (
+                <div style={{ ...chico, fontSize: 13 }}>Suma de las 60 localidades: una pieza provincial cuenta una vez en cada localidad.</div>
+              )}
+              {repetidosPD && (
+                <details className="desplegable desplegable-destacado tono-dorado" style={{ marginTop: 10 }}>
+                  <summary>
+                    <span>
+                      <span style={{ fontSize: 14 }}>
+                        {repetidosPD.antiguos.length} contenido{repetidosPD.antiguos.length === 1 ? '' : 's'} vigente{repetidosPD.antiguos.length === 1 ? '' : 's'} hace 2 meses o más
+                      </span>{' '}
+                      <span style={{ fontWeight: 500, color: 'var(--text-secondary)' }}>
+                        ({repetidosPD.provinciales} provincial{repetidosPD.provinciales === 1 ? '' : 'es'} · {repetidosPD.soloDirigidos} solo dirigido{repetidosPD.soloDirigidos === 1 ? '' : 's'})
+                      </span>
+                    </span>
+                  </summary>
+                  <div style={chico}>
+                    Contenido = campaña + título de la pieza. Solo piezas activas hoy ({repetidosPD.vigentes} contenidos vigentes). Los días se cuentan desde el
+                    primer inicio registrado de ese contenido: una renovación con fechas nuevas no reinicia el conteo. Del más antiguo al más nuevo.
+                  </div>
+                  <ul style={lista}>
+                    {repetidosPD.antiguos.map((c) => (
+                      <li key={c.clave}>
+                        <strong style={{ color: c.dias >= 90 ? 'var(--cov-baja)' : 'var(--text-primary)' }}>{c.dias} días</strong>
+                        <span style={{ color: 'var(--text-tertiary)' }}> (desde el {diaMes(c.inicio)})</span> · <LinkCampana nombre={c.campana}>{c.titulo}</LinkCampana>
+                        <span style={{ color: 'var(--text-secondary)' }}> · {c.campana}</span> · {c.localidades} localidad{c.localidades === 1 ? '' : 'es'}
+                        <span style={{ color: 'var(--text-tertiary)' }}>
+                          {' '}
+                          ({c.provincial ? 'provincial' : 'dirigido'}
+                          {c.provincial && c.dirigidas > 0 ? ` y dirigido a ${c.dirigidas}` : ''} · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} activa{c.piezas === 1 ? '' : 's'})
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+              <details className="desplegable desplegable-destacado tono-celeste" ref={refListaPD} style={{ marginTop: 6 }}>
+                <summary>
+                  <span style={{ fontSize: 14 }}>Ver las {r.pd.campanas.length} campañas con piezas activas</span>
+                </summary>
+                <ul style={lista}>
+                  {r.pd.campanas.map((c) => (
+                    <li key={c.campana}>
+                      <LinkCampana nombre={c.campana} /> · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} · {c.localidades} localidad
+                      {c.localidades === 1 ? '' : 'es'}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </div>
+          </div>
+          {propuesta && filas && (
+            <>
+              {/* B2 y A2: qué se comunica y pauta dirigida por localidad. El cruce
+                  MT × PD va arriba de la grilla; Movimientos, en los indicadores
+                  (19/11/2026). */}
+              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
+                <GraficoAreas areas={propuesta.areas} />
+                <TarjetaDirigidas filas={filas} />
+              </div>
+              {/* C5 */}
+              <ComoLeer cortes={propuesta.cortes} umbrales={propuesta.umbralesMT} />
+            </>
           )}
-          <details className="desplegable desplegable-destacado tono-celeste" ref={refListaPD} style={{ marginTop: 6 }}>
-            <summary>
-              <span style={{ fontSize: 15 }}>Ver las {r.pd.campanas.length} campañas con piezas activas</span>
-            </summary>
-            <ul style={lista}>
-              {r.pd.campanas.map((c) => (
-                <li key={c.campana}>
-                  <LinkCampana nombre={c.campana} /> · {c.piezas} pieza{c.piezas === 1 ? '' : 's'} · {c.localidades} localidad
-                  {c.localidades === 1 ? '' : 'es'}
-                </li>
-              ))}
-            </ul>
-          </details>
         </div>
       </div>
-      {propuesta && filas && (
-        <>
-          {/* B2, A2 y B3: qué se comunica, pauta dirigida por localidad, cruce MT × PD. */}
-          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
-            <GraficoAreas areas={propuesta.areas} />
-            <TarjetaDirigidas filas={filas} />
-            <CruceMTPD filas={filas} />
-          </div>
-          {/* B6 y B7: lo que está parado y los movimientos de la semana. */}
-          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
-            <AreasSinCargaReciente f={propuesta.fechas} />
-            {propuesta.movimientos && <TarjetaMovimientos m={propuesta.movimientos} />}
-          </div>
-          {/* C5 */}
-          <ComoLeer cortes={propuesta.cortes} umbrales={propuesta.umbralesMT} />
-        </>
-      )}
     </div>
   );
 }

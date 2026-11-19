@@ -29,13 +29,15 @@ export const tarjeta = {
 };
 export const tituloTarjeta = { fontSize: 13, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 };
 const nota = { fontSize: 12.5, color: 'var(--text-tertiary)', marginTop: 8, lineHeight: 1.4 };
+// `font: 'inherit'` va primero: si va después, pisa el tamaño y el botón
+// queda con la letra de la página (16px) en vez de 12,5.
 const botonChip = (activo) => ({
+  font: 'inherit',
   padding: '3px 10px',
   borderRadius: 999,
   fontSize: 12.5,
   fontWeight: 600,
   cursor: 'pointer',
-  font: 'inherit',
   background: activo ? 'var(--accent-bg)' : 'var(--bg-secondary)',
   color: activo ? 'var(--accent)' : 'var(--text-secondary)',
   border: `1.5px solid ${activo ? 'var(--accent)' : 'transparent'}`,
@@ -102,9 +104,43 @@ export function GraficoVencimientos({ fechas, hoy, ventanaHasta }) {
   );
 }
 
-// --- C2: mapa de 60 celdas --------------------------------------------------
+// --- Grilla de localidades: vista resumida o completa (19/11/2026) ----------
+// El antiguo "Las 60 localidades de un vistazo" repetía lo que muestran las
+// tarjetas. Ahora es la vista resumida de la misma grilla (mismas filas y
+// mismos filtros). Solo cambia cómo se ordena y se dibuja; no calcula nada.
 const RANGO = { Sin: 0, Baja: 1, Media: 2, Alta: 3 };
 const PESO_PD = { '🔴': 0, '🟡': 1, '🟢': 2 };
+
+const ORDENES = [
+  { key: 'habitantes', label: 'Cantidad de habitantes' },
+  { key: 'cobertura', label: 'Menor cobertura primero' },
+  { key: 'depto', label: 'Por departamento' },
+];
+const VISTAS = [
+  { key: 'resumida', label: 'Vista resumida' },
+  { key: 'completa', label: 'Vista completa' },
+];
+
+const porNombre = (a, b) => a.localidad.localeCompare(b.localidad, 'es');
+
+/** Grupos a dibujar: [{ titulo, filas }]. `titulo` es null salvo por departamento.
+ * Habitantes: campo `poblacion` de data/localidades.json, de mayor a menor. */
+function agrupar(filas, orden) {
+  if (orden === 'cobertura') {
+    const lista = filas.slice().sort((a, b) => RANGO[a.bandaCobertura] - RANGO[b.bandaCobertura] || PESO_PD[a.ejePD.color] - PESO_PD[b.ejePD.color] || porNombre(a, b));
+    return [{ titulo: null, filas: lista }];
+  }
+  if (orden === 'depto') {
+    const grupos = new Map();
+    for (const l of filas.slice().sort((a, b) => a.departamento.localeCompare(b.departamento, 'es') || porNombre(a, b))) {
+      if (!grupos.has(l.departamento)) grupos.set(l.departamento, []);
+      grupos.get(l.departamento).push(l);
+    }
+    return Array.from(grupos, ([titulo, ls]) => ({ titulo, filas: ls }));
+  }
+  const lista = filas.slice().sort((a, b) => (b.poblacion || 0) - (a.poblacion || 0) || porNombre(a, b));
+  return [{ titulo: null, filas: lista }];
+}
 
 function Celda({ l }) {
   const b = BANDA_COBERTURA[l.bandaCobertura];
@@ -134,121 +170,123 @@ function Celda({ l }) {
   );
 }
 
-/** `filas` = combinarLocalidades(): la misma fila que usa la grilla. Fondo y
- * borde: banda de MT; punto: color de PD. */
-export function MapaLocalidades({ filas }) {
-  const [orden, setOrden] = useState('peor');
-  const porPeor = filas
-    .slice()
-    .sort((a, b) => RANGO[a.bandaCobertura] - RANGO[b.bandaCobertura] || PESO_PD[a.ejePD.color] - PESO_PD[b.ejePD.color] || a.localidad.localeCompare(b.localidad, 'es'));
-  const grupos = new Map();
-  for (const l of filas.slice().sort((a, b) => a.departamento.localeCompare(b.departamento, 'es') || a.localidad.localeCompare(b.localidad, 'es'))) {
-    if (!grupos.has(l.departamento)) grupos.set(l.departamento, []);
-    grupos.get(l.departamento).push(l);
-  }
-  const grilla = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(124px, 1fr))', gap: 4 };
+function Botonera({ opciones, valor, onCambiar, etiqueta }) {
   return (
-    <div style={{ ...tarjeta, flex: '1 1 100%', marginBottom: 14 }}>
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
-        <div style={{ ...tituloTarjeta, marginBottom: 0 }}>Las {filas.length} localidades de un vistazo</div>
-        <div style={{ display: 'flex', gap: 6, marginLeft: 'auto' }}>
-          <button type="button" style={botonChip(orden === 'peor')} onClick={() => setOrden('peor')} aria-pressed={orden === 'peor'}>
-            Peor primero
-          </button>
-          <button type="button" style={botonChip(orden === 'depto')} onClick={() => setOrden('depto')} aria-pressed={orden === 'depto'}>
-            Por departamento
-          </button>
+    <div role="group" aria-label={etiqueta} style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+      {opciones.map((o) => (
+        <button key={o.key} type="button" style={botonChip(valor === o.key)} onClick={() => onCambiar(o.key)} aria-pressed={valor === o.key}>
+          {o.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+/** `filas` = las filas ya filtradas de combinarLocalidades() (las mismas en las
+ * dos vistas). `encabezado`: la línea "Mostrando N de 60". `Tarjeta`: la
+ * tarjeta de la vista completa (LocalidadCard). Vista resumida: fondo y borde =
+ * banda de MT; punto = color de PD. */
+export function GrillaLocalidades({ filas, encabezado, Tarjeta }) {
+  const [vista, setVista] = useState('resumida');
+  const [orden, setOrden] = useState('habitantes');
+  const grupos = agrupar(filas, orden);
+  const resumida = vista === 'resumida';
+  const grilla = resumida
+    ? { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 4 }
+    : { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 14 };
+  return (
+    <div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
+        <div style={{ fontSize: 13, color: 'var(--text-secondary)' }}>{encabezado}</div>
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginLeft: 'auto' }}>
+          <Botonera opciones={ORDENES} valor={orden} onCambiar={setOrden} etiqueta="Ordenar localidades" />
+          <Botonera opciones={VISTAS} valor={vista} onCambiar={setVista} etiqueta="Vista de las localidades" />
         </div>
       </div>
-      <div style={{ marginTop: 10 }}>
-        {orden === 'peor' ? (
-          <div style={grilla}>
-            {porPeor.map((l) => (
-              <Celda key={l.localidad} l={l} />
-            ))}
-          </div>
-        ) : (
-          Array.from(grupos, ([depto, ls]) => (
-            <div key={depto} style={{ marginBottom: 8 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--text-tertiary)', letterSpacing: 0.3, margin: '4px 0 3px' }}>{depto}</div>
-              <div style={grilla}>
-                {ls.map((l) => (
-                  <Celda key={l.localidad} l={l} />
-                ))}
-              </div>
-            </div>
-          ))
-        )}
-      </div>
-      <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', ...nota }}>
-        <span>
-          Fondo y borde: cobertura de Medios Tradicionales{' '}
-          {ORDEN_BANDAS.map((b) => (
-            <span key={b} style={{ marginLeft: 6 }}>
-              <span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 2, background: BANDA_COBERTURA[b].fg, marginRight: 3 }} />
-              {b}
-            </span>
-          ))}
-        </span>
-        <span>
-          Punto: Pauta Digital{' '}
-          {['🔴', '🟡', '🟢'].map((c) => (
-            <span key={c} style={{ marginLeft: 6 }}>
-              <span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: '50%', background: COLOR_PD[c].fg, marginRight: 3 }} />
-              {c === '🔴' ? `0–${PD_MIN_AMARILLO - 1}` : c === '🟡' ? `${PD_MIN_AMARILLO}–${PD_MIN_VERDE - 1}` : `${PD_MIN_VERDE}+`} activas
-            </span>
-          ))}
-        </span>
-        <span>Pasá el mouse para ver los números; tocá para ir a la ficha.</span>
-      </div>
+      {grupos.map((g) => (
+        <div key={g.titulo || 'todas'} style={{ marginBottom: g.titulo ? (resumida ? 8 : 16) : 0 }}>
+          {g.titulo && (
+            <div style={{ fontSize: resumida ? 11 : 12, fontWeight: 700, color: 'var(--text-tertiary)', letterSpacing: 0.3, margin: resumida ? '4px 0 3px' : '6px 0 8px' }}>{g.titulo}</div>
+          )}
+          <div style={grilla}>{g.filas.map((l) => (resumida ? <Celda key={l.localidad} l={l} /> : <Tarjeta key={l.localidad} {...l} />))}</div>
+        </div>
+      ))}
+      {resumida && filas.length > 0 && <LeyendaResumida />}
+    </div>
+  );
+}
+
+function LeyendaResumida() {
+  return (
+    <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', ...nota }}>
+      <span>
+        Fondo y borde: cobertura de Medios Tradicionales{' '}
+        {ORDEN_BANDAS.map((b) => (
+          <span key={b} style={{ marginLeft: 6 }}>
+            <span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 2, background: BANDA_COBERTURA[b].fg, marginRight: 3 }} />
+            {b}
+          </span>
+        ))}
+      </span>
+      <span>
+        Punto: Pauta Digital{' '}
+        {['🔴', '🟡', '🟢'].map((c) => (
+          <span key={c} style={{ marginLeft: 6 }}>
+            <span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: '50%', background: COLOR_PD[c].fg, marginRight: 3 }} />
+            {c === '🔴' ? `0–${PD_MIN_AMARILLO - 1}` : c === '🟡' ? `${PD_MIN_AMARILLO}–${PD_MIN_VERDE - 1}` : `${PD_MIN_VERDE}+`} activas
+          </span>
+        ))}
+      </span>
+      <span>Pasá el mouse para ver los números; tocá para ir a la ficha.</span>
     </div>
   );
 }
 
 // --- B3: cruce Medios Tradicionales × Pauta Digital -------------------------
-function CeldaCruce({ n, titulo, nombres, tono }) {
-  const fondo = tono === 'bien' ? 'var(--cov-alta-bg)' : tono === 'mal' ? 'var(--cov-baja-bg)' : 'var(--cov-media-bg)';
-  const color = tono === 'bien' ? 'var(--cov-alta)' : tono === 'mal' ? 'var(--cov-baja)' : 'var(--cov-media)';
+// Compacto, arriba de la grilla (19/11/2026): número y referencia. Cada
+// tarjetita filtra la grilla con los filtros que ya existen (banda de MT y
+// color de PD), así la grilla muestra justo esas localidades.
+const CRUCE = [
+  { key: 'bb', mt: 'media o alta', pd: '🟢', bandas: ['Media', 'Alta'], colores: ['🟢'], tono: 'bien' },
+  { key: 'bm', mt: 'media o alta', pd: '🟡🔴', bandas: ['Media', 'Alta'], colores: ['🟡', '🔴'], tono: 'medio' },
+  { key: 'mb', mt: 'sin o baja', pd: '🟢', bandas: ['Sin', 'Baja'], colores: ['🟢'], tono: 'medio' },
+  { key: 'mm', mt: 'sin o baja', pd: '🟡🔴', bandas: ['Sin', 'Baja'], colores: ['🟡', '🔴'], tono: 'mal' },
+];
+const mismoConjunto = (set, lista) => set.size === lista.length && lista.every((x) => set.has(x));
+
+function CeldaCruce({ n, c, activa, onClick }) {
+  const fondo = c.tono === 'bien' ? 'var(--cov-alta-bg)' : c.tono === 'mal' ? 'var(--cov-baja-bg)' : 'var(--cov-media-bg)';
+  const color = c.tono === 'bien' ? 'var(--cov-alta)' : c.tono === 'mal' ? 'var(--cov-baja)' : 'var(--cov-media)';
   return (
-    <div style={{ background: fondo, borderRadius: 10, padding: '10px 12px', minHeight: 72 }}>
+    <button
+      type="button"
+      className="cruce-celda"
+      onClick={onClick}
+      aria-pressed={activa}
+      title={activa ? 'Clic para sacar el filtro' : `Ver estas ${n} localidades en la grilla`}
+      style={{ background: fondo, borderRadius: 10, padding: '10px 12px', textAlign: 'left', font: 'inherit', color: 'inherit', cursor: 'pointer', border: `2px solid ${activa ? color : 'transparent'}` }}
+    >
       <div style={{ fontSize: 24, fontWeight: 700, color, lineHeight: 1.1 }}>{n}</div>
-      <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2 }}>{titulo}</div>
-      {nombres.length > 0 && n <= 12 && (
-        <div style={{ fontSize: 11.5, color: 'var(--text-secondary)', marginTop: 4, lineHeight: 1.35 }}>
-          {nombres.map((x, i) => (
-            <span key={x}>
-              {i > 0 ? ', ' : ''}
-              <Link href={hrefLocalidad(x)} style={{ textDecoration: 'underline' }}>
-                {x}
-              </Link>
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+      {/* Si no entra en un renglón, corta entre MT y PD, nunca en el medio. */}
+      <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2 }}>
+        <span style={{ whiteSpace: 'nowrap' }}>MT {c.mt}</span> · <span style={{ whiteSpace: 'nowrap' }}>PD {c.pd}</span>
+      </div>
+    </button>
   );
 }
 
-/** 2×2 sobre las mismas filas de la grilla: MT media o alta vs. sin o baja;
- * PD 🟢 vs. 🟡🔴. */
-export function CruceMTPD({ filas }) {
-  const mtBien = (l) => l.bandaCobertura === 'Media' || l.bandaCobertura === 'Alta';
-  const pdBien = (l) => l.ejePD.color === '🟢';
-  const nombres = (f) => filas.filter(f).map((l) => l.localidad).sort((a, b) => a.localeCompare(b, 'es'));
-  const bb = nombres((l) => mtBien(l) && pdBien(l));
-  const mb = nombres((l) => !mtBien(l) && pdBien(l));
-  const bm = nombres((l) => mtBien(l) && !pdBien(l));
-  const mm = nombres((l) => !mtBien(l) && !pdBien(l));
+/** Cuatro tarjetitas sobre las mismas filas de la grilla (las 60, sin
+ * filtros). `filtro` = { bandas: Set, pd: Set, sinOtros: bool } para marcar la
+ * elegida; `onFiltrar(bandas, colores)` filtra la grilla (o la limpia si ya
+ * estaba elegida). */
+export function CruceMTPD({ filas, filtro = null, onFiltrar = null }) {
+  const cuenta = (c) => filas.filter((l) => c.bandas.includes(l.bandaCobertura) && c.colores.includes(l.ejePD.color)).length;
   return (
-    <div style={tarjeta}>
-      <div style={tituloTarjeta}>Qué se publicita y qué no</div>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
-        <CeldaCruce n={bb.length} titulo="MT media o alta · PD 🟢" nombres={bb} tono="bien" />
-        <CeldaCruce n={bm.length} titulo="MT media o alta · PD 🟡🔴" nombres={bm} tono="medio" />
-        <CeldaCruce n={mb.length} titulo="MT sin o baja · PD 🟢" nombres={mb} tono="medio" />
-        <CeldaCruce n={mm.length} titulo="MT sin o baja · PD 🟡🔴" nombres={mm} tono="mal" />
-      </div>
-      <div style={nota}>Localidades según su cobertura de Medios Tradicionales (banda) y su color de Pauta Digital (piezas activas). Mismos valores que la grilla.</div>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 8, marginBottom: 14 }}>
+      {CRUCE.map((c) => {
+        const activa = !!filtro && filtro.sinOtros && mismoConjunto(filtro.bandas, c.bandas) && mismoConjunto(filtro.pd, c.colores);
+        return <CeldaCruce key={c.key} n={cuenta(c)} c={c} activa={activa} onClick={() => onFiltrar && onFiltrar(c.bandas, c.colores)} />;
+      })}
     </div>
   );
 }
@@ -335,12 +373,18 @@ export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
       <div style={{ fontSize: 12.5, color: 'var(--text-secondary)', marginTop: 4 }}>
         Mínimo {valores[0]} · mediana {mediana} · máximo {max} ({orden[orden.length - 1].localidad})
       </div>
-      <BarrasHorizontales filas={barras} max={max} unidad="piezas dirigidas" />
-      <button type="button" onClick={() => setTodas((v) => !v)} style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', fontSize: 12.5, color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline', marginTop: 8 }}>
-        {todas ? `Ver solo las ${mostrar} con menos` : `Ver las ${filas.length}`}
-      </button>
+      {/* La lista va plegada (pedido del 19/11/2026): arriba queda el titular. */}
+      <details className="desplegable desplegable-destacado tono-celeste" style={{ marginTop: 6 }}>
+        <summary>
+          <span style={{ fontSize: 14 }}>Ver localidades, de menos a más piezas dirigidas</span>
+        </summary>
+        <BarrasHorizontales filas={barras} max={max} unidad="piezas dirigidas" />
+        <button type="button" onClick={() => setTodas((v) => !v)} style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', fontSize: 12.5, color: 'var(--accent)', cursor: 'pointer', textDecoration: 'underline', marginTop: 8 }}>
+          {todas ? `Ver solo las ${mostrar} con menos` : `Ver las ${filas.length}`}
+        </button>
+      </details>
       <div style={nota}>
-        Piezas activas dirigidas a esa localidad (sin las provinciales, que son iguales para las 60). En dorado, las que están bajo {umbral}. Es el dato que diferencia localidades: el semáforo de PD, que suma las provinciales, hoy las deja a todas en verde.
+        Piezas activas dirigidas a esa localidad (sin las provinciales, que son iguales para las 60). En dorado, las que están bajo {umbral}.
       </div>
     </div>
   );
@@ -375,49 +419,6 @@ export function AntiguedadMT({ t }) {
         Un tema activo por localidad y tipo de medio. Los {num(t.tramos.sinFecha)} sin fecha de inicio ({t.sinFechaPorTipo.map((x) => `${x.tipo} ${num(x.n)}`).join(', ')}) cuentan para la cobertura pero quedan fuera del semáforo de antigüedad.
       </div>
     </div>
-  );
-}
-
-// --- B6: áreas sin carga reciente -------------------------------------------
-export function AreasSinCargaReciente({ f }) {
-  const filas = [
-    { etiqueta: 'SMS', texto: f.sms ? `último envío cargado ${formatearFechaCorta(f.sms)}` : 'sin envíos cargados', href: '/sms' },
-    { etiqueta: 'Contenido Orgánico', texto: f.organico ? `última publicación cargada ${formatearFechaCorta(f.organico)}` : 'sin publicaciones cargadas', href: '/contenido-organico' },
-    { etiqueta: 'Audiovisuales', texto: `${f.avVigentes} pieza${f.avVigentes === 1 ? '' : 's'} vigente${f.avVigentes === 1 ? '' : 's'} de ${f.avTotal}${f.avUltimaCarga ? ` · última carga ${formatearFechaCorta(f.avUltimaCarga)}` : ''}`, href: null },
-  ];
-  return (
-    <div style={{ ...tarjeta, borderTopColor: 'var(--marca-gris)' }}>
-      <div style={tituloTarjeta}>Áreas sin carga reciente</div>
-      <ul style={{ margin: 0, paddingLeft: 18, fontSize: 13.5, lineHeight: 1.6 }}>
-        {filas.map((x) => (
-          <li key={x.etiqueta}>
-            {x.href ? (
-              <Link href={x.href} style={{ fontWeight: 600, textDecoration: 'underline' }}>
-                {x.etiqueta}
-              </Link>
-            ) : (
-              <strong>{x.etiqueta}</strong>
-            )}
-            : {x.texto}
-          </li>
-        ))}
-      </ul>
-      <div style={nota}>No entran en el semáforo ni en las tarjetas de arriba. Se muestran para que no parezca que no existen.</div>
-    </div>
-  );
-}
-
-// --- B7: movimientos de la semana -------------------------------------------
-export function TarjetaMovimientos({ m }) {
-  return (
-    <Link href="/movimientos" style={{ ...tarjeta, display: 'block', flex: '1 1 240px' }} title="Ver el detalle en Movimientos de la semana">
-      <div style={tituloTarjeta}>Movimientos de la semana</div>
-      <div style={{ fontSize: 28, fontWeight: 700, lineHeight: 1.1, color: 'var(--accent)' }}>{num(m.total)}</div>
-      <div style={{ fontSize: 13, fontWeight: 600, marginTop: 6 }}>avisos cambiaron de tema</div>
-      <div style={{ fontSize: 12.5, color: 'var(--text-secondary)', marginTop: 2 }}>
-        Medios Tradicionales{m.anterior && m.actual ? ` · ${formatearFechaDiaMes(m.anterior)} → ${formatearFechaDiaMes(m.actual)}` : ''} · un aviso es localidad + tipo de medio
-      </div>
-    </Link>
   );
 }
 
