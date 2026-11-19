@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { BANDA_COBERTURA, ORDEN_BANDAS, textoVencimiento, textoActivasPD } from '../lib/coverage';
@@ -432,6 +432,26 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
   const refPrimeraFecha = useRef(null);
   const refListaPD = useRef(null);
   const router = useRouter();
+  const refColumnas = useRef(null);
+
+  // Columnas con desplazamiento propio (pantallas anchas, ver globals.css):
+  // al bajar con la rueda, primero baja la página hasta que las columnas
+  // llegan arriba y recién ahí se mueve cada columna por dentro. Así nunca se
+  // desplaza una columna que todavía está cortada abajo.
+  useEffect(() => {
+    const cont = refColumnas.current;
+    if (!cont) return undefined;
+    function alGirar(e) {
+      if (e.deltaY <= 0 || window.innerWidth <= 1100) return;
+      const falta = cont.getBoundingClientRect().top - 12;
+      if (falta > 1) {
+        e.preventDefault();
+        window.scrollBy(0, Math.min(e.deltaY, falta));
+      }
+    }
+    cont.addEventListener('wheel', alGirar, { passive: false });
+    return () => cont.removeEventListener('wheel', alGirar);
+  }, []);
 
   const temasLista = r.mt.temas.filter((t) => !colorTemas || t.color === colorTemas);
 
@@ -456,7 +476,7 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
         onVerMovimientos={() => router.push('/movimientos')}
       />
       <BloqueAtencion r={r} hoy={propuesta ? propuesta.hoy : null} refBloque={refAtencion} refPrimeraFecha={refPrimeraFecha} />
-      <div className="inicio-dos-columnas">
+      <div className="inicio-dos-columnas" ref={refColumnas}>
         {ladoIzquierdo && <div className="inicio-col-localidades">{ladoIzquierdo}</div>}
         <div className="inicio-col-resumen">
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
