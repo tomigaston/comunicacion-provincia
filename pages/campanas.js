@@ -139,7 +139,8 @@ export default function Campanas() {
     for (const it of filtrados) {
       const clave = normalizarTexto(it.campana);
       if (!mapa.has(clave)) {
-        mapa.set(clave, { clave, campana: it.campana, filas: [], areas: new Set(), estados: new Set(), localidades: new Set(), desde: null, hasta: null });
+        // Filas sin campaña (pasa en la fuente del interior): un grupo "Sin campaña".
+        mapa.set(clave, { clave, campana: it.campana || 'Sin campaña', filas: [], areas: new Set(), estados: new Set(), localidades: new Set(), desde: null, hasta: null });
       }
       const g = mapa.get(clave);
       g.filas.push(it);

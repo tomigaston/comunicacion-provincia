@@ -154,8 +154,10 @@ export default function LocalidadesIndex() {
       else g.provincial = true;
     }
     const antiguos = Array.from(grupos.values())
-      .map((g) => ({ ...g, localidades: g.localidades.size, dirigidas: g.dirigidas.size, dias: diasHastaVencer(hoy, g.inicio) }))
-      .filter((g) => g.dias >= DIAS_CONTENIDO_ANTIGUO)
+      // Sin INICIO (pasa en la fuente del interior) no hay con qué contar los
+      // días: ese contenido no entra en esta cuenta.
+      .map((g) => ({ ...g, localidades: g.localidades.size, dirigidas: g.dirigidas.size, dias: g.inicio ? diasHastaVencer(hoy, g.inicio) : null }))
+      .filter((g) => g.dias !== null && g.dias >= DIAS_CONTENIDO_ANTIGUO)
       .sort((a, b) => b.dias - a.dias || a.titulo.localeCompare(b.titulo, 'es'));
     return {
       hoy,
