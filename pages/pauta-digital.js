@@ -5,6 +5,9 @@ import Autocomplete from '../components/Autocomplete';
 import StatusBadge from '../components/StatusBadge';
 import FiltroPeriodo from '../components/FiltroPeriodo';
 import VerMaterial from '../components/VerMaterial';
+import DetallePiezaInterior from '../components/DetallePiezaInterior';
+import { finParaFiltroPD } from '../lib/semaforo';
+import { isoDe } from '../lib/vencimientos';
 import { useApiData } from '../lib/useApiData';
 import { normalizarTexto } from '../lib/texto';
 import { formatearFechaCorta, calcularVentana, rangoDentroDeVentana } from '../lib/fechas';
@@ -73,7 +76,7 @@ export default function PautaDigital() {
       // la dejarían siempre afuera; con preset se muestra igual. Mes/rango
       // personalizado sí se respetan (alcanzan fechas futuras por solapamiento).
       const programadaConPreset = p.estado === 'Programada' && periodo.tipo === 'preset';
-      if (!programadaConPreset && !rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)) return false;
+      if (!programadaConPreset && !rangoDentroDeVentana(p.inicio, finParaFiltroPD(p), ventana)) return false;
       if (ambitos.size > 0 && !ambitos.has(p.alcance_tipo)) return false;
       if (estado !== 'Todas' && p.estado !== estado) return false;
       if (!q) return true;
@@ -240,7 +243,10 @@ export default function PautaDigital() {
               <tbody>
                 {filtradas.slice(0, visibles).map((p, i) => (
                   <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                    <td style={{ ...td, maxWidth: 320 }}>{p.titulo_pieza || '—'}</td>
+                    <td style={{ ...td, maxWidth: 320 }}>
+                      {p.titulo_pieza || '—'}
+                      <DetallePiezaInterior pieza={p} hoyIso={isoDe(new Date())} />
+                    </td>
                     <td style={td}>{p.area_tematica || '—'}</td>
                     <td style={td}>{ambitoLabel(p)}</td>
                     <td style={td}>{p.localidad || '—'}</td>

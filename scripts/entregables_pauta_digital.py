@@ -134,7 +134,7 @@ def escribir_b(filas_b, ruta):
         pd.DataFrame(filas_b).to_excel(xw, sheet_name="Parejas", index=False)
 
 
-def escribir_c(control, localidades, l2o, ruta):
+def escribir_c(control, localidades, l2o, ruta, control_interior=None):
     alias = [a for a in control["alias_aplicados"] if a["alias"] != "CORDOBA CAPITAL"]
     hoja_alias = pd.DataFrame([{
         "Fila de la planilla": a["fila"], "Texto en LOCALIDAD / SUBCIRCUITO": a["localidad_texto"],
@@ -142,19 +142,27 @@ def escribir_c(control, localidades, l2o, ruta):
         "Condición": "Solo cuando DEPARTAMENTO es Río Primero",
         "Confirmación": "Alias confirmado para esta carga; pedimos al área que confirme que corresponde a Villa Santa Rosa.",
     } for a in alias])
+    # Fuera de las 60 de las dos fuentes: GLOBAL (por LOCALIDAD / SUBCIRCUITO
+    # y DEPARTAMENTO) e interior (por Lugar, prueba 19/11/2026).
     nombres = {}
     for f in control["fuera"]:
         if f["motivo"] != "localidad_fuera_de_las_60":
             continue
-        k = (f["localidad_texto"], f["departamento_candidato"])
+        k = ("Pauta RRSS_GLOBAL", f["localidad_texto"], f["departamento_candidato"])
+        nombres.setdefault(k, []).append(f)
+    for f in (control_interior["fuera"] if control_interior else []):
+        if f["motivo"] != "localidad_fuera_de_las_60":
+            continue
+        k = (f"Cobertura - Activas (interior, base {f['base']})", f["localidad_texto"], "(la base no trae departamento)")
         nombres.setdefault(k, []).append(f)
     filas = []
     n60 = sorted(l2o)
-    for (texto, depto), fs in sorted(nombres.items(), key=lambda x: (-len(x[1]), str(x[0]))):
+    for (fuente, texto, depto), fs in sorted(nombres.items(), key=lambda x: (x[0][0] != "Pauta RRSS_GLOBAL", -len(x[1]), str(x[0]))):
         nt = g.normalizar(texto)
         mejor = max(n60, key=lambda x: difflib.SequenceMatcher(None, nt, x).ratio())
         sim = difflib.SequenceMatcher(None, nt, mejor).ratio()
         filas.append({
+            "Fuente": fuente,
             "Nombre en la planilla": texto, "Departamento (columna DEPARTAMENTO)": depto,
             "Filas": len(fs), "ESTADO": ", ".join(f"{k}: {v}" for k, v in sorted(Counter(str(x["estado"]) for x in fs).items())),
             "Situación": "No está entre las 60 localidades del tablero",
@@ -273,7 +281,8 @@ def main():
           f"{sum(1 for d in control['descartes'] if not all(g._mismo_valor(control['df'].loc[d['fila_descartada'] - 2][c], control['df'].loc[d['fila_queda'] - 2][c]) for c in control['columnas_metricas']))} con métricas distintas")
     print(f"   motivos de desempate (pares de entradas): {dict(Counter(d['motivo'] for d in control['descartes']))}")
 
-    alias, nombres_fuera = escribir_c(control, localidades, l2o, SALIDA / "Nombres_a_confirmar_por_el_area.xlsx")
+    _, control_interior = g.cargar_pauta_digital_interior(l2o, l2d)
+    alias, nombres_fuera = escribir_c(control, localidades, l2o, SALIDA / "Nombres_a_confirmar_por_el_area.xlsx", control_interior)
     print(f"C: alias {len(alias)} filas ({dict(Counter(str(a['estado']) for a in alias))}); "
           f"{len(nombres_fuera)} nombres fuera de las 60 en {sum(f['Filas'] for f in nombres_fuera)} filas; "
           f"{sum(1 for f in nombres_fuera if f['Sugerencia (no aplicada)'])} con similitud >= {SIMILITUD_SUGERENCIA}")

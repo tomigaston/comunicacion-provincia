@@ -17,7 +17,8 @@ import { normalizarTexto, slugificar } from '../../lib/texto';
 import { formatearFechaCorta, calcularVentana, fechaDentroDeVentana, rangoDentroDeVentana, rangoFechaDesdeHasta } from '../../lib/fechas';
 import { TIPOS_MEDIO } from '../../lib/tiposMedio';
 import { claveTipoMedio } from '../../lib/resumen';
-import { nombreCampana, PD_DIAS_VENTANA } from '../../lib/semaforo';
+import { nombreCampana, PD_DIAS_VENTANA, finParaFiltroPD } from '../../lib/semaforo';
+import DetallePiezaInterior from '../../components/DetallePiezaInterior';
 import { BANDA_COBERTURA, textoActivasPD, textoVencimiento } from '../../lib/coverage';
 
 const PERIODO_DEFAULT = { tipo: 'preset', valor: 'ultimo_mes' };
@@ -35,7 +36,13 @@ const CANALES_PAUTA = [
   { key: 'google', label: 'Google (Search/Display)' },
 ];
 
+// Redes de la fuente del interior ("Redes prendidas") -> chips de canal.
+const CANAL_DE_RED = { facebook: 'fb', instagram: 'ig', youtube: 'yt', google: 'google' };
+
 function canalesDePieza(p) {
+  if (Array.isArray(p.redes) && p.redes.length > 0) {
+    return Array.from(new Set(p.redes.map((r) => CANAL_DE_RED[r.toLowerCase()]).filter(Boolean)));
+  }
   const canales = [];
   if (p.link_ig) canales.push('ig');
   if (p.link_fb) canales.push('fb');
@@ -213,7 +220,7 @@ export default function DetalleLocalidad() {
       piezasPauta: info.piezasPauta.filter(
         (p) =>
           (p.estado === 'Programada' && periodo.tipo === 'preset') ||
-          rangoDentroDeVentana(p.inicio, p.finalizacion, ventana)
+          rangoDentroDeVentana(p.inicio, finParaFiltroPD(p), ventana)
       ),
       enviosSms: info.enviosSms.filter((e) => fechaDentroDeVentana(e.fecha_inicio, ventana)),
       publicacionesOrganico: info.publicacionesOrganico.filter((p) => fechaDentroDeVentana(p.fecha, ventana)),
@@ -707,7 +714,10 @@ function TablaPiezas({ piezas, programadas = false, sinCampana = false }) {
         <tbody>
           {piezas.map((p, i) => (
             <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-              <td style={td}>{p.titulo_pieza || '—'}</td>
+              <td style={td}>
+                {p.titulo_pieza || '—'}
+                <DetallePiezaInterior pieza={p} hoyIso={isoDe(new Date())} />
+              </td>
               {!sinCampana && <td style={{ ...td, color: 'var(--text-secondary)' }}>{p.campana || '—'}</td>}
               <td style={td}>
                 <CanalBadges pieza={p} />

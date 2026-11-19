@@ -29,6 +29,14 @@ alias VILLA SANTA ROSA DE RIO (D2), COD. CONTENIDO solo informativo (D3),
 clave de duplicados D4 con desempate B2, freno de bajas por campaña + título
 (D5 + B1) y fecha de control por PD_FECHA_CONTROL. Casos 7-11 y 15-21.
 
+Actualización 19/11/2026 (PRUEBA en la rama nuevaversion): fuente de Pauta
+Digital del interior, "Cobertura - Activas - AAAA-MM-DD.xlsx" en
+Contexto/PD_interior/ (geografía por Lugar, esquema y Estado, pausa y fin
+previsto, link a mostrar, historial por bases semanales, duplicados, D5 y
+marcas de calidad). Casos 22-28; las bases de esos casos se generan en una
+carpeta temporal dentro del test. La lógica del front de esa fuente se
+prueba aparte: node scripts/test_pd_interior_front.mjs
+
 Cualquier cambio futuro a la lógica de alcance_detectado / alcance_tipo /
 en_60_localidades (en generar_datos.py o en los dos archivos de pages/
 listados arriba) DEBE correr este test antes de mergear:
@@ -536,6 +544,211 @@ def caso_14_bordes_de_alerta_30_50():
     assert g.calcular_alerta(None, 30, 50) is None
 
 
+# --- Pauta Digital del interior (PRUEBA, 19/11/2026) --------------------------
+# Las bases de estos casos se generan en una carpeta temporal dentro del test
+# (nunca se guardan como dato en Contexto/).
+
+def _fila_interior(**kw):
+    fila = {c: None for c in g.COLUMNAS_PD_INTERIOR}
+    fila.update({
+        "Lugar": "Villa María", "Pieza": "Pieza de prueba", "Estado": "Activa", "Código": "CBATESTPE00001",
+        "Campaña": "Campaña de prueba", "Formato": "Reel", "Inicio": "2026-11-01", "Fin": "2026-11-30",
+        "Al aire desde": "2026-11-02", "Redes prendidas": "facebook, instagram",
+        "Anuncio en Facebook": "https://www.facebook.com/x", "Material": "https://drive.google.com/x",
+    })
+    fila.update(kw)
+    return fila
+
+
+def _escribir_base(carpeta, fecha, filas, columnas=None, nombre=None):
+    columnas = columnas or g.COLUMNAS_PD_INTERIOR
+    ruta = carpeta / (nombre or f"Cobertura_-_Activas_-_{fecha}.xlsx")
+    pd.DataFrame(filas, columns=columnas).to_excel(ruta, sheet_name="Cobertura", index=False)
+    return ruta
+
+
+def _cargar_interior(carpeta, localidades):
+    l2o = {g.normalizar(l["localidad"]): l["localidad"] for l in localidades}
+    l2d = {g.normalizar(l["localidad"]): l["departamento"] for l in localidades}
+    return g.cargar_pauta_digital_interior(l2o, l2d, carpeta=carpeta)
+
+
+def caso_22_interior_geografia(localidades, claves_60):
+    """Lugar: una de las 60 -> dirigida; "Total provincia" -> 60 entradas
+    provinciales (Córdoba según la constante); otro -> fuera, sin alias."""
+    import tempfile
+    caso = "CASO 22 - interior: geografía por Lugar"
+    with tempfile.TemporaryDirectory() as tmp:
+        carpeta = Path(tmp)
+        _escribir_base(carpeta, "2026-11-17", [
+            _fila_interior(**{"Código": "CBATESTPE00001", "Lugar": "Villa María"}),
+            _fila_interior(**{"Código": "CBATESTPE00002", "Lugar": "Total provincia", "Pieza": "Provincial"}),
+            _fila_interior(**{"Código": "CBATESTPE00003", "Lugar": "Freyre", "Pieza": "Fuera"}),
+            _fila_interior(**{"Código": "CBATESTPE00004", "Lugar": "Córdoba Capital", "Pieza": "Sin alias"}),
+        ])
+        piezas, control = _cargar_interior(carpeta, localidades)
+        dirigidas = [p for p in piezas if p["sub_ambito"] == "localidad_directa"]
+        provinciales = [p for p in piezas if p["sub_ambito"] == "multiple_provincia"]
+        if [p["localidad"] for p in dirigidas] != ["VILLA MARIA"]:
+            fallar(caso, f"esperaba una dirigida en VILLA MARIA, salió {[p['localidad'] for p in dirigidas]}")
+        if len(provinciales) != 60 or "CORDOBA" not in {p["localidad"] for p in provinciales}:
+            fallar(caso, f"Total provincia: esperaba 60 entradas con Córdoba, salieron {len(provinciales)}")
+        if sorted(f["localidad_texto"] for f in control["fuera"]) != ["Córdoba Capital", "Freyre"]:
+            fallar(caso, f"fuera de las 60 esperaba Córdoba Capital y Freyre (sin alias), salió {control['fuera']}")
+        if any(p["fuente"] != "interior" or p["estado"] != "Vigente" for p in piezas):
+            fallar(caso, "todas las piezas de la base deben ser fuente interior y Vigente")
+        original = g.TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA
+        g.TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA = False
+        try:
+            piezas, _ = _cargar_interior(carpeta, localidades)
+            prov = [p for p in piezas if p["sub_ambito"] == "multiple_provincia"]
+            if len(prov) != 59 or "CORDOBA" in {p["localidad"] for p in prov}:
+                fallar(caso, f"con la constante en False esperaba 59 sin Córdoba, salieron {len(prov)}")
+        finally:
+            g.TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA = original
+
+
+def caso_23_interior_esquema_y_estado():
+    """Columna faltante, columna de más, Estado distinto de Activa o nombre sin
+    fecha: la carga se corta diciendo por qué."""
+    import tempfile
+    caso = "CASO 23 - interior: esquema, estado y nombre"
+    pruebas = [
+        ("falta Código", dict(columnas=[c for c in g.COLUMNAS_PD_INTERIOR if c != "Código"]), "Código"),
+        ("columna de más", dict(columnas=g.COLUMNAS_PD_INTERIOR + ["Nueva"]), "Nueva"),
+        ("Estado Pausada", dict(filas=[_fila_interior(Estado="Pausada")]), "Pausada"),
+        ("nombre sin fecha", dict(nombre="Cobertura_-_Activas_-_17-11.xlsx"), "fecha de corte"),
+    ]
+    for nombre, kw, esperado in pruebas:
+        with tempfile.TemporaryDirectory() as tmp:
+            carpeta = Path(tmp)
+            filas = kw.get("filas", [_fila_interior()])
+            columnas = kw.get("columnas")
+            if columnas:
+                filas = [{c: f.get(c, "x") for c in columnas} for f in filas]
+            _escribir_base(carpeta, "2026-11-17", filas, columnas=columnas, nombre=kw.get("nombre"))
+            try:
+                g.cargar_pauta_digital_interior({"VILLA MARIA": "VILLA MARIA"}, {"VILLA MARIA": "GENERAL SAN MARTIN"}, carpeta=carpeta)
+                fallar(caso, f"({nombre}) esperaba que se corte la carga")
+            except SystemExit as e:
+                if esperado not in str(e):
+                    fallar(caso, f"({nombre}) el mensaje debía nombrar {esperado!r}, salió {e}")
+
+
+def caso_24_interior_pausa_y_fin_previsto():
+    """Fin previsto = el más temprano entre Fin y la pausa; lo que se muestra
+    (finalizacion) = Fin si lo hay, si no el fin previsto; sin ninguno, vacío."""
+    caso = "CASO 24 - interior: pausa programada y fin previsto"
+    if g.pausa_programada_pd_interior("Se pausa el 2026-11-20") != "2026-11-20":
+        fallar(caso, "no se extrajo la fecha de 'Se pausa el 2026-11-20'")
+    if g.pausa_programada_pd_interior(None) is not None:
+        fallar(caso, "sin texto la pausa debe quedar vacía")
+    for fin, pausa, esperado in (("2026-11-30", "2026-11-20", "2026-11-20"), ("2026-11-18", "2026-11-20", "2026-11-18"),
+                                 (None, "2026-11-20", "2026-11-20"), ("2026-11-30", None, "2026-11-30"), (None, None, None)):
+        if g.fin_previsto_pd_interior(fin, pausa) != esperado:
+            fallar(caso, f"fin={fin} pausa={pausa}: esperaba {esperado}, salió {g.fin_previsto_pd_interior(fin, pausa)}")
+
+
+def caso_25_interior_link_a_mostrar():
+    """Un solo link: Facebook -> Instagram -> Material, el primero que empiece
+    con http."""
+    caso = "CASO 25 - interior: link a mostrar"
+    L = g.link_http_pd_interior
+    pruebas = [
+        (("https://fb", "https://ig", "https://mat"), "https://fb"),
+        ((None, "https://ig", "https://mat"), "https://ig"),
+        (("pedir link", None, "http://mat"), "http://mat"),
+        (("-", "sin link", "drive"), None),
+    ]
+    for (fb, ig, mat), esperado in pruebas:
+        salio = g.link_a_mostrar_pd_interior(L(fb), L(ig), L(mat))
+        if salio != esperado:
+            fallar(caso, f"FB={fb!r} IG={ig!r} Material={mat!r}: esperaba {esperado!r}, salió {salio!r}")
+
+
+def caso_26_interior_historial_por_bases(localidades, claves_60):
+    """Historial con bases sintéticas: una pieza que sale queda Finalizada con
+    fecha_baja_detectada = primera base sin ella; la que vuelve queda Vigente,
+    reaparecida y conserva su primera base; las bajas de la semana se listan
+    sin cortar la carga."""
+    import tempfile
+    caso = "CASO 26 - interior: historial por bases semanales"
+    a = _fila_interior(**{"Código": "CBATESTPE00001", "Pieza": "A"})
+    b = _fila_interior(**{"Código": "CBATESTPE00002", "Pieza": "B"})
+    c = _fila_interior(**{"Código": "CBATESTPE00003", "Pieza": "C"})
+    with tempfile.TemporaryDirectory() as tmp:
+        carpeta = Path(tmp)
+        _escribir_base(carpeta, "2026-11-17", [a, b, c])
+        _escribir_base(carpeta, "2026-11-24", [a, c])          # sale B
+        piezas, control = _cargar_interior(carpeta, localidades)
+        por_cod = {p["codigo_pieza"]: p for p in piezas}
+        if por_cod["CBATESTPE00002"]["estado"] != "Finalizada" or por_cod["CBATESTPE00002"]["fecha_baja_detectada"] != "2026-11-24":
+            fallar(caso, f"B debía quedar Finalizada, no figura desde 24/11; salió {por_cod['CBATESTPE00002']['estado']}, {por_cod['CBATESTPE00002']['fecha_baja_detectada']}")
+        if [x["codigo"] for x in control["bajas_semana"]] != ["CBATESTPE00002"]:
+            fallar(caso, f"bajas de la semana: esperaba B, salió {control['bajas_semana']}")
+        _escribir_base(carpeta, "2026-12-01", [a, b])          # vuelve B, sale C
+        piezas, control = _cargar_interior(carpeta, localidades)
+        por_cod = {p["codigo_pieza"]: p for p in piezas}
+        pb, pc = por_cod["CBATESTPE00002"], por_cod["CBATESTPE00003"]
+        if pb["estado"] != "Vigente" or not pb["reaparecida"] or pb["primera_base"] != "2026-11-17" or pb["fecha_baja_detectada"]:
+            fallar(caso, f"B debía volver a Vigente, reaparecida y con primera base 17/11; salió {pb['estado']}, {pb['reaparecida']}, {pb['primera_base']}")
+        if pc["estado"] != "Finalizada" or pc["fecha_baja_detectada"] != "2026-12-01" or pc["ultima_base"] != "2026-11-24":
+            fallar(caso, f"C debía quedar Finalizada desde 01/12 (última vez 24/11); salió {pc['estado']}, {pc['fecha_baja_detectada']}, {pc['ultima_base']}")
+        if [x["codigo"] for x in control["bajas_semana"]] != ["CBATESTPE00003"] or control["corte"] != "2026-12-01":
+            fallar(caso, f"bajas de la semana del 01/12: esperaba C, salió {control['bajas_semana']}")
+        if por_cod["CBATESTPE00001"]["primera_base"] != "2026-11-17" or por_cod["CBATESTPE00001"]["ultima_base"] != "2026-12-01":
+            fallar(caso, "A debía figurar del 17/11 al 01/12")
+
+
+def caso_27_interior_duplicados_y_d5(localidades, claves_60):
+    """Duplicados con la clave D4 dentro de la fuente (otra localidad = otra
+    pieza) y el freno de bajas D5 ignora el interior."""
+    import tempfile
+    caso = "CASO 27 - interior: duplicados y D5"
+    with tempfile.TemporaryDirectory() as tmp:
+        carpeta = Path(tmp)
+        _escribir_base(carpeta, "2026-11-17", [
+            _fila_interior(**{"Código": "CBATESTPE00001"}),
+            _fila_interior(**{"Código": "CBATESTPE00002"}),                         # misma clave: se unifica
+            _fila_interior(**{"Código": "CBATESTPE00003", "Lugar": "Río Cuarto"}),  # otra localidad
+        ])
+        piezas, control = _cargar_interior(carpeta, localidades)
+        if len(piezas) != 2 or len(control["descartes"]) != 1:
+            fallar(caso, f"esperaba 2 piezas y 1 unificada, salieron {len(piezas)} y {len(control['descartes'])}")
+        bajas, _ = g.freno_bajas_pauta_global(piezas, [])
+        if bajas:
+            fallar(caso, f"el freno D5 no debe mirar el interior, salió {bajas}")
+
+
+def caso_28_interior_marcas_de_calidad(localidades, claves_60):
+    """Marcas: inicio vacío, inicio posterior a la base, fin o pausa vencidos
+    con la pieza en la base, campaña vacía, sin link y código con otro formato.
+    Ninguna saca la pieza del tablero."""
+    import tempfile
+    caso = "CASO 28 - interior: marcas de calidad"
+    with tempfile.TemporaryDirectory() as tmp:
+        carpeta = Path(tmp)
+        _escribir_base(carpeta, "2026-11-17", [
+            _fila_interior(**{"Código": "CBATESTPE00001", "Inicio": None}),
+            _fila_interior(**{"Código": "CBATESTPE00002", "Inicio": "2026-11-30", "Pieza": "2"}),
+            _fila_interior(**{"Código": "CBATESTPE00003", "Fin": "2026-11-10", "Pieza": "3"}),
+            _fila_interior(**{"Código": "CBATESTPE00004", "Campaña": None, "Pieza": "4"}),
+            _fila_interior(**{"Código": "CBATESTPE00005", "Anuncio en Facebook": None, "Material": "pedir", "Pieza": "5"}),
+            _fila_interior(**{"Código": "CBATESTPE0006", "Pieza": "6"}),
+        ])
+        piezas, _ = _cargar_interior(carpeta, localidades)
+        marcas = {p["codigo_pieza"]: p["marcas"] for p in piezas}
+        esperadas = {
+            "CBATESTPE00001": ["inicio_vacio"], "CBATESTPE00002": ["inicio_posterior_al_corte"],
+            "CBATESTPE00003": ["fin_o_pausa_vencidos"], "CBATESTPE00004": ["campana_vacia"],
+            "CBATESTPE00005": ["sin_link"], "CBATESTPE0006": ["codigo_formato_distinto"],
+        }
+        if marcas != esperadas:
+            fallar(caso, f"esperaba {esperadas}, salió {marcas}")
+        if any(p["estado"] != "Vigente" for p in piezas):
+            fallar(caso, "una marca no debe sacar la pieza de Vigente")
+
+
 def main():
     df = cargar_df_historico()
     localidades, claves_60 = g.cargar_localidades()
@@ -558,6 +771,10 @@ def main():
         caso_8_todas_las_localidades_provincia_entera_se_expande_a_las_60,
         caso_15_d1_universo,
         caso_16_d2_alias_villa_santa_rosa,
+        caso_22_interior_geografia,
+        caso_26_interior_historial_por_bases,
+        caso_27_interior_duplicados_y_d5,
+        caso_28_interior_marcas_de_calidad,
     ):
         try:
             caso(localidades, claves_60)
@@ -576,6 +793,9 @@ def main():
         caso_19_b2_dirigida_gana_a_provincial,
         caso_20_fecha_por_variable_de_entorno,
         caso_21_columna_faltante_se_nombra,
+        caso_23_interior_esquema_y_estado,
+        caso_24_interior_pausa_y_fin_previsto,
+        caso_25_interior_link_a_mostrar,
     ):
         try:
             caso()
@@ -588,7 +808,7 @@ def main():
             print(f"  - {f}")
         return 1
 
-    print("OK — los 21 casos de regresión de Pauta Digital pasan.")
+    print("OK — los 28 casos de regresión de Pauta Digital pasan.")
     return 0
 
 

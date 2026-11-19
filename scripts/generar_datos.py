@@ -1215,9 +1215,11 @@ def cuadre_pauta_global(control, piezas_global):
     return pasos, chequeos
 
 
-def escribir_no_procesadas_pauta_digital(control, pasos, salidas_por_regla, destino):
+def escribir_no_procesadas_pauta_digital(control, pasos, salidas_por_regla, destino, control_interior=None):
     """Archivo A: Filas_no_procesadas_Pauta_Digital.xlsx, escrito en la misma
-    corrida que el tablero (mismos datos)."""
+    corrida que el tablero (mismos datos). Con `control_interior`, la hoja
+    Fuera_del_universo suma las filas de la fuente del interior (columna
+    Fuente)."""
     df = control["df"]
     destino.parent.mkdir(parents=True, exist_ok=True)
     fuera_por_depto = Counter(
@@ -1229,10 +1231,16 @@ def escribir_no_procesadas_pauta_digital(control, pasos, salidas_por_regla, dest
                             columns=["Departamento (columna DEPARTAMENTO)", "Filas fuera del universo"])
     fuera_rows = [f for f in control["fuera"] if f["motivo"] != "pendiente_sin_localidad"]
     hoja_fuera = pd.DataFrame([{
+        "Fuente": "Pauta RRSS_GLOBAL",
         "Fila de la planilla": f["fila"], "CAMPAÑA": f["campana"], "TITULO DE LA PIEZA": f["titulo"],
         "LOCALIDAD / SUBCIRCUITO": f["localidad"], "DEPARTAMENTO": f["departamento"], "ESTADO": f["estado"],
         "Motivo": MOTIVOS_FUERA_PAUTA_GLOBAL[f["motivo"]],
-    } for f in fuera_rows])
+    } for f in fuera_rows] + [{
+        "Fuente": f"Cobertura - Activas (interior, base {f['base']})",
+        "Fila de la planilla": f["fila"], "CAMPAÑA": f["campana"], "TITULO DE LA PIEZA": f["titulo"],
+        "LOCALIDAD / SUBCIRCUITO": f["localidad"], "DEPARTAMENTO": f["departamento"], "ESTADO": f["estado"],
+        "Motivo": MOTIVOS_FUERA_PD_INTERIOR[f["motivo"]],
+    } for f in (control_interior["fuera"] if control_interior else [])])
     pend = [f for f in control["fuera"] if f["motivo"] == "pendiente_sin_localidad"]
     hoja_pend = pd.DataFrame([{
         "Fila de la planilla": f["fila"], "CAMPAÑA": f["campana"], "TITULO DE LA PIEZA": f["titulo"],
@@ -1282,6 +1290,461 @@ def _mismo_valor(a, b):
 # ---------------------------------------------------------------------------
 # 4. Audiovisuales
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Pauta Digital del interior: "Cobertura - Activas - AAAA-MM-DD.xlsx"
+# (PRUEBA en la rama nuevaversion, 19/11/2026). La maneja otra área y
+# COMPLEMENTA a Pauta RRSS_GLOBAL.xlsx (no la reemplaza; el GLOBAL se procesa
+# igual que siempre). Cada base semanal trae SOLO las piezas activas; el
+# historial (bajas) se arma comparando todas las bases guardadas en
+# Contexto/PD_interior/, que nunca se borran.
+# ---------------------------------------------------------------------------
+
+CARPETA_PD_INTERIOR = CONTEXTO / "PD_interior"
+# Nombre de cada base: "Cobertura - Activas - AAAA-MM-DD.xlsx", con espacios o
+# con guiones bajos (así llega descargada). La fecha de corte sale del nombre.
+NOMBRE_BASE_PD_INTERIOR_RE = re.compile(r"^Cobertura[ _]+-[ _]+Activas[ _]+-[ _]+(.+)\.xlsx$", re.IGNORECASE)
+HOJA_PD_INTERIOR = "Cobertura"
+# Columnas leídas POR NOMBRE. Si falta o sobra alguna, la carga se corta.
+COLUMNAS_PD_INTERIOR = [
+    "Lugar", "Pieza", "Estado", "Código", "Campaña", "Formato", "Inicio", "Fin", "Al aire desde",
+    "Redes prendidas", "Material", "Anuncio en Facebook", "Anuncio en Instagram", "Programado",
+    "Comentarios", "Comentario resuelto",
+]
+# Todas las filas de la base son activas. Otro valor corta la carga.
+ESTADO_PD_INTERIOR_ESPERADO = "Activa"
+LUGAR_TOTAL_PROVINCIA_PD_INTERIOR = normalizar("Total provincia")
+# PROVISORIO (consultado con el área): "Total provincia" se reparte a las 60,
+# Córdoba incluida. Con False se reparte a las otras 59.
+TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA = True
+LOCALIDAD_CAPITAL_PD = "CORDOBA"
+# Columna Programado: "Se pausa el AAAA-MM-DD" (pausa programada, no es el
+# estado Programada).
+PAUSA_PD_INTERIOR_RE = re.compile(r"se pausa el\s+(\d{4}-\d{2}-\d{2})", re.IGNORECASE)
+FECHA_TEXTO_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:[ T]00:00:00)?$")
+# Formato de código esperado (14 letras o números). Uno distinto no se
+# corrige ni se unifica: se informa en el control.
+CODIGO_PD_INTERIOR_RE = re.compile(r"^[A-Za-z0-9]{14}$")
+MOTIVOS_FUERA_PD_INTERIOR = {
+    "localidad_fuera_de_las_60": "El Lugar no está entre las 60 localidades del tablero ni es 'Total provincia'. Si correspondía a una de las 60, escribirla como figura en la lista oficial.",
+    "pendiente_sin_localidad": "Lugar vacío: no se puede ubicar la pieza.",
+}
+# Campos de las piezas del GLOBAL que esta base no trae: van vacíos, así
+# cada pieza tiene la misma forma para el front y construir_campanas().
+CAMPOS_GLOBAL_SIN_DATO_PD_INTERIOR = (
+    "alcance", "barrio", "circuito_codigo_original", "circuito_electoral", "clics", "cobertura_ejecutada_meta",
+    "cobertura_planificada_meta", "cpm", "cpm_planificada_meta", "cpm_real_meta", "cpv_planificada_google",
+    "cpv_real_google", "ctr", "fecha_creacion", "fin_informe", "frecuencia", "frecuencia_ejecutada_meta",
+    "frecuencia_planificada_meta", "importe_gastado", "impresiones", "impresiones_ejecutada_meta",
+    "impresiones_planificada_meta", "inicio_informe", "inversion_ejecutada", "inversion_planificada",
+    "link_destino", "link_yt", "origen", "presupuesto", "proveedor", "tipo_pauta", "tipo_presupuesto",
+    "visualizaciones", "visualizaciones_ejecutadas_google", "visualizaciones_planificadas_google",
+)
+# Marcas de calidad de una pieza (para el área; no cambian si cuenta o no).
+MARCAS_PD_INTERIOR = {
+    "inicio_vacio": "Inicio vacío",
+    "inicio_posterior_al_corte": "Inicio posterior a la fecha de la base",
+    "fin_o_pausa_vencidos": "Fin o pausa vencidos y la pieza sigue en la base",
+    "campana_vacia": "Campaña vacía",
+    "sin_link": "Sin ningún link",
+    "codigo_formato_distinto": "Código con formato distinto",
+}
+
+
+def listar_bases_pd_interior(carpeta=None):
+    """[(fecha de corte, ruta)] de todas las bases de la carpeta, de la más
+    vieja a la más nueva. Corta si un .xlsx no tiene el nombre esperado o una
+    fecha AAAA-MM-DD válida, o si dos bases tienen la misma fecha."""
+    carpeta = CARPETA_PD_INTERIOR if carpeta is None else carpeta
+    if not carpeta.exists():
+        return []
+    bases = []
+    for ruta in sorted(carpeta.iterdir()):
+        if ruta.suffix.lower() != ".xlsx" or ruta.name.startswith("~$"):
+            continue
+        m = NOMBRE_BASE_PD_INTERIOR_RE.match(ruta.name)
+        fecha = None
+        if m:
+            try:
+                fecha = date.fromisoformat(m.group(1))
+            except ValueError:
+                fecha = None
+        if fecha is None:
+            raise SystemExit(
+                f"PD interior: no se puede leer la fecha de corte del nombre {ruta.name!r} "
+                "(se espera 'Cobertura - Activas - AAAA-MM-DD.xlsx'). Se corta la carga."
+            )
+        bases.append((fecha, ruta))
+    fechas = [f for f, _ in bases]
+    repetidas = sorted({f.isoformat() for f in fechas if fechas.count(f) > 1})
+    if repetidas:
+        raise SystemExit(f"PD interior: hay dos bases con la misma fecha ({', '.join(repetidas)}). Se corta la carga.")
+    return sorted(bases)
+
+
+def leer_base_pd_interior(ruta):
+    """Lee una base y valida el esquema: una sola hoja "Cobertura", las 16
+    columnas (por nombre, sin faltantes ni sobrantes) y Estado = Activa en
+    todas las filas. Cualquier diferencia corta la carga."""
+    hojas = pd.read_excel(ruta, sheet_name=None, dtype=str)
+    if list(hojas) != [HOJA_PD_INTERIOR]:
+        raise SystemExit(
+            f"PD interior ({ruta.name}): se espera una sola hoja {HOJA_PD_INTERIOR!r} y hay {list(hojas)}. Se corta la carga."
+        )
+    df = hojas[HOJA_PD_INTERIOR]
+    faltan = [c for c in COLUMNAS_PD_INTERIOR if c not in df.columns]
+    sobran = [c for c in df.columns if c not in COLUMNAS_PD_INTERIOR]
+    if faltan or sobran:
+        raise SystemExit(
+            f"PD interior ({ruta.name}): cambió el esquema. Faltan: {faltan or 'ninguna'}; "
+            f"sobran: {sobran or 'ninguna'}. Se corta la carga."
+        )
+    df = df.dropna(how="all")
+    estados = Counter((limpio(v) or "").strip() for v in df["Estado"])
+    distintos = {e: n for e, n in estados.items() if e != ESTADO_PD_INTERIOR_ESPERADO}
+    if distintos:
+        raise SystemExit(
+            f"PD interior ({ruta.name}): aparecieron estados distintos de {ESTADO_PD_INTERIOR_ESPERADO!r}: "
+            f"{distintos}. Se corta la carga."
+        )
+    return df
+
+
+def _texto_pd_interior(v):
+    """Texto limpio de una celda (None si está vacía)."""
+    v = limpio(v)
+    if v is None:
+        return None
+    s = str(v).strip()
+    return s or None
+
+
+def fecha_pd_interior(v, columna, ruta, fila):
+    """Las fechas vienen como texto AAAA-MM-DD. Vacío -> None. Otra cosa corta
+    la carga (no se adivina la fecha)."""
+    s = _texto_pd_interior(v)
+    if s is None:
+        return None
+    m = FECHA_TEXTO_RE.match(s)
+    try:
+        return date.fromisoformat(m.group(1)).isoformat() if m else date.fromisoformat(s).isoformat()
+    except ValueError:
+        raise SystemExit(f"PD interior ({ruta.name}, fila {fila}): la columna {columna!r} trae {s!r}, que no es una fecha AAAA-MM-DD.")
+
+
+def pausa_programada_pd_interior(v):
+    """Fecha de "Se pausa el AAAA-MM-DD" (None si la celda no la trae)."""
+    s = _texto_pd_interior(v)
+    m = PAUSA_PD_INTERIOR_RE.search(s) if s else None
+    return date.fromisoformat(m.group(1)).isoformat() if m else None
+
+
+def fin_previsto_pd_interior(fin_iso, pausa_iso):
+    """Fecha más temprana entre Fin y la pausa programada; None si no hay ninguna
+    (la pieza no vence)."""
+    fechas = [f for f in (fin_iso, pausa_iso) if f]
+    return min(fechas) if fechas else None
+
+
+def link_http_pd_interior(v):
+    """El link si la celda empieza con http; si no, None."""
+    s = _texto_pd_interior(v)
+    return s if s and s.lower().startswith("http") else None
+
+
+def link_a_mostrar_pd_interior(link_fb, link_ig, link_material):
+    """Un solo link por pieza: Facebook -> Instagram -> Material."""
+    return link_fb or link_ig or link_material
+
+
+def redes_pd_interior(v):
+    """"facebook, instagram" -> ["facebook", "instagram"]."""
+    s = _texto_pd_interior(v)
+    return [r.strip() for r in s.split(",") if r.strip()] if s else []
+
+
+def geografia_pd_interior(lugar, localidades_60_normalizadas):
+    """Lugar contra las 60 (match exacto con normalizar(), sin alias ni
+    departamento):
+    - una de las 60 -> esa localidad, dirigida (localidad_directa);
+    - "Total provincia" -> una entrada en cada una de las 60 (multiple_provincia),
+      Córdoba según TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA;
+    - vacío -> pendiente; cualquier otro -> fuera de las 60."""
+    n = normalizar(lugar)
+    if not n:
+        return {"excluida": True, "motivo": "pendiente_sin_localidad", "localidad_texto": None}
+    if n == LUGAR_TOTAL_PROVINCIA_PD_INTERIOR:
+        locs = sorted(
+            l for l in localidades_60_normalizadas
+            if TOTAL_PROVINCIA_PD_INTERIOR_INCLUYE_CORDOBA or l != LOCALIDAD_CAPITAL_PD
+        )
+        return {"excluida": False, "ambito": "localidad_multiple", "localidades": locs, "sub_ambito": "multiple_provincia"}
+    if n in localidades_60_normalizadas:
+        return {"excluida": False, "ambito": "localidad", "localidad": n, "sub_ambito": "localidad_directa"}
+    return {"excluida": True, "motivo": "localidad_fuera_de_las_60", "localidad_texto": str(lugar).strip()}
+
+
+def historial_pd_interior(bases_leidas):
+    """bases_leidas: [(fecha, df)] de la más vieja a la más nueva. Identidad de
+    la pieza: Código (con trim, literal: no se unifican códigos parecidos). Si un
+    código se repite dentro de una base, cada repetición es otra identidad
+    ("CÓDIGO#2") y se informa.
+    Devuelve (registros, bajas de la semana, códigos repetidos). Cada registro
+    trae la fila de su ÚLTIMA aparición y sus datos de historial:
+    primera_base, ultima_base, estado (Vigente si figura en la última base,
+    Finalizada si no), fecha_baja_detectada (primera base en que ya no figura)
+    y reaparecida (faltó en alguna base intermedia y volvió)."""
+    fechas = [f for f, _ in bases_leidas]
+    registros = {}
+    repetidos = []
+    for fecha, df in bases_leidas:
+        vistos = Counter()
+        for idx, row in df.iterrows():
+            codigo = _texto_pd_interior(row["Código"]) or ""
+            vistos[codigo] += 1
+            clave = codigo if vistos[codigo] == 1 else f"{codigo}#{vistos[codigo]}"
+            if vistos[codigo] == 2:
+                repetidos.append({"base": fecha.isoformat(), "codigo": codigo})
+            reg = registros.setdefault(clave, {"clave": clave, "codigo": codigo, "presencias": []})
+            reg["presencias"].append(fecha)
+            reg["fila"] = row
+            reg["fila_num"] = int(idx) + 2
+            reg["base"] = fecha
+    ultima = fechas[-1] if fechas else None
+    for reg in registros.values():
+        pres = reg["presencias"]
+        reg["primera_base"] = pres[0].isoformat()
+        reg["ultima_base"] = pres[-1].isoformat()
+        reg["vigente"] = pres[-1] == ultima
+        reg["fecha_baja_detectada"] = None if reg["vigente"] else next(f for f in fechas if f > pres[-1]).isoformat()
+        reg["reaparecida"] = any(f not in pres for f in fechas if pres[0] < f < pres[-1])
+    bajas_semana = []
+    if len(fechas) >= 2:
+        anterior = fechas[-2]
+        bajas_semana = [reg for reg in registros.values() if anterior in reg["presencias"] and not reg["vigente"]]
+    return registros, bajas_semana, repetidos
+
+
+def cargar_pauta_digital_interior(localidad_a_oficial, localidad_a_departamento_oficial, carpeta=None):
+    """Piezas de la fuente del interior (fuente: "interior") y control. Sin
+    bases en la carpeta devuelve ([], None). Reglas (prueba 19/11/2026):
+    - Vigente = figura en la última base; Finalizada = figuraba antes y no
+      está en la última (fecha_baja_detectada). La vigencia en el front no
+      depende de Inicio/Fin (lib/semaforo.js, esPiezaPDViva).
+    - fin_previsto = el más temprano entre Fin y la pausa programada; es el que
+      usan la proyección y los vencimientos. `finalizacion` (lo que se
+      muestra) = Fin si lo hay; si no, el fin previsto.
+    - Una entrada (pieza x localidad) = una pieza. Sin PLATAFORMA en la base.
+    - Duplicados con la clave D4 (clave_dedup_pauta_global) DENTRO de esta
+      fuente; no se cruza con el GLOBAL.
+    - El freno de bajas D5 no aplica (solo mira fuente "global")."""
+    bases = listar_bases_pd_interior(carpeta)
+    if not bases:
+        return [], None
+    bases_leidas = [(f, leer_base_pd_interior(r)) for f, r in bases]
+    corte = bases[-1][0]
+    registros, bajas_semana, repetidos = historial_pd_interior(bases_leidas)
+    localidades_60_normalizadas = set(localidad_a_oficial.keys())
+
+    piezas = []
+    fuera = []
+    filas_ultima_base = []  # una por fila de la última base, con sus marcas (control)
+    for reg in registros.values():
+        row, ruta, fila, base = reg["fila"], bases[[f for f, _ in bases].index(reg["base"])][1], reg["fila_num"], reg["base"]
+        lugar = _texto_pd_interior(row["Lugar"])
+        campana = _texto_pd_interior(row["Campaña"])
+        titulo = _texto_pd_interior(row["Pieza"])
+        inicio = fecha_pd_interior(row["Inicio"], "Inicio", ruta, fila)
+        fin = fecha_pd_interior(row["Fin"], "Fin", ruta, fila)
+        al_aire_desde = fecha_pd_interior(row["Al aire desde"], "Al aire desde", ruta, fila)
+        pausa = pausa_programada_pd_interior(row["Programado"])
+        fin_previsto = fin_previsto_pd_interior(fin, pausa)
+        link_fb = link_http_pd_interior(row["Anuncio en Facebook"])
+        link_ig = link_http_pd_interior(row["Anuncio en Instagram"])
+        link_material = link_http_pd_interior(row["Material"])
+        link_mostrar = link_a_mostrar_pd_interior(link_fb, link_ig, link_material)
+        geo = geografia_pd_interior(lugar, localidades_60_normalizadas)
+
+        marcas = []
+        if inicio is None:
+            marcas.append("inicio_vacio")
+        elif inicio > base.isoformat():
+            marcas.append("inicio_posterior_al_corte")
+        if reg["vigente"] and fin_previsto and fin_previsto < base.isoformat():
+            marcas.append("fin_o_pausa_vencidos")
+        if campana is None:
+            marcas.append("campana_vacia")
+        if link_mostrar is None:
+            marcas.append("sin_link")
+        if not CODIGO_PD_INTERIOR_RE.match(reg["codigo"]):
+            marcas.append("codigo_formato_distinto")
+
+        if reg["vigente"]:
+            filas_ultima_base.append({
+                "fila": fila, "codigo": reg["codigo"], "lugar": lugar, "campana": campana, "titulo": titulo,
+                "inicio": inicio, "fin": fin, "pausa": pausa, "fin_previsto": fin_previsto,
+                "link_fb": link_fb, "link_ig": link_ig, "link_material": link_material, "link_mostrar": link_mostrar,
+                "entra": not geo["excluida"], "sub_ambito": geo.get("sub_ambito"), "marcas": marcas,
+            })
+        if geo["excluida"]:
+            if reg["vigente"]:
+                fuera.append({
+                    "fila": fila, "base": base.isoformat(), "motivo": geo["motivo"], "codigo": reg["codigo"],
+                    "campana": campana, "titulo": titulo, "localidad": lugar, "localidad_texto": geo["localidad_texto"],
+                    "departamento": None, "departamento_candidato": None, "estado": limpio(row["Estado"]),
+                })
+            continue
+
+        for asignacion in _asignaciones_geograficas(geo, localidad_a_oficial, localidad_a_departamento_oficial):
+            piezas.append({
+                "fuente": "interior",
+                "_fila": (base.isoformat(), fila),
+                "_dedup_clave": clave_dedup_pauta_global(
+                    row["Campaña"], row["Pieza"], None, asignacion["localidad_asignada"],
+                    inicio, fin, row["Material"], row["Formato"], None,
+                ),
+                "_dedup_dirigida": geo["sub_ambito"] == "localidad_directa",
+                "_dedup_fecha_envio_ts": None,
+                "_dedup_estado_activo": reg["vigente"],
+                "codigo_pieza": reg["codigo"],
+                "cod_contenido": None,
+                "nombre_anuncio": titulo,
+                "titulo_pieza": titulo,
+                "area_tematica": None,
+                "ministerio": None,
+                "campana": campana,
+                "alcance_detectado": "LOCALIDAD",
+                "alcance_tipo": "localidad",
+                "sub_ambito": geo["sub_ambito"],
+                "en_60_localidades": True,
+                "departamento": asignacion["departamento"],
+                "localidad": asignacion["localidad"],
+                "localidad_asignada": asignacion["localidad_asignada"],
+                "lugar_original": lugar,
+                "plataforma": None,
+                "tipo_material": _texto_pd_interior(row["Formato"]),
+                "redes": redes_pd_interior(row["Redes prendidas"]),
+                "inicio": inicio,
+                "fin_planilla": fin,
+                "pausa_programada": pausa,
+                "fin_previsto": fin_previsto,
+                # Lo que se muestra como Finalización: Fin si lo hay; si no, el
+                # fin previsto. Los cálculos usan fin_previsto.
+                "finalizacion": fin or fin_previsto,
+                "al_aire_desde": al_aire_desde,
+                "estado": "Vigente" if reg["vigente"] else "Finalizada",
+                "primera_base": reg["primera_base"],
+                "ultima_base": reg["ultima_base"],
+                "fecha_baja_detectada": reg["fecha_baja_detectada"],
+                "reaparecida": reg["reaparecida"],
+                "marcas": marcas,
+                "link_fb": link_fb,
+                "link_ig": link_ig,
+                "link_material": link_material,
+                "link_mostrar": link_mostrar,
+                "links_material": [link_mostrar] if link_mostrar else [],
+                "comentarios": _texto_pd_interior(row["Comentarios"]),
+                "comentario_resuelto": _texto_pd_interior(row["Comentario resuelto"]),
+                # Informativo, como en el GLOBAL: activa el día de la base.
+                "vigente_por_fecha": reg["vigente"],
+                **{campo: None for campo in CAMPOS_GLOBAL_SIN_DATO_PD_INTERIOR},
+            })
+
+    entradas = len(piezas)
+    resultado, descartes = _dedup_pauta_global(piezas)
+    control = {
+        "corte": corte.isoformat(),
+        "bases": [f.isoformat() for f, _ in bases],
+        "ruta": bases[-1][1],
+        "filas_ultima_base": filas_ultima_base,
+        "fuera": fuera,
+        "entradas": entradas,
+        "descartes": [
+            {"fila_descartada": d["_fila"], "fila_queda": g["_fila"], "localidad": d["localidad_asignada"],
+             "campana": d["campana"], "titulo": d["titulo_pieza"], "codigo_descartado": d["codigo_pieza"],
+             "codigo_queda": g["codigo_pieza"]}
+            for d, g in descartes
+        ],
+        "bajas_semana": [
+            {"codigo": r["codigo"], "lugar": _texto_pd_interior(r["fila"]["Lugar"]),
+             "campana": _texto_pd_interior(r["fila"]["Campaña"]), "titulo": _texto_pd_interior(r["fila"]["Pieza"]),
+             "ultima_base": r["ultima_base"], "fecha_baja_detectada": r["fecha_baja_detectada"]}
+            for r in bajas_semana
+        ],
+        "codigos_repetidos": repetidos,
+        "reaparecidas": sorted(r["codigo"] for r in registros.values() if r["reaparecida"] and r["vigente"]),
+    }
+    for pieza in resultado:
+        _limpiar_internos(pieza)
+    return resultado, control
+
+
+def coincidencias_interior_global(piezas_interior, piezas_global):
+    """Piezas vigentes del interior que coinciden con alguna del GLOBAL en la
+    misma localidad por CAMPAÑA + TÍTULO normalizados. Solo se informan (no se
+    deduplica entre fuentes en esta prueba)."""
+    indice = {}
+    for p in piezas_global:
+        clave = (normalizar(p.get("campana")), normalizar(p.get("titulo_pieza")), p.get("localidad_asignada"))
+        indice.setdefault(clave, []).append(p)
+    salida = []
+    for p in piezas_interior:
+        if p["estado"] != "Vigente":
+            continue
+        clave = (normalizar(p.get("campana")), normalizar(p.get("titulo_pieza")), p.get("localidad_asignada"))
+        for q in indice.get(clave, []):
+            salida.append({
+                "Código (interior)": p["codigo_pieza"], "Localidad": p["localidad_asignada"],
+                "Campaña": p["campana"], "Título": p["titulo_pieza"],
+                "Estado en GLOBAL": q.get("estado"), "Plataforma en GLOBAL": q.get("plataforma"),
+                "Inicio GLOBAL": q.get("inicio"), "Fin GLOBAL": q.get("finalizacion"),
+            })
+    return salida
+
+
+def escribir_control_pd_interior(control, coincidencias, destino):
+    """Entregable de control de la fuente del interior: resumen, una hoja por
+    marca de calidad, fuera de las 60, bajas de la semana y coincidencias con
+    el GLOBAL. No corta la actualización."""
+    filas = control["filas_ultima_base"]
+
+    def tabla(lista, vacio):
+        return pd.DataFrame(lista) if lista else pd.DataFrame({"": [vacio]})
+
+    def fila_de(f):
+        return {
+            "Fila de la base": f["fila"], "Código": f["codigo"], "Lugar": f["lugar"], "Campaña": f["campana"],
+            "Pieza": f["titulo"], "Inicio": f["inicio"], "Fin": f["fin"], "Pausa programada": f["pausa"],
+            "Fin previsto": f["fin_previsto"], "Entra al tablero": "Sí" if f["entra"] else "No",
+        }
+
+    resumen = [
+        ("Bases leídas", ", ".join(control["bases"])),
+        ("Fecha de corte (última base)", control["corte"]),
+        ("Filas de la última base", len(filas)),
+        ("Filas que entran al tablero", sum(1 for f in filas if f["entra"])),
+        ("Filas fuera de las 60", len(control["fuera"])),
+        ("Entradas generadas (pieza x localidad)", control["entradas"]),
+        ("Entradas unificadas por duplicado", len(control["descartes"])),
+        ("Bajas de la semana", len(control["bajas_semana"])),
+        ("Coincidencias con GLOBAL (misma localidad, campaña y título)", len(coincidencias)),
+    ] + [(f"Marca: {texto}", sum(1 for f in filas if clave in f["marcas"])) for clave, texto in MARCAS_PD_INTERIOR.items()]
+    with pd.ExcelWriter(destino, engine="openpyxl") as xw:
+        pd.DataFrame(resumen, columns=["Paso", "Valor"]).to_excel(xw, sheet_name="Resumen", index=False)
+        for clave, texto in MARCAS_PD_INTERIOR.items():
+            lista = [fila_de(f) for f in filas if clave in f["marcas"]]
+            tabla(lista, f"Sin filas con: {texto}").to_excel(xw, sheet_name=texto[:31], index=False)
+        tabla([{
+            "Fila de la base": f["fila"], "Código": f["codigo"], "Lugar": f["localidad"], "Campaña": f["campana"],
+            "Pieza": f["titulo"], "Motivo": MOTIVOS_FUERA_PD_INTERIOR[f["motivo"]],
+        } for f in control["fuera"]], "Sin filas fuera de las 60").to_excel(xw, sheet_name="Fuera de las 60", index=False)
+        tabla([{
+            "Código": b["codigo"], "Lugar": b["lugar"], "Campaña": b["campana"], "Pieza": b["titulo"],
+            "Última base en que figuró": b["ultima_base"], "No figura desde": b["fecha_baja_detectada"],
+        } for b in control["bajas_semana"]], "Sin bajas en esta semana").to_excel(xw, sheet_name="Bajas de la semana", index=False)
+        tabla(coincidencias, "Sin coincidencias con GLOBAL").to_excel(xw, sheet_name="Coincidencias con GLOBAL", index=False)
+        tabla(control["descartes"], "Sin duplicados").to_excel(xw, sheet_name="Duplicadas", index=False)
+
 
 def cargar_audiovisuales():
     df = pd.read_excel(CONTEXTO / "Audiovisuales.xlsx", sheet_name="Localidades y Campañas")
@@ -2076,6 +2539,12 @@ def main():
         localidad_a_oficial, localidad_a_departamento_oficial, departamento_a_localidades_normalizadas,
     )
     control_global["renglones_hoja"] = renglones_hoja_pauta_global(control_global["ruta"])
+    # Fuente del interior (prueba 19/11/2026): complementa al GLOBAL. Una base
+    # con otro esquema o con un Estado distinto de "Activa" corta acá, antes
+    # de escribir pauta_digital.json.
+    piezas_interior, control_interior = cargar_pauta_digital_interior(
+        localidad_a_oficial, localidad_a_departamento_oficial,
+    )
     print(
         f"  Pauta digital: {len(piezas_historico)} piezas histórico (<= {CORTE_HISTORICO_PAUTA_DIGITAL}) "
         f"+ {len(piezas_global)} piezas fuente nueva"
@@ -2115,13 +2584,36 @@ def main():
         )
     print("  Bajas respecto al JSON anterior (campaña + título): 0")
     archivo_a = ENTREGABLES_PD / "Filas_no_procesadas_Pauta_Digital.xlsx"
-    escribir_no_procesadas_pauta_digital(control_global, pasos, salidas_por_regla, archivo_a)
+    escribir_no_procesadas_pauta_digital(control_global, pasos, salidas_por_regla, archivo_a, control_interior)
     print(f"  {archivo_a.relative_to(ROOT)}: escrito")
+
+    interior_ultima_base = None
+    if control_interior:
+        interior_ultima_base = control_interior["corte"]
+        coincidencias = coincidencias_interior_global(piezas_interior, piezas_global)
+        filas_ib = control_interior["filas_ultima_base"]
+        print(f"  --- Pauta Digital del interior (bases {', '.join(control_interior['bases'])}; corte {interior_ultima_base}) ---")
+        print(f"  Filas de la última base: {len(filas_ib)} · entran: {sum(1 for f in filas_ib if f['entra'])} "
+              f"· fuera de las 60: {len(control_interior['fuera'])}")
+        print(f"  Entradas: {control_interior['entradas']} · unificadas por duplicado: {len(control_interior['descartes'])} "
+              f"· piezas: {len(piezas_interior)} ({dict(Counter(p['estado'] for p in piezas_interior))})")
+        print(f"  Piezas por ámbito: {dict(Counter(p['sub_ambito'] for p in piezas_interior))}")
+        print(f"  Bajas de la semana: {len(control_interior['bajas_semana'])} · coincidencias con GLOBAL: {len(coincidencias)}")
+        archivo_control = ENTREGABLES_PD / "Control_PD_interior.xlsx"
+        escribir_control_pd_interior(control_interior, coincidencias, archivo_control)
+        print(f"  {archivo_control.relative_to(ROOT)}: escrito")
 
     # generado_el: fecha de corte del dato. Una pieza Vigente (ESTADO=ACTIVO en la
     # fuente) con FIN anterior a esta fecha es una anomalía de la fuente
     # ("vencida sin renovar"), distinta de la que venció después de la carga.
-    pauta_digital = {"generado_el": HOY.isoformat(), "piezas": piezas_historico + piezas_global}
+    # interior_ultima_base: fecha de la última base del interior (cada pieza
+    # del interior trae además su ultima_base); generado_el sigue siendo la
+    # fecha de corte del GLOBAL.
+    pauta_digital = {
+        "generado_el": HOY.isoformat(),
+        "interior_ultima_base": interior_ultima_base,
+        "piezas": piezas_historico + piezas_global + piezas_interior,
+    }
     escribir_json("pauta_digital.json", pauta_digital)
 
     audiovisuales = cargar_audiovisuales()
