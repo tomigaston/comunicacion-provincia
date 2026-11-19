@@ -397215,6 +397215,5803 @@
       }
     },
     {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "localidad_asignada": "ALMAFUERTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "ESTACION JUAREZ CELMAN",
+      "localidad_asignada": "ESTACION JUAREZ CELMAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "localidad_asignada": "GENERAL CABRERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "localidad_asignada": "GENERAL DEHEZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "localidad_asignada": "HERNANDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "localidad_asignada": "LA CARLOTA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "localidad_asignada": "LA FALDA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "localidad_asignada": "LABOULAYE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "localidad_asignada": "LAS VARILLAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "localidad_asignada": "LEONES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "localidad_asignada": "MENDIOLAZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "localidad_asignada": "MINA CLAVERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "localidad_asignada": "MONTE CRISTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "localidad_asignada": "OLIVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "localidad_asignada": "ONCATIVO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "localidad_asignada": "PILAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "localidad_asignada": "RIO CEBALLOS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "localidad_asignada": "SALSACATE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "localidad_asignada": "SAN AGUSTIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "localidad_asignada": "SAN CARLOS MINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "localidad_asignada": "SAN FRANCISCO DEL CHAÑAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "localidad_asignada": "UNQUILLO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "localidad_asignada": "VICUÑA MACKENNA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "localidad_asignada": "VILLA DE MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "localidad_asignada": "VILLA DEL TOTORAL",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "localidad_asignada": "VILLA GENERAL BELGRANO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "localidad_asignada": "VILLA TULUMBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Escuela de Formación Profesional-Río Cuarto"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Centro de Desarrollo Infantil-Malvinas Argentinas"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Circunvalación-Río Cuarto"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "ProA Alsina-Río Cuarto"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Villa Carlos Paz"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "localidad_asignada": "ALMAFUERTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "ESTACION JUAREZ CELMAN",
+      "localidad_asignada": "ESTACION JUAREZ CELMAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "localidad_asignada": "GENERAL CABRERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "localidad_asignada": "GENERAL DEHEZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "localidad_asignada": "HERNANDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "localidad_asignada": "LA CARLOTA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "localidad_asignada": "LA FALDA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "localidad_asignada": "LABOULAYE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "localidad_asignada": "LAS VARILLAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "localidad_asignada": "LEONES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "localidad_asignada": "MENDIOLAZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "localidad_asignada": "MINA CLAVERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "localidad_asignada": "MONTE CRISTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "localidad_asignada": "OLIVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "localidad_asignada": "ONCATIVO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "localidad_asignada": "PILAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "localidad_asignada": "RIO CEBALLOS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "localidad_asignada": "SALSACATE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "localidad_asignada": "SAN AGUSTIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "localidad_asignada": "SAN CARLOS MINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "localidad_asignada": "SAN FRANCISCO DEL CHAÑAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "localidad_asignada": "UNQUILLO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "localidad_asignada": "VICUÑA MACKENNA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "localidad_asignada": "VILLA DE MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "localidad_asignada": "VILLA DEL TOTORAL",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "localidad_asignada": "VILLA GENERAL BELGRANO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Vuelve el Rally Mundial",
+      "alcance_tipo": "localidad",
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "localidad_asignada": "VILLA TULUMBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Vuelve el Rally Mundial-Toda la provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Visitas",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Casa del Estudiante-Villa María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Plaza y balneario \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Duplicación RN 158 \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "60 localidades",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Av. Libertador-Alta Gracia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "localidad_asignada": "LABOULAYE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Planta depuradora-Laboulaye"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "localidad_asignada": "LA CARLOTA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Escuela de Suboficiales-La Carlota"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Hospital Abel Ayerza-Marcos Juárez"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Visitas",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "localidad_asignada": "ALMAFUERTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Jardín de infantes y TecnoPresente-Almafuerte"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Plan 400 cuadras-Villa María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "localidad_asignada": "OLIVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Patrulla Rural y BPA-Oliva"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Av. Bodereau-Villa Allende"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "ProA-Bell Ville"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Bicisenda \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autopista RN 19-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "localidad_asignada": "MINA CLAVERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Mina Clavero"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "localidad_asignada": "HERNANDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Recorrida-Departamento Tercero Arriba"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "localidad_asignada": "VICUÑA MACKENNA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Recorrida-Departamento Río Cuarto"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Duplicación RN 9-Río Segundo"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Altonivel RN 19-Malvinas Argentinas"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Cruz del Eje"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Ruta 6 a Tancacha-Río Tercero"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Pavimentación Perilago-Cruz del Eje"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Gas B° Cuesta Colorada-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Cloacas en barrios-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Polideportivos-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "localidad_asignada": "LA FALDA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente vado sobre Río Suquía \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Morteros"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Av. Luchesse-Villa Allende"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Acueducto y Av. Cárcano-Villa Carlos Paz"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Parque Cincuentenario \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "localidad_asignada": "ALMAFUERTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "ESTACION JUAREZ CELMAN",
+      "localidad_asignada": "ESTACION JUAREZ CELMAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "localidad_asignada": "GENERAL CABRERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "localidad_asignada": "GENERAL DEHEZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "localidad_asignada": "HERNANDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "localidad_asignada": "LA CARLOTA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "localidad_asignada": "LA FALDA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "localidad_asignada": "LABOULAYE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "localidad_asignada": "LAS VARILLAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "localidad_asignada": "LEONES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "localidad_asignada": "MENDIOLAZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "localidad_asignada": "MINA CLAVERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "localidad_asignada": "MONTE CRISTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "localidad_asignada": "OLIVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "localidad_asignada": "ONCATIVO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "localidad_asignada": "PILAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "localidad_asignada": "RIO CEBALLOS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "localidad_asignada": "SALSACATE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "localidad_asignada": "SAN AGUSTIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "localidad_asignada": "SAN CARLOS MINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "localidad_asignada": "SAN FRANCISCO DEL CHAÑAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "localidad_asignada": "UNQUILLO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "localidad_asignada": "VICUÑA MACKENNA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "localidad_asignada": "VILLA DE MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "localidad_asignada": "VILLA DEL TOTORAL",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "localidad_asignada": "VILLA GENERAL BELGRANO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Selección en el Kempes",
+      "alcance_tipo": "localidad",
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "localidad_asignada": "VILLA TULUMBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-17",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Juega la Selección Argentina-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Protección Río Ctalamochita-Bell Ville"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "localidad_asignada": "LAS VARILLAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autopista RN 19-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "localidad_asignada": "PILAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Rehabilitación Autopista Córdoba a Pilar-Pilar"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Plaza y pavimento-Río Segundo"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Infraestructura en Barrio Colinas \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "localidad_asignada": "VILLA GENERAL BELGRANO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Escuela de Formación Profesional-Villa General Belgrano"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Monumento El Peregrino-Malagueño"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Pavimentación RP S372 (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Visitas",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Aniversario de los Consorcios Camineros-Villa María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Polideportivo B° Porvenir-Villa Dolores"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "localidad_asignada": "VILLA DEL TOTORAL",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Recorrida-Departamento Totoral"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "ProA-Arroyito"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autopista RN 19-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Av. Simón Bolívar-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Polo educativo La Reconquista-Salsipuedes"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "ProA-Alta Gracia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Ruta S433-Colonia Caroya"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Agua en 11 barrios-Jesús María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autovía Punilla-Cosquín"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Ministerios",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "localidad_asignada": "MENDIOLAZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Gas-Mendiolaza"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "UPC",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Capilla del Monte"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Pavimento-Morteros"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autovía RN 9-Jesús María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "localidad_asignada": "RIO CEBALLOS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Escuela \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-27",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Centro de Desarrollo Infantil-Salsipuedes"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Altoniveles Sierras Chicas-Villa Allende"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Arroyito"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Hospital Regional-Bell Ville"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Refacción Inglesia Brocheriana \"60 localidades\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Marcos Juárez"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Comisaría-Villa Nueva"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente Rio Carnero-Jesús María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Villa Dolores"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Visita-Saldán"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Circunvalación-Villa María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Deán Funes"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Aportes para pileta en Club Belgrano y sistema de panelería solar \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Plaza Congresales de Tucumán (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Gas-Colonia Caroya"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "ProA San Pedro-Villa Cura Brochero"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Acueducto Sierras Chicas-Río Ceballos"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Gas Parque Industrial-Deán Funes"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Orgánico",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Hotel El Cóndor-Pampa de Achala"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autopista RN 19-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Colectora-Malagueño"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Visitas",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "UPC-Villa Huidobro"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Saneamiento-Cruz del Eje"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Ciclovía en altura-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Escuela Julio A. Roca-Cosquín"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de MLL",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Autopista RN 19-San Francisco"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "ALMAFUERTE",
+      "localidad_asignada": "ALMAFUERTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "ALTA GRACIA",
+      "localidad_asignada": "ALTA GRACIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "ARROYITO",
+      "localidad_asignada": "ARROYITO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "UNION",
+      "localidad": "BELL VILLE",
+      "localidad_asignada": "BELL VILLE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "CAPILLA DEL MONTE",
+      "localidad_asignada": "CAPILLA DEL MONTE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "CAPITAL",
+      "localidad": "CORDOBA",
+      "localidad_asignada": "CORDOBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "CRUZ DEL EJE",
+      "localidad": "CRUZ DEL EJE",
+      "localidad_asignada": "CRUZ DEL EJE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "ESTACION JUAREZ CELMAN",
+      "localidad_asignada": "ESTACION JUAREZ CELMAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL CABRERA",
+      "localidad_asignada": "GENERAL CABRERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "GENERAL DEHEZA",
+      "localidad_asignada": "GENERAL DEHEZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "HERNANDO",
+      "localidad_asignada": "HERNANDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "JUAREZ CELMAN",
+      "localidad": "LA CARLOTA",
+      "localidad_asignada": "LA CARLOTA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "LA FALDA",
+      "localidad_asignada": "LA FALDA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PRESIDENTE ROQUE SAENZ PEÑA",
+      "localidad": "LABOULAYE",
+      "localidad_asignada": "LABOULAYE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "LAS VARILLAS",
+      "localidad_asignada": "LAS VARILLAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "LEONES",
+      "localidad_asignada": "LEONES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SANTA MARIA",
+      "localidad": "MALAGUEÑO",
+      "localidad_asignada": "MALAGUEÑO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MALVINAS ARGENTINAS",
+      "localidad_asignada": "MALVINAS ARGENTINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "MARCOS JUAREZ",
+      "localidad": "MARCOS JUAREZ",
+      "localidad_asignada": "MARCOS JUAREZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "MENDIOLAZA",
+      "localidad_asignada": "MENDIOLAZA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "MINA CLAVERO",
+      "localidad_asignada": "MINA CLAVERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "MONTE CRISTO",
+      "localidad_asignada": "MONTE CRISTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "MORTEROS",
+      "localidad_asignada": "MORTEROS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "OLIVA",
+      "localidad_asignada": "OLIVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "ONCATIVO",
+      "localidad_asignada": "ONCATIVO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "PILAR",
+      "localidad_asignada": "PILAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "RIO CEBALLOS",
+      "localidad_asignada": "RIO CEBALLOS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "RIO CUARTO",
+      "localidad_asignada": "RIO CUARTO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "RIO PRIMERO",
+      "localidad_asignada": "RIO PRIMERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "RIO SEGUNDO",
+      "localidad_asignada": "RIO SEGUNDO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TERCERO ARRIBA",
+      "localidad": "RIO TERCERO",
+      "localidad_asignada": "RIO TERCERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALDAN",
+      "localidad_asignada": "SALDAN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "POCHO",
+      "localidad": "SALSACATE",
+      "localidad_asignada": "SALSACATE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "SALSIPUEDES",
+      "localidad_asignada": "SALSIPUEDES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SAN AGUSTIN",
+      "localidad_asignada": "SAN AGUSTIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "MINAS",
+      "localidad": "SAN CARLOS MINAS",
+      "localidad_asignada": "SAN CARLOS MINAS",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JUSTO",
+      "localidad": "SAN FRANCISCO",
+      "localidad_asignada": "SAN FRANCISCO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SOBREMONTE",
+      "localidad": "SAN FRANCISCO DEL CHAÑAR",
+      "localidad_asignada": "SAN FRANCISCO DEL CHAÑAR",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "SANTA MARIA DE PUNILLA",
+      "localidad_asignada": "SANTA MARIA DE PUNILLA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "UNQUILLO",
+      "localidad_asignada": "UNQUILLO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO CUARTO",
+      "localidad": "VICUÑA MACKENNA",
+      "localidad_asignada": "VICUÑA MACKENNA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "VILLA ALLENDE",
+      "localidad_asignada": "VILLA ALLENDE",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "VILLA CARLOS PAZ",
+      "localidad_asignada": "VILLA CARLOS PAZ",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN ALBERTO",
+      "localidad": "VILLA CURA BROCHERO",
+      "localidad_asignada": "VILLA CURA BROCHERO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SECO",
+      "localidad": "VILLA DE MARIA",
+      "localidad_asignada": "VILLA DE MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TOTORAL",
+      "localidad": "VILLA DEL TOTORAL",
+      "localidad_asignada": "VILLA DEL TOTORAL",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "SAN JAVIER",
+      "localidad": "VILLA DOLORES",
+      "localidad_asignada": "VILLA DOLORES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "VILLA GENERAL BELGRANO",
+      "localidad_asignada": "VILLA GENERAL BELGRANO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL ROCA",
+      "localidad": "VILLA HUIDOBRO",
+      "localidad_asignada": "VILLA HUIDOBRO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA MARIA",
+      "localidad_asignada": "VILLA MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "GENERAL SAN MARTIN",
+      "localidad": "VILLA NUEVA",
+      "localidad_asignada": "VILLA NUEVA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Agenda de Gobierno",
+      "alcance_tipo": "localidad",
+      "departamento": "TULUMBA",
+      "localidad": "VILLA TULUMBA",
+      "localidad_asignada": "VILLA TULUMBA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Fenómeno El Niño-Toda la Provincia"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "CALAMUCHITA",
+      "localidad": "SANTA ROSA DE CALAMUCHITA",
+      "localidad_asignada": "SANTA ROSA DE CALAMUCHITA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-20",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente-Santa Rosa de Calamuchita"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "PUNILLA",
+      "localidad": "COSQUIN",
+      "localidad_asignada": "COSQUIN",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Saneamiento Lago San Roque-Cosquín"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "60 localidades",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Ruta a Tinoco-Jesús María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Ministerios",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Av. Simón Bolívar-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Hacer para Crecer",
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Jardín de infantes-Villa del Rosario"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "RIO SEGUNDO",
+      "localidad": "VILLA DEL ROSARIO",
+      "localidad_asignada": "VILLA DEL ROSARIO",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente Carretero (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente Río Carnero-Colonia Caroya"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "60 localidades",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "JESUS MARIA",
+      "localidad_asignada": "JESUS MARIA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Centro de Desarrollo Infantil-Jesús María"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "LA CALERA",
+      "localidad_asignada": "LA CALERA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Altonivel Ruta E55-La Calera"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "Escuchá",
+      "alcance_tipo": "localidad",
+      "departamento": "ISCHILIN",
+      "localidad": "DEAN FUNES",
+      "localidad_asignada": "DEAN FUNES",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Barrio Moreira-Deán Funes"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": null,
+      "alcance_tipo": "localidad",
+      "departamento": "RIO PRIMERO",
+      "localidad": "VILLA SANTA ROSA",
+      "localidad_asignada": "VILLA SANTA ROSA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": null,
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Puente sobre Ruta SS28 \"Escuchá\" (Video)"
+      }
+    },
+    {
+      "area_origen": "Pauta digital",
+      "campana": "60 localidades",
+      "alcance_tipo": "localidad",
+      "departamento": "COLON",
+      "localidad": "COLONIA CAROYA",
+      "localidad_asignada": "COLONIA CAROYA",
+      "detalle": {
+        "area_tematica": null,
+        "estado": "Vigente",
+        "finalizacion": "2026-11-30",
+        "alcance": null,
+        "importe_gastado": null,
+        "cod_contenido": null,
+        "titulo_pieza": "Ruta a Tinoco-Colonia Caroya"
+      }
+    },
+    {
       "area_origen": "Audiovisuales",
       "campana": "BELLVILLE - EJE SALUD - Hospital de Bellville",
       "alcance_tipo": "localidad",
