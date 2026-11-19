@@ -54,7 +54,8 @@ const cardEstilo = {
   padding: '16px 20px 18px',
   boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)',
 };
-const tituloCard = { fontSize: 11.5, fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
+// Títulos de tarjeta en negrita y gris oscuro para que resalten (19/11/2026).
+const tituloCard = { fontSize: 12, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
 const titular = { fontSize: 18, fontWeight: 600, lineHeight: 1.25, letterSpacing: -0.2 };
 const detalle = { fontSize: 13.5, color: 'var(--text-secondary)', marginTop: 8 };
 const chico = { fontSize: 12.5, color: 'var(--text-tertiary)', marginTop: 8 };

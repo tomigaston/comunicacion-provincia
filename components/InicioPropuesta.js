@@ -27,7 +27,8 @@ export const tarjeta = {
   padding: '16px 20px 18px',
   boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)',
 };
-export const tituloTarjeta = { fontSize: 11.5, fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
+// Mismo estilo que los títulos de tarjeta de ResumenCards.js.
+export const tituloTarjeta = { fontSize: 12, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 };
 const nota = { fontSize: 12.5, color: 'var(--text-tertiary)', marginTop: 8, lineHeight: 1.4 };
 // `font: 'inherit'` va primero: si va después, pisa el tamaño y el botón
 // queda con la letra de la página (16px) en vez de 12,5.
