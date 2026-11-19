@@ -1,6 +1,7 @@
 // Fila de filtros a ancho completo, con altura y espaciado generosos.
 // Requisito de UX: nada de filtros angostos apretados en el medio de la pantalla.
-export default function FilterBar({ children }) {
+// `compacto` (19/11/2026, solo el inicio): menos relleno y separación.
+export default function FilterBar({ children, compacto = false }) {
   return (
     <div
       style={{
@@ -8,12 +9,12 @@ export default function FilterBar({ children }) {
         display: 'flex',
         flexWrap: 'wrap',
         alignItems: 'center',
-        gap: 14,
-        padding: '16px 24px',
+        gap: compacto ? 8 : 14,
+        padding: compacto ? '10px 16px' : '16px 24px',
         background: 'var(--bg-primary)',
         border: '1px solid var(--border)',
         borderRadius: 12,
-        minHeight: 64,
+        minHeight: compacto ? 0 : 64,
       }}
     >
       {children}

@@ -30,12 +30,13 @@ export default function MedioFilterChip({ medio, estado = 'off', onChange }) {
           : `Mostrando solo localidades SIN ${medio}. Clic para desactivar este filtro`
       }
       style={{
-        padding: '8px 14px',
+        // Más chico (19/11/2026): solo se usa en los filtros del inicio.
+        padding: '4px 10px',
         borderRadius: 999,
         border: `1.5px solid ${cfg.border}`,
         background: cfg.bg,
         color: cfg.fg,
-        fontSize: 13.5,
+        fontSize: 12.5,
         fontWeight: 600,
         cursor: 'pointer',
       }}

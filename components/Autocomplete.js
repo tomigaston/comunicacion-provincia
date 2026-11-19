@@ -8,7 +8,7 @@ import { normalizarTexto as normalizar } from '../lib/texto';
  * muestra "sin resultados" en vez de una lista vacía silenciosa — así se
  * distingue "no existe" de "lo escribí mal".
  */
-export default function Autocomplete({ items, placeholder, onSelect, onQueryChange, valorInicial = '' }) {
+export default function Autocomplete({ items, placeholder, onSelect, onQueryChange, valorInicial = '', compacto = false }) {
   const [query, setQuery] = useState(valorInicial);
   const [abierto, setAbierto] = useState(false);
   const [activo, setActivo] = useState(-1);
@@ -52,7 +52,7 @@ export default function Autocomplete({ items, placeholder, onSelect, onQueryChan
   }
 
   return (
-    <div ref={contenedorRef} style={{ position: 'relative', minWidth: 240 }}>
+    <div ref={contenedorRef} style={{ position: 'relative', minWidth: compacto ? 220 : 240 }}>
       <input
         type="text"
         value={query}
@@ -67,10 +67,10 @@ export default function Autocomplete({ items, placeholder, onSelect, onQueryChan
         onKeyDown={onKeyDown}
         style={{
           width: '100%',
-          padding: '10px 14px',
+          padding: compacto ? '6px 10px' : '10px 14px',
           borderRadius: 8,
           border: '1px solid var(--border)',
-          fontSize: 14,
+          fontSize: compacto ? 13 : 14,
           background: 'var(--bg-primary)',
           color: 'var(--text-primary)',
         }}
