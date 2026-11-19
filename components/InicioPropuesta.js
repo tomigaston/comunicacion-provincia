@@ -390,8 +390,8 @@ export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
   return (
     <div style={tarjeta}>
       <div style={tituloTarjeta}>Pauta dirigida por localidad</div>
-      <div style={{ fontSize: 20, fontWeight: 600, lineHeight: 1.2, color: 'var(--accent)', letterSpacing: -0.3 }}>
-        {bajo.length} localidad{bajo.length === 1 ? '' : 'es'} <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>con menos de {umbral} piezas dirigidas</span>
+      <div style={{ fontSize: 17, fontWeight: 600, lineHeight: 1.25, color: 'var(--accent)', letterSpacing: -0.2 }}>
+        {bajo.length} localidad{bajo.length === 1 ? '' : 'es'} <span style={{ fontSize: 13.5, fontWeight: 600, color: 'var(--text-primary)' }}>con menos de {umbral} piezas dirigidas</span>
       </div>
       <div style={{ fontSize: 12.5, color: 'var(--text-secondary)', marginTop: 4 }}>
         Mínimo {valores[0]} · mediana {mediana} · máximo {max} ({orden[orden.length - 1].localidad})

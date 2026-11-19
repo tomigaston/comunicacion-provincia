@@ -137,14 +137,14 @@ const indicadorEstilo = {
 /** Tarjeta de indicador: número grande, etiqueta y una línea de contexto.
  * `tono`: 'rojo' (alerta), 'discreto' (todo en orden) o null (neutro). */
 function Indicador({ valor, sufijo, etiqueta, detalle, tono = null, onClick, title }) {
-  // Colores de marca: número en el celeste de acento y una franja celeste
-  // arriba; en rojo si es una alerta, en gris si está todo en orden.
+  // Colores de marca: número en el celeste de acento y una línea celeste a la
+  // izquierda; en rojo si es una alerta, en gris si está todo en orden.
   const colorValor = tono === 'rojo' ? 'var(--cov-baja)' : tono === 'discreto' ? 'var(--text-tertiary)' : 'var(--accent)';
   const borde = tono === 'rojo' ? 'var(--cov-baja)' : 'var(--border)';
-  const franja = tono === 'rojo' ? 'var(--cov-baja)' : tono === 'discreto' ? 'var(--border)' : 'var(--marca-celeste)';
+  const franja = tono === 'rojo' ? 'var(--cov-baja)' : tono === 'discreto' ? 'var(--marca-gris)' : 'var(--marca-celeste)';
   const fondo = tono === 'rojo' ? 'var(--cov-baja-bg)' : 'var(--bg-primary)';
   return (
-    <button type="button" onClick={onClick} title={title} style={{ ...indicadorEstilo, borderColor: borde, borderLeft: tono === 'rojo' ? `4px solid ${franja}` : `1px solid ${borde}`, background: fondo, boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)' }}>
+    <button type="button" onClick={onClick} title={title} style={{ ...indicadorEstilo, borderColor: borde, borderLeft: `4px solid ${franja}`, background: fondo, boxShadow: '0 1px 2px rgba(16, 24, 40, 0.05)' }}>
       <div style={{ fontSize: 26, fontWeight: 600, lineHeight: 1.1, color: colorValor, fontVariantNumeric: 'tabular-nums', letterSpacing: -0.3 }}>
         {valor}
         {sufijo && <span style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-secondary)' }}>{sufijo}</span>}
@@ -537,9 +537,9 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
                 </div>
               )}
               {/* Letra más grande y color de marca (pedido del 6/11/2026). */}
-              <div style={{ fontSize: 22, fontWeight: 600, lineHeight: 1.2, color: 'var(--accent)', letterSpacing: -0.3 }}>
+              <div style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.25, color: 'var(--accent)', letterSpacing: -0.2 }}>
                 {r.pd.activas.toLocaleString('es-AR')} piezas activas
-                <span style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}> · {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}</span>
+                <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}> · {r.pd.campanas.length} campaña{r.pd.campanas.length === 1 ? '' : 's'}</span>
               </div>
               <div style={{ fontSize: 15, color: 'var(--text-primary)', marginTop: 6 }}>
                 <strong>{r.pd.dirigidas.toLocaleString('es-AR')}</strong> dirigidas a localidades · <strong>{r.pd.provinciales.toLocaleString('es-AR')}</strong> provinciales
