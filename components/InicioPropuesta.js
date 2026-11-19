@@ -301,8 +301,16 @@ function BarrasHorizontales({ filas, max, unidad }) {
     </div>
   );
 }
+/** `f.onClick` (opcional): la fila filtra la grilla; `f.activo` la marca y
+ * `f.atenuado` la apaga cuando hay otra elegida. */
 function FilaBarra({ f, max, unidad }) {
   const ancho = max ? Math.max(1, (f.n / max) * 100) : 0;
+  const barra = (
+    <div style={{ height: 10, background: 'var(--bg-secondary)', borderRadius: 5, opacity: f.atenuado ? 0.35 : 1 }} title={`${f.etiqueta}: ${num(f.n)} ${unidad}`}>
+      <div style={{ width: `${ancho}%`, height: '100%', background: f.color || 'var(--accent)', borderRadius: 5 }} />
+    </div>
+  );
+  const botonFila = { background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'inherit', cursor: 'pointer', textAlign: 'left', width: '100%', display: 'block' };
   return (
     <>
       <div style={{ fontSize: 12, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }} title={f.etiqueta}>
@@ -310,24 +318,39 @@ function FilaBarra({ f, max, unidad }) {
           <Link href={f.href} style={{ textDecoration: 'underline' }}>
             {f.etiqueta}
           </Link>
+        ) : f.onClick ? (
+          <button type="button" onClick={f.onClick} aria-pressed={!!f.activo} title={f.activo ? 'Clic para sacar el filtro' : `Ver las localidades con ${f.etiqueta}`} style={{ ...botonFila, fontWeight: f.activo ? 700 : 400, textDecoration: f.activo ? 'underline' : 'none', opacity: f.atenuado ? 0.55 : 1 }}>
+            {f.etiqueta}
+          </button>
         ) : (
           f.etiqueta
         )}
       </div>
-      <div style={{ height: 10, background: 'var(--bg-secondary)', borderRadius: 5 }} title={`${f.etiqueta}: ${num(f.n)} ${unidad}`}>
-        <div style={{ width: `${ancho}%`, height: '100%', background: f.color || 'var(--accent)', borderRadius: 5 }} />
-      </div>
+      {f.onClick ? (
+        <button type="button" onClick={f.onClick} aria-label={`Filtrar por ${f.etiqueta}`} style={botonFila}>
+          {barra}
+        </button>
+      ) : (
+        barra
+      )}
       <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-secondary)', minWidth: 34, textAlign: 'right' }}>{num(f.n)}</div>
     </>
   );
 }
 
 /** `areas` = { distintas: [{area, n}], porLocalidad: [{area, n}], totalDistintas, totalPorLocalidad }. */
-export function GraficoAreas({ areas }) {
+/** `activo`: área que hoy filtra la grilla; `onFiltrar(area)` la filtra. */
+export function GraficoAreas({ areas, activo = null, onFiltrar = null }) {
   const [modo, setModo] = useState('distintas');
   const lista = modo === 'distintas' ? areas.distintas : areas.porLocalidad;
   const total = modo === 'distintas' ? areas.totalDistintas : areas.totalPorLocalidad;
-  const filas = lista.map((a) => ({ etiqueta: a.area, n: a.n }));
+  const filas = lista.map((a) => ({
+    etiqueta: a.area,
+    n: a.n,
+    onClick: onFiltrar ? () => onFiltrar(a.area) : null,
+    activo: activo === a.area,
+    atenuado: !!activo && activo !== a.area,
+  }));
   return (
     <div style={tarjeta}>
       <div style={tituloTarjeta}>Qué se comunica · Pauta Digital activa</div>
@@ -392,7 +415,16 @@ export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
 
 // --- E5 + B8: antigüedad de los temas activos de MT -------------------------
 /** `t` = { tramos: {verde, amarillo, rojo, sinFecha}, sinFechaPorTipo: [{tipo, n}], total }. */
-export function AntiguedadMT({ t }) {
+/** `activo`: tramo que hoy filtra la grilla; `onFiltrar(clave, etiqueta)` lo
+ * filtra (localidades con al menos un tema activo en ese tramo). */
+export function AntiguedadMT({ t, activo = null, onFiltrar = null }) {
+  const textoFiltro = {
+    verde: 'algún tema de MT de 0–29 días',
+    amarillo: 'algún tema de MT de 30–49 días',
+    rojo: 'algún tema de MT de 50 días o más',
+    sinFecha: 'algún tema de MT sin fecha de inicio',
+  };
+  const tocar = (s) => (onFiltrar ? () => onFiltrar(s.clave, textoFiltro[s.clave]) : undefined);
   const segmentos = [
     { clave: 'verde', etiqueta: '0–29 días', n: t.tramos.verde, color: 'var(--cov-alta)' },
     { clave: 'amarillo', etiqueta: '30–49 días', n: t.tramos.amarillo, color: 'var(--cov-media)' },
@@ -402,17 +434,33 @@ export function AntiguedadMT({ t }) {
   return (
     <div style={{ marginTop: 14 }}>
       <div style={{ fontSize: 13.5, fontWeight: 600 }}>Antigüedad de los {num(t.total)} temas activos</div>
-      <div style={{ display: 'flex', gap: 2, height: 12, marginTop: 6, borderRadius: 6, overflow: 'hidden' }} role="img" aria-label="Temas activos por antigüedad">
+      <div style={{ display: 'flex', gap: 2, height: 12, marginTop: 6, borderRadius: 6, overflow: 'hidden' }} aria-label="Temas activos por antigüedad">
         {segmentos.map((s) =>
-          s.n > 0 ? <div key={s.clave} style={{ width: `${(s.n / t.total) * 100}%`, background: s.color }} title={`${s.etiqueta}: ${num(s.n)} temas`} /> : null
+          s.n > 0 ? (
+            <button
+              key={s.clave}
+              type="button"
+              onClick={tocar(s)}
+              aria-pressed={activo === s.clave}
+              title={`${s.etiqueta}: ${num(s.n)} temas${onFiltrar ? ' · ver las localidades' : ''}`}
+              style={{ width: `${(s.n / t.total) * 100}%`, background: s.color, border: 'none', padding: 0, cursor: onFiltrar ? 'pointer' : 'default', opacity: activo && activo !== s.clave ? 0.3 : 1 }}
+            />
+          ) : null
         )}
       </div>
       <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 6, fontSize: 12.5, color: 'var(--text-secondary)' }}>
         {segmentos.map((s) => (
-          <span key={s.clave}>
+          <button
+            key={s.clave}
+            type="button"
+            onClick={tocar(s)}
+            aria-pressed={activo === s.clave}
+            title={onFiltrar ? `Ver las localidades con ${textoFiltro[s.clave]}` : undefined}
+            style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', fontSize: 12.5, color: activo === s.clave ? 'var(--text-primary)' : 'var(--text-secondary)', cursor: onFiltrar ? 'pointer' : 'default', textDecoration: activo === s.clave ? 'underline' : 'none', fontWeight: activo === s.clave ? 600 : 400 }}
+          >
             <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: s.color, marginRight: 5 }} />
             {s.etiqueta} <strong style={{ color: 'var(--text-primary)' }}>{num(s.n)}</strong>
-          </span>
+          </button>
         ))}
       </div>
       <div style={nota}>

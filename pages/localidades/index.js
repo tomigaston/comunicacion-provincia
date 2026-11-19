@@ -62,6 +62,9 @@ export default function LocalidadesIndex() {
   const [bandasActivas, setBandasActivas] = useState(new Set(ORDEN_BANDAS));
   // Grupo "Pauta digital": vacío = sin filtro; si hay opciones, OR entre ellas.
   const [pdActivos, setPdActivos] = useState(new Set());
+  // Filtro desde un gráfico de la derecha: { tipo: 'antiguedad' | 'area',
+  // clave, etiqueta } o null.
+  const [filtroGrafico, setFiltroGrafico] = useState(null);
   const [mediosEstado, setMediosEstado] = useState(() =>
     Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off']))
   );
@@ -89,12 +92,14 @@ export default function LocalidadesIndex() {
   const hayFiltros =
     bandasActivas.size !== ORDEN_BANDAS.length ||
     pdActivos.size > 0 ||
+    filtroGrafico !== null ||
     Object.values(mediosEstado).some((e) => e !== 'off');
 
   function limpiarFiltros() {
     setBandasActivas(new Set(ORDEN_BANDAS));
     setPdActivos(new Set());
     setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+    setFiltroGrafico(null);
   }
 
   // Cards de resumen: salen de los mismos predicados y ejes que la grilla, el
@@ -188,6 +193,14 @@ export default function LocalidadesIndex() {
       return Array.from(m, ([area, n]) => ({ area, n })).sort((a, b) => b.n - a.n || a.area.localeCompare(b.area, 'es'));
     };
     const piezasDistintas = Array.from(distintas.values());
+    // Áreas con alguna pieza activa en cada localidad (mismas piezas que el
+    // semáforo: las provinciales vienen repetidas en cada localidad).
+    const areasPorLocalidad = new Map();
+    for (const p of activas) {
+      const k = normalizarTexto(p.localidad);
+      if (!areasPorLocalidad.has(k)) areasPorLocalidad.set(k, new Set());
+      areasPorLocalidad.get(k).add(p.area_tematica || 'Sin área');
+    }
     const areas = {
       distintas: contarAreas(piezasDistintas),
       porLocalidad: contarAreas(activas),
@@ -215,17 +228,26 @@ export default function LocalidadesIndex() {
     // calcularSemaforoMedios: Activo, con fecha y antigüedad numérica).
     const tramos = { verde: 0, amarillo: 0, rojo: 0, sinFecha: 0 };
     const sinFechaPorTipo = new Map();
+    // Para filtrar la grilla desde el gráfico (19/11/2026): tramos presentes en
+    // cada localidad, con las mismas filas y umbrales que el gráfico.
+    const tramosPorLocalidad = new Map();
+    const marcarTramo = (loc, tramo) => {
+      const k = normalizarTexto(loc.localidad);
+      if (!tramosPorLocalidad.has(k)) tramosPorLocalidad.set(k, new Set());
+      tramosPorLocalidad.get(k).add(tramo);
+    };
     const amarilla = mediosData.umbral_alerta_amarilla_dias;
     const roja = mediosData.umbral_alerta_roja_dias;
     for (const loc of mediosData.localidades) {
       for (const v of loc.vigentes || []) {
         if ((v.estado || '').trim().toLowerCase() !== 'activo') continue;
         if (v.fecha_desde && typeof v.antiguedad_dias === 'number') {
-          if (v.antiguedad_dias >= roja) tramos.rojo += 1;
-          else if (v.antiguedad_dias >= amarilla) tramos.amarillo += 1;
-          else tramos.verde += 1;
+          const tramo = v.antiguedad_dias >= roja ? 'rojo' : v.antiguedad_dias >= amarilla ? 'amarillo' : 'verde';
+          tramos[tramo] += 1;
+          marcarTramo(loc, tramo);
         } else {
           tramos.sinFecha += 1;
+          marcarTramo(loc, 'sinFecha');
           sinFechaPorTipo.set(v.tipo_medio, (sinFechaPorTipo.get(v.tipo_medio) || 0) + 1);
         }
       }
@@ -265,6 +287,7 @@ export default function LocalidadesIndex() {
       movimientos,
       cortes: mediosData.cortes_cobertura || null,
       umbralesMT: { amarilla, roja },
+      porLocalidad: { tramos: tramosPorLocalidad, areas: areasPorLocalidad },
     };
   }, [datos]);
 
@@ -280,7 +303,7 @@ export default function LocalidadesIndex() {
   // Filtros que vienen de los resúmenes (19/11/2026): dejan solo ese recorte
   // (limpian los demás filtros, así la grilla muestra la misma cantidad que el
   // número que se tocó). Si ese recorte ya estaba elegido, lo limpian.
-  const sinOtrosFiltros = Object.values(mediosEstado).every((e) => e === 'off');
+  const sinOtrosFiltros = filtroGrafico === null && Object.values(mediosEstado).every((e) => e === 'off');
   const mismo = (set, lista) => set.size === lista.length && lista.every((x) => set.has(x));
   function filtrarRecorte(bandas, colores) {
     if (sinOtrosFiltros && mismo(bandasActivas, bandas) && mismo(pdActivos, colores)) {
@@ -290,8 +313,34 @@ export default function LocalidadesIndex() {
     setBandasActivas(new Set(bandas));
     setPdActivos(new Set(colores));
     setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+    setFiltroGrafico(null);
     irAGrilla();
   }
+
+  // Filtro desde los gráficos de antigüedad de MT y de áreas de PD: deja las
+  // localidades con al menos un tema o una pieza de ese tramo o área (y limpia
+  // los demás filtros). Si ya estaba elegido, lo saca.
+  function filtrarGrafico(tipo, clave, etiqueta) {
+    if (filtroGrafico && filtroGrafico.tipo === tipo && filtroGrafico.clave === clave) {
+      limpiarFiltros();
+      return;
+    }
+    setBandasActivas(new Set(ORDEN_BANDAS));
+    setPdActivos(new Set());
+    setMediosEstado(Object.fromEntries(TIPOS_MEDIO.map((m) => [m.key, 'off'])));
+    setFiltroGrafico({ tipo, clave, etiqueta });
+    irAGrilla();
+  }
+
+  // Grilla final: filtros de arriba + el del gráfico, si hay uno.
+  const filtradosFinal = useMemo(() => {
+    if (!filtroGrafico || !propuesta) return filtrados;
+    const mapa = filtroGrafico.tipo === 'antiguedad' ? propuesta.porLocalidad.tramos : propuesta.porLocalidad.areas;
+    return filtrados.filter((l) => {
+      const set = mapa.get(normalizarTexto(l.localidad));
+      return !!set && set.has(filtroGrafico.clave);
+    });
+  }, [filtrados, filtroGrafico, propuesta]);
 
   // Drill-down desde las cards: deja activas solo esas bandas y baja a la grilla.
   function filtrarBandas(bandas) {
@@ -339,6 +388,8 @@ export default function LocalidadesIndex() {
           onFiltrarBandas={filtrarBandas}
           onFiltrarSinCobertura={filtrarSinCobertura}
           bandaActiva={bandaActiva}
+          filtroGrafico={filtroGrafico}
+          onFiltrarGrafico={filtrarGrafico}
           ladoIzquierdo={
             <>
               {/* Resumen de estados arriba de las localidades (19/11/2026): las 60, sin filtros; cada una filtra la grilla. */}
@@ -431,11 +482,12 @@ export default function LocalidadesIndex() {
                 <div id="grilla-localidades">
                   {/* Vista resumida / completa y orden (19/11/2026): mismas filas filtradas. */}
                   <GrillaLocalidades
-                    filas={filtrados}
+                    filas={filtradosFinal}
                     Tarjeta={LocalidadCard}
                     encabezado={
                       <>
-                        Mostrando {filtrados.length} de {combinado.length} localidades
+                        Mostrando {filtradosFinal.length} de {combinado.length} localidades
+                        {filtroGrafico && <> con {filtroGrafico.etiqueta}</>}
                         {hayFiltros && (
                           <>
                             {' · '}

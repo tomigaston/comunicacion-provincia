@@ -424,7 +424,7 @@ function Movimiento({ r, abierto, onToggle }) {
  * grilla (para marcarla en la barra). Dos columnas (19/11/2026): `ladoIzquierdo`
  * (filtros y grilla de localidades) va a la izquierda y los resúmenes a la
  * derecha; en pantallas angostas se apilan (styles/globals.css). */
-export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas = null, onFiltrarBandas, onFiltrarSinCobertura, bandaActiva = null, ladoIzquierdo = null }) {
+export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas = null, onFiltrarBandas, onFiltrarSinCobertura, bandaActiva = null, filtroGrafico = null, onFiltrarGrafico = null, ladoIzquierdo = null }) {
   const [cambiosAbiertos, setCambiosAbiertos] = useState(false);
   // Filtro 🔴/🟡 de la lista de temas por revisar (null = todos).
   const [colorTemas, setColorTemas] = useState(null);
@@ -514,7 +514,13 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
                 </ul>
               </details>
               {/* E5 + B8: antigüedad por tramo y temas sin fecha. */}
-              {propuesta && <AntiguedadMT t={propuesta.antiguedadMT} />}
+              {propuesta && (
+                <AntiguedadMT
+                  t={propuesta.antiguedadMT}
+                  activo={filtroGrafico && filtroGrafico.tipo === 'antiguedad' ? filtroGrafico.clave : null}
+                  onFiltrar={onFiltrarGrafico ? (clave, etiqueta) => onFiltrarGrafico('antiguedad', clave, etiqueta) : null}
+                />
+              )}
             </div>
 
             <div style={cardEstilo}>
@@ -600,7 +606,11 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
                   MT × PD va arriba de la grilla; Movimientos, en los indicadores
                   (19/11/2026). */}
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
-                <GraficoAreas areas={propuesta.areas} />
+                <GraficoAreas
+                  areas={propuesta.areas}
+                  activo={filtroGrafico && filtroGrafico.tipo === 'area' ? filtroGrafico.clave : null}
+                  onFiltrar={onFiltrarGrafico ? (area) => onFiltrarGrafico('area', area, `alguna pieza activa de ${area}`) : null}
+                />
                 <TarjetaDirigidas filas={filas} />
               </div>
               {/* C5 */}
