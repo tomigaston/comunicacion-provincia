@@ -321,27 +321,35 @@ function BloqueAtencion({ r, hoy, refBloque, refPrimeraFecha }) {
   return (
     <div ref={refBloque} style={{ ...cardEstilo, flex: '1 1 100%', padding: '14px 18px 16px', marginBottom: 14, borderLeft: `4px solid ${colorBorde}` }}>
       <div style={tituloCard}>Atención — próximos {PD_DIAS_VENTANA} días</div>
+      {/* Plegado (pedido del 19/11/2026): a la vista solo el titular; el
+          gráfico, las fechas y las localidades, al desplegar. */}
       {atencion.total ? (
-        <>
-          <div style={{ fontSize: 16, fontWeight: 700, lineHeight: 1.3 }}>
-            ⚠️ {atencion.total} localidad{atencion.total === 1 ? ' baja' : 'es bajan'} de color en Pauta Digital si no se renueva lo que vence hasta el{' '}
-            {diaMes(ventanaHasta)}
-          </div>
+        <details className="desplegable">
+          <summary>
+            <span style={{ fontSize: 16, fontWeight: 700, lineHeight: 1.3 }}>
+              ⚠️ {atencion.total} localidad{atencion.total === 1 ? ' baja' : 'es bajan'} de color en Pauta Digital si no se renueva lo que vence hasta el{' '}
+              {diaMes(ventanaHasta)}
+            </span>
+            <span className="desplegable-accion">Ver detalle</span>
+          </summary>
           <div style={{ ...chico, marginTop: 4 }}>Aun contando las Programadas.</div>
           {/* E1: un vistazo de qué día se cae la pauta. */}
           {hoy && <GraficoVencimientos fechas={atencion.fechas} hoy={hoy} ventanaHasta={ventanaHasta} />}
           <BloqueAvisoPD b={atencion} ventanaHasta={ventanaHasta} refPrimeraFecha={refPrimeraFecha} />
-        </>
+        </details>
       ) : (
         <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)' }}>Ninguna localidad baja de color en Pauta Digital</div>
       )}
       {cubiertas.total > 0 && (
-        <div style={{ marginTop: 12 }}>
-          <div style={{ ...detalle, fontWeight: 600, marginTop: 0 }}>
-            ℹ️ {cubiertas.total} localidad{cubiertas.total === 1 ? '' : 'es'} cubierta{cubiertas.total === 1 ? '' : 's'} por Programadas
-          </div>
+        <details className="desplegable" style={{ marginTop: 8 }}>
+          <summary>
+            <span style={{ ...detalle, fontWeight: 600, marginTop: 0 }}>
+              ℹ️ {cubiertas.total} localidad{cubiertas.total === 1 ? '' : 'es'} cubierta{cubiertas.total === 1 ? '' : 's'} por Programadas
+            </span>
+            <span className="desplegable-accion">Ver detalle</span>
+          </summary>
           <BloqueAvisoPD b={cubiertas} ventanaHasta={ventanaHasta} cubiertas />
-        </div>
+        </details>
       )}
     </div>
   );
