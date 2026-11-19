@@ -9,7 +9,6 @@ import {
   FechaDelDato,
   GraficoVencimientos,
   GraficoAreas,
-  TarjetaDirigidas,
   AntiguedadMT,
   ComoLeer,
 } from './InicioPropuesta';
@@ -611,16 +610,16 @@ export function ResumenGeneral({ r, repetidosPD = null, propuesta = null, filas 
           </div>
           {propuesta && filas && (
             <>
-              {/* B2 y A2: qué se comunica y pauta dirigida por localidad. El cruce
-                  MT × PD va arriba de la grilla; Movimientos, en los indicadores
-                  (19/11/2026). */}
+              {/* B2: qué se comunica. El cruce MT × PD va arriba de la grilla;
+                  Movimientos, en los indicadores (19/11/2026). "Pauta dirigida
+                  por localidad" (TarjetaDirigidas) no se muestra por ahora
+                  (pedido del 19/11/2026: confundía). */}
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
                 <GraficoAreas
                   areas={propuesta.areas}
                   activo={filtroGrafico && filtroGrafico.tipo === 'area' ? filtroGrafico.clave : null}
                   onFiltrar={onFiltrarGrafico ? (area) => onFiltrarGrafico('area', area, `alguna pieza activa de ${area}`) : null}
                 />
-                <TarjetaDirigidas filas={filas} />
               </div>
               {/* C5 */}
               <ComoLeer cortes={propuesta.cortes} umbrales={propuesta.umbralesMT} />

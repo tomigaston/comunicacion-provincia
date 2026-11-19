@@ -373,6 +373,9 @@ export function GraficoAreas({ areas, activo = null, onFiltrar = null }) {
 }
 
 // --- A2 / E4: pauta dirigida por localidad ----------------------------------
+// NO SE MUESTRA por ahora (pedido del 19/11/2026: confundía). Queda el código
+// para volver a usarla: se agrega <TarjetaDirigidas filas={filas} /> al lado
+// de GraficoAreas en ResumenGeneral (components/ResumenCards.js).
 /** `filas` = combinarLocalidades(). `umbral`: a definir (hoy 20). */
 export function TarjetaDirigidas({ filas, umbral = 20, mostrar = 15 }) {
   const orden = filas.slice().sort((a, b) => a.ejePD.dirigidas - b.ejePD.dirigidas || a.localidad.localeCompare(b.localidad, 'es'));
