@@ -345,7 +345,7 @@ export default function DetalleLocalidad() {
             </p>
           </div>
 
-          <Seccion id="seccion-mt" titulo="Medios tradicionales" resumen={resumenMT} refDetails={refSeccionMT}>
+          <Seccion id="seccion-mt" titulo="Medios tradicionales" resumen={resumenMT} refDetails={refSeccionMT} abierta={false}>
             {info.medios ? (
               <>
                 <div style={{ marginBottom: 14 }}>
@@ -470,7 +470,7 @@ export default function DetalleLocalidad() {
           )}
 
           {info.piezasPauta.length > 0 && (
-            <Seccion titulo="Pauta digital" resumen={resumenPD}>
+            <Seccion titulo="Pauta digital" resumen={resumenPD} abierta={false}>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 18 }}>
                 {CANALES_PAUTA.map((canal) => {
                   const presente = canalesActivos.has(canal.key);
@@ -736,10 +736,11 @@ function TablaPiezas({ piezas, programadas = false, sinCampana = false }) {
 }
 
 /** Sección plegable (2.1): el encabezado muestra el título y un resumen
- * aunque esté cerrada. Arranca abierta. */
-function Seccion({ id, titulo, resumen, children, refDetails }) {
+ * aunque esté cerrada. Arranca abierta salvo que `abierta` sea false
+ * (Medios tradicionales y Pauta digital arrancan cerradas, 19/11/2026). */
+function Seccion({ id, titulo, resumen, children, refDetails, abierta = true }) {
   return (
-    <details id={id} ref={refDetails} open className="desplegable seccion">
+    <details id={id} ref={refDetails} open={abierta} className="desplegable seccion">
       <summary>
         <h2 style={{ fontSize: 15, fontWeight: 600, margin: 0 }}>{titulo}</h2>
         {resumen && <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-secondary)' }}>· {resumen}</span>}
